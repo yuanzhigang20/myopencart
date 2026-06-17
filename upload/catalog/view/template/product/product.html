@@ -293,7 +293,7 @@
 <div class="tab-content">
   <div id="tab-description" class="tab-pane fade show active mb-4">
     {{ description }} {% if tags %}
-    <p><strong>{{ text_tags }}</strong> {% for tag in tags %} <a href="{{ tag }}">{{ tag }}</a>{% if not loop.last %},{% endif %} {% endfor %}
+    <p><strong>{{ text_tags }}</strong> {% for tag in tags %} <a href="{{ tag.href }}">{{ tag.tag }}</a>{% if not loop.last %},{% endif %} {% endfor %}
     </p>
     {% endif %}
   </div>
