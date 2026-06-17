@@ -32,18 +32,23 @@
 (function () {
   const language = 'en-gb';
   const qs = (selector) => document.querySelector(selector);
+  const qsa = (selector) => Array.from(document.querySelectorAll(selector));
+
   const setStatus = (message, type = 'muted') => {
     const el = qs('#checkout-flow-status');
     if (el) { el.className = 'small text-' + type; el.textContent = message; }
   };
+
   const showError = (target, message) => {
     const el = qs(target);
     if (el) { el.textContent = message || ''; el.style.display = message ? 'block' : ''; }
   };
+
   const postForm = async (url, formData) => {
     const response = await fetch(url, { method: 'POST', body: formData, credentials: 'same-origin' });
     return response.json();
   };
+
   const postParams = async (url, params) => {
     const response = await fetch(url, {
       method: 'POST',
@@ -53,67 +58,145 @@
     });
     return response.json();
   };
+
+  const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]));
+
   const refreshConfirm = async () => {
     const response = await fetch('index.php?route=checkout/confirm.confirm&language=' + encodeURIComponent(language), { credentials: 'same-origin' });
     const html = await response.text();
     const confirm = qs('#checkout-confirm');
     if (confirm) confirm.innerHTML = html;
   };
-  const chooseShipping = async () => {
+
+  const renderShippingMethods = (shippingMethods) => {
+    const box = qs('#shipping-method-options');
+    if (!box) return;
+    const selectedCode = qs('#input-shipping-code')?.value || '';
+    const rows = [];
+
+    Object.values(shippingMethods || {}).forEach((method) => {
+      Object.values(method.quote || {}).forEach((quote) => {
+        const code = quote.code || '';
+        const checked = selectedCode === code ? ' checked' : '';
+        rows.push(`
+          <label class="form-check border rounded-3 p-3 ps-5 bg-white checkout-option" for="shipping-${escapeHtml(code).replace(/[^a-zA-Z0-9_-]/g, '-')}">
+            <input class="form-check-input checkout-shipping-radio" type="radio" name="shipping_method_choice" id="shipping-${escapeHtml(code).replace(/[^a-zA-Z0-9_-]/g, '-')}" value="${escapeHtml(code)}"${checked}>
+            <span class="form-check-label d-block">
+              <span class="fw-semibold">${escapeHtml(quote.name || method.name || code)}</span>
+              ${quote.text ? `<span class="float-end fw-bold">${escapeHtml(quote.text)}</span>` : ''}
+              ${quote.description ? `<span class="d-block small text-muted mt-1">${escapeHtml(quote.description)}</span>` : ''}
+            </span>
+          </label>`);
+      });
+    });
+
+    box.innerHTML = rows.length ? rows.join('') : '<div class="text-muted small">No shipping methods available.</div>';
+  };
+
+  const renderPaymentMethods = (paymentMethods) => {
+    const box = qs('#payment-method-options');
+    if (!box) return;
+    const selectedCode = qs('#input-payment-code')?.value || '';
+    const rows = [];
+
+    Object.values(paymentMethods || {}).forEach((method) => {
+      Object.values(method.option || {}).forEach((option) => {
+        const code = option.code || '';
+        const checked = selectedCode === code ? ' checked' : '';
+        rows.push(`
+          <label class="form-check border rounded-3 p-3 ps-5 bg-white checkout-option" for="payment-${escapeHtml(code).replace(/[^a-zA-Z0-9_-]/g, '-')}">
+            <input class="form-check-input checkout-payment-radio" type="radio" name="payment_method_choice" id="payment-${escapeHtml(code).replace(/[^a-zA-Z0-9_-]/g, '-')}" value="${escapeHtml(code)}"${checked}>
+            <span class="form-check-label d-block">
+              <span class="fw-semibold">${escapeHtml(option.name || method.name || code)}</span>
+            </span>
+          </label>`);
+      });
+    });
+
+    box.innerHTML = rows.length ? rows.join('') : '<div class="text-muted small">No payment methods available.</div>';
+  };
+
+  const loadShippingMethods = async () => {
     const quoted = await fetch('index.php?route=checkout/shipping_method.quote&language=' + encodeURIComponent(language), { credentials: 'same-origin' }).then(r => r.json());
     if (quoted.redirect) { location.href = quoted.redirect; return false; }
     if (quoted.error) { showError('#error-shipping-method', quoted.error); return false; }
-    const methods = quoted.shipping_methods || {};
-    let selected = null;
-    Object.values(methods).some(method => Object.values(method.quote || {}).some(quote => { selected = quote; return true; }));
-    if (!selected) { showError('#error-shipping-method', 'No shipping method available.'); return false; }
-    const saved = await postParams('index.php?route=checkout/shipping_method.save&language=' + encodeURIComponent(language), { shipping_method: selected.code });
-    if (saved.redirect) { location.href = saved.redirect; return false; }
-    if (saved.error) { showError('#error-shipping-method', saved.error); return false; }
-    qs('#input-shipping-method').value = selected.name || selected.code;
-    qs('#input-shipping-code').value = selected.code;
+    renderShippingMethods(quoted.shipping_methods || {});
     showError('#error-shipping-method', '');
     return true;
   };
-  const choosePayment = async () => {
+
+  const saveShippingMethod = async (code) => {
+    if (!code) { showError('#error-shipping-method', 'Please select a shipping method.'); return false; }
+    const saved = await postParams('index.php?route=checkout/shipping_method.save&language=' + encodeURIComponent(language), { shipping_method: code });
+    if (saved.redirect) { location.href = saved.redirect; return false; }
+    if (saved.error) { showError('#error-shipping-method', saved.error); return false; }
+    const input = qs('#input-shipping-code');
+    if (input) input.value = code;
+    showError('#error-shipping-method', '');
+    // Shipping changes invalidate payment in OpenCart; clear and reload choices.
+    const paymentInput = qs('#input-payment-code');
+    if (paymentInput) paymentInput.value = '';
+    await loadPaymentMethods();
+    await refreshConfirm();
+    return true;
+  };
+
+  const loadPaymentMethods = async () => {
     const methodsJson = await fetch('index.php?route=checkout/payment_method.getMethods&language=' + encodeURIComponent(language), { credentials: 'same-origin' }).then(r => r.json());
     if (methodsJson.redirect) { location.href = methodsJson.redirect; return false; }
     if (methodsJson.error) { showError('#error-payment-method', methodsJson.error); return false; }
-    const methods = methodsJson.payment_methods || {};
-    let selected = null;
-    Object.values(methods).some(method => Object.values(method.option || {}).some(option => { selected = option; return true; }));
-    if (!selected) { showError('#error-payment-method', 'No payment method available.'); return false; }
-    const saved = await postParams('index.php?route=checkout/payment_method.save&language=' + encodeURIComponent(language), { payment_method: selected.code });
+    renderPaymentMethods(methodsJson.payment_methods || {});
+    showError('#error-payment-method', '');
+    return true;
+  };
+
+  const savePaymentMethod = async (code) => {
+    if (!code) { showError('#error-payment-method', 'Please select a payment method.'); return false; }
+    const saved = await postParams('index.php?route=checkout/payment_method.save&language=' + encodeURIComponent(language), { payment_method: code });
     if (saved.redirect) { location.href = saved.redirect; return false; }
     if (saved.error) { showError('#error-payment-method', saved.error); return false; }
-    qs('#input-payment-method').value = selected.name || selected.code;
-    qs('#input-payment-code').value = selected.code;
+    const input = qs('#input-payment-code');
+    if (input) input.value = code;
     showError('#error-payment-method', '');
     await refreshConfirm();
     return true;
   };
+
   document.addEventListener('change', async (event) => {
     if (event.target && event.target.id === 'input-shipping-new-toggle') {
       const box = qs('#shipping-new');
       if (box) box.style.display = event.target.checked ? 'block' : 'none';
     }
+
     if (event.target && event.target.id === 'input-shipping-address' && event.target.value) {
       setStatus('Saving selected address...', 'muted');
       const result = await fetch('index.php?route=checkout/shipping_address.address&language=' + encodeURIComponent(language) + '&address_id=' + encodeURIComponent(event.target.value), { credentials: 'same-origin' }).then(r => r.json());
       if (result.redirect) { location.href = result.redirect; return; }
       if (result.error) { showError('#error-shipping-address', result.error); setStatus('Address selection failed.', 'danger'); return; }
-      const okShip = await chooseShipping();
-      const okPay = okShip ? await choosePayment() : false;
-      setStatus(okPay ? 'Shipping and payment are ready. Confirm your order below.' : 'Please review shipping/payment.', okPay ? 'success' : 'danger');
+      const ok = await loadShippingMethods();
+      setStatus(ok ? 'Choose a shipping method.' : 'Please review shipping options.', ok ? 'success' : 'danger');
+    }
+
+    if (event.target && event.target.classList.contains('checkout-shipping-radio')) {
+      setStatus('Saving shipping method...', 'muted');
+      const ok = await saveShippingMethod(event.target.value);
+      setStatus(ok ? 'Shipping saved. Choose a payment method.' : 'Shipping method failed.', ok ? 'success' : 'danger');
+    }
+
+    if (event.target && event.target.classList.contains('checkout-payment-radio')) {
+      setStatus('Saving payment method...', 'muted');
+      const ok = await savePaymentMethod(event.target.value);
+      setStatus(ok ? 'Payment saved. Confirm your order below.' : 'Payment method failed.', ok ? 'success' : 'danger');
     }
   });
+
   document.addEventListener('submit', async (event) => {
     if (!event.target || event.target.id !== 'form-shipping-address') return;
     event.preventDefault();
     const button = qs('#button-shipping-address');
     button && (button.disabled = true);
     setStatus('Saving shipping address...', 'muted');
-    document.querySelectorAll('.invalid-feedback').forEach(el => el.textContent = '');
+    qsa('.invalid-feedback').forEach(el => el.textContent = '');
     try {
       const result = await postForm(event.target.action, new FormData(event.target));
       if (result.redirect) { location.href = result.redirect; return; }
@@ -122,9 +205,8 @@
         setStatus('Please fix the highlighted address fields.', 'danger');
         return;
       }
-      const okShip = await chooseShipping();
-      const okPay = okShip ? await choosePayment() : false;
-      setStatus(okPay ? 'Shipping and payment are ready. Confirm your order below.' : 'Please review shipping/payment.', okPay ? 'success' : 'danger');
+      const ok = await loadShippingMethods();
+      setStatus(ok ? 'Address saved. Choose a shipping method.' : 'Please review shipping options.', ok ? 'success' : 'danger');
     } catch (error) {
       console.error(error);
       setStatus('Checkout request failed. Please try again.', 'danger');
@@ -132,19 +214,30 @@
       button && (button.disabled = false);
     }
   });
+
   document.addEventListener('click', async (event) => {
     if (event.target && event.target.id === 'button-shipping-methods') {
-      setStatus('Choosing shipping method...', 'muted');
-      const ok = await chooseShipping();
-      setStatus(ok ? 'Shipping method selected.' : 'Shipping method failed.', ok ? 'success' : 'danger');
+      setStatus('Loading shipping methods...', 'muted');
+      const ok = await loadShippingMethods();
+      setStatus(ok ? 'Choose a shipping method.' : 'Shipping methods failed.', ok ? 'success' : 'danger');
     }
+
     if (event.target && event.target.id === 'button-payment-methods') {
-      setStatus('Choosing payment method...', 'muted');
-      const ok = await choosePayment();
-      setStatus(ok ? 'Payment method selected.' : 'Payment method failed.', ok ? 'success' : 'danger');
+      setStatus('Loading payment methods...', 'muted');
+      const ok = await loadPaymentMethods();
+      setStatus(ok ? 'Choose a payment method.' : 'Payment methods failed.', ok ? 'success' : 'danger');
     }
+
     if (event.target && event.target.id === 'button-confirm') {
       event.preventDefault();
+      if (!qs('#input-shipping-code')?.value && qs('#checkout-shipping-method')) {
+        setStatus('Please choose a shipping method first.', 'danger');
+        return;
+      }
+      if (!qs('#input-payment-code')?.value) {
+        setStatus('Please choose a payment method first.', 'danger');
+        return;
+      }
       const button = event.target;
       button.disabled = true;
       setStatus('Confirming order...', 'muted');
@@ -165,6 +258,16 @@
         setStatus('Order confirmation failed. Please try again.', 'danger');
         button.disabled = false;
       }
+    }
+  });
+
+  // If the customer already has an address in session, show choices immediately.
+  document.addEventListener('DOMContentLoaded', async () => {
+    if (qs('#checkout-shipping-method')) {
+      await loadShippingMethods();
+    }
+    if (qs('#input-shipping-code')?.value) {
+      await loadPaymentMethods();
     }
   });
 })();

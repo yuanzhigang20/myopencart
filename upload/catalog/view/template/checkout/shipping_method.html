@@ -1,10 +1,23 @@
-<fieldset>
-  <legend>{{ heading_title }}</legend>
-  <div class="input-group">
-    <span class="input-group-text"><i class="fa fa-truck"></i></span>
-    <input type="text" name="shipping_method" value="{{ shipping_method }}" placeholder="{{ entry_shipping_method }}" id="input-shipping-method" class="form-control" readonly>
-    <button type="button" id="button-shipping-methods" class="btn btn-primary">{{ button_choose }}</button>
+<fieldset class="checkout-method-card">
+  <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+    <div>
+      <legend class="h5 fw-bold mb-1">{{ heading_title }}</legend>
+      <p class="text-muted small mb-0">Choose how this order should be delivered.</p>
+    </div>
+    <button type="button" id="button-shipping-methods" class="btn btn-outline-primary btn-sm">Refresh</button>
   </div>
-  <input type="hidden" name="code" value="{{ code }}" id="input-shipping-code">
-  <div id="error-shipping-method" class="invalid-feedback d-block"></div>
+
+  <div id="shipping-method-options" class="vstack gap-2">
+    {% if shipping_method %}
+      <div class="form-check border rounded-3 p-3 ps-5 bg-light">
+        <input type="radio" class="form-check-input" checked disabled>
+        <label class="form-check-label fw-semibold">{{ shipping_method }}</label>
+      </div>
+    {% else %}
+      <div class="text-muted small">Save/select a shipping address first, then shipping options will appear here.</div>
+    {% endif %}
+  </div>
+
+  <input type="hidden" name="shipping_method" value="{{ code }}" id="input-shipping-code">
+  <div id="error-shipping-method" class="invalid-feedback d-block mt-2"></div>
 </fieldset>
