@@ -315,6 +315,7 @@ class Order extends \Opencart\System\Engine\Controller {
 			$data['orders'][] = [
 				'order_status'    => $result['order_status'] ? $result['order_status'] : $this->language->get('text_missing'),
 				'total'           => $result['total'],
+				'total_text'      => $this->currency->format($result['total'], $result['currency_code'], $result['currency_value']),
 				'date_added'      => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
 				'date_modified'   => date($this->language->get('date_format_short'), strtotime($result['date_modified'])),
 				'shipping_method' => $shipping_method,
@@ -657,19 +658,28 @@ class Order extends \Opencart\System\Engine\Controller {
 				$subscription_edit = '';
 			}
 
+			$price = $product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0);
+			$total = $product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0);
+
 			$data['order_products'][] = [
 				'option'               => $option_data,
 				'subscription_plan'    => $subscription_plan,
 				'subscription_plan_id' => $subscription_plan_id,
 				'subscription_edit'    => $subscription_edit,
-				'price'                => $product['price'] + ($this->config->get('config_tax') ? $product['tax'] : 0),
-				'total'                => $product['total'] + ($this->config->get('config_tax') ? ($product['tax'] * $product['quantity']) : 0),
+				'price'                => $price,
+				'total'                => $total,
+				'price_text'           => $this->currency->format($price, $data['currency_code'], $data['currency_value']),
+				'total_text'           => $this->currency->format($total, $data['currency_code'], $data['currency_value']),
 				'product_edit'         => $this->url->link('catalog/product.form', 'user_token=' . $this->session->data['user_token'] . '&product_id=' . $product['product_id'])
 			] + $product;
 		}
 
 		// Totals
 		$data['order_totals'] = $this->model_sale_order->getTotals($order_id);
+
+		foreach ($data['order_totals'] as $key => $value) {
+			$data['order_totals'][$key]['text'] = $this->currency->format($value['value'], $data['currency_code'], $data['currency_value']);
+		}
 
 		// Customers
 		if (!empty($order_info)) {
@@ -833,6 +843,10 @@ class Order extends \Opencart\System\Engine\Controller {
 		// Totals
 		if (!empty($order_info)) {
 			$data['order_totals'] = $this->model_sale_order->getTotals($order_id);
+
+			foreach ($data['order_totals'] as $key => $value) {
+				$data['order_totals'][$key]['text'] = $this->currency->format($value['value'], $data['currency_code'], $data['currency_value']);
+			}
 		} else {
 			$data['order_totals'] = [];
 		}

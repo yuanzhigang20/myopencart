@@ -363,11 +363,13 @@ class Product extends \Opencart\System\Engine\Controller {
 			}
 
 			$data['products'][] = [
-				'image'   => $this->model_tool_image->resize($image, 40, 40),
-				'price'   => $result['price'],
-				'special' => $special,
-				'edit'    => $this->url->link('catalog/product.form', 'user_token=' . $this->session->data['user_token'] . '&product_id=' . $result['product_id'] . ($result['master_id'] ? '&master_id=' . $result['master_id'] : '') . $url),
-				'variant' => (!$result['master_id'] ? $this->url->link('catalog/product.form', 'user_token=' . $this->session->data['user_token'] . '&master_id=' . $result['product_id'] . $url) : '')
+				'image'        => $this->model_tool_image->resize($image, 40, 40),
+				'price'        => $result['price'],
+				'special'      => $special,
+				'price_text'   => $this->currency->format($result['price'], $this->config->get('config_currency')),
+				'special_text' => $special ? $this->currency->format($special, $this->config->get('config_currency')) : '',
+				'edit'         => $this->url->link('catalog/product.form', 'user_token=' . $this->session->data['user_token'] . '&product_id=' . $result['product_id'] . ($result['master_id'] ? '&master_id=' . $result['master_id'] : '') . $url),
+				'variant'      => (!$result['master_id'] ? $this->url->link('catalog/product.form', 'user_token=' . $this->session->data['user_token'] . '&master_id=' . $result['product_id'] . $url) : '')
 			] + $result;
 		}
 

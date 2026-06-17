@@ -320,8 +320,14 @@ class Confirm extends \Opencart\System\Engine\Controller {
 				'subscription' => $subscription,
 				'price'        => $price_status ? $product['price'] : '',
 				'total'        => $price_status ? $product['total'] : '',
+				'price_text'   => $price_status ? $this->currency->format($product['price'], $this->session->data['currency']) : '',
+				'total_text'   => $price_status ? $this->currency->format($product['total'], $this->session->data['currency']) : '',
 				'href'         => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product['product_id'])
 			] + $product;
+		}
+
+		foreach ($totals as $key => $value) {
+			$totals[$key]['text'] = $this->currency->format($value['value'], $this->session->data['currency']);
 		}
 
 		$data['totals'] = $totals;

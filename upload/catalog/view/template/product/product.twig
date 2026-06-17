@@ -93,7 +93,7 @@
 
     <br/>
     <div id="product">
-      <form id="form-product" data-on="submit:onSubmit">
+      <form id="form-product" action="{{ cart_add }}" method="post">
         {% if options %}
         <hr>
         <h3>{{ text_option }}</h3>
@@ -324,6 +324,82 @@
   {% endif %}
 </div>
 {{ related }}
+
+
+<script>
+(function () {
+  const form = document.getElementById('form-product');
+  if (!form) return;
+
+  function showMessage(type, message) {
+    let box = document.getElementById('product-alert');
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'product-alert';
+      form.parentNode.insertBefore(box, form);
+    }
+    box.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible"><i class="fa-solid fa-circle-' + (type === 'danger' ? 'exclamation' : 'check') + '"></i> ' + message + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>';
+  }
+
+  function clearErrors() {
+    form.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
+    form.querySelectorAll('.invalid-feedback,.form-text').forEach(el => {
+      if (el.id && el.id.startsWith('error-')) el.textContent = '';
+    });
+  }
+
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    clearErrors();
+    const button = document.getElementById('button-cart');
+    const original = button ? button.innerHTML : '';
+    if (button) {
+      button.disabled = true;
+      button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Adding...';
+    }
+
+    try {
+      const response = await fetch(form.action.replaceAll('&amp;', '&'), {
+        method: 'POST',
+        body: new FormData(form),
+        credentials: 'same-origin'
+      });
+      const json = await response.json();
+
+      if (json.redirect) {
+        window.location = json.redirect;
+        return;
+      }
+
+      if (json.error) {
+        if (json.error.warning) showMessage('danger', json.error.warning);
+        Object.keys(json.error).forEach(function (key) {
+          if (key === 'warning') return;
+          const id = key.replaceAll('_', '-');
+          const input = document.getElementById('input-' + id);
+          const error = document.getElementById('error-' + id);
+          if (input) input.classList.add('is-invalid');
+          if (error) error.textContent = json.error[key];
+        });
+        if (!json.error.warning) showMessage('danger', 'Please check the product options and try again.');
+        return;
+      }
+
+      if (json.success) {
+        showMessage('success', json.success);
+      }
+    } catch (error) {
+      showMessage('danger', 'Could not add this product to cart. Please refresh and try again.');
+      console.error(error);
+    } finally {
+      if (button) {
+        button.disabled = false;
+        button.innerHTML = original;
+      }
+    }
+  });
+})();
+</script>
 
 </main>
 {{ footer }}
