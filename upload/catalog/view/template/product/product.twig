@@ -1,3 +1,5 @@
+{{ header }}
+<main class="container py-4">
 <div class="row mb-3">
 
   {% if thumb or images %}
@@ -45,20 +47,20 @@
     {% if price %}
     <ul class="list-unstyled">
 
-      {% if !special %}
+      {% if not special %}
       <li>
-        <h2><span class="price-new"><x-currency code="{{ currency }}" amount="{{ price }}"></x-currency></span></h2>
+        <h2><span class="price-new">{{ price }}</span></h2>
       </li>
       {% else %}
-      <li><span class="price-old"><x-currency code="{{ currency }}" amount="{{ price }}"></x-currency></span></li>
+      <li><span class="price-old">{{ price }}</span></li>
       <li>
-        <h2><span class="price-new"><x-currency code="{{ currency }}" amount="{{ special }}"></x-currency></span></h2>
+        <h2><span class="price-new">{{ special }}</span></h2>
       </li>
       {% endif %}
 
       {% if tax %}
       <li>{{ text_tax }}
-        <x-currency code="{{ currency }}" amount="{{ tax }}"></x-currency>
+        {{ tax }}
       </li>
       {% endif %}
 
@@ -73,7 +75,7 @@
 
       {% for discount in discounts %}
       <li>{{ discount.quantity }}{{ text_discount }}
-        <x-currency code="{{ currency }}" amount="{{ discount.price }}"></x-currency>
+        {{ discount.price }}
       </li>
       {% endfor %}
 
@@ -274,7 +276,7 @@
         </div>
 
         {% if minimum > 1 %}
-        <div class="alert alert-warning"><i class="fa-solid fa-circle-info"></i> {{ text_minimum | replace: '%s', minimum }}</div>
+        <div class="alert alert-warning"><i class="fa-solid fa-circle-info"></i> {{ text_minimum }}</div>
         {% endif %}
       </form>
     </div>
@@ -322,3 +324,6 @@
   {% endif %}
 </div>
 {{ related }}
+
+</main>
+{{ footer }}

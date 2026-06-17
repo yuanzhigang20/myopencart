@@ -1,0 +1,48 @@
+{{ header }}
+<main class="container py-4">
+  <section class="oc-hero p-4 p-lg-5 mb-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="badge text-bg-light text-primary mb-3">OpenCart Demo Store</span>
+        <h1 class="display-5 fw-bold mb-3">Your PHP independent store is live.</h1>
+        <p class="lead mb-4">Browse test products, add them to cart, register a customer account, and run through the shopping flow.</p>
+        <a class="btn btn-light btn-lg me-2" href="#products">Shop test products</a>
+        <a class="btn btn-outline-light btn-lg" href="admin/">Admin panel</a>
+      </div>
+      <div class="col-lg-5">
+        <div class="bg-white text-dark rounded-4 p-4 shadow">
+          <h3 class="h5 fw-bold">Test categories</h3>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            {% for category in categories %}<a class="btn btn-outline-primary btn-sm" href="{{ category.href }}">{{ category.name }}</a>{% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="mb-5">
+    <div class="d-flex justify-content-between align-items-end mb-3">
+      <div><h2 class="fw-bold mb-1">Featured test products</h2><p class="text-muted mb-0">Initialized sample data for checkout testing.</p></div>
+    </div>
+    {% if products %}
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+      {% for product in products %}
+      <div class="col">
+        <div class="card product-card h-100 border-0 shadow-sm">
+          <a href="{{ product.href }}"><img src="{{ product.thumb }}" class="card-img-top" alt="{{ product.name }}"></a>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h6 fw-bold"><a class="text-decoration-none text-dark" href="{{ product.href }}">{{ product.name }}</a></h3>
+            <p class="text-muted small flex-grow-1">{{ product.description }}</p>
+            <div class="price mb-3">{{ product.price }}</div>
+            <div class="d-grid gap-2">
+              <a class="btn btn-primary" href="{{ product.href }}">View product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}<div class="alert alert-warning">No products yet. Add products in admin panel.</div>{% endif %}
+  </section>
+</main>
+{{ footer }}

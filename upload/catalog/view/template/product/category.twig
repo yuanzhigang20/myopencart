@@ -1,0 +1,7 @@
+{{ header }}
+<main class="container py-4">
+  <h1 class="fw-bold">{{ heading_title }}</h1>
+  {% if description %}<div class="lead text-muted mb-4">{{ description }}</div>{% endif %}
+  {% if products %}<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">{% for product in products %}<div class="col">{{ product|raw }}</div>{% endfor %}</div>{% else %}<div class="alert alert-info">{{ text_no_results }}</div>{% endif %}
+</main>
+{{ footer }}

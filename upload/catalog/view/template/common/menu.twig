@@ -1,0 +1,11 @@
+{% if categories %}
+<div class="bg-primary">
+  <div class="container">
+    <ul class="nav py-2 flex-wrap">
+      {% for category in categories %}
+        <li class="nav-item"><a class="nav-link text-white" href="{{ category.href }}">{{ category.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endif %}
