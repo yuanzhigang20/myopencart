@@ -37,7 +37,9 @@ class Register extends \Opencart\System\Engine\Controller {
 			'href' => $this->url->link('account/register', 'language=' . $this->config->get('config_language'))
 		];
 
-		$data['text_account_already'] = sprintf($this->language->get('text_account_already'), $this->url->link('account/login', 'language=' . $this->config->get('config_language')));
+		$data['login'] = $this->url->link('account/login', 'language=' . $this->config->get('config_language'));
+
+		$data['text_account_already'] = sprintf($this->language->get('text_account_already'), $data['login']);
 
 		$data['error_upload_size'] = sprintf($this->language->get('error_upload_size'), $this->config->get('config_file_max_size'));
 
