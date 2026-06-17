@@ -1,3 +1,9 @@
+{{ header }}
+<main class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-xl-10">
+      <div class="card border-0 shadow-sm rounded-4">
+        <div class="card-body p-4 p-lg-5">
 <h1>{{ heading_title }}</h1>
 <form id="form-affiliate" action="{{ save }}" data-on="submit:onSubmit">
   <fieldset>
@@ -197,9 +203,18 @@
   </fieldset>
   <div class="text-end">
     {% if text_agree %}
-      <label for="input-agree" class="form-check-label">{{ text_agree }}</label>
-      <x-switch name="agree" value="1" input-id="input-agree" input-class="form-switch form-switch-lg form-check-reverse form-check-inline align-top"></x-switch>
+      <div class="form-check form-switch form-check-inline align-top">
+        <input type="checkbox" name="agree" value="1" id="input-agree" class="form-check-input">
+        <label for="input-agree" class="form-check-label">{{ text_agree }}</label>
+      </div>
     {% endif %}
     <button type="submit" class="btn btn-primary">{{ button_continue }}</button>
   </div>
 </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{ footer }}

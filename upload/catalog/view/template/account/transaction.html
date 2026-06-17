@@ -1,5 +1,11 @@
+{{ header }}
+<main class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-xl-10">
+      <div class="card border-0 shadow-sm rounded-4">
+        <div class="card-body p-4 p-lg-5">
 <h1>{{ heading_title }}</h1>
-<p>{{ text_total }} <strong><x-currency code="{{ currency }}" amount="{{ total }}"></x-currency></strong>.
+<p>{{ text_total }} <strong>{{ total_text }}</strong>.
 </p>
 <table class="table table-bordered table-hover">
   <thead>
@@ -16,7 +22,7 @@
           <td>{{ transaction.date_added }}</td>
           <td>{{ transaction.description }}</td>
           <td class="text-end">
-            <x-currency code="{{ currency }}" amount="{{ transaction.amount }}"></x-currency>
+            {{ transaction.amount_text }}
           </td>
         </tr>
       {% endfor %}
@@ -32,3 +38,10 @@
   <div class="col-sm-6 text-end">{{ results }}</div>
 </div>
 <div class="text-end"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{ footer }}

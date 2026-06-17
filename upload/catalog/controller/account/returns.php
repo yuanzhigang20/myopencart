@@ -86,7 +86,7 @@ class Returns extends \Opencart\System\Engine\Controller {
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 
-		$this->response->setOutput($this->load->view('account/returns_list', $data));
+		$this->response->setOutput($this->load->view('account/return_list', $data));
 	}
 
 	/**
@@ -178,7 +178,7 @@ class Returns extends \Opencart\System\Engine\Controller {
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
 
-			$this->response->setOutput($this->load->view('account/returns_info', $data));
+			$this->response->setOutput($this->load->view('account/return_info', $data));
 		} else {
 			return new \Opencart\System\Engine\Action('error/not_found');
 		}
@@ -326,7 +326,7 @@ class Returns extends \Opencart\System\Engine\Controller {
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 
-		$this->response->setOutput($this->load->view('account/returns_form', $data));
+		$this->response->setOutput($this->load->view('account/return_form', $data));
 	}
 
 	/**
@@ -539,6 +539,6 @@ class Returns extends \Opencart\System\Engine\Controller {
 
 		$data['results'] = sprintf($this->language->get('text_pagination'), ($return_total) ? (($page - 1) * $limit) + 1 : 0, ((($page - 1) * $limit) > ($return_total - $limit)) ? $return_total : ((($page - 1) * $limit) + $limit), $return_total, ceil($return_total / $limit));
 
-		return $this->load->view('account/returns_history', $data);
+		return $this->load->view('account/return_history', $data);
 	}
 }

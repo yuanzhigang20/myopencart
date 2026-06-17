@@ -77,6 +77,7 @@ class Order extends \Opencart\System\Engine\Controller {
 				'date_added'     => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
 				'product_total'  => $this->model_account_order->getTotalProductsByOrderId($result['order_id']),
 				'total'          => $result['total'],
+				'total_text'     => $this->currency->format($result['total'], $result['currency_code'], $result['currency_value']),
 				'currency_code'  => $result['currency_code'],
 				'currency_value' => $result['currency_value'],
 				'view'           => $this->url->link('account/order.info', 'language=' . $this->config->get('config_language') . '&customer_token=' . $this->session->data['customer_token'] . '&order_id=' . $result['order_id']),

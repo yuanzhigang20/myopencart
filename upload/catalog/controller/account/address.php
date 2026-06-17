@@ -254,7 +254,7 @@ class Address extends \Opencart\System\Engine\Controller {
 		if (!empty($address_info)) {
 			$data['zone_id'] = $address_info['zone_id'];
 		} else {
-			$data['zone_id'] = 0;
+			$data['zone_id'] = (int)$this->config->get('config_zone_id');
 		}
 
 		// Custom Fields
