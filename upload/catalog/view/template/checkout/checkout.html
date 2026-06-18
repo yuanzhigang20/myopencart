@@ -61,11 +61,42 @@
 
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]));
 
+  const executeEmbeddedScripts = async (container) => {
+    const scripts = Array.from(container.querySelectorAll('script'));
+
+    for (const oldScript of scripts) {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+
+        Array.from(oldScript.attributes).forEach((attribute) => {
+          script.setAttribute(attribute.name, attribute.value);
+        });
+
+        if (oldScript.src) {
+          script.onload = resolve;
+          script.onerror = reject;
+        } else {
+          script.textContent = oldScript.textContent;
+        }
+
+        oldScript.replaceWith(script);
+
+        if (!script.src) {
+          resolve();
+        }
+      });
+    }
+  };
+
   const refreshConfirm = async () => {
     const response = await fetch('index.php?route=checkout/confirm.confirm&language=' + encodeURIComponent(language), { credentials: 'same-origin' });
     const html = await response.text();
     const confirm = qs('#checkout-confirm');
-    if (confirm) confirm.innerHTML = html;
+
+    if (confirm) {
+      confirm.innerHTML = html;
+      await executeEmbeddedScripts(confirm);
+    }
   };
 
   const renderShippingMethods = (shippingMethods) => {
