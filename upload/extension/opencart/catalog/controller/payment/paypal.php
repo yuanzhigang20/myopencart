@@ -148,7 +148,6 @@ class Paypal extends \Opencart\System\Engine\Controller {
 
 		$response = curl_exec($ch);
 		$error = curl_error($ch);
-		curl_close($ch);
 
 		if ($response === false) {
 			return ['error' => $error ?: 'PayPal request failed'];
@@ -170,7 +169,6 @@ class Paypal extends \Opencart\System\Engine\Controller {
 		curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 
 		$response = curl_exec($ch);
-		curl_close($ch);
 
 		$result = json_decode((string)$response, true);
 
