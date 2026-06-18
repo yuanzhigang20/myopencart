@@ -1,0 +1,93 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="float-end">
+        <button type="submit" form="form-payment" title="{{ button_save }}" class="btn btn-primary"><i class="fa-solid fa-save"></i></button>
+        <a href="{{ back }}" title="{{ button_back }}" class="btn btn-light"><i class="fa-solid fa-reply"></i></a>
+      </div>
+      <h1>{{ heading_title }}</h1>
+      <ol class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+          <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-header"><i class="fa-solid fa-pencil"></i> {{ text_edit }}</div>
+      <div class="card-body">
+        <form id="form-payment" action="{{ save }}" method="post" data-oc-toggle="ajax">
+          <div class="row mb-3">
+            <label for="input-environment" class="col-sm-2 col-form-label">{{ entry_environment }}</label>
+            <div class="col-sm-10">
+              <select name="payment_paypal_environment" id="input-environment" class="form-select">
+                <option value="sandbox"{% if payment_paypal_environment == 'sandbox' %} selected{% endif %}>{{ text_sandbox }}</option>
+                <option value="live"{% if payment_paypal_environment == 'live' %} selected{% endif %}>{{ text_live }}</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="input-client-id" class="col-sm-2 col-form-label">{{ entry_client_id }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="payment_paypal_client_id" value="{{ payment_paypal_client_id }}" placeholder="{{ entry_client_id }}" id="input-client-id" class="form-control"/>
+              <div class="form-text">{{ help_client_id }}</div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="input-secret" class="col-sm-2 col-form-label">{{ entry_secret }}</label>
+            <div class="col-sm-10">
+              <input type="password" name="payment_paypal_secret" value="{{ payment_paypal_secret }}" placeholder="{{ entry_secret }}" id="input-secret" class="form-control" autocomplete="new-password"/>
+              <div class="form-text">{{ help_secret }}</div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="input-intent" class="col-sm-2 col-form-label">{{ entry_intent }}</label>
+            <div class="col-sm-10">
+              <select name="payment_paypal_intent" id="input-intent" class="form-select">
+                <option value="CAPTURE"{% if payment_paypal_intent == 'CAPTURE' %} selected{% endif %}>{{ text_capture }}</option>
+                <option value="AUTHORIZE"{% if payment_paypal_intent == 'AUTHORIZE' %} selected{% endif %}>{{ text_authorization }}</option>
+              </select>
+              <div class="form-text">{{ help_intent }}</div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="input-order-status" class="col-sm-2 col-form-label">{{ entry_order_status }}</label>
+            <div class="col-sm-10">
+              <select name="payment_paypal_order_status_id" id="input-order-status" class="form-select">
+                {% for order_status in order_statuses %}
+                  <option value="{{ order_status.order_status_id }}"{% if order_status.order_status_id == payment_paypal_order_status_id %} selected{% endif %}>{{ order_status.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="input-geo-zone" class="col-sm-2 col-form-label">{{ entry_geo_zone }}</label>
+            <div class="col-sm-10">
+              <select name="payment_paypal_geo_zone_id" id="input-geo-zone" class="form-select">
+                <option value="0">{{ text_all_zones }}</option>
+                {% for geo_zone in geo_zones %}
+                  <option value="{{ geo_zone.geo_zone_id }}"{% if geo_zone.geo_zone_id == payment_paypal_geo_zone_id %} selected{% endif %}>{{ geo_zone.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label class="col-sm-2 col-form-label">{{ entry_status }}</label>
+            <div class="col-sm-10">
+              <x-switch name="payment_paypal_status" value="1" checked="{{ payment_paypal_status }}" input-id="input-status" input-class="form-switch form-switch-lg"></x-switch>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="input-sort-order" class="col-sm-2 col-form-label">{{ entry_sort_order }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="payment_paypal_sort_order" value="{{ payment_paypal_sort_order }}" placeholder="{{ entry_sort_order }}" id="input-sort-order" class="form-control"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{ footer }}
