@@ -378,6 +378,24 @@ class Category extends \Opencart\System\Engine\Controller {
 			$this->document->addLink($this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'] . '&page=' . ($page + 1)), 'next');
 		}
 
+		$item_list = [];
+
+		foreach ($data['products'] as $position => $product_html) {
+			$item_list[] = [
+				'@type' => 'ListItem',
+				'position' => $position + 1,
+				'name' => strip_tags((string)$product_html)
+			];
+		}
+
+		$this->document->setJsonLd(json_encode([
+			'@context' => 'https://schema.org',
+			'@type' => 'CollectionPage',
+			'name' => $category_info['name'],
+			'description' => trim(strip_tags(html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8'))) ?: $category_info['meta_description'],
+			'url' => html_entity_decode($this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'], true))
+		], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+
 		$data['sort'] = $sort;
 		$data['order'] = $order;
 		$data['limit'] = $limit;

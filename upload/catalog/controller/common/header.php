@@ -26,6 +26,14 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['links'] = $this->document->getLinks();
 		$data['scripts'] = $this->document->getScripts();
 
+		$route = $this->request->get['route'] ?? 'common/home';
+		$query = $this->request->get;
+		unset($query['_route_']);
+		$data['current_url'] = html_entity_decode($this->url->link((string)$route, http_build_query($query), true));
+		$data['site_url'] = $this->config->get('config_ssl') ?: $this->config->get('config_url');
+		$data['metas'] = method_exists($this->document, 'getMetas') ? $this->document->getMetas() : [];
+		$data['json_ld'] = method_exists($this->document, 'getJsonLd') ? $this->document->getJsonLd() : '';
+
 		$data['name'] = $this->config->get('config_name');
 
 		// Fav icon

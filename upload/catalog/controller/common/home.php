@@ -63,6 +63,19 @@ class Home extends \Opencart\System\Engine\Controller {
 			];
 		}
 
+		$this->document->addLink($this->url->link('common/home', 'language=' . $this->config->get('config_language')), 'canonical');
+		$this->document->setJsonLd(json_encode([
+			'@context' => 'https://schema.org',
+			'@type' => 'WebSite',
+			'name' => $this->config->get('config_name'),
+			'url' => $this->config->get('config_ssl') ?: $this->config->get('config_url'),
+			'potentialAction' => [
+				'@type' => 'SearchAction',
+				'target' => ($this->config->get('config_ssl') ?: $this->config->get('config_url')) . 'index.php?route=product/search&language=' . $this->config->get('config_language') . '&search={search_term_string}',
+				'query-input' => 'required name=search_term_string'
+			]
+		], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 

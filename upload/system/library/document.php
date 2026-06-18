@@ -41,6 +41,10 @@ class Document {
 	 * @var array<int, array<string, string>> Meta tags with their attributes
 	 */
 	private array $metas = [];
+	/**
+	 * @var string JSON-LD payload
+	 */
+	private string $json_ld = '';
 
 	/**
 	 * Set Title
@@ -203,5 +207,24 @@ class Document {
 	 */
 	public function getMetas(): array {
 		return $this->metas;
+	}
+	/**
+	 * Set JSON-LD
+	 *
+	 * @param string $json_ld
+	 *
+	 * @return void
+	 */
+	public function setJsonLd(string $json_ld): void {
+		$this->json_ld = $json_ld;
+	}
+
+	/**
+	 * Get JSON-LD
+	 *
+	 * @return string
+	 */
+	public function getJsonLd(): string {
+		return $this->json_ld;
 	}
 }

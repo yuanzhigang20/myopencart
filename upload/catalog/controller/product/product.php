@@ -444,6 +444,30 @@ class Product extends \Opencart\System\Engine\Controller {
 
 		$data['share'] = $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_id);
 
+		$schema = [
+			'@context' => 'https://schema.org',
+			'@type' => 'Product',
+			'name' => $product_info['name'],
+			'description' => trim(strip_tags(html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8'))) ?: $product_info['meta_description'],
+			'sku' => $product_info['model'],
+			'mpn' => $product_info['model'],
+			'url' => html_entity_decode($data['share']),
+			'offers' => [
+				'@type' => 'Offer',
+				'url' => html_entity_decode($data['share']),
+				'priceCurrency' => $this->session->data['currency'],
+				'price' => number_format((float)($product_info['special'] ?: $product_info['price']), 2, '.', ''),
+				'availability' => $product_info['quantity'] > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+				'itemCondition' => 'https://schema.org/NewCondition'
+			]
+		];
+
+		if ($data['thumb']) {
+			$schema['image'] = [$data['thumb']];
+		}
+
+		$this->document->setJsonLd(json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+
 		// Attribute Groups
 		$data['attribute_groups'] = $this->model_catalog_product->getAttributes($product_id);
 
