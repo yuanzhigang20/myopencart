@@ -1,9 +1,10 @@
-<div class="card product-card h-100 border-0 shadow-sm">
-  <a href="{{ href }}"><img src="{{ thumb }}" alt="{{ name }}" class="card-img-top"></a>
+<div class="card product-card h-100">
+  <a class="product-image-wrap" href="{{ href }}"><img src="{{ thumb }}" alt="{{ name }} private wellness product" class="card-img-top" loading="lazy" width="360" height="450"></a>
   <div class="card-body d-flex flex-column">
     <h3 class="h6 fw-bold"><a class="text-decoration-none text-dark" href="{{ href }}">{{ name }}</a></h3>
+    <div class="product-badges"><span class="wellness-pill">Discreet</span><span class="wellness-pill">18+</span><span class="wellness-pill">Private delivery</span></div>
     <p class="text-muted small flex-grow-1">{{ description }}</p>
-    {% if price %}<div class="price mb-3">{{ price }}</div>{% endif %}
-    <a class="btn btn-primary mt-auto" href="{{ href }}">View product</a>
+    {% if price %}<div class="price mb-3">{% if special %}<span class="text-muted text-decoration-line-through fs-6 me-1">{{ price }}</span> {{ special }}{% else %}{{ price }}{% endif %}</div>{% endif %}
+    <a class="btn btn-primary mt-auto" href="{{ href }}">View details</a>
   </div>
 </div>

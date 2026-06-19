@@ -29,8 +29,9 @@ class Product extends \Opencart\System\Engine\Controller {
 			return new \Opencart\System\Engine\Action('error/not_found');
 		}
 
-		$this->document->setTitle($product_info['meta_title']);
-		$this->document->setDescription($product_info['meta_description']);
+		$plain_description = trim(strip_tags(html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8')));
+		$this->document->setTitle($product_info['meta_title'] ?: ($product_info['name'] . ' | Discreet Sexual Wellness | Lovanest'));
+		$this->document->setDescription($product_info['meta_description'] ?: oc_substr(($plain_description ?: 'Premium private wellness product with discreet packaging, secure checkout, care guidance and 18+ responsible shopping.'), 0, 155));
 		$this->document->setKeywords($product_info['meta_keyword']);
 		$this->document->addLink($this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_id), 'canonical');
 
@@ -466,7 +467,31 @@ class Product extends \Opencart\System\Engine\Controller {
 			$schema['image'] = [$data['thumb']];
 		}
 
-		$this->document->setJsonLd(json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+		$faq_schema = [
+			'@type' => 'FAQPage',
+			'mainEntity' => [
+				[
+					'@type' => 'Question',
+					'name' => 'Will the package be discreet?',
+					'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'The store is designed around discreet packaging and private delivery expectations, without explicit wording on the public-facing parcel.']
+				],
+				[
+					'@type' => 'Question',
+					'name' => 'How do I choose the right product?',
+					'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Use scenario categories such as Beginner Friendly, For Couples, Solo Wellness, Quiet & Discreet, Waterproof, and Lubricants & Care.']
+				],
+				[
+					'@type' => 'Question',
+					'name' => 'How should intimate products be cleaned?',
+					'acceptedAnswer' => ['@type' => 'Answer', 'text' => 'Follow the product-specific material and care instructions. Clean before and after use, dry fully, and store in a clean private place.']
+				]
+			]
+		];
+
+		$this->document->setJsonLd(json_encode([
+			'@context' => 'https://schema.org',
+			'@graph' => [$schema, $faq_schema]
+		], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 
 		// Attribute Groups
 		$data['attribute_groups'] = $this->model_catalog_product->getAttributes($product_id);

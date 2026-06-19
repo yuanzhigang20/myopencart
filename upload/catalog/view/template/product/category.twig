@@ -1,7 +1,50 @@
 {{ header }}
 <main class="container py-4">
-  <h1 class="fw-bold">{{ heading_title }}</h1>
-  {% if description %}<div class="lead text-muted mb-4">{{ description }}</div>{% endif %}
-  {% if products %}<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">{% for product in products %}<div class="col">{{ product|raw }}</div>{% endfor %}</div>{% else %}<div class="alert alert-info">{{ text_no_results }}</div>{% endif %}
+  <nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb small">
+      {% for breadcrumb in breadcrumbs %}<li class="breadcrumb-item{% if loop.last %} active{% endif %}">{% if not loop.last %}<a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>{% else %}{{ breadcrumb.text }}{% endif %}</li>{% endfor %}
+    </ol>
+  </nav>
+
+  <section class="wellness-section mb-4">
+    <div class="row g-3 align-items-end">
+      <div class="col-lg-7">
+        <span class="wellness-kicker mb-2">Private wellness category</span>
+        <h1 class="fw-bold mb-2">{{ heading_title }}</h1>
+        {% if description %}<div class="text-muted">{{ description }}</div>{% else %}<p class="text-muted mb-0">Browse discreet adult wellness essentials with clear product information, private delivery and secure checkout.</p>{% endif %}
+      </div>
+      <div class="col-lg-5">
+        <div class="trust-strip p-3">
+          <div class="row g-2 row-cols-2">
+            <div class="col small"><i class="fa-solid fa-box me-1"></i> Discreet packaging</div>
+            <div class="col small"><i class="fa-solid fa-lock me-1"></i> Secure checkout</div>
+            <div class="col small"><i class="fa-solid fa-user-lock me-1"></i> Private billing</div>
+            <div class="col small"><i class="fa-solid fa-circle-check me-1"></i> 18+ only</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if categories %}
+  <section class="mb-4">
+    <div class="d-flex flex-wrap gap-2">
+      {% for category in categories %}<a class="btn btn-light btn-sm" href="{{ category.href }}">{{ category.name }}</a>{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="mb-3 d-flex flex-column flex-lg-row justify-content-between gap-3 align-items-lg-center">
+    <div class="age-note">Product cards use clean naming, privacy-first badges and consistent image ratios.</div>
+    <div class="d-flex gap-2 align-items-center">
+      {% if sorts %}<select class="form-select form-select-sm" onchange="location = this.value" aria-label="Sort products">{% for sorts_item in sorts %}<option value="{{ sorts_item.href }}"{% if sorts_item.value == sort ~ '-' ~ order %} selected{% endif %}>{{ sorts_item.text }}</option>{% endfor %}</select>{% endif %}
+      {% if limits %}<select class="form-select form-select-sm" onchange="location = this.value" aria-label="Products per page">{% for limits_item in limits %}<option value="{{ limits_item.href }}"{% if limits_item.value == limit %} selected{% endif %}>{{ limits_item.text }}</option>{% endfor %}</select>{% endif %}
+    </div>
+  </section>
+
+  {% if products %}
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">{% for product in products %}<div class="col">{{ product|raw }}</div>{% endfor %}</div>
+  <div class="row mt-4 align-items-center"><div class="col-md-6">{{ pagination }}</div><div class="col-md-6 text-md-end small text-muted">{{ results }}</div></div>
+  {% else %}<div class="alert alert-info">{{ text_no_results }}</div>{% endif %}
 </main>
 {{ footer }}

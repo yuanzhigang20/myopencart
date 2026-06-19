@@ -67,8 +67,9 @@ class Category extends \Opencart\System\Engine\Controller {
 			return new \Opencart\System\Engine\Action('error/not_found');
 		}
 
-		$this->document->setTitle($category_info['meta_title']);
-		$this->document->setDescription($category_info['meta_description']);
+		$plain_category_description = trim(strip_tags(html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8')));
+		$this->document->setTitle($category_info['meta_title'] ?: ($category_info['name'] . ' | Private Wellness Products | Lovanest'));
+		$this->document->setDescription($category_info['meta_description'] ?: oc_substr(($plain_category_description ?: 'Browse discreet adult wellness essentials with private packaging, secure checkout, clean product details and 18+ responsible retail.'), 0, 155));
 		$this->document->setKeywords($category_info['meta_keyword']);
 
 		$this->document->addScript('view/javascript/catalog/category.js');

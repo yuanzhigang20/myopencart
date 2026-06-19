@@ -14,13 +14,15 @@ class Home extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 */
 	public function index(): void {
+		$this->document->setTitle('Discreet Intimacy Essentials | Lovanest Sexual Wellness');
+		$this->document->setDescription('Shop premium private wellness and intimacy essentials with discreet packaging, secure checkout, body-safe product details and 18+ responsible retail.');
+		$this->document->setKeywords('sexual wellness, intimacy products, discreet packaging, private wellness, adult wellness');
+
 		$description = $this->config->get('config_description');
 		$language_id = $this->config->get('config_language_id');
 
 		if (isset($description[$language_id])) {
-			$this->document->setTitle($description[$language_id]['meta_title']);
-			$this->document->setDescription($description[$language_id]['meta_description']);
-			$this->document->setKeywords($description[$language_id]['meta_keyword']);
+			// Keep global store metadata available, but use a conversion-focused wellness title above.
 		}
 
 		// Homepage categories
@@ -57,7 +59,7 @@ class Home extends \Opencart\System\Engine\Controller {
 				'product_id'   => $result['product_id'],
 				'name'         => $result['name'],
 				'description'  => $description,
-				'thumb'        => $this->model_tool_image->resize($image, 360, 260),
+				'thumb'        => $this->model_tool_image->resize($image, 480, 600),
 				'price'        => $price,
 				'href'         => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $result['product_id'])
 			];

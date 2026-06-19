@@ -36,6 +36,27 @@ class Header extends \Opencart\System\Engine\Controller {
 
 		$data['name'] = $this->config->get('config_name');
 
+		// Wellness category quick links for a premium, private navigation experience.
+		$this->load->model('catalog/category');
+		$data['wellness_categories'] = [];
+
+		$wellness_category_names = [
+			'Beginner Friendly',
+			'For Couples',
+			'Solo Wellness',
+			'Quiet & Discreet',
+			'Waterproof',
+			'Lubricants & Care',
+			'Gift Sets'
+		];
+
+		foreach ($wellness_category_names as $category_name) {
+			$data['wellness_categories'][] = [
+				'name' => $category_name,
+				'href' => $this->url->link('product/search', 'language=' . $this->config->get('config_language') . '&search=' . urlencode($category_name))
+			];
+		}
+
 		// Fav icon
 		if (is_file(DIR_IMAGE . $this->config->get('config_icon'))) {
 			$data['icon'] = $this->config->get('config_url') . 'image/' . $this->config->get('config_icon');
