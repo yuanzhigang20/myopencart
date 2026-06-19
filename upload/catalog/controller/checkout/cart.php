@@ -98,6 +98,8 @@ class Cart extends \Opencart\System\Engine\Controller {
 		}
 
 		$data['edit'] = $this->url->link('checkout/cart.edit', 'language=' . $this->config->get('config_language'));
+		$data['list'] = $this->url->link('checkout/cart.list', 'language=' . $this->config->get('config_language'));
+		$data['cart_info'] = $this->url->link('common/cart.info', 'language=' . $this->config->get('config_language'));
 
 		// Display prices
 		if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {

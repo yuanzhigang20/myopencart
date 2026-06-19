@@ -47,6 +47,76 @@
     }
   }
 
+  function refreshCartTargets(loadUrl, targetSelector, cartLoadUrl) {
+    var jobs = [];
+
+    if (loadUrl && targetSelector) {
+      var target = document.querySelector(targetSelector);
+      if (target) {
+        jobs.push(fetch(loadUrl.replaceAll('&amp;', '&'), { credentials: 'same-origin' }).then(function (response) { return response.text(); }).then(function (html) { target.innerHTML = html; }));
+      }
+    }
+
+    var cartUrl = cartLoadUrl || ((targetSelector === '#cart') ? loadUrl : '');
+    if (cartUrl && targetSelector !== '#cart') {
+      var cart = document.querySelector('#cart');
+      if (cart) {
+        jobs.push(fetch(cartUrl.replaceAll('&amp;', '&'), { credentials: 'same-origin' }).then(function (response) { return response.text(); }).then(function (html) { cart.innerHTML = html; }));
+      }
+    }
+
+    return Promise.all(jobs);
+  }
+
+  document.addEventListener('click', async function (event) {
+    var link = event.target.closest('a[data-oc-toggle="ajax"]');
+    if (!link) return;
+
+    event.preventDefault();
+
+    var loadUrl = link.getAttribute('data-oc-load');
+    var targetSelector = link.getAttribute('data-oc-target');
+    var cartLoadUrl = link.getAttribute('data-oc-cart-load');
+
+    try {
+      link.classList.add('disabled');
+      var response = await fetch(link.href.replaceAll('&amp;', '&'), {
+        method: 'GET',
+        headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        credentials: 'same-origin'
+      });
+      var json = await response.json();
+
+      document.querySelectorAll('.alert-dismissible').forEach(function (node) { node.remove(); });
+
+      if (json.redirect && loadUrl && targetSelector) {
+        await refreshCartTargets(loadUrl, targetSelector, cartLoadUrl);
+        return;
+      }
+
+      if (json.redirect) {
+        window.location.href = json.redirect;
+        return;
+      }
+
+      if (json.error) {
+        var message = typeof json.error === 'string' ? json.error : (json.error.warning || Object.values(json.error)[0]);
+        showAlert('danger', '<i class="fa-solid fa-circle-exclamation"></i> ' + message);
+      }
+
+      if (json.success) {
+        showAlert('success', '<i class="fa-solid fa-circle-check"></i> ' + json.success);
+      }
+
+      await refreshCartTargets(loadUrl, targetSelector, cartLoadUrl);
+    } catch (error) {
+      showAlert('danger', '<i class="fa-solid fa-circle-exclamation"></i> Cart update failed. Please try again.');
+      console.error(error);
+    } finally {
+      link.classList.remove('disabled');
+    }
+  }, true);
+
   document.addEventListener('submit', async function (event) {
     var form = event.target;
     var button = event.submitter || form.querySelector('button[type="submit"]');
@@ -59,6 +129,7 @@
     var method = (button && button.getAttribute('formmethod')) || form.getAttribute('method') || 'post';
     var loadUrl = form.getAttribute('data-oc-load');
     var targetSelector = form.getAttribute('data-oc-target');
+    var cartLoadUrl = form.getAttribute('data-oc-cart-load');
 
     try {
       setButtonLoading(button, true);
@@ -88,11 +159,7 @@
         showAlert('success', '<i class="fa-solid fa-circle-check"></i> ' + json.success);
 
         if (loadUrl && targetSelector) {
-          var target = document.querySelector(targetSelector);
-          if (target) {
-            var cartResponse = await fetch(loadUrl.replaceAll('&amp;', '&'), { credentials: 'same-origin' });
-            target.innerHTML = await cartResponse.text();
-          }
+          await refreshCartTargets(loadUrl, targetSelector, cartLoadUrl);
         }
       }
     } catch (error) {
