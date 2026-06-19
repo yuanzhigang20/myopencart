@@ -35,10 +35,17 @@ class Home extends \Opencart\System\Engine\Controller {
 			];
 		}
 
-		// Homepage products
+		// Homepage products are intentionally front-loaded for ecommerce conversion.
 		$this->load->model('catalog/product');
 		$this->load->model('tool/image');
+
+		$data['cart_add'] = $this->url->link('checkout/cart.add', 'language=' . $this->config->get('config_language'));
+		$data['cart'] = $this->url->link('common/cart.info', 'language=' . $this->config->get('config_language'));
 		$data['products'] = [];
+		$data['best_sellers'] = [];
+		$data['new_arrivals'] = [];
+		$data['hero_products'] = [];
+
 		$results = $this->model_catalog_product->getProducts([
 			'sort'  => 'date_added',
 			'order' => 'DESC',
@@ -46,24 +53,38 @@ class Home extends \Opencart\System\Engine\Controller {
 			'limit' => 12
 		]);
 
-		foreach ($results as $result) {
+		$benefits = [
+			'Private wellness essential with discreet packaging and clean presentation.',
+			'Soft, approachable pick for comfort-focused intimate shopping.',
+			'Low-profile design selected for private, responsible adult retail.',
+			'Curated for a calm checkout experience and secure PayPal payment.'
+		];
+
+		foreach ($results as $index => $result) {
 			$description = trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')));
-			if (oc_strlen($description) > 120) {
-				$description = oc_substr($description, 0, 120) . '..';
+			if (oc_strlen($description) > 118) {
+				$description = oc_substr($description, 0, 118) . '..';
 			}
 
 			$image = ($result['image'] && is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) ? $result['image'] : 'placeholder.png';
 			$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
 
-			$data['products'][] = [
-				'product_id'   => $result['product_id'],
-				'name'         => $result['name'],
-				'description'  => $description,
-				'thumb'        => $this->model_tool_image->resize($image, 480, 600),
-				'price'        => $price,
-				'href'         => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $result['product_id'])
+			$product = [
+				'product_id'    => $result['product_id'],
+				'name'          => $result['name'],
+				'description'   => $description,
+				'short_benefit' => $benefits[$index % count($benefits)],
+				'thumb'         => $this->model_tool_image->resize($image, 480, 600),
+				'price'         => $price,
+				'href'          => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $result['product_id'])
 			];
+
+			$data['products'][] = $product;
 		}
+
+		$data['best_sellers'] = array_slice($data['products'], 0, 4);
+		$data['new_arrivals'] = array_slice($data['products'], 4, 4) ?: array_slice($data['products'], 0, 4);
+		$data['hero_products'] = array_slice($data['best_sellers'], 0, 2);
 
 		$this->document->addLink($this->url->link('common/home', 'language=' . $this->config->get('config_language')), 'canonical');
 		$this->document->setJsonLd(json_encode([
