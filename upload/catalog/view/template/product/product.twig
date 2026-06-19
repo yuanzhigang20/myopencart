@@ -301,13 +301,23 @@
 <section class="wellness-section mb-4">
   <span class="wellness-kicker mb-2">Product guidance</span>
   <h2 class="h4 fw-bold mb-3">Details for confident, private shopping</h2>
+  {% set wellness_specs = [] %}
+  {% for attribute_group in attribute_groups %}
+    {% for attribute in attribute_group.attribute %}
+      {% set wellness_specs = wellness_specs|merge([{'name': attribute.name, 'text': attribute.text}]) %}
+    {% endfor %}
+  {% endfor %}
   <div class="spec-grid">
-    <div class="spec-tile"><small>Materials</small><strong>See product description / label</strong></div>
-    <div class="spec-tile"><small>Size & fit</small><strong>Check options and measurements</strong></div>
-    <div class="spec-tile"><small>Waterproof</small><strong>Use only as specified</strong></div>
-    <div class="spec-tile"><small>Charging / care</small><strong>Follow included instructions</strong></div>
-    <div class="spec-tile"><small>Noise</small><strong>Choose Quiet & Discreet items if needed</strong></div>
-    <div class="spec-tile"><small>In the box</small><strong>Product, packaging and care notes when provided</strong></div>
+    {% if wellness_specs %}
+      {% for spec in wellness_specs %}<div class="spec-tile"><small>{{ spec.name }}</small><strong>{{ spec.text }}</strong></div>{% endfor %}
+    {% else %}
+      <div class="spec-tile"><small>Materials</small><strong>See product description / label</strong></div>
+      <div class="spec-tile"><small>Size & fit</small><strong>Check options and measurements</strong></div>
+      <div class="spec-tile"><small>Waterproof</small><strong>Use only as specified</strong></div>
+      <div class="spec-tile"><small>Charging / care</small><strong>Follow included instructions</strong></div>
+      <div class="spec-tile"><small>Noise</small><strong>Choose Quiet & Discreet items if needed</strong></div>
+      <div class="spec-tile"><small>In the box</small><strong>Product, packaging and care notes when provided</strong></div>
+    {% endif %}
   </div>
 </section>
 
