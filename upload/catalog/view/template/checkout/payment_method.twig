@@ -1,33 +1,16 @@
 <fieldset class="checkout-method-card">
-  <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
-    <div>
-      <legend class="h5 fw-bold mb-1">{{ heading_title }}</legend>
-      <p class="text-muted small mb-0">Choose a payment method for this order.</p>
-    </div>
-    <button type="button" id="button-payment-methods" class="btn btn-outline-primary btn-sm">Refresh</button>
-  </div>
-
-  <div id="payment-method-options" class="vstack gap-2">
-    {% if payment_method %}
-      <div class="form-check border rounded-3 p-3 ps-5 bg-light">
-        <input type="radio" class="form-check-input" checked disabled>
-        <label class="form-check-label fw-semibold">{{ payment_method }}</label>
-      </div>
-    {% else %}
-      <div class="text-muted small">Select a shipping method first, then payment options will appear here.</div>
-    {% endif %}
-  </div>
-
+  <legend class="visually-hidden">Payment</legend>
   <input type="hidden" name="payment_method" value="{{ code }}" id="input-payment-code">
   <div id="error-payment-method" class="invalid-feedback d-block mt-2"></div>
 
   <div class="mt-3">
-    <label for="input-comment" class="form-label"><strong>{{ text_comments }}</strong></label>
-    <textarea name="comment" rows="3" id="input-comment" class="form-control">{{ comment }}</textarea>
+    <label for="input-comment" class="form-label"><strong>Order Notes</strong></label>
+    <textarea name="comment" rows="3" id="input-comment" class="form-control" placeholder="Optional delivery notes. Please do not include payment information here.">{{ comment }}</textarea>
+    <div class="form-text">Private note for delivery or order handling.</div>
   </div>
   {% if text_agree %}
-    <div class="form-check text-end mt-3">
-      <input type="checkbox" name="agree" value="1" id="input-checkout-agree" class="form-check-input float-none me-2" {% if agree %}checked{% endif %}>
+    <div class="form-check mt-3">
+      <input type="checkbox" name="agree" value="1" id="input-checkout-agree" class="form-check-input" {% if agree %}checked{% endif %}>
       <label for="input-checkout-agree" class="form-check-label">{{ text_agree|raw }}</label>
     </div>
   {% endif %}

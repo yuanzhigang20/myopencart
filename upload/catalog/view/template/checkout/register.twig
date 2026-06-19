@@ -4,13 +4,13 @@
     <legend>{{ heading_title }}</legend>
     <div class="row">
       {% if config_checkout_guest %}
-        <div class="col mb-3">
+        <div class="col mb-3 d-none">
           <div class="form-check form-check-inline">
             <input type="radio" name="account" value="1" id="input-register" class="form-check-input"{% if account %} checked{% endif %}/>
             <label for="input-register" class="form-check-label">{{ text_register }}</label>
           </div>
           <div class="form-check form-check-inline">
-            <input type="radio" name="account" value="0" id="input-guest" class="form-check-input"{% if not account %} checked{% endif %}/>
+            <input type="radio" name="account" value="0" id="input-guest" class="form-check-input" checked/>
             <label for="input-guest" class="form-check-label">{{ text_guest }}</label>
           </div>
         </div>
@@ -304,16 +304,82 @@
       </div>
       <div class="col mb-3">
         <label for="input-shipping-country" class="form-label">{{ entry_country }}</label>
-        <x-country name="shipping_country_id" value="{{ shipping_country_id }}" id="x-shipping-country" postcode="1" target="input-shipping-postcode" input-id="input-shipping-country" input-class="form-select" required>
+        <select name="shipping_country_id" id="input-shipping-country" class="form-select" required>
           <option value="0">{{ text_select }}</option>
-        </x-country>
+          <option value="223"{% if shipping_country_id == 223 %} selected{% endif %}>United States</option>
+        </select>
         <div id="error-shipping-country" class="invalid-feedback"></div>
       </div>
       <div class="col mb-3">
         <label for="input-shipping-zone" class="form-label">{{ entry_zone }}</label>
-        <x-zone name="shipping_zone_id" value="{{ shipping_zone_id }}" target="x-shipping-country" input-id="input-shipping-zone" input-class="form-select" required>
+        <select name="shipping_zone_id" id="input-shipping-zone" class="form-select" required>
           <option value="0">{{ text_select }}</option>
-        </x-zone>
+          <option value="3613"{% if shipping_zone_id == 3613 %} selected{% endif %}>Alabama</option>
+          <option value="3614"{% if shipping_zone_id == 3614 %} selected{% endif %}>Alaska</option>
+          <option value="3615"{% if shipping_zone_id == 3615 %} selected{% endif %}>American Samoa</option>
+          <option value="3616"{% if shipping_zone_id == 3616 %} selected{% endif %}>Arizona</option>
+          <option value="3617"{% if shipping_zone_id == 3617 %} selected{% endif %}>Arkansas</option>
+          <option value="3618"{% if shipping_zone_id == 3618 %} selected{% endif %}>Armed Forces Africa</option>
+          <option value="3619"{% if shipping_zone_id == 3619 %} selected{% endif %}>Armed Forces Americas</option>
+          <option value="3620"{% if shipping_zone_id == 3620 %} selected{% endif %}>Armed Forces Canada</option>
+          <option value="3621"{% if shipping_zone_id == 3621 %} selected{% endif %}>Armed Forces Europe</option>
+          <option value="3622"{% if shipping_zone_id == 3622 %} selected{% endif %}>Armed Forces Middle East</option>
+          <option value="3623"{% if shipping_zone_id == 3623 %} selected{% endif %}>Armed Forces Pacific</option>
+          <option value="3624"{% if shipping_zone_id == 3624 %} selected{% endif %}>California</option>
+          <option value="3625"{% if shipping_zone_id == 3625 %} selected{% endif %}>Colorado</option>
+          <option value="3626"{% if shipping_zone_id == 3626 %} selected{% endif %}>Connecticut</option>
+          <option value="3627"{% if shipping_zone_id == 3627 %} selected{% endif %}>Delaware</option>
+          <option value="3628"{% if shipping_zone_id == 3628 %} selected{% endif %}>District of Columbia</option>
+          <option value="3629"{% if shipping_zone_id == 3629 %} selected{% endif %}>Federated States Of Micronesia</option>
+          <option value="3630"{% if shipping_zone_id == 3630 %} selected{% endif %}>Florida</option>
+          <option value="3631"{% if shipping_zone_id == 3631 %} selected{% endif %}>Georgia</option>
+          <option value="3632"{% if shipping_zone_id == 3632 %} selected{% endif %}>Guam</option>
+          <option value="3633"{% if shipping_zone_id == 3633 %} selected{% endif %}>Hawaii</option>
+          <option value="3634"{% if shipping_zone_id == 3634 %} selected{% endif %}>Idaho</option>
+          <option value="3635"{% if shipping_zone_id == 3635 %} selected{% endif %}>Illinois</option>
+          <option value="3636"{% if shipping_zone_id == 3636 %} selected{% endif %}>Indiana</option>
+          <option value="3637"{% if shipping_zone_id == 3637 %} selected{% endif %}>Iowa</option>
+          <option value="3638"{% if shipping_zone_id == 3638 %} selected{% endif %}>Kansas</option>
+          <option value="3639"{% if shipping_zone_id == 3639 %} selected{% endif %}>Kentucky</option>
+          <option value="3640"{% if shipping_zone_id == 3640 %} selected{% endif %}>Louisiana</option>
+          <option value="3641"{% if shipping_zone_id == 3641 %} selected{% endif %}>Maine</option>
+          <option value="3642"{% if shipping_zone_id == 3642 %} selected{% endif %}>Marshall Islands</option>
+          <option value="3643"{% if shipping_zone_id == 3643 %} selected{% endif %}>Maryland</option>
+          <option value="3644"{% if shipping_zone_id == 3644 %} selected{% endif %}>Massachusetts</option>
+          <option value="3645"{% if shipping_zone_id == 3645 %} selected{% endif %}>Michigan</option>
+          <option value="3646"{% if shipping_zone_id == 3646 %} selected{% endif %}>Minnesota</option>
+          <option value="3647"{% if shipping_zone_id == 3647 %} selected{% endif %}>Mississippi</option>
+          <option value="3648"{% if shipping_zone_id == 3648 %} selected{% endif %}>Missouri</option>
+          <option value="3649"{% if shipping_zone_id == 3649 %} selected{% endif %}>Montana</option>
+          <option value="3650"{% if shipping_zone_id == 3650 %} selected{% endif %}>Nebraska</option>
+          <option value="3651"{% if shipping_zone_id == 3651 %} selected{% endif %}>Nevada</option>
+          <option value="3652"{% if shipping_zone_id == 3652 %} selected{% endif %}>New Hampshire</option>
+          <option value="3653"{% if shipping_zone_id == 3653 %} selected{% endif %}>New Jersey</option>
+          <option value="3654"{% if shipping_zone_id == 3654 %} selected{% endif %}>New Mexico</option>
+          <option value="3655"{% if shipping_zone_id == 3655 %} selected{% endif %}>New York</option>
+          <option value="3656"{% if shipping_zone_id == 3656 %} selected{% endif %}>North Carolina</option>
+          <option value="3657"{% if shipping_zone_id == 3657 %} selected{% endif %}>North Dakota</option>
+          <option value="3658"{% if shipping_zone_id == 3658 %} selected{% endif %}>Northern Mariana Islands</option>
+          <option value="3659"{% if shipping_zone_id == 3659 %} selected{% endif %}>Ohio</option>
+          <option value="3660"{% if shipping_zone_id == 3660 %} selected{% endif %}>Oklahoma</option>
+          <option value="3661"{% if shipping_zone_id == 3661 %} selected{% endif %}>Oregon</option>
+          <option value="3662"{% if shipping_zone_id == 3662 %} selected{% endif %}>Palau</option>
+          <option value="3663"{% if shipping_zone_id == 3663 %} selected{% endif %}>Pennsylvania</option>
+          <option value="3664"{% if shipping_zone_id == 3664 %} selected{% endif %}>Puerto Rico</option>
+          <option value="3665"{% if shipping_zone_id == 3665 %} selected{% endif %}>Rhode Island</option>
+          <option value="3666"{% if shipping_zone_id == 3666 %} selected{% endif %}>South Carolina</option>
+          <option value="3667"{% if shipping_zone_id == 3667 %} selected{% endif %}>South Dakota</option>
+          <option value="3668"{% if shipping_zone_id == 3668 %} selected{% endif %}>Tennessee</option>
+          <option value="3669"{% if shipping_zone_id == 3669 %} selected{% endif %}>Texas</option>
+          <option value="3670"{% if shipping_zone_id == 3670 %} selected{% endif %}>Utah</option>
+          <option value="3671"{% if shipping_zone_id == 3671 %} selected{% endif %}>Vermont</option>
+          <option value="3672"{% if shipping_zone_id == 3672 %} selected{% endif %}>Virgin Islands</option>
+          <option value="3673"{% if shipping_zone_id == 3673 %} selected{% endif %}>Virginia</option>
+          <option value="3674"{% if shipping_zone_id == 3674 %} selected{% endif %}>Washington</option>
+          <option value="3675"{% if shipping_zone_id == 3675 %} selected{% endif %}>West Virginia</option>
+          <option value="3676"{% if shipping_zone_id == 3676 %} selected{% endif %}>Wisconsin</option>
+          <option value="3677"{% if shipping_zone_id == 3677 %} selected{% endif %}>Wyoming</option>
+        </select>
         <div id="error-shipping-zone" class="invalid-feedback"></div>
       </div>
       {% for custom_field in custom_fields %}
@@ -407,7 +473,7 @@
       {% endfor %}
     </div>
   </fieldset>
-  <div class="row row-cols-1 row-cols-md-2">
+  <div class="row row-cols-1 row-cols-md-2 d-none">
     <div id="password" class="col mb-2">
       <fieldset>
         <legend>{{ text_your_password }}</legend>

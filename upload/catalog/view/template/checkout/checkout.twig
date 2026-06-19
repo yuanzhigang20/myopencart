@@ -1,196 +1,195 @@
 {{ header }}
-<main class="container py-5">
-  <div class="row justify-content-center">
-    <div class="col-12 col-xl-11">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+<style>
+  :root{--co-bg:#FAF7F2;--co-card:#FFFFFF;--co-text:#241D1A;--co-muted:#6F625C;--co-brand:#7A5548;--co-border:#E8DDD5;--co-soft:#F3ECE7}html,body{max-width:100%;overflow-x:hidden}body{background:var(--co-bg)!important;color:var(--co-text)}.checkout-shell{max-width:1180px;margin:0 auto}.checkout-trust{display:inline-flex;flex-wrap:wrap;gap:.45rem .7rem;align-items:center;color:var(--co-muted);font-size:.88rem}.checkout-trust span{background:#fff;border:1px solid var(--co-border);border-radius:999px;padding:.35rem .65rem}.checkout-card{background:var(--co-card);border:1px solid var(--co-border);border-radius:20px;box-shadow:0 18px 45px rgba(36,29,26,.07);padding:1.25rem}.checkout-card + .checkout-card{margin-top:1rem}.checkout-card h2,.checkout-card legend{color:var(--co-text);font-weight:800}.checkout-muted{color:var(--co-muted)}.checkout-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(360px,2fr);gap:1.25rem;align-items:start}.checkout-summary-sticky{position:sticky;top:110px}.checkout-section-kicker{display:inline-flex;align-items:center;gap:.45rem;color:var(--co-brand);background:var(--co-soft);border-radius:999px;padding:.35rem .65rem;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em}.checkout-status{border:1px solid var(--co-border);background:var(--co-soft);border-radius:14px;padding:.75rem 1rem;color:var(--co-muted)}.checkout-loading{opacity:.62;pointer-events:none}.checkout-loading:after{content:' Working…';font-weight:700;color:var(--co-brand)}.checkout-delivery-line{display:flex;justify-content:space-between;gap:1rem;border:1px solid var(--co-border);background:#fff;border-radius:16px;padding:1rem}.checkout-delivery-line strong{color:var(--co-text)}.checkout-privacy-note{font-size:.88rem;color:var(--co-muted);border-top:1px solid var(--co-border);padding-top:.85rem}.checkout-card a:not(.btn){color:var(--co-brand);text-decoration:none}.checkout-card a:not(.btn):hover{text-decoration:underline}.checkout-card .form-control,.checkout-card .form-select{border-color:var(--co-border);border-radius:14px}.checkout-card .btn-primary{background:var(--co-brand);border-color:var(--co-brand)}#checkout-shipping-method{display:none}@media(max-width:991.98px){.checkout-grid{grid-template-columns:1fr}.checkout-summary-sticky{position:static}.checkout-shell{padding-left:.25rem;padding-right:.25rem}}@media(max-width:575.98px){.checkout-card{padding:1rem;border-radius:18px}.checkout-trust span{width:100%;text-align:center}.checkout-delivery-line{display:block}.checkout-delivery-line span{display:block;margin-top:.25rem}.display-6{font-size:1.8rem}}
+</style>
+<main class="container py-4 py-lg-5">
+  <div class="checkout-shell">
+    <div class="mb-4">
+      <div class="checkout-trust mb-3" aria-label="Checkout trust signals">
+        <span>18+ only</span><span>Discreet packaging</span><span>Private billing</span><span>Secure PayPal checkout</span>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
         <div>
-          <span class="badge text-bg-primary mb-2">Secure Checkout</span>
-          <h1 class="fw-bold mb-0">{{ heading_title }}</h1>
+          <span class="checkout-section-kicker mb-2"><i class="fa-solid fa-lock"></i> Private checkout</span>
+          <h1 class="display-6 fw-bold mb-2">Secure Checkout</h1>
+          <p class="checkout-muted mb-0">Your privacy matters. Orders ship in plain packaging with no adult product names on the outside.</p>
         </div>
         <a href="{{ breadcrumbs[1].href }}" class="btn btn-outline-primary">Back to Cart</a>
       </div>
+    </div>
 
-      <div class="row g-4">
-        {% if register or payment_address or shipping_address %}
-          <div class="col-lg-7">
-            {% if register %}<div id="checkout-register" class="card border-0 shadow-sm rounded-4 p-3 p-lg-4 mb-4">{{ register|raw }}</div>{% endif %}
-            {% if payment_address %}<div id="checkout-payment-address" class="card border-0 shadow-sm rounded-4 p-3 p-lg-4 mb-4">{{ payment_address|raw }}</div>{% endif %}
-            {% if shipping_address %}<div id="checkout-shipping-address" class="card border-0 shadow-sm rounded-4 p-3 p-lg-4 mb-4">{{ shipping_address|raw }}</div>{% endif %}
-          </div>
-        {% endif %}
-        <div class="col-lg">
-          {% if shipping_method %}<div id="checkout-shipping-method" class="card border-0 shadow-sm rounded-4 p-3 p-lg-4 mb-4">{{ shipping_method|raw }}</div>{% endif %}
-          <div id="checkout-payment-method" class="card border-0 shadow-sm rounded-4 p-3 p-lg-4 mb-4">{{ payment_method|raw }}</div>
-          <div id="checkout-confirm" class="card border-0 shadow-sm rounded-4 p-3 p-lg-4">{{ confirm|raw }}</div>
+    <div id="checkout-flow-status" class="checkout-status mb-3">Initializing secure PayPal checkout…</div>
+
+    <div class="checkout-grid">
+      <section class="checkout-left" aria-label="Delivery and address">
+        {% if register %}<div id="checkout-register" class="checkout-card"><span class="checkout-section-kicker mb-3"><i class="fa-solid fa-user-shield"></i> Shipping Address</span>{{ register|raw }}</div>{% endif %}
+        {% if payment_address %}<div id="checkout-payment-address" class="checkout-card"><span class="checkout-section-kicker mb-3"><i class="fa-solid fa-address-card"></i> Billing Address</span>{{ payment_address|raw }}</div>{% endif %}
+        {% if shipping_address %}<div id="checkout-shipping-address" class="checkout-card"><span class="checkout-section-kicker mb-3"><i class="fa-solid fa-location-dot"></i> Shipping Address</span>{{ shipping_address|raw }}</div>{% endif %}
+
+        <div class="checkout-card">
+          <span class="checkout-section-kicker mb-3"><i class="fa-solid fa-truck-fast"></i> Delivery</span>
+          <div class="checkout-delivery-line mb-3"><strong>Flat Shipping Rate</strong><span id="checkout-flat-shipping-text">$5.00</span></div>
+          <p class="checkout-muted mb-0">Discreet delivery in plain packaging.</p>
         </div>
-      </div>
+
+        <div class="checkout-card">
+          <span class="checkout-section-kicker mb-3"><i class="fa-solid fa-box"></i> Discreet Packaging</span>
+          <p class="checkout-muted mb-0">Ships in plain packaging. No adult product names on the outside.</p>
+        </div>
+
+        <div class="checkout-card" id="checkout-payment-method">
+          <span class="checkout-section-kicker mb-3"><i class="fa-solid fa-pen-to-square"></i> Order Notes</span>
+          {{ payment_method|raw }}
+        </div>
+
+        <div id="checkout-shipping-method">{{ shipping_method|raw }}</div>
+      </section>
+
+      <aside class="checkout-summary-sticky" aria-label="Order summary and PayPal payment">
+        <div class="checkout-card">
+          <span class="checkout-section-kicker mb-3"><i class="fa-brands fa-paypal"></i> Payment</span>
+          <h2 class="h4 mb-2">Secure PayPal Checkout</h2>
+          <p class="checkout-muted mb-3">Pay safely with PayPal. Your payment details are protected by PayPal.</p>
+          <div id="checkout-confirm">{{ confirm|raw }}</div>
+        </div>
+      </aside>
     </div>
   </div>
 </main>
 
 <script>
 (function () {
-  const language = 'en-gb';
+  const language = '{{ language ?: "en-gb" }}';
   const qs = (selector) => document.querySelector(selector);
   const qsa = (selector) => Array.from(document.querySelectorAll(selector));
+  const paypalCode = 'paypal.paypal';
 
   const setStatus = (message, type = 'muted') => {
     const el = qs('#checkout-flow-status');
-    if (el) { el.className = 'small text-' + type; el.textContent = message; }
+    if (!el) return;
+    el.className = 'checkout-status mb-3 text-' + type;
+    el.textContent = message;
   };
 
-  const showError = (target, message) => {
-    const el = qs(target);
-    if (el) { el.textContent = message || ''; el.style.display = message ? 'block' : ''; }
+  const setLoading = (loading) => {
+    qsa('.checkout-card').forEach((el) => el.classList.toggle('checkout-loading', loading));
   };
 
-  const postForm = async (url, formData) => {
-    const response = await fetch(url, { method: 'POST', body: formData, credentials: 'same-origin' });
+  const fetchJson = async (url, options = {}) => {
+    const response = await fetch(url, Object.assign({ credentials: 'same-origin' }, options));
     return response.json();
   };
 
-  const postParams = async (url, params) => {
-    const response = await fetch(url, {
-      method: 'POST',
-      body: new URLSearchParams(params),
-      credentials: 'same-origin',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }
-    });
-    return response.json();
-  };
+  const postParams = async (url, params) => fetchJson(url, {
+    method: 'POST',
+    body: new URLSearchParams(params),
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }
+  });
 
-  const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]));
+  const postForm = async (url, form) => fetchJson(url, { method: 'POST', body: new FormData(form) });
 
   const executeEmbeddedScripts = async (container) => {
     const scripts = Array.from(container.querySelectorAll('script'));
-
     for (const oldScript of scripts) {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
-
-        Array.from(oldScript.attributes).forEach((attribute) => {
-          script.setAttribute(attribute.name, attribute.value);
-        });
-
-        if (oldScript.src) {
-          script.onload = resolve;
-          script.onerror = reject;
-        } else {
-          script.textContent = oldScript.textContent;
-        }
-
+        Array.from(oldScript.attributes).forEach((attribute) => script.setAttribute(attribute.name, attribute.value));
+        if (oldScript.src) { script.onload = resolve; script.onerror = reject; } else { script.textContent = oldScript.textContent; }
         oldScript.replaceWith(script);
-
-        if (!script.src) {
-          resolve();
-        }
+        if (!script.src) resolve();
       });
     }
   };
 
   const refreshConfirm = async () => {
-    const response = await fetch('index.php?route=checkout/confirm.confirm&language=' + encodeURIComponent(language), { credentials: 'same-origin' });
-    const html = await response.text();
+    const html = await fetch('index.php?route=checkout/confirm.confirm&language=' + encodeURIComponent(language), { credentials: 'same-origin' }).then(r => r.text());
     const confirm = qs('#checkout-confirm');
-
     if (confirm) {
       confirm.innerHTML = html;
       await executeEmbeddedScripts(confirm);
     }
   };
 
-  const renderShippingMethods = (shippingMethods) => {
-    const box = qs('#shipping-method-options');
-    if (!box) return;
-    const selectedCode = qs('#input-shipping-code')?.value || '';
-    const rows = [];
-
-    Object.values(shippingMethods || {}).forEach((method) => {
-      Object.values(method.quote || {}).forEach((quote) => {
-        const code = quote.code || '';
-        const checked = selectedCode === code ? ' checked' : '';
-        rows.push(`
-          <label class="form-check border rounded-3 p-3 ps-5 bg-white checkout-option" for="shipping-${escapeHtml(code).replace(/[^a-zA-Z0-9_-]/g, '-')}">
-            <input class="form-check-input checkout-shipping-radio" type="radio" name="shipping_method_choice" id="shipping-${escapeHtml(code).replace(/[^a-zA-Z0-9_-]/g, '-')}" value="${escapeHtml(code)}"${checked}>
-            <span class="form-check-label d-block">
-              <span class="fw-semibold">${escapeHtml(quote.name || method.name || code)}</span>
-              ${quote.text ? `<span class="float-end fw-bold">${escapeHtml(quote.text)}</span>` : ''}
-              ${quote.description ? `<span class="d-block small text-muted mt-1">${escapeHtml(quote.description)}</span>` : ''}
-            </span>
-          </label>`);
-      });
-    });
-
-    box.innerHTML = rows.length ? rows.join('') : '<div class="text-muted small">No shipping methods available.</div>';
+  const findFirstQuote = (shippingMethods) => {
+    for (const method of Object.values(shippingMethods || {})) {
+      for (const quote of Object.values(method.quote || {})) return quote;
+    }
+    return null;
   };
 
-  const renderPaymentMethods = (paymentMethods) => {
-    const box = qs('#payment-method-options');
-    if (!box) return;
-    const selectedCode = qs('#input-payment-code')?.value || '';
-    const rows = [];
-
-    Object.values(paymentMethods || {}).forEach((method) => {
-      Object.values(method.option || {}).forEach((option) => {
-        const code = option.code || '';
-        const checked = selectedCode === code ? ' checked' : '';
-        rows.push(`
-          <label class="form-check border rounded-3 p-3 ps-5 bg-white checkout-option" for="payment-${escapeHtml(code).replace(/[^a-zA-Z0-9_-]/g, '-')}">
-            <input class="form-check-input checkout-payment-radio" type="radio" name="payment_method_choice" id="payment-${escapeHtml(code).replace(/[^a-zA-Z0-9_-]/g, '-')}" value="${escapeHtml(code)}"${checked}>
-            <span class="form-check-label d-block">
-              <span class="fw-semibold">${escapeHtml(option.name || method.name || code)}</span>
-            </span>
-          </label>`);
-      });
-    });
-
-    box.innerHTML = rows.length ? rows.join('') : '<div class="text-muted small">No payment methods available.</div>';
+  const findPayPalOption = (paymentMethods) => {
+    const paypal = paymentMethods && paymentMethods.paypal;
+    if (paypal && paypal.option) {
+      return Object.values(paypal.option).find((option) => option.code === paypalCode) || Object.values(paypal.option)[0];
+    }
+    for (const method of Object.values(paymentMethods || {})) {
+      for (const option of Object.values(method.option || {})) {
+        if (option.code === paypalCode) return option;
+      }
+    }
+    return null;
   };
 
-  const loadShippingMethods = async () => {
-    const quoted = await fetch('index.php?route=checkout/shipping_method.quote&language=' + encodeURIComponent(language), { credentials: 'same-origin' }).then(r => r.json());
+  const saveDefaultShipping = async () => {
+    const quoted = await fetchJson('index.php?route=checkout/shipping_method.quote&language=' + encodeURIComponent(language));
     if (quoted.redirect) { location.href = quoted.redirect; return false; }
-    if (quoted.error) { showError('#error-shipping-method', quoted.error); return false; }
-    renderShippingMethods(quoted.shipping_methods || {});
-    showError('#error-shipping-method', '');
-    return true;
-  };
-
-  const saveShippingMethod = async (code) => {
-    if (!code) { showError('#error-shipping-method', 'Please select a shipping method.'); return false; }
-    const saved = await postParams('index.php?route=checkout/shipping_method.save&language=' + encodeURIComponent(language), { shipping_method: code });
-    if (saved.redirect) { location.href = saved.redirect; return false; }
-    if (saved.error) { showError('#error-shipping-method', saved.error); return false; }
+    if (quoted.error) { setStatus('Please complete your shipping address to continue with PayPal.', 'danger'); return false; }
+    const quote = findFirstQuote(quoted.shipping_methods);
+    if (!quote || !quote.code) { setStatus('No delivery method is available for this address.', 'danger'); return false; }
     const input = qs('#input-shipping-code');
-    if (input) input.value = code;
-    showError('#error-shipping-method', '');
-    // Shipping changes invalidate payment in OpenCart; clear and reload choices.
-    const paymentInput = qs('#input-payment-code');
-    if (paymentInput) paymentInput.value = '';
-    await loadPaymentMethods();
-    await refreshConfirm();
-    return true;
-  };
-
-  const loadPaymentMethods = async () => {
-    const methodsJson = await fetch('index.php?route=checkout/payment_method.getMethods&language=' + encodeURIComponent(language), { credentials: 'same-origin' }).then(r => r.json());
-    if (methodsJson.redirect) { location.href = methodsJson.redirect; return false; }
-    if (methodsJson.error) { showError('#error-payment-method', methodsJson.error); return false; }
-    renderPaymentMethods(methodsJson.payment_methods || {});
-    showError('#error-payment-method', '');
-    return true;
-  };
-
-  const savePaymentMethod = async (code) => {
-    if (!code) { showError('#error-payment-method', 'Please select a payment method.'); return false; }
-    const saved = await postParams('index.php?route=checkout/payment_method.save&language=' + encodeURIComponent(language), { payment_method: code });
+    if (input) input.value = quote.code;
+    const shippingText = qs('#checkout-flat-shipping-text');
+    if (shippingText && quote.text) shippingText.textContent = quote.text;
+    const saved = await postParams('index.php?route=checkout/shipping_method.save&language=' + encodeURIComponent(language), { shipping_method: quote.code });
     if (saved.redirect) { location.href = saved.redirect; return false; }
-    if (saved.error) { showError('#error-payment-method', saved.error); return false; }
-    const input = qs('#input-payment-code');
-    if (input) input.value = code;
-    showError('#error-payment-method', '');
-    await refreshConfirm();
+    if (saved.error) { setStatus(saved.error, 'danger'); return false; }
     return true;
+  };
+
+  const saveDefaultPayment = async () => {
+    const methodsJson = await fetchJson('index.php?route=checkout/payment_method.getMethods&language=' + encodeURIComponent(language));
+    if (methodsJson.redirect) { location.href = methodsJson.redirect; return false; }
+    if (methodsJson.error) { setStatus(methodsJson.error, 'danger'); return false; }
+    const option = findPayPalOption(methodsJson.payment_methods);
+    if (!option || !option.code) { setStatus('PayPal is not available for this order. Please contact support.', 'danger'); return false; }
+    const input = qs('#input-payment-code');
+    if (input) input.value = option.code;
+    const saved = await postParams('index.php?route=checkout/payment_method.save&language=' + encodeURIComponent(language), { payment_method: option.code });
+    if (saved.redirect) { location.href = saved.redirect; return false; }
+    if (saved.error) { setStatus(saved.error, 'danger'); return false; }
+    return true;
+  };
+
+  const saveCommentAndAgree = async () => {
+    const comment = qs('#input-comment');
+    if (comment) await postParams('index.php?route=checkout/payment_method.comment&language=' + encodeURIComponent(language), { comment: comment.value || '' }).catch(() => {});
+    const agree = qs('#input-checkout-agree');
+    if (agree) await postParams('index.php?route=checkout/payment_method.agree&language=' + encodeURIComponent(language), agree.checked ? { agree: '1' } : {}).catch(() => {});
+  };
+
+  const initPayPalCheckout = async () => {
+    setLoading(true);
+    try {
+      setStatus('Preparing discreet delivery and secure PayPal checkout…');
+      if (qs('#form-register') && !qs('#form-register').dataset.saved && !qs('#paypal-button-container')) {
+        setStatus('Please complete your shipping address to continue with PayPal.', 'muted');
+        return false;
+      }
+      const okShipping = await saveDefaultShipping();
+      if (!okShipping) return false;
+      const okPayment = await saveDefaultPayment();
+      if (!okPayment) return false;
+      await saveCommentAndAgree();
+      await refreshConfirm();
+      setStatus('PayPal is ready. Review your order and continue securely.', 'success');
+      return true;
+    } catch (error) {
+      console.error(error);
+      setStatus('Checkout could not initialize. Please review your address and try again.', 'danger');
+      return false;
+    } finally {
+      setLoading(false);
+    }
   };
 
   document.addEventListener('change', async (event) => {
@@ -198,110 +197,56 @@
       const box = qs('#shipping-new');
       if (box) box.style.display = event.target.checked ? 'block' : 'none';
     }
-
     if (event.target && event.target.id === 'input-shipping-address' && event.target.value) {
-      setStatus('Saving selected address...', 'muted');
-      const result = await fetch('index.php?route=checkout/shipping_address.address&language=' + encodeURIComponent(language) + '&address_id=' + encodeURIComponent(event.target.value), { credentials: 'same-origin' }).then(r => r.json());
+      setLoading(true);
+      setStatus('Updating delivery and PayPal checkout…');
+      const result = await fetchJson('index.php?route=checkout/shipping_address.address&language=' + encodeURIComponent(language) + '&address_id=' + encodeURIComponent(event.target.value));
       if (result.redirect) { location.href = result.redirect; return; }
-      if (result.error) { showError('#error-shipping-address', result.error); setStatus('Address selection failed.', 'danger'); return; }
-      const ok = await loadShippingMethods();
-      setStatus(ok ? 'Choose a shipping method.' : 'Please review shipping options.', ok ? 'success' : 'danger');
+      if (result.error) { setStatus(result.error, 'danger'); setLoading(false); return; }
+      await initPayPalCheckout();
+      setLoading(false);
     }
-
-    if (event.target && event.target.classList.contains('checkout-shipping-radio')) {
-      setStatus('Saving shipping method...', 'muted');
-      const ok = await saveShippingMethod(event.target.value);
-      setStatus(ok ? 'Shipping saved. Choose a payment method.' : 'Shipping method failed.', ok ? 'success' : 'danger');
-    }
-
-    if (event.target && event.target.classList.contains('checkout-payment-radio')) {
-      setStatus('Saving payment method...', 'muted');
-      const ok = await savePaymentMethod(event.target.value);
-      setStatus(ok ? 'Payment saved. Confirm your order below.' : 'Payment method failed.', ok ? 'success' : 'danger');
-    }
+    if (event.target && event.target.id === 'input-comment') saveCommentAndAgree();
+    if (event.target && event.target.id === 'input-checkout-agree') { await saveCommentAndAgree(); await initPayPalCheckout(); }
   });
 
   document.addEventListener('submit', async (event) => {
-    if (!event.target || event.target.id !== 'form-shipping-address') return;
-    event.preventDefault();
-    const button = qs('#button-shipping-address');
-    button && (button.disabled = true);
-    setStatus('Saving shipping address...', 'muted');
-    qsa('.invalid-feedback').forEach(el => el.textContent = '');
-    try {
-      const result = await postForm(event.target.action, new FormData(event.target));
-      if (result.redirect) { location.href = result.redirect; return; }
-      if (result.error) {
-        Object.entries(result.error).forEach(([key, message]) => showError('#error-shipping-' + key.replace('_', '-'), message));
-        setStatus('Please fix the highlighted address fields.', 'danger');
-        return;
-      }
-      const ok = await loadShippingMethods();
-      setStatus(ok ? 'Address saved. Choose a shipping method.' : 'Please review shipping options.', ok ? 'success' : 'danger');
-    } catch (error) {
-      console.error(error);
-      setStatus('Checkout request failed. Please try again.', 'danger');
-    } finally {
-      button && (button.disabled = false);
-    }
-  });
-
-  document.addEventListener('click', async (event) => {
-    if (event.target && event.target.id === 'button-shipping-methods') {
-      setStatus('Loading shipping methods...', 'muted');
-      const ok = await loadShippingMethods();
-      setStatus(ok ? 'Choose a shipping method.' : 'Shipping methods failed.', ok ? 'success' : 'danger');
-    }
-
-    if (event.target && event.target.id === 'button-payment-methods') {
-      setStatus('Loading payment methods...', 'muted');
-      const ok = await loadPaymentMethods();
-      setStatus(ok ? 'Choose a payment method.' : 'Payment methods failed.', ok ? 'success' : 'danger');
-    }
-
-    if (event.target && event.target.id === 'button-confirm') {
+    if (event.target && event.target.id === 'form-register') {
       event.preventDefault();
-      if (!qs('#input-shipping-code')?.value && qs('#checkout-shipping-method')) {
-        setStatus('Please choose a shipping method first.', 'danger');
-        return;
-      }
-      if (!qs('#input-payment-code')?.value) {
-        setStatus('Please choose a payment method first.', 'danger');
-        return;
-      }
-      const button = event.target;
-      button.disabled = true;
-      setStatus('Confirming order...', 'muted');
+      setLoading(true);
+      setStatus('Saving shipping address…');
       try {
-        const result = await fetch('index.php?route=extension/opencart/payment/cod.confirm&language=' + encodeURIComponent(language), { credentials: 'same-origin' }).then(r => r.json());
+        qsa('.invalid-feedback').forEach(el => { el.textContent = ''; el.classList.remove('d-block'); });
+        const result = await postForm('index.php?route=checkout/register.save&language=' + encodeURIComponent(language), event.target);
+        if (result.redirect) { location.href = result.redirect; return; }
         if (result.error) {
-          setStatus(result.error, 'danger');
-          button.disabled = false;
+                  Object.entries(result.error).forEach(([key, message]) => {
+            const err = qs('#error-' + key.replaceAll('_', '-')) || qs('#error-shipping-' + key.replaceAll('_', '-')) || qs('#error-payment-' + key.replaceAll('_', '-'));
+            if (err) { err.textContent = message; err.classList.add('d-block'); }
+          });
+          setStatus('Please complete your shipping address to continue with PayPal.', 'danger');
           return;
         }
-        if (result.redirect) {
-          location.href = result.redirect;
-          return;
-        }
-        setStatus('Order confirmed.', 'success');
-      } catch (error) {
-        console.error(error);
-        setStatus('Order confirmation failed. Please try again.', 'danger');
-        button.disabled = false;
-      }
+        event.target.dataset.saved = '1';
+        const card = qs('#checkout-register');
+        if (card) card.style.display = 'none';
+        await initPayPalCheckout();
+      } finally { setLoading(false); }
+    }
+    if (event.target && event.target.id === 'form-shipping-address') {
+      event.preventDefault();
+      setLoading(true);
+      setStatus('Saving shipping address…');
+      try {
+        const result = await postForm(event.target.action, event.target);
+        if (result.redirect) { location.href = result.redirect; return; }
+        if (result.error) { setStatus('Please complete your shipping address to continue with PayPal.', 'danger'); return; }
+        await initPayPalCheckout();
+      } finally { setLoading(false); }
     }
   });
 
-  // If the customer already has an address in session, show choices immediately.
-  document.addEventListener('DOMContentLoaded', async () => {
-    if (qs('#checkout-shipping-method')) {
-      await loadShippingMethods();
-    }
-    if (qs('#input-shipping-code')?.value) {
-      await loadPaymentMethods();
-    }
-  });
+  document.addEventListener('DOMContentLoaded', initPayPalCheckout);
 })();
 </script>
-
 {{ footer }}

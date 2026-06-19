@@ -24,6 +24,11 @@ class PaymentMethod extends \Opencart\System\Engine\Model {
 		$results = $this->model_setting_extension->getExtensionsByType('payment');
 
 		foreach ($results as $result) {
+			// PayPal-only checkout: do not expose Cash On Delivery, Free Checkout, or other methods.
+			if ($result['code'] !== 'paypal') {
+				continue;
+			}
+
 			if ($this->config->get('payment_' . $result['code'] . '_status')) {
 				$this->load->model('extension/' . $result['extension'] . '/payment/' . $result['code']);
 

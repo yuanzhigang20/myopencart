@@ -1,43 +1,36 @@
-<div class="table-responsive">
-  <table class="table table-bordered table-hover align-middle">
-    <thead>
-      <tr>
-        <th>{{ column_product }}</th>
-        <th class="text-end">{{ column_total }}</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for product in products %}
-        <tr>
-          <td>{{ product.quantity }}x <a href="{{ product.href }}">{{ product.name }}</a>
-            <ul class="list-unstyled mb-0">
-              <li><small> - {{ text_model }}: {{ product.model }}</small></li>
-              {% for option in product.option %}
-                <li><small> - {{ option.name }}: {{ option.value }}</small></li>
-              {% endfor %}
-              {% if product.subscription %}<li><small> - {{ text_subscription }}: {{ product.subscription }}</small></li>{% endif %}
-              {% if product.reward %}<li><small> - {{ text_points }}: {{ product.reward }}</small></li>{% endif %}
-            </ul>
-          </td>
-          <td class="text-end">{{ product.total_text }}</td>
-        </tr>
-      {% endfor %}
-    </tbody>
-    <tfoot>
-      {% for total in totals %}
-        <tr>
-          <td class="text-end"><strong>{{ total.title }}</strong></td>
-          <td class="text-end">{{ total.text }}</td>
-        </tr>
-      {% endfor %}
-    </tfoot>
-  </table>
+<div class="checkout-summary-list">
+  <h2 class="h4 fw-bold mb-3">Order Summary</h2>
+  <div class="vstack gap-3 mb-3">
+    {% for product in products %}
+      <div class="d-flex justify-content-between align-items-start gap-3 pb-3 border-bottom" style="border-color: var(--co-border)!important;">
+        <div>
+          <a href="{{ product.href }}" class="fw-semibold text-decoration-none" style="color: var(--co-text);">{{ product.name }}</a>
+          <div class="small checkout-muted">Qty {{ product.quantity }}{% if product.model %} · {{ product.model }}{% endif %}</div>
+          {% for option in product.option %}<div class="small checkout-muted">{{ option.name }}: {{ option.value }}</div>{% endfor %}
+          {% if product.subscription %}<div class="small checkout-muted">{{ product.subscription }}</div>{% endif %}
+        </div>
+        <strong class="text-nowrap">{{ product.total_text }}</strong>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="vstack gap-2 mb-3">
+    {% for total in totals %}
+      {% set is_grand_total = loop.last or total.code == 'total' %}
+      <div class="d-flex justify-content-between align-items-center {% if is_grand_total %}pt-3 mt-2 border-top{% endif %}" style="border-color: var(--co-border)!important;">
+        <span class="{% if is_grand_total %}fs-5 fw-bold{% else %}checkout-muted{% endif %}">{% if total.code == 'shipping' %}Shipping{% else %}{{ total.title }}{% endif %}</span>
+        <span class="{% if is_grand_total %}fs-4 fw-bold{% else %}fw-semibold{% endif %}">{{ total.text }}</span>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="checkout-privacy-note mb-3"><i class="fa-solid fa-box me-1"></i> Ships in plain packaging. No adult product names on the outside.</div>
 </div>
+
 <div id="checkout-payment">
   {% if payment %}
     {{ payment|raw }}
   {% else %}
-    <div class="alert alert-info mb-3">Choose a shipping and payment method to enable order confirmation.</div>
-    <div class="text-end"><button type="button" class="btn btn-primary" disabled>{{ button_confirm }}</button></div>
+    <div class="alert alert-info mb-0">Please complete your shipping address to continue with PayPal.</div>
   {% endif %}
 </div>

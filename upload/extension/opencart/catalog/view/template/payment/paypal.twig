@@ -1,7 +1,8 @@
 {% if client_id %}
   <div id="paypal-button-container"></div>
   <div id="paypal-message" class="mt-2"></div>
-  <script src="https://www.paypal.com/sdk/js?client-id={{ client_id|url_encode }}&currency={{ currency|url_encode }}&intent={{ intent|url_encode }}" data-sdk-integration-source="shoplovanest-opencart"></script>
+  {# Only PayPal Wallet funding is enabled for this store. Debit/Credit Card funding is disabled here; PayPal's own wallet flow may still offer approved PayPal-hosted guest experiences where allowed by PayPal. #}
+  <script src="https://www.paypal.com/sdk/js?client-id={{ client_id|url_encode }}&currency={{ currency|url_encode }}&intent={{ intent|url_encode }}&enable-funding=paypal&disable-funding=card,credit,paylater,venmo" data-sdk-integration-source="shoplovanest-opencart"></script>
   <script>
     (function() {
       function showPayPalError(message) {
@@ -14,6 +15,7 @@
       }
 
       paypal.Buttons({
+        fundingSource: paypal.FUNDING.PAYPAL,
         createOrder: function() {
           return fetch('{{ create_url }}', {
             method: 'post',

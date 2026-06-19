@@ -21,7 +21,10 @@ class Checkout extends \Opencart\System\Engine\Controller {
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->document->addScript('catalog/view/javascript/checkout.js');
+		// The checkout page uses an inline privacy-first PayPal initialization flow.
+		// Do not load the default OpenCart checkout.js because it exposes refresh/modal flows.
+
+		$data['language'] = $this->config->get('config_language');
 
 		$data['breadcrumbs'] = [];
 

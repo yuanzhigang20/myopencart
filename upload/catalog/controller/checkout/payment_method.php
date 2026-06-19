@@ -103,6 +103,13 @@ class PaymentMethod extends \Opencart\System\Engine\Controller {
 
 			$payment_methods = $this->model_checkout_payment_method->getMethods($payment_address);
 
+			// Lovanest checkout is PayPal-only. Filter out COD/free checkout and any other payment methods.
+			if (isset($payment_methods['paypal'])) {
+				$payment_methods = ['paypal' => $payment_methods['paypal']];
+			} else {
+				$payment_methods = [];
+			}
+
 			if ($payment_methods) {
 				$json['payment_methods'] = $this->session->data['payment_methods'] = $payment_methods;
 			} else {
