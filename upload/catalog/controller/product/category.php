@@ -364,19 +364,23 @@ class Category extends \Opencart\System\Engine\Controller {
 
 		$data['results'] = sprintf($this->language->get('text_pagination'), ($product_total) ? (($page - 1) * $limit) + 1 : 0, ((($page - 1) * $limit) > ($product_total - $limit)) ? $product_total : ((($page - 1) * $limit) + $limit), $product_total, ceil($product_total / $limit));
 
-		// https://developers.google.com/search/blog/2011/09/pagination-with-relnext-and-relprev
-		if ($page == 1) {
-			$this->document->addLink($this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path']), 'canonical');
-		} else {
-			$this->document->addLink($this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'] . '&page=' . $page), 'canonical');
+		// Keep indexable category URLs clean: no language/sort/order/limit parameters in canonical URLs.
+		$category_canonical_url = html_entity_decode($this->url->link('product/category', 'path=' . $this->request->get['path'] . (($page > 1) ? '&page=' . $page : ''), true));
+		$this->document->addLink($category_canonical_url, 'canonical');
+		$this->document->addMeta(['property' => 'og:type', 'content' => 'website']);
+		$this->document->addMeta(['property' => 'og:url', 'content' => $category_canonical_url]);
+
+		if ($data['image']) {
+			$this->document->addMeta(['property' => 'og:image', 'content' => $data['image']]);
+			$this->document->addMeta(['name' => 'twitter:image', 'content' => $data['image']]);
 		}
 
 		if ($page > 1) {
-			$this->document->addLink($this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'] . (($page - 2) ? '&page=' . ($page - 1) : '')), 'prev');
+			$this->document->addLink($this->url->link('product/category', 'path=' . $this->request->get['path'] . (($page - 2) ? '&page=' . ($page - 1) : '')), 'prev');
 		}
 
 		if ($limit && ceil($product_total / $limit) > $page) {
-			$this->document->addLink($this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'] . '&page=' . ($page + 1)), 'next');
+			$this->document->addLink($this->url->link('product/category', 'path=' . $this->request->get['path'] . '&page=' . ($page + 1)), 'next');
 		}
 
 		$item_list = [];
@@ -394,7 +398,7 @@ class Category extends \Opencart\System\Engine\Controller {
 			'@type' => 'CollectionPage',
 			'name' => $category_info['name'],
 			'description' => trim(strip_tags(html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8'))) ?: $category_info['meta_description'],
-			'url' => html_entity_decode($this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $this->request->get['path'], true))
+			'url' => $category_canonical_url
 		], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
 
 		$data['sort'] = $sort;

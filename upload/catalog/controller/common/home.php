@@ -86,12 +86,15 @@ class Home extends \Opencart\System\Engine\Controller {
 		$data['new_arrivals'] = array_slice($data['products'], 4, 4) ?: array_slice($data['products'], 0, 4);
 		$data['hero_products'] = array_slice($data['best_sellers'], 0, 2);
 
-		$this->document->addLink($this->url->link('common/home', 'language=' . $this->config->get('config_language')), 'canonical');
+		$site_url = rtrim($this->config->get('config_ssl') ?: $this->config->get('config_url'), '/') . '/';
+		$this->document->addLink($site_url, 'canonical');
+		$this->document->addMeta(['property' => 'og:url', 'content' => $site_url]);
+		$this->document->addMeta(['property' => 'og:type', 'content' => 'website']);
 		$this->document->setJsonLd(json_encode([
 			'@context' => 'https://schema.org',
 			'@type' => 'WebSite',
 			'name' => $this->config->get('config_name'),
-			'url' => $this->config->get('config_ssl') ?: $this->config->get('config_url'),
+			'url' => $site_url,
 			'potentialAction' => [
 				'@type' => 'SearchAction',
 				'target' => ($this->config->get('config_ssl') ?: $this->config->get('config_url')) . 'index.php?route=product/search&language=' . $this->config->get('config_language') . '&search={search_term_string}',

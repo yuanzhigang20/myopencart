@@ -28,10 +28,23 @@ class Header extends \Opencart\System\Engine\Controller {
 
 		$route = $this->request->get['route'] ?? 'common/home';
 		$query = $this->request->get;
-		unset($query['_route_']);
+		unset($query['_route_'], $query['route']);
 		$data['current_url'] = html_entity_decode($this->url->link((string)$route, http_build_query($query), true));
 		$data['site_url'] = $this->config->get('config_ssl') ?: $this->config->get('config_url');
 		$data['metas'] = method_exists($this->document, 'getMetas') ? $this->document->getMetas() : [];
+		$data['has_og_type'] = false;
+		$data['has_og_url'] = false;
+
+		foreach ($data['metas'] as $meta) {
+			if (($meta['property'] ?? '') === 'og:type') {
+				$data['has_og_type'] = true;
+			}
+
+			if (($meta['property'] ?? '') === 'og:url') {
+				$data['has_og_url'] = true;
+			}
+		}
+
 		$data['json_ld'] = method_exists($this->document, 'getJsonLd') ? $this->document->getJsonLd() : '';
 
 		$data['name'] = $this->config->get('config_name');

@@ -33,7 +33,10 @@ class Product extends \Opencart\System\Engine\Controller {
 		$this->document->setTitle($product_info['meta_title'] ?: ($product_info['name'] . ' | Discreet Sexual Wellness | Lovanest'));
 		$this->document->setDescription($product_info['meta_description'] ?: oc_substr(($plain_description ?: 'Premium private wellness product with discreet packaging, secure checkout, care guidance and 18+ responsible shopping.'), 0, 155));
 		$this->document->setKeywords($product_info['meta_keyword']);
-		$this->document->addLink($this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_id), 'canonical');
+		$product_url = html_entity_decode($this->url->link('product/product', 'product_id=' . $product_id, true));
+		$this->document->addLink($product_url, 'canonical');
+		$this->document->addMeta(['property' => 'og:type', 'content' => 'product']);
+		$this->document->addMeta(['property' => 'og:url', 'content' => $product_url]);
 
 		$this->document->addScript('catalog/view/javascript/product.js');
 		$this->document->addScript('assets/magnific/jquery.magnific-popup.min.js');
@@ -321,6 +324,8 @@ class Product extends \Opencart\System\Engine\Controller {
 		if ($product_info['image'] && is_file(DIR_IMAGE . html_entity_decode($product_info['image'], ENT_QUOTES, 'UTF-8'))) {
 			$data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
 			$data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
+			$this->document->addMeta(['property' => 'og:image', 'content' => $data['popup']]);
+			$this->document->addMeta(['name' => 'twitter:image', 'content' => $data['popup']]);
 		} else {
 			$data['popup'] = '';
 			$data['thumb'] = '';
@@ -443,7 +448,7 @@ class Product extends \Opencart\System\Engine\Controller {
 			$data['minimum'] = 1;
 		}
 
-		$data['share'] = $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product_id);
+		$data['share'] = $product_url;
 
 		$schema = [
 			'@context' => 'https://schema.org',
