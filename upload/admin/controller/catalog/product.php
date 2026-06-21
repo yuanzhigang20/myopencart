@@ -1147,6 +1147,8 @@ class Product extends \Opencart\System\Engine\Controller {
 			$json['error']['warning'] = $this->language->get('error_warning');
 		}
 
+		$redirect = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token']);
+
 		if (!$json) {
 			if (!$post_info['product_id']) {
 				if (!$post_info['master_id']) {
@@ -1170,6 +1172,14 @@ class Product extends \Opencart\System\Engine\Controller {
 			}
 
 			$json['success'] = $this->language->get('text_success');
+			$json['redirect'] = $redirect;
+
+			if (($this->request->server['HTTP_X_REQUESTED_WITH'] ?? '') !== 'XMLHttpRequest') {
+				$this->session->data['success'] = $json['success'];
+				$this->response->redirect($redirect);
+
+				return;
+			}
 		}
 
 		$this->response->addHeader('Content-Type: application/json');
