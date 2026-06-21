@@ -26,7 +26,7 @@
         {% if payment_address %}<div id="checkout-payment-address" class="checkout-card"><span class="checkout-section-kicker mb-3"><i class="fa-solid fa-address-card"></i> Billing Address</span>{{ payment_address|raw }}</div>{% endif %}
         {% if shipping_address %}<div id="checkout-shipping-address" class="checkout-card"><span class="checkout-section-kicker mb-3"><i class="fa-solid fa-location-dot"></i> Shipping Address</span>{{ shipping_address|raw }}</div>{% endif %}
 
-        <div class="checkout-card">
+        <div class="checkout-card"{% if not shipping_required %} style="display:none;"{% endif %}>
           <span class="checkout-section-kicker mb-3"><i class="fa-solid fa-truck-fast"></i> Delivery</span>
           <div class="checkout-delivery-line mb-3"><strong>Flat Shipping Rate</strong><span id="checkout-flat-shipping-text">$5.00</span></div>
           <p class="checkout-muted mb-0">Discreet delivery in plain packaging.</p>
@@ -60,6 +60,7 @@
 <script>
 (function () {
   const language = '{{ language ?: "en-gb" }}';
+  const shippingRequired = {{ shipping_required ? 'true' : 'false' }};
   const qs = (selector) => document.querySelector(selector);
   const qsa = (selector) => Array.from(document.querySelectorAll(selector));
   const paypalCode = 'paypal.paypal';
@@ -131,6 +132,7 @@
   };
 
   const saveDefaultShipping = async () => {
+    if (!shippingRequired) return true;
     const quoted = await fetchJson('index.php?route=checkout/shipping_method.quote&language=' + encodeURIComponent(language));
     if (quoted.redirect) { location.href = quoted.redirect; return false; }
     if (quoted.error) { setStatus('Please complete your shipping address to continue with PayPal.', 'danger'); return false; }

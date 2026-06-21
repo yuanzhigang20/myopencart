@@ -60,6 +60,10 @@ class ShippingMethod extends \Opencart\System\Engine\Controller {
 			}
 		}
 
+		if (!$json && !$this->cart->hasShipping()) {
+			$json['shipping_methods'] = [];
+		}
+
 		if (!$json) {
 			// Shipping Methods
 			$this->load->model('checkout/shipping_method');
@@ -90,6 +94,14 @@ class ShippingMethod extends \Opencart\System\Engine\Controller {
 		// Validate cart has products and has stock.
 		if (!$this->cart->hasProducts() || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout')) || !$this->cart->hasMinimum()) {
 			$json['redirect'] = $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language'), true);
+		}
+
+		if (!$json && !$this->cart->hasShipping()) {
+			unset($this->session->data['shipping_address']);
+			unset($this->session->data['shipping_method']);
+			unset($this->session->data['shipping_methods']);
+
+			$json['success'] = $this->language->get('text_success');
 		}
 
 		if (!$json) {

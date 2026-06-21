@@ -479,7 +479,7 @@
         <legend>{{ text_your_password }}</legend>
         <div class="row">
           <div class="col mb-3">
-            <label for="input-password" class="form-label">{{ entry_password }}</label> <input type="password" name="password" value="" placeholder="{{ entry_password }}" id="input-password" class="form-control" required/>
+            <label for="input-password" class="form-label">{{ entry_password }}</label> <input type="password" name="password" value="" placeholder="{{ entry_password }}" id="input-password" class="form-control" data-register-required="1"/>
             <div id="error-password" class="invalid-feedback"></div>
           </div>
         </div>
@@ -500,4 +500,32 @@
     {% endif %}
   </div>
   <button type="submit" id="button-register" class="btn btn-primary mt-2">{{ button_continue }}</button>
+  <script>
+    (function () {
+      const form = document.getElementById('form-register');
+      const password = document.getElementById('input-password');
+      const passwordWrap = document.getElementById('password');
+      const syncPasswordRequirement = function () {
+        const account = form ? form.querySelector('input[name="account"]:checked') : null;
+        const registerAccount = !account || account.value === '1';
+
+        if (password) {
+          password.required = registerAccount;
+          password.disabled = !registerAccount;
+        }
+
+        if (passwordWrap) {
+          passwordWrap.classList.toggle('d-none', !registerAccount);
+        }
+      };
+
+      if (form) {
+        form.addEventListener('change', function (event) {
+          if (event.target && event.target.name === 'account') syncPasswordRequirement();
+        });
+      }
+
+      syncPasswordRequirement();
+    })();
+  </script>
 </form>

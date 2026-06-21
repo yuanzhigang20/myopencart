@@ -25,6 +25,7 @@ class Checkout extends \Opencart\System\Engine\Controller {
 		// Do not load the default OpenCart checkout.js because it exposes refresh/modal flows.
 
 		$data['language'] = $this->config->get('config_language');
+		$data['shipping_required'] = $this->cart->hasShipping();
 
 		$data['breadcrumbs'] = [];
 

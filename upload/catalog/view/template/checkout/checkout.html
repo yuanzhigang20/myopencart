@@ -31,6 +31,7 @@
 <script>
 (function () {
   const language = 'en-gb';
+  const shippingRequired = {{ shipping_required ? 'true' : 'false' }};
   const qs = (selector) => document.querySelector(selector);
   const qsa = (selector) => Array.from(document.querySelectorAll(selector));
 
@@ -148,6 +149,7 @@
   };
 
   const loadShippingMethods = async () => {
+    if (!shippingRequired) return true;
     const quoted = await fetch('index.php?route=checkout/shipping_method.quote&language=' + encodeURIComponent(language), { credentials: 'same-origin' }).then(r => r.json());
     if (quoted.redirect) { location.href = quoted.redirect; return false; }
     if (quoted.error) { showError('#error-shipping-method', quoted.error); return false; }
@@ -157,6 +159,7 @@
   };
 
   const saveShippingMethod = async (code) => {
+    if (!shippingRequired) return true;
     if (!code) { showError('#error-shipping-method', 'Please select a shipping method.'); return false; }
     const saved = await postParams('index.php?route=checkout/shipping_method.save&language=' + encodeURIComponent(language), { shipping_method: code });
     if (saved.redirect) { location.href = saved.redirect; return false; }
