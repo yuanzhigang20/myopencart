@@ -67,6 +67,9 @@ $_['text_jan']                   = 'JAN';
 $_['text_isbn']                  = 'ISBN';
 $_['text_mpn']                   = 'MPN';
 
+$_['text_tracking_comment_prefix'] = 'Shipment tracking information:';
+$_['text_shipment_tracking']      = 'Shipment Tracking';
+
 // Colonne
 $_['column_order_id']            = 'ID de commande';
 $_['column_customer']            = 'Client';
@@ -122,11 +125,19 @@ $_['entry_date_to']              = 'Date de fin';
 $_['entry_date_modified_from']   = 'Date de modification à partir de';
 $_['entry_date_modified_to']     = 'Date de modification jusqu\'à';
 
+$_['entry_carrier']              = 'Carrier';
+$_['entry_tracking_number']      = 'Tracking Number';
+$_['button_add_shipment']        = 'Add Shipment';
+
 // Aide
 $_['help_override']              = 'Si la commande du client est bloquée pour changer le statut de la commande en raison d\'une extension anti-fraude, activez le dépassement.';
 
+$_['help_shipment_tracking']     = 'Enter the carrier and tracking number, then add it to order history. Customer notification is enabled automatically.';
+
 // Erreur
 $_['error_warning']              = 'Avertissement: Veuillez vérifier attentivement le formulaire pour les erreurs!';
+$_['error_tracking_required']    = 'Please enter a tracking number.';
+$_['error_request_failed']       = 'Request failed. Please refresh and try again.';
 $_['error_permission']           = 'Avertissement: Vous n\'avez pas la permission de modifier les commandes!';
 $_['error_invoice_no']           = 'Avertissement: Le N° de facture a déjà été créé!';
 $_['error_order']                = 'Avertissement: La commande n\'existe pas!';

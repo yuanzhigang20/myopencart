@@ -66,6 +66,9 @@ $_['text_jan']                   = 'JAN';
 $_['text_isbn']                  = 'ISBN';
 $_['text_mpn']                   = 'MPN';
 
+$_['text_tracking_comment_prefix'] = 'Shipment tracking information:';
+$_['text_shipment_tracking']      = 'Shipment Tracking';
+
 // Column
 $_['column_order_id']            = 'Order ID';
 $_['column_customer']            = 'Customer';
@@ -121,11 +124,19 @@ $_['entry_date_to']              = 'Date To';
 $_['entry_date_modified_from']   = 'Modified Date From';
 $_['entry_date_modified_to']     = 'Modified Date To';
 
+$_['entry_carrier']              = 'Carrier';
+$_['entry_tracking_number']      = 'Tracking Number';
+$_['button_add_shipment']        = 'Add Shipment';
+
 // Help
 $_['help_override']              = 'If the customers order is being blocked from changing the order status due to an anti-fraud extension enable override.';
 
+$_['help_shipment_tracking']     = 'Enter the carrier and tracking number, then add it to order history. Customer notification is enabled automatically.';
+
 // Error
 $_['error_warning']              = 'Warning: Please check the form carefully for errors!';
+$_['error_tracking_required']    = 'Please enter a tracking number.';
+$_['error_request_failed']       = 'Request failed. Please refresh and try again.';
 $_['error_permission']           = 'Warning: You do not have permission to modify orders!';
 $_['error_invoice_no']           = 'Warning: Invoice No. has already been created!';
 $_['error_order']                = 'Warning: Order does not exist!';

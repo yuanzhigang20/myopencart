@@ -377,6 +377,23 @@
               <legend>{{ text_history }}</legend>
               <div id="history">{{ history }}</div>
             </fieldset>
+            <div class="border rounded p-3 my-3 bg-light" id="shipment-helper">
+              <div class="fw-semibold mb-2"><i class="fa-solid fa-truck"></i> {{ text_shipment_tracking }}</div>
+              <div class="row g-2 align-items-end">
+                <div class="col-md-4">
+                  <label for="input-shipment-carrier" class="form-label">{{ entry_carrier }}</label>
+                  <input type="text" id="input-shipment-carrier" class="form-control" placeholder="e.g. FedEx / UPS / DHL">
+                </div>
+                <div class="col-md-5">
+                  <label for="input-shipment-tracking" class="form-label">{{ entry_tracking_number }}</label>
+                  <input type="text" id="input-shipment-tracking" class="form-control" placeholder="Tracking number">
+                </div>
+                <div class="col-md-3 d-grid">
+                  <button type="button" id="button-shipment-history" class="btn btn-success"><i class="fa-solid fa-paper-plane"></i> {{ button_add_shipment }}</button>
+                </div>
+              </div>
+              <div class="form-text mt-2">{{ help_shipment_tracking }}</div>
+            </div>
             <form id="form-history">
               <fieldset>
                 <legend>{{ text_history_add }}</legend>
@@ -1059,42 +1076,149 @@
 
 <script>
 (function () {
-  const form = document.getElementById('form-history');
-  if (!form) return;
-  form.addEventListener('submit', async function (event) {
-    event.preventDefault();
-    const button = document.getElementById('button-history');
-    if (button) button.disabled = true;
-    try {
-      const store = document.getElementById('input-store')?.value || 0;
-      const language = document.getElementById('input-language')?.value || 'en-gb';
-      const currency = document.getElementById('input-currency')?.value || 'USD';
-      const orderId = document.getElementById('input-order-id')?.value || '{{ order_id }}';
-      const url = 'index.php?route=sale/order.call&user_token={{ user_token }}&call=history_add&store_id=' + encodeURIComponent(store) + '&language=' + encodeURIComponent(language) + '&currency=' + encodeURIComponent(currency) + '&order_id=' + encodeURIComponent(orderId);
-      const response = await fetch(url, {
-        method: 'POST',
-        body: new URLSearchParams(new FormData(form)),
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-        credentials: 'same-origin'
-      });
-      const json = await response.json();
-      document.querySelectorAll('.alert-dismissible').forEach(el => el.remove());
-      const alertHost = document.getElementById('alert') || document.querySelector('#content .container-fluid') || document.body;
-      if (json.error) {
-        alertHost.insertAdjacentHTML('afterbegin', '<div class="alert alert-danger alert-dismissible"><i class="fa-solid fa-circle-exclamation"></i> ' + json.error + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
-      }
-      if (json.success) {
-        alertHost.insertAdjacentHTML('afterbegin', '<div class="alert alert-success alert-dismissible"><i class="fa-solid fa-check-circle"></i> ' + json.success + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
-        const history = document.getElementById('history');
-        if (history) history.innerHTML = await fetch('index.php?route=sale/order.history&user_token={{ user_token }}&order_id=' + encodeURIComponent(orderId), { credentials: 'same-origin' }).then(r => r.text());
-        const comment = document.getElementById('input-history');
-        if (comment) comment.value = '';
-      }
-    } catch (error) {
-      console.error(error);
-    } finally {
-      if (button) button.disabled = false;
+  const userToken = '{{ user_token }}';
+
+  const getAlertHost = () => document.getElementById('alert') || document.querySelector('#content .container-fluid') || document.body;
+  const showAlert = (type, message) => {
+    document.querySelectorAll('.alert-dismissible').forEach(el => el.remove());
+    const icon = type === 'success' ? 'fa-check-circle' : 'fa-circle-exclamation';
+    getAlertHost().insertAdjacentHTML('afterbegin', '<div class="alert alert-' + type + ' alert-dismissible"><i class="fa-solid ' + icon + '"></i> ' + message + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>');
+  };
+  const getStoreParams = () => {
+    const store = document.getElementById('input-store')?.value || 0;
+    const language = document.getElementById('input-language')?.value || 'en-gb';
+    const currency = document.getElementById('input-currency')?.value || 'USD';
+    const orderId = document.getElementById('input-order-id')?.value || '{{ order_id }}';
+
+    return { store, language, currency, orderId };
+  };
+
+  const refreshHistory = async (orderId) => {
+    const history = document.getElementById('history');
+    if (history && orderId) {
+      history.innerHTML = await fetch('index.php?route=sale/order.history&user_token=' + encodeURIComponent(userToken) + '&order_id=' + encodeURIComponent(orderId), { credentials: 'same-origin' }).then(r => r.text());
     }
-  });
+  };
+
+  const postOrderCall = async (call, body) => {
+    const { store, language, currency, orderId } = getStoreParams();
+    const url = 'index.php?route=sale/order.call&user_token=' + encodeURIComponent(userToken) + '&call=' + encodeURIComponent(call) + '&store_id=' + encodeURIComponent(store) + '&language=' + encodeURIComponent(language) + '&currency=' + encodeURIComponent(currency) + '&order_id=' + encodeURIComponent(orderId);
+    const response = await fetch(url, {
+      method: 'POST',
+      body,
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+      credentials: 'same-origin'
+    });
+
+    return response.json();
+  };
+
+  const form = document.getElementById('form-history');
+  if (form) {
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const button = document.getElementById('button-history');
+      if (button) button.disabled = true;
+      try {
+        const { orderId } = getStoreParams();
+        const json = await postOrderCall('history_add', new URLSearchParams(new FormData(form)));
+        if (json.error) {
+          showAlert('danger', typeof json.error === 'string' ? json.error : Object.values(json.error).join('<br>'));
+        }
+        if (json.success) {
+          showAlert('success', json.success);
+          await refreshHistory(orderId);
+          const comment = document.getElementById('input-history');
+          if (comment) comment.value = '';
+        }
+      } catch (error) {
+        console.error(error);
+        showAlert('danger', '{{ error_request_failed|escape('js') }}');
+      } finally {
+        if (button) button.disabled = false;
+      }
+    });
+  }
+
+  const shipmentButton = document.getElementById('button-shipment-history');
+  if (shipmentButton && form) {
+    shipmentButton.addEventListener('click', function () {
+      const carrier = (document.getElementById('input-shipment-carrier')?.value || '').trim();
+      const tracking = (document.getElementById('input-shipment-tracking')?.value || '').trim();
+
+      if (!tracking) {
+        showAlert('danger', '{{ error_tracking_required|escape('js') }}');
+        return;
+      }
+
+      const status = document.getElementById('input-order-status');
+      if (status) {
+        const preferred = Array.from(status.options).find(option => /shipped|complete|发货|已发货|完成/i.test(option.textContent));
+        if (preferred) status.value = preferred.value;
+      }
+
+      const notify = document.getElementById('input-notify');
+      if (notify) notify.checked = true;
+
+      const comment = document.getElementById('input-history');
+      if (comment) {
+        comment.value = carrier
+          ? '{{ text_tracking_comment_prefix|escape('js') }}' + '\n' + '{{ entry_carrier|escape('js') }}: ' + carrier + '\n' + '{{ entry_tracking_number|escape('js') }}: ' + tracking
+          : '{{ text_tracking_comment_prefix|escape('js') }}' + '\n' + '{{ entry_tracking_number|escape('js') }}: ' + tracking;
+      }
+
+      form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true }));
+    });
+  }
+
+  const confirmButton = document.getElementById('button-confirm');
+  if (confirmButton) {
+    confirmButton.addEventListener('click', async function () {
+      confirmButton.disabled = true;
+      try {
+        const data = new URLSearchParams();
+        ['form-customer', 'form-cart', 'form-shipping-address', 'form-shipping-method', 'form-payment-address', 'form-payment-method', 'form-comment'].forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) {
+            for (const [key, value] of new FormData(el).entries()) data.append(key, value);
+          }
+        });
+        document.querySelectorAll('#collapse-order form').forEach((el) => {
+          for (const [key, value] of new FormData(el).entries()) data.append(key, value);
+        });
+        const orderId = document.getElementById('input-order-id')?.value || '{{ order_id }}';
+        if (orderId) data.set('order_id', orderId);
+
+        const json = await postOrderCall('confirm', data);
+        document.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
+        document.querySelectorAll('.invalid-feedback').forEach(el => el.classList.remove('d-block'));
+
+        if (typeof json.error === 'string') {
+          showAlert('danger', json.error);
+        } else if (json.error) {
+          Object.entries(json.error).forEach(([key, message]) => {
+            const input = document.getElementById('input-' + key.replaceAll('_', '-'));
+            const error = document.getElementById('error-' + key.replaceAll('_', '-'));
+            if (input) input.classList.add('is-invalid');
+            if (error) { error.innerHTML = message; error.classList.add('d-block'); }
+          });
+          showAlert('danger', '{{ error_warning|escape('js') }}');
+        }
+
+        if (json.success) {
+          showAlert('success', json.success);
+          if (json.order_id) {
+            const inputOrderId = document.getElementById('input-order-id');
+            if (inputOrderId) inputOrderId.value = json.order_id;
+          }
+        }
+      } catch (error) {
+        console.error(error);
+        showAlert('danger', '{{ error_request_failed|escape('js') }}');
+      } finally {
+        confirmButton.disabled = false;
+      }
+    });
+  }
 })();
 </script>
