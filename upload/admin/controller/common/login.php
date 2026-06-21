@@ -20,8 +20,9 @@ class Login extends \Opencart\System\Engine\Controller {
 
 		$this->document->addScript('./view/javascript/common/login.js');
 
-		// Check to see if user is already logged
-		if ($this->user->isLogged() && isset($this->request->get['user_token']) && isset($this->session->data['user_token']) && ($this->request->get['user_token'] == $this->session->data['user_token'])) {
+		// Check to see if user is already logged. When the admin root is opened without
+		// a user_token, keep the session and send the user back to the dashboard.
+		if ($this->user->isLogged() && isset($this->session->data['user_token']) && (!isset($this->request->get['user_token']) || ($this->request->get['user_token'] == $this->session->data['user_token']))) {
 			$this->response->redirect($this->url->link('common/dashboard', 'user_token=' . $this->session->data['user_token'], true));
 		}
 
