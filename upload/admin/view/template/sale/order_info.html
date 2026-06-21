@@ -1141,10 +1141,16 @@
   }
 
   const shipmentButton = document.getElementById('button-shipment-history');
-  if (shipmentButton && form) {
-    shipmentButton.addEventListener('click', function () {
+  if (shipmentButton) {
+    shipmentButton.addEventListener('click', async function () {
       const carrier = (document.getElementById('input-shipment-carrier')?.value || '').trim();
       const tracking = (document.getElementById('input-shipment-tracking')?.value || '').trim();
+      const { orderId } = getStoreParams();
+
+      if (!orderId || orderId === '0') {
+        showAlert('danger', '{{ error_order|escape('js') }}');
+        return;
+      }
 
       if (!tracking) {
         showAlert('danger', '{{ error_tracking_required|escape('js') }}');
@@ -1152,22 +1158,54 @@
       }
 
       const status = document.getElementById('input-order-status');
+      let statusId = status?.value || '';
       if (status) {
         const preferred = Array.from(status.options).find(option => /shipped|complete|发货|已发货|完成/i.test(option.textContent));
-        if (preferred) status.value = preferred.value;
+        if (preferred) {
+          status.value = preferred.value;
+          statusId = preferred.value;
+        }
       }
 
       const notify = document.getElementById('input-notify');
       if (notify) notify.checked = true;
 
-      const comment = document.getElementById('input-history');
-      if (comment) {
-        comment.value = carrier
-          ? '{{ text_tracking_comment_prefix|escape('js') }}' + '\n' + '{{ entry_carrier|escape('js') }}: ' + carrier + '\n' + '{{ entry_tracking_number|escape('js') }}: ' + tracking
-          : '{{ text_tracking_comment_prefix|escape('js') }}' + '\n' + '{{ entry_tracking_number|escape('js') }}: ' + tracking;
-      }
+      const shipmentComment = carrier
+        ? '{{ text_tracking_comment_prefix|escape('js') }}' + '\n' + '{{ entry_carrier|escape('js') }}: ' + carrier + '\n' + '{{ entry_tracking_number|escape('js') }}: ' + tracking
+        : '{{ text_tracking_comment_prefix|escape('js') }}' + '\n' + '{{ entry_tracking_number|escape('js') }}: ' + tracking;
 
-      form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true }));
+      const comment = document.getElementById('input-history');
+      if (comment) comment.value = shipmentComment;
+
+      const body = new URLSearchParams();
+      body.set('order_id', orderId);
+      body.set('order_status_id', statusId || '0');
+      body.set('comment', shipmentComment);
+      body.set('notify', '1');
+      body.set('override', document.getElementById('input-override')?.checked ? '1' : '0');
+
+      shipmentButton.disabled = true;
+      try {
+        const json = await postOrderCall('history_add', body);
+        if (json.error) {
+          showAlert('danger', typeof json.error === 'string' ? json.error : Object.values(json.error).join('<br>'));
+          return;
+        }
+        if (json.success) {
+          showAlert('success', json.success);
+          await refreshHistory(orderId);
+          const carrierInput = document.getElementById('input-shipment-carrier');
+          const trackingInput = document.getElementById('input-shipment-tracking');
+          if (carrierInput) carrierInput.value = '';
+          if (trackingInput) trackingInput.value = '';
+          if (comment) comment.value = '';
+        }
+      } catch (error) {
+        console.error(error);
+        showAlert('danger', '{{ error_request_failed|escape('js') }}');
+      } finally {
+        shipmentButton.disabled = false;
+      }
     });
   }
 
