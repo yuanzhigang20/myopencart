@@ -1077,6 +1077,13 @@ class Product extends \Opencart\System\Engine\Controller {
 		$post_info['product_id'] = (int)$post_info['product_id'];
 		$post_info['master_id'] = (int)$post_info['master_id'];
 
+		if ($post_info['product_id'] && !array_key_exists('status', $this->request->post)) {
+			$this->load->model('catalog/product');
+
+			$product_info = $this->model_catalog_product->getProduct($post_info['product_id']);
+			$post_info['status'] = isset($product_info['status']) ? (int)$product_info['status'] : 0;
+		}
+
 		foreach ($post_info['product_description'] as $language_id => $value) {
 			if (!oc_validate_length($value['name'], 1, 255)) {
 				$json['error']['name_' . $language_id] = $this->language->get('error_name');
