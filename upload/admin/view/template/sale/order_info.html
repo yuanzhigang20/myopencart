@@ -1196,13 +1196,15 @@
         if (typeof json.error === 'string') {
           showAlert('danger', json.error);
         } else if (json.error) {
+          const messages = [];
           Object.entries(json.error).forEach(([key, message]) => {
             const input = document.getElementById('input-' + key.replaceAll('_', '-'));
             const error = document.getElementById('error-' + key.replaceAll('_', '-'));
             if (input) input.classList.add('is-invalid');
             if (error) { error.innerHTML = message; error.classList.add('d-block'); }
+            if (message && !messages.includes(message)) messages.push(message);
           });
-          showAlert('danger', '{{ error_warning|escape('js') }}');
+          showAlert('danger', messages.length ? messages.join('<br>') : '{{ error_warning|escape('js') }}');
         }
 
         if (json.success) {
