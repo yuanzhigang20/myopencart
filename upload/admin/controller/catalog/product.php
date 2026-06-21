@@ -1073,6 +1073,10 @@ class Product extends \Opencart\System\Engine\Controller {
 
 		$post_info = $this->request->post + $required;
 
+		// Product form values arrive from POST as strings. Normalize IDs used by strict typed model methods.
+		$post_info['product_id'] = (int)$post_info['product_id'];
+		$post_info['master_id'] = (int)$post_info['master_id'];
+
 		foreach ($post_info['product_description'] as $language_id => $value) {
 			if (!oc_validate_length($value['name'], 1, 255)) {
 				$json['error']['name_' . $language_id] = $this->language->get('error_name');
