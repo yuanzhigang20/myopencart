@@ -18,6 +18,8 @@ class Home extends \Opencart\System\Engine\Controller {
 		$this->document->setDescription('Shop premium private wellness and intimacy essentials with discreet packaging, secure checkout, body-safe product details and 18+ responsible retail.');
 		$this->document->setKeywords('sexual wellness, intimacy products, discreet packaging, private wellness, adult wellness');
 
+		$this->load->language('product/category');
+
 		$description = $this->config->get('config_description');
 		$language_id = $this->config->get('config_language_id');
 
@@ -25,17 +27,40 @@ class Home extends \Opencart\System\Engine\Controller {
 			// Keep global store metadata available, but use a conversion-focused wellness title above.
 		}
 
-		// Homepage categories
-		$this->load->model('catalog/category');
-		$data['categories'] = [];
-		foreach ($this->model_catalog_category->getCategories(0) as $category) {
-			$data['categories'][] = [
-				'name' => $category['name'],
-				'href' => $this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $category['category_id'])
-			];
+		if (isset($this->request->get['page'])) {
+			$page = max(1, (int)$this->request->get['page']);
+		} else {
+			$page = 1;
 		}
 
-		// Homepage products are intentionally front-loaded for ecommerce conversion.
+		$limit = 12;
+
+		// Homepage categories: expose real catalog categories and child categories.
+		$this->load->model('catalog/category');
+		$data['categories'] = [];
+		$data['category_groups'] = [];
+
+		foreach ($this->model_catalog_category->getCategories(0) as $category) {
+			$children = [];
+
+			foreach ($this->model_catalog_category->getCategories((int)$category['category_id']) as $child) {
+				$children[] = [
+					'name' => $child['name'],
+					'href' => $this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $category['category_id'] . '_' . $child['category_id'])
+				];
+			}
+
+			$category_data = [
+				'name' => $category['name'],
+				'href' => $this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $category['category_id']),
+				'children' => $children
+			];
+
+			$data['categories'][] = $category_data;
+			$data['category_groups'][] = $category_data;
+		}
+
+		// Homepage products: show the full enabled catalog with pagination.
 		$this->load->model('catalog/product');
 		$this->load->model('tool/image');
 
@@ -46,11 +71,13 @@ class Home extends \Opencart\System\Engine\Controller {
 		$data['new_arrivals'] = [];
 		$data['hero_products'] = [];
 
+		$product_total = $this->model_catalog_product->getTotalProducts([]);
+
 		$results = $this->model_catalog_product->getProducts([
-			'sort'  => 'date_added',
-			'order' => 'DESC',
-			'start' => 0,
-			'limit' => 12
+			'sort'  => 'p.sort_order',
+			'order' => 'ASC',
+			'start' => ($page - 1) * $limit,
+			'limit' => $limit
 		]);
 
 		$benefits = [
@@ -85,6 +112,16 @@ class Home extends \Opencart\System\Engine\Controller {
 		$data['best_sellers'] = array_slice($data['products'], 0, 4);
 		$data['new_arrivals'] = array_slice($data['products'], 4, 4) ?: array_slice($data['products'], 0, 4);
 		$data['hero_products'] = array_slice($data['best_sellers'], 0, 2);
+
+		$data['pagination'] = $this->load->controller('common/pagination', [
+			'total' => $product_total,
+			'page'  => $page,
+			'limit' => $limit,
+			'url'   => $this->url->link('common/home', 'language=' . $this->config->get('config_language') . '&page={page}')
+		]);
+
+		$data['results'] = sprintf($this->language->get('text_pagination'), ($product_total) ? (($page - 1) * $limit) + 1 : 0, ((($page - 1) * $limit) > ($product_total - $limit)) ? $product_total : ((($page - 1) * $limit) + $limit), $product_total, ceil($product_total / $limit));
+		$data['all_products_url'] = $this->url->link('common/home', 'language=' . $this->config->get('config_language'));
 
 		$site_url = rtrim($this->config->get('config_ssl') ?: $this->config->get('config_url'), '/') . '/';
 		$this->document->addLink($site_url, 'canonical');

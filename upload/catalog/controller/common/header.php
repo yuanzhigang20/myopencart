@@ -49,24 +49,24 @@ class Header extends \Opencart\System\Engine\Controller {
 
 		$data['name'] = $this->config->get('config_name');
 
-		// Wellness category quick links for a premium, private navigation experience.
+		// Real catalog categories for the storefront navigation.
 		$this->load->model('catalog/category');
 		$data['wellness_categories'] = [];
 
-		$wellness_category_names = [
-			'Beginner Friendly',
-			'For Couples',
-			'Solo Wellness',
-			'Quiet & Discreet',
-			'Waterproof',
-			'Lubricants & Care',
-			'Gift Sets'
-		];
+		foreach ($this->model_catalog_category->getCategories(0) as $category) {
+			$children = [];
 
-		foreach ($wellness_category_names as $category_name) {
+			foreach ($this->model_catalog_category->getCategories((int)$category['category_id']) as $child) {
+				$children[] = [
+					'name' => $child['name'],
+					'href' => $this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $category['category_id'] . '_' . $child['category_id'])
+				];
+			}
+
 			$data['wellness_categories'][] = [
-				'name' => $category_name,
-				'href' => $this->url->link('product/search', 'language=' . $this->config->get('config_language') . '&search=' . urlencode($category_name))
+				'name' => $category['name'],
+				'href' => $this->url->link('product/category', 'language=' . $this->config->get('config_language') . '&path=' . $category['category_id']),
+				'children' => $children
 			];
 		}
 

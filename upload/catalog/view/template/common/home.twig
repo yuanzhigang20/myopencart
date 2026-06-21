@@ -8,7 +8,7 @@
           <h1 class="fw-bold mb-2">Discreet Intimacy Essentials</h1>
           <p class="hero-copy mb-3">Body-safe products, private packaging, and a softer way to shop intimate wellness.</p>
           <div class="hero-actions d-flex flex-wrap gap-2 mb-3">
-            <a class="btn btn-primary btn-lg" href="#best-sellers"><i class="fa-solid fa-bag-shopping"></i> Shop Best Sellers</a>
+            <a class="btn btn-primary btn-lg" href="#all-products"><i class="fa-solid fa-bag-shopping"></i> Shop Products</a>
             <a class="btn btn-light btn-lg" href="index.php?route=product/search&language=en-gb&search=Beginner%20Friendly"><i class="fa-solid fa-seedling"></i> Beginner Friendly</a>
           </div>
           <div class="hero-trust-line">18+ only · Discreet packaging · Secure PayPal checkout</div>
@@ -49,29 +49,38 @@
         <span class="wellness-kicker mb-2">Shop by Need</span>
         <h2 class="fw-bold mb-1">Choose by comfort, use case, or privacy level</h2>
       </div>
-      <a class="btn btn-outline-primary" href="index.php?route=product/category&language=en-gb&path=101">Browse all</a>
+      <a class="btn btn-outline-primary" href="{{ all_products_url }}">Browse all</a>
     </div>
     <div class="need-scroll">
-      <article class="need-card"><i class="fa-solid fa-seedling"></i><h3>Beginner Friendly</h3><p>Simple, approachable picks for a softer first purchase.</p><a href="index.php?route=product/search&language=en-gb&search=Beginner%20Friendly">Shop now</a></article>
-      <article class="need-card"><i class="fa-solid fa-heart"></i><h3>For Couples</h3><p>Tasteful options for shared intimacy and connection.</p><a href="index.php?route=product/search&language=en-gb&search=For%20Couples">Shop now</a></article>
-      <article class="need-card"><i class="fa-solid fa-spa"></i><h3>Solo Wellness</h3><p>Private self-care selections with discreet presentation.</p><a href="index.php?route=product/search&language=en-gb&search=Solo%20Wellness">Shop now</a></article>
-      <article class="need-card"><i class="fa-solid fa-volume-xmark"></i><h3>Quiet & Discreet</h3><p>Low-profile choices for calm, private shopping.</p><a href="index.php?route=product/search&language=en-gb&search=Quiet%20Discreet">Shop now</a></article>
-      <article class="need-card"><i class="fa-solid fa-droplet"></i><h3>Waterproof</h3><p>Clearly labeled water-safe essentials and care notes.</p><a href="index.php?route=product/search&language=en-gb&search=Waterproof">Shop now</a></article>
-      <article class="need-card"><i class="fa-solid fa-hand-holding-droplet"></i><h3>Lubricants & Care</h3><p>Comfort, hygiene and aftercare products for wellness routines.</p><a href="index.php?route=product/search&language=en-gb&search=Lubricants%20Care">Shop now</a></article>
+      {% for category in category_groups %}
+        <article class="need-card">
+          <i class="fa-solid fa-layer-group"></i>
+          <h3>{{ category.name }}</h3>
+          <p>{% if category.children %}{{ category.children|length }} curated collections{% else %}Browse the full collection{% endif %}</p>
+          <a href="{{ category.href }}">Shop category</a>
+          {% if category.children %}
+            <div class="mt-2 d-flex flex-wrap gap-1">
+              {% for child in category.children|slice(0, 4) %}<a class="wellness-pill text-decoration-none" href="{{ child.href }}">{{ child.name }}</a>{% endfor %}
+            </div>
+          {% endif %}
+        </article>
+      {% else %}
+        <article class="need-card"><i class="fa-solid fa-layer-group"></i><h3>All Products</h3><p>Browse every available private wellness product.</p><a href="{{ all_products_url }}">Shop now</a></article>
+      {% endfor %}
     </div>
   </section>
 
-  <section id="best-sellers" class="container home-section products-front-section">
+  <section id="all-products" class="container home-section products-front-section">
     <div class="section-head compact-head">
       <div>
-        <span class="wellness-kicker mb-2">Best Sellers</span>
-        <h2 class="fw-bold mb-1">Popular private wellness picks</h2>
-        <p class="text-muted mb-0">Product-first shopping with clear price, benefit, and fast cart actions.</p>
+        <span class="wellness-kicker mb-2">All Products</span>
+        <h2 class="fw-bold mb-1">Browse the full private wellness catalog</h2>
+        <p class="text-muted mb-0">All available products with clear price, benefit, and fast cart actions.</p>
       </div>
     </div>
-    {% if best_sellers %}
+    {% if products %}
       <div class="home-product-grid">
-        {% for product in best_sellers %}
+        {% for product in products %}
           <article class="home-product-card">
             <a class="home-product-image" href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }} private wellness product" loading="{% if loop.index <= 4 %}eager{% else %}lazy{% endif %}" width="360" height="450"></a>
             <div class="home-product-body">
@@ -90,7 +99,11 @@
           </article>
         {% endfor %}
       </div>
-    {% else %}<div class="alert alert-warning">No best sellers yet. Add products in admin panel.</div>{% endif %}
+      <div class="row mt-4 align-items-center">
+        <div class="col-md-6">{{ pagination }}</div>
+        <div class="col-md-6 text-md-end small text-muted">{{ results }}</div>
+      </div>
+    {% else %}<div class="alert alert-warning">No products yet. Add products in admin panel.</div>{% endif %}
   </section>
 
   <section class="container home-section">

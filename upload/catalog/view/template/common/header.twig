@@ -40,7 +40,10 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop by Need</a>
           <ul class="dropdown-menu">
-            {% for category in wellness_categories %}<li><a class="dropdown-item" href="{{ category.href }}">{{ category.name }}</a></li>{% endfor %}
+            {% for category in wellness_categories %}
+              <li><a class="dropdown-item fw-semibold" href="{{ category.href }}">{{ category.name }}</a></li>
+              {% for child in category.children %}<li><a class="dropdown-item ps-4" href="{{ child.href }}">{{ child.name }}</a></li>{% endfor %}
+            {% endfor %}
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="{{ contact }}">Contact</a></li>

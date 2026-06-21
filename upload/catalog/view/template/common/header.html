@@ -1,50 +1,62 @@
-<nav id="top">
+<!doctype html>
+<html dir="{{ direction }}" lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <base href="{{ base }}">
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta property="og:site_name" content="{{ name }}">
+  <meta property="og:title" content="{{ title }}">
+  {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
+  {% if not has_og_type %}<meta property="og:type" content="website">{% endif %}
+  {% if not has_og_url %}<meta property="og:url" content="{{ current_url }}">{% endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  {% if description %}<meta name="twitter:description" content="{{ description }}">{% endif %}
+  {% for link in links %}<link href="{{ link.href }}" rel="{{ link.rel }}">{% endfor %}
+  {% for meta in metas %}<meta{% for key, value in meta %} {{ key }}="{{ value }}"{% endfor %}>{% endfor %}
+  {% if icon %}<link rel="icon" href="{{ icon }}">{% endif %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <style>
+    :root{--lv-cream:#fbf7f1;--lv-soft:#f3ece7;--lv-rose:#c7aaa1;--lv-mauve:#8f7370;--lv-ink:#241b18;--lv-brown:#3a2b25;--lv-muted:#746761;--lv-line:#eadfd8;--lv-gold:#b48b62;--lv-success:#4d6b57}html{scroll-behavior:smooth;max-width:100%;overflow-x:hidden}body{max-width:100%;overflow-x:hidden;background:var(--lv-cream);color:var(--lv-ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;letter-spacing:.01em}.navbar{background:rgba(251,247,241,.94)!important;backdrop-filter:blur(18px);border-color:var(--lv-line)!important}.navbar-brand{font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--lv-ink)!important}.nav-link{color:var(--lv-muted)!important;font-weight:600}.nav-link:hover{color:var(--lv-ink)!important}.btn{border-radius:999px;font-weight:700;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:.45rem}.btn-primary{--bs-btn-bg:var(--lv-brown);--bs-btn-border-color:var(--lv-brown);--bs-btn-hover-bg:#211815;--bs-btn-hover-border-color:#211815;--bs-btn-active-bg:#211815;--bs-btn-active-border-color:#211815}.btn-outline-primary{--bs-btn-color:var(--lv-brown);--bs-btn-border-color:rgba(58,43,37,.35);--bs-btn-hover-bg:var(--lv-brown);--bs-btn-hover-border-color:var(--lv-brown)}.btn-light{background:#fff;border-color:var(--lv-line);color:var(--lv-brown)}.form-control,.form-select{border-radius:16px;border-color:var(--lv-line);min-height:44px}.form-control:focus,.form-select:focus{border-color:var(--lv-rose);box-shadow:0 0 0 .2rem rgba(199,170,161,.24)}.oc-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 78% 18%,rgba(199,170,161,.42),transparent 34%),linear-gradient(135deg,#fff8f1 0%,#f1e4dc 48%,#2b201c 100%);color:var(--lv-ink);border:1px solid var(--lv-line);border-radius:34px;box-shadow:0 24px 80px rgba(58,43,37,.12)}.oc-hero:after{content:"";position:absolute;right:-130px;bottom:-170px;width:430px;height:430px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.25)}.hero-kicker,.wellness-kicker{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--lv-line);background:rgba(255,255,255,.72);color:var(--lv-brown);border-radius:999px;padding:.45rem .8rem;font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}.hero-copy{color:#5f514b;max-width:680px}.trust-strip{background:#fff;border:1px solid var(--lv-line);border-radius:24px;box-shadow:0 16px 40px rgba(58,43,37,.06)}.trust-item{display:flex;gap:.8rem;align-items:flex-start}.trust-item i{color:var(--lv-gold);font-size:1.1rem;margin-top:.2rem}.trust-item strong{display:block;color:var(--lv-ink)}.trust-item span{display:block;color:var(--lv-muted);font-size:.9rem}.scenario-card{height:100%;padding:1.15rem;border:1px solid var(--lv-line);border-radius:24px;background:#fff;color:var(--lv-ink);text-decoration:none;transition:.2s;box-shadow:0 10px 28px rgba(58,43,37,.05)}.scenario-card:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(58,43,37,.09);color:var(--lv-ink)}.scenario-card i{width:44px;height:44px;border-radius:50%;background:var(--lv-soft);display:inline-flex;align-items:center;justify-content:center;color:var(--lv-brown);margin-bottom:.85rem}.product-card{transition:.2s;overflow:hidden;background:#fff;border:1px solid var(--lv-line)!important;border-radius:26px;box-shadow:0 12px 34px rgba(58,43,37,.06)!important}.product-card:hover{transform:translateY(-4px);box-shadow:0 20px 48px rgba(58,43,37,.12)!important}.product-card .product-image-wrap{display:block;aspect-ratio:4/5;background:linear-gradient(180deg,#fbf7f1,#efe3dc);overflow:hidden}.product-card img{width:100%;height:100%;object-fit:cover;display:block}.product-card .card-body{padding:1.15rem}.product-card h3{line-height:1.35}.product-card .text-muted{color:var(--lv-muted)!important}.product-badges{display:flex;flex-wrap:wrap;gap:.35rem;margin:.35rem 0 .8rem}.wellness-pill{display:inline-flex;align-items:center;border:1px solid var(--lv-line);background:var(--lv-soft);color:var(--lv-brown);border-radius:999px;font-size:.72rem;font-weight:800;padding:.28rem .55rem}.price{font-size:1.2rem;font-weight:900;color:var(--lv-brown)}.home-commerce{background:#FAF7F2;color:#241D1A}.home-hero-compact{padding:1rem 0 .75rem}.hero-commerce-grid{height:420px;min-height:0;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(420px,.95fr);gap:1rem;align-items:stretch}.hero-commerce-copy{background:linear-gradient(135deg,#fffaf5,#f1e5de);border:1px solid #E8DDD5;border-radius:28px;padding:1.45rem 1.6rem;display:flex;flex-direction:column;justify-content:center;box-shadow:0 18px 48px rgba(36,29,26,.07)}.hero-commerce-copy h1{font-size:clamp(2.2rem,4vw,4rem);line-height:.98;color:#241D1A}.hero-commerce-copy .hero-copy{font-size:1.08rem;max-width:620px;color:#6F625C}.hero-trust-line{font-weight:800;color:#7A5548;font-size:.95rem}.hero-commerce-featured{display:grid;grid-template-columns:1fr;grid-template-rows:1fr 1fr .72fr;gap:.65rem;min-height:0}.hero-mini-product,.hero-need-card{background:#fff;border:1px solid #E8DDD5;border-radius:24px;box-shadow:0 12px 34px rgba(36,29,26,.06)}.hero-mini-product{display:grid;grid-template-columns:96px 1fr;gap:.7rem;align-items:center;padding:.6rem}.hero-mini-image{display:block;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#FAF7F2}.hero-mini-image img{width:100%;height:100%;object-fit:cover;display:block}.hero-mini-body h2 a,.home-product-card h3 a{color:#241D1A;text-decoration:none}.hero-mini-body h2 a:hover,.home-product-card h3 a:hover{color:#7A5548}.hero-mini-price{font-weight:900;color:#7A5548}.hero-need-card{display:flex;flex-direction:column;justify-content:center;gap:.3rem;padding:1rem 1.15rem;text-decoration:none;color:#241D1A}.hero-need-card small{color:#6F625C}.home-section{margin-top:1.5rem;margin-bottom:2.25rem}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1rem}.compact-head h2{font-size:clamp(1.45rem,2.5vw,2.2rem)}.need-scroll{display:grid;grid-template-columns:repeat(6,minmax(165px,1fr));gap:.8rem}.need-card{background:#fff;border:1px solid #E8DDD5;border-radius:24px;padding:1rem;box-shadow:0 10px 26px rgba(36,29,26,.05)}.need-card i{width:42px;height:42px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:#F3ECE7;color:#7A5548;margin-bottom:.75rem}.need-card h3{font-size:1rem;font-weight:900;margin-bottom:.35rem;color:#241D1A}.need-card p{font-size:.86rem;color:#6F625C;min-height:3.2em;margin-bottom:.8rem}.need-card a{color:#7A5548;font-weight:900;text-decoration:none}.home-product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.home-product-card{background:#fff;border:1px solid #E8DDD5;border-radius:26px;overflow:hidden;box-shadow:0 12px 34px rgba(36,29,26,.06);display:flex;flex-direction:column}.home-product-image{display:block;aspect-ratio:4/5;background:#FAF7F2;overflow:hidden}.home-product-image img{width:100%;height:100%;object-fit:cover;display:block}.home-product-body{padding:1rem;display:flex;flex-direction:column;gap:.6rem;flex:1}.home-product-body h3{font-size:1rem;font-weight:900;line-height:1.25;margin:0}.home-product-body p{font-size:.88rem;color:#6F625C;margin:0;flex:1}.home-product-price{font-size:1.15rem;font-weight:900;color:#7A5548}.home-product-actions{display:grid;grid-template-columns:1fr 1fr;gap:.55rem}.home-product-actions .btn{width:100%;padding-left:.5rem;padding-right:.5rem}.promise-card{background:#fff;border:1px solid #E8DDD5;border-radius:28px;padding:1.35rem;display:grid;grid-template-columns:1fr 1.25fr;gap:1rem;box-shadow:0 14px 34px rgba(36,29,26,.06)}.promise-points{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}.promise-points div{background:#FAF7F2;border:1px solid #E8DDD5;border-radius:20px;padding:1rem}.promise-points i{color:#7A5548;margin-bottom:.55rem}.promise-points strong,.promise-points span{display:block}.promise-points span{color:#6F625C;font-size:.86rem}.faq-section{margin-bottom:3rem}.compact-product-card .home-product-body{gap:.55rem}.compact-product-card .home-product-body h3{font-size:.95rem}.footer{background:#211815;color:#d8cbc3}.footer a{color:#fbf7f1;text-decoration:none}.footer a:hover{text-decoration:underline}.age-note{font-size:.78rem;color:var(--lv-muted)}.product-gallery-main{background:#fff;border:1px solid var(--lv-line);border-radius:28px;overflow:hidden}.product-gallery-main img{width:100%;aspect-ratio:4/5;object-fit:cover}.product-summary-card{background:#fff;border:1px solid var(--lv-line);border-radius:28px;padding:1.4rem;box-shadow:0 18px 44px rgba(58,43,37,.08)}.spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}.spec-tile{background:#fff;border:1px solid var(--lv-line);border-radius:18px;padding:.9rem}.spec-tile small{display:block;color:var(--lv-muted);font-weight:700}.spec-tile strong{color:var(--lv-ink)}.wellness-section{background:#fff;border:1px solid var(--lv-line);border-radius:28px;padding:1.4rem}.accordion-button{background:#fff;color:var(--lv-ink);font-weight:800}.accordion-button:not(.collapsed){background:var(--lv-soft);color:var(--lv-ink);box-shadow:none}.accordion-item{border-color:var(--lv-line)}.sticky-atc{display:none}.breadcrumb a{color:var(--lv-muted)}img[loading="lazy"]{content-visibility:auto}@media(max-width:575.98px){.hero-commerce-grid{gap:.55rem}.home-commerce .hero-actions{gap:.45rem!important}.hero-commerce-copy{min-height:260px}.hero-commerce-featured{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.25rem}.hero-mini-product,.hero-need-card{flex:0 0 72%;min-height:0;scroll-snap-align:start}.hero-mini-product:nth-child(2){display:grid}.hero-mini-image{height:96px;aspect-ratio:auto}.hero-mini-body h2{font-size:.78rem}.hero-mini-body .d-flex{gap:.35rem!important}.hero-mini-body .btn{min-height:38px}.hero-need-card{justify-content:flex-start}.home-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:991.98px){.hero-commerce-grid{grid-template-columns:1fr;height:auto;min-height:0}.hero-commerce-copy{min-height:300px}.hero-commerce-featured{grid-template-columns:1fr 1fr;grid-template-rows:auto}.hero-need-card{grid-column:1/-1}.need-scroll{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.35rem}.need-card{min-width:210px;scroll-snap-align:start}.home-product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.promise-card,.promise-points{grid-template-columns:1fr}}@media(max-width:767.98px){body{padding-bottom:84px}.oc-hero{border-radius:24px}.display-4,.display-5{font-size:2.15rem}.hero-actions .btn{width:100%;margin-bottom:.65rem}.home-commerce .hero-actions .btn{width:auto;flex:1 1 0;margin-bottom:0;min-height:42px;font-size:.88rem;padding:.55rem .65rem}.home-hero-compact{padding:.6rem 0 .25rem}.hero-commerce-copy{min-height:280px;padding:.85rem;border-radius:22px}.hero-commerce-copy .hero-kicker{font-size:.66rem;padding:.32rem .55rem}.hero-commerce-copy h1{font-size:1.92rem;line-height:1}.hero-commerce-copy .hero-copy{font-size:.9rem;margin-bottom:.65rem!important}.hero-trust-line{font-size:.78rem}.hero-commerce-featured{grid-template-columns:1fr 1fr;gap:.55rem}.hero-mini-product{grid-template-columns:1fr;padding:.45rem;min-height:205px}.hero-mini-product:nth-child(2){display:none}.hero-mini-image{aspect-ratio:4/3}.hero-mini-body{padding:.1rem}.hero-mini-body h2{font-size:.78rem}.hero-mini-body .wellness-pill{display:none}.hero-mini-body .btn-light{display:none}.hero-need-card{grid-column:auto!important;min-height:205px;padding:.75rem}.home-section{margin-top:1rem;margin-bottom:1.5rem}.section-head{align-items:flex-start}.section-head .btn{display:none}.home-product-grid{gap:.75rem}.home-product-body{padding:.75rem}.home-product-body h3{font-size:.9rem}.home-product-body p{display:none}.home-product-actions{grid-template-columns:1fr}.home-product-actions .btn-light{display:none}.need-card p{min-height:auto}.promise-points{gap:.5rem}.navbar .d-flex.gap-2{margin-top:.75rem}.navbar form{margin:.75rem 0!important}.trust-strip{border-radius:20px}.spec-grid{grid-template-columns:1fr}.sticky-atc{position:fixed;left:0;right:0;bottom:0;z-index:1030;display:flex;align-items:center;justify-content:space-between;gap:.75rem;background:rgba(251,247,241,.97);border-top:1px solid var(--lv-line);padding:.75rem 1rem;box-shadow:0 -12px 34px rgba(58,43,37,.12)}.sticky-atc .btn{white-space:nowrap}.product-card .product-image-wrap{aspect-ratio:1/1}.container{--bs-gutter-x:1.1rem}}@media(max-width:575.98px){.hero-commerce-featured{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.25rem}.hero-mini-product,.hero-need-card{flex:0 0 72%;min-height:0!important;scroll-snap-align:start}.hero-mini-product:nth-child(2){display:grid!important}.hero-mini-image{height:96px;aspect-ratio:auto!important}.hero-need-card{grid-column:auto!important;justify-content:flex-start}.hero-commerce-grid{gap:.55rem}.hero-commerce-copy{min-height:260px!important}}
+  </style>
+  {% for style in styles %}<link href="{{ style.href }}" rel="{{ style.rel }}" media="{{ style.media }}">{% endfor %}
+  {% if json_ld %}<script type="application/ld+json">{{ json_ld|raw }}</script>{% endif %}
+</head>
+<body class="d-flex flex-column min-vh-100">
+<div id="alert" class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index:1080;max-width:min(92vw,720px);"></div>
+<div class="py-2 text-center small" style="background:#211815;color:#f7eee7;">18+ only · Discreet packaging · Private billing descriptor · Secure checkout</div>
+<nav class="navbar navbar-expand-lg border-bottom sticky-top">
   <div class="container">
-    <div class="row">
-      <div class="col-4">
-        <ul class="list-inline">
-          <li class="list-inline-item me-3"><x-include src="common/currency"></x-include></li>
-          <li class="list-inline-item"><x-include src="common/language"></x-include></li>
-        </ul>
-      </div>
-      <div class="col text-end">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="information/contact" data-on="click:onClick"><i class="fa-solid fa-phone"></i> <span class="d-none d-lg-inline">{{ config_telephone }}</span></a></li>
-          <li class="list-inline-item">
-            <div class="dropdown">
-              <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i> <span class="d-none d-lg-inline">{{ text_account }}</span> <i class="fa-solid fa-caret-down"></i></a>
-              <ul class="dropdown-menu dropdown-menu-right">
-                {% if !logged %}
-                <li><a href="account/register" data-on="click:onClick" class="dropdown-item">{{ text_register }}</a></li>
-                <li><a href="account/login" data-on="click:onClick" class="dropdown-item">{{ text_login }}</a></li>
-                {% else %}
-                <li><a href="account/account" data-on="click:onClick" class="dropdown-item">{{ text_account }}</a></li>
-                <li><a href="account/order" data-on="click:onClick" class="dropdown-item">{{ text_order }}</a></li>
-                <li><a href="account/transaction" data-on="click:onClick" class="dropdown-item">{{ text_transaction }}</a></li>
-                <li><a href="account/download" data-on="click:onClick" class="dropdown-item">{{ text_download }}</a></li>
-                <li><a href="account/logout" data-on="click:onClick" class="dropdown-item">{{ text_logout }}</a></li>
-                {% endif %}
-              </ul>
-            </div>
-          </li>
-          <li class="list-inline-item"><a href="account/wishlist" data-on="click:onClick" id="wishlist-total" title="{{ text_wishlist | replace: '%s', wishlist }}"><i class="fa-solid fa-heart"></i> <span class="d-none d-lg-inline">{{ text_wishlist | replace: '%s', wishlist }}</span></a></li>
-          <li class="list-inline-item"><a href="checkout/cart" data-on="click:onClick" title="{{ text_shopping_cart }}"><i class="fa-solid fa-cart-shopping"></i> <span class="d-none d-lg-inline">{{ text_shopping_cart }}</span></a></li>
-          <li class="list-inline-item"><a href="checkout/checkout" data-on="click:onClick" title="{{ text_checkout }}"><i class="fa-solid fa-share"></i> <span class="d-none d-lg-inline">{{ text_checkout }}</span></a></li>
-        </ul>
+    <a class="navbar-brand" href="{{ home }}">{{ name }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="{{ home }}">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop by Need</a>
+          <ul class="dropdown-menu">
+            {% for category in wellness_categories %}
+              <li><a class="dropdown-item fw-semibold" href="{{ category.href }}">{{ category.name }}</a></li>
+              {% for child in category.children %}<li><a class="dropdown-item ps-4" href="{{ child.href }}">{{ child.name }}</a></li>{% endfor %}
+            {% endfor %}
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="{{ contact }}">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ shopping_cart }}">Cart</a></li>
+      </ul>
+      <form class="d-flex me-3" action="index.php" method="get" role="search">
+        <input type="hidden" name="route" value="product/search">
+        <input class="form-control" name="search" placeholder="Search private wellness products" aria-label="Search private wellness products">
+      </form>
+      <div class="d-flex gap-2">
+        {% if logged %}<a class="btn btn-outline-primary" href="{{ account }}">Account</a><a class="btn btn-primary" href="{{ logout }}">Logout</a>{% else %}<a class="btn btn-outline-primary" href="{{ login }}">Login</a><a class="btn btn-primary" href="{{ register }}">Register</a>{% endif %}
       </div>
     </div>
   </div>
 </nav>
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-lg-4">
-        <div id="logo">{% if config_logo %}<a href="{{ config_url }}" data-on="click:onClick"><img src="{{ config_url }}image/{{ config_logo }}" title="{{ config_name }}" alt="{{ config_name }}" class="img-fluid"/></a>{% else %}<h1><a href="{{ config_url }}" data-on="click:onClick">{{ config_name }}</a></h1>{% endif %}</div>
-      </div>
-      <div class="col-md-5"><x-include src="common/search"></x-include></div>
-      <div class="col-md-4 col-lg-3 mb-2"><x-include src="common/cart"></x-include></div>
-    </div>
-  </div>
-</header>
-
-
+{{ menu }}
