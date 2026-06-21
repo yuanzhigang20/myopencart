@@ -46,7 +46,9 @@ class Mail {
 	 */
 	public function __construct(array $option = []) {
 		foreach ($option as $key => $value) {
-			$this->{$key} = $value;
+			if (property_exists($this, $key)) {
+				$this->{$key} = $value;
+			}
 		}
 	}
 
