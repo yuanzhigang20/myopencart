@@ -383,7 +383,10 @@ class Order extends \Opencart\System\Engine\Controller {
 
 		if ($store_info) {
 			$store_name = html_entity_decode($store_info['name'], ENT_QUOTES, 'UTF-8');
-			$store_url = $store_info['url'];
+
+			if (!empty($store_info['url'])) {
+				$store_url = $store_info['url'];
+			}
 		}
 
 		// Send the email in the correct language
