@@ -1091,10 +1091,16 @@ class Product extends \Opencart\System\Engine\Controller {
 		$this->load->model('localisation/identifier');
 
 		foreach ($post_info['product_code'] as $key => $product_code) {
-			$identifier_info = $this->model_localisation_identifier->getIdentifier($product_code['identifier_id']);
+			$identifier_id = isset($product_code['identifier_id']) ? (int)$product_code['identifier_id'] : 0;
 
-			if ($identifier_info && $identifier_info['validation'] && !oc_validate_regex($product_code['value'], $identifier_info['validation'])) {
-				$json['error']['code_' . $key] = sprintf($this->language->get('error_regex'), $product_code['code']);
+			if (!$identifier_id) {
+				continue;
+			}
+
+			$identifier_info = $this->model_localisation_identifier->getIdentifier($identifier_id);
+
+			if ($identifier_info && $identifier_info['validation'] && !oc_validate_regex((string)($product_code['value'] ?? ''), $identifier_info['validation'])) {
+				$json['error']['code_' . $key] = sprintf($this->language->get('error_regex'), $product_code['code'] ?? $identifier_info['code']);
 			}
 		}
 
