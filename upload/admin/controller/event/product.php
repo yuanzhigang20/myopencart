@@ -120,7 +120,7 @@ class Product extends \Opencart\System\Engine\Controller {
 	 *
 	 * @return void
 	 */
-	public function editProduct(string &$route, array &$args, &$output): void {
+	public function editProduct(string &$route, array &$args, &$output = null): void {
 		$this->load->model('setting/task');
 
 		$store_ids = [];
@@ -341,7 +341,7 @@ class Product extends \Opencart\System\Engine\Controller {
 	 *
 	 * @return void
 	 */
-	public function deleteProduct(string &$route, array &$args, &$output): void {
+	public function deleteProduct(string &$route, array &$args, &$output = null): void {
 		$this->load->model('setting/store');
 		$this->load->model('setting/task');
 
