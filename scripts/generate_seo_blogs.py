@@ -940,27 +940,7 @@ def article_html(topic: Dict, secondaries: List[str], idx: int, published: bool,
   </section>
 </article>
 """
-    frontmatter_comment = "\n".join([
-        "<!--",
-        "---",
-        f"title: \"{topic['title']}\"",
-        f"metaTitle: \"{topic['meta_title']}\"",
-        f"metaDescription: \"{topic['meta_description']}\"",
-        f"slug: \"/blog/{topic['slug']}/\"",
-        f"canonical: \"{canonical}\"",
-        f"primaryKeyword: \"{primary}\"",
-        "secondaryKeywords:",
-        *[f" - \"{kw}\"" for kw in secondaries],
-        f"searchIntent: \"{topic['intent']}\"",
-        f"articleType: \"{topic['type']}\"",
-        f"publishedAt: \"{publish_date.isoformat()}\"",
-        f"updatedAt: \"{update_date.isoformat()}\"",
-        f"author: \"{AUTHOR}\"",
-        "schemaType: \"BlogPosting\"",
-        f"publishStatus: \"{'published' if published else 'draft'}\"",
-        "---",
-        "-->",
-    ])
+    frontmatter_comment = ""
     robots = "index,follow,max-image-preview:large" if published else "noindex,follow"
     return f"""<!doctype html>
 <html lang="en">
@@ -980,7 +960,6 @@ def article_html(topic: Dict, secondaries: List[str], idx: int, published: bool,
   <style>{css()}</style>
 </head>
 <body>
-{frontmatter_comment}
 <header class="site-header"><a class="brand" href="/">ShopLovaNest</a><nav><a href="/">Home</a><a href="/blog/">Blog</a><a href="/index.php?route=information/contact">Contact</a></nav></header>
 <main>{body}</main>
 <footer><p>18+ only. Educational sexual wellness content. Products are not medical treatments.</p><p>Tags: {html.escape(tags)}</p></footer>
@@ -1025,7 +1004,7 @@ def index_html(published_topics: List[Dict]) -> str:
 <title>Sexual Wellness Blog | ShopLovaNest</title><meta name="description" content="Discreet sexual wellness guides for adults 18+, including buying guides, privacy, cleaning, body-safe materials, and lubricant education.">
 <meta name="rating" content="adult"><meta name="robots" content="index,follow"><link rel="canonical" href="{BASE_URL}/blog/">
 <script type="application/ld+json">{json.dumps(schema)}</script><style>{css()}.grid{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}.card{{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px}}.card p:first-child{{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:.75rem;letter-spacing:.08em}}@media(max-width:760px){{.grid{{grid-template-columns:1fr}}}}</style></head>
-<body><header class="site-header"><a class="brand" href="/">ShopLovaNest</a><nav><a href="/">Home</a><a href="/blog/">Blog</a><a href="/index.php?route=information/contact">Contact</a></nav></header><main><p class="eyebrow">18+ education hub</p><h1>Sexual Wellness Blog</h1><p class="lede">Professional, privacy-focused guides for adult wellness shopping, care, and product decisions. The first ten articles are published now; additional drafts are staged for a gradual release schedule.</p><section class="grid">{cards}</section></main><footer><p>18+ only. Educational content, not medical advice.</p></footer></body></html>"""
+<body><header class="site-header"><a class="brand" href="/">ShopLovaNest</a><nav><a href="/">Home</a><a href="/blog/">Blog</a><a href="/index.php?route=information/contact">Contact</a></nav></header><main><p class="eyebrow">18+ education hub</p><h1>Sexual Wellness Blog</h1><p class="lede">Professional, privacy-focused guides for adult wellness shopping, care, and product decisions.</p><section class="grid">{cards}</section></main><footer><p>18+ only. Educational content, not medical advice.</p></footer></body></html>"""
 
 
 def write_csv(path: Path, rows: Iterable[Dict[str, str]], fields: List[str]) -> None:
