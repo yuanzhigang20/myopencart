@@ -1,6 +1,6 @@
 # Publish Checklist
 
-## 建议优先发布的文章（第 1 周，已 published）
+## 已发布并加入 sitemap 的文章
 - Sex Toys for Beginners: A Calm, Practical First Guide — /blog/sex-toys-for-beginners/
 - Vibrators for Beginners: How to Choose Without Guesswork — /blog/vibrators-for-beginners/
 - Discreet Shipping for Adult Toys: What Privacy Really Means — /blog/discreet-shipping-adult-toys/
@@ -11,8 +11,6 @@
 - Quiet Vibrator Guide: How to Compare Noise Before Buying — /blog/quiet-vibrator-guide/
 - Rechargeable Vibrator Guide: Battery, Charging, and Care — /blog/rechargeable-vibrator-guide/
 - Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions — /blog/waterproof-vibrator-guide/
-
-## 建议延后发布的文章（第 2 周 draft）
 - Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions — /blog/bullet-vibrator-guide/
 - Rabbit Vibrator Guide: Who It Suits and What to Check — /blog/rabbit-vibrator-guide/
 - Wand Massager Guide: Power, Noise, Weight, and Care — /blog/wand-massager-guide/
@@ -23,8 +21,6 @@
 - Adult Toys for Couples: How to Choose Together Respectfully — /blog/adult-toys-for-couples/
 - Best Adult Toys for Beginners: Types to Consider First — /blog/best-adult-toys-for-beginners/
 - Adult Toy Storage: Clean, Private, and Material-Safe Habits — /blog/adult-toy-storage-guide/
-
-## 建议延后发布的文章（第 3 周 draft）
 - Adult Toy Materials: Silicone, Glass, ABS, and Metal Explained — /blog/adult-toy-materials-guide/
 - Adult Toy Privacy: Packaging, Billing, Search, and Storage — /blog/adult-toy-privacy-guide/
 - Traveling With Adult Toys: Packing, Charging, and Privacy — /blog/travel-with-adult-toys/

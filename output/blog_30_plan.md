@@ -2,7 +2,7 @@
 
 - Keyword files scanned: 18
 - Clean kept keywords: 360
-- Default publish cadence: first 10 published, remaining 20 draft
+- Publish cadence: all 30 articles published and included in sitemap
 
 ## 1. Sex Toys for Beginners: A Calm, Practical First Guide
 - 主关键词: sex toys for beginners

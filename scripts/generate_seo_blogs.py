@@ -1062,7 +1062,7 @@ def build_outputs() -> None:
         topic["secondary"] = secondaries
         topic["url"] = f"/blog/{topic['slug']}/"
         topic["canonical"] = f"{BASE_URL}/blog/{topic['slug']}/"
-        topic["status"] = "published" if i <= 10 else "draft"
+        topic["status"] = "published"
         topic["word_count"] = 0
         clusters.append({
             "cluster_id": f"C{i:02d}",
@@ -1080,16 +1080,16 @@ def build_outputs() -> None:
     # Generate articles after all topics are available for related links.
     for i, topic in enumerate(planned, 1):
         related = [t for t in planned if t is not topic and (t["cluster"] == topic["cluster"] or set(t["links"]) & set(topic["links"]))]
-        html_doc = article_html(topic, topic["secondary"], i, i <= 10, related)
+        html_doc = article_html(topic, topic["secondary"], i, True, related)
         article_path = BLOG_DIR / topic["slug"] / "index.html"
         article_path.parent.mkdir(parents=True, exist_ok=True)
         article_path.write_text(html_doc, encoding="utf-8")
         topic["word_count"] = len(re.findall(r"\b[a-zA-Z][a-zA-Z'-]*\b", re.sub(r"<[^>]+>", " ", html_doc)))
 
-    (BLOG_DIR / "index.html").write_text(index_html(planned[:10]), encoding="utf-8")
-    update_sitemap(planned[:10])
+    (BLOG_DIR / "index.html").write_text(index_html(planned), encoding="utf-8")
+    update_sitemap(planned)
 
-    plan_lines = ["# 30 篇 Blog 选题表", "", f"- Keyword files scanned: {len(files)}", f"- Clean kept keywords: {len(cleaned)}", "- Default publish cadence: first 10 published, remaining 20 draft", ""]
+    plan_lines = ["# 30 篇 Blog 选题表", "", f"- Keyword files scanned: {len(files)}", f"- Clean kept keywords: {len(cleaned)}", "- Publish cadence: all 30 articles published and included in sitemap", ""]
     for i, t in enumerate(planned, 1):
         plan_lines.extend([
             f"## {i}. {t['title']}",
@@ -1109,7 +1109,7 @@ def build_outputs() -> None:
         plan_lines.extend([f"- 写作角度: {t['angle']}", f"- 优先级: {'P1 / published now' if i <= 10 else ('P2 / week 2 draft' if i <= 20 else 'P3 / week 3 draft')}", ""])
     (OUTPUT_DIR / "blog_30_plan.md").write_text("\n".join(plan_lines), encoding="utf-8")
 
-    audit_lines = ["# Blog SEO Audit Report", "", "## Summary", "", f"- Keyword files read: {len(files)}", f"- Raw keyword rows parsed: {len(audit)}", f"- Kept compliant keywords: {len(cleaned)}", "- Generated topics: 30", "- Generated article files: 30", "- Published now: 10", "- Draft/noindex staged: 20", "- Blog list page: `upload/blog/index.html`", "- Sitemap updated: `upload/sitemap.xml`", ""]
+    audit_lines = ["# Blog SEO Audit Report", "", "## Summary", "", f"- Keyword files read: {len(files)}", f"- Raw keyword rows parsed: {len(audit)}", f"- Kept compliant keywords: {len(cleaned)}", "- Generated topics: 30", "- Generated article files: 30", "- Published now: 30", "- Draft/noindex staged: 0", "- Blog list page: `upload/blog/index.html`", "- Sitemap updated: `upload/sitemap.xml`", "- All 30 article URLs are included in sitemap for Google discovery", ""]
     checks = {
         "标题是否唯一": len({t["title"] for t in planned}) == 30,
         "meta 是否唯一": len({t["meta_description"] for t in planned}) == 30,
@@ -1128,17 +1128,13 @@ def build_outputs() -> None:
     audit_lines.extend(["", "## Article Word Counts", ""])
     for i, t in enumerate(planned, 1):
         audit_lines.append(f"- {i:02d}. `{t['slug']}` — {t['word_count']} words — {t['status']}")
-    audit_lines.extend(["", "## Compliance Notes", "", "- Removed brand, piracy, pornographic, teen/minor, leaked/nude/xxx, and unrelated toy/costume/fidget keywords.", "- Articles use professional, educational, discreet sexual-wellness language.", "- No medical treatment promises, explicit storytelling, or illegal purchase guidance were added.", "- Draft articles include `noindex,follow` and are excluded from the public Blog index and sitemap until scheduled publication."])
+    audit_lines.extend(["", "## Compliance Notes", "", "- Removed brand, piracy, pornographic, teen/minor, leaked/nude/xxx, and unrelated toy/costume/fidget keywords.", "- Articles use professional, educational, discreet sexual-wellness language.", "- No medical treatment promises, explicit storytelling, or illegal purchase guidance were added.", "- All 30 articles are published, indexable, listed on the Blog index, and included in sitemap for Google discovery."])
     (OUTPUT_DIR / "blog_seo_audit_report.md").write_text("\n".join(audit_lines), encoding="utf-8")
 
-    checklist = ["# Publish Checklist", "", "## 建议优先发布的文章（第 1 周，已 published）"]
+    checklist = ["# Publish Checklist", "", "## 已发布并加入 sitemap 的文章"]
     for t in planned[:10]:
         checklist.append(f"- {t['title']} — {t['url']}")
-    checklist.extend(["", "## 建议延后发布的文章（第 2 周 draft）"])
-    for t in planned[10:20]:
-        checklist.append(f"- {t['title']} — {t['url']}")
-    checklist.extend(["", "## 建议延后发布的文章（第 3 周 draft）"])
-    for t in planned[20:]:
+    for t in planned[10:]:
         checklist.append(f"- {t['title']} — {t['url']}")
     checklist.extend([
         "", "## 需要人工复核的文章", "- Anal Toys for Beginners: Safety, Size, and Comfort Basics — safety-sensitive, verify wording remains educational.", "- Cock Ring Guide: Fit, Materials, and Beginner Safety — safety-sensitive, verify no medical claims.", "- How to Use Kegel Balls Safely — ensure no medical treatment implication.",
@@ -1153,8 +1149,8 @@ def build_outputs() -> None:
         "raw_rows": len(audit),
         "kept_keywords": len(cleaned),
         "articles": len(planned),
-        "published": 10,
-        "draft": 20,
+        "published": 30,
+        "draft": 0,
         "blog_dir": str(BLOG_DIR.relative_to(ROOT)),
     }, indent=2))
 
