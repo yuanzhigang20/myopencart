@@ -51,23 +51,6 @@
       </div>
       <a class="btn btn-outline-primary" href="{{ all_products_url }}">Browse all</a>
     </div>
-    <div class="need-scroll">
-      {% for category in category_groups %}
-        <article class="need-card">
-          <i class="fa-solid fa-layer-group"></i>
-          <h3>{{ category.name }}</h3>
-          <p>{% if category.children %}{{ category.children|length }} curated collections{% else %}Browse the full collection{% endif %}</p>
-          <a href="{{ category.href }}">Shop category</a>
-          {% if category.children %}
-            <div class="mt-2 d-flex flex-wrap gap-1">
-              {% for child in category.children|slice(0, 4) %}<a class="wellness-pill text-decoration-none" href="{{ child.href }}">{{ child.name }}</a>{% endfor %}
-            </div>
-          {% endif %}
-        </article>
-      {% else %}
-        <article class="need-card"><i class="fa-solid fa-layer-group"></i><h3>All Products</h3><p>Browse every available private wellness product.</p><a href="{{ all_products_url }}">Shop now</a></article>
-      {% endfor %}
-    </div>
   </section>
 
   <section id="all-products" class="container home-section products-front-section">
