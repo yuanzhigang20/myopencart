@@ -59,3 +59,7 @@
 # ENV
 .env
 .env.docker
+
+# Excel temporary files
+~$*.xlsx
+.~*.xlsx
