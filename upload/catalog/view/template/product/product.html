@@ -14,9 +14,6 @@
         <div class="pdp-thumbs">
           {% if thumb %}<button class="pdp-thumb is-active" type="button" data-main="{{ thumb }}" data-popup="{{ popup }}" aria-label="Main product image"><img src="{{ thumb }}" alt="{{ heading_title }} main image" loading="eager"></button>{% endif %}
           {% for image in images %}<button class="pdp-thumb" type="button" data-main="{{ image.thumb }}" data-popup="{{ image.popup }}" aria-label="Product gallery image {{ loop.index }}"><img src="{{ image.thumb }}" alt="{{ heading_title }} detail image {{ loop.index }}" loading="lazy"></button>{% endfor %}
-          <button class="pdp-thumb" type="button" data-card="Packaging"><span>Plain<br>Packaging</span></button>
-          <button class="pdp-thumb" type="button" data-card="Size Guide"><span>Size<br>Guide</span></button>
-          <button class="pdp-thumb" type="button" data-card="Details"><span>Product<br>Details</span></button>
         </div>
       </div>
 

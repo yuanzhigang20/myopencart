@@ -323,7 +323,7 @@ class Product extends \Opencart\System\Engine\Controller {
 		$this->load->model('tool/image');
 
 		if ($product_info['image'] && is_file(DIR_IMAGE . html_entity_decode($product_info['image'], ENT_QUOTES, 'UTF-8'))) {
-			$data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
+			$data['popup'] = HTTP_SERVER . 'image/' . $product_info['image'];
 			$data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
 			$this->document->addMeta(['property' => 'og:image', 'content' => $data['popup']]);
 			$this->document->addMeta(['name' => 'twitter:image', 'content' => $data['popup']]);
@@ -339,7 +339,7 @@ class Product extends \Opencart\System\Engine\Controller {
 		foreach ($results as $result) {
 			if ($result['image'] && is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) {
 				$data['images'][] = [
-					'popup' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
+					'popup' => HTTP_SERVER . 'image/' . $result['image'],
 					'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'))
 				];
 			}
@@ -405,7 +405,7 @@ class Product extends \Opencart\System\Engine\Controller {
 						$product_option_value_data[] = [
 							'image' => $this->model_tool_image->resize($image, 72, 72),
 							'variant_main' => $image ? $this->model_tool_image->resize($image, $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height')) : '',
-							'variant_popup' => $image ? $this->model_tool_image->resize($image, $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')) : '',
+							'variant_popup' => $image ? HTTP_SERVER . 'image/' . $image : '',
 							'price' => $price
 					] + $option_value;
 					}
