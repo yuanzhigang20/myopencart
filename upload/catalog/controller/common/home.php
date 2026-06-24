@@ -105,12 +105,13 @@ class Home extends \Opencart\System\Engine\Controller {
 			}
 
 			$presentation = $presentation_products[count($data['products']) % count($presentation_products)];
-			$image = is_file(DIR_IMAGE . $presentation['image']) ? $presentation['image'] : (($result['image'] && is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) ? $result['image'] : 'placeholder.png');
+			$product_image = $result['image'] ? html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8') : '';
+			$image = ($product_image && is_file(DIR_IMAGE . $product_image)) ? $product_image : (is_file(DIR_IMAGE . $presentation['image']) ? $presentation['image'] : 'placeholder.png');
 			$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
 
 			$product = [
 				'product_id'    => $result['product_id'],
-				'name'          => $presentation['name'],
+				'name'          => $result['name'],
 				'description'   => $description,
 				'short_benefit' => $presentation['benefit'],
 				'thumb'         => $this->model_tool_image->resize($image, 480, 600),
