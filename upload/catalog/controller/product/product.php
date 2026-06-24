@@ -317,6 +317,7 @@ class Product extends \Opencart\System\Engine\Controller {
 		$data['wishlist_add'] = $this->url->link('account/wishlist.add', 'language=' . $this->config->get('config_language'));
 		$data['compare_add'] = $this->url->link('product/compare.add', 'language=' . $this->config->get('config_language'));
 		$data['cart_add'] = $this->url->link('checkout/cart.add', 'language=' . $this->config->get('config_language'));
+		$data['checkout'] = $this->url->link('checkout/checkout', 'language=' . $this->config->get('config_language'));
 
 		// Image
 		$this->load->model('tool/image');
