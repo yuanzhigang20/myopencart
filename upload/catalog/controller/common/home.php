@@ -14,9 +14,9 @@ class Home extends \Opencart\System\Engine\Controller {
 	 * @return void
 	 */
 	public function index(): void {
-		$this->document->setTitle('Discreet Intimacy Essentials | Lovanest Sexual Wellness');
-		$this->document->setDescription('Shop premium private wellness and intimacy essentials with discreet packaging, secure checkout, body-safe product details and 18+ responsible retail.');
-		$this->document->setKeywords('sexual wellness, intimacy products, discreet packaging, private wellness, adult wellness');
+		$this->document->setTitle('Private Wellness Delivered Discreetly | Lovanest Adult Wellness');
+		$this->document->setDescription('Shop curated adult wellness essentials with plain packaging, secure checkout, private billing language, and 18+ responsible retail from Lovanest.');
+		$this->document->setKeywords('adult wellness, private wellness, discreet packaging, secure checkout, beginner friendly wellness products');
 
 		$this->load->language('product/category');
 
@@ -33,7 +33,7 @@ class Home extends \Opencart\System\Engine\Controller {
 			$page = 1;
 		}
 
-		$limit = 12;
+		$limit = 24;
 
 		// Homepage categories: expose real catalog categories and child categories.
 		$this->load->model('catalog/category');
@@ -60,7 +60,7 @@ class Home extends \Opencart\System\Engine\Controller {
 			$data['category_groups'][] = $category_data;
 		}
 
-		// Homepage products: show the full enabled catalog with pagination.
+		// Homepage products: curated, homepage-safe products only. Avoid default full catalog pagination on the landing page.
 		$this->load->model('catalog/product');
 		$this->load->model('tool/image');
 
@@ -70,27 +70,47 @@ class Home extends \Opencart\System\Engine\Controller {
 		$data['best_sellers'] = [];
 		$data['new_arrivals'] = [];
 		$data['hero_products'] = [];
-
-		$product_total = $this->model_catalog_product->getTotalProducts([]);
+		$data['image_review_needed'] = [];
 
 		$results = $this->model_catalog_product->getProducts([
 			'sort'  => 'p.sort_order',
 			'order' => 'ASC',
-			'start' => ($page - 1) * $limit,
+			'start' => 0,
 			'limit' => $limit
 		]);
 
 		$benefits = [
-			'Private wellness essential with discreet packaging and clean presentation.',
-			'Soft, approachable pick for comfort-focused intimate shopping.',
-			'Low-profile design selected for private, responsible adult retail.',
-			'Curated for a calm checkout experience and secure PayPal payment.'
+			'Approachable adult wellness pick with discreet packaging and clear product details.',
+			'Comfort-focused option selected for calm, private shopping and simple care.',
+			'Low-profile essential for responsible adults who value privacy and secure checkout.',
+			'Curated intimate wellness item with a clean presentation for homepage browsing.'
 		];
 
+		$banned_terms = ['1688', 'taobao', 'pinduoduo', '拼多多', '阿里', '淘宝', '中文', '水印', 'watermark', 'рус', 'russian', 'demo', 'test'];
+
 		foreach ($results as $index => $result) {
+			if ((float)$result['price'] < 1) {
+				continue;
+			}
+
 			$description = trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')));
-			if (oc_strlen($description) > 118) {
-				$description = oc_substr($description, 0, 118) . '..';
+			$review_text = mb_strtolower($result['name'] . ' ' . $description . ' ' . (string)$result['image'], 'UTF-8');
+			$needs_review = false;
+
+			foreach ($banned_terms as $term) {
+				if (str_contains($review_text, mb_strtolower($term, 'UTF-8'))) {
+					$needs_review = true;
+					break;
+				}
+			}
+
+			if ($needs_review) {
+				$data['image_review_needed'][] = $result['name'];
+				continue;
+			}
+
+			if (oc_strlen($description) > 112) {
+				$description = oc_substr($description, 0, 112) . '..';
 			}
 
 			$image = ($result['image'] && is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) ? $result['image'] : 'placeholder.png';
@@ -100,7 +120,7 @@ class Home extends \Opencart\System\Engine\Controller {
 				'product_id'    => $result['product_id'],
 				'name'          => $result['name'],
 				'description'   => $description,
-				'short_benefit' => $benefits[$index % count($benefits)],
+				'short_benefit' => $benefits[count($data['products']) % count($benefits)],
 				'thumb'         => $this->model_tool_image->resize($image, 480, 600),
 				'price'         => $price,
 				'href'          => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $result['product_id'])
@@ -112,16 +132,7 @@ class Home extends \Opencart\System\Engine\Controller {
 		$data['best_sellers'] = array_slice($data['products'], 0, 4);
 		$data['new_arrivals'] = array_slice($data['products'], 4, 4) ?: array_slice($data['products'], 0, 4);
 		$data['hero_products'] = array_slice($data['best_sellers'], 0, 2);
-
-		$data['pagination'] = $this->load->controller('common/pagination', [
-			'total' => $product_total,
-			'page'  => $page,
-			'limit' => $limit,
-			'url'   => $this->url->link('common/home', 'language=' . $this->config->get('config_language') . '&page={page}')
-		]);
-
-		$data['results'] = sprintf($this->language->get('text_pagination'), ($product_total) ? (($page - 1) * $limit) + 1 : 0, ((($page - 1) * $limit) > ($product_total - $limit)) ? $product_total : ((($page - 1) * $limit) + $limit), $product_total, ceil($product_total / $limit));
-		$data['all_products_url'] = $this->url->link('common/home', 'language=' . $this->config->get('config_language'));
+		$data['all_products_url'] = $this->url->link('product/search', 'language=' . $this->config->get('config_language') . '&search=wellness');
 
 		$site_url = rtrim($this->config->get('config_ssl') ?: $this->config->get('config_url'), '/') . '/';
 		$this->document->addLink($site_url, 'canonical');
