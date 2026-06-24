@@ -405,7 +405,7 @@ class Product extends \Opencart\System\Engine\Controller {
 						$product_option_value_data[] = [
 							'image' => $this->model_tool_image->resize($image, 50, 50),
 							'price' => $price
-						] + $option_value;
+					] + $option_value;
 					}
 				}
 
@@ -471,6 +471,36 @@ class Product extends \Opencart\System\Engine\Controller {
 
 		if ($data['thumb']) {
 			$schema['image'] = [$data['thumb']];
+		}
+
+		if ($product_info['reviews'] && $product_info['rating']) {
+			$schema['aggregateRating'] = [
+				'@type' => 'AggregateRating',
+				'ratingValue' => (float)$product_info['rating'],
+				'reviewCount' => (int)$product_info['reviews']
+			];
+
+			$this->load->model('catalog/review');
+
+			$review_results = $this->model_catalog_review->getReviewsByProductId($product_id, 0, 3);
+
+			foreach ($review_results as $review_result) {
+				$schema['review'][] = [
+					'@type' => 'Review',
+					'author' => [
+						'@type' => 'Person',
+						'name' => $review_result['author']
+					],
+					'datePublished' => date('Y-m-d', strtotime($review_result['date_added'])),
+					'reviewBody' => trim(strip_tags(html_entity_decode($review_result['text'], ENT_QUOTES, 'UTF-8'))),
+					'reviewRating' => [
+						'@type' => 'Rating',
+						'ratingValue' => (int)$review_result['rating'],
+						'bestRating' => 5,
+						'worstRating' => 1
+					]
+				];
+			}
 		}
 
 		$faq_schema = [
