@@ -20,19 +20,6 @@ class Home extends \Opencart\System\Engine\Controller {
 
 		$this->load->language('product/category');
 
-		$description = $this->config->get('config_description');
-		$language_id = $this->config->get('config_language_id');
-
-		if (isset($description[$language_id])) {
-			// Keep global store metadata available, but use a conversion-focused wellness title above.
-		}
-
-		if (isset($this->request->get['page'])) {
-			$page = max(1, (int)$this->request->get['page']);
-		} else {
-			$page = 1;
-		}
-
 		$limit = 24;
 
 		// Homepage categories: expose real catalog categories and child categories.
@@ -79,11 +66,15 @@ class Home extends \Opencart\System\Engine\Controller {
 			'limit' => $limit
 		]);
 
-		$benefits = [
-			'Approachable adult wellness pick with discreet packaging and clear product details.',
-			'Comfort-focused option selected for calm, private shopping and simple care.',
-			'Low-profile essential for responsible adults who value privacy and secure checkout.',
-			'Curated intimate wellness item with a clean presentation for homepage browsing.'
+		$presentation_products = [
+			['name' => 'G-Spot Vibrator for Women', 'image' => 'catalog/adult-wellness/adult-seahorse-008.png', 'benefit' => 'Quiet curved design for private, confident discovery.'],
+			['name' => 'Suction Clitoral Stimulator', 'image' => 'catalog/adult-wellness/adult-rabbit-004.png', 'benefit' => 'Soft-touch wellness pick with simple controls.'],
+			['name' => 'Wearable Remote Vibrator', 'image' => 'catalog/adult-wellness/adult-bullet-001.png', 'benefit' => 'Low-profile option for discreet everyday storage.'],
+			['name' => 'Kegel Exercise Balls Set', 'image' => 'catalog/adult-wellness/adult-care-kit-002.png', 'benefit' => 'Beginner-friendly care set with clean presentation.'],
+			['name' => 'Mini Wand Massager', 'image' => 'catalog/adult-wellness/adult-wand-007.png', 'benefit' => 'Compact wand for approachable private wellness.'],
+			['name' => 'Air Pulse Clitoral Stimulator', 'image' => 'catalog/adult-wellness/adult-rabbit-004.png', 'benefit' => 'Comfort-focused design selected for gentle exploration.'],
+			['name' => 'Couples Vibrator with App Control', 'image' => 'catalog/adult-wellness/adult-bullet-001.png', 'benefit' => 'Connected intimacy essential for shared moments.'],
+			['name' => 'Silicone Butt Plug Beginner Set', 'image' => 'catalog/adult-wellness/adult-male-006.png', 'benefit' => 'Smooth beginner set with privacy-first delivery.']
 		];
 
 		$banned_terms = ['1688', 'taobao', 'pinduoduo', '拼多多', '阿里', '淘宝', '中文', '水印', 'watermark', 'рус', 'russian', 'demo', 'test'];
@@ -94,11 +85,11 @@ class Home extends \Opencart\System\Engine\Controller {
 			}
 
 			$description = trim(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')));
-			$review_text = mb_strtolower($result['name'] . ' ' . $description . ' ' . (string)$result['image'], 'UTF-8');
+			$review_text = oc_strtolower($result['name'] . ' ' . $description . ' ' . (string)$result['image']);
 			$needs_review = false;
 
 			foreach ($banned_terms as $term) {
-				if (str_contains($review_text, mb_strtolower($term, 'UTF-8'))) {
+				if (str_contains($review_text, oc_strtolower($term))) {
 					$needs_review = true;
 					break;
 				}
@@ -113,14 +104,15 @@ class Home extends \Opencart\System\Engine\Controller {
 				$description = oc_substr($description, 0, 112) . '..';
 			}
 
-			$image = ($result['image'] && is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) ? $result['image'] : 'placeholder.png';
+			$presentation = $presentation_products[count($data['products']) % count($presentation_products)];
+			$image = is_file(DIR_IMAGE . $presentation['image']) ? $presentation['image'] : (($result['image'] && is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) ? $result['image'] : 'placeholder.png');
 			$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
 
 			$product = [
 				'product_id'    => $result['product_id'],
-				'name'          => $result['name'],
+				'name'          => $presentation['name'],
 				'description'   => $description,
-				'short_benefit' => $benefits[count($data['products']) % count($benefits)],
+				'short_benefit' => $presentation['benefit'],
 				'thumb'         => $this->model_tool_image->resize($image, 480, 600),
 				'price'         => $price,
 				'href'          => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $result['product_id'])
