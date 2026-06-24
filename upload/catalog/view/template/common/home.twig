@@ -1,156 +1,154 @@
 {{ header }}
 <main class="home-commerce">
-  <div class="reference-home">
-    <section class="reference-pane reference-pane-left">
-      <div class="home-hero">
-        <div class="hero-copy">
-          <span class="hero-kicker">18+ Private Wellness</span>
-          <h1>Private Wellness,<br>Delivered <em>Discreetly</em></h1>
-          <p class="hero-subtitle">Curated intimate essentials with plain packaging, secure checkout, and privacy-first service.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#best-sellers">Shop Best Sellers</a>
-            <a class="btn btn-light" href="index.php?route=product/search&language=en-gb&search=Beginner%20Friendly">Explore Beginner Picks</a>
-          </div>
+  <section class="home-hero">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="hero-kicker">18+ Private Wellness</span>
+        <h1>Private Wellness,<br>Delivered <em>Discreetly</em></h1>
+        <p class="hero-subtitle">Curated intimate essentials with plain packaging, secure checkout, and privacy-first service.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#best-sellers">Shop Best Sellers</a>
+          <a class="btn btn-light" href="index.php?route=product/search&language=en-gb&search=Beginner%20Friendly">Explore Beginner Picks</a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="hero-trust-points" aria-label="Trust points">
-        <span><i class="fa-solid fa-box-open"></i> Plain Packaging</span>
-        <span><i class="fa-solid fa-lock"></i> Secure Checkout</span>
-        <span><i class="fa-regular fa-credit-card"></i> Private Billing</span>
-        <span><i class="fa-solid fa-user-shield"></i> 18+ Responsible Retail</span>
-      </div>
-
-      <section class="home-section" id="shop-by-need">
-        <div class="section-head justify-content-center text-center"><h2>Shop by Need</h2></div>
-        <div class="need-grid">
-          <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Beginner%20Friendly">
-            <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-wand-007.png" alt="Beginner friendly private wellness products" loading="eager"></div>
-            <div class="need-card-copy"><h3>Beginner Friendly</h3><p>Perfect for first-time explorers.</p><span class="need-link">Shop Now →</span></div>
-          </a>
-          <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Quiet%20Discreet">
-            <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-seahorse-008.png" alt="Quiet and discreet wellness products" loading="eager"></div>
-            <div class="need-card-copy"><h3>Quiet &amp; Discreet</h3><p>Low-noise design for total privacy.</p><span class="need-link">Shop Now →</span></div>
-          </a>
-          <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Lingerie%20Sleepwear">
-            <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-pouch-010.png" alt="Lingerie and sleepwear essentials" loading="lazy"></div>
-            <div class="need-card-copy"><h3>Lingerie &amp; Sleepwear</h3><p>Feel confident, sexy and comfortable.</p><span class="need-link">Shop Now →</span></div>
-          </a>
-          <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Couples">
-            <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-male-006.png" alt="Couples essentials" loading="lazy"></div>
-            <div class="need-card-copy"><h3>Couples Essentials</h3><p>Enhance intimacy together.</p><span class="need-link">Shop Now →</span></div>
-          </a>
-          <a class="need-card" href="index.php?route=product/search&language=en-gb&search=App%20Controlled">
-            <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-bullet-001.png" alt="App-controlled toys" loading="lazy"></div>
-            <div class="need-card-copy"><h3>App-Controlled Toys</h3><p>Smart control, long-distance fun.</p><span class="need-link">Shop Now →</span></div>
-          </a>
-          <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Care">
-            <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-care-kit-002.png" alt="Accessories and care" loading="lazy"></div>
-            <div class="need-card-copy"><h3>Accessories &amp; Care</h3><p>Care, clean and protect.</p><span class="need-link">Shop Now →</span></div>
-          </a>
-        </div>
-      </section>
-
-      <section class="home-section" id="best-sellers">
-        <div class="section-head"><h2>Best Sellers</h2><a class="btn btn-light" href="{{ all_products_url }}">View All →</a></div>
-        {% if best_sellers %}
-          <div class="product-grid">
-            {% for product in best_sellers %}
-              <article class="product-card">
-                <a class="product-image" href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }} private wellness product" loading="eager" width="480" height="600"></a>
-                <div class="product-card-body">
-                  <h3><a href="{{ product.href }}">{{ product.name }}</a></h3>
-                  <p>{{ product.short_benefit }}</p>
-                  <div class="product-price">{{ product.price }}</div>
-                  <div class="product-actions">
-                    <a class="btn btn-light" href="{{ product.href }}">View Details</a>
-                    <form action="{{ cart_add }}" method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#cart" class="m-0">
-                      <input type="hidden" name="product_id" value="{{ product.product_id }}">
-                      <input type="hidden" name="quantity" value="1">
-                      <button class="btn btn-primary" type="submit">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
-                    </form>
-                  </div>
-                </div>
-              </article>
-            {% endfor %}
-          </div>
-        {% else %}
-          <div class="alert alert-warning">No homepage-ready products found. Add priced, clean-image products in admin.</div>
-        {% endif %}
-      </section>
-    </section>
-
-    <aside class="reference-pane reference-pane-right">
-      <section class="side-section" id="new-arrivals">
-        <div class="section-head"><h2>New Arrivals</h2><a class="btn btn-light" href="{{ all_products_url }}">View All →</a></div>
-        {% if new_arrivals %}
-          <div class="side-product-grid">
-            {% for product in new_arrivals %}
-              <article class="product-card">
-                <a class="product-image" href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }} private wellness product" loading="lazy" width="480" height="600"></a>
-                <div class="product-card-body">
-                  <h3><a href="{{ product.href }}">{{ product.name }}</a></h3>
-                  <p>{{ product.short_benefit }}</p>
-                  <div class="product-price">{{ product.price }}</div>
-                  <div class="product-actions">
-                    <a class="btn btn-light" href="{{ product.href }}">View Details</a>
-                    <form action="{{ cart_add }}" method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#cart" class="m-0">
-                      <input type="hidden" name="product_id" value="{{ product.product_id }}">
-                      <input type="hidden" name="quantity" value="1">
-                      <button class="btn btn-primary" type="submit">Add to Cart</button>
-                    </form>
-                  </div>
-                </div>
-              </article>
-            {% endfor %}
-          </div>
-        {% endif %}
-      </section>
-
-      <section class="side-section">
-        <div class="beginner-banner">
-          <div class="beginner-banner-content">
-            <h2>New to private wellness?</h2>
-            <p>Our beginner's guide helps you choose the right products with confidence.</p>
-            <a class="guide-btn" href="/blog/sex-toys-for-beginners/">Read the Beginner's Guide</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="side-section" id="wellness-guides">
-        <div class="section-head"><h2>From Our Blog</h2><a class="btn btn-light" href="/blog/">View All →</a></div>
-        <div class="blog-grid">
-          <a class="blog-card" href="/blog/sex-toys-for-beginners/">
-            <div class="blog-image"><img src="image/catalog/adult-wellness/adult-safe-012.png" alt="Beginner's guide to private wellness products" loading="lazy"></div>
-            <h3>Beginner's Guide to Private Wellness Products</h3>
-            <div class="blog-meta">May 20, 2024 · Guide</div>
-          </a>
-          <a class="blog-card" href="/blog/discreet-shipping-adult-toys/">
-            <div class="blog-image blog-packaging"></div>
-            <h3>How Discreet Packaging Works</h3>
-            <div class="blog-meta">May 18, 2024 · Tips</div>
-          </a>
-          <a class="blog-card" href="/blog/adult-toy-cleaner-guide/">
-            <div class="blog-image blog-care"></div>
-            <h3>How to Clean and Store Your Intimate Products</h3>
-            <div class="blog-meta">May 15, 2024 · Care</div>
-          </a>
-        </div>
-      </section>
-
-      <section class="side-section" id="faq">
-        <div class="faq-card">
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <div class="accordion faq-list mt-3" id="homeFaq">
-            <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">Will the package show adult product names?</button></h3><div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">No. Orders are prepared for plain outer packaging without explicit product names or adult wording.</div></div></div>
-            <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">Is checkout secure?</button></h3><div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Yes. Checkout uses secure storefront pages and trusted payment processing, including PayPal where available.</div></div></div>
-            <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">What will appear on my billing statement?</button></h3><div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">We use a private billing descriptor where supported so the statement does not list explicit adult product names.</div></div></div>
-            <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">Is this site for adults only?</button></h3><div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Yes. Lovanest is intended only for adults 18+ shopping responsibly for intimate wellness products.</div></div></div>
-            <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive">How do I choose beginner-friendly products?</button></h3><div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Start with simple controls, approachable sizes, body-safe materials, and clear care instructions. Our Beginner Friendly section is curated for that.</div></div></div>
-          </div>
-        </div>
-      </section>
-    </aside>
+  <div class="container">
+    <div class="hero-trust-points" aria-label="Trust points">
+      <span><i class="fa-solid fa-box-open"></i> Plain Packaging</span>
+      <span><i class="fa-solid fa-lock"></i> Secure Checkout</span>
+      <span><i class="fa-regular fa-credit-card"></i> Private Billing</span>
+      <span><i class="fa-solid fa-user-shield"></i> 18+ Responsible Retail</span>
+    </div>
   </div>
+
+  <section class="container home-section" id="shop-by-need">
+    <div class="section-head justify-content-center text-center"><h2>Shop by Need</h2></div>
+    <div class="need-grid">
+      <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Beginner%20Friendly">
+        <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-wand-007.png" alt="Beginner friendly private wellness products" loading="eager"></div>
+        <div class="need-card-copy"><h3>Beginner Friendly</h3><p>Perfect for first-time explorers.</p><span class="need-link">Shop Now →</span></div>
+      </a>
+      <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Quiet%20Discreet">
+        <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-seahorse-008.png" alt="Quiet and discreet wellness products" loading="eager"></div>
+        <div class="need-card-copy"><h3>Quiet &amp; Discreet</h3><p>Low-noise design for total privacy.</p><span class="need-link">Shop Now →</span></div>
+      </a>
+      <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Lingerie%20Sleepwear">
+        <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-pouch-010.png" alt="Lingerie and sleepwear essentials" loading="lazy"></div>
+        <div class="need-card-copy"><h3>Lingerie &amp; Sleepwear</h3><p>Feel confident, sexy and comfortable.</p><span class="need-link">Shop Now →</span></div>
+      </a>
+      <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Couples">
+        <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-male-006.png" alt="Couples essentials" loading="lazy"></div>
+        <div class="need-card-copy"><h3>Couples Essentials</h3><p>Enhance intimacy together.</p><span class="need-link">Shop Now →</span></div>
+      </a>
+      <a class="need-card" href="index.php?route=product/search&language=en-gb&search=App%20Controlled">
+        <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-bullet-001.png" alt="App-controlled toys" loading="lazy"></div>
+        <div class="need-card-copy"><h3>App-Controlled Toys</h3><p>Smart control, long-distance fun.</p><span class="need-link">Shop Now →</span></div>
+      </a>
+      <a class="need-card" href="index.php?route=product/search&language=en-gb&search=Care">
+        <div class="need-card-visual"><img src="image/catalog/adult-wellness/adult-care-kit-002.png" alt="Accessories and care" loading="lazy"></div>
+        <div class="need-card-copy"><h3>Accessories &amp; Care</h3><p>Care, clean and protect.</p><span class="need-link">Shop Now →</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="container home-section" id="best-sellers">
+    <div class="section-head"><h2>Best Sellers</h2><a class="btn btn-light" href="{{ all_products_url }}">View All →</a></div>
+    {% if best_sellers %}
+      <div class="product-grid">
+        {% for product in best_sellers %}
+          <article class="product-card">
+            <a class="product-image" href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }} private wellness product" loading="eager" width="480" height="600"></a>
+            <div class="product-card-body">
+              <h3><a href="{{ product.href }}">{{ product.name }}</a></h3>
+              <p>{{ product.short_benefit }}</p>
+              <div class="product-price">{{ product.price }}</div>
+              <div class="product-actions">
+                <a class="btn btn-light" href="{{ product.href }}">View Details</a>
+                <form action="{{ cart_add }}" method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#cart" class="m-0">
+                  <input type="hidden" name="product_id" value="{{ product.product_id }}">
+                  <input type="hidden" name="quantity" value="1">
+                  <button class="btn btn-primary" type="submit">Add to Cart <i class="fa-solid fa-cart-plus"></i></button>
+                </form>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="alert alert-warning">No homepage-ready products found. Add priced, clean-image products in admin.</div>
+    {% endif %}
+  </section>
+
+  <section class="container home-section" id="new-arrivals">
+    <div class="section-head"><h2>New Arrivals</h2><a class="btn btn-light" href="{{ all_products_url }}">View All →</a></div>
+    {% if new_arrivals %}
+      <div class="product-grid">
+        {% for product in new_arrivals %}
+          <article class="product-card">
+            <a class="product-image" href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }} private wellness product" loading="lazy" width="480" height="600"></a>
+            <div class="product-card-body">
+              <h3><a href="{{ product.href }}">{{ product.name }}</a></h3>
+              <p>{{ product.short_benefit }}</p>
+              <div class="product-price">{{ product.price }}</div>
+              <div class="product-actions">
+                <a class="btn btn-light" href="{{ product.href }}">View Details</a>
+                <form action="{{ cart_add }}" method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#cart" class="m-0">
+                  <input type="hidden" name="product_id" value="{{ product.product_id }}">
+                  <input type="hidden" name="quantity" value="1">
+                  <button class="btn btn-primary" type="submit">Add to Cart</button>
+                </form>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+
+  <section class="container home-section">
+    <div class="beginner-banner">
+      <div class="beginner-banner-content">
+        <h2>New to private wellness?</h2>
+        <p>Our beginner's guide helps you choose the right products with confidence.</p>
+        <a class="guide-btn" href="/blog/sex-toys-for-beginners/">Read the Beginner's Guide</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container home-section" id="wellness-guides">
+    <div class="section-head"><h2>From Our Blog</h2><a class="btn btn-light" href="/blog/">View All →</a></div>
+    <div class="blog-grid">
+      <a class="blog-card" href="/blog/sex-toys-for-beginners/">
+        <div class="blog-image"><img src="image/catalog/adult-wellness/adult-safe-012.png" alt="Beginner's guide to private wellness products" loading="lazy"></div>
+        <h3>Beginner's Guide to Private Wellness Products</h3>
+        <div class="blog-meta">May 20, 2024 · Guide</div>
+      </a>
+      <a class="blog-card" href="/blog/discreet-shipping-adult-toys/">
+        <div class="blog-image blog-packaging"></div>
+        <h3>How Discreet Packaging Works</h3>
+        <div class="blog-meta">May 18, 2024 · Tips</div>
+      </a>
+      <a class="blog-card" href="/blog/adult-toy-cleaner-guide/">
+        <div class="blog-image blog-care"></div>
+        <h3>How to Clean and Store Your Intimate Products</h3>
+        <div class="blog-meta">May 15, 2024 · Care</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="container home-section" id="faq">
+    <div class="faq-card">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="accordion faq-list mt-3" id="homeFaq">
+        <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">Will the package show adult product names?</button></h3><div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">No. Orders are prepared for plain outer packaging without explicit product names or adult wording.</div></div></div>
+        <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">Is checkout secure?</button></h3><div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Yes. Checkout uses secure storefront pages and trusted payment processing, including PayPal where available.</div></div></div>
+        <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">What will appear on my billing statement?</button></h3><div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">We use a private billing descriptor where supported so the statement does not list explicit adult product names.</div></div></div>
+        <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">Is this site for adults only?</button></h3><div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Yes. Lovanest is intended only for adults 18+ shopping responsibly for intimate wellness products.</div></div></div>
+        <div class="accordion-item faq-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive">How do I choose beginner-friendly products?</button></h3><div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Start with simple controls, approachable sizes, body-safe materials, and clear care instructions. Our Beginner Friendly section is curated for that.</div></div></div>
+      </div>
+    </div>
+  </section>
 </main>
 {{ footer }}
