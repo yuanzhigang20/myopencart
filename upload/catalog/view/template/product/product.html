@@ -1,405 +1,83 @@
 {{ header }}
-<main class="container py-4">
-<div class="row mb-3">
+<style>
+  .pdp-shell{background:#fffaf5;color:#241914;padding-bottom:92px}.pdp-container{max-width:1280px}.pdp-breadcrumb .breadcrumb{margin:0;padding:16px 0;background:transparent;font-size:12px}.pdp-breadcrumb a{color:#6f6159;text-decoration:none}.pdp-hero{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(390px,.72fr);gap:34px;align-items:start;margin:18px 0 42px}.pdp-gallery{position:sticky;top:118px}.pdp-main-image{border-radius:22px;background:#f4e8df;border:1px solid #eaded6;overflow:hidden;box-shadow:0 18px 45px rgba(60,38,28,.08);aspect-ratio:1/1.12}.pdp-main-image img{width:100%;height:100%;object-fit:cover;display:block;mix-blend-mode:multiply}.pdp-thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:12px}.pdp-thumb{border:1px solid #eaded6;background:#fffdf9;border-radius:14px;min-height:86px;aspect-ratio:1;overflow:hidden;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#6f6159;text-align:center;font-size:11px;font-weight:800;padding:8px}.pdp-thumb img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}.pdp-thumb.is-active{border-color:#8c5a47;box-shadow:0 0 0 3px rgba(140,90,71,.13)}.pdp-purchase{border:1px solid #eaded6;background:rgba(255,253,249,.96);border-radius:22px;padding:24px;box-shadow:0 18px 45px rgba(60,38,28,.075)}.pdp-kicker{display:inline-flex;align-items:center;gap:7px;border:1px solid #eaded6;border-radius:999px;background:#fff7ef;color:#5f3d31;padding:7px 11px;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.pdp-title{font-family:Georgia,'Times New Roman',serif;font-size:clamp(32px,3.2vw,50px);line-height:1.02;letter-spacing:-.045em;color:#231813;margin:14px 0 12px}.pdp-rating{display:flex;align-items:center;gap:8px;color:#9b5947;font-size:13px;margin-bottom:14px}.pdp-price-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}.pdp-price{font-size:30px;font-weight:950;color:#2a1912}.pdp-price-old{font-size:16px;color:#9a8b83;text-decoration:line-through}.pdp-save{border-radius:999px;background:#f2ddd5;color:#7d4b3e;padding:6px 10px;font-size:11px;font-weight:900;text-transform:uppercase}.pdp-meta{display:grid;gap:7px;color:#6f6159;font-size:12px;margin:14px 0}.pdp-stock{color:#2d6f4b;font-weight:900}.pdp-badges{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.pdp-badge{border:1px solid #eaded6;background:#fffaf7;border-radius:999px;color:#4d3c35;padding:7px 10px;font-size:12px;font-weight:800}.pdp-options{border-top:1px solid #eaded6;margin-top:18px;padding-top:18px}.pdp-options h2,.pdp-block h2{font-size:18px;font-weight:950;color:#241914;margin:0 0 12px}.pdp-options .form-label{font-size:13px;font-weight:900;color:#3a281f}.pdp-options .form-select,.pdp-options .form-control{border-radius:14px;border-color:#eaded6;min-height:44px}.pdp-option-grid .form-check{display:inline-flex;margin:0 8px 8px 0;padding:0}.pdp-option-grid .form-check-input{position:absolute;opacity:0;pointer-events:none}.pdp-option-grid .form-check-label{border:1px solid #eaded6;background:#fffaf7;border-radius:999px;padding:9px 14px;font-size:12px;font-weight:900;color:#4a352d;cursor:pointer;display:inline-flex;align-items:center;gap:7px}.pdp-option-grid .form-check-input:checked + .form-check-label{border-color:#8c5a47;background:#3a281f;color:#fff}.pdp-option-grid .img-thumbnail{width:28px;height:28px;object-fit:cover;border-radius:999px;padding:0}.pdp-qty-row{display:grid;grid-template-columns:120px 1fr;gap:10px;margin-top:18px}.pdp-qty{display:flex;border:1px solid #eaded6;border-radius:999px;background:#fffaf7;overflow:hidden;align-items:center}.pdp-qty span{font-size:11px;font-weight:900;color:#6f6159;padding-left:14px}.pdp-qty input{border:0;background:transparent;text-align:center;min-width:42px;width:54px;font-weight:900}.pdp-atc{min-height:50px;border-radius:999px;background:#2a1912!important;border-color:#2a1912!important;font-weight:950}.pdp-paypal{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:999px;background:#ffc439;color:#173b68;text-decoration:none;font-weight:950;margin-top:10px}.pdp-microtrust{display:grid;gap:10px;margin-top:16px}.pdp-microtrust div{display:flex;gap:10px;align-items:flex-start;border:1px solid #eaded6;background:#fffaf7;border-radius:16px;padding:11px}.pdp-microtrust i{color:#8c5a47;margin-top:2px}.pdp-microtrust strong{display:block;font-size:12px;color:#2a1912}.pdp-microtrust span{display:block;font-size:12px;color:#6f6159;line-height:1.45}.pdp-section{margin:34px 0;padding:28px;border:1px solid #eaded6;background:#fffdf9;border-radius:22px;box-shadow:0 12px 30px rgba(60,38,28,.045)}.pdp-section-title{font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:700;color:#241914;margin:0 0 16px;letter-spacing:-.03em}.pdp-card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.pdp-card{border:1px solid #eaded6;border-radius:18px;background:#fffaf7;padding:16px}.pdp-card i{color:#9b5947;font-size:20px;margin-bottom:10px}.pdp-card h3{font-size:14px;font-weight:950;margin:0 0 7px;color:#2a1912}.pdp-card p{font-size:13px;color:#6f6159;line-height:1.58;margin:0}.pdp-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}.pdp-soft-panel{border-radius:20px;background:linear-gradient(135deg,#f9efe8,#fffaf5);padding:22px;min-height:210px}.pdp-soft-panel h3{font-size:18px;font-weight:950;color:#2a1912}.pdp-soft-panel p,.pdp-description{color:#6f6159;line-height:1.75}.pdp-specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.pdp-spec{border-bottom:1px solid #eaded6;padding:11px 0}.pdp-spec small{display:block;color:#9a8b83;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.pdp-spec strong{display:block;color:#2a1912;font-size:13px}.pdp-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.pdp-step{display:flex;gap:12px}.pdp-step b{width:34px;height:34px;border-radius:999px;background:#3a281f;color:#fff;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}.pdp-faq .accordion-item{border:0;border-bottom:1px solid #eaded6;background:transparent}.pdp-faq .accordion-button{background:transparent!important;color:#2a1912!important;font-weight:950;box-shadow:none!important;padding:14px 0}.pdp-faq .accordion-body{padding:0 0 16px;color:#6f6159}.sticky-pdp-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:1040;background:rgba(255,250,245,.98);border-top:1px solid #eaded6;padding:10px 12px;box-shadow:0 -12px 30px rgba(60,38,28,.08)}.sticky-pdp-bar .btn{min-height:44px;border-radius:999px;background:#2a1912;border-color:#2a1912;font-weight:950}.sticky-pdp-price{font-size:15px;font-weight:950;color:#2a1912}.sticky-pdp-note{font-size:11px;color:#6f6159}@media(max-width:991.98px){.pdp-hero{grid-template-columns:1fr;gap:18px}.pdp-gallery{position:static}.pdp-purchase{padding:18px}.pdp-title{font-size:32px}.pdp-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pdp-split,.pdp-steps{grid-template-columns:1fr}.pdp-specs{grid-template-columns:repeat(2,minmax(0,1fr))}.sticky-pdp-bar{display:flex;align-items:center;justify-content:space-between;gap:12px}.pdp-shell{padding-bottom:82px}}@media(max-width:575.98px){.pdp-shell{padding-bottom:88px}.pdp-container{--bs-gutter-x:1rem}.pdp-main-image{border-radius:16px}.pdp-thumbs{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.pdp-thumb{min-height:68px}.pdp-qty-row{grid-template-columns:1fr}.pdp-card-grid,.pdp-specs{grid-template-columns:1fr}.pdp-section{padding:20px;border-radius:18px}.pdp-section-title{font-size:24px}.pdp-price{font-size:26px}}
+</style>
+<main class="pdp-shell">
+  <div class="container pdp-container">
+    <nav aria-label="breadcrumb" class="pdp-breadcrumb"><ol class="breadcrumb">{% for breadcrumb in breadcrumbs %}<li class="breadcrumb-item{% if loop.last %} active{% endif %}">{% if not loop.last %}<a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>{% else %}{{ breadcrumb.text }}{% endif %}</li>{% endfor %}</ol></nav>
 
-  {% if thumb or images %}
-  <div class="col-sm">
-    <div class="image magnific-popup">
-      {% if thumb %} <a href="{{ popup }}" title="{{ heading_title }}"><img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail mb-3"/></a> {% endif %}
-
-      {% if images %}
-      <div>
-        {% for image in images %} <a href="{{ image.popup }}" title="{{ heading_title }}"><img src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail" style="width: 74px"/></a>&nbsp;
-        {% endfor %}
+    <section class="pdp-hero">
+      <div class="pdp-gallery" aria-label="Product image gallery">
+        <div class="pdp-main-image">
+          {% if thumb %}<a id="pdp-main-link" href="{{ popup }}" title="{{ heading_title }}"><img id="pdp-main-img" src="{{ thumb }}" alt="{{ heading_title }}" loading="eager" fetchpriority="high"></a>{% else %}<div class="pdp-thumb" style="height:100%;border:0">Product image coming soon</div>{% endif %}
+        </div>
+        <div class="pdp-thumbs">
+          {% if thumb %}<button class="pdp-thumb is-active" type="button" data-main="{{ thumb }}" data-popup="{{ popup }}" aria-label="Main product image"><img src="{{ thumb }}" alt="{{ heading_title }} main image" loading="eager"></button>{% endif %}
+          {% for image in images %}<button class="pdp-thumb" type="button" data-main="{{ image.thumb }}" data-popup="{{ image.popup }}" aria-label="Product gallery image {{ loop.index }}"><img src="{{ image.thumb }}" alt="{{ heading_title }} detail image {{ loop.index }}" loading="lazy"></button>{% endfor %}
+          <button class="pdp-thumb" type="button" data-card="Packaging"><span>Plain<br>Packaging</span></button>
+          <button class="pdp-thumb" type="button" data-card="Size Guide"><span>Size<br>Guide</span></button>
+          <button class="pdp-thumb" type="button" data-card="Details"><span>Product<br>Details</span></button>
+        </div>
       </div>
-      {% endif %}
 
-    </div>
-  </div>
-  {% endif %}
+      <aside class="pdp-purchase" aria-label="Purchase options">
+        <span class="pdp-kicker"><i class="fa-solid fa-shield-heart"></i> 18+ Private Wellness</span>
+        <h1 class="pdp-title">{{ heading_title }}</h1>
+        {% if review_status %}<div class="pdp-rating" aria-label="Rating {{ rating }} out of 5">{% for i in 1..5 %}<i class="fa-{% if rating >= i %}solid{% else %}regular{% endif %} fa-star"></i>{% endfor %}<a href="#pdp-reviews" class="text-decoration-none">{{ text_reviews }}</a></div>{% endif %}
+        {% if price %}<div class="pdp-price-row">{% if special %}<span class="pdp-price-old"><x-currency code="{{ currency }}" amount="{{ price }}"></x-currency></span><span class="pdp-price"><x-currency code="{{ currency }}" amount="{{ special }}"></x-currency></span><span class="pdp-save">Limited offer</span>{% else %}<span class="pdp-price"><x-currency code="{{ currency }}" amount="{{ price }}"></x-currency></span>{% endif %}</div>{% endif %}
+        <div class="pdp-badges"><span class="pdp-badge">Discreet packaging</span><span class="pdp-badge">Secure PayPal checkout</span><span class="pdp-badge">Female-friendly guidance</span></div>
+        <div class="pdp-meta">{% if manufacturer %}<span>{{ text_manufacturer }}: <strong><a href="{{ manufacturers }}">{{ manufacturer }}</a></strong></span>{% endif %}<span>{{ text_model }}: <strong>{{ model }}</strong></span><span>{{ text_stock }}: <strong class="pdp-stock">{{ stock_status }}</strong></span>{% for product_code in product_codes %}<span>{{ product_code.code }}: <strong>{{ product_code.value }}</strong></span>{% endfor %}</div>
 
-  <div class="col-sm">
-    <h1>{{ heading_title }}</h1>
+        <form class="mb-3"><div class="btn-group"><button type="submit" formaction="{{ wishlist_add }}" class="btn btn-light" title="{{ button_wishlist }}"><i class="fa-solid fa-heart"></i></button><button type="submit" formaction="{{ compare_add }}" class="btn btn-light" title="{{ button_compare }}"><i class="fa-solid fa-arrow-right-arrow-left"></i></button></div><input type="hidden" name="product_id" value="{{ product_id }}"></form>
 
-    <ul class="list-unstyled mb-1">
-      {% if manufacturer %}
-      <li>{{ text_manufacturer }}: <strong><a href="catalog/manufacturer/manufacturer-{{ manufacturer_id }}">{{ manufacturer }}</a></strong></li>
-      {% endif %}
-
-      <li>{{ text_model }}: <strong>{{ model }}</strong></li>
-      {% for product_code in product_codes %}
-      <li>{{ product_code.code }}: <strong>{{ product_code.value }}</strong></li>
-      {% endfor %}
-
-      {% if reward %}
-      <li>{{ text_reward }}: <strong>{{ reward }}</strong></li>
-      {% endif %}
-
-      <li>{{ text_stock }}: <strong><span class="text-{% if stock %}success{% else %}danger{% endif %}">{{ stock_status }}</span></strong></li>
-    </ul>
-
-    {% if review_status %}
-    <div class="rating">
-      {% for i in 1..5 %} {% if rating < i %} <span class="fa-stack"><i class="fa-regular fa-star fa-stack-1x"></i></span> {% else %} <span class="fa-stack"><i class="fa-solid fa-star fa-stack-1x"></i><i class="fa-regular fa-star fa-stack-1x"></i></span> {% endif %} {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if price %}
-    <ul class="list-unstyled">
-
-      {% if not special %}
-      <li>
-        <h2><span class="price-new">{{ price }}</span></h2>
-      </li>
-      {% else %}
-      <li><span class="price-old">{{ price }}</span></li>
-      <li>
-        <h2><span class="price-new">{{ special }}</span></h2>
-      </li>
-      {% endif %}
-
-      {% if tax %}
-      <li>{{ text_tax }}
-        {{ tax }}
-      </li>
-      {% endif %}
-
-      {% if points %}
-      <li>{{ text_points }} {{ points }}</li>
-      {% endif %}
-
-      {% if discounts %}
-      <li>
-        <hr>
-      </li>
-
-      {% for discount in discounts %}
-      <li>{{ discount.quantity }}{{ text_discount }}
-        {{ discount.price }}
-      </li>
-      {% endfor %}
-
-      {% endif %}
-    </ul>
-    {% endif %}
-
-    <form>
-      <div class="btn-group">
-        <button type="submit" formaction="{{ wishlist_add }}" class="btn btn-light btn-lg" title="{{ button_wishlist }}"><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="{{ compare_add }}" class="btn btn-light btn-lg" title="{{ button_compare }}"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
-      </div>
-      <input type="hidden" name="product_id" value="{{ product_id }}"/>
-    </form>
-
-    <br/>
-    <div id="product">
-      <form id="form-product" action="{{ cart_add }}" method="post">
-        {% if options %}
-        <hr>
-        <h3>{{ text_option }}</h3>
-        <div>
-          {% for option in options %}
-
-          {% if option.type == 'select' %}
-
-
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label> <select name="option[{{ option.product_option_id }}]" id="input-option-{{ option.product_option_id }}" class="form-select">
-            <option value="">{{ text_select }}</option>
-
-
-            {% for option_value in option.option_value %}
-            <option value="{{ option_value.product_option_value_id }}">{{ option_value.name }} {% if option_value.price %} ({{ option_value.price_prefix }}
-              <x-currency code="{{ currency }}" amount="{{ option_value.price }}"></x-currency>
-              ){% endif %}
-            </option>
-            {% endfor %}
-
-
-          </select>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-          {% endif %}
-
-          {% if option.type == 'radio' %}
-
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label class="form-label">{{ option.name }}</label>
-            <div id="input-option-{{ option.product_option_id }}">
-
-              {% for option_value in option.option_value %}
-
-              <div class="form-check">
-
-
-                <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"/>
-
-                <label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label"> {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %}{{ option_value.price_prefix }} {{ option_value.price }}{% endif %}" class="img-thumbnail"/>{% endif %} {{ option_value.name }} {% if option_value.price %} ({{ option_value.price_prefix }}
-                  <x-currency code="{{ currency }}" amount="{{ option_value.price }}"></x-currency>
-                  ) {% endif %} </label>
-
-
-              </div>
-
-
-              {% endfor %}
-
-            </div>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-
-          {% endif %}
-
-          {% if option.type == 'checkbox' %}
-
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label class="form-label">{{ option.name }}</label>
-            <div id="input-option-{{ option.product_option_id }}">
-
-              {% for option_value in option.option_value %}
-              <div class="form-check">
-                <input type="checkbox" name="option[{{ option.product_option_id }}][]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"/> <label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label"> {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %}{{ option_value.price_prefix }} {{ option_value.price }}{% endif %}" class="img-thumbnail"/>{% endif %} {{ option_value.name }} {% if option_value.price %} ({{ option_value.price_prefix }}
-                <x-currency code="{{ currency }}" amount="{{ option_value.price }}"></x-currency>
-                ) {% endif %}</label>
-              </div>
-              {% endfor %}
-
-            </div>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-
-          {% endif %}
-
-          {% if option.type == 'text' %}
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-            <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-          {% endif %}
-
-          {% if option.type == 'textarea' %}
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-            <textarea name="option[{{ option.product_option_id }}]" rows="5" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control">{{ option.value }}</textarea>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-          {% endif %}
-
-          {% if option.type == 'file' %}
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label for="button-upload-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-            <div>
-              <button type="button" id="button-upload-{{ option.product_option_id }}" data-oc-toggle="upload" data-oc-url="{{ upload }}" data-oc-target="#input-option-{{ option.product_option_id }}" data-oc-size-max="{{ config_file_max_size }}" data-oc-size-error="{{ error_upload_size }}" class="btn btn-light btn-block"><i class="fa-solid fa-upload"></i> {{ button_upload }}</button>
-              <input type="hidden" name="option[{{ option.product_option_id }}]" value="" id="input-option-{{ option.product_option_id }}"/>
-            </div>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-          {% endif %}
-
-          {% if option.type == 'date' %}
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-            <input type="date" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-          {% endif %}
-
-          {% if option.type == 'time' %}
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-            <input type="time" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-          {% endif %}
-
-          {% if option.type == 'datetime' %}
-          <div class="mb-3{% if option.required %} required{% endif %}">
-            <label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label>
-            <input type="datetime-local" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"/>
-            <div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div>
-          </div>
-          {% endif %}
-
-          {% endfor %}
+        <div id="product">
+          <form id="form-product" action="{{ cart_add }}" method="post">
+            {% if options %}<div class="pdp-options"><h2>Choose your options</h2>{% for option in options %}
+              {% if option.type == 'select' %}<div class="mb-3{% if option.required %} required{% endif %}"><label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label><select name="option[{{ option.product_option_id }}]" id="input-option-{{ option.product_option_id }}" class="form-select"><option value="">{{ text_select }}</option>{% for option_value in option.option_value %}<option value="{{ option_value.product_option_value_id }}">{{ option_value.name }}{% if option_value.price %} ({{ option_value.price_prefix }} <x-currency code="{{ currency }}" amount="{{ option_value.price }}"></x-currency>){% endif %}</option>{% endfor %}</select><div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div></div>{% endif %}
+              {% if option.type == 'radio' %}<div class="mb-3{% if option.required %} required{% endif %}"><label class="form-label">{{ option.name }}</label><div id="input-option-{{ option.product_option_id }}" class="pdp-option-grid">{% for option_value in option.option_value %}<div class="form-check"><input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"><label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label">{% if option_value.image %}<img src="{{ option_value.image }}" alt="{{ option_value.name }}" class="img-thumbnail" loading="lazy">{% endif %}{{ option_value.name }}{% if option_value.price %} {{ option_value.price_prefix }} <x-currency code="{{ currency }}" amount="{{ option_value.price }}"></x-currency>{% endif %}</label></div>{% endfor %}</div><div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div></div>{% endif %}
+              {% if option.type == 'checkbox' %}<div class="mb-3{% if option.required %} required{% endif %}"><label class="form-label">{{ option.name }}</label><div id="input-option-{{ option.product_option_id }}" class="pdp-option-grid">{% for option_value in option.option_value %}<div class="form-check"><input type="checkbox" name="option[{{ option.product_option_id }}][]" value="{{ option_value.product_option_value_id }}" id="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-input"><label for="input-option-value-{{ option_value.product_option_value_id }}" class="form-check-label">{% if option_value.image %}<img src="{{ option_value.image }}" alt="{{ option_value.name }}" class="img-thumbnail" loading="lazy">{% endif %}{{ option_value.name }}{% if option_value.price %} {{ option_value.price_prefix }} <x-currency code="{{ currency }}" amount="{{ option_value.price }}"></x-currency>{% endif %}</label></div>{% endfor %}</div><div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div></div>{% endif %}
+              {% if option.type == 'text' %}<div class="mb-3{% if option.required %} required{% endif %}"><label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label><input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control"><div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div></div>{% endif %}
+              {% if option.type == 'textarea' %}<div class="mb-3{% if option.required %} required{% endif %}"><label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label><textarea name="option[{{ option.product_option_id }}]" rows="4" placeholder="{{ option.name }}" id="input-option-{{ option.product_option_id }}" class="form-control">{{ option.value }}</textarea><div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div></div>{% endif %}
+              {% if option.type == 'file' %}<div class="mb-3{% if option.required %} required{% endif %}"><label for="button-upload-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label><button type="button" id="button-upload-{{ option.product_option_id }}" data-oc-toggle="upload" data-oc-url="{{ upload }}" data-oc-target="#input-option-{{ option.product_option_id }}" data-oc-size-max="{{ config_file_max_size }}" data-oc-size-error="{{ error_upload_size }}" class="btn btn-light"><i class="fa-solid fa-upload"></i> {{ button_upload }}</button><input type="hidden" name="option[{{ option.product_option_id }}]" value="" id="input-option-{{ option.product_option_id }}"><div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div></div>{% endif %}
+              {% if option.type == 'date' or option.type == 'time' or option.type == 'datetime' %}<div class="mb-3{% if option.required %} required{% endif %}"><label for="input-option-{{ option.product_option_id }}" class="form-label">{{ option.name }}</label><input type="{% if option.type == 'datetime' %}datetime-local{% else %}{{ option.type }}{% endif %}" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" id="input-option-{{ option.product_option_id }}" class="form-control"><div id="error-option-{{ option.product_option_id }}" class="invalid-feedback"></div></div>{% endif %}
+            {% endfor %}</div>{% endif %}
+            {% if subscription_plans %}<div class="pdp-options"><h2>{{ text_subscription }}</h2><select name="subscription_plan_id" id="input-subscription" class="form-select" required><option value="">{{ text_select }}</option>{% for subscription_plan in subscription_plans %}<option value="{{ subscription_plan.subscription_plan_id }}">{{ subscription_plan.description }}</option>{% endfor %}</select><div id="error-subscription" class="invalid-feedback"></div></div>{% endif %}
+            <div class="pdp-qty-row"><label class="pdp-qty"><span>{{ entry_qty }}</span><input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity"></label><button type="submit" id="button-cart" class="btn btn-primary pdp-atc">{{ button_cart }} <i class="fa-solid fa-cart-plus"></i></button></div><input type="hidden" name="product_id" value="{{ product_id }}" id="input-product-id"><div id="error-quantity" class="form-text"></div>{% if minimum > 1 %}<div class="alert alert-warning mt-3"><i class="fa-solid fa-circle-info"></i> {{ text_minimum }}</div>{% endif %}
+          </form>
+          <a class="pdp-paypal" href="{{ cart_add }}" onclick="document.getElementById('button-cart').click(); return false;"><i class="fa-brands fa-paypal"></i> PayPal Checkout</a>
         </div>
-        {% endif %}
+        <div class="pdp-microtrust"><div><i class="fa-solid fa-box-open"></i><span><strong>Plain packaging</strong>Outer parcels avoid explicit adult product wording.</span></div><div><i class="fa-solid fa-lock"></i><span><strong>Secure payment</strong>Encrypted checkout with PayPal-friendly payment flow.</span></div><div><i class="fa-solid fa-truck-fast"></i><span><strong>Discreet delivery</strong>Shipping information is handled with privacy-first expectations.</span></div></div>
+      </aside>
+    </section>
 
-        {% if subscription_plans %}
-        <hr/>
-        <h3>{{ text_subscription }}</h3>
-        <div class="mb-3">
-          <select name="subscription_plan_id" id="input-subscription" data-on="change:onChange" class="form-select" required>
-            <option value="">{{ text_select }}</option>
+    <section class="pdp-section"><h2 class="pdp-section-title">Why it belongs in your private wellness routine</h2><div class="pdp-card-grid"><article class="pdp-card"><i class="fa-solid fa-feather"></i><h3>Gentle discovery</h3><p>Designed for approachable intimate wellness without loud, awkward presentation.</p></article><article class="pdp-card"><i class="fa-solid fa-volume-low"></i><h3>Quiet & discreet</h3><p>Selected for customers who value privacy, calm design, and low-profile storage.</p></article><article class="pdp-card"><i class="fa-solid fa-shield-heart"></i><h3>Body-safe focus</h3><p>Review materials, care instructions, and use guidance before purchase.</p></article><article class="pdp-card"><i class="fa-solid fa-gift"></i><h3>Giftable feel</h3><p>A cleaner DTC presentation that feels premium rather than explicit.</p></article></div></section>
 
-            {% for subscription_plan in subscription_plans %}
+    <section class="pdp-section"><div class="pdp-split"><div class="pdp-soft-panel"><h2 class="pdp-section-title">Lifestyle benefits</h2><p>Private wellness should feel calm, confident, and personal. This product page is built to help shoppers understand fit, comfort, care, and delivery without the low-end adult-store look.</p></div><div class="pdp-soft-panel"><h2 class="pdp-section-title">Material & safety</h2><p>Check the description, attributes, and product packaging for exact materials. Clean before and after use, avoid sharing intimate products, and stop using if discomfort occurs.</p></div></div></section>
 
+    <section class="pdp-section"><h2 class="pdp-section-title">Product details</h2><div class="pdp-description">{{ description }}</div>{% if attribute_groups %}<div class="pdp-specs mt-3">{% for attribute_group in attribute_groups %}{% for attribute in attribute_group.attribute %}<div class="pdp-spec"><small>{{ attribute.name }}</small><strong>{{ attribute.text }}</strong></div>{% endfor %}{% endfor %}</div>{% endif %}{% if tags %}<p class="mt-3 mb-0"><strong>{{ text_tags }}</strong> {% for tag in tags %}<a href="{{ tag.href }}">{{ tag.tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}</section>
 
+    <section class="pdp-section"><h2 class="pdp-section-title">How to use / How to clean</h2><div class="pdp-steps"><div class="pdp-step"><b>1</b><div><h3 class="h6 fw-bold">Start gently</h3><p class="text-muted mb-0">Read the product label first. Begin with the lowest setting or simplest setup and stop if discomfort occurs.</p></div></div><div class="pdp-step"><b>2</b><div><h3 class="h6 fw-bold">Use compatible care products</h3><p class="text-muted mb-0">Use only compatible lubricants, cleaners, and accessories recommended for the material.</p></div></div><div class="pdp-step"><b>3</b><div><h3 class="h6 fw-bold">Clean before and after</h3><p class="text-muted mb-0">Clean according to material guidance, rinse or wipe as directed, and dry fully.</p></div></div><div class="pdp-step"><b>4</b><div><h3 class="h6 fw-bold">Store privately</h3><p class="text-muted mb-0">Keep the item in a clean, dry place away from heat, moisture, and direct sunlight.</p></div></div></div></section>
 
-            "text_subscription_duration": "%s every %d %s(s) for %d payment(s)",
+    <section class="pdp-section"><h2 class="pdp-section-title">Discreet shipping & privacy guarantee</h2><div class="pdp-card-grid"><article class="pdp-card"><i class="fa-solid fa-box"></i><h3>Plain outer parcel</h3><p>No explicit adult product names on the public-facing package.</p></article><article class="pdp-card"><i class="fa-solid fa-receipt"></i><h3>Private billing</h3><p>Checkout is designed for discreet, privacy-first order handling.</p></article><article class="pdp-card"><i class="fa-solid fa-lock"></i><h3>Secure checkout</h3><p>Payment pages are protected and suitable for PayPal checkout.</p></article><article class="pdp-card"><i class="fa-solid fa-user-shield"></i><h3>18+ retail</h3><p>This store is intended for responsible adult shoppers only.</p></article></div></section>
 
-            "text_subscription_cancel": "%s every %d %s(s) until canceled",
+    {% if review_status %}<section class="pdp-section" id="pdp-reviews"><h2 class="pdp-section-title">Customer reviews</h2>{{ review }}</section>{% endif %}
 
+    <section class="pdp-section pdp-faq"><h2 class="pdp-section-title">FAQ</h2><div class="accordion" id="productFaq"><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">Will the package show adult product names?</button></h3><div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#productFaq"><div class="accordion-body">No. Orders are prepared for plain outer packaging without explicit product names or adult wording.</div></div></div><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">Is checkout secure?</button></h3><div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#productFaq"><div class="accordion-body">Yes. Checkout uses secure storefront pages and PayPal-friendly payment flow where available.</div></div></div><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">How should intimate wellness products be cleaned?</button></h3><div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#productFaq"><div class="accordion-body">Follow the material-specific care instructions. Clean before and after use, dry fully, and store in a clean private place.</div></div></div><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">Is this suitable for beginners?</button></h3><div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#productFaq"><div class="accordion-body">Check the product description, size, settings, and care notes. Beginner-friendly products should feel approachable, simple, and easy to clean.</div></div></div></div></section>
 
-            {% if subscription_plan.duration %}
-
-            <option value="{{ subscription_plan.subscription_plan_id }}">{{ subscription_plan.description }}</option>
-
-            {% else %}
-
-            <option value="{{ subscription_plan.subscription_plan_id }}">{{ subscription_plan.description }}</option>
-            text_subscription_cancel
-
-            {% endif %}
-
-
-            {% endfor %}
-
-          </select>
-
-          {% for subscription_plan in subscription_plans %}
-          <div id="subscription-description-{{ subscription_plan.subscription_plan_id }}" class="form-text subscription d-none">{{ subscription_plan.description }}</div>
-          {% endfor %}
-
-          <div id="error-subscription" class="invalid-feedback"></div>
-        </div>
-        {% endif %}
-
-        <div class="mb-3">
-          <div class="input-group">
-            <div class="input-group-text">{{ entry_qty }}</div>
-            <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" data-bind="quantity" class="form-control"/>
-            <button type="submit" id="button-cart" data-bind="button_cart" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
-          </div>
-          <input type="hidden" name="product_id" value="{{ product_id }}" id="input-product-id"/>
-          <div id="error-quantity" class="form-text"></div>
-        </div>
-
-        {% if minimum > 1 %}
-        <div class="alert alert-warning"><i class="fa-solid fa-circle-info"></i> {{ text_minimum }}</div>
-        {% endif %}
-      </form>
-    </div>
+    <section class="pdp-section"><h2 class="pdp-section-title">Related products</h2>{{ related }}</section>
   </div>
-</div>
-<ul class="nav nav-tabs">
-  <li class="nav-item"><a href="#tab-description" data-bs-toggle="tab" class="nav-link active">{{ tab_description }}</a></li>
-  {% if attribute_groups %}
-  <li class="nav-item"><a href="#tab-specification" data-bs-toggle="tab" class="nav-link">{{ tab_attribute }}</a></li>
-  {% endif %} {% if review_status %}
-  <li class="nav-item"><a href="#tab-review" data-bs-toggle="tab" class="nav-link">{{ tab_review }}</a></li>
-  {% endif %}
-</ul>
-<div class="tab-content">
-  <div id="tab-description" class="tab-pane fade show active mb-4">
-    {{ description }} {% if tags %}
-    <p><strong>{{ text_tags }}</strong> {% for tag in tags %} <a href="{{ tag.href }}">{{ tag.tag }}</a>{% if not loop.last %},{% endif %} {% endfor %}
-    </p>
-    {% endif %}
-  </div>
-  {% if attribute_groups %}
-  <div id="tab-specification" class="tab-pane fade">
-    <div class="table-responsive">
-      <table class="table table-bordered">
-        {% for attribute_group in attribute_groups %}
-        <thead>
-          <tr>
-            <td colspan="2"><strong>{{ attribute_group.name }}</strong></td>
-          </tr>
-        </thead>
-        <tbody>
-          {% for attribute in attribute_group.attribute %}
-          <tr>
-            <td>{{ attribute.name }}</td>
-            <td>{{ attribute.text }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-        {% endfor %}
-      </table>
-    </div>
-  </div>
-  {% endif %} {% if review_status %}
-  <div id="tab-review" class="tab-pane fade mb-4">{{ review }}</div>
-  {% endif %}
-</div>
-{{ related }}
-
-
+  {% if price %}<div class="sticky-pdp-bar"><div><div class="sticky-pdp-price">{% if special %}<x-currency code="{{ currency }}" amount="{{ special }}"></x-currency>{% else %}<x-currency code="{{ currency }}" amount="{{ price }}"></x-currency>{% endif %}</div><div class="sticky-pdp-note">Discreet checkout · 18+</div></div><button type="button" class="btn btn-primary" onclick="document.getElementById('button-cart')?.click()">Add to Cart</button></div>{% endif %}
+</main>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Will the package show adult product names?","acceptedAnswer":{"@type":"Answer","text":"No. Orders are prepared for plain outer packaging without explicit product names or adult wording."}},{"@type":"Question","name":"Is checkout secure?","acceptedAnswer":{"@type":"Answer","text":"Yes. Checkout uses secure storefront pages and PayPal-friendly payment flow where available."}},{"@type":"Question","name":"How should intimate wellness products be cleaned?","acceptedAnswer":{"@type":"Answer","text":"Follow the material-specific care instructions. Clean before and after use, dry fully, and store in a clean private place."}}]}</script>
 <script>
-(function () {
-  const form = document.getElementById('form-product');
-  if (!form) return;
-
-  function showMessage(type, message) {
-    let box = document.getElementById('product-alert');
-    if (!box) {
-      box = document.createElement('div');
-      box.id = 'product-alert';
-      form.parentNode.insertBefore(box, form);
-    }
-    box.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible"><i class="fa-solid fa-circle-' + (type === 'danger' ? 'exclamation' : 'check') + '"></i> ' + message + ' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>';
-  }
-
-  function clearErrors() {
-    form.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
-    form.querySelectorAll('.invalid-feedback,.form-text').forEach(el => {
-      if (el.id && el.id.startsWith('error-')) el.textContent = '';
-    });
-  }
-
-  form.addEventListener('submit', async function (event) {
-    event.preventDefault();
-    clearErrors();
-    const button = document.getElementById('button-cart');
-    const original = button ? button.innerHTML : '';
-    if (button) {
-      button.disabled = true;
-      button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Adding...';
-    }
-
-    try {
-      const response = await fetch(form.action.replaceAll('&amp;', '&'), {
-        method: 'POST',
-        body: new FormData(form),
-        credentials: 'same-origin'
-      });
-      const json = await response.json();
-
-      if (json.redirect) {
-        window.location = json.redirect;
-        return;
-      }
-
-      if (json.error) {
-        if (json.error.warning) showMessage('danger', json.error.warning);
-        Object.keys(json.error).forEach(function (key) {
-          if (key === 'warning') return;
-          const id = key.replaceAll('_', '-');
-          const input = document.getElementById('input-' + id);
-          const error = document.getElementById('error-' + id);
-          if (input) input.classList.add('is-invalid');
-          if (error) error.textContent = json.error[key];
-        });
-        if (!json.error.warning) showMessage('danger', 'Please check the product options and try again.');
-        return;
-      }
-
-      if (json.success) {
-        showMessage('success', json.success);
-      }
-    } catch (error) {
-      showMessage('danger', 'Could not add this product to cart. Please refresh and try again.');
-      console.error(error);
-    } finally {
-      if (button) {
-        button.disabled = false;
-        button.innerHTML = original;
-      }
-    }
-  });
+(function(){
+  const mainImg=document.getElementById('pdp-main-img'); const mainLink=document.getElementById('pdp-main-link');
+  document.querySelectorAll('.pdp-thumb').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.pdp-thumb').forEach(b=>b.classList.remove('is-active'));btn.classList.add('is-active');if(btn.dataset.main&&mainImg){mainImg.src=btn.dataset.main;if(mainLink&&btn.dataset.popup){mainLink.href=btn.dataset.popup;}}}));
+  document.querySelectorAll('.pdp-option-grid input').forEach(input=>input.addEventListener('change',()=>{const group=input.closest('.pdp-option-grid'); if(!group)return; group.querySelectorAll('.form-check-label').forEach(l=>l.classList.remove('is-selected')); group.querySelectorAll('input:checked').forEach(ch=>{const label=group.querySelector('label[for="'+ch.id+'"]'); if(label)label.classList.add('is-selected');});}));
+  const form=document.getElementById('form-product'); if(!form)return;
+  function showMessage(type,msg){let box=document.getElementById('product-alert'); if(!box){box=document.createElement('div');box.id='product-alert';form.parentNode.insertBefore(box,form);} box.innerHTML='<div class="alert alert-'+type+' alert-dismissible"><i class="fa-solid fa-circle-'+(type==='danger'?'exclamation':'check')+'"></i> '+msg+' <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>';}
+  function clearErrors(){form.querySelectorAll('.is-invalid').forEach(el=>el.classList.remove('is-invalid'));form.querySelectorAll('.invalid-feedback,.form-text').forEach(el=>{if(el.id&&el.id.startsWith('error-'))el.textContent='';});}
+  form.addEventListener('submit',async function(event){event.preventDefault();clearErrors();const button=document.getElementById('button-cart');const original=button?button.innerHTML:'';if(button){button.disabled=true;button.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Adding...';}try{const response=await fetch(form.action.replaceAll('&amp;','&'),{method:'POST',body:new FormData(form),credentials:'same-origin'});const json=await response.json();if(json.redirect){window.location=json.redirect;return;}if(json.error){if(json.error.warning)showMessage('danger',json.error.warning);Object.keys(json.error).forEach(function(key){if(key==='warning')return;const id=key.replaceAll('_','-');const input=document.getElementById('input-'+id);const error=document.getElementById('error-'+id);if(input)input.classList.add('is-invalid');if(error)error.textContent=json.error[key];});if(!json.error.warning)showMessage('danger','Please check the product options and try again.');return;}if(json.success)showMessage('success',json.success);}catch(error){showMessage('danger','Could not add this product to cart. Please refresh and try again.');}finally{if(button){button.disabled=false;button.innerHTML=original;}}});
 })();
 </script>
-
-</main>
 {{ footer }}
