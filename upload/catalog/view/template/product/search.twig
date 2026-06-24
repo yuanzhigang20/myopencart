@@ -1,5 +1,6 @@
 {{ header }}
 <main class="container py-4">
+<style class="search-product-image-ratio">#product-list .product-image,#product-list .product-image-wrap{display:block;aspect-ratio:1/1.08;background:#f6e9e1;overflow:hidden}#product-list .product-image img,#product-list .product-image-wrap img,#product-list .card-img-top{width:100%;height:100%;object-fit:cover;display:block;mix-blend-mode:multiply}</style>
   <nav aria-label="breadcrumb"><ol class="breadcrumb">{% for breadcrumb in breadcrumbs %}<li class="breadcrumb-item{% if loop.last %} active{% endif %}">{% if not loop.last %}<a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>{% else %}{{ breadcrumb.text }}{% endif %}</li>{% endfor %}</ol></nav>
 <h1>{{ heading_title }}</h1>
 <div class="row">
