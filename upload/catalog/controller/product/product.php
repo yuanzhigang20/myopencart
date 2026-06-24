@@ -403,7 +403,9 @@ class Product extends \Opencart\System\Engine\Controller {
 						}
 
 						$product_option_value_data[] = [
-							'image' => $this->model_tool_image->resize($image, 50, 50),
+							'image' => $this->model_tool_image->resize($image, 72, 72),
+							'variant_main' => $image ? $this->model_tool_image->resize($image, $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height')) : '',
+							'variant_popup' => $image ? $this->model_tool_image->resize($image, $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')) : '',
 							'price' => $price
 					] + $option_value;
 					}
