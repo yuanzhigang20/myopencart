@@ -109,6 +109,7 @@ class Header extends \Opencart\System\Engine\Controller {
 			$data['logout'] = $this->url->link('account/logout', 'language=' . $this->config->get('config_language'));
 		}
 
+		$data['cart_count'] = $this->cart->countProducts();
 		$data['shopping_cart'] = $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language'));
 		$data['checkout'] = $this->url->link('checkout/checkout', 'language=' . $this->config->get('config_language'));
 		$data['contact'] = $this->url->link('information/contact', 'language=' . $this->config->get('config_language'));
