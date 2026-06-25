@@ -988,12 +988,13 @@ def css() -> str:
 
 
 def index_html(published_topics: List[Dict]) -> str:
-    """Return the no-image SEO content-center Blog homepage.
+    """Return the SEO content-center Blog homepage.
 
     The homepage is maintained as a static editorial hub so future article
-    generation does not regress to image-style cards or multiple h1 headings.
-    It includes ItemList structured data, topic clusters, featured guides,
-    latest guide cards, FAQ accordion markup, and the required Google tag.
+    generation does not regress to blank image placeholders or multiple h1
+    headings. It includes a single lightweight editorial hero image, ItemList
+    structured data, topic clusters, featured guides, latest guide cards, FAQ
+    accordion markup, and the required Google tag.
     """
     return (BLOG_DIR / "index.html").read_text(encoding="utf-8")
 
