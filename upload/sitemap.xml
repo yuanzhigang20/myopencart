@@ -119,4 +119,17 @@
   <url><loc>https://shoplovanest.com/blog/lingerie-size-guide/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://shoplovanest.com/blog/plus-size-lingerie-buying-guide/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://shoplovanest.com/blog/lace-lingerie-care-guide/</loc><lastmod>2026-06-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <url>
+    <loc>https://shoplovanest.com/blog/body-safe-lingerie-fabric-guide/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://shoplovanest.com/blog/lingerie-privacy-shopping-guide/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
 </urlset>
