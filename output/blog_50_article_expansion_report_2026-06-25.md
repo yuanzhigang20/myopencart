@@ -89,7 +89,8 @@ Scope: Added 50 new distinct-intent static English blog articles, expanding `/up
 Result: `files 81 failures 0`; new article minimum word count `1459`.
 
 ## Commit, Deployment, Live Verification
-- Commit hash: pending at report creation; final commit/deployment details are recorded in the assistant summary after push/deploy.
+- Commit hash: `02ff1c9b605da1fe4053f4a06daa1d6487dfd424`.
 - Deployment target: `root@153.75.235.56:/var/www/myopencart/upload`
 - Deployment method requested: rsync `upload/blog` and `upload/sitemap.xml` only, then set `www-data:www-data`, dirs `755`, files `644`.
-- Live verification: pending deployment.
+- Deployment: rsync to production completed for `upload/blog/` and `upload/sitemap.xml`; ownership/perms command completed.
+- Live verification: blog index HTTP 200 on retry; sitemap HTTP 200 and includes sample new URLs; 10/10 sampled new article URLs HTTP 200 with valid title/meta/gtag/content marker.
