@@ -1,15 +1,43 @@
-<h1>{{ heading_title }}</h1>
-{{ description }}
+{{ header }}
+<main class="container py-5 information-page">
+  <div class="row justify-content-center">
+    <div class="col-12 col-xl-10">
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb mb-0">
+          {% for breadcrumb in breadcrumbs %}
+            <li class="breadcrumb-item{% if loop.last %} active{% endif %}"{% if loop.last %} aria-current="page"{% endif %}>
+              {% if not loop.last %}<a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a>{% else %}{{ breadcrumb.text }}{% endif %}
+            </li>
+          {% endfor %}
+        </ol>
+      </nav>
 
+      <article class="card border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="card-body p-4 p-lg-5">
+          <h1 class="fw-bold mb-4">{{ heading_title }}</h1>
+          <div class="information-content text-muted">
+            {{ description|raw }}
+          </div>
+        </div>
+      </article>
 
-<div id="modal-information" class="modal fade">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title"><i class="fa-solid fa-info-circle"></i> {{ title }}</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      <div class="text-end mt-4">
+        <a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a>
       </div>
-      <div class="modal-body">{{ description }}</div>
     </div>
   </div>
-</div>
+</main>
+<style>
+  .information-page .breadcrumb a { color: var(--lv-rose); text-decoration: none; font-weight: 700; }
+  .information-page .breadcrumb a:hover { text-decoration: underline; }
+  .information-page h1 { font-family: Georgia, "Times New Roman", serif; color: var(--lv-ink); }
+  .information-content { font-size: 15px; line-height: 1.8; color: var(--lv-muted) !important; }
+  .information-content h2,
+  .information-content h3,
+  .information-content h4 { color: var(--lv-ink); margin-top: 1.75rem; margin-bottom: .85rem; font-weight: 800; }
+  .information-content p { margin-bottom: 1rem; }
+  .information-content ul,
+  .information-content ol { padding-left: 1.35rem; margin-bottom: 1rem; }
+  .information-content a { color: var(--lv-rose); font-weight: 700; }
+</style>
+{{ footer }}
