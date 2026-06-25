@@ -1,7 +1,7 @@
 # Blog Upgrade & Deployment Report — 2026-06-25
 
 ## Scope
-Upgraded the remaining existing ShopLovaNest adult wellness blog articles after first-batch commit eb53783e83". No new articles were created. Blog static HTML structure was preserved and each page keeps exactly one Google tag script/config pair.
+Upgraded the remaining existing ShopLovaNest adult wellness blog articles after first-batch commit `eb53783e83`. No new articles were created. Blog static HTML structure was preserved and each page keeps exactly one Google tag script/config pair.
 
 ## Edited slugs
 1. how-to-choose-a-vibrator
