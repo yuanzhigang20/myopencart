@@ -1,0 +1,59 @@
+{
+  "date": "2026-06-25",
+  "timezone": "Asia/Shanghai",
+  "status": "complete",
+  "completed_at": "2026-06-25T20:30:00+08:00",
+  "article_quota": 2,
+  "articles": [
+    {
+      "slug": "body-safe-lingerie-fabric-guide",
+      "title": "Body-Safe Lingerie Fabrics: Fit, Care, and Comfort",
+      "url": "https://shoplovanest.com/blog/body-safe-lingerie-fabric-guide/",
+      "primary_keywords": ["body-safe lingerie fabrics", "lingerie fabric guide", "mesh lingerie", "lace lingerie care", "comfortable lingerie"],
+      "quality_score": 85,
+      "word_count": 1307,
+      "live_verified": true
+    },
+    {
+      "slug": "lingerie-privacy-shopping-guide",
+      "title": "Lingerie Privacy Guide: Shipping, Billing, and Returns",
+      "url": "https://shoplovanest.com/blog/lingerie-privacy-shopping-guide/",
+      "primary_keywords": ["lingerie privacy guide", "discreet lingerie shipping", "lingerie returns", "private lingerie shopping", "lingerie gift consent"],
+      "quality_score": 85,
+      "word_count": 1361,
+      "live_verified": true
+    }
+  ],
+  "index_updated": true,
+  "sitemap_updated": true,
+  "git": {
+    "commit": "4f2bb26660515f340c5a406d002ca1c518db2692",
+    "pushed": true,
+    "remote": "origin/master"
+  },
+  "deploy": {
+    "status": "success",
+    "method": "targeted rsync",
+    "destination": "root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions_fixed": true
+  },
+  "live_verification": {
+    "status": "pass",
+    "article_http_200": true,
+    "article_title_meta_present": true,
+    "article_gtag_pair_present": true,
+    "content_markers_present": true,
+    "blog_index_http_200": true,
+    "blog_index_links_new_articles": true,
+    "sitemap_http_200": true,
+    "sitemap_includes_new_urls": true,
+    "note": "Verified with curl browser user-agent; Python urllib default user-agent received production HTTP 403 filtering."
+  },
+  "email": {
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-25",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "status": "sent_accepted",
+    "exit_code": 0
+  }
+}
