@@ -988,23 +988,14 @@ def css() -> str:
 
 
 def index_html(published_topics: List[Dict]) -> str:
-    cards = "\n".join(
-        f"<article class='card'><p>{html.escape(t['intent'])}</p><h2><a href='/blog/{t['slug']}/'>{html.escape(t['title'])}</a></h2><p>{html.escape(t['meta_description'])}</p></article>"
-        for t in published_topics
-    )
-    schema = {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "ShopLovaNest Sexual Wellness Blog",
-        "url": f"{BASE_URL}/blog/",
-        "description": "Discreet, professional sexual wellness guides for adults 18+.",
-    }
-    return f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sexual Wellness Blog | ShopLovaNest</title><meta name="description" content="Discreet sexual wellness guides for adults 18+, including buying guides, privacy, cleaning, body-safe materials, and lubricant education.">
-<meta name="rating" content="adult"><meta name="robots" content="index,follow"><link rel="canonical" href="{BASE_URL}/blog/">
-<script type="application/ld+json">{json.dumps(schema)}</script><style>{css()}.grid{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}.card{{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px}}.card p:first-child{{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:.75rem;letter-spacing:.08em}}@media(max-width:760px){{.grid{{grid-template-columns:1fr}}}}</style></head>
-<body><header class="site-header"><a class="brand" href="/">ShopLovaNest</a><nav><a href="/">Home</a><a href="/blog/">Blog</a><a href="/index.php?route=information/contact">Contact</a></nav></header><main><p class="eyebrow">18+ education hub</p><h1>Sexual Wellness Blog</h1><p class="lede">Professional, privacy-focused guides for adult wellness shopping, care, and product decisions.</p><section class="grid">{cards}</section></main><footer><p>18+ only. Educational content, not medical advice.</p></footer></body></html>"""
+    """Return the no-image SEO content-center Blog homepage.
+
+    The homepage is maintained as a static editorial hub so future article
+    generation does not regress to image-style cards or multiple h1 headings.
+    It includes ItemList structured data, topic clusters, featured guides,
+    latest guide cards, FAQ accordion markup, and the required Google tag.
+    """
+    return (BLOG_DIR / "index.html").read_text(encoding="utf-8")
 
 
 def write_csv(path: Path, rows: Iterable[Dict[str, str]], fields: List[str]) -> None:
