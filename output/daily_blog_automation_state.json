@@ -1,33 +1,41 @@
 {
-  "date": "2026-06-25",
+  "date": "2026-06-26",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
-  "completed_at": "2026-06-25T20:30:00+08:00",
+  "status": "verified_pending_email",
+  "completed_at": null,
   "article_quota": 2,
   "articles": [
     {
-      "slug": "body-safe-lingerie-fabric-guide",
-      "title": "Body-Safe Lingerie Fabrics: Fit, Care, and Comfort",
-      "url": "https://shoplovanest.com/blog/body-safe-lingerie-fabric-guide/",
-      "primary_keywords": ["body-safe lingerie fabrics", "lingerie fabric guide", "mesh lingerie", "lace lingerie care", "comfortable lingerie"],
-      "quality_score": 85,
-      "word_count": 1307,
+      "slug": "water-based-lube-condom-guide",
+      "title": "Water-Based Lube and Condoms: Compatibility Guide",
+      "url": "https://shoplovanest.com/blog/water-based-lube-condom-guide/",
+      "primary_keywords": [
+        "water based lube condoms",
+        "water based lube and condoms",
+        "water-based lubricant lube"
+      ],
+      "quality_score": 100,
+      "word_count": 1239,
       "live_verified": true
     },
     {
-      "slug": "lingerie-privacy-shopping-guide",
-      "title": "Lingerie Privacy Guide: Shipping, Billing, and Returns",
-      "url": "https://shoplovanest.com/blog/lingerie-privacy-shopping-guide/",
-      "primary_keywords": ["lingerie privacy guide", "discreet lingerie shipping", "lingerie returns", "private lingerie shopping", "lingerie gift consent"],
-      "quality_score": 85,
-      "word_count": 1361,
+      "slug": "automatic-male-masturbator-buying-guide",
+      "title": "Automatic Male Masturbator Buying Guide: Practical Checks",
+      "url": "https://shoplovanest.com/blog/automatic-male-masturbator-buying-guide/",
+      "primary_keywords": [
+        "automatic male masturbator",
+        "auto male masturbator",
+        "hands-free wearable male masturbator"
+      ],
+      "quality_score": 100,
+      "word_count": 1189,
       "live_verified": true
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
   "git": {
-    "commit": "4f2bb26660515f340c5a406d002ca1c518db2692",
+    "commit": "231e2e7b8b49cb7bc6bb31e60162ce405fc95025",
     "pushed": true,
     "remote": "origin/master"
   },
@@ -47,13 +55,13 @@
     "blog_index_links_new_articles": true,
     "sitemap_http_200": true,
     "sitemap_includes_new_urls": true,
-    "note": "Verified with curl browser user-agent; Python urllib default user-agent received production HTTP 403 filtering."
+    "note": "Verified with curl browser user-agent; an initial Python urllib check hit transient Cloudflare HTTP 522, then curl verification passed."
   },
   "email": {
     "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-25",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-26",
     "tool": "/opt/homebrew/bin/msmtp",
-    "status": "sent_accepted",
-    "exit_code": 0
+    "status": "pending",
+    "exit_code": null
   }
 }
