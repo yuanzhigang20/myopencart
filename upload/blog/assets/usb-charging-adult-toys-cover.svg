@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="USB Charging Adult Toys: Cable and Port Care">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f3ef"/><stop offset=".58" stop-color="#d8d0c5"/><stop offset="1" stop-color="#d5a99a"/></linearGradient><radialGradient id="glow" cx="74%" cy="28%" r="58%"><stop offset="0" stop-color="#fff" stop-opacity=".78"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#201713" flood-opacity=".17"/></filter></defs>
+<rect width="1600" height="900" fill="url(#g)"/><rect width="1600" height="900" fill="url(#glow)"/><circle cx="1349" cy="177" r="165" fill="#fff" opacity=".38"/><circle cx="1151" cy="720" r="235" fill="#766050" opacity=".14"/>
+<rect x="82" y="132" width="690" height="604" rx="46" fill="#fffdf9" opacity=".83" filter="url(#shadow)"/>
+<text x="126" y="214" font-family="Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="6" fill="#766050">SHOPLOVANEST GUIDE</text>
+<text x="126" y="300" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#201713">USB Charging Adult Toys:</text><text x="126" y="372" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#201713">Cable and Port Care</text>
+<text x="126" y="590" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#201713" opacity=".68">Sleek Intimate Wellness Device Silhouette</text>
+<text x="126" y="640" font-family="Arial,sans-serif" font-size="25" fill="#201713" opacity=".58">Discreet · Body-safe · 18+ wellness</text>
+<g opacity=".96" filter="url(#shadow)"><rect x="1035" y="250" width="168" height="390" rx="84" fill="#fffdf9" stroke="#d8d0c5" stroke-width="5"/><ellipse cx="1119" cy="255" rx="70" ry="34" fill="#766050" opacity=".22"/><path d="M1072 548 C1108 500 1165 501 1192 548" fill="none" stroke="#766050" stroke-width="13" stroke-linecap="round" opacity=".5"/></g>
+</svg>

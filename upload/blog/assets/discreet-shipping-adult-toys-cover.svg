@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Discreet Shipping for Adult Toys: What Privacy Reall">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf5"/><stop offset="0.55" stop-color="#f1ded4"/><stop offset="1" stop-color="#d8b9aa"/></linearGradient><radialGradient id="r" cx="68%" cy="35%" r="55%"><stop offset="0" stop-color="#ffffff" stop-opacity=".82"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient><filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#3c261c" flood-opacity=".18"/></filter></defs>
-<rect width="100%" height="100%" fill="url(#g)"/><rect width="100%" height="100%" fill="url(#r)"/>
-<circle cx="1248" cy="225" r="180" fill="#fffdf9" opacity=".52"/>
-<circle cx="992" cy="612" r="252" fill="#b8796a" opacity=".18"/>
-<rect x="896" y="180" width="416" height="432" rx="46" fill="#fffdf9" opacity=".88" filter="url(#shadow)"/>
-<path d="M 960 522 C 1056 432, 1184 432, 1264 522" fill="none" stroke="#b8796a" stroke-width="12" stroke-linecap="round" opacity=".52"/>
-<rect x="192" y="162" width="608" height="486" rx="36" fill="#fffdf9" opacity=".82" filter="url(#shadow)"/>
-<text x="256" y="279" font-family="Georgia, serif" font-size="63" font-weight="700" fill="#241914">Lovanest</text>
-<text x="256" y="360" font-family="Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="3" fill="#7a5548">ADULT WELLNESS GUIDE</text>
-<foreignObject x="256" y="423" width="496" height="162"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Georgia,serif;font-size:46px;line-height:1.08;color:#2a1912;font-weight:700">Discreet Shipping for Adult Toys: What Privacy Reall</div></foreignObject>
-<text x="256" y="630" font-family="Arial, sans-serif" font-size="28" fill="#75655e">Private · Body-safe · Discreet</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Discreet Shipping for Adult Toys: What Privacy Really Means">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf5"/><stop offset=".58" stop-color="#e7c7b5"/><stop offset="1" stop-color="#d5a99a"/></linearGradient><radialGradient id="glow" cx="74%" cy="28%" r="58%"><stop offset="0" stop-color="#fff" stop-opacity=".78"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#21130e" flood-opacity=".17"/></filter></defs>
+<rect width="1600" height="900" fill="url(#g)"/><rect width="1600" height="900" fill="url(#glow)"/><circle cx="1281" cy="200" r="165" fill="#fff" opacity=".38"/><circle cx="1219" cy="720" r="235" fill="#7f4639" opacity=".14"/>
+<rect x="82" y="132" width="690" height="604" rx="46" fill="#fffdf9" opacity=".83" filter="url(#shadow)"/>
+<text x="126" y="214" font-family="Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="6" fill="#7f4639">SHOPLOVANEST GUIDE</text>
+<text x="126" y="300" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#21130e">Discreet Shipping for Adult</text><text x="126" y="372" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#21130e">Toys: What Privacy Really</text><text x="126" y="444" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#21130e">Means</text>
+<text x="126" y="590" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#21130e" opacity=".68">Plain Parcel</text>
+<text x="126" y="640" font-family="Arial,sans-serif" font-size="25" fill="#21130e" opacity=".58">Discreet · Body-safe · 18+ wellness</text>
+<g filter="url(#shadow)"><rect x="920" y="340" width="430" height="250" rx="34" fill="#fffdf9" stroke="#e7c7b5" stroke-width="5"/><path d="M920 410 H1350" stroke="#e7c7b5" stroke-width="5"/><path d="M1040 340 V590" stroke="#e7c7b5" stroke-width="5"/><rect x="1135" y="455" width="150" height="64" rx="18" fill="#7f4639" opacity=".25"/><circle cx="1005" cy="482" r="46" fill="#7f4639" opacity=".18"/></g>
 </svg>

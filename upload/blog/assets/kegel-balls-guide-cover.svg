@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6ee"/><stop offset=".58" stop-color="#edcfc4"/><stop offset="1" stop-color="#d5a99a"/></linearGradient><radialGradient id="glow" cx="74%" cy="28%" r="58%"><stop offset="0" stop-color="#fff" stop-opacity=".78"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#2b1812" flood-opacity=".17"/></filter></defs>
+<rect width="1600" height="900" fill="url(#g)"/><rect width="1600" height="900" fill="url(#glow)"/><circle cx="1345" cy="179" r="165" fill="#fff" opacity=".38"/><circle cx="1155" cy="720" r="235" fill="#9a5a4c" opacity=".14"/>
+<rect x="82" y="132" width="690" height="604" rx="46" fill="#fffdf9" opacity=".83" filter="url(#shadow)"/>
+<text x="126" y="214" font-family="Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="6" fill="#9a5a4c">SHOPLOVANEST GUIDE</text>
+<text x="126" y="300" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#2b1812">Kegel Balls Guide: Pelvic</text><text x="126" y="372" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#2b1812">Wellness Basics and Safety</text><text x="126" y="444" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#2b1812">Notes</text>
+<text x="126" y="590" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#2b1812" opacity=".68">Wellness Spheres</text>
+<text x="126" y="640" font-family="Arial,sans-serif" font-size="25" fill="#2b1812" opacity=".58">Discreet · Body-safe · 18+ wellness</text>
+<g opacity=".96" filter="url(#shadow)"><rect x="1035" y="250" width="168" height="390" rx="84" fill="#fffdf9" stroke="#edcfc4" stroke-width="5"/><ellipse cx="1119" cy="255" rx="70" ry="34" fill="#9a5a4c" opacity=".22"/><path d="M1072 548 C1108 500 1165 501 1192 548" fill="none" stroke="#9a5a4c" stroke-width="13" stroke-linecap="round" opacity=".5"/></g>
+</svg>

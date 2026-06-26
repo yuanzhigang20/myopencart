@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Adult Toy Storage Box Guide: Privacy and Materials">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf5"/><stop offset=".58" stop-color="#e7c7b5"/><stop offset="1" stop-color="#d5a99a"/></linearGradient><radialGradient id="glow" cx="74%" cy="28%" r="58%"><stop offset="0" stop-color="#fff" stop-opacity=".78"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#21130e" flood-opacity=".17"/></filter></defs>
+<rect width="1600" height="900" fill="url(#g)"/><rect width="1600" height="900" fill="url(#glow)"/><circle cx="1331" cy="183" r="165" fill="#fff" opacity=".38"/><circle cx="1169" cy="720" r="235" fill="#7f4639" opacity=".14"/>
+<rect x="82" y="132" width="690" height="604" rx="46" fill="#fffdf9" opacity=".83" filter="url(#shadow)"/>
+<text x="126" y="214" font-family="Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="6" fill="#7f4639">SHOPLOVANEST GUIDE</text>
+<text x="126" y="300" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#21130e">Adult Toy Storage Box Guide:</text><text x="126" y="372" font-family="Georgia,serif" font-size="60" font-weight="700" fill="#21130e">Privacy and Materials</text>
+<text x="126" y="590" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#21130e" opacity=".68">Plain Parcel</text>
+<text x="126" y="640" font-family="Arial,sans-serif" font-size="25" fill="#21130e" opacity=".58">Discreet · Body-safe · 18+ wellness</text>
+<g filter="url(#shadow)"><rect x="920" y="340" width="430" height="250" rx="34" fill="#fffdf9" stroke="#e7c7b5" stroke-width="5"/><path d="M920 410 H1350" stroke="#e7c7b5" stroke-width="5"/><path d="M1040 340 V590" stroke="#e7c7b5" stroke-width="5"/><rect x="1135" y="455" width="150" height="64" rx="18" fill="#7f4639" opacity=".25"/><circle cx="1005" cy="482" r="46" fill="#7f4639" opacity=".18"/></g>
+</svg>
