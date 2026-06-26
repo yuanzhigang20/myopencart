@@ -1,0 +1,26 @@
+{
+  "done": [
+    "water-based-lube-condom-guide:cover/guide-1/detail-1",
+    "water-based-lube-condom-guide:cover",
+    "sex-toys-for-beginners:cover",
+    "best-adult-toys-for-beginners:cover",
+    "body-safe-sex-toys:cover",
+    "discreet-shipping-adult-toys:cover",
+    "vibrators-for-beginners:cover",
+    "quiet-vibrator-guide:cover",
+    "water-based-lube-guide:cover",
+    "how-to-clean-silicone-sex-toys:cover",
+    "adult-toy-buying-guide:cover",
+    "rabbit-vibrator-guide:cover",
+    "adult-toys-for-couples:cover"
+  ],
+  "failed": [
+    {
+      "slug": "male-masturbator-guide",
+      "kinds": [
+        "cover"
+      ],
+      "error": "No image result in response: {\"id\": \"resp_0f4b2b308eac201c016a3e23f122ec8191bac579dbc1845239\", \"object\": \"response\", \"created_at\": 1782457329, \"status\": \"completed\", \"background\": false, \"completed_at\": 1782457378, \"error\": null, \"frequency_penalty\": 0.0, \"incomplete_details\": null, \"instructions\": \"You are a helpful coding assistant.\", \"max_output_tokens\": null, \"max_tool_calls\": null, \"model\": \"gpt-5.4-mini-2026-03-17\", \"moderation\": null, \"output\": [{\"type\": \"message\", \"role\": \"assistant\", \"content\": [{\"type\": \"output_text\", \"text\": \"Sorry, I can\\u2019t help create sexual wellness promotional imagery that centers on an adult toy topic.\\n\\nIf you want, I can still help with a policy-safe alternative in the same premium style, for example:\\n- a luxury privacy-and-storage blog hero for intimate wellness accessories, without the explicit product focus\\n- a premium bathroom/nightstand flat-lay about discreet self-care and cleaning\\n- a female-friendly DTC editorial cover about \\u201cHow "
+    }
+  ]
+}
