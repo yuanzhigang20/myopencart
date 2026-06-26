@@ -1,8 +1,8 @@
 {
   "date": "2026-06-26",
   "timezone": "Asia/Shanghai",
-  "status": "verified_pending_email",
-  "completed_at": null,
+  "status": "complete",
+  "completed_at": "2026-06-26T08:50:00+08:00",
   "article_quota": 2,
   "articles": [
     {
@@ -61,7 +61,7 @@
     "recipient": "yuanzhigang20@gmail.com",
     "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-26",
     "tool": "/opt/homebrew/bin/msmtp",
-    "status": "pending",
-    "exit_code": null
+    "status": "sent_accepted",
+    "exit_code": 0
   }
 }

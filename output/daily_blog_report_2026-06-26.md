@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report — 2026-06-26
 
-Status: verified_pending_email
+Status: complete
 Timezone: Asia/Shanghai
 
 ## Articles Generated
@@ -58,4 +58,4 @@ Note: an initial Python urllib request received a transient Cloudflare HTTP 522;
 
 - Recipient: yuanzhigang20@gmail.com
 - Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-06-26
-- Status: pending before msmtp send
+- Status: sent_accepted (msmtp exit code 0)
