@@ -12,7 +12,79 @@
     "how-to-clean-silicone-sex-toys:cover",
     "adult-toy-buying-guide:cover",
     "rabbit-vibrator-guide:cover",
-    "adult-toys-for-couples:cover"
+    "adult-toys-for-couples:cover",
+    "male-masturbator-guide:cover",
+    "abs-plastic-adult-toys:cover",
+    "adult-toy-cleaner-guide:cover",
+    "adult-toy-delivery-guide:cover",
+    "adult-toy-gift-guide:cover",
+    "adult-toy-materials-guide:cover",
+    "adult-toy-privacy-guide:cover",
+    "adult-toy-returns-guide:cover",
+    "adult-toy-storage-box-guide:cover",
+    "adult-toy-storage-guide:cover",
+    "adult-toy-warranty-guide:cover",
+    "adult-toys-for-couples-beginners:cover",
+    "anal-lube-guide:cover",
+    "anal-plug-size-guide:cover",
+    "anal-toy-flared-base:cover",
+    "anal-toys-for-beginners:cover",
+    "app-controlled-adult-toys:cover",
+    "automatic-male-masturbator-buying-guide:cover",
+    "beginner-lubricant-guide:cover",
+    "body-safe-lingerie-fabric-guide:cover",
+    "bullet-vibrator-guide:cover",
+    "cock-ring-guide:cover",
+    "couples-vibrator-guide:cover",
+    "date-night-adult-toy-gift:cover",
+    "discreet-billing-adult-toys:cover",
+    "egg-vibrator-guide:cover",
+    "first-vibrator-questions:cover",
+    "g-spot-vibrator-guide:cover",
+    "glass-adult-toys-guide:cover",
+    "how-to-choose-a-vibrator:cover",
+    "how-to-dry-adult-toys:cover",
+    "how-to-use-kegel-balls-safely:cover",
+    "hypoallergenic-adult-toys:cover",
+    "jelly-adult-toys-red-flags:cover",
+    "kegel-balls-cleaning-storage:cover",
+    "kegel-balls-guide:cover",
+    "kegel-balls-sizing-guide:cover",
+    "lace-lingerie-care-guide:cover",
+    "lingerie-privacy-shopping-guide:cover",
+    "lingerie-size-guide:cover",
+    "lockable-adult-toy-storage:cover",
+    "lubricant-ingredients-guide:cover",
+    "luxury-adult-toys-guide:cover",
+    "male-masturbator-cleaning:cover",
+    "male-masturbator-materials:cover",
+    "massage-oil-vs-lube:cover",
+    "mini-vibrator-guide:cover",
+    "non-porous-sex-toys-guide:cover",
+    "palm-vibrator-guide:cover",
+    "plus-size-lingerie-buying-guide:cover",
+    "quiet-adult-toys-shared-home:cover",
+    "rechargeable-vibrator-guide:cover",
+    "rechargeable-vs-battery-vibrators:cover",
+    "remote-control-adult-toys:cover",
+    "sensitive-skin-lube-guide:cover",
+    "sex-toy-cleaning-mistakes:cover",
+    "silicone-lube-guide:cover",
+    "silicone-vs-abs-adult-toys:cover",
+    "stainless-steel-adult-toys:cover",
+    "suction-massager-guide:cover",
+    "toy-compatible-lube-guide:cover",
+    "travel-size-adult-toys:cover",
+    "tsa-adult-toys-travel-guide:cover",
+    "usb-charging-adult-toys:cover",
+    "wand-attachments-guide:cover",
+    "wand-massager-guide:cover",
+    "water-based-lube-vs-silicone-lube:cover",
+    "waterproof-vibrator-guide:cover",
+    "wearable-vibrator-guide:cover",
+    "budget-adult-toys-guide:cover",
+    "travel-with-adult-toys:cover",
+    "waterproof-vs-water-resistant-toys:cover"
   ],
   "failed": [
     {
@@ -21,6 +93,27 @@
         "cover"
       ],
       "error": "No image result in response: {\"id\": \"resp_0f4b2b308eac201c016a3e23f122ec8191bac579dbc1845239\", \"object\": \"response\", \"created_at\": 1782457329, \"status\": \"completed\", \"background\": false, \"completed_at\": 1782457378, \"error\": null, \"frequency_penalty\": 0.0, \"incomplete_details\": null, \"instructions\": \"You are a helpful coding assistant.\", \"max_output_tokens\": null, \"max_tool_calls\": null, \"model\": \"gpt-5.4-mini-2026-03-17\", \"moderation\": null, \"output\": [{\"type\": \"message\", \"role\": \"assistant\", \"content\": [{\"type\": \"output_text\", \"text\": \"Sorry, I can\\u2019t help create sexual wellness promotional imagery that centers on an adult toy topic.\\n\\nIf you want, I can still help with a policy-safe alternative in the same premium style, for example:\\n- a luxury privacy-and-storage blog hero for intimate wellness accessories, without the explicit product focus\\n- a premium bathroom/nightstand flat-lay about discreet self-care and cleaning\\n- a female-friendly DTC editorial cover about \\u201cHow "
+    },
+    {
+      "slug": "budget-adult-toys-guide",
+      "kinds": [
+        "cover"
+      ],
+      "error": "HTTP 502: {\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-502/\",\"title\":\"Error 502: Bad gateway\",\"status\":502,\"detail\":\"The origin web server returned an invalid or incomplete response to Cloudflare. This typically indicates the origin is overloaded or misconfigured.\",\"instance\":\"a11a9a06c8076dd5\",\"error_code\":502,\"error_name\":\"origin_bad_gateway\",\"error_category\":\"origin\",\"ray_id\":\"a11a9a06c8076dd5\",\"timestamp\":\"2026-06-26T07:48:03Z\",\"zone\":\"sub2api.csapplive.com\",\"cloudflare_error\":true,\"retryable\":true,\"retry_after\":60,\"owner_action_required\":true,\"what_you_should_do\":\"**Wait and retry.** Back off for at least 60 seconds. If the error persists, the website operator should check their origin server health and configuration.\",\"footer\":\"This error was generated by Cloudflare on behalf of the website owner.\"}\n"
+    },
+    {
+      "slug": "travel-with-adult-toys",
+      "kinds": [
+        "cover"
+      ],
+      "error": "HTTP 502: {\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-502/\",\"title\":\"Error 502: Bad gateway\",\"status\":502,\"detail\":\"The origin web server returned an invalid or incomplete response to Cloudflare. This typically indicates the origin is overloaded or misconfigured.\",\"instance\":\"a11adc05bc3bb5ed\",\"error_code\":502,\"error_name\":\"origin_bad_gateway\",\"error_category\":\"origin\",\"ray_id\":\"a11adc05bc3bb5ed\",\"timestamp\":\"2026-06-26T08:32:59Z\",\"zone\":\"sub2api.csapplive.com\",\"cloudflare_error\":true,\"retryable\":true,\"retry_after\":60,\"owner_action_required\":true,\"what_you_should_do\":\"**Wait and retry.** Back off for at least 60 seconds. If the error persists, the website operator should check their origin server health and configuration.\",\"footer\":\"This error was generated by Cloudflare on behalf of the website owner.\"}\n"
+    },
+    {
+      "slug": "waterproof-vs-water-resistant-toys",
+      "kinds": [
+        "cover"
+      ],
+      "error": "HTTP 502: {\"type\":\"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-502/\",\"title\":\"Error 502: Bad gateway\",\"status\":502,\"detail\":\"The origin web server returned an invalid or incomplete response to Cloudflare. This typically indicates the origin is overloaded or misconfigured.\",\"instance\":\"a11ae5a7cc59714e\",\"error_code\":502,\"error_name\":\"origin_bad_gateway\",\"error_category\":\"origin\",\"ray_id\":\"a11ae5a7cc59714e\",\"timestamp\":\"2026-06-26T08:39:33Z\",\"zone\":\"sub2api.csapplive.com\",\"cloudflare_error\":true,\"retryable\":true,\"retry_after\":60,\"owner_action_required\":true,\"what_you_should_do\":\"**Wait and retry.** Back off for at least 60 seconds. If the error persists, the website operator should check their origin server health and configuration.\",\"footer\":\"This error was generated by Cloudflare on behalf of the website owner.\"}\n"
     }
   ]
 }
