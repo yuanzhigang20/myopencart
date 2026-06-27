@@ -1,67 +1,30 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-27",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
-  "completed_at": "2026-06-26T08:50:00+08:00",
+  "status": "generated_pending_validation_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "water-based-lube-condom-guide",
-      "title": "Water-Based Lube and Condoms: Compatibility Guide",
-      "url": "https://shoplovanest.com/blog/water-based-lube-condom-guide/",
+      "slug": "vibrating-cock-ring-buying-guide",
+      "title": "Vibrating Cock Ring Buying Guide: Fit and Care",
+      "url": "https://shoplovanest.com/blog/vibrating-cock-ring-buying-guide/",
       "primary_keywords": [
-        "water based lube condoms",
-        "water based lube and condoms",
-        "water-based lubricant lube"
-      ],
-      "quality_score": 100,
-      "word_count": 1239,
-      "live_verified": true
+        "vibrating cock ring",
+        "cock ring vibrator",
+        "vibrating cock rings"
+      ]
     },
     {
-      "slug": "automatic-male-masturbator-buying-guide",
-      "title": "Automatic Male Masturbator Buying Guide: Practical Checks",
-      "url": "https://shoplovanest.com/blog/automatic-male-masturbator-buying-guide/",
+      "slug": "best-water-based-lube-shopping-checklist",
+      "title": "Best Water-Based Lube: Shopping Checklist",
+      "url": "https://shoplovanest.com/blog/best-water-based-lube-shopping-checklist/",
       "primary_keywords": [
-        "automatic male masturbator",
-        "auto male masturbator",
-        "hands-free wearable male masturbator"
-      ],
-      "quality_score": 100,
-      "word_count": 1189,
-      "live_verified": true
+        "best water based lube",
+        "water based lubes",
+        "water based personal lube"
+      ]
     }
   ],
   "index_updated": true,
-  "sitemap_updated": true,
-  "git": {
-    "commit": "231e2e7b8b49cb7bc6bb31e60162ce405fc95025",
-    "pushed": true,
-    "remote": "origin/master"
-  },
-  "deploy": {
-    "status": "success",
-    "method": "targeted rsync",
-    "destination": "root@153.75.235.56:/var/www/myopencart/upload",
-    "permissions_fixed": true
-  },
-  "live_verification": {
-    "status": "pass",
-    "article_http_200": true,
-    "article_title_meta_present": true,
-    "article_gtag_pair_present": true,
-    "content_markers_present": true,
-    "blog_index_http_200": true,
-    "blog_index_links_new_articles": true,
-    "sitemap_http_200": true,
-    "sitemap_includes_new_urls": true,
-    "note": "Verified with curl browser user-agent; an initial Python urllib check hit transient Cloudflare HTTP 522, then curl verification passed."
-  },
-  "email": {
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-26",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "status": "sent_accepted",
-    "exit_code": 0
-  }
+  "sitemap_updated": true
 }
