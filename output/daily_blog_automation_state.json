@@ -1,7 +1,7 @@
 {
   "date": "2026-06-28",
   "timezone": "Asia/Shanghai",
-  "status": "generated_pending_validation_deploy_email",
+  "status": "verified_pending_email",
   "article_quota": 2,
   "articles": [
     {
@@ -13,7 +13,10 @@
         "hands free male masturbator",
         "male masturbator toy"
       ],
-      "keyword_source": "output/keyword_to_url_mapping_2026-06-25.csv rows under Male wellness products; output/merged_keyword_research_2026-06-25.csv seed male-masturbator."
+      "keyword_source": "output/keyword_to_url_mapping_2026-06-25.csv rows under Male wellness products; output/merged_keyword_research_2026-06-25.csv seed male-masturbator.",
+      "quality_score": 100,
+      "word_count": 1271,
+      "live_verified": true
     },
     {
       "slug": "water-based-anal-lube-guide",
@@ -24,9 +27,67 @@
         "water based lube for anal",
         "water based lube"
       ],
-      "keyword_source": "output/keyword_to_url_mapping_2026-06-25.csv rows under Beginner anal wellness and Lubricant basics; output/merged_keyword_research_2026-06-25.csv seed water-based-lube/anal-toys-for-beginners."
+      "keyword_source": "output/keyword_to_url_mapping_2026-06-25.csv rows under Beginner anal wellness and Lubricant basics; output/merged_keyword_research_2026-06-25.csv seed water-based-lube/anal-toys-for-beginners.",
+      "quality_score": 100,
+      "word_count": 1169,
+      "live_verified": true
     }
   ],
   "index_updated": true,
-  "sitemap_updated": true
+  "sitemap_updated": true,
+  "generated_at": "2026-06-28T10:30:00+08:00",
+  "local_validation": {
+    "status": "pass",
+    "title_meta_h1_gtag": true,
+    "word_count_1000_plus": true,
+    "quick_answer": true,
+    "red_flags": true,
+    "faqpage_jsonld": true,
+    "authority_refs": true,
+    "internal_product_links": true,
+    "image_seo_metadata": true,
+    "sitemap_image_metadata": true,
+    "quality_score_min": 100
+  },
+  "git": {
+    "commit": "a1135ba233ac3dfba1b2219c0f7b6f17673a9f24",
+    "pushed": true,
+    "remote": "ssh://git@ssh.github.com:443/yuanzhigang20/myopencart.git master"
+  },
+  "deploy": {
+    "status": "success",
+    "method": "targeted rsync",
+    "destination": "root@153.75.235.56:/var/www/myopencart/upload",
+    "deployed_paths": [
+      "upload/blog/hands-free-male-masturbator-guide/",
+      "upload/blog/water-based-anal-lube-guide/",
+      "upload/blog/assets/hands-free-male-masturbator-guide-opus-cover.png",
+      "upload/blog/assets/water-based-anal-lube-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions_fixed": true
+  },
+  "live_verification": {
+    "status": "pass",
+    "article_http_200": true,
+    "article_title_meta_present": true,
+    "article_h1_one": true,
+    "article_gtag_config_once": true,
+    "quick_answer": true,
+    "red_flags": true,
+    "faqpage_schema": true,
+    "authority_refs": true,
+    "image_seo_metadata": true,
+    "blog_index_http_200": true,
+    "blog_index_links_new_articles": true,
+    "sitemap_http_200": true,
+    "sitemap_includes_new_urls_lastmod_image_metadata": true
+  },
+  "email": {
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-28",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "status": "pending"
+  }
 }
