@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report - 2026-06-28
 
-Status: generated and locally validated; deployment/live verification/email pending.
+Status: complete
 Timezone: Asia/Shanghai
 
 ## Articles generated from keyword files
@@ -48,7 +48,7 @@ Skipped/avoided irrelevant or unsafe targeting: fidget, Toy Story/Disney/media, 
 
 ## Git
 
-- Commit: `a1135ba233ac3dfba1b2219c0f7b6f17673a9f24`
+- Commit: `db75c23a01`
 - Commit message: `Add daily wellness blog guides for 2026-06-28`
 - Push: `master` successful via `ssh://git@ssh.github.com:443/yuanzhigang20/myopencart.git`
 - Note: unrelated existing keyword Excel deletions/archive and GSC output files were not committed.
@@ -75,4 +75,8 @@ Skipped/avoided irrelevant or unsafe targeting: fidget, Toy Story/Disney/media, 
 
 ## Email
 
-Pending send after final state/report update.
+- Recipient: yuanzhigang20@gmail.com
+- Subject: `ShopLovaNest Daily Blog Deployment Complete - 2026-06-28`
+- Tool: `/opt/homebrew/bin/msmtp`
+- Status: sent/accepted
+- Exit code: 0

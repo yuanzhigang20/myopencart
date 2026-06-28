@@ -1,7 +1,7 @@
 {
   "date": "2026-06-28",
   "timezone": "Asia/Shanghai",
-  "status": "verified_pending_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -50,7 +50,7 @@
     "quality_score_min": 100
   },
   "git": {
-    "commit": "a1135ba233ac3dfba1b2219c0f7b6f17673a9f24",
+    "commit": "db75c23a01",
     "pushed": true,
     "remote": "ssh://git@ssh.github.com:443/yuanzhigang20/myopencart.git master"
   },
@@ -88,6 +88,8 @@
     "recipient": "yuanzhigang20@gmail.com",
     "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-28",
     "tool": "/opt/homebrew/bin/msmtp",
-    "status": "pending"
-  }
+    "status": "sent_accepted",
+    "exit_code": 0
+  },
+  "completed_at": "2026-06-28T10:55:00+08:00"
 }
