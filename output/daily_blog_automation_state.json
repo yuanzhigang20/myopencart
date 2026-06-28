@@ -1,72 +1,32 @@
 {
-  "date": "2026-06-27",
+  "date": "2026-06-28",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
-  "completed_at": "2026-06-27T09:00:00+08:00",
+  "status": "generated_pending_validation_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "vibrating-cock-ring-buying-guide",
-      "title": "Vibrating Cock Ring Buying Guide: Fit and Care",
-      "url": "https://shoplovanest.com/blog/vibrating-cock-ring-buying-guide/",
+      "slug": "hands-free-male-masturbator-guide",
+      "title": "Hands-Free Male Masturbator Guide: Fit and Care",
+      "url": "https://shoplovanest.com/blog/hands-free-male-masturbator-guide/",
       "primary_keywords": [
-        "vibrating cock ring",
-        "cock ring vibrator",
-        "vibrating cock rings"
+        "hands-free wearable male masturbator",
+        "hands free male masturbator",
+        "male masturbator toy"
       ],
-      "quality_score": 100,
-      "word_count": 1573,
-      "live_verified": true
+      "keyword_source": "output/keyword_to_url_mapping_2026-06-25.csv rows under Male wellness products; output/merged_keyword_research_2026-06-25.csv seed male-masturbator."
     },
     {
-      "slug": "best-water-based-lube-shopping-checklist",
-      "title": "Best Water-Based Lube: Shopping Checklist",
-      "url": "https://shoplovanest.com/blog/best-water-based-lube-shopping-checklist/",
+      "slug": "water-based-anal-lube-guide",
+      "title": "Water-Based Anal Lube: Comfort and Compatibility Checks",
+      "url": "https://shoplovanest.com/blog/water-based-anal-lube-guide/",
       "primary_keywords": [
-        "best water based lube",
-        "water based lubes",
-        "water based personal lube"
+        "water based anal lube",
+        "water based lube for anal",
+        "water based lube"
       ],
-      "quality_score": 100,
-      "word_count": 1662,
-      "live_verified": true
+      "keyword_source": "output/keyword_to_url_mapping_2026-06-25.csv rows under Beginner anal wellness and Lubricant basics; output/merged_keyword_research_2026-06-25.csv seed water-based-lube/anal-toys-for-beginners."
     }
   ],
   "index_updated": true,
-  "sitemap_updated": true,
-  "git": {
-    "commit": "ca441bda85db7ca8c18662770c0e743aa378b4e9",
-    "pushed": true,
-    "remote": "origin/master"
-  },
-  "deploy": {
-    "status": "success",
-    "method": "targeted rsync",
-    "destination": "root@153.75.235.56:/var/www/myopencart/upload",
-    "deployed_paths": [
-      "upload/blog/vibrating-cock-ring-buying-guide/",
-      "upload/blog/best-water-based-lube-shopping-checklist/",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions_fixed": true
-  },
-  "live_verification": {
-    "status": "pass",
-    "article_http_200": true,
-    "article_title_meta_present": true,
-    "article_gtag_pair_present": true,
-    "content_markers_present": true,
-    "blog_index_http_200": true,
-    "blog_index_links_new_articles": true,
-    "sitemap_http_200": true,
-    "sitemap_includes_new_urls": true
-  },
-  "email": {
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-27",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "status": "sent_accepted",
-    "exit_code": 0
-  }
+  "sitemap_updated": true
 }
