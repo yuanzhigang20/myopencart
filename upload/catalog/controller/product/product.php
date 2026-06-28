@@ -38,9 +38,9 @@ class Product extends \Opencart\System\Engine\Controller {
 		$this->document->addMeta(['property' => 'og:type', 'content' => 'product']);
 		$this->document->addMeta(['property' => 'og:url', 'content' => $product_url]);
 
-		$this->document->addScript('catalog/view/javascript/product.js');
+		$this->document->addScript('catalog/view/javascript/catalog/product.js');
 		$this->document->addScript('assets/magnific/jquery.magnific-popup.min.js');
-		$this->document->addStyle('assets/view/javascript/jquery/magnific/magnific-popup.css');
+		$this->document->addStyle('assets/magnific/magnific-popup.css');
 
 		$data['breadcrumbs'] = [];
 

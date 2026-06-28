@@ -15,6 +15,7 @@ class Contact extends \Opencart\System\Engine\Controller {
 		$this->load->language('information/contact');
 
 		$this->document->setTitle($this->language->get('heading_title'));
+		$this->document->addLink('https://shoplovanest.com/index.php?route=information/contact', 'canonical');
 
 		$data['breadcrumbs'] = [];
 

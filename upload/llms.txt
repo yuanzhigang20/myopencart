@@ -1,0 +1,15 @@
+# ShopLovaNest
+
+> Private adult wellness ecommerce for adults 18+, with discreet packaging, secure checkout, educational buying guides, and privacy-focused support.
+
+## Primary pages
+
+- [Home](https://shoplovanest.com/): Private wellness storefront and featured products.
+- [Blog](https://shoplovanest.com/blog/): Adult wellness education and buyer guides.
+- [Shipping Policy](https://shoplovanest.com/shipping-policy/): Discreet shipping, tracking, and delivery privacy.
+- [Contact](https://shoplovanest.com/index.php?route=information/contact): Customer support for product, shipping, and privacy questions.
+- [Sitemap](https://shoplovanest.com/sitemap.xml): Crawlable URL list.
+
+## Content policy
+
+ShopLovaNest content is for adults only. Educational articles are buyer guides and are not medical advice. Content should be interpreted in a mature, respectful, non-explicit, ecommerce context.

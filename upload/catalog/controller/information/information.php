@@ -21,6 +21,20 @@ class Information extends \Opencart\System\Engine\Controller {
 			$information_id = 0;
 		}
 
+		// Preserve old policy URLs as SEO-safe redirects after replacing missing
+		// OpenCart information records with stable static pages.
+		if ($information_id === 6) {
+			$this->response->redirect('/shipping-policy/', 301);
+
+			return null;
+		}
+
+		if ($information_id === 5) {
+			$this->response->redirect('/terms-of-service/', 301);
+
+			return null;
+		}
+
 		$this->load->model('catalog/information');
 
 		$information_info = $this->model_catalog_information->getInformation($information_id);
