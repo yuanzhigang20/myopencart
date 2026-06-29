@@ -1,7 +1,7 @@
 {
   "date": "2026-06-29",
   "timezone": "Asia/Shanghai",
-  "status": "local_validation_passed_pending_git_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -14,7 +14,9 @@
         "cock ring guide"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: metal cock ring (Volume 1600, KD 17), silicone cock ring (Volume 720), silicone cock rings (Volume 390); output/keyword_to_url_mapping_2026-06-25.csv maps these to Couples accessories / Cock Ring Guide, used here as a deeper material-specific distinct intent.",
-      "intent_cluster": "Couples accessories — material-specific cock ring buying intent"
+      "intent_cluster": "Couples accessories — material-specific cock ring buying intent",
+      "quality_score": 100,
+      "live_verified": true
     },
     {
       "slug": "long-distance-adult-toys-guide",
@@ -26,7 +28,9 @@
         "app controlled adult toys"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: long distance adult toys (Volume 590, KD 35), remote adult toys (Volume 590, KD 29), app controlled adult toys (Volume 720); output/keyword_to_url_mapping_2026-06-25.csv maps them to buying decision framework, clustered here as a distinct app/privacy/partner-consent intent.",
-      "intent_cluster": "Buying decision framework — app/remote long-distance adult toy privacy intent"
+      "intent_cluster": "Buying decision framework — app/remote long-distance adult toy privacy intent",
+      "quality_score": 100,
+      "live_verified": true
     }
   ],
   "index_updated": true,
@@ -60,19 +64,46 @@
     }
   },
   "git": {
-    "commit": null,
-    "pushed": false
+    "commit": "b119a98f42",
+    "pushed": true,
+    "remote": "github.com:yuanzhigang20/myopencart.git master"
   },
   "deploy": {
-    "status": "pending"
+    "status": "success",
+    "method": "targeted rsync",
+    "destination": "root@153.75.235.56:/var/www/myopencart/upload",
+    "deployed_paths": [
+      "upload/blog/metal-cock-ring-guide/",
+      "upload/blog/long-distance-adult-toys-guide/",
+      "upload/blog/assets/metal-cock-ring-guide-opus-cover.png",
+      "upload/blog/assets/long-distance-adult-toys-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions_fixed": true
   },
   "live_verification": {
-    "status": "pending"
+    "status": "pass",
+    "article_http_200": true,
+    "article_title_meta_present": true,
+    "article_h1_one": true,
+    "article_gtag_config_once": true,
+    "quick_answer": true,
+    "red_flags": true,
+    "faqpage_schema": true,
+    "authority_refs": true,
+    "image_seo_metadata": true,
+    "blog_index_http_200": true,
+    "blog_index_links_new_articles": true,
+    "sitemap_http_200": true,
+    "sitemap_includes_new_urls_lastmod_image_metadata": true
   },
   "email": {
     "recipient": "yuanzhigang20@gmail.com",
     "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-29",
     "tool": "/opt/homebrew/bin/msmtp",
-    "status": "pending"
-  }
+    "status": "sent_accepted",
+    "exit_code": 0
+  },
+  "completed_at": "2026-06-29T17:30:00+08:00"
 }

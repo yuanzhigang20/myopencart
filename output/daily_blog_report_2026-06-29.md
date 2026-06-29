@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report — 2026-06-29
 
-Status: local validation passed; pending git push, production deploy, live verification, and msmtp email.
+Status: complete — generated, validated, committed, pushed, deployed, live verified, and success email accepted by msmtp.
 Timezone: Asia/Shanghai
 Quota: exactly 2 new English SEO blog articles.
 
@@ -90,8 +90,9 @@ Unrelated keyword Excel archive/deletion working-tree state was not included int
 
 ## Git / deploy / verification / email
 
-- Git commit: pending
-- Git push: pending
-- Production deploy: pending
-- Live verification: pending
-- Email to `yuanzhigang20@gmail.com`: pending
+- Git commit: `b119a98f42`
+- Git push: success to `master`
+- Production deploy: success via targeted rsync to `root@153.75.235.56:/var/www/myopencart/upload`
+- Permissions fixed: `www-data:www-data`, directories 755, files 644
+- Live verification: pass for both articles, blog index, and sitemap
+- Email to `yuanzhigang20@gmail.com`: sent/accepted by `/opt/homebrew/bin/msmtp` (exit code 0)
