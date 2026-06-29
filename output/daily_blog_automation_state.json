@@ -1,41 +1,37 @@
 {
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "local_validation_passed_pending_git_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "hands-free-male-masturbator-guide",
-      "title": "Hands-Free Male Masturbator Guide: Fit and Care",
-      "url": "https://shoplovanest.com/blog/hands-free-male-masturbator-guide/",
+      "slug": "metal-cock-ring-guide",
+      "title": "Metal Cock Ring Guide: Fit, Weight, and Care",
+      "url": "https://shoplovanest.com/blog/metal-cock-ring-guide/",
       "primary_keywords": [
-        "hands-free wearable male masturbator",
-        "hands free male masturbator",
-        "male masturbator toy"
+        "metal cock ring",
+        "silicone cock ring",
+        "cock ring guide"
       ],
-      "keyword_source": "output/keyword_to_url_mapping_2026-06-25.csv rows under Male wellness products; output/merged_keyword_research_2026-06-25.csv seed male-masturbator.",
-      "quality_score": 100,
-      "word_count": 1271,
-      "live_verified": true
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: metal cock ring (Volume 1600, KD 17), silicone cock ring (Volume 720), silicone cock rings (Volume 390); output/keyword_to_url_mapping_2026-06-25.csv maps these to Couples accessories / Cock Ring Guide, used here as a deeper material-specific distinct intent.",
+      "intent_cluster": "Couples accessories — material-specific cock ring buying intent"
     },
     {
-      "slug": "water-based-anal-lube-guide",
-      "title": "Water-Based Anal Lube: Comfort and Compatibility Checks",
-      "url": "https://shoplovanest.com/blog/water-based-anal-lube-guide/",
+      "slug": "long-distance-adult-toys-guide",
+      "title": "Long-Distance Adult Toys: Privacy Buying Guide",
+      "url": "https://shoplovanest.com/blog/long-distance-adult-toys-guide/",
       "primary_keywords": [
-        "water based anal lube",
-        "water based lube for anal",
-        "water based lube"
+        "long distance adult toys",
+        "remote adult toys",
+        "app controlled adult toys"
       ],
-      "keyword_source": "output/keyword_to_url_mapping_2026-06-25.csv rows under Beginner anal wellness and Lubricant basics; output/merged_keyword_research_2026-06-25.csv seed water-based-lube/anal-toys-for-beginners.",
-      "quality_score": 100,
-      "word_count": 1169,
-      "live_verified": true
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: long distance adult toys (Volume 590, KD 35), remote adult toys (Volume 590, KD 29), app controlled adult toys (Volume 720); output/keyword_to_url_mapping_2026-06-25.csv maps them to buying decision framework, clustered here as a distinct app/privacy/partner-consent intent.",
+      "intent_cluster": "Buying decision framework — app/remote long-distance adult toy privacy intent"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-06-28T10:30:00+08:00",
+  "generated_at": "2026-06-29T14:30:00+08:00",
   "local_validation": {
     "status": "pass",
     "title_meta_h1_gtag": true,
@@ -47,49 +43,36 @@
     "internal_product_links": true,
     "image_seo_metadata": true,
     "sitemap_image_metadata": true,
-    "quality_score_min": 100
+    "quality_score_min": 100,
+    "articles": {
+      "metal-cock-ring-guide": {
+        "title_length": 44,
+        "meta_length": 132,
+        "word_count": 1965,
+        "quality_score": 100
+      },
+      "long-distance-adult-toys-guide": {
+        "title_length": 46,
+        "meta_length": 127,
+        "word_count": 1897,
+        "quality_score": 100
+      }
+    }
   },
   "git": {
-    "commit": "db75c23a01",
-    "pushed": true,
-    "remote": "ssh://git@ssh.github.com:443/yuanzhigang20/myopencart.git master"
+    "commit": null,
+    "pushed": false
   },
   "deploy": {
-    "status": "success",
-    "method": "targeted rsync",
-    "destination": "root@153.75.235.56:/var/www/myopencart/upload",
-    "deployed_paths": [
-      "upload/blog/hands-free-male-masturbator-guide/",
-      "upload/blog/water-based-anal-lube-guide/",
-      "upload/blog/assets/hands-free-male-masturbator-guide-opus-cover.png",
-      "upload/blog/assets/water-based-anal-lube-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions_fixed": true
+    "status": "pending"
   },
   "live_verification": {
-    "status": "pass",
-    "article_http_200": true,
-    "article_title_meta_present": true,
-    "article_h1_one": true,
-    "article_gtag_config_once": true,
-    "quick_answer": true,
-    "red_flags": true,
-    "faqpage_schema": true,
-    "authority_refs": true,
-    "image_seo_metadata": true,
-    "blog_index_http_200": true,
-    "blog_index_links_new_articles": true,
-    "sitemap_http_200": true,
-    "sitemap_includes_new_urls_lastmod_image_metadata": true
+    "status": "pending"
   },
   "email": {
     "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-28",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-29",
     "tool": "/opt/homebrew/bin/msmtp",
-    "status": "sent_accepted",
-    "exit_code": 0
-  },
-  "completed_at": "2026-06-28T10:55:00+08:00"
+    "status": "pending"
+  }
 }
