@@ -1,45 +1,45 @@
 {
-  "date": "2026-06-29",
+  "date": "2026-06-30",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "metal-cock-ring-guide",
-      "title": "Metal Cock Ring Guide: Fit, Weight, and Care",
-      "url": "https://shoplovanest.com/blog/metal-cock-ring-guide/",
+      "slug": "cordless-wand-massager-guide",
+      "title": "Cordless Wand Massager Guide: Power and Care",
+      "url": "https://shoplovanest.com/blog/cordless-wand-massager-guide/",
       "primary_keywords": [
-        "metal cock ring",
-        "silicone cock ring",
-        "cock ring guide"
+        "cordless wand massager",
+        "massage wand cordless",
+        "wand massagers",
+        "personal massager wand"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: metal cock ring (Volume 1600, KD 17), silicone cock ring (Volume 720), silicone cock rings (Volume 390); output/keyword_to_url_mapping_2026-06-25.csv maps these to Couples accessories / Cock Ring Guide, used here as a deeper material-specific distinct intent.",
-      "intent_cluster": "Couples accessories — material-specific cock ring buying intent",
-      "quality_score": 100,
-      "live_verified": true
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: massage wand cordless (Volume 390), cordless wand massager (Volume 320), personal massager wand (Volume 320), wand massagers (Volume 320); output/keyword_to_url_mapping_2026-06-25.csv maps wand massager terms to vibrator/wand buying guides, clustered here as a distinct cordless power/charging intent.",
+      "intent_cluster": "Vibrators \u2014 cordless wand massager charging, power, and care intent"
     },
     {
-      "slug": "long-distance-adult-toys-guide",
-      "title": "Long-Distance Adult Toys: Privacy Buying Guide",
-      "url": "https://shoplovanest.com/blog/long-distance-adult-toys-guide/",
+      "slug": "silicone-lube-condom-guide",
+      "title": "Silicone Lube and Condoms: Compatibility Guide",
+      "url": "https://shoplovanest.com/blog/silicone-lube-condom-guide/",
       "primary_keywords": [
-        "long distance adult toys",
-        "remote adult toys",
-        "app controlled adult toys"
+        "silicone lube and condoms",
+        "silicone lube condoms",
+        "silicone based personal lube",
+        "silicone personal lube"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: long distance adult toys (Volume 590, KD 35), remote adult toys (Volume 590, KD 29), app controlled adult toys (Volume 720); output/keyword_to_url_mapping_2026-06-25.csv maps them to buying decision framework, clustered here as a distinct app/privacy/partner-consent intent.",
-      "intent_cluster": "Buying decision framework — app/remote long-distance adult toy privacy intent",
-      "quality_score": 100,
-      "live_verified": true
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: silicone lube and condoms (Volume 390), silicone lube condoms (Volume 320), silicone based personal lube (Volume 480), silicone personal lube (Volume 480); output/keyword_to_url_mapping_2026-06-25.csv maps silicone lube to lubricant compatibility pages, clustered here as a distinct condom-label compatibility intent.",
+      "intent_cluster": "Lubricants \u2014 silicone lube and condom compatibility intent"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-06-29T14:30:00+08:00",
+  "generated_at": "2026-06-30T10:31:00+08:00",
   "local_validation": {
     "status": "pass",
     "title_meta_h1_gtag": true,
     "word_count_1000_plus": true,
+    "readability_natural_english": true,
+    "topic_specific_depth": true,
     "quick_answer": true,
     "red_flags": true,
     "faqpage_jsonld": true,
@@ -49,61 +49,18 @@
     "sitemap_image_metadata": true,
     "quality_score_min": 100,
     "articles": {
-      "metal-cock-ring-guide": {
+      "cordless-wand-massager-guide": {
         "title_length": 44,
-        "meta_length": 132,
-        "word_count": 1965,
+        "meta_length": 130,
+        "word_count": 1554,
         "quality_score": 100
       },
-      "long-distance-adult-toys-guide": {
+      "silicone-lube-condom-guide": {
         "title_length": 46,
-        "meta_length": 127,
-        "word_count": 1897,
+        "meta_length": 137,
+        "word_count": 1561,
         "quality_score": 100
       }
     }
-  },
-  "git": {
-    "commit": "b119a98f42",
-    "pushed": true,
-    "remote": "github.com:yuanzhigang20/myopencart.git master"
-  },
-  "deploy": {
-    "status": "success",
-    "method": "targeted rsync",
-    "destination": "root@153.75.235.56:/var/www/myopencart/upload",
-    "deployed_paths": [
-      "upload/blog/metal-cock-ring-guide/",
-      "upload/blog/long-distance-adult-toys-guide/",
-      "upload/blog/assets/metal-cock-ring-guide-opus-cover.png",
-      "upload/blog/assets/long-distance-adult-toys-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions_fixed": true
-  },
-  "live_verification": {
-    "status": "pass",
-    "article_http_200": true,
-    "article_title_meta_present": true,
-    "article_h1_one": true,
-    "article_gtag_config_once": true,
-    "quick_answer": true,
-    "red_flags": true,
-    "faqpage_schema": true,
-    "authority_refs": true,
-    "image_seo_metadata": true,
-    "blog_index_http_200": true,
-    "blog_index_links_new_articles": true,
-    "sitemap_http_200": true,
-    "sitemap_includes_new_urls_lastmod_image_metadata": true
-  },
-  "email": {
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-06-29",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "status": "sent_accepted",
-    "exit_code": 0
-  },
-  "completed_at": "2026-06-29T17:30:00+08:00"
+  }
 }
