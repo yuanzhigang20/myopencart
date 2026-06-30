@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report - 2026-06-30
 
-Status: complete for production deployment and email; GitHub push pending due to local SSH proxy disconnect.
+Status: complete.
 
 - Cordless Wand Massager Guide: Power and Care: https://shoplovanest.com/blog/cordless-wand-massager-guide/ (cordless wand massager, massage wand cordless, wand massagers, personal massager wand)
 - Silicone Lube and Condoms: Compatibility Guide: https://shoplovanest.com/blog/silicone-lube-condom-guide/ (silicone lube and condoms, silicone lube condoms, silicone based personal lube, silicone personal lube)
@@ -25,4 +25,4 @@ PASS. Both articles have SEO title <60 chars, meta description <155 chars, exact
 - Blog index: PASS, links both new URLs.
 - Sitemap: PASS, includes both new URLs and image metadata.
 - Email: SENT to `yuanzhigang20@gmail.com`.
-- GitHub push: PENDING — local SSH proxy `127.0.0.1:10808` closed the connection during retry; production is already live.
+- GitHub push: PASS — pushed to `origin/master` after retry.
