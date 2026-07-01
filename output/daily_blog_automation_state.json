@@ -1,7 +1,7 @@
 {
   "date": "2026-07-01",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -70,5 +70,61 @@
       "upload/blog/assets/adjustable-cock-ring-guide-opus-cover.png",
       "upload/blog/assets/realistic-male-masturbator-guide-opus-cover.png"
     ]
-  }
+  },
+  "commit": "568f752fa5",
+  "git_push_status": "pushed",
+  "git_pushed_at": "2026-07-01T09:08:16.386310+08:00",
+  "deployed_at": "2026-07-01T09:08:16.386310+08:00",
+  "deployment": {
+    "status": "pass",
+    "method": "targeted rsync plus corrected production copy after extra-prefix staging",
+    "server": "root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data, dirs 755, files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "checked_at": "2026-07-01T09:08:16.386310+08:00",
+    "checks": {
+      "adjustable-cock-ring-guide": {
+        "url": "https://shoplovanest.com/blog/adjustable-cock-ring-guide/",
+        "http": 200,
+        "title_meta_present": true,
+        "h1_count": 1,
+        "google_tag_id_references": 2,
+        "google_tag_script_loads": 1,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage_jsonld": true,
+        "authority_refs": true,
+        "image_seo_metadata": true
+      },
+      "realistic-male-masturbator-guide": {
+        "url": "https://shoplovanest.com/blog/realistic-male-masturbator-guide/",
+        "http": 200,
+        "title_meta_present": true,
+        "h1_count": 1,
+        "google_tag_id_references": 2,
+        "google_tag_script_loads": 1,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage_jsonld": true,
+        "authority_refs": true,
+        "image_seo_metadata": true
+      },
+      "blog_index": {
+        "url": "https://shoplovanest.com/blog/",
+        "http": 200,
+        "links_new_articles": true
+      },
+      "sitemap": {
+        "url": "https://shoplovanest.com/sitemap.xml",
+        "http": 200,
+        "new_urls_lastmod_image_metadata": true
+      }
+    }
+  },
+  "email_status": "sent",
+  "email_sent_at": "2026-07-01T09:08:16.386310+08:00",
+  "email_tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc",
+  "completion_commit": "pending"
 }
