@@ -1,39 +1,39 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "cordless-wand-massager-guide",
-      "title": "Cordless Wand Massager Guide: Power and Care",
-      "url": "https://shoplovanest.com/blog/cordless-wand-massager-guide/",
+      "slug": "adjustable-cock-ring-guide",
+      "title": "Adjustable Cock Ring Guide: Fit and Safety",
+      "url": "https://shoplovanest.com/blog/adjustable-cock-ring-guide/",
       "primary_keywords": [
-        "cordless wand massager",
-        "massage wand cordless",
-        "wand massagers",
-        "personal massager wand"
+        "adjustable cock ring",
+        "how tight should a cock ring be",
+        "cock ring sizes",
+        "silicone cock rings"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: massage wand cordless (Volume 390), cordless wand massager (Volume 320), personal massager wand (Volume 320), wand massagers (Volume 320); output/keyword_to_url_mapping_2026-06-25.csv maps wand massager terms to vibrator/wand buying guides, clustered here as a distinct cordless power/charging intent.",
-      "intent_cluster": "Vibrators — cordless wand massager charging, power, and care intent"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adjustable cock ring (Volume 1000), cock ring sizes (390), how tight should a cock ring be (390), silicone cock rings (390); mapping file places cock ring terms in the cock-ring buying guide family, expanded here as a distinct adjustable-fit intent without cannibalizing metal or vibrating ring pages.",
+      "intent_cluster": "Couples accessories — adjustable fit, sizing, release, and safer beginner comparison intent"
     },
     {
-      "slug": "silicone-lube-condom-guide",
-      "title": "Silicone Lube and Condoms: Compatibility Guide",
-      "url": "https://shoplovanest.com/blog/silicone-lube-condom-guide/",
+      "slug": "realistic-male-masturbator-guide",
+      "title": "Realistic Male Masturbator Guide: Care Checks",
+      "url": "https://shoplovanest.com/blog/realistic-male-masturbator-guide/",
       "primary_keywords": [
-        "silicone lube and condoms",
-        "silicone lube condoms",
-        "silicone based personal lube",
-        "silicone personal lube"
+        "realistic male masturbator",
+        "best male masturbator",
+        "male masturbator toy",
+        "male masturbators"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: silicone lube and condoms (Volume 390), silicone lube condoms (Volume 320), silicone based personal lube (Volume 480), silicone personal lube (Volume 480); output/keyword_to_url_mapping_2026-06-25.csv maps silicone lube to lubricant compatibility pages, clustered here as a distinct condom-label compatibility intent.",
-      "intent_cluster": "Lubricants — silicone lube and condom compatibility intent"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: realistic male masturbator (Volume 720), best male masturbator (4400), male masturbator toy (1300), male masturbators (9900); mapping file groups male masturbator terms under male wellness pages, expanded here for realistic sleeve care intent.",
+      "intent_cluster": "Male wellness — realistic sleeve material, cleaning, drying, and private storage comparison intent"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-06-30T10:31:00+08:00",
+  "generated_at": "2026-07-01T08:56:41.344049+08:00",
   "local_validation": {
     "status": "pass",
     "title_meta_h1_gtag": true,
@@ -49,68 +49,26 @@
     "sitemap_image_metadata": true,
     "quality_score_min": 100,
     "articles": {
-      "cordless-wand-massager-guide": {
-        "title_length": 44,
+      "adjustable-cock-ring-guide": {
+        "title_length": 42,
         "meta_length": 130,
-        "word_count": 1554,
+        "word_count": 1200,
         "quality_score": 100
       },
-      "silicone-lube-condom-guide": {
-        "title_length": 46,
-        "meta_length": 137,
-        "word_count": 1561,
+      "realistic-male-masturbator-guide": {
+        "title_length": 45,
+        "meta_length": 132,
+        "word_count": 1081,
         "quality_score": 100
       }
     }
   },
-  "commit": "d44aa9e5ae",
-  "deployed_at": "2026-06-30T10:49:14.112040+08:00",
-  "deployment": {
+  "image_generation": {
     "status": "pass",
-    "method": "targeted rsync",
-    "server": "root@153.75.235.56:/var/www/myopencart/upload"
-  },
-  "live_verification": {
-    "status": "pass",
-    "checked_at": "2026-06-30T10:49:14.112242+08:00",
-    "checks": {
-      "cordless-wand-massager-guide": {
-        "url": "https://shoplovanest.com/blog/cordless-wand-massager-guide/",
-        "bytes": 21366,
-        "title": "Cordless Wand Massager Guide: Power and Care",
-        "h1_count": 1,
-        "meta_description": true,
-        "google_tag_id_references": 2,
-        "google_tag_script_loads": 1,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage_jsonld": true,
-        "og_image": true,
-        "twitter_image": true,
-        "blog_index_links": true,
-        "sitemap_entries": 2
-      },
-      "silicone-lube-condom-guide": {
-        "url": "https://shoplovanest.com/blog/silicone-lube-condom-guide/",
-        "bytes": 20955,
-        "title": "Silicone Lube and Condoms: Compatibility Guide",
-        "h1_count": 1,
-        "meta_description": true,
-        "google_tag_id_references": 2,
-        "google_tag_script_loads": 1,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage_jsonld": true,
-        "og_image": true,
-        "twitter_image": true,
-        "blog_index_links": true,
-        "sitemap_entries": 2
-      }
-    }
-  },
-  "email_status": "sent",
-  "email_sent_at": "2026-06-30T10:52:12.876281+08:00",
-  "git_push_status": "pushed",
-  "git_pushed_at": "2026-06-30T10:54:00+08:00",
-  "completion_commit": "c13bf39c30"
+    "model": "opus-image-1.5 via custom Responses API image_generation tool",
+    "files": [
+      "upload/blog/assets/adjustable-cock-ring-guide-opus-cover.png",
+      "upload/blog/assets/realistic-male-masturbator-guide-opus-cover.png"
+    ]
+  }
 }
