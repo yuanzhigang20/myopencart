@@ -51,7 +51,7 @@
     <priority>0.70</priority>
   <image:image><image:loc>https://shoplovanest.com/blog/assets/lingerie-privacy-shopping-guide-opus-cover.png</image:loc><image:title>Lingerie Privacy Guide: Shipping, Billing, and Returns</image:title><image:caption>Visual guide for Lingerie Privacy Guide: Shipping, Billing, and Returns, created for ShopLovaNest readers comparing intimate wellness products with privacy and care in mind.</image:caption></image:image></url>
 
-  <url><loc>https://shoplovanest.com/blog/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shoplovanest.com/blog/</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://shoplovanest.com/blog/water-based-lube-condom-guide/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><image:image><image:loc>https://shoplovanest.com/blog/assets/water-based-lube-condom-guide-opus-cover.png</image:loc><image:title>Water-Based Lube and Condoms: Compatibility Guide</image:title><image:caption>Visual guide for Water-Based Lube and Condoms: Compatibility Guide, created for ShopLovaNest readers comparing intimate wellness products with privacy and care in mind.</image:caption></image:image></url>
   <url><loc>https://shoplovanest.com/blog/automatic-male-masturbator-buying-guide/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><image:image><image:loc>https://shoplovanest.com/blog/assets/automatic-male-masturbator-buying-guide-opus-cover.png</image:loc><image:title>Automatic Male Masturbator Buying Guide: Practical Checks</image:title><image:caption>Visual guide for Automatic Male Masturbator Buying Guide: Practical Checks, created for ShopLovaNest readers comparing intimate wellness products with privacy and care in mind.</image:caption></image:image></url>
   <url><loc>https://shoplovanest.com/blog/adult-toy-buying-guide/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority><image:image><image:loc>https://shoplovanest.com/blog/assets/adult-toy-buying-guide-opus-cover.png</image:loc><image:title>Adult Toy Buying Guide: Safety, Privacy, and Value Checks</image:title><image:caption>Visual guide for Adult Toy Buying Guide: Safety, Privacy, and Value Checks, created for ShopLovaNest readers comparing intimate wellness products with privacy and care in mind.</image:caption></image:image></url>
@@ -234,6 +234,28 @@
       <image:loc>https://shoplovanest.com/blog/assets/realistic-male-masturbator-guide-opus-cover.png</image:loc>
       <image:title>Realistic Male Masturbator Guide: Care Checks</image:title>
       <image:caption>Discreet storage box and soft sleeve care setup for a realistic male masturbator guide</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shoplovanest.com/blog/glycerin-free-water-based-lube-guide/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+    <image:image>
+      <image:loc>https://shoplovanest.com/blog/assets/glycerin-free-water-based-lube-guide-opus-cover.png</image:loc>
+      <image:title>Glycerin-Free Water-Based Lube Guide</image:title>
+      <image:caption>Glycerin-free water-based lube bottle with ingredient checklist and discreet wellness packaging</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shoplovanest.com/blog/warming-water-based-lube-guide/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+    <image:image>
+      <image:loc>https://shoplovanest.com/blog/assets/warming-water-based-lube-guide-opus-cover.png</image:loc>
+      <image:title>Warming Water-Based Lube: Label Checks</image:title>
+      <image:caption>Warming water-based lubricant bottle with sensation label checklist and soft amber lighting</image:caption>
     </image:image>
   </url>
 </urlset>
