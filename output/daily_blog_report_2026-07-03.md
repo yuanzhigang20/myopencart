@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report - 2026-07-03
 
-Status: local validation complete — generated, image-generated, and validated locally; commit, push, deployment, live verification, and email pending.
+Status: complete — generated, validated, committed, pushed, deployed, verified live, and success email sent/accepted by msmtp.
 
 ## Articles
 
@@ -36,11 +36,11 @@ Status: local validation complete — generated, image-generated, and validated 
 - upload/sitemap.xml includes both article URLs with 2026-07-03 lastmod and image:image metadata.
 - upload/blog/index.html links both articles.
 
-## Completion status
+## Completion
 
-- Local validation: pass
-- Commit: pending
-- Git push: pending
-- Deployment: pending
-- Live verification: pending
-- Email: pending
+- Commit: 5b8c4c209f
+- Git push: pushed to master
+- Deployment: targeted rsync to root@153.75.235.56:/var/www/myopencart/upload
+- Permissions: www-data:www-data, dirs 755, files 644 for changed paths
+- Live verification: pass for both article URLs, blog index, and sitemap
+- Email: sent/accepted by /opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc at 2026-07-03T10:39:25.732213+08:00
