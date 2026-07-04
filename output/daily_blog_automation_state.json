@@ -1,7 +1,7 @@
 {
   "date": "2026-07-04",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -98,19 +98,74 @@
       }
     }
   },
-  "commit": null,
+  "commit": "4e1ad271be",
   "deployment": {
-    "status": "pending"
+    "status": "pass",
+    "method": "targeted rsync",
+    "target": "root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data; dirs 755; files 644",
+    "deployed_at": "2026-07-04T10:44:03.669898+08:00"
   },
   "live_verification": {
-    "status": "pending"
+    "status": "pass",
+    "verified_at": "2026-07-04T10:44:03.669898+08:00",
+    "articles": {
+      "adult-toy-cleaner-spray-guide": {
+        "http_200": true,
+        "title_meta": true,
+        "h1_count": 1,
+        "one_h1": true,
+        "gtag_script_config_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage_jsonld": true,
+        "authority_refs": true,
+        "image_seo_metadata": true,
+        "content_marker": true,
+        "status": "pass"
+      },
+      "wand-massager-power-adapter-guide": {
+        "http_200": true,
+        "title_meta": true,
+        "h1_count": 1,
+        "one_h1": true,
+        "gtag_script_config_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage_jsonld": true,
+        "authority_refs": true,
+        "image_seo_metadata": true,
+        "content_marker": true,
+        "status": "pass"
+      }
+    },
+    "blog_index": {
+      "http_200": true,
+      "links_new_articles": true
+    },
+    "sitemap": {
+      "http_200": true,
+      "includes_new_urls": true,
+      "lastmod_2026_07_04": true,
+      "image_metadata": true
+    }
   },
   "email": {
-    "status": "pending",
+    "status": "sent_accepted",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
     "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp"
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-04",
+    "sent_at": "2026-07-04T10:44:03.669898+08:00"
   },
   "validated_at": "2026-07-04T10:38:19.201236+08:00",
   "report": "output/daily_blog_report_2026-07-04.md",
-  "report_updated_at": "2026-07-04T10:39:29.044879+08:00"
+  "report_updated_at": "2026-07-04T10:39:29.044879+08:00",
+  "completed_at": "2026-07-04T10:44:03.669898+08:00",
+  "git_push": {
+    "status": "pushed",
+    "remote": "origin",
+    "branch": "master",
+    "commit": "4e1ad271be"
+  }
 }

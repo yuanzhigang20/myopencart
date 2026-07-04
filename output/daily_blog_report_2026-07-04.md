@@ -1,7 +1,7 @@
 # ShopLovaNest Daily Blog Deployment Report — 2026-07-04
 
 ## Status
-Generated and locally validated 2 new English SEO blog articles from the mandatory keyword files. Pending commit, deploy, live verification, and success email at the time this report was first written.
+Complete: generated exactly 2 new English SEO blog articles from the mandatory keyword files, committed/pushed, deployed to production, verified live, and sent success email accepted by msmtp.
 
 ## Keyword sources inspected
 - `output/merged_keyword_research_2026-06-25.csv`
@@ -37,8 +37,9 @@ Generated and locally validated 2 new English SEO blog articles from the mandato
 - Required custom images: present as topic-specific `opus-image-1.5` generated PNG files.
 
 ## Deployment / verification / email
-- Commit: pending
-- Git push: pending
-- Production deploy: pending
-- Live verification: pending
-- Email: pending; will use `/opt/homebrew/bin/msmtp` with `/Users/grant/.msmtprc` after live verification.
+- Commit: `4e1ad271be`
+- Git push: pushed to `origin/master`
+- Production deploy: pass via targeted rsync to `root@153.75.235.56:/var/www/myopencart/upload`
+- Live verification: pass; both article URLs HTTP 200, blog index HTTP 200, sitemap HTTP 200
+- Email: sent/accepted via `/opt/homebrew/bin/msmtp` using `/Users/grant/.msmtprc` to `yuanzhigang20@gmail.com`
+- Completed at: 2026-07-04T10:44:03.669898+08:00
