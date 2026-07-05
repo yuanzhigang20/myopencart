@@ -1,7 +1,7 @@
 {
   "date": "2026-07-05",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -15,7 +15,7 @@
         "adjustable cock ring"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: remote control cock ring (Volume 260), cock ring with vibrator (590), vibrating cock rings (1300), adjustable cock ring (1000); output/keyword_to_url_mapping_2026-06-25.csv assigns cock-ring terms to fit/material buyer education. Created as a distinct remote-control and battery/privacy intent, not a duplicate of size, metal, or broad cock-ring pages.",
-      "intent_cluster": "Remote-control cock ring shopping intent \u2014 fit, release design, range limits, battery style, partner consent, cleaning, and privacy checks"
+      "intent_cluster": "Remote-control cock ring shopping intent — fit, release design, range limits, battery style, partner consent, cleaning, and privacy checks"
     },
     {
       "slug": "silicone-lube-spray-guide",
@@ -28,7 +28,7 @@
         "silicone vs water based lube"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: silicone lube spray (Volume 720), silicone lube (3600), best silicone lube (880), silicone vs water based lube (1300); mapping file assigns lubricant terms to compatibility education. Created as a distinct spray-format label and cleanup intent, not another broad silicone lube guide.",
-      "intent_cluster": "Silicone-lube spray shopping intent \u2014 spray format, ingredient label, toy compatibility, condom notes, cleanup, privacy, and checkout red flags"
+      "intent_cluster": "Silicone-lube spray shopping intent — spray format, ingredient label, toy compatibility, condom notes, cleanup, privacy, and checkout red flags"
     }
   ],
   "index_updated": true,
@@ -100,5 +100,70 @@
   },
   "validated_at": "2026-07-05T08:40:55.389101+08:00",
   "report": "output/daily_blog_report_2026-07-05.md",
-  "report_updated_at": "2026-07-05T08:41:34.279663+08:00"
+  "report_updated_at": "2026-07-05T08:41:34.279663+08:00",
+  "completed_at": "2026-07-05T08:47:26.924249+08:00",
+  "commit": "26dc13e709",
+  "git_push": {
+    "status": "pass",
+    "remote": "origin/master",
+    "note": "origin/master already contained commit 26dc13e709"
+  },
+  "deployment": {
+    "status": "pass",
+    "deployed_at": "2026-07-05T08:47:26.924249+08:00",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload with www-data ownership and 755/644 permissions"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-05T08:47:26.924249+08:00",
+    "articles": {
+      "remote-control-cock-ring-guide": {
+        "http_status": 200,
+        "url": "https://shoplovanest.com/blog/remote-control-cock-ring-guide/",
+        "checks": [
+          "title/meta present",
+          "one H1",
+          "G-P2LJRXN3D1 configured once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage schema",
+          "authority references",
+          "image SEO metadata"
+        ]
+      },
+      "silicone-lube-spray-guide": {
+        "http_status": 200,
+        "url": "https://shoplovanest.com/blog/silicone-lube-spray-guide/",
+        "checks": [
+          "title/meta present",
+          "one H1",
+          "G-P2LJRXN3D1 configured once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage schema",
+          "authority references",
+          "image SEO metadata"
+        ]
+      }
+    },
+    "blog_index": {
+      "http_status": 200,
+      "links_new_articles": true
+    },
+    "sitemap": {
+      "http_status": 200,
+      "includes_new_urls": true,
+      "lastmod": "2026-07-05",
+      "image_metadata": true
+    }
+  },
+  "email": {
+    "status": "sent_accepted",
+    "sent_at": "2026-07-05T08:47:26.924249+08:00",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "exit_code": 0,
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-05"
+  }
 }
