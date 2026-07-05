@@ -1,45 +1,45 @@
 {
-  "date": "2026-07-04",
+  "date": "2026-07-05",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "adult-toy-cleaner-spray-guide",
-      "title": "Adult Toy Cleaner Spray: Label and Care Checks",
-      "url": "https://shoplovanest.com/blog/adult-toy-cleaner-spray-guide/",
+      "slug": "remote-control-cock-ring-guide",
+      "title": "Remote Control Cock Ring: Buying Checklist",
+      "url": "https://shoplovanest.com/blog/remote-control-cock-ring-guide/",
       "primary_keywords": [
-        "adult toy cleaner",
-        "adult toy cleaner spray",
-        "how to clean adult toys",
-        "adult toy cleaning spray"
+        "remote control cock ring",
+        "cock ring with vibrator",
+        "vibrating cock rings",
+        "adjustable cock ring"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult toy cleaner (Volume 1900), how to clean adult toys (170); output/keyword_to_url_mapping_2026-06-25.csv maps cleaner terms into cleaning/care education and gift/care clusters. Created as a distinct cleaner-spray label-reading intent, not a thin duplicate of the broad cleaner guide.",
-      "intent_cluster": "Cleaning product buying intent — cleaner spray labels, material compatibility, rinsing, drying, storage safety, and checkout red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: remote control cock ring (Volume 260), cock ring with vibrator (590), vibrating cock rings (1300), adjustable cock ring (1000); output/keyword_to_url_mapping_2026-06-25.csv assigns cock-ring terms to fit/material buyer education. Created as a distinct remote-control and battery/privacy intent, not a duplicate of size, metal, or broad cock-ring pages.",
+      "intent_cluster": "Remote-control cock ring shopping intent \u2014 fit, release design, range limits, battery style, partner consent, cleaning, and privacy checks"
     },
     {
-      "slug": "wand-massager-power-adapter-guide",
-      "title": "Wand Massager Power Adapter: Safe Fit Guide",
-      "url": "https://shoplovanest.com/blog/wand-massager-power-adapter-guide/",
+      "slug": "silicone-lube-spray-guide",
+      "title": "Silicone Lube Spray: Label and Compatibility Guide",
+      "url": "https://shoplovanest.com/blog/silicone-lube-spray-guide/",
       "primary_keywords": [
-        "magic wand plus personal massager authentic power adapter",
-        "wand massager power adapter",
-        "massage wand adapter",
-        "wand massager charger"
+        "silicone lube spray",
+        "silicone lube",
+        "best silicone lube",
+        "silicone vs water based lube"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: magic wand plus personal massager authentic power adapter (Volume 2400), massage wand (1900), wand massager seed group; output/keyword_to_url_mapping_2026-06-25.csv maps wand terms to wand-massager buyer education. Created as a distinct replacement-power compatibility guide rather than another broad wand guide.",
-      "intent_cluster": "Replacement power and charging intent — adapter label matching, voltage/current, connector fit, certification marks, counterfeit risk, and support checks"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: silicone lube spray (Volume 720), silicone lube (3600), best silicone lube (880), silicone vs water based lube (1300); mapping file assigns lubricant terms to compatibility education. Created as a distinct spray-format label and cleanup intent, not another broad silicone lube guide.",
+      "intent_cluster": "Silicone-lube spray shopping intent \u2014 spray format, ingredient label, toy compatibility, condom notes, cleanup, privacy, and checkout red flags"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-04T10:36:50.129647+08:00",
+  "generated_at": "2026-07-05T08:37:43.128800+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
     "files": [
-      "upload/blog/assets/adult-toy-cleaner-spray-guide-opus-cover.png",
-      "upload/blog/assets/wand-massager-power-adapter-guide-opus-cover.png"
+      "upload/blog/assets/remote-control-cock-ring-guide-opus-cover.png",
+      "upload/blog/assets/silicone-lube-spray-guide-opus-cover.png"
     ]
   },
   "local_validation": {
@@ -58,29 +58,29 @@
     "sitemap_image_metadata": true,
     "quality_score_min": 100,
     "articles": {
-      "adult-toy-cleaner-spray-guide": {
-        "title_length": 46,
+      "remote-control-cock-ring-guide": {
+        "title_length": 42,
+        "meta_length": 134,
+        "word_count": 1963,
+        "one_h1": true,
+        "gtag_id_count": 2,
+        "gtag_ok": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage_jsonld": true,
+        "authority_refs": true,
+        "internal_blog_links": true,
+        "product_support_links": true,
+        "image_seo_metadata": true,
+        "content_marker": true,
+        "banned_terms_clear": true,
+        "quality_score": 100,
+        "status": "pass"
+      },
+      "silicone-lube-spray-guide": {
+        "title_length": 50,
         "meta_length": 131,
-        "word_count": 2248,
-        "one_h1": true,
-        "gtag_id_count": 2,
-        "gtag_ok": true,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage_jsonld": true,
-        "authority_refs": true,
-        "internal_blog_links": true,
-        "product_support_links": true,
-        "image_seo_metadata": true,
-        "content_marker": true,
-        "banned_terms_clear": true,
-        "quality_score": 100,
-        "status": "pass"
-      },
-      "wand-massager-power-adapter-guide": {
-        "title_length": 43,
-        "meta_length": 147,
-        "word_count": 2329,
+        "word_count": 1947,
         "one_h1": true,
         "gtag_id_count": 2,
         "gtag_ok": true,
@@ -98,74 +98,7 @@
       }
     }
   },
-  "commit": "4e1ad271be",
-  "deployment": {
-    "status": "pass",
-    "method": "targeted rsync",
-    "target": "root@153.75.235.56:/var/www/myopencart/upload",
-    "permissions": "www-data:www-data; dirs 755; files 644",
-    "deployed_at": "2026-07-04T10:44:03.669898+08:00"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-04T10:44:03.669898+08:00",
-    "articles": {
-      "adult-toy-cleaner-spray-guide": {
-        "http_200": true,
-        "title_meta": true,
-        "h1_count": 1,
-        "one_h1": true,
-        "gtag_script_config_once": true,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage_jsonld": true,
-        "authority_refs": true,
-        "image_seo_metadata": true,
-        "content_marker": true,
-        "status": "pass"
-      },
-      "wand-massager-power-adapter-guide": {
-        "http_200": true,
-        "title_meta": true,
-        "h1_count": 1,
-        "one_h1": true,
-        "gtag_script_config_once": true,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage_jsonld": true,
-        "authority_refs": true,
-        "image_seo_metadata": true,
-        "content_marker": true,
-        "status": "pass"
-      }
-    },
-    "blog_index": {
-      "http_200": true,
-      "links_new_articles": true
-    },
-    "sitemap": {
-      "http_200": true,
-      "includes_new_urls": true,
-      "lastmod_2026_07_04": true,
-      "image_metadata": true
-    }
-  },
-  "email": {
-    "status": "sent_accepted",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-04",
-    "sent_at": "2026-07-04T10:44:03.669898+08:00"
-  },
-  "validated_at": "2026-07-04T10:38:19.201236+08:00",
-  "report": "output/daily_blog_report_2026-07-04.md",
-  "report_updated_at": "2026-07-04T10:39:29.044879+08:00",
-  "completed_at": "2026-07-04T10:44:03.669898+08:00",
-  "git_push": {
-    "status": "pushed",
-    "remote": "origin",
-    "branch": "master",
-    "commit": "4e1ad271be"
-  }
+  "validated_at": "2026-07-05T08:40:55.389101+08:00",
+  "report": "output/daily_blog_report_2026-07-05.md",
+  "report_updated_at": "2026-07-05T08:41:34.279663+08:00"
 }
