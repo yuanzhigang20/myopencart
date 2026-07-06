@@ -1,7 +1,7 @@
 {
   "date": "2026-07-06",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -61,5 +61,70 @@
   },
   "validated_at": "2026-07-06T08:40:13.577739+08:00",
   "report": "output/daily_blog_report_2026-07-06.md",
-  "report_updated_at": "2026-07-06T08:43:35.288228+08:00"
+  "report_updated_at": "2026-07-06T08:43:35.288228+08:00",
+  "completed_at": "2026-07-06T08:46:44.939857+08:00",
+  "commit": "55bbf171be",
+  "git_push": {
+    "status": "pass",
+    "remote": "origin/master",
+    "note": "pushed commit 55bbf171be"
+  },
+  "deployment": {
+    "status": "pass",
+    "deployed_at": "2026-07-06T08:46:44.939857+08:00",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload with www-data ownership and 755/644 permissions"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-06T08:46:44.939857+08:00",
+    "articles": {
+      "creamy-water-based-lube-guide": {
+        "http_status": 200,
+        "url": "https://shoplovanest.com/blog/creamy-water-based-lube-guide/",
+        "checks": [
+          "title/meta present",
+          "one H1",
+          "G-P2LJRXN3D1 configured once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage schema",
+          "authority references",
+          "image SEO metadata"
+        ]
+      },
+      "silicone-cock-ring-guide": {
+        "http_status": 200,
+        "url": "https://shoplovanest.com/blog/silicone-cock-ring-guide/",
+        "checks": [
+          "title/meta present",
+          "one H1",
+          "G-P2LJRXN3D1 configured once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage schema",
+          "authority references",
+          "image SEO metadata"
+        ]
+      }
+    },
+    "blog_index": {
+      "http_status": 200,
+      "links_new_articles": true
+    },
+    "sitemap": {
+      "http_status": 200,
+      "includes_new_urls": true,
+      "lastmod": "2026-07-06",
+      "image_metadata": true
+    }
+  },
+  "email": {
+    "status": "sent_accepted",
+    "sent_at": "2026-07-06T08:46:44.939857+08:00",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "exit_code": 0,
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-06"
+  }
 }

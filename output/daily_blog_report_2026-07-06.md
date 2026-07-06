@@ -1,7 +1,7 @@
 # ShopLovaNest Daily Blog Deployment Report — 2026-07-06
 
 ## Status
-Validated pending commit, deployment, live verification, and success email. Generated exactly 2 new English SEO blog articles from the mandatory keyword files, created topic-specific opus-image-1.5 images, updated blog index and sitemap, and passed local validation.
+Complete: generated exactly 2 new English SEO blog articles from the mandatory keyword files, created topic-specific opus-image-1.5 images, updated blog index and sitemap, passed local validation, committed/pushed, deployed to production, verified live, and sent the success email accepted by msmtp.
 
 ## Keyword sources inspected
 - `output/merged_keyword_research_2026-06-25.csv`
@@ -37,11 +37,11 @@ Validated pending commit, deployment, live verification, and success email. Gene
 - Required custom images: present as topic-specific `opus-image-1.5` generated PNG files.
 
 ## Deployment / verification / email
-- Commit: pending.
-- Git push: pending.
-- Production deploy: pending.
-- Live verification: pending.
-- Email: pending.
+- Commit: `55bbf171be` — Add daily ShopLovaNest blogs for 2026-07-06.
+- Git push: pass; pushed to `origin/master`.
+- Production deploy: pass; targeted rsync deployed both article folders, both opus images, blog index, and sitemap to `root@153.75.235.56:/var/www/myopencart/upload`; ownership/perms fixed to `www-data:www-data`, dirs 755, files 644.
+- Live verification: pass at 2026-07-06T08:46:44.939857+08:00; both article URLs returned HTTP 200 with title/meta, one H1, Google tag configured once, Quick Answer, Red Flags, FAQPage schema, authority references, image SEO metadata; blog index HTTP 200 links both articles; sitemap HTTP 200 includes both URLs, `2026-07-06` lastmod, and image metadata.
+- Email: sent/accepted via `/opt/homebrew/bin/msmtp --file=/Users/grant/.msmtprc yuanzhigang20@gmail.com`, exit code 0. Subject: `ShopLovaNest Daily Blog Deployment Complete - 2026-07-06`.
 
 ## Final status
-Incomplete until commit/push, targeted production deployment, live verification, and success email accepted by msmtp are complete.
+Complete: exactly 2 new articles generated from keyword files, validated, committed/pushed, deployed live, verified, and success email accepted by msmtp.
