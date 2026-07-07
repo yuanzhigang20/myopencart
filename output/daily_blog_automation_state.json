@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
   "timezone": "Asia/Shanghai",
-  "status": "live_verified_pending_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -165,5 +165,17 @@
       "lastmod": "2026-07-07",
       "image_metadata": true
     }
+  },
+  "completed_at": "2026-07-07T08:41:28.986830+08:00",
+  "commit": "10f990ebb3",
+  "report_commit": "10f990ebb3",
+  "email": {
+    "status": "sent_accepted",
+    "sent_at": "2026-07-07T08:41:28.986830+08:00",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "exit_code": 0,
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-07"
   }
 }
