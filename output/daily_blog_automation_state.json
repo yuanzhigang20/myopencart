@@ -1,130 +1,112 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "creamy-water-based-lube-guide",
-      "title": "Creamy Water-Based Lube: Texture and Label Guide",
-      "url": "https://shoplovanest.com/blog/creamy-water-based-lube-guide/",
+      "slug": "how-to-use-cock-ring-safely",
+      "title": "How to Use a Cock Ring Safely: Beginner Checklist",
+      "url": "https://shoplovanest.com/blog/how-to-use-cock-ring-safely/",
       "primary_keywords": [
-        "water-based creamy lube",
-        "water-based creamy lube bulk",
-        "water based personal lube",
-        "water based lubricant lube"
+        "how to use a cock ring",
+        "how to use cock ring",
+        "how to wear a cock ring",
+        "what do cock rings do"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: water-based creamy lube (Volume 590), water-based creamy lube bulk (590), water based personal lube (2900), water based lubricant lube (8100/2900); output/keyword_to_url_mapping_2026-06-25.csv maps lubricant terms to compatibility education. Created as a distinct creamy-texture and label-reading intent, not a duplicate of broad water-based, warming, anal, condom, or silicone-comparison pages.",
-      "intent_cluster": "Creamy water-based lubricant shopping intent — texture expectations, ingredient label checks, condom/toy compatibility, cleanup, bottle size, bulk value, and privacy red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: how to use a cock ring (Volume 6600), how to use cock ring (2900), how to wear a cock ring (2900), what do cock rings do (6600); output/keyword_to_url_mapping_2026-06-25.csv maps these to the cock-ring buyer education cluster. Created as a distinct practical beginner-use checklist, not a duplicate of size-only, silicone, metal, adjustable, vibrating, or remote-control cock-ring pages.",
+      "intent_cluster": "Beginner cock ring use intent \u2014 what cock rings do, where fit guidance belongs, cautious timing, quick removal, lubricant/condom compatibility, cleaning, and private ecommerce red flags"
     },
     {
-      "slug": "silicone-cock-ring-guide",
-      "title": "Silicone Cock Ring Guide: Fit and Care Checks",
-      "url": "https://shoplovanest.com/blog/silicone-cock-ring-guide/",
+      "slug": "how-to-use-bullet-vibrator-guide",
+      "title": "How to Use a Bullet Vibrator: Simple Buyer Guide",
+      "url": "https://shoplovanest.com/blog/how-to-use-bullet-vibrator-guide/",
       "primary_keywords": [
-        "silicone cock ring",
-        "best cock ring",
-        "best cock rings",
-        "cock ring"
+        "how to use a bullet vibrator",
+        "vibrating bullet",
+        "bullet vibrator for women",
+        "bullet vibrator"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: silicone cock ring (Volume 720), best cock ring (3600), best cock rings (2400), cock ring seed cluster; output/keyword_to_url_mapping_2026-06-25.csv assigns cock-ring terms to buyer education. Created as a distinct silicone-material and beginner fit/care intent, not a duplicate of metal, adjustable, vibrating, remote-control, or size-only cock-ring pages.",
-      "intent_cluster": "Silicone cock ring shopping intent — flexible material, sizing, quick removal, lubricant compatibility, cleaning, storage, and private ecommerce red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: how to use a bullet vibrator (Volume 1000), vibrating bullet (1900), bullet vibrator for women (720), bullet vibrator (14800); output/keyword_to_url_mapping_2026-06-25.csv maps these to the compact vibrator cluster. Created as a distinct practical use-and-controls guide, not a duplicate of broad bullet buying, mini vibrator, waterproof, rechargeable, quiet, or beginner vibrator pages.",
+      "intent_cluster": "Bullet vibrator practical-use intent \u2014 compact size expectations, controls, pressure, lubricant compatibility, water-resistance wording, charging, cleaning, storage, and private checkout red flags"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-06T08:38:08.943775+08:00",
+  "generated_at": "2026-07-07T08:35:21.266959+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
     "files": [
-      "upload/blog/assets/creamy-water-based-lube-guide-opus-cover.png",
-      "upload/blog/assets/silicone-cock-ring-guide-opus-cover.png"
+      "upload/blog/assets/how-to-use-cock-ring-safely-opus-cover.png",
+      "upload/blog/assets/how-to-use-bullet-vibrator-guide-opus-cover.png"
     ]
   },
   "local_validation": {
     "status": "pass",
-    "title_meta_h1_gtag": true,
-    "word_count_1000_plus": true,
-    "readability_natural_english": true,
-    "topic_specific_depth": true,
-    "quick_answer": true,
-    "red_flags": true,
-    "faqpage_jsonld": true,
-    "authority_refs": true,
-    "internal_product_links": true,
-    "product_support_links": true,
-    "image_seo_metadata": true,
-    "sitemap_image_metadata": true,
-    "quality_score_min": 100,
-    "validated_at": "2026-07-06T08:40:13.577739+08:00"
-  },
-  "validated_at": "2026-07-06T08:40:13.577739+08:00",
-  "report": "output/daily_blog_report_2026-07-06.md",
-  "report_updated_at": "2026-07-06T08:43:35.288228+08:00",
-  "completed_at": "2026-07-06T08:46:44.939857+08:00",
-  "commit": "55bbf171be",
-  "git_push": {
-    "status": "pass",
-    "remote": "origin/master",
-    "note": "pushed commit 55bbf171be"
-  },
-  "deployment": {
-    "status": "pass",
-    "deployed_at": "2026-07-06T08:46:44.939857+08:00",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload with www-data ownership and 755/644 permissions"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-06T08:46:44.939857+08:00",
-    "articles": {
-      "creamy-water-based-lube-guide": {
-        "http_status": 200,
-        "url": "https://shoplovanest.com/blog/creamy-water-based-lube-guide/",
-        "checks": [
-          "title/meta present",
-          "one H1",
-          "G-P2LJRXN3D1 configured once",
-          "Quick Answer",
-          "Red Flags",
-          "FAQPage schema",
-          "authority references",
-          "image SEO metadata"
-        ]
+    "article_checks": {
+      "how-to-use-cock-ring-safely": {
+        "title": "How to Use a Cock Ring Safely: Beginner Checklist",
+        "title_length": 49,
+        "meta_length": 121,
+        "h1_count": 1,
+        "gtag_occurrences": 2,
+        "word_count": 1165,
+        "checks": {
+          "title_under_60": true,
+          "meta_under_155": true,
+          "one_h1": true,
+          "gtag_script_and_config_once": true,
+          "gtag_immediately_after_head": true,
+          "word_count_1000_plus": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faqpage_jsonld": true,
+          "authority_refs": true,
+          "related_blog_links_2_4": true,
+          "product_support_links_1_3": true,
+          "image_seo_metadata": true,
+          "natural_readability_markers": true,
+          "topic_specific_depth": true,
+          "banned_terms_absent": true
+        },
+        "quality_score": 100
       },
-      "silicone-cock-ring-guide": {
-        "http_status": 200,
-        "url": "https://shoplovanest.com/blog/silicone-cock-ring-guide/",
-        "checks": [
-          "title/meta present",
-          "one H1",
-          "G-P2LJRXN3D1 configured once",
-          "Quick Answer",
-          "Red Flags",
-          "FAQPage schema",
-          "authority references",
-          "image SEO metadata"
-        ]
+      "how-to-use-bullet-vibrator-guide": {
+        "title": "How to Use a Bullet Vibrator: Simple Buyer Guide",
+        "title_length": 48,
+        "meta_length": 138,
+        "h1_count": 1,
+        "gtag_occurrences": 2,
+        "word_count": 1096,
+        "checks": {
+          "title_under_60": true,
+          "meta_under_155": true,
+          "one_h1": true,
+          "gtag_script_and_config_once": true,
+          "gtag_immediately_after_head": true,
+          "word_count_1000_plus": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faqpage_jsonld": true,
+          "authority_refs": true,
+          "related_blog_links_2_4": true,
+          "product_support_links_1_3": true,
+          "image_seo_metadata": true,
+          "natural_readability_markers": true,
+          "topic_specific_depth": true,
+          "banned_terms_absent": true
+        },
+        "quality_score": 100
       }
     },
-    "blog_index": {
-      "http_status": 200,
-      "links_new_articles": true
-    },
-    "sitemap": {
-      "http_status": 200,
-      "includes_new_urls": true,
-      "lastmod": "2026-07-06",
-      "image_metadata": true
-    }
+    "blog_index_links": true,
+    "sitemap_image_metadata": true,
+    "quality_score_min": 100,
+    "readability_natural_english": true,
+    "topic_specific_depth": true,
+    "authority_refs": true,
+    "validated_at": "2026-07-07T08:37:51.606618+08:00"
   },
-  "email": {
-    "status": "sent_accepted",
-    "sent_at": "2026-07-06T08:46:44.939857+08:00",
-    "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "exit_code": 0,
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-06"
-  }
+  "validated_at": "2026-07-07T08:37:51.606618+08:00"
 }
