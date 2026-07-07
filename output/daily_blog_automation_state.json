@@ -1,7 +1,7 @@
 {
   "date": "2026-07-07",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy",
+  "status": "live_verified_pending_email",
   "article_quota": 2,
   "articles": [
     {
@@ -108,5 +108,62 @@
     "authority_refs": true,
     "validated_at": "2026-07-07T08:37:51.606618+08:00"
   },
-  "validated_at": "2026-07-07T08:37:51.606618+08:00"
+  "validated_at": "2026-07-07T08:37:51.606618+08:00",
+  "report": "output/daily_blog_report_2026-07-07.md",
+  "report_updated_at": "2026-07-07T08:40:49.404129+08:00",
+  "content_commit": "b32c43b78b",
+  "git_push": {
+    "status": "pass",
+    "remote": "origin/master",
+    "note": "pushed content commit b32c43b78b"
+  },
+  "deployment": {
+    "status": "pass",
+    "deployed_at": "2026-07-07T08:40:49.404129+08:00",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload with www-data ownership and 755/644 permissions"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-07T08:40:49.404129+08:00",
+    "articles": {
+      "how-to-use-cock-ring-safely": {
+        "http_status": 200,
+        "url": "https://shoplovanest.com/blog/how-to-use-cock-ring-safely/",
+        "checks": [
+          "title/meta present",
+          "one H1",
+          "G-P2LJRXN3D1 script and config once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage schema",
+          "authority references",
+          "image SEO metadata"
+        ]
+      },
+      "how-to-use-bullet-vibrator-guide": {
+        "http_status": 200,
+        "url": "https://shoplovanest.com/blog/how-to-use-bullet-vibrator-guide/",
+        "checks": [
+          "title/meta present",
+          "one H1",
+          "G-P2LJRXN3D1 script and config once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage schema",
+          "authority references",
+          "image SEO metadata"
+        ]
+      }
+    },
+    "blog_index": {
+      "http_status": 200,
+      "links_new_articles": true
+    },
+    "sitemap": {
+      "http_status": 200,
+      "includes_new_urls": true,
+      "lastmod": "2026-07-07",
+      "image_metadata": true
+    }
+  }
 }
