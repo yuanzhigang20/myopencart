@@ -1,57 +1,59 @@
 {
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "how-to-use-cock-ring-safely",
-      "title": "How to Use a Cock Ring Safely: Beginner Checklist",
-      "url": "https://shoplovanest.com/blog/how-to-use-cock-ring-safely/",
+      "slug": "best-rabbit-vibrator-buyer-guide",
+      "title": "Best Rabbit Vibrator: Buyer Safety Checklist",
+      "url": "https://shoplovanest.com/blog/best-rabbit-vibrator-buyer-guide/",
       "primary_keywords": [
-        "how to use a cock ring",
-        "how to use cock ring",
-        "how to wear a cock ring",
-        "what do cock rings do"
+        "best rabbit vibrator",
+        "best rabbit vibrators",
+        "rabbit vibrator",
+        "the rabbit vibrator",
+        "rabbit vibrater"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: how to use a cock ring (Volume 6600), how to use cock ring (2900), how to wear a cock ring (2900), what do cock rings do (6600); output/keyword_to_url_mapping_2026-06-25.csv maps these to the cock-ring buyer education cluster. Created as a distinct practical beginner-use checklist, not a duplicate of size-only, silicone, metal, adjustable, vibrating, or remote-control cock-ring pages.",
-      "intent_cluster": "Beginner cock ring use intent \u2014 what cock rings do, where fit guidance belongs, cautious timing, quick removal, lubricant/condom compatibility, cleaning, and private ecommerce red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: rabbit vibrator (seed), best rabbit vibrator (Volume 1300), best rabbit vibrators (720), the rabbit vibrator (1300), rabbit vibrater variants (480); output/keyword_to_url_mapping_2026-06-25.csv maps vibrator terms to adult wellness buying/education pages but existing slug coverage did not include a dedicated rabbit-vibrator comparison page. Created as a distinct dual-stimulation buyer-safety checklist, not a duplicate of beginner vibrator, bullet, mini, waterproof, rechargeable, or G-spot vibrator pages.",
+      "intent_cluster": "Rabbit vibrator comparison intent — dual-contact fit variability, independent controls, material transparency, water-resistance/charging claims, cleaning around flexible arms, and private ecommerce red flags"
     },
     {
-      "slug": "how-to-use-bullet-vibrator-guide",
-      "title": "How to Use a Bullet Vibrator: Simple Buyer Guide",
-      "url": "https://shoplovanest.com/blog/how-to-use-bullet-vibrator-guide/",
+      "slug": "weighted-kegel-balls-guide",
+      "title": "Weighted Kegel Balls: Safe Buyer Checklist",
+      "url": "https://shoplovanest.com/blog/weighted-kegel-balls-guide/",
       "primary_keywords": [
-        "how to use a bullet vibrator",
-        "vibrating bullet",
-        "bullet vibrator for women",
-        "bullet vibrator"
+        "weighted kegel balls",
+        "kegel balls",
+        "kegel ball",
+        "silicone kegel balls",
+        "what are kegel balls"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: how to use a bullet vibrator (Volume 1000), vibrating bullet (1900), bullet vibrator for women (720), bullet vibrator (14800); output/keyword_to_url_mapping_2026-06-25.csv maps these to the compact vibrator cluster. Created as a distinct practical use-and-controls guide, not a duplicate of broad bullet buying, mini vibrator, waterproof, rechargeable, quiet, or beginner vibrator pages.",
-      "intent_cluster": "Bullet vibrator practical-use intent \u2014 compact size expectations, controls, pressure, lubricant compatibility, water-resistance wording, charging, cleaning, storage, and private checkout red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: kegel balls (Volume 12100), kegel ball (2900), what are kegel balls (1000), weighted kegel balls (390), silicone kegel balls (390); output/keyword_to_url_mapping_2026-06-25.csv maps Kegel-ball terms to buyer education. Created as a distinct weighted sizing/material/retrieval checklist, not a duplicate of broad beginner toys or vibrator content.",
+      "intent_cluster": "Weighted kegel balls buyer intent — beginner weight range, size, smooth body-safe material, retrieval cord, cleaning, cautious use boundaries, and claims to avoid"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-07T08:35:21.266959+08:00",
+  "generated_at": "2026-07-08T08:33:44.903880+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
     "files": [
-      "upload/blog/assets/how-to-use-cock-ring-safely-opus-cover.png",
-      "upload/blog/assets/how-to-use-bullet-vibrator-guide-opus-cover.png"
+      "upload/blog/assets/best-rabbit-vibrator-buyer-guide-opus-cover.png",
+      "upload/blog/assets/weighted-kegel-balls-guide-opus-cover.png"
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "how-to-use-cock-ring-safely": {
-        "title": "How to Use a Cock Ring Safely: Beginner Checklist",
-        "title_length": 49,
-        "meta_length": 121,
+      "best-rabbit-vibrator-buyer-guide": {
+        "title": "Best Rabbit Vibrator: Buyer Safety Checklist",
+        "title_length": 44,
+        "meta_length": 133,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1165,
+        "word_count": 2076,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -72,13 +74,13 @@
         },
         "quality_score": 100
       },
-      "how-to-use-bullet-vibrator-guide": {
-        "title": "How to Use a Bullet Vibrator: Simple Buyer Guide",
-        "title_length": 48,
-        "meta_length": 138,
+      "weighted-kegel-balls-guide": {
+        "title": "Weighted Kegel Balls: Safe Buyer Checklist",
+        "title_length": 42,
+        "meta_length": 132,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1096,
+        "word_count": 2043,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -106,76 +108,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-07T08:37:51.606618+08:00"
+    "validated_at": "2026-07-08T10:34:36.849758+08:00"
   },
-  "validated_at": "2026-07-07T08:37:51.606618+08:00",
-  "report": "output/daily_blog_report_2026-07-07.md",
-  "report_updated_at": "2026-07-07T08:40:49.404129+08:00",
-  "content_commit": "b32c43b78b",
-  "git_push": {
-    "status": "pass",
-    "remote": "origin/master",
-    "note": "pushed content commit b32c43b78b"
-  },
-  "deployment": {
-    "status": "pass",
-    "deployed_at": "2026-07-07T08:40:49.404129+08:00",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload with www-data ownership and 755/644 permissions"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-07T08:40:49.404129+08:00",
-    "articles": {
-      "how-to-use-cock-ring-safely": {
-        "http_status": 200,
-        "url": "https://shoplovanest.com/blog/how-to-use-cock-ring-safely/",
-        "checks": [
-          "title/meta present",
-          "one H1",
-          "G-P2LJRXN3D1 script and config once",
-          "Quick Answer",
-          "Red Flags",
-          "FAQPage schema",
-          "authority references",
-          "image SEO metadata"
-        ]
-      },
-      "how-to-use-bullet-vibrator-guide": {
-        "http_status": 200,
-        "url": "https://shoplovanest.com/blog/how-to-use-bullet-vibrator-guide/",
-        "checks": [
-          "title/meta present",
-          "one H1",
-          "G-P2LJRXN3D1 script and config once",
-          "Quick Answer",
-          "Red Flags",
-          "FAQPage schema",
-          "authority references",
-          "image SEO metadata"
-        ]
-      }
-    },
-    "blog_index": {
-      "http_status": 200,
-      "links_new_articles": true
-    },
-    "sitemap": {
-      "http_status": 200,
-      "includes_new_urls": true,
-      "lastmod": "2026-07-07",
-      "image_metadata": true
-    }
-  },
-  "completed_at": "2026-07-07T08:41:28.986830+08:00",
-  "commit": "10f990ebb3",
-  "report_commit": "10f990ebb3",
-  "email": {
-    "status": "sent_accepted",
-    "sent_at": "2026-07-07T08:41:28.986830+08:00",
-    "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "exit_code": 0,
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-07"
-  }
+  "validated_at": "2026-07-08T10:34:36.849758+08:00"
 }
