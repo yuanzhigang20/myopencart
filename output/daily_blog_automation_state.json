@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "blocked_email_smtp_timeout_after_live_verification",
   "article_quota": 2,
   "articles": [
     {
@@ -110,5 +110,70 @@
     "authority_refs": true,
     "validated_at": "2026-07-08T10:34:36.849758+08:00"
   },
-  "validated_at": "2026-07-08T10:34:36.849758+08:00"
+  "validated_at": "2026-07-08T10:34:36.849758+08:00",
+  "report": "output/daily_blog_report_2026-07-08.md",
+  "report_updated_at": "2026-07-08T10:42:53.764463+08:00",
+  "content_commit": "73bf204f8b",
+  "git_push": {
+    "status": "pass",
+    "remote": "origin/master",
+    "note": "pushed content commit 73bf204f8b"
+  },
+  "deployment": {
+    "status": "pass",
+    "deployed_at": "2026-07-08T10:42:53.764463+08:00",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload with www-data ownership and 755/644 permissions"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-08T10:42:53.764463+08:00",
+    "articles": {
+      "best-rabbit-vibrator-buyer-guide": {
+        "http_status": 200,
+        "url": "https://shoplovanest.com/blog/best-rabbit-vibrator-buyer-guide/",
+        "checks": [
+          "title/meta present",
+          "one H1",
+          "G-P2LJRXN3D1 script and config once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage schema",
+          "authority references",
+          "image SEO metadata"
+        ]
+      },
+      "weighted-kegel-balls-guide": {
+        "http_status": 200,
+        "url": "https://shoplovanest.com/blog/weighted-kegel-balls-guide/",
+        "checks": [
+          "title/meta present",
+          "one H1",
+          "G-P2LJRXN3D1 script and config once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage schema",
+          "authority references",
+          "image SEO metadata"
+        ]
+      }
+    },
+    "blog_index": {
+      "http_status": 200,
+      "links_new_articles": true
+    },
+    "sitemap": {
+      "http_status": 200,
+      "includes_new_urls": true,
+      "lastmod": "2026-07-08",
+      "image_metadata": true
+    }
+  },
+  "email": {
+    "status": "blocked",
+    "attempted_at": "2026-07-08T10:42:53.764463+08:00",
+    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc",
+    "recipient": "yuanzhigang20@gmail.com",
+    "exit_code": 75,
+    "blocker": "Cannot connect to smtp.gmail.com port 587: Operation timed out. nc to smtp.gmail.com:587 also timed out. Password was not printed; msmtp debug masked password."
+  }
 }
