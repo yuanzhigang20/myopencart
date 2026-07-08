@@ -1,7 +1,7 @@
 {
   "date": "2026-07-08",
   "timezone": "Asia/Shanghai",
-  "status": "blocked_email_smtp_timeout_after_live_verification",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -169,11 +169,13 @@
     }
   },
   "email": {
-    "status": "blocked",
-    "attempted_at": "2026-07-08T10:42:53.764463+08:00",
+    "status": "sent_accepted",
+    "sent_at": "2026-07-08T12:32:32.346793+08:00",
     "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc",
     "recipient": "yuanzhigang20@gmail.com",
-    "exit_code": 75,
-    "blocker": "Cannot connect to smtp.gmail.com port 587: Operation timed out. nc to smtp.gmail.com:587 also timed out. Password was not printed; msmtp debug masked password."
-  }
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-08",
+    "exit_code": 0,
+    "note": "SMTP connectivity recovered; success email accepted by msmtp on retry. Password was not printed or stored."
+  },
+  "completed_at": "2026-07-08T12:32:32.346793+08:00"
 }

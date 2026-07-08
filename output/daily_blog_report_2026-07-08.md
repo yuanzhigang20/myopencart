@@ -1,9 +1,9 @@
 # ShopLovaNest Daily Blog Report - 2026-07-08
 
 ## Status
-Blocked at email notification after successful generation, validation, commit/push, deployment, and live verification.
+Complete — generated exactly 2 new English SEO blog articles from the mandatory keyword files, created topic-specific opus-image-1.5 images, updated blog index and sitemap, passed local validation, committed/pushed, deployed to production, verified live, and sent the success email accepted by msmtp.
 
-**Blocker:** `/opt/homebrew/bin/msmtp` cannot connect to `smtp.gmail.com:587`; both `nc -vz -w 20 smtp.gmail.com 587` and msmtp timed out. msmtp exited `75`. Gmail app password was not printed or stored; debug output masked it.
+Completion time: 2026-07-08T12:32:32.346793+08:00
 
 ## Articles generated from keyword files
 
@@ -61,11 +61,10 @@ Weighted kegel balls guide includes Cleveland Clinic Kegel exercise overview, NH
 
 ## Email status
 
-Not complete. Success email was prepared but not accepted by msmtp because SMTP connectivity timed out:
+Complete. Initial email attempt at 10:42 was blocked by a temporary timeout to `smtp.gmail.com:587`; retry at 2026-07-08T12:32:32.346793+08:00 succeeded after SMTP connectivity recovered.
 
-```text
-msmtp: cannot connect to smtp.gmail.com, port 587: Operation timed out
-msmtp: could not send mail (account default from /Users/grant/.msmtprc)
-```
-
-The next scheduled retry should not create extra articles. It should retry the existing prepared email after checking SMTP connectivity, then mark the day complete only if msmtp accepts the message.
+- Recipient: yuanzhigang20@gmail.com
+- Tool: `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc`
+- Subject: `ShopLovaNest Daily Blog Deployment Complete - 2026-07-08`
+- Status: SENT/ACCEPTED by msmtp, exit code 0
+- Credential handling: Gmail app password was not printed or stored.
