@@ -1,7 +1,7 @@
 {
   "date": "2026-07-09",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -110,5 +110,40 @@
     "authority_refs": true,
     "validated_at": "2026-07-09T08:39:05.946655+08:00"
   },
-  "validated_at": "2026-07-09T08:39:05.946655+08:00"
+  "validated_at": "2026-07-09T08:39:05.946655+08:00",
+  "commit": "aecb16b0f2d41b9e618a99bb32f75c1807413652",
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data, dirs 755, files 644",
+    "deployed_at": "2026-07-09T08:41:22.901718+08:00"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-09T08:41:22.901816+08:00",
+    "article_urls": [
+      "https://shoplovanest.com/blog/best-bullet-vibrator-guide/",
+      "https://shoplovanest.com/blog/adult-toy-advent-calendar-guide/"
+    ],
+    "checks": [
+      "HTTP 200",
+      "title/meta present",
+      "one H1",
+      "gtag script and config exactly once",
+      "Quick Answer",
+      "Red Flags",
+      "FAQPage schema",
+      "authority references",
+      "image SEO metadata"
+    ],
+    "blog_index": "HTTP 200 and links both new articles",
+    "sitemap": "HTTP 200, includes new URLs, 2026-07-09 lastmod, image metadata"
+  },
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "sent_at": "2026-07-09T08:41:28.662375+08:00",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-09"
+  }
 }
