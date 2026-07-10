@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
   "timezone": "Asia/Shanghai",
-  "status": "generated_pending_images_validation",
+  "status": "blocked_deploy_ssh_banner_timeout",
   "article_quota": 2,
   "articles": [
     {
@@ -16,7 +16,7 @@
         "automatic male masturbator"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: male masturbator (Volume 14800), male masturbators (9900), best male masturbator (4400), automatic male masturbator (1900), best-fit wearable male masturbator (1000), best male male masturbator (880); output/keyword_to_url_mapping_2026-06-25.csv maps broad male-masturbator intent to education, but the comparison, material, fit, and cleaning intent was not covered by a dedicated page. Created as a buyer-safety checklist, distinct from the existing male masturbator and automatic male masturbator guides.",
-      "intent_cluster": "Best male masturbator comparison intent \u2014 fit range, stability, motor and control claims, body-contact material, sleeve care, charging, privacy, and seller transparency"
+      "intent_cluster": "Best male masturbator comparison intent — fit range, stability, motor and control claims, body-contact material, sleeve care, charging, privacy, and seller transparency"
     },
     {
       "slug": "cordless-wand-massager-guide",
@@ -30,7 +30,7 @@
         "vibrator charging cable"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: cordless wand massager (Volume 480), rechargeable vibraters (590), waterproof vibrator (720), USB/charging and vibrator buyer queries across adult-toys and rechargeable-vibrator seed files; output/keyword_to_url_mapping_2026-06-25.csv maps charging-related intent to education but did not include a dedicated rechargeable-vibrator ownership checklist. Created as a battery/charging safety and buyer-transparency page, distinct from wand massager and power-adapter guides.",
-      "intent_cluster": "Cordless wand massager ownership intent \u2014 battery specs, cable/port type, magnetic charging contacts, travel lock, charging safety, water-resistance, cleaning, storage, and privacy checks"
+      "intent_cluster": "Cordless wand massager ownership intent — battery specs, cable/port type, magnetic charging contacts, travel lock, charging safety, water-resistance, cleaning, storage, and privacy checks"
     }
   ],
   "index_updated": true,
@@ -110,5 +110,33 @@
     "authority_refs": true,
     "validated_at": "2026-07-10T08:40:00+08:00"
   },
-  "validated_at": "2026-07-10T08:40:00+08:00"
+  "validated_at": "2026-07-10T08:40:00+08:00",
+  "blocked_at": "2026-07-10T09:00:42+08:00",
+  "completion_rule_met": false,
+  "deploy": {
+    "status": "blocked",
+    "target": "root@153.75.235.56:/var/www/myopencart/upload",
+    "attempts": [
+      {
+        "time": "2026-07-10T09:00:42+08:00",
+        "method": "targeted rsync/ssh",
+        "result": "failed before SSH authentication: TCP port 22 connected, but SSH timed out during banner exchange / server closed connection. No success email sent and state remains incomplete."
+      }
+    ],
+    "blocker": "Production SSH accepts TCP connections but repeatedly times out during SSH banner exchange before authentication, blocking rsync deployment and permission fix."
+  },
+  "live_verification": {
+    "status": "blocked_partial",
+    "checked_at": "2026-07-10T09:00:42+08:00",
+    "findings": {
+      "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/": "HTTP 200 but served OpenCart homepage title, not the generated static article; needs deploy retry.",
+      "https://shoplovanest.com/blog/cordless-wand-massager-guide/": "HTTP 200 and contains expected article markers in latest check.",
+      "https://shoplovanest.com/blog/": "HTTP 200 and contains cordless guide; full verification pending after deploy retry.",
+      "https://shoplovanest.com/sitemap.xml": "HTTP 200 and contains sitemap/image metadata markers; full verification pending after deploy retry."
+    }
+  },
+  "email": {
+    "status": "not_sent",
+    "reason": "Success email is only allowed after production deploy and live verification pass; deploy is blocked by SSH banner timeout."
+  }
 }
