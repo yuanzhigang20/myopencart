@@ -111,7 +111,7 @@
     "validated_at": "2026-07-10T08:40:00+08:00"
   },
   "validated_at": "2026-07-10T08:40:00+08:00",
-  "blocked_at": "2026-07-10T09:00:42+08:00",
+  "blocked_at": "2026-07-10T10:33:00+08:00",
   "completion_rule_met": false,
   "deploy": {
     "status": "blocked",
@@ -121,22 +121,27 @@
         "time": "2026-07-10T09:00:42+08:00",
         "method": "targeted rsync/ssh",
         "result": "failed before SSH authentication: TCP port 22 connected, but SSH timed out during banner exchange / server closed connection. No success email sent and state remains incomplete."
+      },
+      {
+        "time": "2026-07-10T10:33:00+08:00",
+        "method": "targeted deploy preflight SSH/banner retry",
+        "result": "failed before authentication: TCP port 22 connected, but SSH banner read returned empty/closed connection or timed out during banner exchange. No rsync deploy, no permission fix, no success email."
       }
     ],
-    "blocker": "Production SSH accepts TCP connections but repeatedly times out during SSH banner exchange before authentication, blocking rsync deployment and permission fix."
+    "blocker": "Production SSH accepts TCP connections but does not reliably present an SSH banner before closing/timing out, blocking rsync deployment and permission fix."
   },
   "live_verification": {
     "status": "blocked_partial",
-    "checked_at": "2026-07-10T09:00:42+08:00",
+    "checked_at": "2026-07-10T10:33:00+08:00",
     "findings": {
-      "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/": "HTTP 200 but served OpenCart homepage title, not the generated static article; needs deploy retry.",
-      "https://shoplovanest.com/blog/cordless-wand-massager-guide/": "HTTP 200 and contains expected article markers in latest check.",
+      "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/": "HTTP 200 but still serves OpenCart homepage title, not generated static article; deploy still blocked.",
+      "https://shoplovanest.com/blog/cordless-wand-massager-guide/": "HTTP 200 but currently existing older article can appear live; July 10 generated version still requires successful deploy verification.",
       "https://shoplovanest.com/blog/": "HTTP 200 and contains cordless guide; full verification pending after deploy retry.",
       "https://shoplovanest.com/sitemap.xml": "HTTP 200 and contains sitemap/image metadata markers; full verification pending after deploy retry."
     }
   },
   "email": {
     "status": "not_sent",
-    "reason": "Success email is only allowed after production deploy and live verification pass; deploy is blocked by SSH banner timeout."
+    "reason": "Success email is only allowed after production deploy and live verification pass; deploy remains blocked by SSH banner/close failure."
   }
 }

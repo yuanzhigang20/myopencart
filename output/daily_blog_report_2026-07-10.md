@@ -77,3 +77,10 @@ On the next scheduled check, retry only the incomplete deployment/verification/e
 - `upload/sitemap.xml`
 
 After successful deploy, fix ownership/permissions, verify both article URLs plus blog index and sitemap, then send the msmtp success email and mark the state complete.
+
+## Retry update — 2026-07-10T10:33:00+08:00
+
+- Re-ran local validation: PASS, both July 10 articles still score 100 with required SEO/content/image checks.
+- Retried production SSH preflight before rsync. TCP port 22 connected, but SSH failed before authentication during banner exchange; a raw socket read returned an empty close/no SSH banner.
+- Live spot-check still shows `best-male-masturbator-buyer-guide` serving the OpenCart homepage title, so deployment is not complete.
+- No rsync deployment, permission fix, or success email was performed. State remains incomplete for the next retry.
