@@ -1,59 +1,59 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "generated_pending_images_validation",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "best-bullet-vibrator-guide",
-      "title": "Best Bullet Vibrator: Small Buyer Checklist",
-      "url": "https://shoplovanest.com/blog/best-bullet-vibrator-guide/",
+      "slug": "best-male-masturbator-buyer-guide",
+      "title": "Best Male Masturbator: Buyer Safety Checklist",
+      "url": "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/",
       "primary_keywords": [
-        "best bullet vibrator",
-        "best bullet vibrators",
-        "bullet vibrator",
-        "bullet vibrators",
-        "small bullet vibrator"
+        "best-fit wearable male masturbator",
+        "best male male masturbator",
+        "male masturbator",
+        "male masturbators",
+        "automatic male masturbator"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: bullet vibrator (Volume 14800), bullet vibrators (1900), best bullet vibrator (1600), best bullet vibrators (480), small bullet vibrator (390), mini bullet vibrator (590); output/keyword_to_url_mapping_2026-06-25.csv maps broad bullet-vibrator intent to existing education, but did not include a dedicated best-bullet comparison page. Created as a compact-motor buyer-safety checklist, distinct from the existing bullet vibrator guide and how-to-use article.",
-      "intent_cluster": "Best bullet vibrator comparison intent \u2014 small form factor, simple controls, motor strength versus comfort, water-resistance/charging claims, cleaning, travel privacy, and ecommerce red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: male masturbator (Volume 14800), male masturbators (9900), best male masturbator (4400), automatic male masturbator (1900), best-fit wearable male masturbator (1000), best male male masturbator (880); output/keyword_to_url_mapping_2026-06-25.csv maps broad male-masturbator intent to education, but the comparison, material, fit, and cleaning intent was not covered by a dedicated page. Created as a buyer-safety checklist, distinct from the existing male masturbator and automatic male masturbator guides.",
+      "intent_cluster": "Best male masturbator comparison intent \u2014 fit range, stability, motor and control claims, body-contact material, sleeve care, charging, privacy, and seller transparency"
     },
     {
-      "slug": "adult-toy-advent-calendar-guide",
-      "title": "Adult Toy Advent Calendar: Consent-First Guide",
-      "url": "https://shoplovanest.com/blog/adult-toy-advent-calendar-guide/",
+      "slug": "cordless-wand-massager-guide",
+      "title": "Cordless Wand Massager: Charging Buyer Guide",
+      "url": "https://shoplovanest.com/blog/cordless-wand-massager-guide/",
       "primary_keywords": [
-        "adult toy advent calendar",
-        "adult toy advent calendars",
-        "adult toys advent calendar",
-        "adult toy gift calendar",
-        "adult wellness gift set"
+        "cordless wand massager",
+        "cordless wand massagers",
+        "wand massager",
+        "usb charging adult toys",
+        "vibrator charging cable"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult toy advent calendar (Volume 480) and related gift/seasonal adult-toy queries; output/keyword_to_url_mapping_2026-06-25.csv maps gift intent to consent/privacy education. Created as a distinct seasonal multi-item gift-set buyer-safety checklist, not a duplicate of the adult toy gift guide or date-night gift page.",
-      "intent_cluster": "Adult toy advent calendar / multi-item gift-set intent \u2014 consent-first gifting, item transparency, body-contact materials, sizing variability, hygiene seals, returns, shipping privacy, and value red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: cordless wand massager (Volume 480), rechargeable vibraters (590), waterproof vibrator (720), USB/charging and vibrator buyer queries across adult-toys and rechargeable-vibrator seed files; output/keyword_to_url_mapping_2026-06-25.csv maps charging-related intent to education but did not include a dedicated rechargeable-vibrator ownership checklist. Created as a battery/charging safety and buyer-transparency page, distinct from wand massager and power-adapter guides.",
+      "intent_cluster": "Cordless wand massager ownership intent \u2014 battery specs, cable/port type, magnetic charging contacts, travel lock, charging safety, water-resistance, cleaning, storage, and privacy checks"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-09T08:37:14.870808+08:00",
+  "generated_at": "2026-07-10T08:46:09.337494+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
     "files": [
-      "upload/blog/assets/best-bullet-vibrator-guide-opus-cover.png",
-      "upload/blog/assets/adult-toy-advent-calendar-guide-opus-cover.png"
+      "upload/blog/assets/best-male-masturbator-buyer-guide-opus-cover.png",
+      "upload/blog/assets/cordless-wand-massager-guide-opus-cover.png"
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "best-bullet-vibrator-guide": {
-        "title": "Best Bullet Vibrator: Small Buyer Checklist",
-        "title_length": 43,
-        "meta_length": 136,
+      "best-male-masturbator-buyer-guide": {
+        "title": "Best Male Masturbator: Buyer Safety Checklist",
+        "title_length": 45,
+        "meta_length": 125,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 2119,
+        "word_count": 1222,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -74,13 +74,13 @@
         },
         "quality_score": 100
       },
-      "adult-toy-advent-calendar-guide": {
-        "title": "Adult Toy Advent Calendar: Consent-First Guide",
-        "title_length": 46,
-        "meta_length": 133,
+      "cordless-wand-massager-guide": {
+        "title": "Cordless Wand Massager: Charging Buyer Guide",
+        "title_length": 44,
+        "meta_length": 137,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 2086,
+        "word_count": 1188,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -108,42 +108,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-09T08:39:05.946655+08:00"
+    "validated_at": "2026-07-10T08:40:00+08:00"
   },
-  "validated_at": "2026-07-09T08:39:05.946655+08:00",
-  "commit": "aecb16b0f2d41b9e618a99bb32f75c1807413652",
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
-    "permissions": "www-data:www-data, dirs 755, files 644",
-    "deployed_at": "2026-07-09T08:41:22.901718+08:00"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-09T08:41:22.901816+08:00",
-    "article_urls": [
-      "https://shoplovanest.com/blog/best-bullet-vibrator-guide/",
-      "https://shoplovanest.com/blog/adult-toy-advent-calendar-guide/"
-    ],
-    "checks": [
-      "HTTP 200",
-      "title/meta present",
-      "one H1",
-      "gtag script and config exactly once",
-      "Quick Answer",
-      "Red Flags",
-      "FAQPage schema",
-      "authority references",
-      "image SEO metadata"
-    ],
-    "blog_index": "HTTP 200 and links both new articles",
-    "sitemap": "HTTP 200, includes new URLs, 2026-07-09 lastmod, image metadata"
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "sent_at": "2026-07-09T08:41:28.662375+08:00",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-09"
-  }
+  "validated_at": "2026-07-10T08:40:00+08:00"
 }
