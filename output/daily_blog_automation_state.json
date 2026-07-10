@@ -116,31 +116,38 @@
   "deploy": {
     "status": "pass",
     "target": "root@153.75.235.56:/var/www/myopencart/upload",
-    "method": "targeted rsync for two July 10 blog folders, two image assets, blog index, and sitemap; followed by chown/chmod on changed paths",
-    "completed_at": "2026-07-10T12:45:00+08:00",
-    "notes": "Earlier SSH banner blocker cleared on retry. rsync transfers completed and remote ownership/permissions were fixed."
+    "method": "targeted rsync for two July 10 blog folders, two opus cover images, blog index, sitemap; owner/perms fixed",
+    "deployed_at": "2026-07-10T12:46:46+08:00",
+    "files": [
+      "upload/blog/best-male-masturbator-buyer-guide/",
+      "upload/blog/cordless-wand-massager-guide/",
+      "upload/blog/assets/best-male-masturbator-buyer-guide-opus-cover.png",
+      "upload/blog/assets/cordless-wand-massager-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ]
   },
   "live_verification": {
     "status": "pass",
-    "checked_at": "2026-07-10T12:45:00+08:00",
+    "checked_at": "2026-07-10T12:46:46+08:00",
     "findings": {
-      "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/": "HTTP 200; expected title/meta, one H1, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, og/twitter image metadata, ImageObject metadata, and Google tag markers present.",
-      "https://shoplovanest.com/blog/cordless-wand-massager-guide/": "HTTP 200; expected title/meta, one H1, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, og/twitter image metadata, ImageObject metadata, and Google tag markers present.",
-      "https://shoplovanest.com/blog/": "HTTP 200 and links both July 10 article slugs.",
-      "https://shoplovanest.com/sitemap.xml": "HTTP 200 and includes both July 10 article URLs, 2026-07-10 lastmod, and image:image metadata."
+      "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/": "HTTP 200; correct title/meta; one H1; gtag script/config once; Quick Answer, Red Flags, FAQPage, authority refs, image metadata, daily marker present.",
+      "https://shoplovanest.com/blog/cordless-wand-massager-guide/": "HTTP 200; correct title/meta; one H1; gtag script/config once; Quick Answer, Red Flags, FAQPage, authority refs, image metadata, daily marker present.",
+      "https://shoplovanest.com/blog/": "HTTP 200; links both July 10 articles.",
+      "https://shoplovanest.com/sitemap.xml": "HTTP 200; includes both July 10 URLs, 2026-07-10 lastmod, and image metadata.",
+      "cover_images": "Both opus cover PNG URLs HTTP 200."
     }
   },
   "email": {
     "status": "sent_accepted",
-    "sent_at": "2026-07-10T12:45:00+08:00",
     "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-10",
-    "tool": "/opt/homebrew/bin/msmtp --file=/Users/grant/.msmtprc",
-    "result": "msmtp exited 0 / accepted for delivery"
+    "sent_at": "2026-07-10T12:46:49+08:00",
+    "tool": "/opt/homebrew/bin/msmtp"
   },
   "deployed_at": "2026-07-10T12:45:00+08:00",
   "verified_at": "2026-07-10T12:45:00+08:00",
   "email_sent_at": "2026-07-10T12:45:00+08:00",
-  "commit": "41d31abbfc99",
-  "push_status": "pushed to origin/master after deploy retry (origin/master matches HEAD)"
+  "commit": "7877e4dbc366a3199c9c9822727e097838cec95a",
+  "push_status": "pushed to origin/master after deploy retry (origin/master matches HEAD)",
+  "completed_at": "2026-07-10T12:46:49+08:00"
 }

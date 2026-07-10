@@ -79,3 +79,23 @@ Passed with browser-like user agent:
 ## Completion rule
 
 Complete. Today's job has exactly 2 keyword-file-derived articles generated, indexed, sitemap-updated, quality-validated, committed, pushed, deployed, live-verified, and success-email accepted.
+
+
+## Completion update — 2026-07-10T12:46:46+08:00
+
+- Production SSH recovered during manual retry.
+- Targeted rsync deployment completed for the two July 10 article folders, two opus cover images, blog index, and sitemap.
+- Production ownership/permissions fixed to `www-data:www-data`, directories `755`, files `644`.
+- Live verification passed:
+  - https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/ — HTTP 200; correct title/meta; one H1; Google tag script/config once; Quick Answer, Red Flags, FAQPage, authority references, image SEO metadata, and daily marker present.
+  - https://shoplovanest.com/blog/cordless-wand-massager-guide/ — HTTP 200; correct title/meta; one H1; Google tag script/config once; Quick Answer, Red Flags, FAQPage, authority references, image SEO metadata, and daily marker present.
+  - Blog index HTTP 200 and links both July 10 articles.
+  - Sitemap HTTP 200 and includes both July 10 URLs, `2026-07-10` lastmod, and image metadata.
+  - Both generated opus cover PNG images return HTTP 200.
+- Completion state updated; success email pending send at this point.
+
+
+## Email completion — 2026-07-10T12:46:49+08:00
+
+- Success email sent/accepted via `/opt/homebrew/bin/msmtp` to `yuanzhigang20@gmail.com`.
+- Daily job status is now COMPLETE.
