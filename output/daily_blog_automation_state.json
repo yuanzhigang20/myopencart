@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
   "timezone": "Asia/Shanghai",
-  "status": "blocked_deploy_ssh_banner_timeout",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -112,36 +112,35 @@
   },
   "validated_at": "2026-07-10T08:40:00+08:00",
   "blocked_at": "2026-07-10T10:33:00+08:00",
-  "completion_rule_met": false,
+  "completion_rule_met": true,
   "deploy": {
-    "status": "blocked",
+    "status": "pass",
     "target": "root@153.75.235.56:/var/www/myopencart/upload",
-    "attempts": [
-      {
-        "time": "2026-07-10T09:00:42+08:00",
-        "method": "targeted rsync/ssh",
-        "result": "failed before SSH authentication: TCP port 22 connected, but SSH timed out during banner exchange / server closed connection. No success email sent and state remains incomplete."
-      },
-      {
-        "time": "2026-07-10T10:33:00+08:00",
-        "method": "targeted deploy preflight SSH/banner retry",
-        "result": "failed before authentication: TCP port 22 connected, but SSH banner read returned empty/closed connection or timed out during banner exchange. No rsync deploy, no permission fix, no success email."
-      }
-    ],
-    "blocker": "Production SSH accepts TCP connections but does not reliably present an SSH banner before closing/timing out, blocking rsync deployment and permission fix."
+    "method": "targeted rsync for two July 10 blog folders, two image assets, blog index, and sitemap; followed by chown/chmod on changed paths",
+    "completed_at": "2026-07-10T12:45:00+08:00",
+    "notes": "Earlier SSH banner blocker cleared on retry. rsync transfers completed and remote ownership/permissions were fixed."
   },
   "live_verification": {
-    "status": "blocked_partial",
-    "checked_at": "2026-07-10T10:33:00+08:00",
+    "status": "pass",
+    "checked_at": "2026-07-10T12:45:00+08:00",
     "findings": {
-      "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/": "HTTP 200 but still serves OpenCart homepage title, not generated static article; deploy still blocked.",
-      "https://shoplovanest.com/blog/cordless-wand-massager-guide/": "HTTP 200 but currently existing older article can appear live; July 10 generated version still requires successful deploy verification.",
-      "https://shoplovanest.com/blog/": "HTTP 200 and contains cordless guide; full verification pending after deploy retry.",
-      "https://shoplovanest.com/sitemap.xml": "HTTP 200 and contains sitemap/image metadata markers; full verification pending after deploy retry."
+      "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/": "HTTP 200; expected title/meta, one H1, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, og/twitter image metadata, ImageObject metadata, and Google tag markers present.",
+      "https://shoplovanest.com/blog/cordless-wand-massager-guide/": "HTTP 200; expected title/meta, one H1, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, og/twitter image metadata, ImageObject metadata, and Google tag markers present.",
+      "https://shoplovanest.com/blog/": "HTTP 200 and links both July 10 article slugs.",
+      "https://shoplovanest.com/sitemap.xml": "HTTP 200 and includes both July 10 article URLs, 2026-07-10 lastmod, and image:image metadata."
     }
   },
   "email": {
-    "status": "not_sent",
-    "reason": "Success email is only allowed after production deploy and live verification pass; deploy remains blocked by SSH banner/close failure."
-  }
+    "status": "sent_accepted",
+    "sent_at": "2026-07-10T12:45:00+08:00",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-10",
+    "tool": "/opt/homebrew/bin/msmtp --file=/Users/grant/.msmtprc",
+    "result": "msmtp exited 0 / accepted for delivery"
+  },
+  "deployed_at": "2026-07-10T12:45:00+08:00",
+  "verified_at": "2026-07-10T12:45:00+08:00",
+  "email_sent_at": "2026-07-10T12:45:00+08:00",
+  "commit": "41d31abbfc99",
+  "push_status": "pushed to origin/master after deploy retry (origin/master matches HEAD)"
 }

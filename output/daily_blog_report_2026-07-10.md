@@ -1,8 +1,8 @@
 # ShopLovaNest Daily Blog Automation Report — 2026-07-10
 
-Status: **INCOMPLETE — deployment blocked by production SSH banner timeout**
+Status: **COMPLETE — 2 articles generated, deployed, live-verified, and email accepted**
 
-Updated: 2026-07-10T09:00:42+08:00 Asia/Shanghai
+Completed: 2026-07-10T12:45:00+08:00 Asia/Shanghai
 
 ## Selected keyword-sourced topics
 
@@ -10,15 +10,15 @@ Updated: 2026-07-10T09:00:42+08:00 Asia/Shanghai
    - Slug: `best-male-masturbator-buyer-guide`
    - URL: https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/
    - Primary keywords: best-fit wearable male masturbator, best male male masturbator, male masturbator, male masturbators, automatic male masturbator
-   - Intent cluster: Best male masturbator comparison intent — fit range, stability, motor and control claims, body-contact material, sleeve care, charging, privacy, and seller transparency
-   - Keyword source: output/merged_keyword_research_2026-06-25.csv rows: male masturbator (Volume 14800), male masturbators (9900), best male masturbator (4400), automatic male masturbator (1900), best-fit wearable male masturbator (1000), best male male masturbator (880); output/keyword_to_url_mapping_2026-06-25.csv maps broad male-masturbator intent to education, but the comparison, material, fit, and cleaning intent was not covered by a dedicated page. Created as a buyer-safety checklist, distinct from the existing male masturbator and automatic male masturbator guides.
+   - Intent cluster: Best male masturbator comparison intent — fit range, stability, motor and control claims, body-contact material, sleeve care, charging, privacy, and seller transparency.
+   - Keyword source: `output/merged_keyword_research_2026-06-25.csv` rows for male masturbator, male masturbators, best male masturbator, automatic male masturbator, best-fit wearable male masturbator, best male male masturbator; `output/keyword_to_url_mapping_2026-06-25.csv` maps broad male-masturbator intent to education, but comparison/material/fit/cleaning intent was not covered by a dedicated page.
 
 2. **Cordless Wand Massager: Charging Buyer Guide**
    - Slug: `cordless-wand-massager-guide`
    - URL: https://shoplovanest.com/blog/cordless-wand-massager-guide/
    - Primary keywords: cordless wand massager, cordless wand massagers, wand massager, usb charging adult toys, vibrator charging cable
-   - Intent cluster: Cordless wand massager ownership intent — battery specs, cable/port type, magnetic charging contacts, travel lock, charging safety, water-resistance, cleaning, storage, and privacy checks
-   - Keyword source: output/merged_keyword_research_2026-06-25.csv rows: cordless wand massager (Volume 480), rechargeable vibraters (590), waterproof vibrator (720), USB/charging and vibrator buyer queries across adult-toys and rechargeable-vibrator seed files; output/keyword_to_url_mapping_2026-06-25.csv maps charging-related intent to education but did not include a dedicated rechargeable-vibrator ownership checklist. Created as a battery/charging safety and buyer-transparency page, distinct from wand massager and power-adapter guides.
+   - Intent cluster: Cordless wand massager ownership intent — battery specs, cable/port type, magnetic charging contacts, travel lock, charging safety, water-resistance, cleaning, storage, and privacy checks.
+   - Keyword source: `output/merged_keyword_research_2026-06-25.csv` rows for cordless wand massager plus related rechargeable/waterproof/USB charging queries; `output/keyword_to_url_mapping_2026-06-25.csv` maps charging-related intent to education but did not include a dedicated rechargeable wand ownership checklist.
 
 ## Local generation and quality checks
 
@@ -32,42 +32,23 @@ Updated: 2026-07-10T09:00:42+08:00 Asia/Shanghai
   - `upload/blog/assets/best-male-masturbator-buyer-guide-opus-cover.png`
   - `upload/blog/assets/cordless-wand-massager-guide-opus-cover.png`
 - Local validation status: pass
-- Minimum quality score: 100
-- Content checks: title/meta length, exactly one H1, Google tag immediately after head, 1000+ words, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, related/internal/product/support links, image SEO metadata, sitemap image metadata, natural readability, topic-specific depth, banned-term absence.
+- Quality score: >=93 on retry validation, above required >=85
+- Content checks passed: SEO title length, meta description length, exactly one H1, Google tag immediately after head, 1000+ words, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, related/internal/product/support links, image SEO metadata, sitemap image metadata, topic-specific depth, banned-term absence, natural American English/readability review.
 
 ## Commit / push
 
-- Commit: `7877e4dbc3` (`Add ShopLovaNest daily blogs for 2026-07-10`)
-- Push status: pushed to `origin/master` (ahead/behind 0/0 when checked)
+- Commit: `41d31abbfc99`
+- Push status: pushed to `origin/master`; local branch matches `origin/master`.
 
 ## Deployment status
 
-**Blocked.** Targeted deploy was attempted to:
+**Passed.** After earlier SSH banner failures, the retry at 2026-07-10 12:31–12:45 CST succeeded.
+
+Targeted deploy completed to:
 
 `root@153.75.235.56:/var/www/myopencart/upload`
 
-Failure details:
-
-- TCP port 22 sometimes reports open, but SSH repeatedly fails before authentication.
-- Error observed: `Connection timed out during banner exchange` / `Connection to 153.75.235.56 port 22 timed out`.
-- Because SSH does not complete the banner exchange, rsync deployment and remote permission fixes cannot run reliably.
-
-## Live verification status
-
-Partial checks before/around retry:
-
-- `https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/` returned HTTP 200 but served the OpenCart homepage title instead of the generated static article. This URL requires a successful deploy retry.
-- `https://shoplovanest.com/blog/cordless-wand-massager-guide/` returned HTTP 200 and contained expected markers: title, Quick Answer, Red Flags, FAQPage, and Google tag occurrences.
-- Blog index and sitemap returned HTTP 200, but full verification is pending a clean deploy retry.
-
-## Email status
-
-- Status: **not sent**
-- Reason: success email may only be sent after deploy and live verification pass. Deployment is blocked by SSH banner timeout.
-
-## Next retry action
-
-On the next scheduled check, retry only the incomplete deployment/verification/email steps. Do **not** create extra July 10 articles. Deploy these files/folders only:
+Files/folders deployed only:
 
 - `upload/blog/best-male-masturbator-buyer-guide/`
 - `upload/blog/cordless-wand-massager-guide/`
@@ -76,11 +57,25 @@ On the next scheduled check, retry only the incomplete deployment/verification/e
 - `upload/blog/index.html`
 - `upload/sitemap.xml`
 
-After successful deploy, fix ownership/permissions, verify both article URLs plus blog index and sitemap, then send the msmtp success email and mark the state complete.
+Remote ownership/permissions were fixed for changed paths: `www-data:www-data`, directories `755`, files `644`.
 
-## Retry update — 2026-07-10T10:33:00+08:00
+## Live verification status
 
-- Re-ran local validation: PASS, both July 10 articles still score 100 with required SEO/content/image checks.
-- Retried production SSH preflight before rsync. TCP port 22 connected, but SSH failed before authentication during banner exchange; a raw socket read returned an empty close/no SSH banner.
-- Live spot-check still shows `best-male-masturbator-buyer-guide` serving the OpenCart homepage title, so deployment is not complete.
-- No rsync deployment, permission fix, or success email was performed. State remains incomplete for the next retry.
+Passed with browser-like user agent:
+
+- `https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/` — HTTP 200; expected title/meta, one H1, Google tag markers, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, og/twitter image metadata, and ImageObject metadata present.
+- `https://shoplovanest.com/blog/cordless-wand-massager-guide/` — HTTP 200; expected title/meta, one H1, Google tag markers, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, og/twitter image metadata, and ImageObject metadata present.
+- `https://shoplovanest.com/blog/` — HTTP 200 and links both July 10 article slugs.
+- `https://shoplovanest.com/sitemap.xml` — HTTP 200 and includes both July 10 article URLs, `2026-07-10` lastmod entries, and `image:image` metadata.
+
+## Email status
+
+- Status: **sent / accepted**
+- Recipient: `yuanzhigang20@gmail.com`
+- Subject: `ShopLovaNest Daily Blog Deployment Complete - 2026-07-10`
+- Tool: `/opt/homebrew/bin/msmtp --file=/Users/grant/.msmtprc`
+- Result: msmtp exited 0 and accepted the message for delivery.
+
+## Completion rule
+
+Complete. Today's job has exactly 2 keyword-file-derived articles generated, indexed, sitemap-updated, quality-validated, committed, pushed, deployed, live-verified, and success-email accepted.
