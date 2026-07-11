@@ -1,7 +1,7 @@
 {
   "date": "2026-07-11",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "committed_pushed_pending_deploy_email",
   "article_quota": 2,
   "articles": [
     {
@@ -110,5 +110,7 @@
     "authority_refs": true,
     "validated_at": "2026-07-11T08:37:30.275901+08:00"
   },
-  "validated_at": "2026-07-11T08:37:30.275901+08:00"
+  "validated_at": "2026-07-11T08:37:30.275901+08:00",
+  "commit": "9000bafa8ecbc4db63663a274cfd8903cdffc437",
+  "push_status": "pushed to origin/master"
 }
