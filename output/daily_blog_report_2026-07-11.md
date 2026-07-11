@@ -44,4 +44,16 @@ Generated exactly 2 new English SEO blog articles from the mandatory keyword/map
 
 
 ## Deployment / Live Verification / Email
-Pending before commit/deploy. This report will be updated after production verification and msmtp acceptance.
+
+Status: complete.
+
+- Commit hash: `9000bafa8ecbc4db63663a274cfd8903cdffc437`
+- Current state commit before final status update: `da130d0922b5cbbe956102c487704f04c8dcece2`
+- Push status: pushed to origin/master
+- Deploy status: pass — changed article folders, opus-image-1.5 cover images, blog index, and sitemap were rsynced to `root@153.75.235.56:/var/www/myopencart/upload`; changed paths were set to `www-data:www-data`, dirs 755, files 644.
+- Live verification: pass at 2026-07-11T08:44:24+08:00. Both article URLs returned HTTP 200 and passed title/meta, one H1, Google tag script/config exactly once, Quick Answer, Red Flags, FAQPage schema, authority reference, and image SEO checks.
+- Blog index: HTTP 200 and links both new articles.
+- Sitemap: HTTP 200 and includes both URLs with `2026-07-11` lastmod and `image:image` metadata.
+- Email: sent and accepted by `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -t` to `yuanzhigang20@gmail.com` with subject `ShopLovaNest Daily Blog Deployment Complete - 2026-07-11`.
+
+Completion rule satisfied: exactly 2 new articles generated from keyword files, local validation passed, committed and pushed, production deployed, live verification passed, and success email accepted.

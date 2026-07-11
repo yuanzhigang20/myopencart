@@ -1,7 +1,7 @@
 {
   "date": "2026-07-11",
   "timezone": "Asia/Shanghai",
-  "status": "committed_pushed_pending_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -16,7 +16,7 @@
         "best vibrating cock rings"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: vibrating cock ring (Volume 12100), vibrating cock rings (1300), cock ring vibrator (2400), cock ring with vibrator (590), best vibrating cock rings (390); output/keyword_to_url_mapping_2026-06-25.csv maps cock-ring intent to education, but the motor, charging, vibration placement, material-stretch, and cleaning intent was not covered by a dedicated page. Created as a buyer-safety guide distinct from the existing cock ring size, silicone, metal, and remote-control cock-ring pages.",
-      "intent_cluster": "Vibrating cock ring buyer intent \u2014 sizing and stretch, motor placement, charging or battery design, water-resistance wording, silicone compatibility, cleaning seams, privacy, and checkout risk signals"
+      "intent_cluster": "Vibrating cock ring buyer intent — sizing and stretch, motor placement, charging or battery design, water-resistance wording, silicone compatibility, cleaning seams, privacy, and checkout risk signals"
     },
     {
       "slug": "bullet-vibrator-charger-guide",
@@ -30,7 +30,7 @@
         "vibrating bullet"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: bullet vibrator charger (Volume 320), bullet vibratir charging time (Volume 260), rechargeable bullet vibrator (210), mini bullet vibrator (590), vibrating bullet (1900), bullet vibrator (14800); output/keyword_to_url_mapping_2026-06-25.csv maps bullet-vibrator intent to beginner education, but charger compatibility, magnetic contacts, charging time, replacement cable, water-resistance, and battery-care ownership intent was not covered by a dedicated page.",
-      "intent_cluster": "Bullet vibrator charging and ownership intent \u2014 cable type, magnetic contacts, charging time, battery indicator, replacement charger availability, drying before charging, travel lock, storage, and support transparency"
+      "intent_cluster": "Bullet vibrator charging and ownership intent — cable type, magnetic contacts, charging time, battery indicator, replacement charger availability, drying before charging, travel lock, storage, and support transparency"
     }
   ],
   "index_updated": true,
@@ -112,5 +112,48 @@
   },
   "validated_at": "2026-07-11T08:37:30.275901+08:00",
   "commit": "9000bafa8ecbc4db63663a274cfd8903cdffc437",
-  "push_status": "pushed to origin/master"
+  "push_status": "pushed to origin/master",
+  "completed_at": "2026-07-11T08:44:24+08:00",
+  "deploy": {
+    "status": "pass",
+    "completed_at": "2026-07-11T08:44:24+08:00",
+    "target": "root@153.75.235.56:/var/www/myopencart/upload",
+    "paths": [
+      "upload/blog/vibrating-cock-ring-buyer-guide/",
+      "upload/blog/bullet-vibrator-charger-guide/",
+      "upload/blog/assets/vibrating-cock-ring-buyer-guide-opus-cover.png",
+      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions": "www-data:www-data; dirs 755; files 644 for changed paths"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-11T08:44:24+08:00",
+    "article_urls": [
+      "https://shoplovanest.com/blog/vibrating-cock-ring-buyer-guide/",
+      "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/"
+    ],
+    "checks": [
+      "HTTP 200",
+      "title/meta present",
+      "exactly one H1",
+      "gtag script/config once",
+      "Quick Answer",
+      "Red Flags",
+      "FAQPage schema",
+      "authority references",
+      "image SEO metadata",
+      "blog index links",
+      "sitemap lastmod and image metadata"
+    ]
+  },
+  "email": {
+    "status": "sent_accepted",
+    "sent_at": "2026-07-11T08:44:24+08:00",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -t",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-11"
+  }
 }
