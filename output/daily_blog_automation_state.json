@@ -1,59 +1,59 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "best-male-masturbator-buyer-guide",
-      "title": "Best Male Masturbator: Buyer Safety Checklist",
-      "url": "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/",
+      "slug": "vibrating-cock-ring-buyer-guide",
+      "title": "Vibrating Cock Ring: Fit and Care Guide",
+      "url": "https://shoplovanest.com/blog/vibrating-cock-ring-buyer-guide/",
       "primary_keywords": [
-        "best-fit wearable male masturbator",
-        "best male male masturbator",
-        "male masturbator",
-        "male masturbators",
-        "automatic male masturbator"
+        "vibrating cock ring",
+        "vibrating cock rings",
+        "cock ring vibrator",
+        "cock ring with vibrator",
+        "best vibrating cock rings"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: male masturbator (Volume 14800), male masturbators (9900), best male masturbator (4400), automatic male masturbator (1900), best-fit wearable male masturbator (1000), best male male masturbator (880); output/keyword_to_url_mapping_2026-06-25.csv maps broad male-masturbator intent to education, but the comparison, material, fit, and cleaning intent was not covered by a dedicated page. Created as a buyer-safety checklist, distinct from the existing male masturbator and automatic male masturbator guides.",
-      "intent_cluster": "Best male masturbator comparison intent — fit range, stability, motor and control claims, body-contact material, sleeve care, charging, privacy, and seller transparency"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: vibrating cock ring (Volume 12100), vibrating cock rings (1300), cock ring vibrator (2400), cock ring with vibrator (590), best vibrating cock rings (390); output/keyword_to_url_mapping_2026-06-25.csv maps cock-ring intent to education, but the motor, charging, vibration placement, material-stretch, and cleaning intent was not covered by a dedicated page. Created as a buyer-safety guide distinct from the existing cock ring size, silicone, metal, and remote-control cock-ring pages.",
+      "intent_cluster": "Vibrating cock ring buyer intent \u2014 sizing and stretch, motor placement, charging or battery design, water-resistance wording, silicone compatibility, cleaning seams, privacy, and checkout risk signals"
     },
     {
-      "slug": "cordless-wand-massager-guide",
-      "title": "Cordless Wand Massager: Charging Buyer Guide",
-      "url": "https://shoplovanest.com/blog/cordless-wand-massager-guide/",
+      "slug": "bullet-vibrator-charger-guide",
+      "title": "Bullet Vibrator Charger: Battery Care Guide",
+      "url": "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
       "primary_keywords": [
-        "cordless wand massager",
-        "cordless wand massagers",
-        "wand massager",
-        "usb charging adult toys",
-        "vibrator charging cable"
+        "bullet vibrator charger",
+        "bullet vibratir charging time",
+        "rechargeable bullet vibrator",
+        "mini bullet vibrator",
+        "vibrating bullet"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: cordless wand massager (Volume 480), rechargeable vibraters (590), waterproof vibrator (720), USB/charging and vibrator buyer queries across adult-toys and rechargeable-vibrator seed files; output/keyword_to_url_mapping_2026-06-25.csv maps charging-related intent to education but did not include a dedicated rechargeable-vibrator ownership checklist. Created as a battery/charging safety and buyer-transparency page, distinct from wand massager and power-adapter guides.",
-      "intent_cluster": "Cordless wand massager ownership intent — battery specs, cable/port type, magnetic charging contacts, travel lock, charging safety, water-resistance, cleaning, storage, and privacy checks"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: bullet vibrator charger (Volume 320), bullet vibratir charging time (Volume 260), rechargeable bullet vibrator (210), mini bullet vibrator (590), vibrating bullet (1900), bullet vibrator (14800); output/keyword_to_url_mapping_2026-06-25.csv maps bullet-vibrator intent to beginner education, but charger compatibility, magnetic contacts, charging time, replacement cable, water-resistance, and battery-care ownership intent was not covered by a dedicated page.",
+      "intent_cluster": "Bullet vibrator charging and ownership intent \u2014 cable type, magnetic contacts, charging time, battery indicator, replacement charger availability, drying before charging, travel lock, storage, and support transparency"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-10T08:46:09.337494+08:00",
+  "generated_at": "2026-07-11T08:33:45.205161+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
     "files": [
-      "upload/blog/assets/best-male-masturbator-buyer-guide-opus-cover.png",
-      "upload/blog/assets/cordless-wand-massager-guide-opus-cover.png"
+      "upload/blog/assets/vibrating-cock-ring-buyer-guide-opus-cover.png",
+      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png"
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "best-male-masturbator-buyer-guide": {
-        "title": "Best Male Masturbator: Buyer Safety Checklist",
-        "title_length": 45,
+      "vibrating-cock-ring-buyer-guide": {
+        "title": "Vibrating Cock Ring: Fit and Care Guide",
+        "title_length": 39,
         "meta_length": 125,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1222,
+        "word_count": 1367,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -74,13 +74,13 @@
         },
         "quality_score": 100
       },
-      "cordless-wand-massager-guide": {
-        "title": "Cordless Wand Massager: Charging Buyer Guide",
-        "title_length": 44,
-        "meta_length": 137,
+      "bullet-vibrator-charger-guide": {
+        "title": "Bullet Vibrator Charger: Battery Care Guide",
+        "title_length": 43,
+        "meta_length": 152,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1188,
+        "word_count": 1248,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -108,46 +108,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-10T08:40:00+08:00"
+    "validated_at": "2026-07-11T08:37:30.275901+08:00"
   },
-  "validated_at": "2026-07-10T08:40:00+08:00",
-  "blocked_at": "2026-07-10T10:33:00+08:00",
-  "completion_rule_met": true,
-  "deploy": {
-    "status": "pass",
-    "target": "root@153.75.235.56:/var/www/myopencart/upload",
-    "method": "targeted rsync for two July 10 blog folders, two opus cover images, blog index, sitemap; owner/perms fixed",
-    "deployed_at": "2026-07-10T12:46:46+08:00",
-    "files": [
-      "upload/blog/best-male-masturbator-buyer-guide/",
-      "upload/blog/cordless-wand-massager-guide/",
-      "upload/blog/assets/best-male-masturbator-buyer-guide-opus-cover.png",
-      "upload/blog/assets/cordless-wand-massager-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ]
-  },
-  "live_verification": {
-    "status": "pass",
-    "checked_at": "2026-07-10T12:46:46+08:00",
-    "findings": {
-      "https://shoplovanest.com/blog/best-male-masturbator-buyer-guide/": "HTTP 200; correct title/meta; one H1; gtag script/config once; Quick Answer, Red Flags, FAQPage, authority refs, image metadata, daily marker present.",
-      "https://shoplovanest.com/blog/cordless-wand-massager-guide/": "HTTP 200; correct title/meta; one H1; gtag script/config once; Quick Answer, Red Flags, FAQPage, authority refs, image metadata, daily marker present.",
-      "https://shoplovanest.com/blog/": "HTTP 200; links both July 10 articles.",
-      "https://shoplovanest.com/sitemap.xml": "HTTP 200; includes both July 10 URLs, 2026-07-10 lastmod, and image metadata.",
-      "cover_images": "Both opus cover PNG URLs HTTP 200."
-    }
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "sent_at": "2026-07-10T12:46:49+08:00",
-    "tool": "/opt/homebrew/bin/msmtp"
-  },
-  "deployed_at": "2026-07-10T12:45:00+08:00",
-  "verified_at": "2026-07-10T12:45:00+08:00",
-  "email_sent_at": "2026-07-10T12:45:00+08:00",
-  "commit": "7877e4dbc366a3199c9c9822727e097838cec95a",
-  "push_status": "pushed to origin/master after deploy retry (origin/master matches HEAD)",
-  "completed_at": "2026-07-10T12:46:49+08:00"
+  "validated_at": "2026-07-11T08:37:30.275901+08:00"
 }
