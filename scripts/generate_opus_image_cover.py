@@ -48,7 +48,7 @@ def call_image(prompt: str, out: Path, size='1536x1024'):
         'response_format': 'b64_json'
     }
     data=json.dumps(payload).encode()
-    req=urllib.request.Request(url, data=data, headers={'Authorization': f'Bearer {key}', 'Content-Type':'application/json'})
+    req=urllib.request.Request(url, data=data, headers={'Authorization': f'Bearer {key}', 'Content-Type':'application/json', 'User-Agent':'OpenClaw-ShopLovaNest-Blog-Automation/1.0'})
     try:
         with urllib.request.urlopen(req, timeout=300) as r:
             raw=r.read().decode('utf-8','ignore')

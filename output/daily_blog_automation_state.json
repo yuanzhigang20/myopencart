@@ -1,59 +1,59 @@
 {
-  "date": "2026-07-11",
+  "date": "2026-07-12",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "vibrating-cock-ring-buyer-guide",
-      "title": "Vibrating Cock Ring: Fit and Care Guide",
-      "url": "https://shoplovanest.com/blog/vibrating-cock-ring-buyer-guide/",
+      "slug": "adult-toy-subscription-box-guide",
+      "title": "Adult Toy Subscription Box: Privacy Guide",
+      "url": "https://shoplovanest.com/blog/adult-toy-subscription-box-guide/",
       "primary_keywords": [
-        "vibrating cock ring",
-        "vibrating cock rings",
-        "cock ring vibrator",
-        "cock ring with vibrator",
-        "best vibrating cock rings"
+        "adult toy subscription box",
+        "adult toy box subscription",
+        "adult toy box",
+        "toys for adults",
+        "adult toy delivery"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: vibrating cock ring (Volume 12100), vibrating cock rings (1300), cock ring vibrator (2400), cock ring with vibrator (590), best vibrating cock rings (390); output/keyword_to_url_mapping_2026-06-25.csv maps cock-ring intent to education, but the motor, charging, vibration placement, material-stretch, and cleaning intent was not covered by a dedicated page. Created as a buyer-safety guide distinct from the existing cock ring size, silicone, metal, and remote-control cock-ring pages.",
-      "intent_cluster": "Vibrating cock ring buyer intent — sizing and stretch, motor placement, charging or battery design, water-resistance wording, silicone compatibility, cleaning seams, privacy, and checkout risk signals"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult toy subscription box (Volume 140), adult toy box subscription (170), adult toy box (720), adult toy delivery (210), toys for adults (2900); output/keyword_to_url_mapping_2026-06-25.csv maps broad adult-toy shopping to existing buying/gift/storage pages, but recurring subscription-box privacy, consent, billing, item curation, return, and cancellation intent was not covered by a dedicated page. Created as a distinct buyer-safety guide rather than a thin article per keyword.",
+      "intent_cluster": "Adult toy subscription box buyer intent \u2014 recurring shipment privacy, consent-aware curation, billing descriptor, cancellation terms, material disclosure, returns, replacement support, and checkout risk signals"
     },
     {
-      "slug": "bullet-vibrator-charger-guide",
-      "title": "Bullet Vibrator Charger: Battery Care Guide",
-      "url": "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
+      "slug": "thrusting-adult-toy-buyer-guide",
+      "title": "Thrusting Adult Toy: Motion and Care Guide",
+      "url": "https://shoplovanest.com/blog/thrusting-adult-toy-buyer-guide/",
       "primary_keywords": [
-        "bullet vibrator charger",
-        "bullet vibratir charging time",
-        "rechargeable bullet vibrator",
-        "mini bullet vibrator",
-        "vibrating bullet"
+        "thrusting adult toy",
+        "adult toy machine",
+        "sucking adult toy",
+        "automatic male masturbator",
+        "male masturbator machine"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: bullet vibrator charger (Volume 320), bullet vibratir charging time (Volume 260), rechargeable bullet vibrator (210), mini bullet vibrator (590), vibrating bullet (1900), bullet vibrator (14800); output/keyword_to_url_mapping_2026-06-25.csv maps bullet-vibrator intent to beginner education, but charger compatibility, magnetic contacts, charging time, replacement cable, water-resistance, and battery-care ownership intent was not covered by a dedicated page.",
-      "intent_cluster": "Bullet vibrator charging and ownership intent — cable type, magnetic contacts, charging time, battery indicator, replacement charger availability, drying before charging, travel lock, storage, and support transparency"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: thrusting adult toy (Volume 480), adult toy machine (210), sucking adult toy (320), automatic male masturbator (1900), male masturbator machine (390); output/keyword_to_url_mapping_2026-06-25.csv maps many broad device terms to existing buyer guides, but powered-motion ownership intent around movement type, noise, charging, cleaning seams, water-resistance, and warranty risk was not covered by one dedicated page. Created as a distinct practical guide, not an explicit-use article.",
+      "intent_cluster": "Powered-motion adult toy buyer intent \u2014 thrusting or automatic movement type, sound level, motor strain, charging, water-resistance limits, cleaning channels, storage, warranty, and red-flag claims"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-11T08:33:45.205161+08:00",
+  "generated_at": "2026-07-12T08:50:10.268528+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
     "files": [
-      "upload/blog/assets/vibrating-cock-ring-buyer-guide-opus-cover.png",
-      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png"
+      "upload/blog/assets/adult-toy-subscription-box-guide-opus-cover.png",
+      "upload/blog/assets/thrusting-adult-toy-buyer-guide-opus-cover.png"
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "vibrating-cock-ring-buyer-guide": {
-        "title": "Vibrating Cock Ring: Fit and Care Guide",
-        "title_length": 39,
+      "adult-toy-subscription-box-guide": {
+        "title": "Adult Toy Subscription Box: Privacy Guide",
+        "title_length": 41,
         "meta_length": 125,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1367,
+        "word_count": 1282,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -74,13 +74,13 @@
         },
         "quality_score": 100
       },
-      "bullet-vibrator-charger-guide": {
-        "title": "Bullet Vibrator Charger: Battery Care Guide",
-        "title_length": 43,
-        "meta_length": 152,
+      "thrusting-adult-toy-buyer-guide": {
+        "title": "Thrusting Adult Toy: Motion and Care Guide",
+        "title_length": 42,
+        "meta_length": 123,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1248,
+        "word_count": 1215,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -108,52 +108,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-11T08:37:30.275901+08:00"
+    "validated_at": "2026-07-12T10:30:30.644277+08:00"
   },
-  "validated_at": "2026-07-11T08:37:30.275901+08:00",
-  "commit": "9000bafa8ecbc4db63663a274cfd8903cdffc437",
-  "push_status": "pushed to origin/master",
-  "completed_at": "2026-07-11T08:44:24+08:00",
-  "deploy": {
-    "status": "pass",
-    "completed_at": "2026-07-11T08:44:24+08:00",
-    "target": "root@153.75.235.56:/var/www/myopencart/upload",
-    "paths": [
-      "upload/blog/vibrating-cock-ring-buyer-guide/",
-      "upload/blog/bullet-vibrator-charger-guide/",
-      "upload/blog/assets/vibrating-cock-ring-buyer-guide-opus-cover.png",
-      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data; dirs 755; files 644 for changed paths"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-11T08:44:24+08:00",
-    "article_urls": [
-      "https://shoplovanest.com/blog/vibrating-cock-ring-buyer-guide/",
-      "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/"
-    ],
-    "checks": [
-      "HTTP 200",
-      "title/meta present",
-      "exactly one H1",
-      "gtag script/config once",
-      "Quick Answer",
-      "Red Flags",
-      "FAQPage schema",
-      "authority references",
-      "image SEO metadata",
-      "blog index links",
-      "sitemap lastmod and image metadata"
-    ]
-  },
-  "email": {
-    "status": "sent_accepted",
-    "sent_at": "2026-07-11T08:44:24+08:00",
-    "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -t",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-11"
-  }
+  "validated_at": "2026-07-12T10:30:30.644277+08:00"
 }
