@@ -1,7 +1,7 @@
 {
   "date": "2026-07-12",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -16,7 +16,7 @@
         "adult toy delivery"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult toy subscription box (Volume 140), adult toy box subscription (170), adult toy box (720), adult toy delivery (210), toys for adults (2900); output/keyword_to_url_mapping_2026-06-25.csv maps broad adult-toy shopping to existing buying/gift/storage pages, but recurring subscription-box privacy, consent, billing, item curation, return, and cancellation intent was not covered by a dedicated page. Created as a distinct buyer-safety guide rather than a thin article per keyword.",
-      "intent_cluster": "Adult toy subscription box buyer intent \u2014 recurring shipment privacy, consent-aware curation, billing descriptor, cancellation terms, material disclosure, returns, replacement support, and checkout risk signals"
+      "intent_cluster": "Adult toy subscription box buyer intent — recurring shipment privacy, consent-aware curation, billing descriptor, cancellation terms, material disclosure, returns, replacement support, and checkout risk signals"
     },
     {
       "slug": "thrusting-adult-toy-buyer-guide",
@@ -30,7 +30,7 @@
         "male masturbator machine"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: thrusting adult toy (Volume 480), adult toy machine (210), sucking adult toy (320), automatic male masturbator (1900), male masturbator machine (390); output/keyword_to_url_mapping_2026-06-25.csv maps many broad device terms to existing buyer guides, but powered-motion ownership intent around movement type, noise, charging, cleaning seams, water-resistance, and warranty risk was not covered by one dedicated page. Created as a distinct practical guide, not an explicit-use article.",
-      "intent_cluster": "Powered-motion adult toy buyer intent \u2014 thrusting or automatic movement type, sound level, motor strain, charging, water-resistance limits, cleaning channels, storage, warranty, and red-flag claims"
+      "intent_cluster": "Powered-motion adult toy buyer intent — thrusting or automatic movement type, sound level, motor strain, charging, water-resistance limits, cleaning channels, storage, warranty, and red-flag claims"
     }
   ],
   "index_updated": true,
@@ -110,5 +110,61 @@
     "authority_refs": true,
     "validated_at": "2026-07-12T10:30:30.644277+08:00"
   },
-  "validated_at": "2026-07-12T10:30:30.644277+08:00"
+  "validated_at": "2026-07-12T10:30:30.644277+08:00",
+  "commit": "85bf8f6e87dd",
+  "pushed": true,
+  "deploy": {
+    "status": "pass",
+    "deployed_at": "2026-07-12T10:34:19.457130+08:00",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload; owner www-data:www-data; dirs 755; files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-12T10:34:19.457130+08:00",
+    "articles": {
+      "adult-toy-subscription-box-guide": {
+        "http_status": 200,
+        "title_meta": true,
+        "h1_count": 1,
+        "gtag_script_count": 1,
+        "gtag_config_count": 1,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage_jsonld": true,
+        "authority_refs": true,
+        "image_seo_metadata": true
+      },
+      "thrusting-adult-toy-buyer-guide": {
+        "http_status": 200,
+        "title_meta": true,
+        "h1_count": 1,
+        "gtag_script_count": 1,
+        "gtag_config_count": 1,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage_jsonld": true,
+        "authority_refs": true,
+        "image_seo_metadata": true
+      }
+    },
+    "blog_index": {
+      "http_status": 200,
+      "links_new_articles": true
+    },
+    "sitemap": {
+      "http_status": 200,
+      "includes_new_urls": true,
+      "lastmod_2026_07_12": true,
+      "image_metadata": true
+    }
+  },
+  "email": {
+    "status": "sent",
+    "sent_at": "2026-07-12T10:34:19.457130+08:00",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc",
+    "exit_code": 0,
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-12"
+  },
+  "completed_at": "2026-07-12T10:34:19.457130+08:00"
 }

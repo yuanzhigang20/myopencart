@@ -41,4 +41,14 @@ Generated exactly 2 new English SEO blog articles from the mandatory keyword/map
 
 ## Deployment / Live Verification / Email
 
-Status: pending.
+Status: complete.
+
+- Commit: `85bf8f6e87dd` (pushed to `origin/master`)
+- Deploy: targeted rsync completed to `root@153.75.235.56:/var/www/myopencart/upload`; ownership set to `www-data:www-data`; directories `755`; files `644`.
+- Live article verification: pass
+  - https://shoplovanest.com/blog/adult-toy-subscription-box-guide/ — HTTP 200; title/meta present; H1 count 1; Google tag script/config exactly once; Quick Answer, Red Flags, FAQPage schema, authority references, and image SEO metadata present.
+  - https://shoplovanest.com/blog/thrusting-adult-toy-buyer-guide/ — HTTP 200; title/meta present; H1 count 1; Google tag script/config exactly once; Quick Answer, Red Flags, FAQPage schema, authority references, and image SEO metadata present.
+- Blog index: https://shoplovanest.com/blog/ — HTTP 200 and links both new articles.
+- Sitemap: https://shoplovanest.com/sitemap.xml — HTTP 200; includes both new article URLs, `2026-07-12` lastmod, and image metadata.
+- Email: sent/accepted by `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc` to `yuanzhigang20@gmail.com`; exit code 0; subject `ShopLovaNest Daily Blog Deployment Complete - 2026-07-12`.
+- Completed at: 2026-07-12T10:34:19.457130+08:00
