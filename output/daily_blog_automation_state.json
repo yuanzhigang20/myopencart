@@ -1,59 +1,59 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-14",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "adult-toy-subscription-box-guide",
-      "title": "Adult Toy Subscription Box: Privacy Guide",
-      "url": "https://shoplovanest.com/blog/adult-toy-subscription-box-guide/",
+      "slug": "strap-on-adult-toy-buyer-guide",
+      "title": "Strap-On Adult Toy: Fit and Safety Guide",
+      "url": "https://shoplovanest.com/blog/strap-on-adult-toy-buyer-guide/",
       "primary_keywords": [
-        "adult toy subscription box",
-        "adult toy box subscription",
-        "adult toy box",
-        "toys for adults",
-        "adult toy delivery"
+        "strap on adult toys",
+        "adult toy strap on",
+        "strap-on adult toy",
+        "strap on harness",
+        "harness-compatible adult toy"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult toy subscription box (Volume 140), adult toy box subscription (170), adult toy box (720), adult toy delivery (210), toys for adults (2900); output/keyword_to_url_mapping_2026-06-25.csv maps broad adult-toy shopping to existing buying/gift/storage pages, but recurring subscription-box privacy, consent, billing, item curation, return, and cancellation intent was not covered by a dedicated page. Created as a distinct buyer-safety guide rather than a thin article per keyword.",
-      "intent_cluster": "Adult toy subscription box buyer intent — recurring shipment privacy, consent-aware curation, billing descriptor, cancellation terms, material disclosure, returns, replacement support, and checkout risk signals"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv row: strap on adult toys (Volume 320, seed adult toys); output/keyword_to_url_mapping_2026-06-25.csv reviewed alongside existing blog slugs. Existing beginner, couples, anal-toy, material, and privacy guides do not directly answer harness fit, attachment compatibility, base security, fabric care, and consent-first shopping for strap-on systems. Created one clustered buyer-safety guide rather than separate thin pages for wording variants.",
+      "intent_cluster": "Strap-on adult toy buyer intent \u2014 harness sizing, O-ring or attachment compatibility, base security, material disclosure, lubricant compatibility, cleaning fabric and device parts separately, storage, consent, and checkout red flags"
     },
     {
-      "slug": "thrusting-adult-toy-buyer-guide",
-      "title": "Thrusting Adult Toy: Motion and Care Guide",
-      "url": "https://shoplovanest.com/blog/thrusting-adult-toy-buyer-guide/",
+      "slug": "bdsm-adult-toys-consent-safety-guide",
+      "title": "BDSM Adult Toys: Consent and Safety Guide",
+      "url": "https://shoplovanest.com/blog/bdsm-adult-toys-consent-safety-guide/",
       "primary_keywords": [
-        "thrusting adult toy",
-        "adult toy machine",
-        "sucking adult toy",
-        "automatic male masturbator",
-        "male masturbator machine"
+        "adult toys bdsm",
+        "bdsm adult toys",
+        "beginner bdsm toys",
+        "adult restraint toys",
+        "kinky adult toys"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: thrusting adult toy (Volume 480), adult toy machine (210), sucking adult toy (320), automatic male masturbator (1900), male masturbator machine (390); output/keyword_to_url_mapping_2026-06-25.csv maps many broad device terms to existing buyer guides, but powered-motion ownership intent around movement type, noise, charging, cleaning seams, water-resistance, and warranty risk was not covered by one dedicated page. Created as a distinct practical guide, not an explicit-use article.",
-      "intent_cluster": "Powered-motion adult toy buyer intent — thrusting or automatic movement type, sound level, motor strain, charging, water-resistance limits, cleaning channels, storage, warranty, and red-flag claims"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult toys bdsm (Volume 210) and kinky adult toys (Volume 1000, broad adult-toy seed); output/keyword_to_url_mapping_2026-06-25.csv reviewed with existing blog slugs. Existing couples, privacy, material, and storage pages do not directly address consent-first boundaries, quick-release design, restraint material checks, and red-flag claims for BDSM-adjacent shopping. Created one safety-oriented cluster and avoided explicit instruction.",
+      "intent_cluster": "BDSM adult toys buyer intent \u2014 consent-first boundaries, beginner-friendly lower-risk accessories, quick-release or easy-removal design, material and hardware checks, cleaning, storage privacy, and ecommerce red flags"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-12T08:50:10.268528+08:00",
+  "generated_at": "2026-07-14T20:34:11.852891+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
     "files": [
-      "upload/blog/assets/adult-toy-subscription-box-guide-opus-cover.png",
-      "upload/blog/assets/thrusting-adult-toy-buyer-guide-opus-cover.png"
+      "upload/blog/assets/strap-on-adult-toy-buyer-guide-opus-cover.png",
+      "upload/blog/assets/bdsm-adult-toys-consent-safety-guide-opus-cover.png"
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "adult-toy-subscription-box-guide": {
-        "title": "Adult Toy Subscription Box: Privacy Guide",
-        "title_length": 41,
-        "meta_length": 125,
+      "strap-on-adult-toy-buyer-guide": {
+        "title": "Strap-On Adult Toy: Fit and Safety Guide",
+        "title_length": 40,
+        "meta_length": 124,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1282,
+        "word_count": 1250,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -74,13 +74,13 @@
         },
         "quality_score": 100
       },
-      "thrusting-adult-toy-buyer-guide": {
-        "title": "Thrusting Adult Toy: Motion and Care Guide",
-        "title_length": 42,
-        "meta_length": 123,
+      "bdsm-adult-toys-consent-safety-guide": {
+        "title": "BDSM Adult Toys: Consent and Safety Guide",
+        "title_length": 41,
+        "meta_length": 128,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1215,
+        "word_count": 1132,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -108,63 +108,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-12T10:30:30.644277+08:00"
+    "validated_at": "2026-07-14T20:37:17.805740+08:00"
   },
-  "validated_at": "2026-07-12T10:30:30.644277+08:00",
-  "commit": "85bf8f6e87dd",
-  "pushed": true,
-  "deploy": {
-    "status": "pass",
-    "deployed_at": "2026-07-12T10:34:19.457130+08:00",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload; owner www-data:www-data; dirs 755; files 644"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-12T10:34:19.457130+08:00",
-    "articles": {
-      "adult-toy-subscription-box-guide": {
-        "http_status": 200,
-        "title_meta": true,
-        "h1_count": 1,
-        "gtag_script_count": 1,
-        "gtag_config_count": 1,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage_jsonld": true,
-        "authority_refs": true,
-        "image_seo_metadata": true
-      },
-      "thrusting-adult-toy-buyer-guide": {
-        "http_status": 200,
-        "title_meta": true,
-        "h1_count": 1,
-        "gtag_script_count": 1,
-        "gtag_config_count": 1,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage_jsonld": true,
-        "authority_refs": true,
-        "image_seo_metadata": true
-      }
-    },
-    "blog_index": {
-      "http_status": 200,
-      "links_new_articles": true
-    },
-    "sitemap": {
-      "http_status": 200,
-      "includes_new_urls": true,
-      "lastmod_2026_07_12": true,
-      "image_metadata": true
-    }
-  },
-  "email": {
-    "status": "sent",
-    "sent_at": "2026-07-12T10:34:19.457130+08:00",
-    "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc",
-    "exit_code": 0,
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-12"
-  },
-  "completed_at": "2026-07-12T10:34:19.457130+08:00"
+  "validated_at": "2026-07-14T20:37:17.805740+08:00"
 }

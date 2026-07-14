@@ -110,7 +110,10 @@
     "vibrating-cock-ring-buyer-guide:cover",
     "bullet-vibrator-charger-guide:cover",
     "adult-toy-subscription-box-guide:cover",
-    "thrusting-adult-toy-buyer-guide:cover"
+    "thrusting-adult-toy-buyer-guide:cover",
+    "rose-adult-toy-buyer-guide:cover",
+    "strap-on-adult-toy-buyer-guide:cover",
+    "bdsm-adult-toys-consent-safety-guide:cover"
   ],
   "failed": [
     {
@@ -143,6 +146,27 @@
     },
     {
       "slug": "best-male-masturbator-buyer-guide",
+      "kinds": [
+        "cover"
+      ],
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "slug": "prostate-massager-beginner-guide",
+      "kinds": [
+        "cover"
+      ],
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "slug": "prostate-massager-beginner-guide",
+      "kinds": [
+        "cover"
+      ],
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "slug": "prostate-massager-beginner-guide",
       "kinds": [
         "cover"
       ],
