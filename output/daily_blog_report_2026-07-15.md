@@ -77,3 +77,25 @@ Generated files:
 - Deploy: pending
 - Live verification: pending
 - Email: pending
+
+## Completion update — 2026-07-15T19:05:35+0800
+- Commit deployed: `a8bb4f8d78c4`
+- Production deploy: pass via targeted rsync to `root@153.75.235.56:/var/www/myopencart/upload`
+- Permissions fixed: `www-data:www-data`, directories 755, files 644
+- Live verification: pass
+  - https://shoplovanest.com/blog/adult-sensory-toys-comfort-guide/ HTTP 200, one H1, one Google tag, Quick Answer, Red Flags, FAQPage, authority refs, image metadata
+  - https://shoplovanest.com/blog/body-safe-glass-adult-toys-guide/ HTTP 200, one H1, one Google tag, Quick Answer, Red Flags, FAQPage, authority refs, image metadata
+  - Blog index HTTP 200 and links both articles
+  - Sitemap HTTP 200 and includes both URLs plus image metadata
+  - Both generated PNG image assets HTTP 200
+- Email: pending send at this checkpoint
+
+## Email retry blocker — 2026-07-15T19:10:53+0800
+- Production deploy: complete
+- Live verification: pass
+- Email status: blocked, not complete
+- msmtp default route failed with exit code 75: local network timeout connecting to `smtp.gmail.com:587`
+- Connectivity check also timed out for `smtp.gmail.com:465`
+- Temporary `smtp-relay.gmail.com` tests reached the server but failed with exit code 76 / empty reply, so they were not accepted as sent
+- Completion remains pending until `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc` successfully sends to `yuanzhigang20@gmail.com`
+- Next scheduled ShopLovaNest cron should resume from email only, without regenerating extra articles

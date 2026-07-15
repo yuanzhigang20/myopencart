@@ -1,7 +1,7 @@
 {
   "date": "2026-07-15",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "deployed_verified_pending_email",
   "article_quota": 2,
   "articles": [
     {
@@ -16,7 +16,7 @@
         "body-safe sensory adult toys"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult sensory toys (Volume 1300, adult toys seed) and toys that are for adults to chew on (Volume 1000, adult toys seed); output/keyword_to_url_mapping_2026-06-25.csv reviewed and both rows were mapped to broad /blog/adult-toy-buying-guide/ as manual-review P4 terms. Existing material, quiet, beginner, and hypoallergenic guides did not directly answer texture/noise/chew-safety ambiguity, so this creates one clustered buyer-safety guide instead of thin keyword pages.",
-      "intent_cluster": "Adult sensory toy buyer intent \u2014 texture, tactile comfort, oral-use ambiguity, material labeling, quiet/privacy expectations, cleaning limits, storage, and red flags for unsafe chew or medical-style claims"
+      "intent_cluster": "Adult sensory toy buyer intent — texture, tactile comfort, oral-use ambiguity, material labeling, quiet/privacy expectations, cleaning limits, storage, and red flags for unsafe chew or medical-style claims"
     },
     {
       "slug": "body-safe-glass-adult-toys-guide",
@@ -30,7 +30,7 @@
         "nonporous adult toy materials"
       ],
       "keyword_source": "output/merged_keyword_research_2026-06-25.csv row: body safe glass sex toys made of (Volume 720, seed body safe sex toys); output/keyword_to_url_mapping_2026-06-25.csv reviewed and mapped the row to a silicone-cleaning URL as a secondary P2 item, but existing glass and body-safe pages did not provide a dedicated buyer-safety answer to what glass products are made of, inspection, temperature caution, and chip red flags. Created one focused material-care guide to avoid cannibalizing broad material pages.",
-      "intent_cluster": "Body-safe glass adult toy material intent \u2014 what glass products are made of, nonporous claims, borosilicate vs vague glass labels, chip inspection, temperature caution, cleaning, storage, lubricant compatibility, and red flags"
+      "intent_cluster": "Body-safe glass adult toy material intent — what glass products are made of, nonporous claims, borosilicate vs vague glass labels, chip inspection, temperature caution, cleaning, storage, lubricant compatibility, and red flags"
     }
   ],
   "index_updated": true,
@@ -110,16 +110,55 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-15T18:36:39.486178+08:00"
+    "validated_at": "2026-07-15T18:57:03.333094+08:00"
   },
-  "validated_at": "2026-07-15T18:36:39.486178+08:00",
+  "validated_at": "2026-07-15T18:57:03.333094+08:00",
   "report": "output/daily_blog_report_2026-07-15.md",
-  "commit": null,
-  "deploy": null,
-  "live_verification": null,
-  "email": {
-    "status": "not_sent",
-    "reason": "pending commit, deploy, live verification"
+  "commit": "a8bb4f8d78c4",
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
+    "paths": [
+      "upload/blog/adult-sensory-toys-comfort-guide/",
+      "upload/blog/body-safe-glass-adult-toys-guide/",
+      "upload/blog/assets/adult-sensory-toys-comfort-guide-opus-cover.png",
+      "upload/blog/assets/body-safe-glass-adult-toys-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions": "www-data:www-data; dirs 755; files 644",
+    "deployed_at": "2026-07-15T19:10:53+0800"
   },
-  "updated_at": "2026-07-15T18:36:39+08:00"
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-15T19:10:53+0800",
+    "checks": {
+      "article_urls_http_200": true,
+      "blog_index_http_200_and_links": true,
+      "sitemap_http_200_and_urls": true,
+      "sitemap_image_metadata": true,
+      "article_title_meta_h1_gtag": true,
+      "quick_answer_red_flags_faq_authority_refs": true,
+      "image_assets_http_200": true
+    },
+    "urls": [
+      "https://shoplovanest.com/blog/adult-sensory-toys-comfort-guide/",
+      "https://shoplovanest.com/blog/body-safe-glass-adult-toys-guide/",
+      "https://shoplovanest.com/blog/",
+      "https://shoplovanest.com/sitemap.xml"
+    ]
+  },
+  "email": {
+    "status": "blocked_network_timeout",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-15",
+    "email_path": "output/daily_blog_2026-07-15_success.eml",
+    "last_attempt_at": "2026-07-15T19:10:53+0800",
+    "msmtp_exit_codes": [
+      75,
+      76
+    ],
+    "blocker": "smtp.gmail.com:587 and :465 timed out from local network; smtp-relay.gmail.com reachable but returned empty reply with current msmtp account. Do not mark complete until msmtp succeeds."
+  },
+  "updated_at": "2026-07-15T19:10:53+0800"
 }
