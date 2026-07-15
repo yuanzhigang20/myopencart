@@ -1,59 +1,61 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "timezone": "Asia/Shanghai",
   "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "strap-on-adult-toy-buyer-guide",
-      "title": "Strap-On Adult Toy: Fit and Safety Guide",
-      "url": "https://shoplovanest.com/blog/strap-on-adult-toy-buyer-guide/",
+      "slug": "adult-sensory-toys-comfort-guide",
+      "title": "Adult Sensory Toys: Comfort and Safety Guide",
+      "url": "https://shoplovanest.com/blog/adult-sensory-toys-comfort-guide/",
       "primary_keywords": [
-        "strap on adult toys",
-        "adult toy strap on",
-        "strap-on adult toy",
-        "strap on harness",
-        "harness-compatible adult toy"
+        "adult sensory toys",
+        "toys that are for adults to chew on",
+        "texture-focused adult toys",
+        "quiet adult sensory toys",
+        "body-safe sensory adult toys"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv row: strap on adult toys (Volume 320, seed adult toys); output/keyword_to_url_mapping_2026-06-25.csv reviewed alongside existing blog slugs. Existing beginner, couples, anal-toy, material, and privacy guides do not directly answer harness fit, attachment compatibility, base security, fabric care, and consent-first shopping for strap-on systems. Created one clustered buyer-safety guide rather than separate thin pages for wording variants.",
-      "intent_cluster": "Strap-on adult toy buyer intent \u2014 harness sizing, O-ring or attachment compatibility, base security, material disclosure, lubricant compatibility, cleaning fabric and device parts separately, storage, consent, and checkout red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult sensory toys (Volume 1300, adult toys seed) and toys that are for adults to chew on (Volume 1000, adult toys seed); output/keyword_to_url_mapping_2026-06-25.csv reviewed and both rows were mapped to broad /blog/adult-toy-buying-guide/ as manual-review P4 terms. Existing material, quiet, beginner, and hypoallergenic guides did not directly answer texture/noise/chew-safety ambiguity, so this creates one clustered buyer-safety guide instead of thin keyword pages.",
+      "intent_cluster": "Adult sensory toy buyer intent \u2014 texture, tactile comfort, oral-use ambiguity, material labeling, quiet/privacy expectations, cleaning limits, storage, and red flags for unsafe chew or medical-style claims"
     },
     {
-      "slug": "bdsm-adult-toys-consent-safety-guide",
-      "title": "BDSM Adult Toys: Consent and Safety Guide",
-      "url": "https://shoplovanest.com/blog/bdsm-adult-toys-consent-safety-guide/",
+      "slug": "body-safe-glass-adult-toys-guide",
+      "title": "Body-Safe Glass Adult Toys: Care Guide",
+      "url": "https://shoplovanest.com/blog/body-safe-glass-adult-toys-guide/",
       "primary_keywords": [
-        "adult toys bdsm",
-        "bdsm adult toys",
-        "beginner bdsm toys",
-        "adult restraint toys",
-        "kinky adult toys"
+        "body safe glass sex toys made of",
+        "glass adult toys",
+        "body-safe glass adult toys",
+        "glass sex toy care",
+        "nonporous adult toy materials"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult toys bdsm (Volume 210) and kinky adult toys (Volume 1000, broad adult-toy seed); output/keyword_to_url_mapping_2026-06-25.csv reviewed with existing blog slugs. Existing couples, privacy, material, and storage pages do not directly address consent-first boundaries, quick-release design, restraint material checks, and red-flag claims for BDSM-adjacent shopping. Created one safety-oriented cluster and avoided explicit instruction.",
-      "intent_cluster": "BDSM adult toys buyer intent \u2014 consent-first boundaries, beginner-friendly lower-risk accessories, quick-release or easy-removal design, material and hardware checks, cleaning, storage privacy, and ecommerce red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv row: body safe glass sex toys made of (Volume 720, seed body safe sex toys); output/keyword_to_url_mapping_2026-06-25.csv reviewed and mapped the row to a silicone-cleaning URL as a secondary P2 item, but existing glass and body-safe pages did not provide a dedicated buyer-safety answer to what glass products are made of, inspection, temperature caution, and chip red flags. Created one focused material-care guide to avoid cannibalizing broad material pages.",
+      "intent_cluster": "Body-safe glass adult toy material intent \u2014 what glass products are made of, nonporous claims, borosilicate vs vague glass labels, chip inspection, temperature caution, cleaning, storage, lubricant compatibility, and red flags"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-14T20:34:11.852891+08:00",
+  "generated_at": "2026-07-15T08:38:29.823948+08:00",
   "image_generation": {
     "status": "pass",
-    "model": "opus-image-1.5 via configured custom endpoint",
+    "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
+    "generated_at": "2026-07-15T18:36:39+08:00",
     "files": [
-      "upload/blog/assets/strap-on-adult-toy-buyer-guide-opus-cover.png",
-      "upload/blog/assets/bdsm-adult-toys-consent-safety-guide-opus-cover.png"
-    ]
+      "upload/blog/assets/adult-sensory-toys-comfort-guide-opus-cover.png",
+      "upload/blog/assets/body-safe-glass-adult-toys-guide-opus-cover.png"
+    ],
+    "notes": "Legacy /v1/images/generations route was not used. Python urllib direct request hit Cloudflare 403/code 1010; curl-based Responses API request completed successfully for both topic-specific PNG images."
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "strap-on-adult-toy-buyer-guide": {
-        "title": "Strap-On Adult Toy: Fit and Safety Guide",
-        "title_length": 40,
-        "meta_length": 124,
+      "adult-sensory-toys-comfort-guide": {
+        "title": "Adult Sensory Toys: Comfort and Safety Guide",
+        "title_length": 44,
+        "meta_length": 114,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1250,
+        "word_count": 1377,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -74,13 +76,13 @@
         },
         "quality_score": 100
       },
-      "bdsm-adult-toys-consent-safety-guide": {
-        "title": "BDSM Adult Toys: Consent and Safety Guide",
-        "title_length": 41,
-        "meta_length": 128,
+      "body-safe-glass-adult-toys-guide": {
+        "title": "Body-Safe Glass Adult Toys: Care Guide",
+        "title_length": 38,
+        "meta_length": 115,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1132,
+        "word_count": 1225,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -108,7 +110,16 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-14T20:37:17.805740+08:00"
+    "validated_at": "2026-07-15T18:36:39.486178+08:00"
   },
-  "validated_at": "2026-07-14T20:37:17.805740+08:00"
+  "validated_at": "2026-07-15T18:36:39.486178+08:00",
+  "report": "output/daily_blog_report_2026-07-15.md",
+  "commit": null,
+  "deploy": null,
+  "live_verification": null,
+  "email": {
+    "status": "not_sent",
+    "reason": "pending commit, deploy, live verification"
+  },
+  "updated_at": "2026-07-15T18:36:39+08:00"
 }
