@@ -1,61 +1,82 @@
 {
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "timezone": "Asia/Shanghai",
-  "status": "deployed_verified_pending_email",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "adult-sensory-toys-comfort-guide",
-      "title": "Adult Sensory Toys: Comfort and Safety Guide",
-      "url": "https://shoplovanest.com/blog/adult-sensory-toys-comfort-guide/",
+      "slug": "edible-flavored-water-based-lube-guide",
+      "title": "Edible Water-Based Lube: Label Guide",
+      "url": "https://shoplovanest.com/blog/edible-flavored-water-based-lube-guide/",
       "primary_keywords": [
-        "adult sensory toys",
-        "toys that are for adults to chew on",
-        "texture-focused adult toys",
-        "quiet adult sensory toys",
-        "body-safe sensory adult toys"
+        "is water based lube edible",
+        "flavored water based lube",
+        "water based cbd lube",
+        "water based lube and pregnancy",
+        "water based lube for women"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows: adult sensory toys (Volume 1300, adult toys seed) and toys that are for adults to chew on (Volume 1000, adult toys seed); output/keyword_to_url_mapping_2026-06-25.csv reviewed and both rows were mapped to broad /blog/adult-toy-buying-guide/ as manual-review P4 terms. Existing material, quiet, beginner, and hypoallergenic guides did not directly answer texture/noise/chew-safety ambiguity, so this creates one clustered buyer-safety guide instead of thin keyword pages.",
-      "intent_cluster": "Adult sensory toy buyer intent — texture, tactile comfort, oral-use ambiguity, material labeling, quiet/privacy expectations, cleaning limits, storage, and red flags for unsafe chew or medical-style claims"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows reviewed: water based lube and pregnancy (Volume 880), is water based lube edible (Volume 210), flavored water based lube (Volume 210), water based cbd lube (Volume 210), water based lube for women (Volume 390). output/keyword_to_url_mapping_2026-06-25.csv maps these to the water-based lube cluster; existing broad lube pages did not give a dedicated cautious answer for edible/flavored/CBD/pregnancy-adjacent label intent, so this clusters the subintent into one buyer-safety page rather than thin keyword pages.",
+      "intent_cluster": "Edible/flavored water-based lubricant label intent \u2014 oral-use wording, flavor ingredients, sugar/glycerin sensitivity, CBD/cooling claim caution, pregnancy-adjacent disclaimer, barrier/toy compatibility, and checkout red flags"
     },
     {
-      "slug": "body-safe-glass-adult-toys-guide",
-      "title": "Body-Safe Glass Adult Toys: Care Guide",
-      "url": "https://shoplovanest.com/blog/body-safe-glass-adult-toys-guide/",
+      "slug": "smart-adult-toy-privacy-security-guide",
+      "title": "Smart Adult Toy Privacy: Safety Guide",
+      "url": "https://shoplovanest.com/blog/smart-adult-toy-privacy-security-guide/",
       "primary_keywords": [
-        "body safe glass sex toys made of",
-        "glass adult toys",
-        "body-safe glass adult toys",
-        "glass sex toy care",
-        "nonporous adult toy materials"
+        "adult toys being used as malware",
+        "app controlled adult toys",
+        "remote control adult toys",
+        "long distance adult toys",
+        "usb charging adult toys"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv row: body safe glass sex toys made of (Volume 720, seed body safe sex toys); output/keyword_to_url_mapping_2026-06-25.csv reviewed and mapped the row to a silicone-cleaning URL as a secondary P2 item, but existing glass and body-safe pages did not provide a dedicated buyer-safety answer to what glass products are made of, inspection, temperature caution, and chip red flags. Created one focused material-care guide to avoid cannibalizing broad material pages.",
-      "intent_cluster": "Body-safe glass adult toy material intent — what glass products are made of, nonporous claims, borosilicate vs vague glass labels, chip inspection, temperature caution, cleaning, storage, lubricant compatibility, and red flags"
+      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows reviewed: adult toys being used as malware (Volume 1000), plus connected-device clusters already represented in output/keyword_to_url_mapping_2026-06-25.csv such as app-controlled, remote-control, long-distance, and USB-charging adult toy URLs. Existing app and privacy pages discuss setup broadly, but this keyword has a distinct security-risk intent, so this article focuses on malware/privacy/account red flags rather than creating a thin competitor or fear-based page.",
+      "intent_cluster": "Smart adult toy privacy and security intent \u2014 malware concern, app permissions, Bluetooth pairing, account security, updates, data sharing, partner consent, charging cable caution, and red flags before checkout"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-15T08:38:29.823948+08:00",
+  "generated_at": "2026-07-16T10:41:31.132787+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-15T18:36:39+08:00",
+    "generated_at": "2026-07-16T10:41:31.133048+08:00",
     "files": [
-      "upload/blog/assets/adult-sensory-toys-comfort-guide-opus-cover.png",
-      "upload/blog/assets/body-safe-glass-adult-toys-guide-opus-cover.png"
+      "upload/blog/assets/edible-flavored-water-based-lube-guide-opus-cover.png",
+      "upload/blog/assets/smart-adult-toy-privacy-security-guide-opus-cover.png"
     ],
-    "notes": "Legacy /v1/images/generations route was not used. Python urllib direct request hit Cloudflare 403/code 1010; curl-based Responses API request completed successfully for both topic-specific PNG images."
+    "results": [
+      {
+        "file": "upload/blog/assets/edible-flavored-water-based-lube-guide-opus-cover.png",
+        "status": "pass",
+        "response_id": "resp_0d1086436895666d016a584463ef048194ab3a6c6d32960d33",
+        "call_id": "ig_0d1086436895666d016a5844648120819481e51be9378228a4",
+        "size": "1536x1024",
+        "quality": "medium",
+        "output_format": "png",
+        "revised_prompt": "A discreet, ecommerce-friendly editorial hero image for an adult wellness SEO article about edible and flavored water-based personal lubricant label safety. Calm neutral bathroom vanity scene with a plain label bottle marked water-based lubricant, ingredient checklist card, small flavor note card, silicone material sample swatch, clean towel, sealed pouch, and plain shipping box. No people, no nudity, no explicit objects, mature tasteful product photography, soft natural light, beige and sage pa"
+      },
+      {
+        "file": "upload/blog/assets/smart-adult-toy-privacy-security-guide-opus-cover.png",
+        "status": "pass",
+        "response_id": "resp_0d7808a19f9553a8016a5844a0060c8196b4b6158dd5d29a41",
+        "call_id": "ig_0d7808a19f9553a8016a5844a0b304819684d0f2bf02aab98c",
+        "size": "1536x1024",
+        "quality": "medium",
+        "output_format": "png",
+        "revised_prompt": "A discreet ecommerce-friendly editorial hero image for an adult wellness SEO article about smart adult toy privacy and security. Clean desk scene with a smartphone showing generic permission toggles, a Bluetooth icon card, a USB charging cable, a small lock symbol card, a plain storage pouch, a neutral shipping box, and a checklist clipboard. No people, no nudity, no explicit product shapes. Mature, tasteful technology-and-wellness product photography. Soft natural light. Beige, graphite, and sa"
+      }
+    ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "adult-sensory-toys-comfort-guide": {
-        "title": "Adult Sensory Toys: Comfort and Safety Guide",
-        "title_length": 44,
-        "meta_length": 114,
+      "edible-flavored-water-based-lube-guide": {
+        "title": "Edible Water-Based Lube: Label Guide",
+        "title_length": 36,
+        "meta_length": 130,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1377,
+        "word_count": 1164,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -74,15 +95,23 @@
           "topic_specific_depth": true,
           "banned_terms_absent": true
         },
-        "quality_score": 100
+        "quality_score": 100,
+        "authority_links": [
+          "https://www.fda.gov/food/food-labeling-nutrition",
+          "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
+          "https://www.cdc.gov/condoms/",
+          "https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/safer-sex"
+        ],
+        "related_blog_count": 4,
+        "product_support_count": 6
       },
-      "body-safe-glass-adult-toys-guide": {
-        "title": "Body-Safe Glass Adult Toys: Care Guide",
-        "title_length": 38,
-        "meta_length": 115,
+      "smart-adult-toy-privacy-security-guide": {
+        "title": "Smart Adult Toy Privacy: Safety Guide",
+        "title_length": 37,
+        "meta_length": 124,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1225,
+        "word_count": 1124,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -101,7 +130,15 @@
           "topic_specific_depth": true,
           "banned_terms_absent": true
         },
-        "quality_score": 100
+        "quality_score": 100,
+        "authority_links": [
+          "https://consumer.ftc.gov/articles/protect-your-personal-information-and-data",
+          "https://consumer.ftc.gov/articles/online-shopping",
+          "https://www.cisa.gov/news-events/news/securing-bluetooth-devices",
+          "https://pages.nist.gov/800-63-3/sp800-63b.html"
+        ],
+        "related_blog_count": 4,
+        "product_support_count": 6
       }
     },
     "blog_index_links": true,
@@ -110,55 +147,9 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-15T18:57:03.333094+08:00"
+    "validated_at": "2026-07-16T10:42:58.837289+08:00"
   },
-  "validated_at": "2026-07-15T18:57:03.333094+08:00",
-  "report": "output/daily_blog_report_2026-07-15.md",
-  "commit": "a8bb4f8d78c4",
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
-    "paths": [
-      "upload/blog/adult-sensory-toys-comfort-guide/",
-      "upload/blog/body-safe-glass-adult-toys-guide/",
-      "upload/blog/assets/adult-sensory-toys-comfort-guide-opus-cover.png",
-      "upload/blog/assets/body-safe-glass-adult-toys-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data; dirs 755; files 644",
-    "deployed_at": "2026-07-15T19:10:53+0800"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-15T19:10:53+0800",
-    "checks": {
-      "article_urls_http_200": true,
-      "blog_index_http_200_and_links": true,
-      "sitemap_http_200_and_urls": true,
-      "sitemap_image_metadata": true,
-      "article_title_meta_h1_gtag": true,
-      "quick_answer_red_flags_faq_authority_refs": true,
-      "image_assets_http_200": true
-    },
-    "urls": [
-      "https://shoplovanest.com/blog/adult-sensory-toys-comfort-guide/",
-      "https://shoplovanest.com/blog/body-safe-glass-adult-toys-guide/",
-      "https://shoplovanest.com/blog/",
-      "https://shoplovanest.com/sitemap.xml"
-    ]
-  },
-  "email": {
-    "status": "blocked_network_timeout",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-15",
-    "email_path": "output/daily_blog_2026-07-15_success.eml",
-    "last_attempt_at": "2026-07-15T19:10:53+0800",
-    "msmtp_exit_codes": [
-      75,
-      76
-    ],
-    "blocker": "smtp.gmail.com:587 and :465 timed out from local network; smtp-relay.gmail.com reachable but returned empty reply with current msmtp account. Do not mark complete until msmtp succeeds."
-  },
-  "updated_at": "2026-07-15T19:10:53+0800"
+  "validated_at": "2026-07-16T10:42:58.837289+08:00",
+  "report": "output/daily_blog_report_2026-07-16.md",
+  "updated_at": "2026-07-16T10:43:42.025295+08:00"
 }
