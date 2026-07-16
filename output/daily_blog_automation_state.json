@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -151,5 +151,63 @@
   },
   "validated_at": "2026-07-16T10:42:58.837289+08:00",
   "report": "output/daily_blog_report_2026-07-16.md",
-  "updated_at": "2026-07-16T10:43:42.025295+08:00"
+  "updated_at": "2026-07-16T10:49:58.949100+08:00",
+  "commit": "ea144a9d2cec",
+  "push": {
+    "status": "pass",
+    "remote": "origin/master",
+    "pushed_at": "2026-07-16T10:49:35.289101+08:00",
+    "note": "Initial push via default SSH proxy failed twice; retry with direct SSH ProxyCommand=none succeeded."
+  },
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
+    "paths": [
+      "upload/blog/edible-flavored-water-based-lube-guide/",
+      "upload/blog/smart-adult-toy-privacy-security-guide/",
+      "upload/blog/assets/edible-flavored-water-based-lube-guide-opus-cover.png",
+      "upload/blog/assets/smart-adult-toy-privacy-security-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions": "www-data:www-data; dirs 755; files 644",
+    "deployed_at": "2026-07-16T10:49:35.289101+08:00"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-16T10:49:35.289101+08:00",
+    "checks": {
+      "article_urls_http_200": true,
+      "blog_index_http_200_and_links": true,
+      "sitemap_http_200_and_urls": true,
+      "sitemap_image_metadata": true,
+      "article_title_meta_h1_gtag": true,
+      "quick_answer_red_flags_faq_authority_refs": true,
+      "image_assets_http_200": true
+    },
+    "urls": [
+      "https://shoplovanest.com/blog/edible-flavored-water-based-lube-guide/",
+      "https://shoplovanest.com/blog/smart-adult-toy-privacy-security-guide/",
+      "https://shoplovanest.com/blog/",
+      "https://shoplovanest.com/sitemap.xml"
+    ]
+  },
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-16",
+    "email_path": "output/daily_blog_2026-07-16_success.eml",
+    "sent_at": "2026-07-16T10:49:58.949100+08:00",
+    "msmtp_exit_code": 0
+  },
+  "completion_rule": {
+    "exactly_2_new_articles": true,
+    "blog_index_updated": true,
+    "sitemap_updated": true,
+    "content_quality_validation_passed": true,
+    "git_commit_pushed": true,
+    "production_deployed": true,
+    "live_verification_passed": true,
+    "success_email_sent_accepted": true
+  }
 }

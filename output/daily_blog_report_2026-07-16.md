@@ -1,7 +1,7 @@
 # ShopLovaNest Daily Blog Report - 2026-07-16
 
 - Timezone: Asia/Shanghai
-- Status: validated_pending_commit_deploy_email
+- Status: complete
 - Article quota: exactly 2 new articles
 
 ## Selected keyword sources
@@ -56,12 +56,16 @@ Read before topic selection:
 - Failed checks: none
 
 ## Deployment / live verification / email
-- Commit: pending
-- Push: pending
-- Deploy: pending
-- Live verification: pending
-- Email: pending
+- Commit: ea144a9d2cec
+- Push: pass (origin/master)
+- Deploy: pass (targeted rsync; permissions fixed)
+- Live verification: pass (articles, images, blog index, sitemap)
+- Email: sent/accepted by msmtp (exit 0)
 
 ## Notes
 - Skipped irrelevant/misleading groups such as fidget toys, Toy Story/media, pets, store/location-only, competitor/navigation ambiguity, and explicit/pornographic query variants unless a compliant buyer-safety angle existed.
 - Created two distinct, clustered buyer-safety intents rather than one thin page per keyword.
+
+## Completion
+
+All completion-rule items are satisfied: exactly 2 new articles, index/sitemap updated, local quality validation passed, commit pushed, production deployed, live verification passed, and success email accepted by msmtp.
