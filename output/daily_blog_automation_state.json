@@ -1,82 +1,82 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "edible-flavored-water-based-lube-guide",
-      "title": "Edible Water-Based Lube: Label Guide",
-      "url": "https://shoplovanest.com/blog/edible-flavored-water-based-lube-guide/",
+      "slug": "male-masturbator-pink-sleeve-material-guide",
+      "title": "Pink Sleeve Masturbator: Material Guide",
+      "url": "https://shoplovanest.com/blog/male-masturbator-pink-sleeve-material-guide/",
       "primary_keywords": [
-        "is water based lube edible",
-        "flavored water based lube",
-        "water based cbd lube",
-        "water based lube and pregnancy",
-        "water based lube for women"
+        "male masturbator pink sleeve",
+        "male masturbator",
+        "realistic male masturbator",
+        "male masturbator materials",
+        "male masturbator cleaning"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows reviewed: water based lube and pregnancy (Volume 880), is water based lube edible (Volume 210), flavored water based lube (Volume 210), water based cbd lube (Volume 210), water based lube for women (Volume 390). output/keyword_to_url_mapping_2026-06-25.csv maps these to the water-based lube cluster; existing broad lube pages did not give a dedicated cautious answer for edible/flavored/CBD/pregnancy-adjacent label intent, so this clusters the subintent into one buyer-safety page rather than thin keyword pages.",
-      "intent_cluster": "Edible/flavored water-based lubricant label intent \u2014 oral-use wording, flavor ingredients, sugar/glycerin sensitivity, CBD/cooling claim caution, pregnancy-adjacent disclaimer, barrier/toy compatibility, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected male masturbator pink sleeve (Volume 590) from the male masturbator cluster, with supporting mapped intents for male masturbator, realistic male masturbator, materials, and cleaning. Existing broad male masturbator pages cover type and materials generally; this clusters the color/realistic-sleeve shopping intent into one material-and-care page instead of creating thin keyword pages.",
+      "intent_cluster": "Pink/realistic sleeve male masturbator intent \u2014 material transparency, color marketing, texture, cleaning, drying, storage, allergy/scent caution, privacy, and checkout red flags"
     },
     {
-      "slug": "smart-adult-toy-privacy-security-guide",
-      "title": "Smart Adult Toy Privacy: Safety Guide",
-      "url": "https://shoplovanest.com/blog/smart-adult-toy-privacy-security-guide/",
+      "slug": "cock-ring-with-plug-combo-safety-guide",
+      "title": "Cock Ring With Plug: Fit Safety Guide",
+      "url": "https://shoplovanest.com/blog/cock-ring-with-plug-combo-safety-guide/",
       "primary_keywords": [
-        "adult toys being used as malware",
-        "app controlled adult toys",
-        "remote control adult toys",
-        "long distance adult toys",
-        "usb charging adult toys"
+        "cock ring butt plug",
+        "cock ring dildo",
+        "cock and ball ring",
+        "cock ring metal",
+        "adjustable cock ring"
       ],
-      "keyword_source": "output/merged_keyword_research_2026-06-25.csv rows reviewed: adult toys being used as malware (Volume 1000), plus connected-device clusters already represented in output/keyword_to_url_mapping_2026-06-25.csv such as app-controlled, remote-control, long-distance, and USB-charging adult toy URLs. Existing app and privacy pages discuss setup broadly, but this keyword has a distinct security-risk intent, so this article focuses on malware/privacy/account red flags rather than creating a thin competitor or fear-based page.",
-      "intent_cluster": "Smart adult toy privacy and security intent \u2014 malware concern, app permissions, Bluetooth pairing, account security, updates, data sharing, partner consent, charging cable caution, and red flags before checkout"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected cock ring butt plug (Volume 260), cock ring dildo (Volume 260), cock and ball ring (Volume 1300), cock ring metal (Volume 260), and adjustable cock ring (Volume 1000) from the couples accessories cluster. Existing cock ring pages cover general sizing and material choices; this clusters combination-accessory intent with a cautious fit/base/material checklist.",
+      "intent_cluster": "Cock ring plus plug/combo accessory intent \u2014 sizing, flared-base safety, adjustable vs rigid fit, material compatibility, cleaning, partner consent, and checkout red flags"
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-16T10:41:31.132787+08:00",
+  "generated_at": "2026-07-17T08:35:39.036731+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-16T10:41:31.133048+08:00",
+    "generated_at": "2026-07-17T08:35:39.036964+08:00",
     "files": [
-      "upload/blog/assets/edible-flavored-water-based-lube-guide-opus-cover.png",
-      "upload/blog/assets/smart-adult-toy-privacy-security-guide-opus-cover.png"
+      "upload/blog/assets/male-masturbator-pink-sleeve-material-guide-opus-cover.png",
+      "upload/blog/assets/cock-ring-with-plug-combo-safety-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/edible-flavored-water-based-lube-guide-opus-cover.png",
+        "file": "upload/blog/assets/male-masturbator-pink-sleeve-material-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0d1086436895666d016a584463ef048194ab3a6c6d32960d33",
-        "call_id": "ig_0d1086436895666d016a5844648120819481e51be9378228a4",
+        "response_id": "resp_026b07b16c5c5427016a597876008c819987c08c075f223bda",
+        "call_id": "ig_026b07b16c5c5427016a59787908cc8199b03d30921f0627d4",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "A discreet, ecommerce-friendly editorial hero image for an adult wellness SEO article about edible and flavored water-based personal lubricant label safety. Calm neutral bathroom vanity scene with a plain label bottle marked water-based lubricant, ingredient checklist card, small flavor note card, silicone material sample swatch, clean towel, sealed pouch, and plain shipping box. No people, no nudity, no explicit objects, mature tasteful product photography, soft natural light, beige and sage pa"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about pink sleeve male masturbator material safety. Neutral tabletop with a plain soft pink material sample sleeve shown abstractly, a material checklist card, a folded cleaning towel, a simple drying stand icon/object, a storage pouch, and a plain shipping box. No people, no nudity, no explicit use, mature tasteful product photography, soft natural light, beige, graphite, and muted pink palette. Clean composition, pr"
       },
       {
-        "file": "upload/blog/assets/smart-adult-toy-privacy-security-guide-opus-cover.png",
+        "file": "upload/blog/assets/cock-ring-with-plug-combo-safety-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0d7808a19f9553a8016a5844a0060c8196b4b6158dd5d29a41",
-        "call_id": "ig_0d7808a19f9553a8016a5844a0b304819684d0f2bf02aab98c",
+        "response_id": "resp_01ed8546cf7ad9dd016a5978a7892c8199bad052c07d9ca0d3",
+        "call_id": "ig_01ed8546cf7ad9dd016a5978a848a081999d4440fff729390a",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "A discreet ecommerce-friendly editorial hero image for an adult wellness SEO article about smart adult toy privacy and security. Clean desk scene with a smartphone showing generic permission toggles, a Bluetooth icon card, a USB charging cable, a small lock symbol card, a plain storage pouch, a neutral shipping box, and a checklist clipboard. No people, no nudity, no explicit product shapes. Mature, tasteful technology-and-wellness product photography. Soft natural light. Beige, graphite, and sa"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about a cock ring with plug combo safety. Neutral tabletop product photography composition with: an abstract ring sizing card, a flared-base safety diagram card, a silicone material swatch, a small ruler, a cleaning cloth, a storage pouch, and a plain shipping box. No people, no nudity, no explicit anatomy, no explicit sexual act depiction. Mature, tasteful, clinically clean product photography. Soft natural light, be"
       }
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "edible-flavored-water-based-lube-guide": {
-        "title": "Edible Water-Based Lube: Label Guide",
-        "title_length": 36,
-        "meta_length": 130,
+      "male-masturbator-pink-sleeve-material-guide": {
+        "title": "Pink Sleeve Masturbator: Material Guide",
+        "title_length": 39,
+        "meta_length": 125,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1164,
+        "word_count": 1934,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -97,21 +97,21 @@
         },
         "quality_score": 100,
         "authority_links": [
-          "https://www.fda.gov/food/food-labeling-nutrition",
           "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
-          "https://www.cdc.gov/condoms/",
-          "https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/safer-sex"
+          "https://consumer.ftc.gov/articles/online-shopping",
+          "https://www.cdc.gov/handwashing/",
+          "https://www.saferproducts.gov/"
         ],
         "related_blog_count": 4,
-        "product_support_count": 6
+        "product_support_count": 3
       },
-      "smart-adult-toy-privacy-security-guide": {
-        "title": "Smart Adult Toy Privacy: Safety Guide",
+      "cock-ring-with-plug-combo-safety-guide": {
+        "title": "Cock Ring With Plug: Fit Safety Guide",
         "title_length": 37,
-        "meta_length": 124,
+        "meta_length": 126,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1124,
+        "word_count": 1967,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -132,13 +132,13 @@
         },
         "quality_score": 100,
         "authority_links": [
-          "https://consumer.ftc.gov/articles/protect-your-personal-information-and-data",
-          "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.cisa.gov/news-events/news/securing-bluetooth-devices",
-          "https://pages.nist.gov/800-63-3/sp800-63b.html"
+          "https://www.cdc.gov/condoms/",
+          "https://health.clevelandclinic.org/sexual-health",
+          "https://www.nhs.uk/live-well/sexual-health/",
+          "https://consumer.ftc.gov/articles/online-shopping"
         ],
         "related_blog_count": 4,
-        "product_support_count": 6
+        "product_support_count": 3
       }
     },
     "blog_index_links": true,
@@ -147,67 +147,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-16T10:42:58.837289+08:00"
+    "validated_at": "2026-07-17T08:37:15.504854+08:00"
   },
-  "validated_at": "2026-07-16T10:42:58.837289+08:00",
-  "report": "output/daily_blog_report_2026-07-16.md",
-  "updated_at": "2026-07-16T10:49:58.949100+08:00",
-  "commit": "ea144a9d2cec",
-  "push": {
-    "status": "pass",
-    "remote": "origin/master",
-    "pushed_at": "2026-07-16T10:49:35.289101+08:00",
-    "note": "Initial push via default SSH proxy failed twice; retry with direct SSH ProxyCommand=none succeeded."
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
-    "paths": [
-      "upload/blog/edible-flavored-water-based-lube-guide/",
-      "upload/blog/smart-adult-toy-privacy-security-guide/",
-      "upload/blog/assets/edible-flavored-water-based-lube-guide-opus-cover.png",
-      "upload/blog/assets/smart-adult-toy-privacy-security-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data; dirs 755; files 644",
-    "deployed_at": "2026-07-16T10:49:35.289101+08:00"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-16T10:49:35.289101+08:00",
-    "checks": {
-      "article_urls_http_200": true,
-      "blog_index_http_200_and_links": true,
-      "sitemap_http_200_and_urls": true,
-      "sitemap_image_metadata": true,
-      "article_title_meta_h1_gtag": true,
-      "quick_answer_red_flags_faq_authority_refs": true,
-      "image_assets_http_200": true
-    },
-    "urls": [
-      "https://shoplovanest.com/blog/edible-flavored-water-based-lube-guide/",
-      "https://shoplovanest.com/blog/smart-adult-toy-privacy-security-guide/",
-      "https://shoplovanest.com/blog/",
-      "https://shoplovanest.com/sitemap.xml"
-    ]
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-16",
-    "email_path": "output/daily_blog_2026-07-16_success.eml",
-    "sent_at": "2026-07-16T10:49:58.949100+08:00",
-    "msmtp_exit_code": 0
-  },
-  "completion_rule": {
-    "exactly_2_new_articles": true,
-    "blog_index_updated": true,
-    "sitemap_updated": true,
-    "content_quality_validation_passed": true,
-    "git_commit_pushed": true,
-    "production_deployed": true,
-    "live_verification_passed": true,
-    "success_email_sent_accepted": true
-  }
+  "validated_at": "2026-07-17T08:37:15.504854+08:00"
 }
