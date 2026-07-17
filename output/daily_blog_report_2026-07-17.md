@@ -1,6 +1,6 @@
 # Daily Blog Automation Report - 2026-07-17
 
-Status: deployed and live verified; blocked only on msmtp email acceptance.
+Status: complete — deployed, live verified, and success email accepted by msmtp.
 Timezone: Asia/Shanghai
 Quota: exactly 2 new articles
 
@@ -62,11 +62,14 @@ Live verification: pass at 2026-07-17T08:41:09.482402+08:00
 
 ## Email status
 
-Blocked: `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -t < output/daily_blog_2026-07-17_success.eml` exited 76 twice with:
+Complete: success email accepted by `/opt/homebrew/bin/msmtp` at 2026-07-17T10:31:52+08:00.
 
-```text
-msmtp: the server sent an empty reply
-msmtp: could not send mail (account default from /Users/grant/.msmtprc)
-```
+- Recipient: `yuanzhigang20@gmail.com`
+- Subject: `ShopLovaNest Daily Blog Deployment Complete - 2026-07-17`
+- Email file: `output/daily_blog_2026-07-17_success.eml`
+- Final msmtp exit code: 0
+- Retry note: the default port 587 path returned `the server sent an empty reply` (EX_PROTOCOL 76), so the final retry used a temporary msmtp config derived from `/Users/grant/.msmtprc` with `smtp.gmail.com:465` and `tls_starttls off`. The existing Keychain `passwordeval` was used unchanged; no password was printed or stored.
 
-Completion remains incomplete until msmtp exits 0 and the success email is accepted.
+## Completion
+
+All completion criteria are now true: exactly 2 new keyword-sourced articles, blog index and sitemap updated, content/image/sitemap validation passed, git commit pushed, production deployed, live verification passed, and success email accepted by msmtp.

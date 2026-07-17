@@ -1,7 +1,7 @@
 {
   "date": "2026-07-17",
   "timezone": "Asia/Shanghai",
-  "status": "blocked_email_retry_needed",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -16,7 +16,7 @@
         "male masturbator cleaning"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected male masturbator pink sleeve (Volume 590) from the male masturbator cluster, with supporting mapped intents for male masturbator, realistic male masturbator, materials, and cleaning. Existing broad male masturbator pages cover type and materials generally; this clusters the color/realistic-sleeve shopping intent into one material-and-care page instead of creating thin keyword pages.",
-      "intent_cluster": "Pink/realistic sleeve male masturbator intent \u2014 material transparency, color marketing, texture, cleaning, drying, storage, allergy/scent caution, privacy, and checkout red flags"
+      "intent_cluster": "Pink/realistic sleeve male masturbator intent — material transparency, color marketing, texture, cleaning, drying, storage, allergy/scent caution, privacy, and checkout red flags"
     },
     {
       "slug": "cock-ring-with-plug-combo-safety-guide",
@@ -30,7 +30,7 @@
         "adjustable cock ring"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected cock ring butt plug (Volume 260), cock ring dildo (Volume 260), cock and ball ring (Volume 1300), cock ring metal (Volume 260), and adjustable cock ring (Volume 1000) from the couples accessories cluster. Existing cock ring pages cover general sizing and material choices; this clusters combination-accessory intent with a cautious fit/base/material checklist.",
-      "intent_cluster": "Cock ring plus plug/combo accessory intent \u2014 sizing, flared-base safety, adjustable vs rigid fit, material compatibility, cleaning, partner consent, and checkout red flags"
+      "intent_cluster": "Cock ring plus plug/combo accessory intent — sizing, flared-base safety, adjustable vs rigid fit, material compatibility, cleaning, partner consent, and checkout red flags"
     }
   ],
   "index_updated": true,
@@ -151,7 +151,7 @@
   },
   "validated_at": "2026-07-17T08:37:15.504854+08:00",
   "report": "output/daily_blog_report_2026-07-17.md",
-  "updated_at": "2026-07-17T08:42:02.517556+08:00",
+  "updated_at": "2026-07-17T10:31:52+08:00",
   "commit": "25e148679451",
   "push": {
     "status": "pass",
@@ -192,13 +192,14 @@
     ]
   },
   "email": {
-    "status": "failed",
+    "status": "sent_accepted",
     "recipient": "yuanzhigang20@gmail.com",
     "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-17",
     "email_path": "output/daily_blog_2026-07-17_success.eml",
-    "attempted_at": "2026-07-17T08:42:02.517556+08:00",
-    "msmtp_exit_code": 76,
-    "error": "msmtp: the server sent an empty reply; could not send mail (account default from /Users/grant/.msmtprc). Retried once with same result. Do not mark complete until msmtp exits 0."
+    "sent_at": "2026-07-17T10:31:52+08:00",
+    "method": "/opt/homebrew/bin/msmtp with temporary port 465 SMTPS config derived from /Users/grant/.msmtprc; passwordeval/keychain unchanged; Gmail accepted message (msmtp exit 0)",
+    "msmtp_exit_code": 0,
+    "retry_notes": "Port 587 returned empty reply (EX_PROTOCOL 76) during earlier attempts; retry via smtp.gmail.com:465 with tls_starttls off succeeded."
   },
   "completion_rule": {
     "exactly_2_new_articles": true,
@@ -208,6 +209,6 @@
     "git_commit_pushed": true,
     "production_deployed": true,
     "live_verification_passed": true,
-    "success_email_sent_accepted": false
+    "success_email_sent_accepted": true
   }
 }
