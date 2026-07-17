@@ -1,0 +1,2 @@
+msmtp: the server sent an empty reply
+msmtp: could not send mail (account default from /Users/grant/.msmtprc)

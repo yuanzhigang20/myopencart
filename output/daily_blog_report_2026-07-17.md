@@ -1,6 +1,6 @@
 # Daily Blog Automation Report - 2026-07-17
 
-Status: generated and locally validated; deployment/email pending at report creation.
+Status: deployed and live verified; blocked only on msmtp email acceptance.
 Timezone: Asia/Shanghai
 Quota: exactly 2 new articles
 
@@ -51,4 +51,22 @@ All checks passed with quality score 100 for both articles:
 
 ## Deployment and verification
 
-Pending until commit, push, rsync deploy, live verification, and msmtp success email complete.
+Commit: 25e148679451
+Push: pass to origin/master
+Deploy: pass via targeted rsync to production; permissions fixed to www-data:www-data, dirs 755, files 644.
+Live verification: pass at 2026-07-17T08:41:09.482402+08:00
+- Article URLs HTTP 200: true
+- Blog index HTTP 200 and links both new articles: true
+- Sitemap HTTP 200 with both URLs, 2026-07-17 lastmod, and image metadata: true
+- Article title/meta/H1/gtag, Quick Answer, Red Flags, FAQ schema, authority references, and image metadata: true
+
+## Email status
+
+Blocked: `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -t < output/daily_blog_2026-07-17_success.eml` exited 76 twice with:
+
+```text
+msmtp: the server sent an empty reply
+msmtp: could not send mail (account default from /Users/grant/.msmtprc)
+```
+
+Completion remains incomplete until msmtp exits 0 and the success email is accepted.
