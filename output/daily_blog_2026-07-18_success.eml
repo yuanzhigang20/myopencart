@@ -1,0 +1,33 @@
+From: ShopLovaNest Automation <yuanzhigang20@gmail.com>
+To: yuanzhigang20@gmail.com
+Date: Sat, 18 Jul 2026 10:40:48 +0800
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-18
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest daily blog deployment is complete for 2026-07-18.
+
+Articles:
+- Silicone Lube With Silicone Toys?
+  URL: https://shoplovanest.com/blog/silicone-lube-with-silicone-toys-guide/
+  Primary keywords: silicone lube with silicone toys, lube for silicone toys, best lube for silicone toys, silicone lube, toy-compatible lube
+
+- Rubber Cock Ring: Fit & Material Guide
+  URL: https://shoplovanest.com/blog/rubber-cock-ring-material-fit-guide/
+  Primary keywords: rubber cock ring, good cock rings, cock ring benefits, adjustable cock ring, silicone cock ring
+
+Commit: 98da3c7ba3
+
+Verification summary:
+- Local content validation passed with quality score 100 for both articles.
+- Both article URLs returned HTTP 200 live.
+- Article title/meta/H1/Google tag checks passed.
+- Quick Answer, Red Flags, FAQPage schema, authority references, and image SEO metadata verified.
+- Image assets returned HTTP 200.
+- Blog index returned HTTP 200 and links both new articles.
+- Sitemap returned HTTP 200 and includes both new URLs, 2026-07-18 lastmod, and image metadata.
+
+Deployment summary:
+- Targeted rsync deployed only the two blog folders, two image assets, blog index, and sitemap.
+- Production permissions fixed to www-data:www-data, dirs 755, files 644.
+
+Email status: sending via /opt/homebrew/bin/msmtp after successful live verification.

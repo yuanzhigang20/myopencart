@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Automation Report - 2026-07-18
 
-Status: local validation passed; pending commit, push, deployment, live verification, and email.
+Status: COMPLETE - generated, committed, pushed, deployed, live-verified, and success email accepted by msmtp.
 Timezone: Asia/Shanghai
 
 ## Keyword source inspection
@@ -63,10 +63,21 @@ Authority references used include:
 - `upload/blog/index.html` updated with both new article cards.
 - `upload/sitemap.xml` updated with both article URLs, blog index lastmod, article lastmod, and sitemap image metadata.
 
-## Pending steps
+## Git, deployment, and live verification
 
-- Git commit and push.
-- Targeted rsync deployment to production.
-- Production ownership/permission fix.
-- Live verification for article pages, blog index, sitemap, and image assets.
-- Success email via `/opt/homebrew/bin/msmtp` after live verification.
+- Commit: `98da3c7ba3` (state update) after content commit `c555bccdc0`.
+- Push: `origin/master` passed.
+- Deployment: targeted rsync to `root@153.75.235.56:/var/www/myopencart/upload` for only the two blog folders, two image assets, blog index, and sitemap.
+- Permissions: production paths set to `www-data:www-data`; directories `755`; files `644`.
+- Live verification passed at 2026-07-18T10:40:04+08:00: both article URLs HTTP 200, blog index links both pages, sitemap includes URLs/lastmod/image metadata, article title/meta/H1/gtag checks passed, Quick Answer/Red Flags/FAQ/authority references present, image SEO metadata present, and image assets HTTP 200.
+
+## Email
+
+- Recipient: yuanzhigang20@gmail.com
+- Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-18
+- Message file: `output/daily_blog_2026-07-18_success.eml`
+- Status: sent/accepted by `/opt/homebrew/bin/msmtp` (exit 0) using temporary port 465 SMTPS config derived from `/Users/grant/.msmtprc`; Keychain passwordeval unchanged.
+
+## Completion rule
+
+All required conditions are complete: exactly 2 new articles generated from keyword files, blog index updated, sitemap updated with image metadata, content validation passed, git commit pushed, production deployed, live verification passed, and success email sent/accepted.
