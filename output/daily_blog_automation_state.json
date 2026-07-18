@@ -1,7 +1,7 @@
 {
   "date": "2026-07-18",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit",
+  "status": "pushed_pending_deploy",
   "article_quota": 2,
   "articles": [
     {
@@ -299,5 +299,11 @@
     "authority_refs": true,
     "validated_at": "2026-07-18T10:36:42.277421+08:00"
   },
-  "validated_at": "2026-07-18T10:36:42.277421+08:00"
+  "validated_at": "2026-07-18T10:36:42.277421+08:00",
+  "commit": "c555bccdc0",
+  "push": {
+    "status": "pass",
+    "remote": "origin/master",
+    "pushed_at": "2026-07-18T10:38:07.794187+08:00"
+  }
 }
