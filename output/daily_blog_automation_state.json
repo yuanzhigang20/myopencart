@@ -1,82 +1,232 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-18",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "male-masturbator-pink-sleeve-material-guide",
-      "title": "Pink Sleeve Masturbator: Material Guide",
-      "url": "https://shoplovanest.com/blog/male-masturbator-pink-sleeve-material-guide/",
+      "slug": "silicone-lube-with-silicone-toys-guide",
+      "title": "Silicone Lube With Silicone Toys?",
+      "url": "https://shoplovanest.com/blog/silicone-lube-with-silicone-toys-guide/",
       "primary_keywords": [
-        "male masturbator pink sleeve",
-        "male masturbator",
-        "realistic male masturbator",
-        "male masturbator materials",
-        "male masturbator cleaning"
+        "silicone lube with silicone toys",
+        "lube for silicone toys",
+        "best lube for silicone toys",
+        "silicone lube",
+        "toy-compatible lube"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected male masturbator pink sleeve (Volume 590) from the male masturbator cluster, with supporting mapped intents for male masturbator, realistic male masturbator, materials, and cleaning. Existing broad male masturbator pages cover type and materials generally; this clusters the color/realistic-sleeve shopping intent into one material-and-care page instead of creating thin keyword pages.",
-      "intent_cluster": "Pink/realistic sleeve male masturbator intent — material transparency, color marketing, texture, cleaning, drying, storage, allergy/scent caution, privacy, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected silicone lube with silicone toys (Volume 480), lube for silicone toys (Volume 390), and best lube for silicone toys (Volume 390) from the silicone-lube compatibility cluster. Existing water-based and silicone-lube pages cover broad basics; this article clusters the specific silicone-toy compatibility intent instead of creating thin pages for each phrase.",
+      "intent_cluster": "Silicone lubricant plus silicone toy compatibility intent \u2014 material interaction risk, patch testing limits, water-based fallback, condoms/barriers, cleaning, warranty, and checkout red flags"
     },
     {
-      "slug": "cock-ring-with-plug-combo-safety-guide",
-      "title": "Cock Ring With Plug: Fit Safety Guide",
-      "url": "https://shoplovanest.com/blog/cock-ring-with-plug-combo-safety-guide/",
+      "slug": "rubber-cock-ring-material-fit-guide",
+      "title": "Rubber Cock Ring: Fit & Material Guide",
+      "url": "https://shoplovanest.com/blog/rubber-cock-ring-material-fit-guide/",
       "primary_keywords": [
-        "cock ring butt plug",
-        "cock ring dildo",
-        "cock and ball ring",
-        "cock ring metal",
-        "adjustable cock ring"
+        "rubber cock ring",
+        "good cock rings",
+        "cock ring benefits",
+        "adjustable cock ring",
+        "silicone cock ring"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected cock ring butt plug (Volume 260), cock ring dildo (Volume 260), cock and ball ring (Volume 1300), cock ring metal (Volume 260), and adjustable cock ring (Volume 1000) from the couples accessories cluster. Existing cock ring pages cover general sizing and material choices; this clusters combination-accessory intent with a cautious fit/base/material checklist.",
-      "intent_cluster": "Cock ring plus plug/combo accessory intent — sizing, flared-base safety, adjustable vs rigid fit, material compatibility, cleaning, partner consent, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rubber cock ring (Volume 480), good cock rings (Volume 480), and supporting cock ring benefits (Volume 590), adjustable cock ring, and silicone cock ring terms from the cock-ring cluster. Existing size, silicone, metal, and combo pages cover adjacent intents; this article targets the distinct rubber/stretch-material buyer intent without duplicating rigid metal or combo-accessory pages.",
+      "intent_cluster": "Rubber/stretch cock ring material intent \u2014 latex vs synthetic rubber ambiguity, stretch, quick release, sizing, time limits, cleaning, skin sensitivity, and checkout red flags"
+    }
+  ],
+  "keyword_source_files_read": [
+    "output/merged_keyword_research_2026-06-25.csv",
+    "output/keyword_to_url_mapping_2026-06-25.csv"
+  ],
+  "keyword_source_matches": [
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "cock ring benefits",
+      "Intent": "Informational",
+      "Volume": "590",
+      "Trend": "0.82,0.82,1.00,0.82,0.82,0.54,0.29,0.44,0.67,0.44,0.44,0.54",
+      "Keyword Difficulty": "45",
+      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "good cock rings",
+      "Intent": "Informational, Commercial",
+      "Volume": "480",
+      "Trend": "0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00",
+      "Keyword Difficulty": "30",
+      "SERP Features": "Sitelinks, AI Overview"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "rubber cock ring",
+      "Intent": "Informational, Commercial",
+      "Volume": "480",
+      "Trend": "0.08,0.08,0.13,0.07,0.20,0.11,0.07,1.00,0.08,0.08,0.07,0.08",
+      "Keyword Difficulty": "45",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "silicone lube",
+      "Keyword": "silicone lube with silicone toys",
+      "Intent": "Informational",
+      "Volume": "480",
+      "Trend": "0.36,0.44,0.44,0.66,0.81,0.81,0.81,0.81,1.00,0.66,0.05,0.66",
+      "Keyword Difficulty": "19",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "silicone lube",
+      "Keyword": "best lube for silicone toys",
+      "Intent": "Commercial",
+      "Volume": "390",
+      "Trend": "0.65,0.80,0.80,1.00,0.80,0.80,0.80,0.65,0.65,0.80,0.65,0.80",
+      "Keyword Difficulty": "29",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "silicone lube",
+      "Keyword": "lube for silicone toys",
+      "Intent": "Informational",
+      "Volume": "390",
+      "Trend": "1.00,0.29,0.29,0.81,1.00,0.81,0.66,0.23,0.36,0.81,0.66,0.66",
+      "Keyword Difficulty": "32",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "cock ring benefits",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "good cock rings",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "rubber cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "silicone lube with silicone toys",
+      "Search intent": "How-to",
+      "Topic cluster": "Cleaning and storage",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/how-to-clean-silicone-sex-toys/",
+      "Assigned article title": "How to Clean Silicone Sex Toys Without Damaging Them",
+      "Action": "Update existing article",
+      "Reason": "Separate silicone material care from electronics care. Commercial value: Medium; difficulty: Easy.",
+      "Priority": "P2",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "best lube for silicone toys",
+      "Search intent": "How-to",
+      "Topic cluster": "Cleaning and storage",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/how-to-clean-silicone-sex-toys/",
+      "Assigned article title": "How to Clean Silicone Sex Toys Without Damaging Them",
+      "Action": "Update existing article",
+      "Reason": "Separate silicone material care from electronics care. Commercial value: Medium; difficulty: Easy.",
+      "Priority": "P2",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "lube for silicone toys",
+      "Search intent": "How-to",
+      "Topic cluster": "Cleaning and storage",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/how-to-clean-silicone-sex-toys/",
+      "Assigned article title": "How to Clean Silicone Sex Toys Without Damaging Them",
+      "Action": "Update existing article",
+      "Reason": "Separate silicone material care from electronics care. Commercial value: Medium; difficulty: Easy.",
+      "Priority": "P2",
+      "Notes": "Mapped from existing keyword cluster file."
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-17T08:35:39.036731+08:00",
+  "generated_at": "2026-07-18T10:35:37.576945+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-17T08:35:39.036964+08:00",
+    "generated_at": "2026-07-18T10:35:37.577159+08:00",
     "files": [
-      "upload/blog/assets/male-masturbator-pink-sleeve-material-guide-opus-cover.png",
-      "upload/blog/assets/cock-ring-with-plug-combo-safety-guide-opus-cover.png"
+      "upload/blog/assets/silicone-lube-with-silicone-toys-guide-opus-cover.png",
+      "upload/blog/assets/rubber-cock-ring-material-fit-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/male-masturbator-pink-sleeve-material-guide-opus-cover.png",
+        "file": "upload/blog/assets/silicone-lube-with-silicone-toys-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_026b07b16c5c5427016a597876008c819987c08c075f223bda",
-        "call_id": "ig_026b07b16c5c5427016a59787908cc8199b03d30921f0627d4",
+        "response_id": "resp_0dcefb625df33329016a5ae612caec8199b89dcf739e98d37d",
+        "call_id": "ig_0dcefb625df33329016a5ae613947c81998f6ff27b045fdf93",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about pink sleeve male masturbator material safety. Neutral tabletop with a plain soft pink material sample sleeve shown abstractly, a material checklist card, a folded cleaning towel, a simple drying stand icon/object, a storage pouch, and a plain shipping box. No people, no nudity, no explicit use, mature tasteful product photography, soft natural light, beige, graphite, and muted pink palette. Clean composition, pr"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about silicone lube compatibility with silicone toys. Neutral tabletop scene with abstract silicone material swatch cards, a water-based fallback bottle, a small patch-test card, a cleaning cloth, a label checklist, and a plain storage pouch. No people, no nudity, no explicit anatomy, mature tasteful product photography, soft natural light, ivory, graphite, and muted blue palette. Clean composition, realistic studio t"
       },
       {
-        "file": "upload/blog/assets/cock-ring-with-plug-combo-safety-guide-opus-cover.png",
+        "file": "upload/blog/assets/rubber-cock-ring-material-fit-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_01ed8546cf7ad9dd016a5978a7892c8199bad052c07d9ca0d3",
-        "call_id": "ig_01ed8546cf7ad9dd016a5978a848a081999d4440fff729390a",
+        "response_id": "resp_08c08a3b9ce9e575016a5ae647f63c819989ce400ba698b45a",
+        "call_id": "ig_08c08a3b9ce9e575016a5ae648979c8199abec94c5aa76e030",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about a cock ring with plug combo safety. Neutral tabletop product photography composition with: an abstract ring sizing card, a flared-base safety diagram card, a silicone material swatch, a small ruler, a cleaning cloth, a storage pouch, and a plain shipping box. No people, no nudity, no explicit anatomy, no explicit sexual act depiction. Mature, tasteful, clinically clean product photography. Soft natural light, be"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about rubber cock ring fit and material safety. Neutral tabletop composition with abstract stretch material sample rings, a measuring strip, a quick-release checklist card, a cleaning cloth, a silicone comparison swatch, and a plain storage pouch. No people, no nudity, no explicit anatomy. Mature tasteful product photography, soft natural light, charcoal, ivory, and muted green palette. Clean, premium, realistic, maga"
       }
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "male-masturbator-pink-sleeve-material-guide": {
-        "title": "Pink Sleeve Masturbator: Material Guide",
-        "title_length": 39,
-        "meta_length": 125,
+      "silicone-lube-with-silicone-toys-guide": {
+        "title": "Silicone Lube With Silicone Toys?",
+        "title_length": 33,
+        "meta_length": 117,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1934,
+        "word_count": 2103,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -97,21 +247,21 @@
         },
         "quality_score": 100,
         "authority_links": [
-          "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.cdc.gov/handwashing/",
-          "https://www.saferproducts.gov/"
+          "https://www.saferproducts.gov/",
+          "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
+          "https://www.cdc.gov/condoms/"
         ],
         "related_blog_count": 4,
         "product_support_count": 3
       },
-      "cock-ring-with-plug-combo-safety-guide": {
-        "title": "Cock Ring With Plug: Fit Safety Guide",
-        "title_length": 37,
-        "meta_length": 126,
+      "rubber-cock-ring-material-fit-guide": {
+        "title": "Rubber Cock Ring: Fit &amp; Material Guide",
+        "title_length": 42,
+        "meta_length": 111,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1967,
+        "word_count": 1963,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -132,10 +282,10 @@
         },
         "quality_score": 100,
         "authority_links": [
-          "https://www.cdc.gov/condoms/",
           "https://health.clevelandclinic.org/sexual-health",
-          "https://www.nhs.uk/live-well/sexual-health/",
-          "https://consumer.ftc.gov/articles/online-shopping"
+          "https://www.saferproducts.gov/",
+          "https://consumer.ftc.gov/articles/online-shopping",
+          "https://www.nhs.uk/live-well/sexual-health/"
         ],
         "related_blog_count": 4,
         "product_support_count": 3
@@ -147,68 +297,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-17T08:37:15.504854+08:00"
+    "validated_at": "2026-07-18T10:36:42.277421+08:00"
   },
-  "validated_at": "2026-07-17T08:37:15.504854+08:00",
-  "report": "output/daily_blog_report_2026-07-17.md",
-  "updated_at": "2026-07-17T10:31:52+08:00",
-  "commit": "25e148679451",
-  "push": {
-    "status": "pass",
-    "remote": "origin/master",
-    "pushed_at": "2026-07-17T08:41:09.501875+08:00"
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
-    "paths": [
-      "upload/blog/male-masturbator-pink-sleeve-material-guide/",
-      "upload/blog/cock-ring-with-plug-combo-safety-guide/",
-      "upload/blog/assets/male-masturbator-pink-sleeve-material-guide-opus-cover.png",
-      "upload/blog/assets/cock-ring-with-plug-combo-safety-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data; dirs 755; files 644",
-    "deployed_at": "2026-07-17T08:41:09.501875+08:00"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-17T08:41:09.482402+08:00",
-    "checks": {
-      "article_urls_http_200": true,
-      "blog_index_http_200_and_links": true,
-      "sitemap_http_200_and_urls": true,
-      "sitemap_image_metadata": true,
-      "article_title_meta_h1_gtag": true,
-      "quick_answer_red_flags_faq_authority_refs": true,
-      "image_assets_http_200": true
-    },
-    "urls": [
-      "https://shoplovanest.com/blog/male-masturbator-pink-sleeve-material-guide/",
-      "https://shoplovanest.com/blog/cock-ring-with-plug-combo-safety-guide/",
-      "https://shoplovanest.com/blog/",
-      "https://shoplovanest.com/sitemap.xml"
-    ]
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-17",
-    "email_path": "output/daily_blog_2026-07-17_success.eml",
-    "sent_at": "2026-07-17T10:31:52+08:00",
-    "method": "/opt/homebrew/bin/msmtp with temporary port 465 SMTPS config derived from /Users/grant/.msmtprc; passwordeval/keychain unchanged; Gmail accepted message (msmtp exit 0)",
-    "msmtp_exit_code": 0,
-    "retry_notes": "Port 587 returned empty reply (EX_PROTOCOL 76) during earlier attempts; retry via smtp.gmail.com:465 with tls_starttls off succeeded."
-  },
-  "completion_rule": {
-    "exactly_2_new_articles": true,
-    "blog_index_updated": true,
-    "sitemap_updated": true,
-    "content_quality_validation_passed": true,
-    "git_commit_pushed": true,
-    "production_deployed": true,
-    "live_verification_passed": true,
-    "success_email_sent_accepted": true
-  }
+  "validated_at": "2026-07-18T10:36:42.277421+08:00"
 }
