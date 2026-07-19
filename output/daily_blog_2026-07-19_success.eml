@@ -1,0 +1,29 @@
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-19
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest daily blog deployment is complete for 2026-07-19.
+
+Articles deployed and verified:
+1. Adult Toy Cleaner vs Soap: What to Check
+   URL: https://shoplovanest.com/blog/adult-toy-cleaner-vs-soap-guide/
+   Primary keywords: adult toy cleaner, sex toy cleaning spray, toy cleaner spray, toy-safe cleaning, adult toy care
+
+2. Mini Bullet Vibrator: Size & Noise Guide
+   URL: https://shoplovanest.com/blog/mini-bullet-vibrator-size-noise-guide/
+   Primary keywords: mini bullet vibrator, small bullet vibrator, silver bullet vibrator, bullet vibrators, quiet vibrator
+
+Commit: 6718339b73
+
+Verification summary:
+- Local validation: passed; minimum quality score 100
+- Production article pages: HTTP 200, title/meta present, exactly one H1, Google tag configured once, Quick Answer and Red Flags present, FAQPage schema present, authority references present, image SEO metadata present
+- Image assets: generated with opus-image-1.5 and verified HTTP 200
+- Blog index: HTTP 200 and links both new articles
+- Sitemap: HTTP 200, includes both article URLs, 2026-07-19 lastmod, and image metadata
+
+Deployment summary:
+- Targeted rsync to root@153.75.235.56:/var/www/myopencart/upload
+- Permissions fixed to www-data:www-data, directories 755, files 644
+
+Email status: accepted by msmtp in this run.

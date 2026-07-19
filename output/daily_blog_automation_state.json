@@ -1,7 +1,7 @@
 {
   "date": "2026-07-19",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -299,5 +299,65 @@
     "authority_refs": true,
     "validated_at": "2026-07-19T08:36:36.952382+08:00"
   },
-  "validated_at": "2026-07-19T08:36:36.952382+08:00"
+  "validated_at": "2026-07-19T08:36:36.952382+08:00",
+  "commit": "6718339b73",
+  "push": {
+    "status": "pass",
+    "remote": "origin/master",
+    "pushed_at": "2026-07-19T08:37:36.319998+08:00"
+  },
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
+    "paths": [
+      "upload/blog/adult-toy-cleaner-vs-soap-guide/",
+      "upload/blog/mini-bullet-vibrator-size-noise-guide/",
+      "upload/blog/assets/adult-toy-cleaner-vs-soap-guide-opus-cover.png",
+      "upload/blog/assets/mini-bullet-vibrator-size-noise-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions": "www-data:www-data; dirs 755; files 644",
+    "deployed_at": "2026-07-19T08:39:18+08:00"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-19T08:39:18+08:00",
+    "checks": {
+      "article_urls_http_200": true,
+      "blog_index_http_200_and_links": true,
+      "sitemap_http_200_and_urls": true,
+      "sitemap_image_metadata": true,
+      "article_title_meta_h1_gtag": true,
+      "quick_answer_red_flags_faq_authority_refs": true,
+      "image_seo_metadata": true,
+      "image_assets_http_200": true
+    },
+    "urls": [
+      "https://shoplovanest.com/blog/adult-toy-cleaner-vs-soap-guide/",
+      "https://shoplovanest.com/blog/mini-bullet-vibrator-size-noise-guide/",
+      "https://shoplovanest.com/blog/",
+      "https://shoplovanest.com/sitemap.xml"
+    ]
+  },
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-19",
+    "email_path": "output/daily_blog_2026-07-19_success.eml",
+    "sent_at": "2026-07-19T08:40:33+08:00",
+    "method": "/opt/homebrew/bin/msmtp with temporary port 465 SMTPS config derived from /Users/grant/.msmtprc; passwordeval/keychain unchanged; msmtp exit 0",
+    "msmtp_exit_code": 0
+  },
+  "completion_rule": {
+    "exactly_2_new_articles": true,
+    "blog_index_updated": true,
+    "sitemap_updated": true,
+    "content_quality_validation_passed": true,
+    "git_commit_pushed": true,
+    "production_deployed": true,
+    "live_verification_passed": true,
+    "success_email_sent_accepted": true
+  },
+  "updated_at": "2026-07-19T08:40:33+08:00"
 }
