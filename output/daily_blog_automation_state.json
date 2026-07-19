@@ -1,36 +1,36 @@
 {
-  "date": "2026-07-18",
+  "date": "2026-07-19",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "silicone-lube-with-silicone-toys-guide",
-      "title": "Silicone Lube With Silicone Toys?",
-      "url": "https://shoplovanest.com/blog/silicone-lube-with-silicone-toys-guide/",
+      "slug": "adult-toy-cleaner-vs-soap-guide",
+      "title": "Adult Toy Cleaner vs Soap: What to Check",
+      "url": "https://shoplovanest.com/blog/adult-toy-cleaner-vs-soap-guide/",
       "primary_keywords": [
-        "silicone lube with silicone toys",
-        "lube for silicone toys",
-        "best lube for silicone toys",
-        "silicone lube",
-        "toy-compatible lube"
+        "adult toy cleaner",
+        "sex toy cleaning spray",
+        "toy cleaner spray",
+        "toy-safe cleaning",
+        "adult toy care"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected silicone lube with silicone toys (Volume 480), lube for silicone toys (Volume 390), and best lube for silicone toys (Volume 390) from the silicone-lube compatibility cluster. Existing water-based and silicone-lube pages cover broad basics; this article clusters the specific silicone-toy compatibility intent instead of creating thin pages for each phrase.",
-      "intent_cluster": "Silicone lubricant plus silicone toy compatibility intent \u2014 material interaction risk, patch testing limits, water-based fallback, condoms/barriers, cleaning, warranty, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy cleaner (Volume 1900) and related cleaner/spray intent from the adult-toys and cleaning-storage cluster. Existing cleaning guides cover silicone care and common mistakes; this article focuses on buyer comparison between toy cleaner, spray, wipes, and mild soap instead of a generic cleaning routine.",
+      "intent_cluster": "Adult toy cleaner comparison intent \u2014 cleaner vs mild soap, sprays/wipes, material compatibility, electronics caution, label reading, storage, and checkout red flags"
     },
     {
-      "slug": "rubber-cock-ring-material-fit-guide",
-      "title": "Rubber Cock Ring: Fit & Material Guide",
-      "url": "https://shoplovanest.com/blog/rubber-cock-ring-material-fit-guide/",
+      "slug": "mini-bullet-vibrator-size-noise-guide",
+      "title": "Mini Bullet Vibrator: Size & Noise Guide",
+      "url": "https://shoplovanest.com/blog/mini-bullet-vibrator-size-noise-guide/",
       "primary_keywords": [
-        "rubber cock ring",
-        "good cock rings",
-        "cock ring benefits",
-        "adjustable cock ring",
-        "silicone cock ring"
+        "mini bullet vibrator",
+        "small bullet vibrator",
+        "silver bullet vibrator",
+        "bullet vibrators",
+        "quiet vibrator"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rubber cock ring (Volume 480), good cock rings (Volume 480), and supporting cock ring benefits (Volume 590), adjustable cock ring, and silicone cock ring terms from the cock-ring cluster. Existing size, silicone, metal, and combo pages cover adjacent intents; this article targets the distinct rubber/stretch-material buyer intent without duplicating rigid metal or combo-accessory pages.",
-      "intent_cluster": "Rubber/stretch cock ring material intent \u2014 latex vs synthetic rubber ambiguity, stretch, quick release, sizing, time limits, cleaning, skin sensitivity, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected mini bullet vibrator (Volume 590), small bullet vibrator (Volume 390), silver bullet vibrator (Volume 1000), bullet vibrators (Volume 1900), and supporting quiet vibrator intent from the compact-vibrator cluster. Existing bullet and quiet-vibrator pages are broad; this article clusters the distinct mini-size/noise/controls buyer intent.",
+      "intent_cluster": "Mini bullet vibrator buyer intent \u2014 compact size tradeoffs, noise expectations, controls, charging/battery, material clarity, travel privacy, and checkout red flags"
     }
   ],
   "keyword_source_files_read": [
@@ -40,193 +40,193 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "cock ring benefits",
+      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
+      "seed_keyword": "adult toys",
+      "Keyword": "adult toy cleaner",
       "Intent": "Informational",
-      "Volume": "590",
-      "Trend": "0.82,0.82,1.00,0.82,0.82,0.54,0.29,0.44,0.67,0.44,0.44,0.54",
-      "Keyword Difficulty": "45",
-      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
+      "Volume": "1900",
+      "Trend": "1.00,0.52,0.44,1.00,0.36,0.36,0.52,0.52,0.66,1.00,0.36,0.44",
+      "Keyword Difficulty": "26",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "good cock rings",
-      "Intent": "Informational, Commercial",
-      "Volume": "480",
-      "Trend": "0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,1.00",
-      "Keyword Difficulty": "30",
-      "SERP Features": "Sitelinks, AI Overview"
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "bullet vibrators",
+      "Intent": "Commercial",
+      "Volume": "1900",
+      "Trend": "0.66,1.00,0.66,0.80,0.80,0.66,0.66,0.80,0.80,0.80,0.66,0.66",
+      "Keyword Difficulty": "35",
+      "SERP Features": "Sitelinks, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "rubber cock ring",
-      "Intent": "Informational, Commercial",
-      "Volume": "480",
-      "Trend": "0.08,0.08,0.13,0.07,0.20,0.11,0.07,1.00,0.08,0.08,0.07,0.08",
-      "Keyword Difficulty": "45",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "silver bullet vibrator",
+      "Intent": "Informational",
+      "Volume": "1000",
+      "Trend": "0.83,0.83,0.83,0.83,1.00,0.67,0.83,0.83,0.83,1.00,1.00,0.83",
+      "Keyword Difficulty": "17",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "silicone lube",
-      "Keyword": "silicone lube with silicone toys",
-      "Intent": "Informational",
-      "Volume": "480",
-      "Trend": "0.36,0.44,0.44,0.66,0.81,0.81,0.81,0.81,1.00,0.66,0.05,0.66",
-      "Keyword Difficulty": "19",
-      "SERP Features": "Sitelinks, AI Overview, People also ask"
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "mini bullet vibrator",
+      "Intent": "Commercial",
+      "Volume": "590",
+      "Trend": "0.36,0.45,0.45,0.45,0.45,0.45,0.36,0.45,1.00,0.45,0.45,1.00",
+      "Keyword Difficulty": "30",
+      "SERP Features": "Sitelinks, Video"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "silicone lube",
-      "Keyword": "best lube for silicone toys",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "small bullet vibrator",
       "Intent": "Commercial",
       "Volume": "390",
-      "Trend": "0.65,0.80,0.80,1.00,0.80,0.80,0.80,0.65,0.65,0.80,0.65,0.80",
-      "Keyword Difficulty": "29",
-      "SERP Features": "Sitelinks, AI Overview, People also ask"
+      "Trend": "0.81,1.00,1.00,1.00,1.00,0.81,0.81,1.00,1.00,1.00,0.81,1.00",
+      "Keyword Difficulty": "26",
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "silicone lube",
-      "Keyword": "lube for silicone toys",
-      "Intent": "Informational",
-      "Volume": "390",
-      "Trend": "1.00,0.29,0.29,0.81,1.00,0.81,0.66,0.23,0.36,0.81,0.66,0.66",
-      "Keyword Difficulty": "32",
-      "SERP Features": "Sitelinks, AI Overview, People also ask"
+      "source_file": "quiet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "quiet vibrator",
+      "Keyword": "quiet vibrator",
+      "Intent": "Commercial",
+      "Volume": "1900",
+      "Trend": "0.66,0.66,0.66,1.00,0.79,0.66,0.66,0.79,0.79,0.79,0.66,0.66",
+      "Keyword Difficulty": "30",
+      "SERP Features": "Sitelinks, Related searches"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "cock ring benefits",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
+      "Keyword": "adult toy cleaner",
+      "Search intent": "Commercial",
+      "Topic cluster": "Gift and couples decisions",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Assigned URL": "/blog/adult-toy-gift-guide/",
+      "Assigned article title": "Adult Toy Gift Guide: Consent, Privacy, and Safer Choices",
       "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "good cock rings",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "rubber cock ring",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "silicone lube with silicone toys",
-      "Search intent": "How-to",
-      "Topic cluster": "Cleaning and storage",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/how-to-clean-silicone-sex-toys/",
-      "Assigned article title": "How to Clean Silicone Sex Toys Without Damaging Them",
-      "Action": "Update existing article",
-      "Reason": "Separate silicone material care from electronics care. Commercial value: Medium; difficulty: Easy.",
-      "Priority": "P2",
+      "Reason": "Make consent and recipient comfort the non-negotiable foundation. Commercial value: Medium; difficulty: Easy.",
+      "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "best lube for silicone toys",
-      "Search intent": "How-to",
-      "Topic cluster": "Cleaning and storage",
+      "Keyword": "bullet vibrators",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Beginner vibrator selection",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/how-to-clean-silicone-sex-toys/",
-      "Assigned article title": "How to Clean Silicone Sex Toys Without Damaging Them",
+      "Assigned URL": "/blog/vibrators-for-beginners/",
+      "Assigned article title": "Vibrators for Beginners: How to Choose Without Guesswork",
       "Action": "Update existing article",
-      "Reason": "Separate silicone material care from electronics care. Commercial value: Medium; difficulty: Easy.",
-      "Priority": "P2",
+      "Reason": "Explain what features matter first and which advanced features can wait. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "lube for silicone toys",
-      "Search intent": "How-to",
-      "Topic cluster": "Cleaning and storage",
+      "Keyword": "silver bullet vibrator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Compact vibrators",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/how-to-clean-silicone-sex-toys/",
-      "Assigned article title": "How to Clean Silicone Sex Toys Without Damaging Them",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
       "Action": "Update existing article",
-      "Reason": "Separate silicone material care from electronics care. Commercial value: Medium; difficulty: Easy.",
+      "Reason": "Help buyers decide if compact size is a benefit or limitation. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "mini bullet vibrator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Compact vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Action": "Update existing article",
+      "Reason": "Compact vibrator product selection intent.",
       "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "small bullet vibrator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Compact vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Action": "Update existing article",
+      "Reason": "Compact vibrator product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "quiet vibrator",
+      "Search intent": "How-to",
+      "Topic cluster": "Vibrator selection",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/how-to-choose-a-vibrator/",
+      "Assigned article title": "How to Choose a Vibrator: A Practical Decision Checklist",
+      "Action": "Update existing article",
+      "Reason": "Turn a crowded category into a short decision tree. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-18T10:35:37.576945+08:00",
+  "generated_at": "2026-07-19T08:35:29.936551+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-18T10:35:37.577159+08:00",
+    "generated_at": "2026-07-19T08:35:29.936796+08:00",
     "files": [
-      "upload/blog/assets/silicone-lube-with-silicone-toys-guide-opus-cover.png",
-      "upload/blog/assets/rubber-cock-ring-material-fit-guide-opus-cover.png"
+      "upload/blog/assets/adult-toy-cleaner-vs-soap-guide-opus-cover.png",
+      "upload/blog/assets/mini-bullet-vibrator-size-noise-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/silicone-lube-with-silicone-toys-guide-opus-cover.png",
+        "file": "upload/blog/assets/adult-toy-cleaner-vs-soap-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0dcefb625df33329016a5ae612caec8199b89dcf739e98d37d",
-        "call_id": "ig_0dcefb625df33329016a5ae613947c81998f6ff27b045fdf93",
+        "response_id": "resp_0e631029a58966f4016a5c1b740200819bbc697f122c691ad8",
+        "call_id": "ig_0e631029a58966f4016a5c1b748c00819bac6cf384e7914e1e",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about silicone lube compatibility with silicone toys. Neutral tabletop scene with abstract silicone material swatch cards, a water-based fallback bottle, a small patch-test card, a cleaning cloth, a label checklist, and a plain storage pouch. No people, no nudity, no explicit anatomy, mature tasteful product photography, soft natural light, ivory, graphite, and muted blue palette. Clean composition, realistic studio t"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article comparing adult toy cleaner versus mild soap. Neutral tabletop scene with a plain cleaner spray bottle, mild soap bottle, lint-free cloth, material swatch cards, label checklist, small drying tray, and storage pouch. No people, no nudity, no explicit anatomy, mature tasteful product photography, soft natural light, ivory, sage, and graphite palette. Realistic studio tabletop composition, clean negative space for artic"
       },
       {
-        "file": "upload/blog/assets/rubber-cock-ring-material-fit-guide-opus-cover.png",
+        "file": "upload/blog/assets/mini-bullet-vibrator-size-noise-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_08c08a3b9ce9e575016a5ae647f63c819989ce400ba698b45a",
-        "call_id": "ig_08c08a3b9ce9e575016a5ae648979c8199abec94c5aa76e030",
+        "response_id": "resp_0ba823e199d717f5016a5c1ba1717c819a9a4441d967b5e768",
+        "call_id": "ig_0ba823e199d717f5016a5c1ba22a5c819aaca5f666d94ba2f7",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about rubber cock ring fit and material safety. Neutral tabletop composition with abstract stretch material sample rings, a measuring strip, a quick-release checklist card, a cleaning cloth, a silicone comparison swatch, and a plain storage pouch. No people, no nudity, no explicit anatomy. Mature tasteful product photography, soft natural light, charcoal, ivory, and muted green palette. Clean, premium, realistic, maga"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about mini bullet vibrator size and noise comparison. Neutral tabletop scene with abstract compact device silhouettes only, no explicit details, no branding, no people, no nudity, no explicit anatomy. Include size comparison cards, a subtle sound-level checklist graphic, charging cable, material swatches, and a soft storage pouch arranged like mature tasteful product photography. Soft natural window light, clean compo"
       }
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "silicone-lube-with-silicone-toys-guide": {
-        "title": "Silicone Lube With Silicone Toys?",
-        "title_length": 33,
-        "meta_length": 117,
+      "adult-toy-cleaner-vs-soap-guide": {
+        "title": "Adult Toy Cleaner vs Soap: What to Check",
+        "title_length": 40,
+        "meta_length": 118,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 2103,
+        "word_count": 1159,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -247,21 +247,21 @@
         },
         "quality_score": 100,
         "authority_links": [
-          "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.saferproducts.gov/",
           "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
-          "https://www.cdc.gov/condoms/"
+          "https://www.epa.gov/coronavirus/safe-and-effective-disinfectant-use",
+          "https://consumer.ftc.gov/articles/online-shopping",
+          "https://www.saferproducts.gov/"
         ],
         "related_blog_count": 4,
-        "product_support_count": 3
+        "product_support_count": 6
       },
-      "rubber-cock-ring-material-fit-guide": {
-        "title": "Rubber Cock Ring: Fit &amp; Material Guide",
-        "title_length": 42,
-        "meta_length": 111,
+      "mini-bullet-vibrator-size-noise-guide": {
+        "title": "Mini Bullet Vibrator: Size &amp; Noise Guide",
+        "title_length": 44,
+        "meta_length": 121,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1963,
+        "word_count": 1160,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -282,13 +282,13 @@
         },
         "quality_score": 100,
         "authority_links": [
-          "https://health.clevelandclinic.org/sexual-health",
-          "https://www.saferproducts.gov/",
+          "https://www.iec.ch/ip-ratings",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.nhs.uk/live-well/sexual-health/"
+          "https://www.tsa.gov/travel/security-screening/whatcanibring/all",
+          "https://www.saferproducts.gov/"
         ],
         "related_blog_count": 4,
-        "product_support_count": 3
+        "product_support_count": 6
       }
     },
     "blog_index_links": true,
@@ -297,67 +297,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-18T10:36:42.277421+08:00"
+    "validated_at": "2026-07-19T08:36:36.952382+08:00"
   },
-  "validated_at": "2026-07-18T10:36:42.277421+08:00",
-  "commit": "98da3c7ba3",
-  "push": {
-    "status": "pass",
-    "remote": "origin/master",
-    "pushed_at": "2026-07-18T10:38:07.794187+08:00"
-  },
-  "updated_at": "2026-07-18T10:41:27+08:00",
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
-    "paths": [
-      "upload/blog/silicone-lube-with-silicone-toys-guide/",
-      "upload/blog/rubber-cock-ring-material-fit-guide/",
-      "upload/blog/assets/silicone-lube-with-silicone-toys-guide-opus-cover.png",
-      "upload/blog/assets/rubber-cock-ring-material-fit-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data; dirs 755; files 644",
-    "deployed_at": "2026-07-18T10:40:22.744848+08:00"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-18T10:40:22.744848+08:00",
-    "checks": {
-      "article_urls_http_200": true,
-      "blog_index_http_200_and_links": true,
-      "sitemap_http_200_and_urls": true,
-      "sitemap_image_metadata": true,
-      "article_title_meta_h1_gtag": true,
-      "quick_answer_red_flags_faq_authority_refs": true,
-      "image_seo_metadata": true,
-      "image_assets_http_200": true
-    },
-    "urls": [
-      "https://shoplovanest.com/blog/silicone-lube-with-silicone-toys-guide/",
-      "https://shoplovanest.com/blog/rubber-cock-ring-material-fit-guide/",
-      "https://shoplovanest.com/blog/",
-      "https://shoplovanest.com/sitemap.xml"
-    ]
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-18",
-    "email_path": "output/daily_blog_2026-07-18_success.eml",
-    "sent_at": "2026-07-18T10:41:27+08:00",
-    "method": "/opt/homebrew/bin/msmtp with temporary port 465 SMTPS config derived from /Users/grant/.msmtprc; passwordeval/keychain unchanged; msmtp exit 0",
-    "msmtp_exit_code": 0
-  },
-  "completion_rule": {
-    "exactly_2_new_articles": true,
-    "blog_index_updated": true,
-    "sitemap_updated": true,
-    "content_quality_validation_passed": true,
-    "git_commit_pushed": true,
-    "production_deployed": true,
-    "live_verification_passed": true,
-    "success_email_sent_accepted": true
-  }
+  "validated_at": "2026-07-19T08:36:36.952382+08:00"
 }
