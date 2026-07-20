@@ -1,36 +1,36 @@
 {
-  "date": "2026-07-19",
+  "date": "2026-07-20",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "adult-toy-cleaner-vs-soap-guide",
-      "title": "Adult Toy Cleaner vs Soap: What to Check",
-      "url": "https://shoplovanest.com/blog/adult-toy-cleaner-vs-soap-guide/",
+      "slug": "male-masturbator-device-types-guide",
+      "title": "Male Masturbator Devices: Type Guide",
+      "url": "https://shoplovanest.com/blog/male-masturbator-device-types-guide/",
       "primary_keywords": [
-        "adult toy cleaner",
-        "sex toy cleaning spray",
-        "toy cleaner spray",
-        "toy-safe cleaning",
-        "adult toy care"
+        "male masturbation device",
+        "male masturbation devices",
+        "automatic male masturbators",
+        "electric male masturbator",
+        "best male masturbator toy"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy cleaner (Volume 1900) and related cleaner/spray intent from the adult-toys and cleaning-storage cluster. Existing cleaning guides cover silicone care and common mistakes; this article focuses on buyer comparison between toy cleaner, spray, wipes, and mild soap instead of a generic cleaning routine.",
-      "intent_cluster": "Adult toy cleaner comparison intent \u2014 cleaner vs mild soap, sprays/wipes, material compatibility, electronics caution, label reading, storage, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected male masturbation device/devices (Volume 480/320), automatic male masturbators (Volume 720), electric male masturbator (Volume 260), and best male masturbator toy (Volume 320) from the male-masturbator cluster. Existing pages cover materials, cleaning, realistic styles, and hands-free use; this article clusters the distinct device-type comparison intent without creating a thin one-keyword page.",
+      "intent_cluster": "Male masturbator device type comparison intent \u2014 manual sleeve vs automatic/electric vs hands-free, cleaning access, motors, noise, controls, charging, material clarity, privacy, and checkout red flags"
     },
     {
-      "slug": "mini-bullet-vibrator-size-noise-guide",
-      "title": "Mini Bullet Vibrator: Size & Noise Guide",
-      "url": "https://shoplovanest.com/blog/mini-bullet-vibrator-size-noise-guide/",
+      "slug": "rabbit-vibrator-ears-fit-guide",
+      "title": "Rabbit Vibrator Ears: Fit & Control Guide",
+      "url": "https://shoplovanest.com/blog/rabbit-vibrator-ears-fit-guide/",
       "primary_keywords": [
-        "mini bullet vibrator",
-        "small bullet vibrator",
-        "silver bullet vibrator",
-        "bullet vibrators",
-        "quiet vibrator"
+        "rabbit vibrating ears",
+        "dual rabbit vibrator",
+        "small rabbit vibrator",
+        "what is a rabbit vibrator",
+        "how to use a rabbit vibrator"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected mini bullet vibrator (Volume 590), small bullet vibrator (Volume 390), silver bullet vibrator (Volume 1000), bullet vibrators (Volume 1900), and supporting quiet vibrator intent from the compact-vibrator cluster. Existing bullet and quiet-vibrator pages are broad; this article clusters the distinct mini-size/noise/controls buyer intent.",
-      "intent_cluster": "Mini bullet vibrator buyer intent \u2014 compact size tradeoffs, noise expectations, controls, charging/battery, material clarity, travel privacy, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rabbit vibrating ears (Volume 210), dual rabbit vibrator (Volume 260), small rabbit vibrator (Volume 260), what is a rabbit vibrator (Volume 260), and how to use a rabbit vibrator (Volume 720) from the rabbit-vibrator cluster. Existing rabbit pages are broad buyer guides; this article targets the distinct ear/fit/control complexity intent.",
+      "intent_cluster": "Rabbit vibrator ear and fit intent \u2014 external ear shape, internal shaft size, dual alignment variability, small vs full-size tradeoffs, controls, charging, cleaning, and checkout red flags"
     }
   ],
   "keyword_source_files_read": [
@@ -40,193 +40,289 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "adult toy cleaner",
-      "Intent": "Informational",
-      "Volume": "1900",
-      "Trend": "1.00,0.52,0.44,1.00,0.36,0.36,0.52,0.52,0.66,1.00,0.36,0.44",
-      "Keyword Difficulty": "26",
-      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "automatic male masturbators",
+      "Intent": "Commercial",
+      "Volume": "720",
+      "Trend": "0.11,0.12,0.36,0.36,0.41,0.55,0.41,0.55,0.36,0.20,1.00,0.20",
+      "Keyword Difficulty": "29",
+      "SERP Features": "Sitelinks, AI Overview"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibrators",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "male masturbation device",
       "Intent": "Commercial",
-      "Volume": "1900",
-      "Trend": "0.66,1.00,0.66,0.80,0.80,0.66,0.66,0.80,0.80,0.80,0.66,0.66",
+      "Volume": "480",
+      "Trend": "0.11,0.13,1.00,0.16,0.16,0.13,0.16,0.84,0.16,0.13,0.11,0.11",
+      "Keyword Difficulty": "28",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "best male masturbator toy",
+      "Intent": "Commercial",
+      "Volume": "320",
+      "Trend": "0.56,0.67,0.67,1.00,0.44,0.83,0.67,0.67,0.67,0.67,0.44,0.56",
+      "Keyword Difficulty": "25",
+      "SERP Features": "Sitelinks, AI Overview"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "male masturbation devices",
+      "Intent": "Commercial",
+      "Volume": "320",
+      "Trend": "0.26,0.32,0.39,0.32,0.32,0.21,0.32,0.26,0.32,0.32,1.00,0.26",
       "Keyword Difficulty": "35",
-      "SERP Features": "Sitelinks, Related searches"
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "silver bullet vibrator",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "electric male masturbator",
+      "Intent": "Commercial",
+      "Volume": "260",
+      "Trend": "0.66,0.66,0.52,1.00,0.82,0.66,0.66,0.82,0.66,0.66,0.82,0.34",
+      "Keyword Difficulty": "33",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rabbit vibrator",
+      "Keyword": "how to use a rabbit vibrator",
       "Intent": "Informational",
-      "Volume": "1000",
-      "Trend": "0.83,0.83,0.83,0.83,1.00,0.67,0.83,0.83,0.83,1.00,1.00,0.83",
+      "Volume": "720",
+      "Trend": "0.74,0.74,0.74,0.74,0.59,0.59,0.59,0.59,0.59,1.00,0.48,0.48",
       "Keyword Difficulty": "17",
-      "SERP Features": "Sitelinks"
+      "SERP Features": "Sitelinks, People also ask"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "mini bullet vibrator",
-      "Intent": "Commercial",
-      "Volume": "590",
-      "Trend": "0.36,0.45,0.45,0.45,0.45,0.45,0.36,0.45,1.00,0.45,0.45,1.00",
-      "Keyword Difficulty": "30",
-      "SERP Features": "Sitelinks, Video"
+      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rabbit vibrator",
+      "Keyword": "dual rabbit vibrator",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.05,0.06,0.06,0.10,1.00,0.10,0.08,0.10,0.10,0.13,0.08,0.08",
+      "Keyword Difficulty": "31",
+      "SERP Features": "Sitelinks, People also ask, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "small bullet vibrator",
+      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rabbit vibrator",
+      "Keyword": "small rabbit vibrator",
       "Intent": "Commercial",
-      "Volume": "390",
-      "Trend": "0.81,1.00,1.00,1.00,1.00,0.81,0.81,1.00,1.00,1.00,0.81,1.00",
-      "Keyword Difficulty": "26",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "quiet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "quiet vibrator",
-      "Keyword": "quiet vibrator",
-      "Intent": "Commercial",
-      "Volume": "1900",
-      "Trend": "0.66,0.66,0.66,1.00,0.79,0.66,0.66,0.79,0.79,0.79,0.66,0.66",
-      "Keyword Difficulty": "30",
+      "Volume": "260",
+      "Trend": "0.53,0.66,0.66,0.66,1.00,1.00,0.82,0.66,0.53,0.66,0.43,0.53",
+      "Keyword Difficulty": "23",
       "SERP Features": "Sitelinks, Related searches"
     },
     {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy cleaner",
-      "Search intent": "Commercial",
-      "Topic cluster": "Gift and couples decisions",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-gift-guide/",
-      "Assigned article title": "Adult Toy Gift Guide: Consent, Privacy, and Safer Choices",
-      "Action": "Update existing article",
-      "Reason": "Make consent and recipient comfort the non-negotiable foundation. Commercial value: Medium; difficulty: Easy.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rabbit vibrator",
+      "Keyword": "what is a rabbit vibrator",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.53,1.00,0.66,0.82,0.66,0.53,0.82,0.53,0.82,0.53,0.53,0.53",
+      "Keyword Difficulty": "36",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rabbit vibrator",
+      "Keyword": "rabbit vibrating ears",
+      "Intent": "Commercial",
+      "Volume": "210",
+      "Trend": "1.00,0.65,0.53,0.53,0.27,0.44,0.27,0.15,0.21,0.15,0.21,0.82",
+      "Keyword Difficulty": "27",
+      "SERP Features": "Sitelinks, Video, People also ask"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibrators",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Beginner vibrator selection",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/vibrators-for-beginners/",
-      "Assigned article title": "Vibrators for Beginners: How to Choose Without Guesswork",
-      "Action": "Update existing article",
-      "Reason": "Explain what features matter first and which advanced features can wait. Commercial value: High; difficulty: Easy.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "silver bullet vibrator",
+      "Keyword": "automatic male masturbators",
       "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
+      "Topic cluster": "Male wellness products",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
       "Action": "Update existing article",
-      "Reason": "Help buyers decide if compact size is a benefit or limitation. Commercial value: High; difficulty: Easy.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "mini bullet vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
-      "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
+      "Reason": "Male wellness product buying and care intent.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "small bullet vibrator",
+      "Keyword": "male masturbation device",
       "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
+      "Topic cluster": "Unclustered adult wellness/general",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Action": "Review manually",
+      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
+      "Priority": "P4",
+      "Notes": "Manual review recommended before content changes."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "best male masturbator toy",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
       "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
+      "Reason": "Male wellness product buying and care intent.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "quiet vibrator",
-      "Search intent": "How-to",
-      "Topic cluster": "Vibrator selection",
+      "Keyword": "male masturbation devices",
+      "Search intent": "Commercial",
+      "Topic cluster": "Unclustered adult wellness/general",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/how-to-choose-a-vibrator/",
-      "Assigned article title": "How to Choose a Vibrator: A Practical Decision Checklist",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Action": "Review manually",
+      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
+      "Priority": "P4",
+      "Notes": "Manual review recommended before content changes."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "electric male masturbator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
       "Action": "Update existing article",
-      "Reason": "Turn a crowded category into a short decision tree. Commercial value: High; difficulty: Easy.",
-      "Priority": "P1",
+      "Reason": "Male wellness product buying and care intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "how to use a rabbit vibrator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Rabbit vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/rabbit-vibrator-guide/",
+      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
+      "Action": "Update existing article",
+      "Reason": "Explain fit and control complexity without explicit or exaggerated claims. Commercial value: High; difficulty: Medium.",
+      "Priority": "P2",
       "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "dual rabbit vibrator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Rabbit vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/rabbit-vibrator-guide/",
+      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
+      "Action": "Update existing article",
+      "Reason": "Rabbit-style massager product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "small rabbit vibrator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Rabbit vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/rabbit-vibrator-guide/",
+      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
+      "Action": "Update existing article",
+      "Reason": "Rabbit-style massager product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "what is a rabbit vibrator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Rabbit vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/rabbit-vibrator-guide/",
+      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
+      "Action": "Update existing article",
+      "Reason": "Rabbit-style massager product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "rabbit vibrating ears",
+      "Search intent": "Commercial",
+      "Topic cluster": "Rabbit vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/rabbit-vibrator-guide/",
+      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
+      "Action": "Update existing article",
+      "Reason": "Rabbit-style massager product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-19T08:35:29.936551+08:00",
+  "generated_at": "2026-07-20T08:37:45.090092+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-19T08:35:29.936796+08:00",
+    "generated_at": "2026-07-20T08:37:45.090288+08:00",
     "files": [
-      "upload/blog/assets/adult-toy-cleaner-vs-soap-guide-opus-cover.png",
-      "upload/blog/assets/mini-bullet-vibrator-size-noise-guide-opus-cover.png"
+      "upload/blog/assets/male-masturbator-device-types-guide-opus-cover.png",
+      "upload/blog/assets/rabbit-vibrator-ears-fit-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/adult-toy-cleaner-vs-soap-guide-opus-cover.png",
+        "file": "upload/blog/assets/male-masturbator-device-types-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0e631029a58966f4016a5c1b740200819bbc697f122c691ad8",
-        "call_id": "ig_0e631029a58966f4016a5c1b748c00819bac6cf384e7914e1e",
+        "response_id": "resp_0f2cdd4c38510b9f016a5d6d7bfc68819baed7f31cc3f2ca87",
+        "call_id": "ig_0f2cdd4c38510b9f016a5d6d7c8824819bb4950787b85cbe40",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article comparing adult toy cleaner versus mild soap. Neutral tabletop scene with a plain cleaner spray bottle, mild soap bottle, lint-free cloth, material swatch cards, label checklist, small drying tray, and storage pouch. No people, no nudity, no explicit anatomy, mature tasteful product photography, soft natural light, ivory, sage, and graphite palette. Realistic studio tabletop composition, clean negative space for artic"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article comparing male masturbator device types. Neutral tabletop scene with abstract non-explicit device silhouettes, sleeve material swatch cards, a small cleaning brush, a charging cable, a quiet-control checklist card, and a plain storage pouch. No people, no nudity, no explicit anatomy, no branding. Mature tasteful product photography, soft natural light, graphite, ivory, and muted teal palette. Clean composition, premiu"
       },
       {
-        "file": "upload/blog/assets/mini-bullet-vibrator-size-noise-guide-opus-cover.png",
+        "file": "upload/blog/assets/rabbit-vibrator-ears-fit-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0ba823e199d717f5016a5c1ba1717c819a9a4441d967b5e768",
-        "call_id": "ig_0ba823e199d717f5016a5c1ba22a5c819aaca5f666d94ba2f7",
-        "size": "1536x1024",
+        "response_id": "resp_0b4ae80f235c7aa3016a5d6dab58ac8198a4370078eaca3459",
+        "call_id": "ig_0b4ae80f235c7aa3016a5d6dabf0948198b9c3896969380c3b",
+        "size": "1693x929",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about mini bullet vibrator size and noise comparison. Neutral tabletop scene with abstract compact device silhouettes only, no explicit details, no branding, no people, no nudity, no explicit anatomy. Include size comparison cards, a subtle sound-level checklist graphic, charging cable, material swatches, and a soft storage pouch arranged like mature tasteful product photography. Soft natural window light, clean compo"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about rabbit vibrator ear fit and controls. Neutral tabletop scene, mature tasteful product photography, soft natural light, ivory, graphite, and muted rose palette. Include abstract non-explicit dual-shape comparison cards, a small measuring strip, simple control icons, a charging cable, a cleaning cloth, material swatches, and a storage pouch. No people, no nudity, no explicit anatomy, no branding. Clean, premium, r"
       }
     ]
   },
   "local_validation": {
     "status": "pass",
     "article_checks": {
-      "adult-toy-cleaner-vs-soap-guide": {
-        "title": "Adult Toy Cleaner vs Soap: What to Check",
-        "title_length": 40,
-        "meta_length": 118,
+      "male-masturbator-device-types-guide": {
+        "title": "Male Masturbator Devices: Type Guide",
+        "title_length": 36,
+        "meta_length": 132,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1159,
+        "word_count": 1047,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -247,21 +343,21 @@
         },
         "quality_score": 100,
         "authority_links": [
-          "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
-          "https://www.epa.gov/coronavirus/safe-and-effective-disinfectant-use",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.saferproducts.gov/"
+          "https://www.saferproducts.gov/",
+          "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
+          "https://www.iec.ch/ip-ratings"
         ],
         "related_blog_count": 4,
         "product_support_count": 6
       },
-      "mini-bullet-vibrator-size-noise-guide": {
-        "title": "Mini Bullet Vibrator: Size &amp; Noise Guide",
-        "title_length": 44,
-        "meta_length": 121,
+      "rabbit-vibrator-ears-fit-guide": {
+        "title": "Rabbit Vibrator Ears: Fit &amp; Control Guide",
+        "title_length": 45,
+        "meta_length": 136,
         "h1_count": 1,
         "gtag_occurrences": 2,
-        "word_count": 1160,
+        "word_count": 1128,
         "checks": {
           "title_under_60": true,
           "meta_under_155": true,
@@ -284,8 +380,8 @@
         "authority_links": [
           "https://www.iec.ch/ip-ratings",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.tsa.gov/travel/security-screening/whatcanibring/all",
-          "https://www.saferproducts.gov/"
+          "https://www.saferproducts.gov/",
+          "https://www.plannedparenthood.org/learn"
         ],
         "related_blog_count": 4,
         "product_support_count": 6
@@ -297,67 +393,7 @@
     "readability_natural_english": true,
     "topic_specific_depth": true,
     "authority_refs": true,
-    "validated_at": "2026-07-19T08:36:36.952382+08:00"
+    "validated_at": "2026-07-20T08:38:23.732250+08:00"
   },
-  "validated_at": "2026-07-19T08:36:36.952382+08:00",
-  "commit": "6718339b73",
-  "push": {
-    "status": "pass",
-    "remote": "origin/master",
-    "pushed_at": "2026-07-19T08:37:36.319998+08:00"
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
-    "paths": [
-      "upload/blog/adult-toy-cleaner-vs-soap-guide/",
-      "upload/blog/mini-bullet-vibrator-size-noise-guide/",
-      "upload/blog/assets/adult-toy-cleaner-vs-soap-guide-opus-cover.png",
-      "upload/blog/assets/mini-bullet-vibrator-size-noise-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data; dirs 755; files 644",
-    "deployed_at": "2026-07-19T08:39:18+08:00"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-19T08:39:18+08:00",
-    "checks": {
-      "article_urls_http_200": true,
-      "blog_index_http_200_and_links": true,
-      "sitemap_http_200_and_urls": true,
-      "sitemap_image_metadata": true,
-      "article_title_meta_h1_gtag": true,
-      "quick_answer_red_flags_faq_authority_refs": true,
-      "image_seo_metadata": true,
-      "image_assets_http_200": true
-    },
-    "urls": [
-      "https://shoplovanest.com/blog/adult-toy-cleaner-vs-soap-guide/",
-      "https://shoplovanest.com/blog/mini-bullet-vibrator-size-noise-guide/",
-      "https://shoplovanest.com/blog/",
-      "https://shoplovanest.com/sitemap.xml"
-    ]
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-19",
-    "email_path": "output/daily_blog_2026-07-19_success.eml",
-    "sent_at": "2026-07-19T08:40:33+08:00",
-    "method": "/opt/homebrew/bin/msmtp with temporary port 465 SMTPS config derived from /Users/grant/.msmtprc; passwordeval/keychain unchanged; msmtp exit 0",
-    "msmtp_exit_code": 0
-  },
-  "completion_rule": {
-    "exactly_2_new_articles": true,
-    "blog_index_updated": true,
-    "sitemap_updated": true,
-    "content_quality_validation_passed": true,
-    "git_commit_pushed": true,
-    "production_deployed": true,
-    "live_verification_passed": true,
-    "success_email_sent_accepted": true
-  },
-  "updated_at": "2026-07-19T08:40:33+08:00"
+  "validated_at": "2026-07-20T08:38:23.732250+08:00"
 }
