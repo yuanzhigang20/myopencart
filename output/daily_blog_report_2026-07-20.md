@@ -1,8 +1,10 @@
 # Daily ShopLovaNest Blog Automation Report - 2026-07-20
 
-Status: VALIDATED - pending commit, push, deploy, live verification, and success email.
+Status: COMPLETE - generated, committed, pushed, deployed, live-verified, and success email accepted by msmtp.
 
-Updated: 2026-07-20T08:38:57+08:00
+Commit: `516e52de0b`
+
+Updated: 2026-07-20T08:43:01+08:00
 
 ## Articles
 - **Male Masturbator Devices: Type Guide**
@@ -41,13 +43,27 @@ Updated: 2026-07-20T08:38:57+08:00
 - `upload/blog/assets/rabbit-vibrator-ears-fit-guide-opus-cover.png`: pass; response `resp_0b4ae80f235c7aa3016a5d6dab58ac8198a4370078eaca3459`
 
 ## Deployment and live verification
-- Deploy status: pending
-- Live verification: pending
+- Deploy status: pass
+- Method: targeted rsync to root@153.75.235.56:/var/www/myopencart/upload
+- Permissions: www-data:www-data; dirs 755; files 644
+- Live verification: pass
+- Verified URLs: https://shoplovanest.com/blog/male-masturbator-device-types-guide/, https://shoplovanest.com/blog/rabbit-vibrator-ears-fit-guide/, https://shoplovanest.com/blog/, https://shoplovanest.com/sitemap.xml
 
 ## Email
 - Recipient: yuanzhigang20@gmail.com
 - Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-20
-- Status: pending
+- Message file: `output/daily_blog_2026-07-20_success.eml`
+- Status: sent/accepted by msmtp exit 0
+- Method: /opt/homebrew/bin/msmtp with temporary port 465 SMTPS config derived from /Users/grant/.msmtprc; passwordeval/keychain unchanged; msmtp exit 0
 
 ## Completion rule
-Pending commit/push/deploy/live verification/email.
+{
+  "exactly_2_new_articles": true,
+  "blog_index_updated": true,
+  "sitemap_updated": true,
+  "content_quality_validation_passed": true,
+  "git_commit_pushed": true,
+  "production_deployed": true,
+  "live_verification_passed": true,
+  "success_email_sent_accepted": true
+}

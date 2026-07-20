@@ -1,0 +1,28 @@
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-20
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest daily SEO blog deployment is complete for 2026-07-20.
+
+Articles deployed and verified:
+- Male Masturbator Devices: Type Guide
+  URL: https://shoplovanest.com/blog/male-masturbator-device-types-guide/
+  Primary keywords: male masturbation device, male masturbation devices, automatic male masturbators, electric male masturbator, best male masturbator toy
+- Rabbit Vibrator Ears: Fit & Control Guide
+  URL: https://shoplovanest.com/blog/rabbit-vibrator-ears-fit-guide/
+  Primary keywords: rabbit vibrating ears, dual rabbit vibrator, small rabbit vibrator, what is a rabbit vibrator, how to use a rabbit vibrator
+
+Commit: 516e52de0b
+
+Verification summary:
+- Content quality validation: pass (minimum quality score 100)
+- Blog index: HTTP 200 and links both new articles
+- Sitemap: HTTP 200, includes both new URLs, 2026-07-20 lastmod, and image metadata
+- Article live checks: HTTP 200, title/meta present, exactly one H1, Google tag configured once, Quick Answer, Red Flags, FAQPage schema, authority references, and image SEO metadata present
+- Image assets: generated with opus-image-1.5 and verified HTTP 200
+
+Deployment:
+- Method: targeted rsync to root@153.75.235.56:/var/www/myopencart/upload
+- Permissions: www-data:www-data; dirs 755; files 644
+
+Email status: sending via /opt/homebrew/bin/msmtp using configured /Users/grant/.msmtprc.
