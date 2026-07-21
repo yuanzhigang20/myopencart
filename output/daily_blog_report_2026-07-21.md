@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report - 2026-07-21
 
-Status: generated and validated locally; pending commit, push, deploy, live verification, and email at report creation time.
+Status: generated, validated, committed, pushed, deployed, and live verified; email pending at this report update.
 
 ## Articles
 
@@ -33,4 +33,7 @@ Status: generated and validated locally; pending commit, push, deploy, live veri
 - Blog index checks: {"links_new_articles": true, "blog_count_meta_updated": true}
 
 ## Deployment and email
-- Pending; this report will be updated after commit, deploy, live verification, and msmtp acceptance.
+- Commit: d84101b58a (pushed to master)
+- Deploy: targeted rsync completed; permissions set to www-data:www-data, dirs 755, files 644.
+- Live verification: pass. Article URLs HTTP 200; title/meta present; one H1; one gtag config; Quick Answer; Red Flags; FAQPage; authority references; image metadata; blog index links; sitemap URLs/lastmod/image metadata all verified.
+- Email: pending; will update after msmtp acceptance.

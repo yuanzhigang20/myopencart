@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "live_verified_pending_email",
   "article_quota": 2,
   "articles": [
     {
@@ -257,5 +257,68 @@
       "blog_count_meta_updated": true
     },
     "validated_at": "2026-07-21"
+  },
+  "commit": {
+    "hash": "d84101b58a",
+    "status": "pushed",
+    "remote": "github.com:yuanzhigang20/myopencart.git master"
+  },
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data; dirs 755; files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "results": {
+      "adult-toy-eggs-insertable-guide": {
+        "http": 200,
+        "title": "Insertable Egg Toy Guide: Fit & Retrieval",
+        "meta_present": true,
+        "h1_count": 1,
+        "gtag_config_count": 1,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage": true,
+        "authority_refs": 4,
+        "og_image": true,
+        "og_image_alt": true,
+        "twitter_image": true,
+        "twitter_image_alt": true,
+        "jsonld_imageobject": true
+      },
+      "rechargeable-bullet-vibrator-guide": {
+        "http": 200,
+        "title": "Rechargeable Bullet Vibrator Guide",
+        "meta_present": true,
+        "h1_count": 1,
+        "gtag_config_count": 1,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage": true,
+        "authority_refs": 4,
+        "og_image": true,
+        "og_image_alt": true,
+        "twitter_image": true,
+        "twitter_image_alt": true,
+        "jsonld_imageobject": true
+      },
+      "blog_index": {
+        "http": 200,
+        "links": {
+          "https://shoplovanest.com/blog/adult-toy-eggs-insertable-guide/": true,
+          "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-guide/": true
+        }
+      },
+      "sitemap": {
+        "http": 200,
+        "urls": {
+          "https://shoplovanest.com/blog/adult-toy-eggs-insertable-guide/": true,
+          "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-guide/": true
+        },
+        "lastmod_2026_07_21": true,
+        "image_metadata": true
+      }
+    }
   }
 }
