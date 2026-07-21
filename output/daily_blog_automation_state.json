@@ -1,36 +1,30 @@
 {
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "male-masturbator-device-types-guide",
-      "title": "Male Masturbator Devices: Type Guide",
-      "url": "https://shoplovanest.com/blog/male-masturbator-device-types-guide/",
+      "slug": "adult-toy-eggs-insertable-guide",
+      "title": "Insertable Egg Toy Guide: Fit & Retrieval",
+      "url": "https://shoplovanest.com/blog/adult-toy-eggs-insertable-guide/",
       "primary_keywords": [
-        "male masturbation device",
-        "male masturbation devices",
-        "automatic male masturbators",
-        "electric male masturbator",
-        "best male masturbator toy"
+        "adult toy eggs insertable"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected male masturbation device/devices (Volume 480/320), automatic male masturbators (Volume 720), electric male masturbator (Volume 260), and best male masturbator toy (Volume 320) from the male-masturbator cluster. Existing pages cover materials, cleaning, realistic styles, and hands-free use; this article clusters the distinct device-type comparison intent without creating a thin one-keyword page.",
-      "intent_cluster": "Male masturbator device type comparison intent \u2014 manual sleeve vs automatic/electric vs hands-free, cleaning access, motors, noise, controls, charging, material clarity, privacy, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy eggs insertable (Volume 1300) from the adult-toys keyword file. Existing egg content is broad remote-use guidance; this page targets the distinct insertable egg retrieval/fit checklist intent without a thin one-keyword article.",
+      "intent_cluster": "Insertable egg toy intent \u2014 retrieval design, size, remote control, noise, material, cleaning, storage, and safer checkout checks"
     },
     {
-      "slug": "rabbit-vibrator-ears-fit-guide",
-      "title": "Rabbit Vibrator Ears: Fit & Control Guide",
-      "url": "https://shoplovanest.com/blog/rabbit-vibrator-ears-fit-guide/",
+      "slug": "rechargeable-bullet-vibrator-guide",
+      "title": "Rechargeable Bullet Vibrator Guide",
+      "url": "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-guide/",
       "primary_keywords": [
-        "rabbit vibrating ears",
-        "dual rabbit vibrator",
-        "small rabbit vibrator",
-        "what is a rabbit vibrator",
-        "how to use a rabbit vibrator"
+        "rechargeable bullet vibrator",
+        "rechargeable vibrator",
+        "bullet vibrator"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rabbit vibrating ears (Volume 210), dual rabbit vibrator (Volume 260), small rabbit vibrator (Volume 260), what is a rabbit vibrator (Volume 260), and how to use a rabbit vibrator (Volume 720) from the rabbit-vibrator cluster. Existing rabbit pages are broad buyer guides; this article targets the distinct ear/fit/control complexity intent.",
-      "intent_cluster": "Rabbit vibrator ear and fit intent \u2014 external ear shape, internal shaft size, dual alignment variability, small vs full-size tradeoffs, controls, charging, cleaning, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rechargeable bullet vibrator (Volume 210) and related rechargeable vibrator/bullet vibrator terms from the keyword files. Existing bullet pages cover basic use and mini size; this article targets charging/runtime and compact-control buying intent.",
+      "intent_cluster": "Rechargeable bullet vibrator intent \u2014 charger type, runtime, controls, noise, travel lock, waterproof claims, material, cleaning, and checkout red flags"
     }
   ],
   "keyword_source_files_read": [
@@ -40,420 +34,228 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "automatic male masturbators",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.11,0.12,0.36,0.36,0.41,0.55,0.41,0.55,0.36,0.20,1.00,0.20",
-      "Keyword Difficulty": "29",
-      "SERP Features": "Sitelinks, AI Overview"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "male masturbation device",
-      "Intent": "Commercial",
-      "Volume": "480",
-      "Trend": "0.11,0.13,1.00,0.16,0.16,0.13,0.16,0.84,0.16,0.13,0.11,0.11",
-      "Keyword Difficulty": "28",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "best male masturbator toy",
-      "Intent": "Commercial",
-      "Volume": "320",
-      "Trend": "0.56,0.67,0.67,1.00,0.44,0.83,0.67,0.67,0.67,0.67,0.44,0.56",
-      "Keyword Difficulty": "25",
-      "SERP Features": "Sitelinks, AI Overview"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "male masturbation devices",
-      "Intent": "Commercial",
-      "Volume": "320",
-      "Trend": "0.26,0.32,0.39,0.32,0.32,0.21,0.32,0.26,0.32,0.32,1.00,0.26",
-      "Keyword Difficulty": "35",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "electric male masturbator",
-      "Intent": "Commercial",
-      "Volume": "260",
-      "Trend": "0.66,0.66,0.52,1.00,0.82,0.66,0.66,0.82,0.66,0.66,0.82,0.34",
-      "Keyword Difficulty": "33",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rabbit vibrator",
-      "Keyword": "how to use a rabbit vibrator",
+      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
+      "seed_keyword": "adult toys",
+      "Keyword": "adult toy eggs insertable",
       "Intent": "Informational",
-      "Volume": "720",
-      "Trend": "0.74,0.74,0.74,0.74,0.59,0.59,0.59,0.59,0.59,1.00,0.48,0.48",
-      "Keyword Difficulty": "17",
-      "SERP Features": "Sitelinks, People also ask"
+      "Volume": "1300",
+      "Trend": "1.00,0.00",
+      "Keyword Difficulty": "18",
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rabbit vibrator",
-      "Keyword": "dual rabbit vibrator",
-      "Intent": "Informational",
-      "Volume": "260",
-      "Trend": "0.05,0.06,0.06,0.10,1.00,0.10,0.08,0.10,0.10,0.13,0.08,0.08",
-      "Keyword Difficulty": "31",
-      "SERP Features": "Sitelinks, People also ask, Related searches"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rabbit vibrator",
-      "Keyword": "small rabbit vibrator",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "bullet vibrator",
       "Intent": "Commercial",
-      "Volume": "260",
-      "Trend": "0.53,0.66,0.66,0.66,1.00,1.00,0.82,0.66,0.53,0.66,0.43,0.53",
-      "Keyword Difficulty": "23",
+      "Volume": "14800",
+      "Trend": "0.81,0.81,1.00,0.81,0.81,0.81,0.81,0.81,1.00,1.00,0.81,0.81",
+      "Keyword Difficulty": "32",
       "SERP Features": "Sitelinks, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rabbit vibrator",
-      "Keyword": "what is a rabbit vibrator",
-      "Intent": "Informational",
-      "Volume": "260",
-      "Trend": "0.53,1.00,0.66,0.82,0.66,0.53,0.82,0.53,0.82,0.53,0.53,0.53",
-      "Keyword Difficulty": "36",
-      "SERP Features": "Sitelinks, AI Overview, People also ask"
+      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rechargeable vibrator",
+      "Keyword": "rechargeable vibrator",
+      "Intent": "Commercial",
+      "Volume": "480",
+      "Trend": "0.53,0.80,0.80,1.00,0.80,0.67,0.80,1.00,0.80,0.80,0.67,0.67",
+      "Keyword Difficulty": "32",
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rabbit-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rabbit vibrator",
-      "Keyword": "rabbit vibrating ears",
+      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rechargeable vibrator",
+      "Keyword": "rechargeable bullet vibrator",
       "Intent": "Commercial",
       "Volume": "210",
-      "Trend": "1.00,0.65,0.53,0.53,0.27,0.44,0.27,0.15,0.21,0.15,0.21,0.82",
-      "Keyword Difficulty": "27",
-      "SERP Features": "Sitelinks, Video, People also ask"
+      "Trend": "0.52,0.65,1.00,0.80,1.00,1.00,0.65,0.52,0.43,0.52,1.00,0.52",
+      "Keyword Difficulty": "24",
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "automatic male masturbators",
+      "Keyword": "adult toy eggs insertable",
       "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Topic cluster": "Gift and couples decisions",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/adult-toy-gift-guide/",
+      "Assigned article title": "Adult Toy Gift Guide: Consent, Privacy, and Safer Choices",
       "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "male masturbation device",
-      "Search intent": "Commercial",
-      "Topic cluster": "Unclustered adult wellness/general",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Review manually",
-      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
-      "Priority": "P4",
-      "Notes": "Manual review recommended before content changes."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "best male masturbator toy",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
-      "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "male masturbation devices",
-      "Search intent": "Commercial",
-      "Topic cluster": "Unclustered adult wellness/general",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Review manually",
-      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
-      "Priority": "P4",
-      "Notes": "Manual review recommended before content changes."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "electric male masturbator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
-      "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "how to use a rabbit vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Rabbit vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rabbit-vibrator-guide/",
-      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
-      "Action": "Update existing article",
-      "Reason": "Explain fit and control complexity without explicit or exaggerated claims. Commercial value: High; difficulty: Medium.",
-      "Priority": "P2",
+      "Reason": "Make consent and recipient comfort the non-negotiable foundation. Commercial value: Medium; difficulty: Easy.",
+      "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "dual rabbit vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Rabbit vibrators",
+      "Keyword": "bullet vibrator",
+      "Search intent": "How-to",
+      "Topic cluster": "Vibrator selection",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rabbit-vibrator-guide/",
-      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
+      "Assigned URL": "/blog/how-to-choose-a-vibrator/",
+      "Assigned article title": "How to Choose a Vibrator: A Practical Decision Checklist",
       "Action": "Update existing article",
-      "Reason": "Rabbit-style massager product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
+      "Reason": "Turn a crowded category into a short decision tree. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "small rabbit vibrator",
+      "Keyword": "rechargeable vibrator",
       "Search intent": "Commercial",
-      "Topic cluster": "Rabbit vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rabbit-vibrator-guide/",
-      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
+      "Topic cluster": "Rechargeable massagers",
+      "Primary/secondary": "Primary",
+      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
+      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
       "Action": "Update existing article",
-      "Reason": "Rabbit-style massager product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
+      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "what is a rabbit vibrator",
+      "Keyword": "rechargeable bullet vibrator",
       "Search intent": "Commercial",
-      "Topic cluster": "Rabbit vibrators",
+      "Topic cluster": "Rechargeable massagers",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rabbit-vibrator-guide/",
-      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
+      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
+      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
       "Action": "Update existing article",
-      "Reason": "Rabbit-style massager product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "rabbit vibrating ears",
-      "Search intent": "Commercial",
-      "Topic cluster": "Rabbit vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rabbit-vibrator-guide/",
-      "Assigned article title": "Rabbit Vibrator Guide: Who It Suits and What to Check",
-      "Action": "Update existing article",
-      "Reason": "Rabbit-style massager product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
+      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-20T08:37:45.090092+08:00",
+  "generated_at": "2026-07-21T20:43:40.670845+08:00",
   "image_generation": {
     "status": "pass",
-    "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-20T08:37:45.090288+08:00",
+    "model": "opus-image-1.5 via configured endpoint",
     "files": [
-      "upload/blog/assets/male-masturbator-device-types-guide-opus-cover.png",
-      "upload/blog/assets/rabbit-vibrator-ears-fit-guide-opus-cover.png"
+      "upload/blog/assets/adult-toy-eggs-insertable-guide-opus-cover.png",
+      "upload/blog/assets/rechargeable-bullet-vibrator-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/male-masturbator-device-types-guide-opus-cover.png",
+        "file": "upload/blog/assets/adult-toy-eggs-insertable-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0f2cdd4c38510b9f016a5d6d7bfc68819baed7f31cc3f2ca87",
-        "call_id": "ig_0f2cdd4c38510b9f016a5d6d7c8824819bb4950787b85cbe40",
-        "size": "1536x1024",
-        "quality": "medium",
-        "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article comparing male masturbator device types. Neutral tabletop scene with abstract non-explicit device silhouettes, sleeve material swatch cards, a small cleaning brush, a charging cable, a quiet-control checklist card, and a plain storage pouch. No people, no nudity, no explicit anatomy, no branding. Mature tasteful product photography, soft natural light, graphite, ivory, and muted teal palette. Clean composition, premiu"
+        "response_id": "resp_05fc37e780ea25a8016a5f690512b0819b84fe50f61eecaa67"
       },
       {
-        "file": "upload/blog/assets/rabbit-vibrator-ears-fit-guide-opus-cover.png",
+        "file": "upload/blog/assets/rechargeable-bullet-vibrator-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0b4ae80f235c7aa3016a5d6dab58ac8198a4370078eaca3459",
-        "call_id": "ig_0b4ae80f235c7aa3016a5d6dabf0948198b9c3896969380c3b",
-        "size": "1693x929",
-        "quality": "medium",
-        "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about rabbit vibrator ear fit and controls. Neutral tabletop scene, mature tasteful product photography, soft natural light, ivory, graphite, and muted rose palette. Include abstract non-explicit dual-shape comparison cards, a small measuring strip, simple control icons, a charging cable, a cleaning cloth, material swatches, and a storage pouch. No people, no nudity, no explicit anatomy, no branding. Clean, premium, r"
+        "response_id": "resp_0310ab499696a859016a5f693f5abc819b8c60636ae20e46a4"
       }
     ]
   },
-  "local_validation": {
+  "content_quality_validation": {
     "status": "pass",
-    "article_checks": {
-      "male-masturbator-device-types-guide": {
-        "title": "Male Masturbator Devices: Type Guide",
-        "title_length": 36,
-        "meta_length": 132,
-        "h1_count": 1,
-        "gtag_occurrences": 2,
-        "word_count": 1047,
+    "results": [
+      {
+        "slug": "adult-toy-eggs-insertable-guide",
+        "title": "Insertable Egg Toy Guide: Fit &amp; Retrieval",
+        "meta": "Compare insertable egg toys by retrieval design, remote controls, material, size, noise, cleaning, storage, and checkout red flags.",
         "checks": {
+          "title_len": 45,
           "title_under_60": true,
+          "meta_len": 131,
           "meta_under_155": true,
+          "h1_count": 1,
           "one_h1": true,
-          "gtag_script_and_config_once": true,
+          "gtag_id_count": 2,
+          "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
+          "word_count": 1840,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
+          "faq_count": 5,
           "faqpage_jsonld": true,
-          "authority_refs": true,
-          "related_blog_links_2_4": true,
-          "product_support_links_1_3": true,
-          "image_seo_metadata": true,
-          "natural_readability_markers": true,
-          "topic_specific_depth": true,
-          "banned_terms_absent": true
+          "internal_blog_links": 5,
+          "product_support_links": 6,
+          "authority_refs": 4,
+          "has_authority": true,
+          "og_image": true,
+          "og_image_alt": true,
+          "twitter_image": true,
+          "twitter_image_alt": true,
+          "image_alt_title_figcaption": true,
+          "jsonld_imageobject": true,
+          "banned_scan_pass": true,
+          "quick_answer_near_top": true,
+          "quality_score": 100,
+          "pass": true
         },
-        "quality_score": 100,
-        "authority_links": [
+        "refs": [
           "https://consumer.ftc.gov/articles/online-shopping",
           "https://www.saferproducts.gov/",
-          "https://www.fda.gov/cosmetics/cosmetics-labeling-regulations/cosmetics-labeling-guide",
-          "https://www.iec.ch/ip-ratings"
-        ],
-        "related_blog_count": 4,
-        "product_support_count": 6
+          "https://www.iec.ch/ip-ratings",
+          "https://www.plannedparenthood.org/learn"
+        ]
       },
-      "rabbit-vibrator-ears-fit-guide": {
-        "title": "Rabbit Vibrator Ears: Fit &amp; Control Guide",
-        "title_length": 45,
-        "meta_length": 136,
-        "h1_count": 1,
-        "gtag_occurrences": 2,
-        "word_count": 1128,
+      {
+        "slug": "rechargeable-bullet-vibrator-guide",
+        "title": "Rechargeable Bullet Vibrator Guide",
+        "meta": "Compare rechargeable bullet vibrators by charging style, runtime, controls, noise, waterproof claims, materials, cleaning, and red flags.",
         "checks": {
+          "title_len": 34,
           "title_under_60": true,
+          "meta_len": 137,
           "meta_under_155": true,
+          "h1_count": 1,
           "one_h1": true,
-          "gtag_script_and_config_once": true,
+          "gtag_id_count": 2,
+          "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
+          "word_count": 1753,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
+          "faq_count": 5,
           "faqpage_jsonld": true,
-          "authority_refs": true,
-          "related_blog_links_2_4": true,
-          "product_support_links_1_3": true,
-          "image_seo_metadata": true,
-          "natural_readability_markers": true,
-          "topic_specific_depth": true,
-          "banned_terms_absent": true
+          "internal_blog_links": 5,
+          "product_support_links": 6,
+          "authority_refs": 4,
+          "has_authority": true,
+          "og_image": true,
+          "og_image_alt": true,
+          "twitter_image": true,
+          "twitter_image_alt": true,
+          "image_alt_title_figcaption": true,
+          "jsonld_imageobject": true,
+          "banned_scan_pass": true,
+          "quick_answer_near_top": true,
+          "quality_score": 100,
+          "pass": true
         },
-        "quality_score": 100,
-        "authority_links": [
+        "refs": [
           "https://www.iec.ch/ip-ratings",
           "https://consumer.ftc.gov/articles/online-shopping",
           "https://www.saferproducts.gov/",
-          "https://www.plannedparenthood.org/learn"
-        ],
-        "related_blog_count": 4,
-        "product_support_count": 6
+          "https://www.tsa.gov/travel/security-screening/whatcanibring/all"
+        ]
+      }
+    ],
+    "sitemap_checks": {
+      "adult-toy-eggs-insertable-guide": {
+        "url_present": true,
+        "lastmod": true,
+        "image_metadata": true
+      },
+      "rechargeable-bullet-vibrator-guide": {
+        "url_present": true,
+        "lastmod": true,
+        "image_metadata": true
       }
     },
-    "blog_index_links": true,
-    "sitemap_image_metadata": true,
-    "quality_score_min": 100,
-    "readability_natural_english": true,
-    "topic_specific_depth": true,
-    "authority_refs": true,
-    "validated_at": "2026-07-20T08:38:23.732250+08:00"
-  },
-  "validated_at": "2026-07-20T08:38:23.732250+08:00",
-  "commit": "516e52de0b",
-  "push": {
-    "status": "pass",
-    "remote": "origin/master",
-    "pushed_at": "2026-07-20T08:41:31+08:00"
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
-    "paths": [
-      "upload/blog/male-masturbator-device-types-guide/",
-      "upload/blog/rabbit-vibrator-ears-fit-guide/",
-      "upload/blog/assets/male-masturbator-device-types-guide-opus-cover.png",
-      "upload/blog/assets/rabbit-vibrator-ears-fit-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data; dirs 755; files 644",
-    "deployed_at": "2026-07-20T08:41:31+08:00"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-20T08:41:31+08:00",
-    "checks": {
-      "article_urls_http_200": true,
-      "blog_index_http_200_and_links": true,
-      "sitemap_http_200_and_urls": true,
-      "sitemap_image_metadata": true,
-      "article_title_meta_h1_gtag": true,
-      "quick_answer_red_flags_faq_authority_refs": true,
-      "image_seo_metadata": true,
-      "image_assets_http_200": true
+    "index_checks": {
+      "links_new_articles": true,
+      "blog_count_meta_updated": true
     },
-    "urls": [
-      "https://shoplovanest.com/blog/male-masturbator-device-types-guide/",
-      "https://shoplovanest.com/blog/rabbit-vibrator-ears-fit-guide/",
-      "https://shoplovanest.com/blog/",
-      "https://shoplovanest.com/sitemap.xml"
-    ]
-  },
-  "updated_at": "2026-07-20T08:43:01+08:00",
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-20",
-    "email_path": "output/daily_blog_2026-07-20_success.eml",
-    "sent_at": "2026-07-20T08:43:01+08:00",
-    "method": "/opt/homebrew/bin/msmtp with temporary port 465 SMTPS config derived from /Users/grant/.msmtprc; passwordeval/keychain unchanged; msmtp exit 0",
-    "msmtp_exit_code": 0
-  },
-  "completion_rule": {
-    "exactly_2_new_articles": true,
-    "blog_index_updated": true,
-    "sitemap_updated": true,
-    "content_quality_validation_passed": true,
-    "git_commit_pushed": true,
-    "production_deployed": true,
-    "live_verification_passed": true,
-    "success_email_sent_accepted": true
+    "validated_at": "2026-07-21"
   }
 }
