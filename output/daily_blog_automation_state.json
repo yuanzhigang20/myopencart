@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
   "timezone": "Asia/Shanghai",
-  "status": "live_verified_pending_email",
+  "status": "email_blocked_retry_needed",
   "article_quota": 2,
   "articles": [
     {
@@ -320,5 +320,17 @@
         "image_metadata": true
       }
     }
-  }
+  },
+  "email": {
+    "status": "blocked",
+    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-21",
+    "attempts": 5,
+    "exit_code": 76,
+    "error": "msmtp: the server sent an empty reply; could not send mail (account default from /Users/grant/.msmtprc)",
+    "note": "Do not mark complete until msmtp returns EX_OK/SMTP 250. Previous days show transient Gmail SMTP empty-reply errors sometimes succeeded on later retry. Retry next scheduled check without creating extra articles."
+  },
+  "completion_rule_met": false,
+  "updated_at": "2026-07-21T20:50:03.756570+08:00"
 }

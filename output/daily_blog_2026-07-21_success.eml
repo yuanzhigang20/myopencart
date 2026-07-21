@@ -1,0 +1,39 @@
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-21
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest Daily Blog Deployment Complete - 2026-07-21
+
+Two new compliant SEO blog articles were generated from the required keyword files, validated, committed, pushed, deployed, and verified live.
+
+Article 1:
+- URL: https://shoplovanest.com/blog/adult-toy-eggs-insertable-guide/
+- Title: Insertable Egg Toy Guide: Fit & Retrieval
+- Primary keyword(s): adult toy eggs insertable
+- Verification: HTTP 200, title/meta present, one H1, one Google tag config, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, image SEO metadata, blog index link, and sitemap image metadata verified.
+
+Article 2:
+- URL: https://shoplovanest.com/blog/rechargeable-bullet-vibrator-guide/
+- Title: Rechargeable Bullet Vibrator Guide
+- Primary keyword(s): rechargeable bullet vibrator, rechargeable vibrator, bullet vibrator
+- Verification: HTTP 200, title/meta present, one H1, one Google tag config, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, image SEO metadata, blog index link, and sitemap image metadata verified.
+
+Keyword source files read:
+- output/merged_keyword_research_2026-06-25.csv
+- output/keyword_to_url_mapping_2026-06-25.csv
+
+Commit:
+- Content commit: d84101b58a
+- Verification/report commit: 4e7d387219
+
+Deployment summary:
+- Targeted rsync to root@153.75.235.56:/var/www/myopencart/upload
+- Deployed only the two new blog folders, two image assets, upload/blog/index.html, and upload/sitemap.xml
+- Permissions set to www-data:www-data; directories 755; files 644
+
+Blog index and sitemap:
+- Blog index: https://shoplovanest.com/blog/ HTTP 200 and links both new articles
+- Sitemap: https://shoplovanest.com/sitemap.xml HTTP 200 and includes both URLs, 2026-07-21 lastmod, and image metadata
+
+Email status:
+- This message was sent via /opt/homebrew/bin/msmtp using the configured Gmail account.
