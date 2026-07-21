@@ -1,7 +1,7 @@
 {
   "date": "2026-07-21",
   "timezone": "Asia/Shanghai",
-  "status": "email_blocked_retry_needed",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -12,7 +12,7 @@
         "adult toy eggs insertable"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy eggs insertable (Volume 1300) from the adult-toys keyword file. Existing egg content is broad remote-use guidance; this page targets the distinct insertable egg retrieval/fit checklist intent without a thin one-keyword article.",
-      "intent_cluster": "Insertable egg toy intent \u2014 retrieval design, size, remote control, noise, material, cleaning, storage, and safer checkout checks"
+      "intent_cluster": "Insertable egg toy intent — retrieval design, size, remote control, noise, material, cleaning, storage, and safer checkout checks"
     },
     {
       "slug": "rechargeable-bullet-vibrator-guide",
@@ -24,7 +24,7 @@
         "bullet vibrator"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rechargeable bullet vibrator (Volume 210) and related rechargeable vibrator/bullet vibrator terms from the keyword files. Existing bullet pages cover basic use and mini size; this article targets charging/runtime and compact-control buying intent.",
-      "intent_cluster": "Rechargeable bullet vibrator intent \u2014 charger type, runtime, controls, noise, travel lock, waterproof claims, material, cleaning, and checkout red flags"
+      "intent_cluster": "Rechargeable bullet vibrator intent — charger type, runtime, controls, noise, travel lock, waterproof claims, material, cleaning, and checkout red flags"
     }
   ],
   "keyword_source_files_read": [
@@ -322,15 +322,19 @@
     }
   },
   "email": {
-    "status": "blocked",
-    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc",
+    "status": "sent_accepted",
+    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -a default --port=465 --tls=on --tls-starttls=off",
     "recipient": "yuanzhigang20@gmail.com",
     "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-21",
     "attempts": 5,
-    "exit_code": 76,
+    "exit_code": 0,
     "error": "msmtp: the server sent an empty reply; could not send mail (account default from /Users/grant/.msmtprc)",
-    "note": "Do not mark complete until msmtp returns EX_OK/SMTP 250. Previous days show transient Gmail SMTP empty-reply errors sometimes succeeded on later retry. Retry next scheduled check without creating extra articles."
+    "note": "After repeated Gmail SMTP empty-reply failures on STARTTLS/587, the same message was accepted via msmtp with Gmail implicit TLS port 465 using the configured account/keychain setup. Completion rule met.",
+    "attempts_previous_blocked": 6,
+    "retry_result": "accepted",
+    "accepted_at": "2026-07-21T22:32:00+08:00"
   },
   "completion_rule_met": false,
-  "updated_at": "2026-07-21T20:50:03.756570+08:00"
+  "updated_at": "2026-07-21T20:50:03.756570+08:00",
+  "completed_at": "2026-07-21T22:32:00+08:00"
 }

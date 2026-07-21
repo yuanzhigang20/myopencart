@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report - 2026-07-21
 
-Status: generated, validated, committed, pushed, deployed, and live verified; BLOCKED only on success email because msmtp returned exit 76 (“the server sent an empty reply”). Do not create more articles on retry; retry email only, then mark complete after msmtp acceptance.
+Status: COMPLETE — generated, validated, committed, pushed, deployed, live verified, and success email accepted by msmtp.
 
 ## Articles
 
@@ -36,4 +36,4 @@ Status: generated, validated, committed, pushed, deployed, and live verified; BL
 - Commit: d84101b58a (pushed to master)
 - Deploy: targeted rsync completed; permissions set to www-data:www-data, dirs 755, files 644.
 - Live verification: pass. Article URLs HTTP 200; title/meta present; one H1; one gtag config; Quick Answer; Red Flags; FAQPage; authority references; image metadata; blog index links; sitemap URLs/lastmod/image metadata all verified.
-- Email: BLOCKED. `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc yuanzhigang20@gmail.com < output/daily_blog_2026-07-21_success.eml` attempted 5 times and returned exit 76: `the server sent an empty reply`. Completion rule not met until email succeeds. Retry next scheduled check without creating extra articles.
+- Email: SENT/ACCEPTED. Earlier STARTTLS/587 attempts returned exit 76 (`the server sent an empty reply`), but the retry at 2026-07-21 22:32 CST succeeded with `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -a default --port=465 --tls=on --tls-starttls=off yuanzhigang20@gmail.com < output/daily_blog_2026-07-21_success.eml` (exit 0). Completion rule met.
