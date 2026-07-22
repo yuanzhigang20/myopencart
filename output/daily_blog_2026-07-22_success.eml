@@ -1,0 +1,29 @@
+From: ShopLovaNest Automation <yuanzhigang20@gmail.com>
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-22
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest Daily Blog Deployment Complete - 2026-07-22
+
+Two articles generated from the keyword/mapping files, validated, committed, pushed, deployed, and verified live.
+
+Articles:
+1. Waterproof Vibrator Ratings & Cleaning
+   URL: https://shoplovanest.com/blog/waterproof-vibrator-ratings-cleaning-guide/
+   Primary keywords: waterproof vibrator, waterproof vibrators, waterproof vibrater, are vibrators waterproof
+   Quality: 100; live verification passed.
+
+2. Adult Toy Delivery: Privacy & Timing Guide
+   URL: https://shoplovanest.com/blog/adult-toy-delivery-privacy-guide/
+   Primary keywords: adult toy delivery, adult toys fast delivery, adult toys discreet shipping, discreet shipping adult toys
+   Quality: 100; live verification passed.
+
+Commit: 6331fe33df
+
+Verification summary:
+- Article pages: HTTP 200, title/meta present, exactly one H1, Google tag config exactly once, Quick Answer, Red Flags, FAQPage schema, authority references, image SEO metadata all verified.
+- Blog index: HTTP 200 and links both new articles.
+- Sitemap: HTTP 200 and includes both new URLs with 2026-07-22 lastmod and image metadata.
+- Deployment: targeted rsync to root@153.75.235.56:/var/www/myopencart/upload completed; ownership/perms set to www-data:www-data, dirs 755, files 644.
+
+Email status: sending via /opt/homebrew/bin/msmtp using /Users/grant/.msmtprc.

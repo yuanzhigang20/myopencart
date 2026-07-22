@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
   "timezone": "Asia/Shanghai",
-  "status": "live_verified_pending_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -399,5 +399,16 @@
         "pass": true
       }
     }
+  },
+  "completed_at": "2026-07-22T08:40:46.215556+08:00",
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-22",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "command": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -a default --port=465 --tls=on --tls-starttls=off yuanzhigang20@gmail.com < output/daily_blog_2026-07-22_success.eml",
+    "exit_code": 0,
+    "sent_at": "2026-07-22T08:40:46.215556+08:00"
   }
 }

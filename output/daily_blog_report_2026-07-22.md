@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report - 2026-07-22
 
-Status: LIVE VERIFIED — generated, validated, committed, pushed, deployed, and live verified. Email pending at report draft time.
+Status: COMPLETE — generated, validated, committed, pushed, deployed, live verified, and success email accepted by msmtp.
 
 ## Articles
 
@@ -36,4 +36,4 @@ Status: LIVE VERIFIED — generated, validated, committed, pushed, deployed, and
 - Commit: c34af46682 (pushed to master)
 - Deploy: targeted rsync completed; permissions set to www-data:www-data, dirs 755, files 644.
 - Live verification: pass. Article URLs HTTP 200; title/meta present; one H1; one gtag config; Quick Answer; Red Flags; FAQPage; authority references; image metadata; blog index links; sitemap URLs/lastmod/image metadata all verified.
-- Email: pending.
+- Email: SENT/ACCEPTED via `/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -a default --port=465 --tls=on --tls-starttls=off yuanzhigang20@gmail.com < output/daily_blog_2026-07-22_success.eml` (exit 0). Completion rule met.
