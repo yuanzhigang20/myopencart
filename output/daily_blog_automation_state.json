@@ -1,7 +1,7 @@
 {
   "date": "2026-07-22",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "live_verified_pending_email",
   "article_quota": 2,
   "articles": [
     {
@@ -345,5 +345,59 @@
       "expected_count": 135
     },
     "validated_at": "2026-07-22"
+  },
+  "commit": "c34af46682",
+  "git": {
+    "commit": "c34af46682",
+    "pushed": true,
+    "branch": "master"
+  },
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync",
+    "server": "root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data; dirs 755; files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-22T08:40:05.531462+08:00",
+    "results": {
+      "waterproof-vibrator-ratings-cleaning-guide": {
+        "http_200": true,
+        "title_meta": true,
+        "one_h1": true,
+        "gtag_config_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage": true,
+        "authority_refs": true,
+        "image_meta": true,
+        "pass": true
+      },
+      "adult-toy-delivery-privacy-guide": {
+        "http_200": true,
+        "title_meta": true,
+        "one_h1": true,
+        "gtag_config_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage": true,
+        "authority_refs": true,
+        "image_meta": true,
+        "pass": true
+      },
+      "blog_index": {
+        "http_200": true,
+        "links_new_articles": true,
+        "pass": true
+      },
+      "sitemap": {
+        "http_200": true,
+        "urls": true,
+        "lastmod": true,
+        "image_metadata": true,
+        "pass": true
+      }
+    }
   }
 }
