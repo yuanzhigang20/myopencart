@@ -1,30 +1,34 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "adult-toy-eggs-insertable-guide",
-      "title": "Insertable Egg Toy Guide: Fit & Retrieval",
-      "url": "https://shoplovanest.com/blog/adult-toy-eggs-insertable-guide/",
+      "slug": "waterproof-vibrator-ratings-cleaning-guide",
+      "title": "Waterproof Vibrator Ratings & Cleaning",
+      "url": "https://shoplovanest.com/blog/waterproof-vibrator-ratings-cleaning-guide/",
       "primary_keywords": [
-        "adult toy eggs insertable"
+        "waterproof vibrator",
+        "waterproof vibrators",
+        "waterproof vibrater",
+        "are vibrators waterproof"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy eggs insertable (Volume 1300) from the adult-toys keyword file. Existing egg content is broad remote-use guidance; this page targets the distinct insertable egg retrieval/fit checklist intent without a thin one-keyword article.",
-      "intent_cluster": "Insertable egg toy intent — retrieval design, size, remote control, noise, material, cleaning, storage, and safer checkout checks"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected waterproof vibrator (Volume 720), waterproof vibrators (590), waterproof vibrater (260), and are vibrators waterproof (170) from the waterproof-vibrator cluster. Existing waterproof pages are broad; this new page targets the distinct IP-rating and cleaning-limit intent so shoppers can interpret water claims before buying.",
+      "intent_cluster": "Waterproof vibrator problem-solving intent \u2014 IP ratings, splash-resistant versus submersible claims, charging contacts, seams, cleaning limits, drying, storage, and seller red flags"
     },
     {
-      "slug": "rechargeable-bullet-vibrator-guide",
-      "title": "Rechargeable Bullet Vibrator Guide",
-      "url": "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-guide/",
+      "slug": "adult-toy-delivery-privacy-guide",
+      "title": "Adult Toy Delivery: Privacy & Timing Guide",
+      "url": "https://shoplovanest.com/blog/adult-toy-delivery-privacy-guide/",
       "primary_keywords": [
-        "rechargeable bullet vibrator",
-        "rechargeable vibrator",
-        "bullet vibrator"
+        "adult toy delivery",
+        "adult toys fast delivery",
+        "adult toys discreet shipping",
+        "discreet shipping adult toys"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rechargeable bullet vibrator (Volume 210) and related rechargeable vibrator/bullet vibrator terms from the keyword files. Existing bullet pages cover basic use and mini size; this article targets charging/runtime and compact-control buying intent.",
-      "intent_cluster": "Rechargeable bullet vibrator intent — charger type, runtime, controls, noise, travel lock, waterproof claims, material, cleaning, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy delivery (Volume 210), adult toys fast delivery (210), and adult toys discreet shipping (1000) from the keyword files. Existing travel and shipping pages are broad; this article targets the distinct checkout-stage delivery/privacy/timing intent without pursuing location-only store queries.",
+      "intent_cluster": "Adult toy delivery and discreet shipping intent \u2014 package labeling, billing descriptors, carrier tracking, fast-delivery claims, porch privacy, return limits, support contact, and checkout red flags"
     }
   ],
   "keyword_source_files_read": [
@@ -36,119 +40,202 @@
       "source": "output/merged_keyword_research_2026-06-25.csv",
       "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
       "seed_keyword": "adult toys",
-      "Keyword": "adult toy eggs insertable",
-      "Intent": "Informational",
-      "Volume": "1300",
-      "Trend": "1.00,0.00",
-      "Keyword Difficulty": "18",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibrator",
-      "Intent": "Commercial",
-      "Volume": "14800",
-      "Trend": "0.81,0.81,1.00,0.81,0.81,0.81,0.81,0.81,1.00,1.00,0.81,0.81",
-      "Keyword Difficulty": "32",
-      "SERP Features": "Sitelinks, Related searches"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rechargeable vibrator",
-      "Keyword": "rechargeable vibrator",
-      "Intent": "Commercial",
-      "Volume": "480",
-      "Trend": "0.53,0.80,0.80,1.00,0.80,0.67,0.80,1.00,0.80,0.80,0.67,0.67",
-      "Keyword Difficulty": "32",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rechargeable vibrator",
-      "Keyword": "rechargeable bullet vibrator",
+      "Keyword": "adult toy delivery",
       "Intent": "Commercial",
       "Volume": "210",
-      "Trend": "0.52,0.65,1.00,0.80,1.00,1.00,0.65,0.52,0.43,0.52,1.00,0.52",
+      "Trend": "0.43,0.43,0.43,0.53,0.82,0.53,0.82,0.66,0.82,0.66,0.66,1.00",
       "Keyword Difficulty": "24",
+      "SERP Features": "Sitelinks, Local pack"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "adult-toys_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "adult toys",
+      "Keyword": "adult toys fast delivery",
+      "Intent": "Commercial",
+      "Volume": "210",
+      "Trend": "0.28,0.53,0.43,0.23,0.35,0.35,0.53,1.00,0.82,0.82,0.53,0.82",
+      "Keyword Difficulty": "43",
+      "SERP Features": "Sitelinks, AI Overview, Ads top, Ads middle"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "discreet-shipping-adult-toys_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "discreet shipping adult toys",
+      "Keyword": "adult toys discreet shipping",
+      "Intent": "Informational",
+      "Volume": "1000",
+      "Trend": "0.77,0.77,0.68,0.77,0.77,1.00,0.77,0.77,1.00,0.56,0.37,0.68",
+      "Keyword Difficulty": "8",
       "SERP Features": "Sitelinks"
     },
     {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy eggs insertable",
-      "Search intent": "Commercial",
-      "Topic cluster": "Gift and couples decisions",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-gift-guide/",
-      "Assigned article title": "Adult Toy Gift Guide: Consent, Privacy, and Safer Choices",
-      "Action": "Update existing article",
-      "Reason": "Make consent and recipient comfort the non-negotiable foundation. Commercial value: Medium; difficulty: Easy.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "waterproof vibrator",
+      "Keyword": "waterproof vibrator",
+      "Intent": "Commercial",
+      "Volume": "720",
+      "Trend": "0.84,0.84,1.00,1.00,1.00,0.84,0.84,1.00,1.00,1.00,0.84,0.43",
+      "Keyword Difficulty": "8",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "waterproof vibrator",
+      "Keyword": "waterproof vibrators",
+      "Intent": "Commercial",
+      "Volume": "590",
+      "Trend": "0.54,0.81,1.00,1.00,0.81,0.54,0.54,0.54,0.29,0.54,0.44,0.19",
+      "Keyword Difficulty": "12",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "waterproof vibrator",
+      "Keyword": "waterproof vibrater",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.29,0.44,0.82,0.15,1.00,0.29,0.15,0.09,0.09,0.65,0.09,0.29",
+      "Keyword Difficulty": "12",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "waterproof vibrator",
+      "Keyword": "are vibrators waterproof",
+      "Intent": "Informational",
+      "Volume": "170",
+      "Trend": "0.66,0.80,1.00,0.80,0.66,0.66,0.52,0.66,0.80,0.80,0.66,0.42",
+      "Keyword Difficulty": "10",
+      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibrator",
+      "Keyword": "adult toy delivery",
+      "Search intent": "Commercial",
+      "Topic cluster": "Unclustered adult wellness/general",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Action": "Review manually",
+      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
+      "Priority": "P4",
+      "Notes": "Manual review recommended before content changes."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "adult toys fast delivery",
+      "Search intent": "Commercial",
+      "Topic cluster": "Buying decision framework",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Action": "Update existing article",
+      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
+      "Priority": "P3",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "adult toys discreet shipping",
       "Search intent": "How-to",
-      "Topic cluster": "Vibrator selection",
+      "Topic cluster": "Travel privacy",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/how-to-choose-a-vibrator/",
-      "Assigned article title": "How to Choose a Vibrator: A Practical Decision Checklist",
+      "Assigned URL": "/blog/travel-with-adult-toys/",
+      "Assigned article title": "Traveling With Adult Toys: Packing, Charging, and Privacy",
       "Action": "Update existing article",
-      "Reason": "Turn a crowded category into a short decision tree. Commercial value: High; difficulty: Easy.",
+      "Reason": "Keep guidance practical and remind readers to check local laws. Commercial value: Medium; difficulty: Medium.",
       "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "rechargeable vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Rechargeable massagers",
+      "Keyword": "waterproof vibrator",
+      "Search intent": "Problem Solving",
+      "Topic cluster": "Waterproof care",
       "Primary/secondary": "Primary",
-      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
-      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
+      "Assigned URL": "/blog/waterproof-vibrator-guide/",
+      "Assigned article title": "Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions",
       "Action": "Update existing article",
-      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
+      "Reason": "Clarify waterproof versus splash resistant and safe cleaning habits. Commercial value: High; difficulty: Medium.",
       "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "rechargeable bullet vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Rechargeable massagers",
+      "Keyword": "waterproof vibrators",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Beginner vibrator selection",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
-      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
+      "Assigned URL": "/blog/vibrators-for-beginners/",
+      "Assigned article title": "Vibrators for Beginners: How to Choose Without Guesswork",
       "Action": "Update existing article",
-      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
+      "Reason": "Explain what features matter first and which advanced features can wait. Commercial value: High; difficulty: Easy.",
       "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "waterproof vibrater",
+      "Search intent": "Problem Solving",
+      "Topic cluster": "Waterproof care",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/waterproof-vibrator-guide/",
+      "Assigned article title": "Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions",
+      "Action": "Update existing article",
+      "Reason": "Waterproof vs splash-resistant problem-solving intent.",
+      "Priority": "P1",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "are vibrators waterproof",
+      "Search intent": "Problem Solving",
+      "Topic cluster": "Waterproof care",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/waterproof-vibrator-guide/",
+      "Assigned article title": "Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions",
+      "Action": "Update existing article",
+      "Reason": "Waterproof vs splash-resistant problem-solving intent.",
+      "Priority": "P1",
+      "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-21T20:43:40.670845+08:00",
+  "generated_at": "2026-07-22T08:35:56.734603+08:00",
   "image_generation": {
     "status": "pass",
-    "model": "opus-image-1.5 via configured endpoint",
+    "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
+    "generated_at": "2026-07-22T08:35:56.735285+08:00",
     "files": [
-      "upload/blog/assets/adult-toy-eggs-insertable-guide-opus-cover.png",
-      "upload/blog/assets/rechargeable-bullet-vibrator-guide-opus-cover.png"
+      "upload/blog/assets/waterproof-vibrator-ratings-cleaning-guide-opus-cover.png",
+      "upload/blog/assets/adult-toy-delivery-privacy-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/adult-toy-eggs-insertable-guide-opus-cover.png",
+        "file": "upload/blog/assets/waterproof-vibrator-ratings-cleaning-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_05fc37e780ea25a8016a5f690512b0819b84fe50f61eecaa67"
+        "response_id": "resp_015ceb3f58eadd1e016a601009a3b48193afb0ebac01f9bbc6",
+        "call_id": "ig_015ceb3f58eadd1e016a60100a80ec8193be9ee64ca573aa9f",
+        "size": "1536x1024",
+        "quality": "medium",
+        "output_format": "png",
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about waterproof vibrator ratings and cleaning. Neutral tabletop scene, mature tasteful product photography, soft natural light. Include an abstract non-explicit sealed wellness device silhouette (no explicit anatomy, no nudity), IP rating cards, water droplet icons, a drying cloth, a magnetic charger caution card, and a small storage pouch. No people, no branding, no explicit details. Palette: ivory, graphite, blue-g"
       },
       {
-        "file": "upload/blog/assets/rechargeable-bullet-vibrator-guide-opus-cover.png",
+        "file": "upload/blog/assets/adult-toy-delivery-privacy-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0310ab499696a859016a5f693f5abc819b8c60636ae20e46a4"
+        "response_id": "resp_03edadb7c07b3a2e016a60103aed3c8195835e23d367a9c2c6",
+        "call_id": "ig_03edadb7c07b3a2e016a60103b82e081958caa510553d79598",
+        "size": "1662x946",
+        "quality": "medium",
+        "output_format": "png",
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about delivery privacy and timing. Neutral tabletop scene shot like mature tasteful product photography. Include a plain unbranded shipping box, a tracking card, a private billing icon on a small note, a small calendar, a support note card, and a sealed storage pouch. No products shown explicitly, no people, no nudity, no explicit anatomy, no branding. Soft natural light, clean composition, ivory, kraft paper, graphit"
       }
     ]
   },
@@ -156,27 +243,27 @@
     "status": "pass",
     "results": [
       {
-        "slug": "adult-toy-eggs-insertable-guide",
-        "title": "Insertable Egg Toy Guide: Fit &amp; Retrieval",
-        "meta": "Compare insertable egg toys by retrieval design, remote controls, material, size, noise, cleaning, storage, and checkout red flags.",
+        "slug": "waterproof-vibrator-ratings-cleaning-guide",
+        "title": "Waterproof Vibrator Ratings &amp; Cleaning",
+        "meta": "Learn what waterproof vibrator claims mean, how IP ratings differ from splash resistance, and how to clean chargers, seams, and cases safely.",
         "checks": {
-          "title_len": 45,
+          "title_len": 42,
           "title_under_60": true,
-          "meta_len": 131,
+          "meta_len": 141,
           "meta_under_155": true,
           "h1_count": 1,
           "one_h1": true,
           "gtag_id_count": 2,
           "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
-          "word_count": 1840,
+          "word_count": 1815,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
           "faq_count": 5,
           "faqpage_jsonld": true,
           "internal_blog_links": 5,
-          "product_support_links": 6,
+          "product_support_links": 10,
           "authority_refs": 4,
           "has_authority": true,
           "og_image": true,
@@ -191,34 +278,34 @@
           "pass": true
         },
         "refs": [
+          "https://www.iec.ch/ip-ratings",
           "https://consumer.ftc.gov/articles/online-shopping",
           "https://www.saferproducts.gov/",
-          "https://www.iec.ch/ip-ratings",
-          "https://www.plannedparenthood.org/learn"
+          "https://www.fda.gov/consumers/consumer-updates"
         ]
       },
       {
-        "slug": "rechargeable-bullet-vibrator-guide",
-        "title": "Rechargeable Bullet Vibrator Guide",
-        "meta": "Compare rechargeable bullet vibrators by charging style, runtime, controls, noise, waterproof claims, materials, cleaning, and red flags.",
+        "slug": "adult-toy-delivery-privacy-guide",
+        "title": "Adult Toy Delivery: Privacy &amp; Timing Guide",
+        "meta": "Compare adult toy delivery options by discreet shipping, billing privacy, tracking, fast-delivery promises, returns, support, and checkout red flags.",
         "checks": {
-          "title_len": 34,
+          "title_len": 46,
           "title_under_60": true,
-          "meta_len": 137,
+          "meta_len": 149,
           "meta_under_155": true,
           "h1_count": 1,
           "one_h1": true,
           "gtag_id_count": 2,
           "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
-          "word_count": 1753,
+          "word_count": 1732,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
           "faq_count": 5,
           "faqpage_jsonld": true,
           "internal_blog_links": 5,
-          "product_support_links": 6,
+          "product_support_links": 8,
           "authority_refs": 4,
           "has_authority": true,
           "og_image": true,
@@ -233,20 +320,20 @@
           "pass": true
         },
         "refs": [
-          "https://www.iec.ch/ip-ratings",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.saferproducts.gov/",
-          "https://www.tsa.gov/travel/security-screening/whatcanibring/all"
+          "https://www.usps.com/manage/informed-delivery.htm",
+          "https://consumer.ftc.gov/articles/what-do-if-youre-billed-things-you-never-got-or-you-get-unordered-products",
+          "https://www.saferproducts.gov/"
         ]
       }
     ],
     "sitemap_checks": {
-      "adult-toy-eggs-insertable-guide": {
+      "waterproof-vibrator-ratings-cleaning-guide": {
         "url_present": true,
         "lastmod": true,
         "image_metadata": true
       },
-      "rechargeable-bullet-vibrator-guide": {
+      "adult-toy-delivery-privacy-guide": {
         "url_present": true,
         "lastmod": true,
         "image_metadata": true
@@ -254,87 +341,9 @@
     },
     "index_checks": {
       "links_new_articles": true,
-      "blog_count_meta_updated": true
+      "blog_count_meta_updated": true,
+      "expected_count": 135
     },
-    "validated_at": "2026-07-21"
-  },
-  "commit": {
-    "hash": "d84101b58a",
-    "status": "pushed",
-    "remote": "github.com:yuanzhigang20/myopencart.git master"
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
-    "permissions": "www-data:www-data; dirs 755; files 644"
-  },
-  "live_verification": {
-    "status": "pass",
-    "results": {
-      "adult-toy-eggs-insertable-guide": {
-        "http": 200,
-        "title": "Insertable Egg Toy Guide: Fit & Retrieval",
-        "meta_present": true,
-        "h1_count": 1,
-        "gtag_config_count": 1,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage": true,
-        "authority_refs": 4,
-        "og_image": true,
-        "og_image_alt": true,
-        "twitter_image": true,
-        "twitter_image_alt": true,
-        "jsonld_imageobject": true
-      },
-      "rechargeable-bullet-vibrator-guide": {
-        "http": 200,
-        "title": "Rechargeable Bullet Vibrator Guide",
-        "meta_present": true,
-        "h1_count": 1,
-        "gtag_config_count": 1,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage": true,
-        "authority_refs": 4,
-        "og_image": true,
-        "og_image_alt": true,
-        "twitter_image": true,
-        "twitter_image_alt": true,
-        "jsonld_imageobject": true
-      },
-      "blog_index": {
-        "http": 200,
-        "links": {
-          "https://shoplovanest.com/blog/adult-toy-eggs-insertable-guide/": true,
-          "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-guide/": true
-        }
-      },
-      "sitemap": {
-        "http": 200,
-        "urls": {
-          "https://shoplovanest.com/blog/adult-toy-eggs-insertable-guide/": true,
-          "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-guide/": true
-        },
-        "lastmod_2026_07_21": true,
-        "image_metadata": true
-      }
-    }
-  },
-  "email": {
-    "status": "sent_accepted",
-    "tool": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -a default --port=465 --tls=on --tls-starttls=off",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-21",
-    "attempts": 5,
-    "exit_code": 0,
-    "error": "msmtp: the server sent an empty reply; could not send mail (account default from /Users/grant/.msmtprc)",
-    "note": "After repeated Gmail SMTP empty-reply failures on STARTTLS/587, the same message was accepted via msmtp with Gmail implicit TLS port 465 using the configured account/keychain setup. Completion rule met.",
-    "attempts_previous_blocked": 6,
-    "retry_result": "accepted",
-    "accepted_at": "2026-07-21T22:32:00+08:00"
-  },
-  "completion_rule_met": true,
-  "updated_at": "2026-07-21T22:33:00+08:00",
-  "completed_at": "2026-07-21T22:32:00+08:00"
+    "validated_at": "2026-07-22"
+  }
 }
