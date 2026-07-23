@@ -1,34 +1,31 @@
 {
-  "date": "2026-07-22",
+  "date": "2026-07-23",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "waterproof-vibrator-ratings-cleaning-guide",
-      "title": "Waterproof Vibrator Ratings & Cleaning",
-      "url": "https://shoplovanest.com/blog/waterproof-vibrator-ratings-cleaning-guide/",
+      "slug": "connected-adult-toys-privacy-security-guide",
+      "title": "Connected Adult Toys: Privacy & Security Guide",
+      "url": "https://shoplovanest.com/blog/connected-adult-toys-privacy-security-guide/",
       "primary_keywords": [
-        "waterproof vibrator",
-        "waterproof vibrators",
-        "waterproof vibrater",
-        "are vibrators waterproof"
+        "app controlled adult toys",
+        "remote control adult toys",
+        "remote adult toys",
+        "long distance adult toys"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected waterproof vibrator (Volume 720), waterproof vibrators (590), waterproof vibrater (260), and are vibrators waterproof (170) from the waterproof-vibrator cluster. Existing waterproof pages are broad; this new page targets the distinct IP-rating and cleaning-limit intent so shoppers can interpret water claims before buying.",
-      "intent_cluster": "Waterproof vibrator problem-solving intent \u2014 IP ratings, splash-resistant versus submersible claims, charging contacts, seams, cleaning limits, drying, storage, and seller red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected app controlled adult toys (Volume 720), remote control adult toys (720), remote adult toys (590), and long distance adult toys (590). Mapping assigns these to broad buying-decision pages, so this article targets a distinct buyer-safety intent: connected-device privacy, permissions, updates, account control, and long-distance consent rather than a thin product list.",
+      "intent_cluster": "Connected adult wellness device privacy intent \u2014 app permissions, Bluetooth range, account safety, firmware updates, remote access, long-distance consent, support, and data-minimization red flags"
     },
     {
-      "slug": "adult-toy-delivery-privacy-guide",
-      "title": "Adult Toy Delivery: Privacy & Timing Guide",
-      "url": "https://shoplovanest.com/blog/adult-toy-delivery-privacy-guide/",
+      "slug": "body-safe-glass-toys-material-guide",
+      "title": "Body-Safe Glass Toys: Material Guide",
+      "url": "https://shoplovanest.com/blog/body-safe-glass-toys-material-guide/",
       "primary_keywords": [
-        "adult toy delivery",
-        "adult toys fast delivery",
-        "adult toys discreet shipping",
-        "discreet shipping adult toys"
+        "body safe glass sex toys made of"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy delivery (Volume 210), adult toys fast delivery (210), and adult toys discreet shipping (1000) from the keyword files. Existing travel and shipping pages are broad; this article targets the distinct checkout-stage delivery/privacy/timing intent without pursuing location-only store queries.",
-      "intent_cluster": "Adult toy delivery and discreet shipping intent \u2014 package labeling, billing descriptors, carrier tracking, fast-delivery claims, porch privacy, return limits, support contact, and checkout red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected body safe glass sex toys made of (Volume 720) from the body-safe-sex-toys file. The mapping points to silicone cleaning, but glass material and finish-quality intent is distinct enough for a dedicated buyer-safety article that avoids cannibalizing silicone care pages.",
+      "intent_cluster": "Body-safe glass material intent \u2014 borosilicate/soda-lime claims, nonporous surface, finish quality, chips and cracks, temperature caution, cleaning, storage, and seller red flags"
     }
   ],
   "keyword_source_files_read": [
@@ -40,95 +37,60 @@
       "source": "output/merged_keyword_research_2026-06-25.csv",
       "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
       "seed_keyword": "adult toys",
-      "Keyword": "adult toy delivery",
+      "Keyword": "app controlled adult toys",
       "Intent": "Commercial",
-      "Volume": "210",
-      "Trend": "0.43,0.43,0.43,0.53,0.82,0.53,0.82,0.66,0.82,0.66,0.66,1.00",
-      "Keyword Difficulty": "24",
-      "SERP Features": "Sitelinks, Local pack"
+      "Volume": "720",
+      "Trend": "0.77,0.20,0.37,0.56,0.30,0.77,0.30,0.37,0.37,0.44,0.37,1.00",
+      "Keyword Difficulty": "26",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
+      "seed_keyword": "adult toys",
+      "Keyword": "remote control adult toys",
+      "Intent": "Commercial",
+      "Volume": "720",
+      "Trend": "0.55,0.44,0.37,1.00,0.30,0.37,0.44,0.44,0.37,0.44,0.44,0.55",
+      "Keyword Difficulty": "23",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
+      "seed_keyword": "adult toys",
+      "Keyword": "remote adult toys",
+      "Intent": "Commercial",
+      "Volume": "590",
+      "Trend": "1.00,0.07,0.25,0.37,0.07,0.37,0.31,0.31,0.25,0.31,0.31,0.46",
+      "Keyword Difficulty": "29",
+      "SERP Features": "Sitelinks, Video"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
       "source_file": "adult-toys_broad-match_us_2026-06-23.xlsx",
       "seed_keyword": "adult toys",
-      "Keyword": "adult toys fast delivery",
-      "Intent": "Commercial",
-      "Volume": "210",
-      "Trend": "0.28,0.53,0.43,0.23,0.35,0.35,0.53,1.00,0.82,0.82,0.53,0.82",
-      "Keyword Difficulty": "43",
-      "SERP Features": "Sitelinks, AI Overview, Ads top, Ads middle"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "discreet-shipping-adult-toys_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "discreet shipping adult toys",
-      "Keyword": "adult toys discreet shipping",
-      "Intent": "Informational",
-      "Volume": "1000",
-      "Trend": "0.77,0.77,0.68,0.77,0.77,1.00,0.77,0.77,1.00,0.56,0.37,0.68",
-      "Keyword Difficulty": "8",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "waterproof vibrator",
-      "Keyword": "waterproof vibrator",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.84,0.84,1.00,1.00,1.00,0.84,0.84,1.00,1.00,1.00,0.84,0.43",
-      "Keyword Difficulty": "8",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "waterproof vibrator",
-      "Keyword": "waterproof vibrators",
+      "Keyword": "long distance adult toys",
       "Intent": "Commercial",
       "Volume": "590",
-      "Trend": "0.54,0.81,1.00,1.00,0.81,0.54,0.54,0.54,0.29,0.54,0.44,0.19",
-      "Keyword Difficulty": "12",
+      "Trend": "0.05,0.08,0.05,0.05,0.05,0.03,0.03,0.05,0.05,1.00,0.05,0.05",
+      "Keyword Difficulty": "35",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "waterproof vibrator",
-      "Keyword": "waterproof vibrater",
+      "source_file": "body-safe-sex-toys_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "body safe sex toys",
+      "Keyword": "body safe glass sex toys made of",
       "Intent": "Informational",
-      "Volume": "260",
-      "Trend": "0.29,0.44,0.82,0.15,1.00,0.29,0.15,0.09,0.09,0.65,0.09,0.29",
-      "Keyword Difficulty": "12",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "waterproof vibrator",
-      "Keyword": "are vibrators waterproof",
-      "Intent": "Informational",
-      "Volume": "170",
-      "Trend": "0.66,0.80,1.00,0.80,0.66,0.66,0.52,0.66,0.80,0.80,0.66,0.42",
-      "Keyword Difficulty": "10",
-      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
+      "Volume": "720",
+      "Trend": "1.00,0.00,0.00,0.00,0.00",
+      "Keyword Difficulty": "14",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy delivery",
-      "Search intent": "Commercial",
-      "Topic cluster": "Unclustered adult wellness/general",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Review manually",
-      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
-      "Priority": "P4",
-      "Notes": "Manual review recommended before content changes."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toys fast delivery",
+      "Keyword": "app controlled adult toys",
       "Search intent": "Commercial",
       "Topic cluster": "Buying decision framework",
       "Primary/secondary": "Secondary",
@@ -136,106 +98,93 @@
       "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
       "Action": "Update existing article",
       "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
-      "Priority": "P3",
+      "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toys discreet shipping",
+      "Keyword": "remote control adult toys",
+      "Search intent": "Commercial",
+      "Topic cluster": "Buying decision framework",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Action": "Update existing article",
+      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "remote adult toys",
+      "Search intent": "Commercial",
+      "Topic cluster": "Buying decision framework",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Action": "Update existing article",
+      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "long distance adult toys",
+      "Search intent": "Commercial",
+      "Topic cluster": "Buying decision framework",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Action": "Update existing article",
+      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "body safe glass sex toys made of",
       "Search intent": "How-to",
-      "Topic cluster": "Travel privacy",
+      "Topic cluster": "Cleaning and storage",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/travel-with-adult-toys/",
-      "Assigned article title": "Traveling With Adult Toys: Packing, Charging, and Privacy",
+      "Assigned URL": "/blog/how-to-clean-silicone-sex-toys/",
+      "Assigned article title": "How to Clean Silicone Sex Toys Without Damaging Them",
       "Action": "Update existing article",
-      "Reason": "Keep guidance practical and remind readers to check local laws. Commercial value: Medium; difficulty: Medium.",
-      "Priority": "P1",
+      "Reason": "Separate silicone material care from electronics care. Commercial value: Medium; difficulty: Easy.",
+      "Priority": "P2",
       "Notes": "Mapped from existing keyword cluster file."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "waterproof vibrator",
-      "Search intent": "Problem Solving",
-      "Topic cluster": "Waterproof care",
-      "Primary/secondary": "Primary",
-      "Assigned URL": "/blog/waterproof-vibrator-guide/",
-      "Assigned article title": "Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions",
-      "Action": "Update existing article",
-      "Reason": "Clarify waterproof versus splash resistant and safe cleaning habits. Commercial value: High; difficulty: Medium.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "waterproof vibrators",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Beginner vibrator selection",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/vibrators-for-beginners/",
-      "Assigned article title": "Vibrators for Beginners: How to Choose Without Guesswork",
-      "Action": "Update existing article",
-      "Reason": "Explain what features matter first and which advanced features can wait. Commercial value: High; difficulty: Easy.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "waterproof vibrater",
-      "Search intent": "Problem Solving",
-      "Topic cluster": "Waterproof care",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/waterproof-vibrator-guide/",
-      "Assigned article title": "Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions",
-      "Action": "Update existing article",
-      "Reason": "Waterproof vs splash-resistant problem-solving intent.",
-      "Priority": "P1",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "are vibrators waterproof",
-      "Search intent": "Problem Solving",
-      "Topic cluster": "Waterproof care",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/waterproof-vibrator-guide/",
-      "Assigned article title": "Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions",
-      "Action": "Update existing article",
-      "Reason": "Waterproof vs splash-resistant problem-solving intent.",
-      "Priority": "P1",
-      "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-22T08:35:56.734603+08:00",
+  "generated_at": "2026-07-23T08:37:59.409133+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-22T08:35:56.735285+08:00",
+    "generated_at": "2026-07-23T08:37:59.409457+08:00",
     "files": [
-      "upload/blog/assets/waterproof-vibrator-ratings-cleaning-guide-opus-cover.png",
-      "upload/blog/assets/adult-toy-delivery-privacy-guide-opus-cover.png"
+      "upload/blog/assets/connected-adult-toys-privacy-security-guide-opus-cover.png",
+      "upload/blog/assets/body-safe-glass-toys-material-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/waterproof-vibrator-ratings-cleaning-guide-opus-cover.png",
+        "file": "upload/blog/assets/connected-adult-toys-privacy-security-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_015ceb3f58eadd1e016a601009a3b48193afb0ebac01f9bbc6",
-        "call_id": "ig_015ceb3f58eadd1e016a60100a80ec8193be9ee64ca573aa9f",
+        "response_id": "resp_0a70a57dca00f863016a61620b008481989c903691ac7b639b",
+        "call_id": "ig_0a70a57dca00f863016a61620b84f0819888e1870e671b5221",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about waterproof vibrator ratings and cleaning. Neutral tabletop scene, mature tasteful product photography, soft natural light. Include an abstract non-explicit sealed wellness device silhouette (no explicit anatomy, no nudity), IP rating cards, water droplet icons, a drying cloth, a magnetic charger caution card, and a small storage pouch. No people, no branding, no explicit details. Palette: ivory, graphite, blue-g"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about connected adult toy privacy and security. Neutral tabletop product photography style. Include an abstract non-explicit wellness device silhouette, smartphone permission cards, Bluetooth icon, lock symbol, firmware update note, plain remote control, consent checklist card, and storage pouch. No nudity, no people, no explicit anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory,"
       },
       {
-        "file": "upload/blog/assets/adult-toy-delivery-privacy-guide-opus-cover.png",
+        "file": "upload/blog/assets/body-safe-glass-toys-material-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_03edadb7c07b3a2e016a60103aed3c8195835e23d367a9c2c6",
-        "call_id": "ig_03edadb7c07b3a2e016a60103b82e081958caa510553d79598",
-        "size": "1662x946",
+        "response_id": "resp_01b5133a8080f220016a61623eadb8819bbab94374aa68310f",
+        "call_id": "ig_01b5133a8080f220016a61623f3060819b98dd9be241ce2ad2",
+        "size": "1693x929",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about delivery privacy and timing. Neutral tabletop scene shot like mature tasteful product photography. Include a plain unbranded shipping box, a tracking card, a private billing icon on a small note, a small calendar, a support note card, and a sealed storage pouch. No products shown explicitly, no people, no nudity, no explicit anatomy, no branding. Soft natural light, clean composition, ivory, kraft paper, graphit"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about body-safe glass toy materials. Neutral tabletop scene with an abstract non-explicit translucent glass wellness object, a magnifier inspecting smooth edges, a borosilicate material card, a cleaning cloth, a temperature caution icon, and a padded storage pouch. No people, no nudity, no explicit anatomy, no branding. Mature tasteful product photography, soft natural light, ivory, clear glass, graphite, muted teal p"
       }
     ]
   },
@@ -243,20 +192,20 @@
     "status": "pass",
     "results": [
       {
-        "slug": "waterproof-vibrator-ratings-cleaning-guide",
-        "title": "Waterproof Vibrator Ratings &amp; Cleaning",
-        "meta": "Learn what waterproof vibrator claims mean, how IP ratings differ from splash resistance, and how to clean chargers, seams, and cases safely.",
+        "slug": "connected-adult-toys-privacy-security-guide",
+        "title": "Connected Adult Toys: Privacy &amp; Security Guide",
+        "meta": "Compare app controlled adult toys, remote controls, and long-distance features by privacy, account safety, updates, and checkout red flags.",
         "checks": {
-          "title_len": 42,
+          "title_len": 50,
           "title_under_60": true,
-          "meta_len": 141,
+          "meta_len": 139,
           "meta_under_155": true,
           "h1_count": 1,
           "one_h1": true,
           "gtag_id_count": 2,
           "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
-          "word_count": 1815,
+          "word_count": 1795,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
@@ -278,34 +227,34 @@
           "pass": true
         },
         "refs": [
-          "https://www.iec.ch/ip-ratings",
+          "https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.saferproducts.gov/",
-          "https://www.fda.gov/consumers/consumer-updates"
+          "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/internet-things",
+          "https://www.cisa.gov/news-events/news/using-caution-mobile-devices"
         ]
       },
       {
-        "slug": "adult-toy-delivery-privacy-guide",
-        "title": "Adult Toy Delivery: Privacy &amp; Timing Guide",
-        "meta": "Compare adult toy delivery options by discreet shipping, billing privacy, tracking, fast-delivery promises, returns, support, and checkout red flags.",
+        "slug": "body-safe-glass-toys-material-guide",
+        "title": "Body-Safe Glass Toys: Material Guide",
+        "meta": "Learn what body-safe glass toys are made of, how to inspect finish quality, clean glass, avoid temperature mistakes, and spot red flags.",
         "checks": {
-          "title_len": 46,
+          "title_len": 36,
           "title_under_60": true,
-          "meta_len": 149,
+          "meta_len": 136,
           "meta_under_155": true,
           "h1_count": 1,
           "one_h1": true,
           "gtag_id_count": 2,
           "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
-          "word_count": 1732,
+          "word_count": 1725,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
           "faq_count": 5,
           "faqpage_jsonld": true,
           "internal_blog_links": 5,
-          "product_support_links": 8,
+          "product_support_links": 10,
           "authority_refs": 4,
           "has_authority": true,
           "og_image": true,
@@ -320,20 +269,20 @@
           "pass": true
         },
         "refs": [
+          "https://www.fda.gov/food/chemical-contaminants-pesticides/environmental-contaminants-food",
+          "https://www.saferproducts.gov/",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.usps.com/manage/informed-delivery.htm",
-          "https://consumer.ftc.gov/articles/what-do-if-youre-billed-things-you-never-got-or-you-get-unordered-products",
-          "https://www.saferproducts.gov/"
+          "https://www.corning.com/worldwide/en/innovation/materials-science/glass/borosilicate-glass.html"
         ]
       }
     ],
     "sitemap_checks": {
-      "waterproof-vibrator-ratings-cleaning-guide": {
+      "connected-adult-toys-privacy-security-guide": {
         "url_present": true,
         "lastmod": true,
         "image_metadata": true
       },
-      "adult-toy-delivery-privacy-guide": {
+      "body-safe-glass-toys-material-guide": {
         "url_present": true,
         "lastmod": true,
         "image_metadata": true
@@ -342,73 +291,8 @@
     "index_checks": {
       "links_new_articles": true,
       "blog_count_meta_updated": true,
-      "expected_count": 135
+      "expected_count": 137
     },
-    "validated_at": "2026-07-22"
-  },
-  "commit": "c34af46682",
-  "git": {
-    "commit": "c34af46682",
-    "pushed": true,
-    "branch": "master"
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync",
-    "server": "root@153.75.235.56:/var/www/myopencart/upload",
-    "permissions": "www-data:www-data; dirs 755; files 644"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-22T08:40:05.531462+08:00",
-    "results": {
-      "waterproof-vibrator-ratings-cleaning-guide": {
-        "http_200": true,
-        "title_meta": true,
-        "one_h1": true,
-        "gtag_config_once": true,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage": true,
-        "authority_refs": true,
-        "image_meta": true,
-        "pass": true
-      },
-      "adult-toy-delivery-privacy-guide": {
-        "http_200": true,
-        "title_meta": true,
-        "one_h1": true,
-        "gtag_config_once": true,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage": true,
-        "authority_refs": true,
-        "image_meta": true,
-        "pass": true
-      },
-      "blog_index": {
-        "http_200": true,
-        "links_new_articles": true,
-        "pass": true
-      },
-      "sitemap": {
-        "http_200": true,
-        "urls": true,
-        "lastmod": true,
-        "image_metadata": true,
-        "pass": true
-      }
-    }
-  },
-  "completed_at": "2026-07-22T08:40:46.215556+08:00",
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-22",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "command": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -a default --port=465 --tls=on --tls-starttls=off yuanzhigang20@gmail.com < output/daily_blog_2026-07-22_success.eml",
-    "exit_code": 0,
-    "sent_at": "2026-07-22T08:40:46.215556+08:00"
+    "validated_at": "2026-07-23"
   }
 }
