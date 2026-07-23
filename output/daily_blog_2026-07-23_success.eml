@@ -1,0 +1,25 @@
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-23
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest daily SEO blog deployment is complete.
+
+Articles:
+- Connected Adult Toys: Privacy & Security Guide
+  URL: https://shoplovanest.com/blog/connected-adult-toys-privacy-security-guide/
+  Primary keywords: app controlled adult toys, remote control adult toys, remote adult toys, long distance adult toys
+- Body-Safe Glass Toys: Material Guide
+  URL: https://shoplovanest.com/blog/body-safe-glass-toys-material-guide/
+  Primary keywords: body safe glass sex toys made of
+
+Commit: 6ee559ae0b
+Verification summary:
+- connected-adult-toys-privacy-security-guide: pass=True
+- body-safe-glass-toys-material-guide: pass=True
+- blog_index: pass=True
+- sitemap: pass=True
+
+Blog index status: {'http_200': True, 'links_new_articles': True, 'pass': True}
+Sitemap status: {'http_200': True, 'urls': True, 'lastmod': True, 'image_metadata': True, 'pass': True}
+
+Email status: sending via /opt/homebrew/bin/msmtp using /Users/grant/.msmtprc

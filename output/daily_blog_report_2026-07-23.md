@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report - 2026-07-23
 ## Status
-- Generated and locally validated 2 articles. Pending commit/deploy/live verification/email.
+- Complete: generated exactly 2 articles, validated, committed/pushed, deployed, verified live, and sent success email accepted by msmtp.
 ## Articles
 - Connected Adult Toys: Privacy & Security Guide
   - URL: https://shoplovanest.com/blog/connected-adult-toys-privacy-security-guide/
@@ -52,4 +52,7 @@
 }
 
 ## Deployment / live verification / email
-- Pending.
+- Commit: 6ee559ae0b
+- Deploy: pass via targeted rsync; permissions fixed.
+- Live verification: pass at 2026-07-23T08:40:47.304609+08:00
+- Email: sent_accepted to yuanzhigang20@gmail.com at 2026-07-23T08:41:13.674924+08:00

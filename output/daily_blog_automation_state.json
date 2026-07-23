@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -294,5 +294,70 @@
       "expected_count": 137
     },
     "validated_at": "2026-07-23"
+  },
+  "commit": "6ee559ae0b",
+  "git": {
+    "commit": "6ee559ae0b",
+    "pushed": true,
+    "branch": "master"
+  },
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync",
+    "server": "root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data; dirs 755; files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-23T08:40:47.304609+08:00",
+    "results": {
+      "connected-adult-toys-privacy-security-guide": {
+        "http_200": true,
+        "title_meta": true,
+        "one_h1": true,
+        "gtag_config_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage": true,
+        "authority_refs": true,
+        "image_meta": true,
+        "pass": true
+      },
+      "body-safe-glass-toys-material-guide": {
+        "http_200": true,
+        "title_meta": true,
+        "one_h1": true,
+        "gtag_config_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faqpage": true,
+        "authority_refs": true,
+        "image_meta": true,
+        "pass": true
+      },
+      "blog_index": {
+        "http_200": true,
+        "links_new_articles": true,
+        "pass": true
+      },
+      "sitemap": {
+        "http_200": true,
+        "urls": true,
+        "lastmod": true,
+        "image_metadata": true,
+        "pass": true
+      }
+    }
+  },
+  "completed_at": "2026-07-23T08:41:13.674924+08:00",
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-23",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "command": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -a default --port=465 --tls=on --tls-starttls=off yuanzhigang20@gmail.com < output/daily_blog_2026-07-23_success.eml",
+    "exit_code": 0,
+    "sent_at": "2026-07-23T08:41:13.674924+08:00"
   }
 }
