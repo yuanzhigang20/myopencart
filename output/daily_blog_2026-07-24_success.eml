@@ -1,0 +1,21 @@
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-24
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest Daily Blog Deployment Complete - 2026-07-24
+
+Two article URLs:
+1. https://shoplovanest.com/blog/insertable-egg-toy-buyer-guide/
+   Primary keyword: adult toy eggs insertable
+2. https://shoplovanest.com/blog/bullet-vibrator-charger-guide/
+   Primary keywords: bullet vibrator charger; bullet vibrator chargjng time; rechargeable bullet vibrator
+
+Commit hash: 4087e03aef
+
+Verification summary:
+- Production deploy: targeted rsync completed for both article folders, two opus-image-1.5 cover images, blog index, and sitemap.
+- Article checks: HTTP 200, SEO title/meta present, exactly one H1, Google tag config exactly once, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, and image SEO metadata verified live.
+- Blog index: HTTP 200 and links both new articles.
+- Sitemap: HTTP 200, includes both article URLs, lastmod 2026-07-24, and image metadata.
+
+Email status: accepted by /opt/homebrew/bin/msmtp after this message is sent.

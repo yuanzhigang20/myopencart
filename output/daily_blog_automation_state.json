@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
   "timezone": "Asia/Shanghai",
-  "status": "blocked_pending_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -273,29 +273,85 @@
   "report": "output/daily_blog_report_2026-07-24.md",
   "updated_at": "2026-07-24T10:38:07+08:00",
   "git": {
-    "commit": "2dd0d86412",
+    "commit": "4087e03aef",
     "pushed": true,
     "branch": "master",
-    "push_error": null,
-    "push_method": "GIT_SSH_COMMAND=\"ssh -p 443 -o Hostname=ssh.github.com\" git push origin master"
+    "push_method": "GIT_SSH_COMMAND=\"ssh -p 443 -o Hostname=ssh.github.com\" git push origin master",
+    "final_completion_commit": "988e52c1c9"
   },
   "deploy": {
-    "status": "blocked",
+    "status": "pass",
     "method": "targeted rsync",
     "server": "root@153.75.235.56:/var/www/myopencart/upload",
-    "error": "Production SSH on 153.75.235.56:22 accepts TCP but returns no SSH banner / times out during banner exchange; targeted rsync cannot start. Retried after GitHub push succeeded. Production not fully updated in this run."
+    "completed_at": "2026-07-24T12:33:12+08:00",
+    "paths": [
+      "upload/blog/insertable-egg-toy-buyer-guide/",
+      "upload/blog/bullet-vibrator-charger-guide/",
+      "upload/blog/assets/insertable-egg-toy-buyer-guide-opus-cover.png",
+      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions": "www-data:www-data, dirs 755, files 644"
   },
   "live_verification": {
-    "status": "failed",
-    "checked_at": "2026-07-24T10:38:07+08:00",
-    "details": {
-      "insertable-egg-toy-buyer-guide": "HTTP 200 but live page is fallback/dynamic title and lacks Quick Answer/Red Flags; sitemap does not include new URL, so deployment not verified.",
-      "bullet-vibrator-charger-guide": "HTTP 200 with article markers, but sitemap/index deployment still unverified for today and full two-article requirement not met."
-    },
-    "reason": "deployment blocked by production SSH/rsync connectivity"
+    "status": "pass",
+    "verified_at": "2026-07-24T12:33:12+08:00",
+    "articles": [
+      {
+        "url": "https://shoplovanest.com/blog/insertable-egg-toy-buyer-guide/",
+        "checks": [
+          "HTTP 200",
+          "title/meta present",
+          "one H1",
+          "gtag config exactly once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage JSON-LD",
+          "authority references",
+          "image SEO metadata"
+        ]
+      },
+      {
+        "url": "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
+        "checks": [
+          "HTTP 200",
+          "title/meta present",
+          "one H1",
+          "gtag config exactly once",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage JSON-LD",
+          "authority references (CPSC, UL, IEC, FTC)",
+          "image SEO metadata"
+        ]
+      }
+    ],
+    "blog_index": "HTTP 200 and links both new articles",
+    "sitemap": "HTTP 200, includes both URLs, lastmod 2026-07-24, and image metadata"
   },
   "email": {
-    "status": "not_sent",
-    "reason": "success email must only be sent after production deployment and live verification pass."
-  }
+    "status": "accepted",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-24",
+    "accepted_at": "2026-07-24T12:33:12+08:00",
+    "message_file": "output/daily_blog_2026-07-24_success.eml",
+    "body_commit_hash": "4087e03aef",
+    "note": "Email body listed deployed/content commit 4087e03aef; final completion-state commit is 988e52c1c9"
+  },
+  "completed_at": "2026-07-24T12:33:12+08:00",
+  "completion_rule": {
+    "exactly_2_new_articles": true,
+    "keyword_files_read": true,
+    "content_quality_validation_passed": true,
+    "blog_index_updated": true,
+    "sitemap_updated": true,
+    "git_commit_pushed": true,
+    "production_deployed": true,
+    "live_verification_passed": true,
+    "success_email_accepted_by_msmtp": true
+  },
+  "email_status": "accepted"
 }

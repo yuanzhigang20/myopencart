@@ -66,3 +66,27 @@ Generated with required custom model `opus-image-1.5` via configured Responses A
 - Production deploy still blocked: SSH to `153.75.235.56:22` accepts TCP but returns no SSH banner and times out during banner exchange; targeted rsync cannot start.
 - Live verification remains incomplete: `insertable-egg-toy-buyer-guide` is not serving the generated static article content and sitemap does not include the new URL; `bullet-vibrator-charger-guide` returns an article page but the day's two-article deployment is not complete.
 - Success email was not sent because deployment/live verification did not pass.
+
+## Completion update - 12:35 CST
+- Production SSH recovered.
+- Targeted rsync deployment completed for:
+  - `upload/blog/insertable-egg-toy-buyer-guide/`
+  - `upload/blog/bullet-vibrator-charger-guide/`
+  - both topic-specific `opus-image-1.5` cover images
+  - `upload/blog/index.html`
+  - `upload/sitemap.xml`
+- Production ownership/perms fixed: `www-data:www-data`, directories `755`, files `644`.
+- Live verification passed:
+  - both article URLs return HTTP 200
+  - title/meta present
+  - exactly one H1
+  - Google tag config exactly once
+  - Quick Answer and Red Flags present
+  - FAQPage JSON-LD present
+  - authority references present
+  - image SEO metadata present
+  - blog index HTTP 200 and links both new articles
+  - sitemap HTTP 200 and includes both URLs, `lastmod=2026-07-24`, and image metadata
+- Success email accepted by `/opt/homebrew/bin/msmtp` using `/Users/grant/.msmtprc`.
+- Final status: complete.
+- Final completion-state commit: `988e52c1c9` (email body listed deployed/content commit `4087e03aef`).
