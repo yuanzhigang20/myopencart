@@ -1,31 +1,30 @@
 {
-  "date": "2026-07-23",
+  "date": "2026-07-24",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "connected-adult-toys-privacy-security-guide",
-      "title": "Connected Adult Toys: Privacy & Security Guide",
-      "url": "https://shoplovanest.com/blog/connected-adult-toys-privacy-security-guide/",
+      "slug": "insertable-egg-toy-buyer-guide",
+      "title": "Insertable Egg Toys: Safer Buyer Guide",
+      "url": "https://shoplovanest.com/blog/insertable-egg-toy-buyer-guide/",
       "primary_keywords": [
-        "app controlled adult toys",
-        "remote control adult toys",
-        "remote adult toys",
-        "long distance adult toys"
+        "adult toy eggs insertable"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected app controlled adult toys (Volume 720), remote control adult toys (720), remote adult toys (590), and long distance adult toys (590). Mapping assigns these to broad buying-decision pages, so this article targets a distinct buyer-safety intent: connected-device privacy, permissions, updates, account control, and long-distance consent rather than a thin product list.",
-      "intent_cluster": "Connected adult wellness device privacy intent \u2014 app permissions, Bluetooth range, account safety, firmware updates, remote access, long-distance consent, support, and data-minimization red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy eggs insertable (Volume 1300). Mapping groups it with gift/couples decisions, but the distinct intent is insertable egg buyer safety: retrieval design, size, material, remote pairing, cleaning, and discreet checkout.",
+      "intent_cluster": "Insertable egg toy buyer-safety intent \u2014 retrieval design, size, body-safe materials, remote controls, cleaning, storage, consent, privacy, and seller red flags."
     },
     {
-      "slug": "body-safe-glass-toys-material-guide",
-      "title": "Body-Safe Glass Toys: Material Guide",
-      "url": "https://shoplovanest.com/blog/body-safe-glass-toys-material-guide/",
+      "slug": "bullet-vibrator-charger-guide",
+      "title": "Bullet Vibrator Charger Guide",
+      "url": "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
       "primary_keywords": [
-        "body safe glass sex toys made of"
+        "bullet vibrator charger",
+        "bullet vibrator chargjng time",
+        "rechargeable bullet vibrator"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected body safe glass sex toys made of (Volume 720) from the body-safe-sex-toys file. The mapping points to silicone cleaning, but glass material and finish-quality intent is distinct enough for a dedicated buyer-safety article that avoids cannibalizing silicone care pages.",
-      "intent_cluster": "Body-safe glass material intent \u2014 borosilicate/soda-lime claims, nonporous surface, finish quality, chips and cracks, temperature caution, cleaning, storage, and seller red flags"
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected bullet vibrator charger (Volume 320), bullet vibrator chargjng time (Volume 260 typo variant), and rechargeable bullet vibrator (Volume 210). Existing rechargeable guides cover product selection; this article targets the narrower charger and battery-care intent.",
+      "intent_cluster": "Bullet vibrator charger intent \u2014 cable matching, charging time, USB power source, magnetic-pin care, water-resistant port cautions, replacement safety, and checkout red flags."
     }
   ],
   "keyword_source_files_read": [
@@ -37,154 +36,130 @@
       "source": "output/merged_keyword_research_2026-06-25.csv",
       "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
       "seed_keyword": "adult toys",
-      "Keyword": "app controlled adult toys",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.77,0.20,0.37,0.56,0.30,0.77,0.30,0.37,0.37,0.44,0.37,1.00",
-      "Keyword Difficulty": "26",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "remote control adult toys",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.55,0.44,0.37,1.00,0.30,0.37,0.44,0.44,0.37,0.44,0.44,0.55",
-      "Keyword Difficulty": "23",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "remote adult toys",
-      "Intent": "Commercial",
-      "Volume": "590",
-      "Trend": "1.00,0.07,0.25,0.37,0.07,0.37,0.31,0.31,0.25,0.31,0.31,0.46",
-      "Keyword Difficulty": "29",
-      "SERP Features": "Sitelinks, Video"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "long distance adult toys",
-      "Intent": "Commercial",
-      "Volume": "590",
-      "Trend": "0.05,0.08,0.05,0.05,0.05,0.03,0.03,0.05,0.05,1.00,0.05,0.05",
-      "Keyword Difficulty": "35",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "body-safe-sex-toys_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "body safe sex toys",
-      "Keyword": "body safe glass sex toys made of",
+      "Keyword": "adult toy eggs insertable",
       "Intent": "Informational",
-      "Volume": "720",
-      "Trend": "1.00,0.00,0.00,0.00,0.00",
-      "Keyword Difficulty": "14",
-      "SERP Features": "Sitelinks, AI Overview, People also ask"
+      "Volume": "1300",
+      "Trend": "1.00,0.00",
+      "Keyword Difficulty": "18",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "bullet vibrator charger",
+      "Intent": "Informational",
+      "Volume": "320",
+      "Trend": "0.81,0.81,1.00,1.00,1.00,0.81,0.81,0.81,1.00,1.00,1.00,0.65",
+      "Keyword Difficulty": "25",
+      "SERP Features": "Sitelinks, Video, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "bullet vibrator chargjng time",
+      "Intent": "",
+      "Volume": "260",
+      "Trend": "1.00",
+      "Keyword Difficulty": "",
+      "SERP Features": ""
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rechargeable vibrator",
+      "Keyword": "rechargeable bullet vibrator",
+      "Intent": "Commercial",
+      "Volume": "210",
+      "Trend": "0.52,0.65,1.00,0.80,1.00,1.00,0.65,0.52,0.43,0.52,1.00,0.52",
+      "Keyword Difficulty": "24",
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "app controlled adult toys",
+      "Keyword": "adult toy eggs insertable",
       "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
+      "Topic cluster": "Gift and couples decisions",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Assigned URL": "/blog/adult-toy-gift-guide/",
+      "Assigned article title": "Adult Toy Gift Guide: Consent, Privacy, and Safer Choices",
       "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
+      "Reason": "Make consent and recipient comfort the non-negotiable foundation. Commercial value: Medium; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "bullet vibrator charger",
+      "Search intent": "Commercial",
+      "Topic cluster": "Compact vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Action": "Update existing article",
+      "Reason": "Compact vibrator product selection intent.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "remote control adult toys",
+      "Keyword": "bullet vibrator chargjng time",
       "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
+      "Topic cluster": "Compact vibrators",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
       "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
+      "Reason": "Compact vibrator product selection intent.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "remote adult toys",
+      "Keyword": "rechargeable bullet vibrator",
       "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
+      "Topic cluster": "Rechargeable massagers",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
+      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
       "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "long distance adult toys",
-      "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "body safe glass sex toys made of",
-      "Search intent": "How-to",
-      "Topic cluster": "Cleaning and storage",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/how-to-clean-silicone-sex-toys/",
-      "Assigned article title": "How to Clean Silicone Sex Toys Without Damaging Them",
-      "Action": "Update existing article",
-      "Reason": "Separate silicone material care from electronics care. Commercial value: Medium; difficulty: Easy.",
-      "Priority": "P2",
+      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-23T08:37:59.409133+08:00",
+  "generated_at": "2026-07-24T08:34:46.945482+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-23T08:37:59.409457+08:00",
+    "generated_at": "2026-07-24T08:34:46.945638+08:00",
     "files": [
-      "upload/blog/assets/connected-adult-toys-privacy-security-guide-opus-cover.png",
-      "upload/blog/assets/body-safe-glass-toys-material-guide-opus-cover.png"
+      "upload/blog/assets/insertable-egg-toy-buyer-guide-opus-cover.png",
+      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/connected-adult-toys-privacy-security-guide-opus-cover.png",
+        "file": "upload/blog/assets/insertable-egg-toy-buyer-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0a70a57dca00f863016a61620b008481989c903691ac7b639b",
-        "call_id": "ig_0a70a57dca00f863016a61620b84f0819888e1870e671b5221",
+        "response_id": "resp_09c56161aa4a0896016a62b2d0d13c819a83b58e3cdb4c43c9",
+        "call_id": "ig_09c56161aa4a0896016a62b2d16f28819abeb6557797da8b09",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about connected adult toy privacy and security. Neutral tabletop product photography style. Include an abstract non-explicit wellness device silhouette, smartphone permission cards, Bluetooth icon, lock symbol, firmware update note, plain remote control, consent checklist card, and storage pouch. No nudity, no people, no explicit anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory,"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about safer insertable egg toy shopping. Neutral tabletop product photography with an abstract non-explicit smooth egg-shaped wellness device, retrieval loop checklist card, body-safe material label, small remote control, cleaning cloth, and storage pouch. No people, no nudity, no explicit anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory, graphite, muted rose and sage palette. C"
       },
       {
-        "file": "upload/blog/assets/body-safe-glass-toys-material-guide-opus-cover.png",
+        "file": "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_01b5133a8080f220016a61623eadb8819bbab94374aa68310f",
-        "call_id": "ig_01b5133a8080f220016a61623f3060819b98dd9be241ce2ad2",
-        "size": "1693x929",
+        "response_id": "resp_051471ff2fa6d93f016a62b2fdcc98819b85b2203d5960d231",
+        "call_id": "ig_051471ff2fa6d93f016a62b2fe4a9c819ba91a69be4e03a3b5",
+        "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about body-safe glass toy materials. Neutral tabletop scene with an abstract non-explicit translucent glass wellness object, a magnifier inspecting smooth edges, a borosilicate material card, a cleaning cloth, a temperature caution icon, and a padded storage pouch. No people, no nudity, no explicit anatomy, no branding. Mature tasteful product photography, soft natural light, ivory, clear glass, graphite, muted teal p"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about bullet vibrator chargers and charging safety. Neutral tabletop product photography with an abstract non-explicit compact bullet-shaped wellness device, USB charging cable, magnetic pin detail, charging time checklist card, dry-port caution icon, and small storage pouch. No people, no nudity, no explicit anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory, graphite, muted blue"
       }
     ]
   },
@@ -192,28 +167,28 @@
     "status": "pass",
     "results": [
       {
-        "slug": "connected-adult-toys-privacy-security-guide",
-        "title": "Connected Adult Toys: Privacy &amp; Security Guide",
-        "meta": "Compare app controlled adult toys, remote controls, and long-distance features by privacy, account safety, updates, and checkout red flags.",
+        "slug": "insertable-egg-toy-buyer-guide",
+        "title": "Insertable Egg Toys: Safer Buyer Guide",
+        "meta": "Learn how to compare insertable egg toys by body-safe materials, retrieval design, size, cleaning, remote controls, and checkout red flags.",
         "checks": {
-          "title_len": 50,
-          "title_under_60": true,
+          "title_len": 38,
           "meta_len": 139,
-          "meta_under_155": true,
           "h1_count": 1,
-          "one_h1": true,
           "gtag_id_count": 2,
+          "word_count": 1051,
+          "faq_count": 5,
+          "internal_blog_links": 4,
+          "product_support_links": 6,
+          "authority_refs": 4,
+          "title_under_60": true,
+          "meta_under_155": true,
+          "one_h1": true,
           "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
-          "word_count": 1795,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
-          "faq_count": 5,
           "faqpage_jsonld": true,
-          "internal_blog_links": 5,
-          "product_support_links": 10,
-          "authority_refs": 4,
           "has_authority": true,
           "og_image": true,
           "og_image_alt": true,
@@ -227,35 +202,35 @@
           "pass": true
         },
         "refs": [
-          "https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers",
+          "https://www.fda.gov/medical-devices",
+          "https://www.saferproducts.gov/",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/internet-things",
-          "https://www.cisa.gov/news-events/news/using-caution-mobile-devices"
+          "https://www.plannedparenthood.org/learn/sex-pleasure-and-sexual-dysfunction/sex-and-pleasure"
         ]
       },
       {
-        "slug": "body-safe-glass-toys-material-guide",
-        "title": "Body-Safe Glass Toys: Material Guide",
-        "meta": "Learn what body-safe glass toys are made of, how to inspect finish quality, clean glass, avoid temperature mistakes, and spot red flags.",
+        "slug": "bullet-vibrator-charger-guide",
+        "title": "Bullet Vibrator Charger Guide",
+        "meta": "Compare bullet vibrator chargers, charging time, cable fit, battery care, water resistance, and red flags before replacing or buying a charger.",
         "checks": {
-          "title_len": 36,
-          "title_under_60": true,
-          "meta_len": 136,
-          "meta_under_155": true,
+          "title_len": 29,
+          "meta_len": 143,
           "h1_count": 1,
-          "one_h1": true,
           "gtag_id_count": 2,
+          "word_count": 1054,
+          "faq_count": 5,
+          "internal_blog_links": 4,
+          "product_support_links": 6,
+          "authority_refs": 4,
+          "title_under_60": true,
+          "meta_under_155": true,
+          "one_h1": true,
           "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
-          "word_count": 1725,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
-          "faq_count": 5,
           "faqpage_jsonld": true,
-          "internal_blog_links": 5,
-          "product_support_links": 10,
-          "authority_refs": 4,
           "has_authority": true,
           "og_image": true,
           "og_image_alt": true,
@@ -269,20 +244,20 @@
           "pass": true
         },
         "refs": [
-          "https://www.fda.gov/food/chemical-contaminants-pesticides/environmental-contaminants-food",
-          "https://www.saferproducts.gov/",
-          "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.corning.com/worldwide/en/innovation/materials-science/glass/borosilicate-glass.html"
+          "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Lithium-Ion-Battery-Safety",
+          "https://www.ul.com/services/certification",
+          "https://www.iec.ch/ip-ratings",
+          "https://consumer.ftc.gov/articles/online-shopping"
         ]
       }
     ],
     "sitemap_checks": {
-      "connected-adult-toys-privacy-security-guide": {
+      "insertable-egg-toy-buyer-guide": {
         "url_present": true,
         "lastmod": true,
         "image_metadata": true
       },
-      "body-safe-glass-toys-material-guide": {
+      "bullet-vibrator-charger-guide": {
         "url_present": true,
         "lastmod": true,
         "image_metadata": true
@@ -291,73 +266,10 @@
     "index_checks": {
       "links_new_articles": true,
       "blog_count_meta_updated": true,
-      "expected_count": 137
+      "expected_count": 138
     },
-    "validated_at": "2026-07-23"
+    "validated_at": "2026-07-24"
   },
-  "commit": "6ee559ae0b",
-  "git": {
-    "commit": "6ee559ae0b",
-    "pushed": true,
-    "branch": "master"
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync",
-    "server": "root@153.75.235.56:/var/www/myopencart/upload",
-    "permissions": "www-data:www-data; dirs 755; files 644"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-23T08:40:47.304609+08:00",
-    "results": {
-      "connected-adult-toys-privacy-security-guide": {
-        "http_200": true,
-        "title_meta": true,
-        "one_h1": true,
-        "gtag_config_once": true,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage": true,
-        "authority_refs": true,
-        "image_meta": true,
-        "pass": true
-      },
-      "body-safe-glass-toys-material-guide": {
-        "http_200": true,
-        "title_meta": true,
-        "one_h1": true,
-        "gtag_config_once": true,
-        "quick_answer": true,
-        "red_flags": true,
-        "faqpage": true,
-        "authority_refs": true,
-        "image_meta": true,
-        "pass": true
-      },
-      "blog_index": {
-        "http_200": true,
-        "links_new_articles": true,
-        "pass": true
-      },
-      "sitemap": {
-        "http_200": true,
-        "urls": true,
-        "lastmod": true,
-        "image_metadata": true,
-        "pass": true
-      }
-    }
-  },
-  "completed_at": "2026-07-23T08:41:13.674924+08:00",
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-23",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "command": "/opt/homebrew/bin/msmtp -C /Users/grant/.msmtprc -a default --port=465 --tls=on --tls-starttls=off yuanzhigang20@gmail.com < output/daily_blog_2026-07-23_success.eml",
-    "exit_code": 0,
-    "sent_at": "2026-07-23T08:41:13.674924+08:00"
-  }
+  "report": "output/daily_blog_report_2026-07-24.md",
+  "updated_at": "2026-07-24T08:37:43.021092+08:00"
 }
