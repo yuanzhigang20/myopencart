@@ -60,3 +60,9 @@ Generated with required custom model `opus-image-1.5` via configured Responses A
 - Git push blocked: SSH to GitHub failed twice with connection closed / banner exchange timeout; remote repository could not be read.
 - Production deploy blocked: targeted rsync/SSH to `root@153.75.235.56` failed with connection closed during rsync, then repeated SSH banner exchange timeouts.
 - Live verification and success email were not completed because deployment is blocked. Per rule, email was not sent and state remains incomplete for retry.
+
+## Retry update - 2026-07-24T10:38:07+08:00
+- Git push recovered: pushed `master` to GitHub using SSH over port 443 (`ssh.github.com`). Current commit: `2dd0d86412`.
+- Production deploy still blocked: SSH to `153.75.235.56:22` accepts TCP but returns no SSH banner and times out during banner exchange; targeted rsync cannot start.
+- Live verification remains incomplete: `insertable-egg-toy-buyer-guide` is not serving the generated static article content and sitemap does not include the new URL; `bullet-vibrator-charger-guide` returns an article page but the day's two-article deployment is not complete.
+- Success email was not sent because deployment/live verification did not pass.

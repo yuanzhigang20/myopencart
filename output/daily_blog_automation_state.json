@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
   "timezone": "Asia/Shanghai",
-  "status": "blocked_pending_push_deploy_email",
+  "status": "blocked_pending_deploy_email",
   "article_quota": 2,
   "articles": [
     {
@@ -12,7 +12,7 @@
         "adult toy eggs insertable"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy eggs insertable (Volume 1300). Mapping groups it with gift/couples decisions, but the distinct intent is insertable egg buyer safety: retrieval design, size, material, remote pairing, cleaning, and discreet checkout.",
-      "intent_cluster": "Insertable egg toy buyer-safety intent \u2014 retrieval design, size, body-safe materials, remote controls, cleaning, storage, consent, privacy, and seller red flags."
+      "intent_cluster": "Insertable egg toy buyer-safety intent — retrieval design, size, body-safe materials, remote controls, cleaning, storage, consent, privacy, and seller red flags."
     },
     {
       "slug": "bullet-vibrator-charger-guide",
@@ -24,7 +24,7 @@
         "rechargeable bullet vibrator"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected bullet vibrator charger (Volume 320), bullet vibrator chargjng time (Volume 260 typo variant), and rechargeable bullet vibrator (Volume 210). Existing rechargeable guides cover product selection; this article targets the narrower charger and battery-care intent.",
-      "intent_cluster": "Bullet vibrator charger intent \u2014 cable matching, charging time, USB power source, magnetic-pin care, water-resistant port cautions, replacement safety, and checkout red flags."
+      "intent_cluster": "Bullet vibrator charger intent — cable matching, charging time, USB power source, magnetic-pin care, water-resistant port cautions, replacement safety, and checkout red flags."
     }
   ],
   "keyword_source_files_read": [
@@ -271,25 +271,31 @@
     "validated_at": "2026-07-24"
   },
   "report": "output/daily_blog_report_2026-07-24.md",
-  "updated_at": "2026-07-24T08:44:05.260159+08:00",
+  "updated_at": "2026-07-24T10:38:07+08:00",
   "git": {
-    "commit": "053081ad4a",
-    "pushed": false,
+    "commit": "2dd0d86412",
+    "pushed": true,
     "branch": "master",
-    "push_error": "git push over SSH failed twice: Connection closed/timed out during banner exchange to github.com; remote repository not read."
+    "push_error": null,
+    "push_method": "GIT_SSH_COMMAND=\"ssh -p 443 -o Hostname=ssh.github.com\" git push origin master"
   },
   "deploy": {
     "status": "blocked",
     "method": "targeted rsync",
     "server": "root@153.75.235.56:/var/www/myopencart/upload",
-    "error": "SSH/rsync to production failed repeatedly: connection closed by 153.75.235.56 during rsync, then SSH banner exchange timed out. Production not updated in this run."
+    "error": "Production SSH on 153.75.235.56:22 accepts TCP but returns no SSH banner / times out during banner exchange; targeted rsync cannot start. Retried after GitHub push succeeded. Production not fully updated in this run."
   },
   "live_verification": {
-    "status": "not_run",
-    "reason": "deployment blocked by production SSH/rsync connectivity; new URLs currently return dynamic site response rather than verified static article content."
+    "status": "failed",
+    "checked_at": "2026-07-24T10:38:07+08:00",
+    "details": {
+      "insertable-egg-toy-buyer-guide": "HTTP 200 but live page is fallback/dynamic title and lacks Quick Answer/Red Flags; sitemap does not include new URL, so deployment not verified.",
+      "bullet-vibrator-charger-guide": "HTTP 200 with article markers, but sitemap/index deployment still unverified for today and full two-article requirement not met."
+    },
+    "reason": "deployment blocked by production SSH/rsync connectivity"
   },
   "email": {
     "status": "not_sent",
-    "reason": "success email must only be sent after pushed commit, production deployment, and live verification pass."
+    "reason": "success email must only be sent after production deployment and live verification pass."
   }
 }
