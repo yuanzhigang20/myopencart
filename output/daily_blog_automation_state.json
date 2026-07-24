@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "blocked_pending_push_deploy_email",
   "article_quota": 2,
   "articles": [
     {
@@ -271,5 +271,25 @@
     "validated_at": "2026-07-24"
   },
   "report": "output/daily_blog_report_2026-07-24.md",
-  "updated_at": "2026-07-24T08:37:43.021092+08:00"
+  "updated_at": "2026-07-24T08:44:05.260159+08:00",
+  "git": {
+    "commit": "053081ad4a",
+    "pushed": false,
+    "branch": "master",
+    "push_error": "git push over SSH failed twice: Connection closed/timed out during banner exchange to github.com; remote repository not read."
+  },
+  "deploy": {
+    "status": "blocked",
+    "method": "targeted rsync",
+    "server": "root@153.75.235.56:/var/www/myopencart/upload",
+    "error": "SSH/rsync to production failed repeatedly: connection closed by 153.75.235.56 during rsync, then SSH banner exchange timed out. Production not updated in this run."
+  },
+  "live_verification": {
+    "status": "not_run",
+    "reason": "deployment blocked by production SSH/rsync connectivity; new URLs currently return dynamic site response rather than verified static article content."
+  },
+  "email": {
+    "status": "not_sent",
+    "reason": "success email must only be sent after pushed commit, production deployment, and live verification pass."
+  }
 }

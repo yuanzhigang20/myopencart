@@ -54,3 +54,9 @@ Generated with required custom model `opus-image-1.5` via configured Responses A
 - Production rsync deployment
 - Live verification
 - Success email via `/opt/homebrew/bin/msmtp`
+
+## Blocker update - 08:44 CST
+- Local commit created: `053081ad4a` (`Add ShopLovaNest daily blogs for 2026-07-24`).
+- Git push blocked: SSH to GitHub failed twice with connection closed / banner exchange timeout; remote repository could not be read.
+- Production deploy blocked: targeted rsync/SSH to `root@153.75.235.56` failed with connection closed during rsync, then repeated SSH banner exchange timeouts.
+- Live verification and success email were not completed because deployment is blocked. Per rule, email was not sent and state remains incomplete for retry.
