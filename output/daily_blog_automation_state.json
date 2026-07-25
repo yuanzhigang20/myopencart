@@ -1,30 +1,33 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-25",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "insertable-egg-toy-buyer-guide",
-      "title": "Insertable Egg Toys: Safer Buyer Guide",
-      "url": "https://shoplovanest.com/blog/insertable-egg-toy-buyer-guide/",
+      "slug": "adult-toy-box-privacy-care-guide",
+      "title": "Adult Toy Box: Privacy & Care Guide",
+      "url": "https://shoplovanest.com/blog/adult-toy-box-privacy-care-guide/",
       "primary_keywords": [
-        "adult toy eggs insertable"
+        "adult toy storage adult toys",
+        "adult toy storage box",
+        "adult toy box"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy eggs insertable (Volume 1300). Mapping groups it with gift/couples decisions, but the distinct intent is insertable egg buyer safety: retrieval design, size, material, remote pairing, cleaning, and discreet checkout.",
-      "intent_cluster": "Insertable egg toy buyer-safety intent — retrieval design, size, body-safe materials, remote controls, cleaning, storage, consent, privacy, and seller red flags."
+      "keyword_source": "Read keyword files; selected storage/box terms and created a distinct privacy-care storage-box buyer guide without targeting irrelevant toy meanings.",
+      "intent_cluster": "Adult toy box privacy and care intent \u2014 clean/dry storage, material separation, chargers, locks, travel, and red flags."
     },
     {
-      "slug": "bullet-vibrator-charger-guide",
-      "title": "Bullet Vibrator Charger Guide",
-      "url": "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
+      "slug": "cock-ring-tightness-comfort-guide",
+      "title": "How Tight Should a Cock Ring Be?",
+      "url": "https://shoplovanest.com/blog/cock-ring-tightness-comfort-guide/",
       "primary_keywords": [
-        "bullet vibrator charger",
-        "bullet vibrator chargjng time",
-        "rechargeable bullet vibrator"
+        "how tight should a cock ring be",
+        "cock ring sizing",
+        "cock ring size",
+        "how to size a cock ring"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected bullet vibrator charger (Volume 320), bullet vibrator chargjng time (Volume 260 typo variant), and rechargeable bullet vibrator (Volume 210). Existing rechargeable guides cover product selection; this article targets the narrower charger and battery-care intent.",
-      "intent_cluster": "Bullet vibrator charger intent — cable matching, charging time, USB power source, magnetic-pin care, water-resistant port cautions, replacement safety, and checkout red flags."
+      "keyword_source": "Read keyword files; selected cock ring tightness/sizing terms for a focused comfort and removal guide, distinct from broad cock ring buying pages.",
+      "intent_cluster": "Cock ring tightness and comfort intent \u2014 sizing, stretch, adjustability, timing, removal, warning signs, and red flags."
     }
   ],
   "keyword_source_files_read": [
@@ -36,159 +39,184 @@
       "source": "output/merged_keyword_research_2026-06-25.csv",
       "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
       "seed_keyword": "adult toys",
-      "Keyword": "adult toy eggs insertable",
-      "Intent": "Informational",
-      "Volume": "1300",
-      "Trend": "1.00,0.00",
-      "Keyword Difficulty": "18",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibrator charger",
-      "Intent": "Informational",
-      "Volume": "320",
-      "Trend": "0.81,0.81,1.00,1.00,1.00,0.81,0.81,0.81,1.00,1.00,1.00,0.65",
-      "Keyword Difficulty": "25",
-      "SERP Features": "Sitelinks, Video, People also ask, Related searches"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibrator chargjng time",
-      "Intent": "",
-      "Volume": "260",
-      "Trend": "1.00",
-      "Keyword Difficulty": "",
-      "SERP Features": ""
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rechargeable vibrator",
-      "Keyword": "rechargeable bullet vibrator",
+      "Keyword": "adult toy box",
       "Intent": "Commercial",
-      "Volume": "210",
-      "Trend": "0.52,0.65,1.00,0.80,1.00,1.00,0.65,0.52,0.43,0.52,1.00,0.52",
-      "Keyword Difficulty": "24",
+      "Volume": "720",
+      "Trend": "1.00,0.89,0.73,0.58,0.73,0.73,0.58,0.73,0.73,1.00,0.58,0.73",
+      "Keyword Difficulty": "29",
+      "SERP Features": "Sitelinks, Video, Local pack"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
+      "seed_keyword": "adult toys",
+      "Keyword": "adult toy storage box",
+      "Intent": "Commercial",
+      "Volume": "320",
+      "Trend": "1.00,0.53,0.81,1.00,0.81,0.67,0.81,0.81,1.00,1.00,0.81,0.67",
+      "Keyword Difficulty": "22",
       "SERP Features": "Sitelinks"
     },
     {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "how tight should a cock ring be",
+      "Intent": "Informational",
+      "Volume": "390",
+      "Trend": "0.81,0.81,0.81,1.00,1.00,0.81,0.81,0.81,1.00,1.00,1.00,0.81",
+      "Keyword Difficulty": "33",
+      "SERP Features": "Featured snippet, Sitelinks, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "cock ring size",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.53,0.66,0.66,0.66,1.00,0.66,0.53,0.53,0.66,0.53,0.53,0.66",
+      "Keyword Difficulty": "17",
+      "SERP Features": "Sitelinks, AI Overview"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "cock ring sizing",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.67,0.67,1.00,0.67,0.67,0.67,0.67,0.83,0.83,1.00,1.00,1.00",
+      "Keyword Difficulty": "23",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "how to size a cock ring",
+      "Intent": "Informational",
+      "Volume": "210",
+      "Trend": "0.66,0.66,0.66,0.81,0.66,0.66,0.66,0.81,0.81,0.81,0.81,1.00",
+      "Keyword Difficulty": "20",
+      "SERP Features": "Sitelinks, AI Overview"
+    },
+    {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy eggs insertable",
+      "Keyword": "adult toy box",
       "Search intent": "Commercial",
-      "Topic cluster": "Gift and couples decisions",
+      "Topic cluster": "Unclustered adult wellness/general",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-gift-guide/",
-      "Assigned article title": "Adult Toy Gift Guide: Consent, Privacy, and Safer Choices",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Action": "Review manually",
+      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
+      "Priority": "P4",
+      "Notes": "Manual review recommended before content changes."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "adult toy storage box",
+      "Search intent": "How-to",
+      "Topic cluster": "Cleaning and storage",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/adult-toy-storage-guide/",
+      "Assigned article title": "Adult Toy Storage: Clean, Private, and Material-Safe Habits",
       "Action": "Update existing article",
-      "Reason": "Make consent and recipient comfort the non-negotiable foundation. Commercial value: Medium; difficulty: Easy.",
-      "Priority": "P1",
+      "Reason": "Show how storage protects privacy, hygiene, and product lifespan. Commercial value: Medium; difficulty: Easy.",
+      "Priority": "P2",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibrator charger",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
+      "Keyword": "how tight should a cock ring be",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibrator chargjng time",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
+      "Keyword": "cock ring size",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "rechargeable bullet vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Rechargeable massagers",
+      "Keyword": "cock ring sizing",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
-      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "how to size a cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-24T08:34:46.945482+08:00",
+  "generated_at": "2026-07-25T08:41:11.656612+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-24T08:34:46.945638+08:00",
     "files": [
-      "upload/blog/assets/insertable-egg-toy-buyer-guide-opus-cover.png",
-      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png"
-    ],
-    "results": [
-      {
-        "file": "upload/blog/assets/insertable-egg-toy-buyer-guide-opus-cover.png",
-        "status": "pass",
-        "response_id": "resp_09c56161aa4a0896016a62b2d0d13c819a83b58e3cdb4c43c9",
-        "call_id": "ig_09c56161aa4a0896016a62b2d16f28819abeb6557797da8b09",
-        "size": "1536x1024",
-        "quality": "medium",
-        "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about safer insertable egg toy shopping. Neutral tabletop product photography with an abstract non-explicit smooth egg-shaped wellness device, retrieval loop checklist card, body-safe material label, small remote control, cleaning cloth, and storage pouch. No people, no nudity, no explicit anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory, graphite, muted rose and sage palette. C"
-      },
-      {
-        "file": "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png",
-        "status": "pass",
-        "response_id": "resp_051471ff2fa6d93f016a62b2fdcc98819b85b2203d5960d231",
-        "call_id": "ig_051471ff2fa6d93f016a62b2fe4a9c819ba91a69be4e03a3b5",
-        "size": "1536x1024",
-        "quality": "medium",
-        "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about bullet vibrator chargers and charging safety. Neutral tabletop product photography with an abstract non-explicit compact bullet-shaped wellness device, USB charging cable, magnetic pin detail, charging time checklist card, dry-port caution icon, and small storage pouch. No people, no nudity, no explicit anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory, graphite, muted blue"
-      }
+      "upload/blog/assets/adult-toy-box-privacy-care-guide-opus-cover.png",
+      "upload/blog/assets/cock-ring-tightness-comfort-guide-opus-cover.png"
     ]
   },
   "content_quality_validation": {
     "status": "pass",
     "results": [
       {
-        "slug": "insertable-egg-toy-buyer-guide",
-        "title": "Insertable Egg Toys: Safer Buyer Guide",
-        "meta": "Learn how to compare insertable egg toys by body-safe materials, retrieval design, size, cleaning, remote controls, and checkout red flags.",
+        "slug": "adult-toy-box-privacy-care-guide",
+        "title": "Adult Toy Box: Privacy & Care Guide",
+        "meta": "Choose an adult toy box by privacy, airflow, cleaning, charger safety, material separation, travel needs, and checkout red flags.",
         "checks": {
-          "title_len": 38,
-          "meta_len": 139,
-          "h1_count": 1,
-          "gtag_id_count": 2,
-          "word_count": 1051,
-          "faq_count": 5,
-          "internal_blog_links": 4,
-          "product_support_links": 6,
-          "authority_refs": 4,
+          "title_len": 35,
           "title_under_60": true,
+          "meta_len": 129,
           "meta_under_155": true,
+          "h1_count": 1,
           "one_h1": true,
+          "gtag_id_count": 2,
           "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
+          "word_count": 1753,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
+          "faq_count": 5,
           "faqpage_jsonld": true,
+          "internal_blog_links": 5,
+          "product_support_links": 10,
+          "authority_refs": 4,
           "has_authority": true,
           "og_image": true,
           "og_image_alt": true,
@@ -198,39 +226,41 @@
           "jsonld_imageobject": true,
           "banned_scan_pass": true,
           "quick_answer_near_top": true,
+          "readability_avg_sentence_under_24": true,
+          "no_overlong_paragraphs": true,
           "quality_score": 100,
           "pass": true
         },
         "refs": [
-          "https://www.fda.gov/medical-devices",
-          "https://www.saferproducts.gov/",
           "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.plannedparenthood.org/learn/sex-pleasure-and-sexual-dysfunction/sex-and-pleasure"
+          "https://www.saferproducts.gov/",
+          "https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting.html",
+          "https://www.tsa.gov/travel/security-screening/whatcanibring/all"
         ]
       },
       {
-        "slug": "bullet-vibrator-charger-guide",
-        "title": "Bullet Vibrator Charger Guide",
-        "meta": "Compare bullet vibrator chargers, charging time, cable fit, battery care, water resistance, and red flags before replacing or buying a charger.",
+        "slug": "cock-ring-tightness-comfort-guide",
+        "title": "How Tight Should a Cock Ring Be?",
+        "meta": "Learn how tight a cock ring should feel, how to compare size and stretch, comfort signs, timing, removal, and checkout red flags.",
         "checks": {
-          "title_len": 29,
-          "meta_len": 143,
-          "h1_count": 1,
-          "gtag_id_count": 2,
-          "word_count": 1054,
-          "faq_count": 5,
-          "internal_blog_links": 4,
-          "product_support_links": 6,
-          "authority_refs": 4,
+          "title_len": 32,
           "title_under_60": true,
+          "meta_len": 129,
           "meta_under_155": true,
+          "h1_count": 1,
           "one_h1": true,
+          "gtag_id_count": 2,
           "gtag_exactly_once_config": true,
           "gtag_immediately_after_head": true,
+          "word_count": 1700,
           "word_count_1000_plus": true,
           "quick_answer": true,
           "red_flags": true,
+          "faq_count": 5,
           "faqpage_jsonld": true,
+          "internal_blog_links": 5,
+          "product_support_links": 10,
+          "authority_refs": 4,
           "has_authority": true,
           "og_image": true,
           "og_image_alt": true,
@@ -240,24 +270,26 @@
           "jsonld_imageobject": true,
           "banned_scan_pass": true,
           "quick_answer_near_top": true,
+          "readability_avg_sentence_under_24": true,
+          "no_overlong_paragraphs": true,
           "quality_score": 100,
           "pass": true
         },
         "refs": [
-          "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Lithium-Ion-Battery-Safety",
-          "https://www.ul.com/services/certification",
-          "https://www.iec.ch/ip-ratings",
-          "https://consumer.ftc.gov/articles/online-shopping"
+          "https://my.clevelandclinic.org/health/diseases/10035-erectile-dysfunction",
+          "https://www.nhs.uk/conditions/penis-problems/",
+          "https://consumer.ftc.gov/articles/online-shopping",
+          "https://www.saferproducts.gov/"
         ]
       }
     ],
     "sitemap_checks": {
-      "insertable-egg-toy-buyer-guide": {
+      "adult-toy-box-privacy-care-guide": {
         "url_present": true,
         "lastmod": true,
         "image_metadata": true
       },
-      "bullet-vibrator-charger-guide": {
+      "cock-ring-tightness-comfort-guide": {
         "url_present": true,
         "lastmod": true,
         "image_metadata": true
@@ -266,92 +298,10 @@
     "index_checks": {
       "links_new_articles": true,
       "blog_count_meta_updated": true,
-      "expected_count": 138
+      "expected_count": 140
     },
-    "validated_at": "2026-07-24"
+    "validated_at": "2026-07-25"
   },
-  "report": "output/daily_blog_report_2026-07-24.md",
-  "updated_at": "2026-07-24T10:38:07+08:00",
-  "git": {
-    "commit": "4087e03aef",
-    "pushed": true,
-    "branch": "master",
-    "push_method": "GIT_SSH_COMMAND=\"ssh -p 443 -o Hostname=ssh.github.com\" git push origin master",
-    "final_completion_commit": "988e52c1c9"
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync",
-    "server": "root@153.75.235.56:/var/www/myopencart/upload",
-    "completed_at": "2026-07-24T12:33:12+08:00",
-    "paths": [
-      "upload/blog/insertable-egg-toy-buyer-guide/",
-      "upload/blog/bullet-vibrator-charger-guide/",
-      "upload/blog/assets/insertable-egg-toy-buyer-guide-opus-cover.png",
-      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data, dirs 755, files 644"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-24T12:33:12+08:00",
-    "articles": [
-      {
-        "url": "https://shoplovanest.com/blog/insertable-egg-toy-buyer-guide/",
-        "checks": [
-          "HTTP 200",
-          "title/meta present",
-          "one H1",
-          "gtag config exactly once",
-          "Quick Answer",
-          "Red Flags",
-          "FAQPage JSON-LD",
-          "authority references",
-          "image SEO metadata"
-        ]
-      },
-      {
-        "url": "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
-        "checks": [
-          "HTTP 200",
-          "title/meta present",
-          "one H1",
-          "gtag config exactly once",
-          "Quick Answer",
-          "Red Flags",
-          "FAQPage JSON-LD",
-          "authority references (CPSC, UL, IEC, FTC)",
-          "image SEO metadata"
-        ]
-      }
-    ],
-    "blog_index": "HTTP 200 and links both new articles",
-    "sitemap": "HTTP 200, includes both URLs, lastmod 2026-07-24, and image metadata"
-  },
-  "email": {
-    "status": "accepted",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-24",
-    "accepted_at": "2026-07-24T12:33:12+08:00",
-    "message_file": "output/daily_blog_2026-07-24_success.eml",
-    "body_commit_hash": "4087e03aef",
-    "note": "Email body listed deployed/content commit 4087e03aef; final completion-state commit is 988e52c1c9"
-  },
-  "completed_at": "2026-07-24T12:33:12+08:00",
-  "completion_rule": {
-    "exactly_2_new_articles": true,
-    "keyword_files_read": true,
-    "content_quality_validation_passed": true,
-    "blog_index_updated": true,
-    "sitemap_updated": true,
-    "git_commit_pushed": true,
-    "production_deployed": true,
-    "live_verification_passed": true,
-    "success_email_accepted_by_msmtp": true
-  },
-  "email_status": "accepted"
+  "report": "output/daily_blog_report_2026-07-25.md",
+  "updated_at": "2026-07-25T08:41:43+08:00"
 }
