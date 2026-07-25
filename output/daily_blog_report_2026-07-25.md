@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report - 2026-07-25
 
-Status: validated_pending_commit_deploy_email
+Status: complete
 
 ## Articles
 - Adult Toy Box: Privacy & Care Guide
@@ -32,14 +32,14 @@ Status: validated_pending_commit_deploy_email
   - upload/blog/assets/cock-ring-tightness-comfort-guide-opus-cover.png
 - Sitemap adult-toy-box-privacy-care-guide: URL present=True, lastmod=True, image metadata=True
 - Sitemap cock-ring-tightness-comfort-guide: URL present=True, lastmod=True, image metadata=True
-- Blog index links new articles: True
-- Blog count metadata updated: True
 
 ## Git / deploy / live / email
-- Commit: pending
-- Pushed: pending
-- Production deploy: pending
-- Live verification: pending
-- Email status: pending
+- Commit: 0e49d0f6b9
+- Pushed: true
+- Production deploy: pass via targeted rsync
+- Live verification: pass
+- Blog index: {'http_200': True, 'links_new_articles': True}
+- Sitemap: {'http_200': True, 'adult-toy-box-privacy-care-guide': {'url_present': True, 'lastmod': True, 'image_metadata': True}, 'cock-ring-tightness-comfort-guide': {'url_present': True, 'lastmod': True, 'image_metadata': True}}
+- Email status: accepted by msmtp at 2026-07-25T08:46:04+08:00
 
-Completion remains incomplete until commit, push, deploy, live verification, and msmtp acceptance pass.
+Completion rule: PASS — exactly 2 new articles generated from keyword files, blog index and sitemap updated, validation passed, commit pushed, production deployed, live verification passed, and success email accepted.

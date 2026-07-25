@@ -1,0 +1,28 @@
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-25
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest Daily Blog Deployment Complete - 2026-07-25
+
+Two SEO blog articles were generated from the required keyword/mapping files, validated, committed, pushed, deployed, and verified live.
+
+1) Adult Toy Box: Privacy & Care Guide
+URL: https://shoplovanest.com/blog/adult-toy-box-privacy-care-guide/
+Primary keywords: adult toy storage adult toys; adult toy storage box; adult toy box
+Verification: HTTP 200, title/meta present, one H1, Google tag config exactly once, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, image SEO metadata, content marker present.
+
+2) How Tight Should a Cock Ring Be?
+URL: https://shoplovanest.com/blog/cock-ring-tightness-comfort-guide/
+Primary keywords: how tight should a cock ring be; cock ring sizing; cock ring size; how to size a cock ring
+Verification: HTTP 200, title/meta present, one H1, Google tag config exactly once, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, image SEO metadata, content marker present.
+
+Commit: 0e49d0f6b9
+Branch: master
+Push: complete
+Deployment: targeted rsync to root@153.75.235.56:/var/www/myopencart/upload
+Permissions: www-data:www-data, dirs 755, files 644
+Blog index: HTTP 200 and links both new articles
+Sitemap: HTTP 200 and includes both URLs, lastmod 2026-07-25, and image metadata
+Content validation: both pages scored 100 and passed all required checks.
+
+Email status: submitted via /opt/homebrew/bin/msmtp using /Users/grant/.msmtprc.

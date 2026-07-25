@@ -1,7 +1,7 @@
 {
   "date": "2026-07-25",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -303,5 +303,105 @@
     "validated_at": "2026-07-25"
   },
   "report": "output/daily_blog_report_2026-07-25.md",
-  "updated_at": "2026-07-25T08:41:43+08:00"
+  "updated_at": "2026-07-25T08:46:04+08:00",
+  "git": {
+    "commit": "0e49d0f6b9",
+    "pushed": true,
+    "branch": "master",
+    "push_method": "GIT_SSH_COMMAND=\"ssh -p 443 -o Hostname=ssh.github.com\" git push origin master"
+  },
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync",
+    "server": "root@153.75.235.56:/var/www/myopencart/upload",
+    "completed_at": "2026-07-25T08:43:52+08:00",
+    "paths": [
+      "upload/blog/adult-toy-box-privacy-care-guide/",
+      "upload/blog/cock-ring-tightness-comfort-guide/",
+      "upload/blog/assets/adult-toy-box-privacy-care-guide-opus-cover.png",
+      "upload/blog/assets/cock-ring-tightness-comfort-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions": "www-data:www-data, dirs 755, files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-25T08:43:56+08:00",
+    "articles": [
+      {
+        "url": "https://shoplovanest.com/blog/adult-toy-box-privacy-care-guide/",
+        "checks": {
+          "http_200": true,
+          "title_present": true,
+          "meta_present": true,
+          "one_h1": true,
+          "gtag_config_once": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faqpage": true,
+          "authority_refs": true,
+          "image_seo": true,
+          "content_marker": true,
+          "pass": true
+        }
+      },
+      {
+        "url": "https://shoplovanest.com/blog/cock-ring-tightness-comfort-guide/",
+        "checks": {
+          "http_200": true,
+          "title_present": true,
+          "meta_present": true,
+          "one_h1": true,
+          "gtag_config_once": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faqpage": true,
+          "authority_refs": true,
+          "image_seo": true,
+          "content_marker": true,
+          "pass": true
+        }
+      }
+    ],
+    "blog_index": {
+      "http_200": true,
+      "links_new_articles": true
+    },
+    "sitemap": {
+      "http_200": true,
+      "adult-toy-box-privacy-care-guide": {
+        "url_present": true,
+        "lastmod": true,
+        "image_metadata": true
+      },
+      "cock-ring-tightness-comfort-guide": {
+        "url_present": true,
+        "lastmod": true,
+        "image_metadata": true
+      }
+    }
+  },
+  "email": {
+    "status": "accepted",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-25",
+    "accepted_at": "2026-07-25T08:46:04+08:00",
+    "message_file": "output/daily_blog_2026-07-25_success.eml"
+  },
+  "email_status": "accepted",
+  "completed_at": "2026-07-25T08:46:04+08:00",
+  "completion_rule": {
+    "exactly_2_new_articles": true,
+    "keyword_files_read": true,
+    "content_quality_validation_passed": true,
+    "blog_index_updated": true,
+    "sitemap_updated": true,
+    "git_commit_pushed": true,
+    "production_deployed": true,
+    "live_verification_passed": true,
+    "success_email_accepted_by_msmtp": true
+  }
 }
