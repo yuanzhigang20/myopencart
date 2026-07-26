@@ -1,33 +1,32 @@
 {
-  "date": "2026-07-25",
+  "date": "2026-07-26",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "adult-toy-box-privacy-care-guide",
-      "title": "Adult Toy Box: Privacy & Care Guide",
-      "url": "https://shoplovanest.com/blog/adult-toy-box-privacy-care-guide/",
+      "slug": "kegel-balls-beginner-weight-guide",
+      "title": "Kegel Balls for Beginners: Weight Guide",
+      "url": "https://shoplovanest.com/blog/kegel-balls-beginner-weight-guide/",
       "primary_keywords": [
-        "adult toy storage adult toys",
-        "adult toy storage box",
-        "adult toy box"
+        "kegel balls for beginners",
+        "weighted kegel balls",
+        "silicone kegel balls"
       ],
-      "keyword_source": "Read keyword files; selected storage/box terms and created a distinct privacy-care storage-box buyer guide without targeting irrelevant toy meanings.",
-      "intent_cluster": "Adult toy box privacy and care intent \u2014 clean/dry storage, material separation, chargers, locks, travel, and red flags."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected Kegel beginner/weighted/silicone terms from the pelvic wellness cluster and created a narrow weight-and-care decision guide rather than another generic Kegel article.",
+      "intent_cluster": "Kegel balls beginner weight intent \u2014 compare starter weight, size, body-safe silicone, retrieval design, cleaning, comfort signs, and red flags without medical promises."
     },
     {
-      "slug": "cock-ring-tightness-comfort-guide",
-      "title": "How Tight Should a Cock Ring Be?",
-      "url": "https://shoplovanest.com/blog/cock-ring-tightness-comfort-guide/",
+      "slug": "waterproof-vibrator-ip-ratings-guide",
+      "title": "Waterproof Vibrator IP Ratings Guide",
+      "url": "https://shoplovanest.com/blog/waterproof-vibrator-ip-ratings-guide/",
       "primary_keywords": [
-        "how tight should a cock ring be",
-        "cock ring sizing",
-        "cock ring size",
-        "how to size a cock ring"
+        "waterproof vibrator",
+        "are vibrators waterproof",
+        "waterproof vibrators"
       ],
-      "keyword_source": "Read keyword files; selected cock ring tightness/sizing terms for a focused comfort and removal guide, distinct from broad cock ring buying pages.",
-      "intent_cluster": "Cock ring tightness and comfort intent \u2014 sizing, stretch, adjustability, timing, removal, warning signs, and red flags."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected waterproof vibrator terms from the waterproof care cluster and created a focused IP-rating buyer guide distinct from broad vibrator selection pages.",
+      "intent_cluster": "Waterproof vibrator IP-rating intent \u2014 understand IPX wording, splash versus immersion claims, charging-port care, cleaning boundaries, and checkout red flags."
     }
   ],
   "keyword_source_files_read": [
@@ -37,371 +36,240 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "adult toy box",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "1.00,0.89,0.73,0.58,0.73,0.73,0.58,0.73,0.73,1.00,0.58,0.73",
-      "Keyword Difficulty": "29",
-      "SERP Features": "Sitelinks, Video, Local pack"
+      "source_file": "kegel-balls_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "kegel balls",
+      "Keyword": "silicone kegel balls",
+      "Intent": "Informational",
+      "Volume": "390",
+      "Trend": "0.13,0.31,0.46,1.00,0.08,0.08,0.03,0.02,0.37,0.02,0.11,0.07",
+      "Keyword Difficulty": "25",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "adult toy storage box",
-      "Intent": "Commercial",
-      "Volume": "320",
-      "Trend": "1.00,0.53,0.81,1.00,0.81,0.67,0.81,0.81,1.00,1.00,0.81,0.67",
+      "source_file": "kegel-balls_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "kegel balls",
+      "Keyword": "weighted kegel balls",
+      "Intent": "Informational",
+      "Volume": "390",
+      "Trend": "0.44,0.44,0.54,0.36,0.44,0.66,0.44,0.54,1.00,0.81,0.54,0.66",
       "Keyword Difficulty": "22",
+      "SERP Features": "AI Overview, Image, Image pack, Video, Short videos, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "kegel-balls_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "kegel balls",
+      "Keyword": "kegel balls for beginners",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.23,0.66,0.66,0.28,0.28,0.18,0.66,0.54,1.00,1.00,0.81,0.44",
+      "Keyword Difficulty": "25",
+      "SERP Features": "Sitelinks, AI Overview, Image pack, Video, Video carousel, Short videos, People also ask, Discussions and forums, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "waterproof vibrator",
+      "Keyword": "waterproof vibrator",
+      "Intent": "Commercial",
+      "Volume": "720",
+      "Trend": "0.84,0.84,1.00,1.00,1.00,0.84,0.84,1.00,1.00,1.00,0.84,0.43",
+      "Keyword Difficulty": "8",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "how tight should a cock ring be",
-      "Intent": "Informational",
-      "Volume": "390",
-      "Trend": "0.81,0.81,0.81,1.00,1.00,0.81,0.81,0.81,1.00,1.00,1.00,0.81",
-      "Keyword Difficulty": "33",
-      "SERP Features": "Featured snippet, Sitelinks, People also ask"
+      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "waterproof vibrator",
+      "Keyword": "waterproof vibrators",
+      "Intent": "Commercial",
+      "Volume": "590",
+      "Trend": "0.54,0.81,1.00,1.00,0.81,0.54,0.54,0.54,0.29,0.54,0.44,0.19",
+      "Keyword Difficulty": "12",
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "cock ring size",
+      "source_file": "waterproof-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "waterproof vibrator",
+      "Keyword": "are vibrators waterproof",
       "Intent": "Informational",
-      "Volume": "260",
-      "Trend": "0.53,0.66,0.66,0.66,1.00,0.66,0.53,0.53,0.66,0.53,0.53,0.66",
-      "Keyword Difficulty": "17",
-      "SERP Features": "Sitelinks, AI Overview"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "cock ring sizing",
-      "Intent": "Informational",
-      "Volume": "260",
-      "Trend": "0.67,0.67,1.00,0.67,0.67,0.67,0.67,0.83,0.83,1.00,1.00,1.00",
-      "Keyword Difficulty": "23",
-      "SERP Features": "Sitelinks, AI Overview, People also ask"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "how to size a cock ring",
-      "Intent": "Informational",
-      "Volume": "210",
-      "Trend": "0.66,0.66,0.66,0.81,0.66,0.66,0.66,0.81,0.81,0.81,0.81,1.00",
-      "Keyword Difficulty": "20",
-      "SERP Features": "Sitelinks, AI Overview"
+      "Volume": "170",
+      "Trend": "0.66,0.80,1.00,0.80,0.66,0.66,0.52,0.66,0.80,0.80,0.66,0.42",
+      "Keyword Difficulty": "10",
+      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy box",
-      "Search intent": "Commercial",
-      "Topic cluster": "Unclustered adult wellness/general",
+      "Keyword": "silicone kegel balls",
+      "Search intent": "Informational",
+      "Topic cluster": "Pelvic wellness accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Review manually",
-      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
-      "Priority": "P4",
-      "Notes": "Manual review recommended before content changes."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy storage box",
-      "Search intent": "How-to",
-      "Topic cluster": "Cleaning and storage",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-storage-guide/",
-      "Assigned article title": "Adult Toy Storage: Clean, Private, and Material-Safe Habits",
+      "Assigned URL": "/blog/kegel-balls-guide/",
+      "Assigned article title": "Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes",
       "Action": "Update existing article",
-      "Reason": "Show how storage protects privacy, hygiene, and product lifespan. Commercial value: Medium; difficulty: Easy.",
+      "Reason": "Kegel accessory informational intent; safety how-to subintent links to safe-use article.",
       "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "weighted kegel balls",
+      "Search intent": "Informational",
+      "Topic cluster": "Pelvic wellness accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/kegel-balls-guide/",
+      "Assigned article title": "Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes",
+      "Action": "Update existing article",
+      "Reason": "Kegel accessory informational intent; safety how-to subintent links to safe-use article.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "kegel balls for beginners",
+      "Search intent": "Informational",
+      "Topic cluster": "Pelvic wellness accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/kegel-balls-guide/",
+      "Assigned article title": "Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes",
+      "Action": "Update existing article",
+      "Reason": "Kegel accessory informational intent; safety how-to subintent links to safe-use article.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "waterproof vibrator",
+      "Search intent": "Problem Solving",
+      "Topic cluster": "Waterproof care",
+      "Primary/secondary": "Primary",
+      "Assigned URL": "/blog/waterproof-vibrator-guide/",
+      "Assigned article title": "Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions",
+      "Action": "Update existing article",
+      "Reason": "Clarify waterproof versus splash resistant and safe cleaning habits. Commercial value: High; difficulty: Medium.",
+      "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "how tight should a cock ring be",
+      "Keyword": "waterproof vibrators",
       "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
+      "Topic cluster": "Beginner vibrator selection",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Assigned URL": "/blog/vibrators-for-beginners/",
+      "Assigned article title": "Vibrators for Beginners: How to Choose Without Guesswork",
       "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
-      "Notes": ""
+      "Reason": "Explain what features matter first and which advanced features can wait. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "cock ring size",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
+      "Keyword": "are vibrators waterproof",
+      "Search intent": "Problem Solving",
+      "Topic cluster": "Waterproof care",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Assigned URL": "/blog/waterproof-vibrator-guide/",
+      "Assigned article title": "Waterproof Vibrator Guide: Ratings, Cleaning, and Cautions",
       "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "cock ring sizing",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "how to size a cock ring",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
+      "Reason": "Waterproof vs splash-resistant problem-solving intent.",
+      "Priority": "P1",
       "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-25T08:41:11.656612+08:00",
+  "generated_at": "2026-07-26T10:34:23.791491+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
+    "generated_at": "2026-07-26T10:34:23.791802+08:00",
     "files": [
-      "upload/blog/assets/adult-toy-box-privacy-care-guide-opus-cover.png",
-      "upload/blog/assets/cock-ring-tightness-comfort-guide-opus-cover.png"
-    ]
-  },
-  "content_quality_validation": {
-    "status": "pass",
+      "upload/blog/assets/kegel-balls-beginner-weight-guide-opus-cover.png",
+      "upload/blog/assets/waterproof-vibrator-ip-ratings-guide-opus-cover.png"
+    ],
     "results": [
       {
-        "slug": "adult-toy-box-privacy-care-guide",
-        "title": "Adult Toy Box: Privacy & Care Guide",
-        "meta": "Choose an adult toy box by privacy, airflow, cleaning, charger safety, material separation, travel needs, and checkout red flags.",
-        "checks": {
-          "title_len": 35,
-          "title_under_60": true,
-          "meta_len": 129,
-          "meta_under_155": true,
-          "h1_count": 1,
-          "one_h1": true,
-          "gtag_id_count": 2,
-          "gtag_exactly_once_config": true,
-          "gtag_immediately_after_head": true,
-          "word_count": 1753,
-          "word_count_1000_plus": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_count": 5,
-          "faqpage_jsonld": true,
-          "internal_blog_links": 5,
-          "product_support_links": 10,
-          "authority_refs": 4,
-          "has_authority": true,
-          "og_image": true,
-          "og_image_alt": true,
-          "twitter_image": true,
-          "twitter_image_alt": true,
-          "image_alt_title_figcaption": true,
-          "jsonld_imageobject": true,
-          "banned_scan_pass": true,
-          "quick_answer_near_top": true,
-          "readability_avg_sentence_under_24": true,
-          "no_overlong_paragraphs": true,
-          "quality_score": 100,
-          "pass": true
-        },
-        "refs": [
-          "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.saferproducts.gov/",
-          "https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting.html",
-          "https://www.tsa.gov/travel/security-screening/whatcanibring/all"
+        "file": "upload/blog/assets/kegel-balls-beginner-weight-guide-opus-cover.png",
+        "status": "pass",
+        "response_id": "resp_01ae3bfdcad64c23016a6571dae4cc819881e419a93040c754",
+        "call_id": "ig_01ae3bfdcad64c23016a6571db6328819886b15b58395af813",
+        "size": "1536x1024",
+        "quality": "medium",
+        "output_format": "png",
+        "revised_prompt": "Create a discreet, ecommerce-friendly editorial hero image for an adult wellness article about Kegel balls for beginners and choosing starter weight. Scene: neutral tabletop product photography, tasteful American ecommerce style, soft natural light. Include abstract silicone weighted balls arranged like a product set, a soft care pouch, a small cleaning checklist card, simple weight comparison tags, and subtle comfort notes on paper labels. No people, no nudity, no explicit anatomy, no medical c"
+      },
+      {
+        "file": "upload/blog/assets/waterproof-vibrator-ip-ratings-guide-opus-cover.png",
+        "status": "pass",
+        "response_id": "resp_041ae38ac019b1b6016a657201c780819bade5ccba5eba156b",
+        "call_id": "ig_041ae38ac019b1b6016a6572023c80819bb08e9a660ca1a688",
+        "size": "1536x1024",
+        "quality": "medium",
+        "output_format": "png",
+        "revised_prompt": "Editorial ecommerce-friendly hero image for an adult wellness article about waterproof vibrator IP ratings and care. Neutral tabletop product photography, tasteful American commercial style, soft natural light. Center an abstract sealed personal massager silhouette with no explicit anatomy, no branding, no people, no nudity. Add subtle water droplets on the surface, a small clean IPX rating checklist card, a simple charging port cover icon, and a folded microfiber care towel. Palette: ivory, gra"
+      }
+    ]
+  },
+  "validation": {
+    "status": "pass",
+    "script": "output/validate_daily_blog_2026_07_26.py",
+    "results": {
+      "kegel-balls-beginner-weight-guide": {
+        "title_len": 39,
+        "meta_len": 123,
+        "h1_count": 1,
+        "gtag_block_count": 1,
+        "gtag_id_occurrences_in_standard_block": 2,
+        "word_count": 1106,
+        "faq_count": 5,
+        "quality_score": 100,
+        "status": "pass",
+        "checks": [
+          "seo title <60",
+          "meta description <155",
+          "exactly one H1",
+          "standard Google tag block once immediately after head",
+          "1000+ words",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage JSON-LD",
+          "authority links",
+          "related blog/product/support links",
+          "image SEO metadata",
+          "natural English/depth",
+          "no banned unsafe claims"
         ]
       },
-      {
-        "slug": "cock-ring-tightness-comfort-guide",
-        "title": "How Tight Should a Cock Ring Be?",
-        "meta": "Learn how tight a cock ring should feel, how to compare size and stretch, comfort signs, timing, removal, and checkout red flags.",
-        "checks": {
-          "title_len": 32,
-          "title_under_60": true,
-          "meta_len": 129,
-          "meta_under_155": true,
-          "h1_count": 1,
-          "one_h1": true,
-          "gtag_id_count": 2,
-          "gtag_exactly_once_config": true,
-          "gtag_immediately_after_head": true,
-          "word_count": 1700,
-          "word_count_1000_plus": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_count": 5,
-          "faqpage_jsonld": true,
-          "internal_blog_links": 5,
-          "product_support_links": 10,
-          "authority_refs": 4,
-          "has_authority": true,
-          "og_image": true,
-          "og_image_alt": true,
-          "twitter_image": true,
-          "twitter_image_alt": true,
-          "image_alt_title_figcaption": true,
-          "jsonld_imageobject": true,
-          "banned_scan_pass": true,
-          "quick_answer_near_top": true,
-          "readability_avg_sentence_under_24": true,
-          "no_overlong_paragraphs": true,
-          "quality_score": 100,
-          "pass": true
-        },
-        "refs": [
-          "https://my.clevelandclinic.org/health/diseases/10035-erectile-dysfunction",
-          "https://www.nhs.uk/conditions/penis-problems/",
-          "https://consumer.ftc.gov/articles/online-shopping",
-          "https://www.saferproducts.gov/"
+      "waterproof-vibrator-ip-ratings-guide": {
+        "title_len": 36,
+        "meta_len": 135,
+        "h1_count": 1,
+        "gtag_block_count": 1,
+        "gtag_id_occurrences_in_standard_block": 2,
+        "word_count": 1018,
+        "faq_count": 5,
+        "quality_score": 100,
+        "status": "pass",
+        "checks": [
+          "seo title <60",
+          "meta description <155",
+          "exactly one H1",
+          "standard Google tag block once immediately after head",
+          "1000+ words",
+          "Quick Answer",
+          "Red Flags",
+          "FAQPage JSON-LD",
+          "authority links",
+          "related blog/product/support links",
+          "image SEO metadata",
+          "natural English/depth",
+          "no banned unsafe claims"
         ]
-      }
-    ],
-    "sitemap_checks": {
-      "adult-toy-box-privacy-care-guide": {
-        "url_present": true,
-        "lastmod": true,
-        "image_metadata": true
-      },
-      "cock-ring-tightness-comfort-guide": {
-        "url_present": true,
-        "lastmod": true,
-        "image_metadata": true
-      }
-    },
-    "index_checks": {
-      "links_new_articles": true,
-      "blog_count_meta_updated": true,
-      "expected_count": 140
-    },
-    "validated_at": "2026-07-25"
-  },
-  "report": "output/daily_blog_report_2026-07-25.md",
-  "updated_at": "2026-07-25T08:46:04+08:00",
-  "git": {
-    "commit": "0e49d0f6b9",
-    "pushed": true,
-    "branch": "master",
-    "push_method": "GIT_SSH_COMMAND=\"ssh -p 443 -o Hostname=ssh.github.com\" git push origin master"
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync",
-    "server": "root@153.75.235.56:/var/www/myopencart/upload",
-    "completed_at": "2026-07-25T08:43:52+08:00",
-    "paths": [
-      "upload/blog/adult-toy-box-privacy-care-guide/",
-      "upload/blog/cock-ring-tightness-comfort-guide/",
-      "upload/blog/assets/adult-toy-box-privacy-care-guide-opus-cover.png",
-      "upload/blog/assets/cock-ring-tightness-comfort-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data, dirs 755, files 644"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-25T08:43:56+08:00",
-    "articles": [
-      {
-        "url": "https://shoplovanest.com/blog/adult-toy-box-privacy-care-guide/",
-        "checks": {
-          "http_200": true,
-          "title_present": true,
-          "meta_present": true,
-          "one_h1": true,
-          "gtag_config_once": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faqpage": true,
-          "authority_refs": true,
-          "image_seo": true,
-          "content_marker": true,
-          "pass": true
-        }
-      },
-      {
-        "url": "https://shoplovanest.com/blog/cock-ring-tightness-comfort-guide/",
-        "checks": {
-          "http_200": true,
-          "title_present": true,
-          "meta_present": true,
-          "one_h1": true,
-          "gtag_config_once": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faqpage": true,
-          "authority_refs": true,
-          "image_seo": true,
-          "content_marker": true,
-          "pass": true
-        }
-      }
-    ],
-    "blog_index": {
-      "http_200": true,
-      "links_new_articles": true
-    },
-    "sitemap": {
-      "http_200": true,
-      "adult-toy-box-privacy-care-guide": {
-        "url_present": true,
-        "lastmod": true,
-        "image_metadata": true
-      },
-      "cock-ring-tightness-comfort-guide": {
-        "url_present": true,
-        "lastmod": true,
-        "image_metadata": true
       }
     }
   },
-  "email": {
-    "status": "accepted",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-25",
-    "accepted_at": "2026-07-25T08:46:04+08:00",
-    "message_file": "output/daily_blog_2026-07-25_success.eml"
-  },
-  "email_status": "accepted",
-  "completed_at": "2026-07-25T08:46:04+08:00",
-  "completion_rule": {
-    "exactly_2_new_articles": true,
-    "keyword_files_read": true,
-    "content_quality_validation_passed": true,
-    "blog_index_updated": true,
-    "sitemap_updated": true,
-    "git_commit_pushed": true,
-    "production_deployed": true,
-    "live_verification_passed": true,
-    "success_email_accepted_by_msmtp": true
-  }
+  "updated_at": "2026-07-26T10:40:00.150213+08:00"
 }
