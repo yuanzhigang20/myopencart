@@ -1,7 +1,7 @@
 {
   "date": "2026-07-26",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -271,5 +271,61 @@
       }
     }
   },
-  "updated_at": "2026-07-26T10:40:00.150213+08:00"
+  "updated_at": "2026-07-26T10:42:00.153850+08:00",
+  "commit": "18b5fe73e3",
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data; dirs 755; files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "script": "output/verify_live_daily_blog_2026_07_26.py",
+    "results": {
+      "https://shoplovanest.com/blog/kegel-balls-beginner-weight-guide/": {
+        "http_200": true,
+        "title_present": true,
+        "meta_description_present": true,
+        "one_h1": true,
+        "gtag_block_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "image_seo_metadata": true
+      },
+      "https://shoplovanest.com/blog/waterproof-vibrator-ip-ratings-guide/": {
+        "http_200": true,
+        "title_present": true,
+        "meta_description_present": true,
+        "one_h1": true,
+        "gtag_block_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "image_seo_metadata": true
+      },
+      "https://shoplovanest.com/blog/": {
+        "http_200": true,
+        "links_new_articles": true
+      },
+      "https://shoplovanest.com/sitemap.xml": {
+        "http_200": true,
+        "includes_new_urls": true,
+        "includes_lastmod_2026_07_26": true,
+        "includes_image_metadata": true
+      }
+    }
+  },
+  "email": {
+    "status": "sent_accepted",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-26",
+    "exit_code": 0,
+    "sent_at": "2026-07-26T10:42:21.451102+08:00"
+  },
+  "completed_at": "2026-07-26T10:42:21.451176+08:00"
 }
