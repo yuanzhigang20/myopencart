@@ -1,7 +1,7 @@
 {
   "date": "2026-07-27",
   "timezone": "Asia/Shanghai",
-  "status": "live_verified_pending_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -310,7 +310,8 @@
     "status": "pushed",
     "hash": "2efb813ed334ab0fc50a36c1bd62d50622f0bfe9",
     "remote": "origin/master",
-    "pushed_at": "2026-07-27T14:35:36+08:00"
+    "pushed_at": "2026-07-27T14:35:36+08:00",
+    "final_state_hash_pending_commit": "c698e9f492af94813fcda8e6ff9b856c9972afe1"
   },
   "push": {
     "status": "pass",
@@ -333,5 +334,27 @@
       "https://shoplovanest.com/blog/adult-toy-advent-calendar-guide/"
     ],
     "checks": "HTTP 200, title/meta, exactly one H1, one gtag script/config, Quick Answer, Red Flags, FAQPage schema, authority references, image SEO metadata, blog index links, sitemap lastmod and image metadata verified live."
-  }
+  },
+  "completion_rule": {
+    "exactly_2_new_articles": true,
+    "generated_from_keyword_files": true,
+    "blog_index_updated": true,
+    "sitemap_updated": true,
+    "content_quality_validation_passed": true,
+    "git_commit_pushed": true,
+    "production_deployed": true,
+    "live_verification_passed": true,
+    "success_email_sent_accepted_by_msmtp": true
+  },
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-27",
+    "sent_at": "2026-07-27T14:38:57+08:00",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/tmp/msmtprc_gmail_465 generated from /Users/grant/.msmtprc with port 465 tls_starttls off because port 587 timed out; passwordeval still used macOS Keychain, password not printed or stored.",
+    "initial_attempt": "/Users/grant/.msmtprc port 587 timed out with exit 75",
+    "accepted_exit_code": 0
+  },
+  "email_status": "sent_accepted"
 }
