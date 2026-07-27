@@ -1,7 +1,7 @@
 {
   "date": "2026-07-27",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "live_verified_pending_email",
   "article_quota": 2,
   "articles": [
     {
@@ -14,7 +14,7 @@
         "rechargeable bullet vibrator"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected bullet vibrator charger and rechargeable bullet vibrator terms from the compact vibrator cluster and created a narrow charging/cable-care guide instead of another broad bullet vibrator article.",
-      "intent_cluster": "Bullet vibrator charger intent \u2014 shoppers want to replace, compare, or troubleshoot charging cables and understand charging time without unsafe electrical assumptions."
+      "intent_cluster": "Bullet vibrator charger intent — shoppers want to replace, compare, or troubleshoot charging cables and understand charging time without unsafe electrical assumptions."
     },
     {
       "slug": "adult-toy-advent-calendar-guide",
@@ -26,7 +26,7 @@
         "adult toy box subscription"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected advent calendar/subscription box terms from the unclustered adult wellness group after manual review and framed them as consent-first gift/privacy guidance rather than novelty hype.",
-      "intent_cluster": "Adult toy advent calendar and subscription box intent \u2014 shoppers compare surprise boxes, privacy, value, consent, returns, materials, and red flags before gifting or buying."
+      "intent_cluster": "Adult toy advent calendar and subscription box intent — shoppers compare surprise boxes, privacy, value, consent, returns, materials, and red flags before gifting or buying."
     }
   ],
   "keyword_source_files_read": [
@@ -305,5 +305,33 @@
       "blog_index_lastmod": true,
       "blog_index_links": true
     }
+  },
+  "commit": {
+    "status": "pushed",
+    "hash": "2efb813ed334ab0fc50a36c1bd62d50622f0bfe9",
+    "remote": "origin/master",
+    "pushed_at": "2026-07-27T14:35:36+08:00"
+  },
+  "push": {
+    "status": "pass",
+    "remote": "origin/master",
+    "pushed_at": "2026-07-27T14:35:36+08:00"
+  },
+  "deploy": {
+    "status": "pass",
+    "server": "root@153.75.235.56",
+    "path": "/var/www/myopencart/upload",
+    "method": "targeted rsync",
+    "deployed_at": "2026-07-27T14:35:36+08:00",
+    "permissions": "www-data:www-data, dirs 755, files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "verified_at": "2026-07-27T14:35:36+08:00",
+    "article_urls": [
+      "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
+      "https://shoplovanest.com/blog/adult-toy-advent-calendar-guide/"
+    ],
+    "checks": "HTTP 200, title/meta, exactly one H1, one gtag script/config, Quick Answer, Red Flags, FAQPage schema, authority references, image SEO metadata, blog index links, sitemap lastmod and image metadata verified live."
   }
 }
