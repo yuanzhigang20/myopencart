@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-28",
+  "results": [
+    {
+      "slug": "remote-control-adult-toys-guide",
+      "title_len": 31,
+      "meta_len": 131,
+      "h1_count": 1,
+      "gtag_block_once_immediately_after_head": true,
+      "word_count": 1163,
+      "quick_answer": true,
+      "red_flags": true,
+      "faq_schema": true,
+      "internal_blog_links": 12,
+      "product_support_links": 11,
+      "authority_reference_domains_matched": 3,
+      "image_seo_metadata": true,
+      "banned_hits": [],
+      "quality_score": 100,
+      "status": "pass",
+      "sitemap_url": true,
+      "sitemap_lastmod": true,
+      "sitemap_image_metadata": true
+    },
+    {
+      "slug": "automatic-male-masturbator-guide",
+      "title_len": 32,
+      "meta_len": 123,
+      "h1_count": 1,
+      "gtag_block_once_immediately_after_head": true,
+      "word_count": 1085,
+      "quick_answer": true,
+      "red_flags": true,
+      "faq_schema": true,
+      "internal_blog_links": 12,
+      "product_support_links": 11,
+      "authority_reference_domains_matched": 4,
+      "image_seo_metadata": true,
+      "banned_hits": [],
+      "quality_score": 100,
+      "status": "pass",
+      "sitemap_url": true,
+      "sitemap_lastmod": true,
+      "sitemap_image_metadata": true
+    }
+  ],
+  "blog_index_links": true,
+  "overall": "pass"
+}

@@ -1,32 +1,32 @@
 {
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "bullet-vibrator-charger-guide",
-      "title": "Bullet Vibrator Charger Guide",
-      "url": "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
+      "slug": "remote-control-adult-toys-guide",
+      "title": "Remote Control Adult Toys Guide",
+      "url": "https://shoplovanest.com/blog/remote-control-adult-toys-guide/",
       "primary_keywords": [
-        "bullet vibrator charger",
-        "bullet vibrator charging time",
-        "rechargeable bullet vibrator"
+        "remote control adult toys",
+        "app controlled adult toys",
+        "wireless adult toys"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected bullet vibrator charger and rechargeable bullet vibrator terms from the compact vibrator cluster and created a narrow charging/cable-care guide instead of another broad bullet vibrator article.",
-      "intent_cluster": "Bullet vibrator charger intent — shoppers want to replace, compare, or troubleshoot charging cables and understand charging time without unsafe electrical assumptions."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected remote control adult toys from the buying-decision framework cluster and expanded it into a privacy, consent, and connection-safety guide rather than a generic adult toy article.",
+      "intent_cluster": "Remote control adult toys intent \u2014 shoppers compare wireless controls, app privacy, range, noise, charging, travel, and partner-consent considerations before buying."
     },
     {
-      "slug": "adult-toy-advent-calendar-guide",
-      "title": "Adult Toy Advent Calendar Guide",
-      "url": "https://shoplovanest.com/blog/adult-toy-advent-calendar-guide/",
+      "slug": "automatic-male-masturbator-guide",
+      "title": "Automatic Male Masturbator Guide",
+      "url": "https://shoplovanest.com/blog/automatic-male-masturbator-guide/",
       "primary_keywords": [
-        "adult toy advent calendar",
-        "adult toy subscription box",
-        "adult toy box subscription"
+        "automatic male masturbator",
+        "automatic male masturbators",
+        "best automatic male masturbator"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected advent calendar/subscription box terms from the unclustered adult wellness group after manual review and framed them as consent-first gift/privacy guidance rather than novelty hype.",
-      "intent_cluster": "Adult toy advent calendar and subscription box intent — shoppers compare surprise boxes, privacy, value, consent, returns, materials, and red flags before gifting or buying."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected automatic male masturbator, automatic male masturbators, and best automatic male masturbator from the male wellness products cluster and framed the article around fit, cleaning, and privacy rather than explicit use.",
+      "intent_cluster": "Automatic male masturbator intent \u2014 shoppers compare wearable or powered features, fit, noise, charging, cleaning burden, drying time, storage, and privacy before purchase."
     }
   ],
   "keyword_source_files_read": [
@@ -38,323 +38,216 @@
       "source": "output/merged_keyword_research_2026-06-25.csv",
       "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
       "seed_keyword": "adult toys",
-      "Keyword": "adult toy advent calendar",
+      "Keyword": "app controlled adult toys",
       "Intent": "Commercial",
-      "Volume": "480",
-      "Trend": "0.02,0.02,0.02,0.03,0.02,0.10,0.05,1.00,0.08,0.01,0.00,0.00",
-      "Keyword Difficulty": "20",
-      "SERP Features": "Sitelinks, People also ask"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "adult toy box subscription",
-      "Intent": "Informational",
-      "Volume": "170",
-      "Trend": "0.42,0.80,0.65,0.53,0.42,0.53,0.65,1.00,1.00,1.00,0.80,0.80",
-      "Keyword Difficulty": "31",
+      "Volume": "720",
+      "Trend": "0.77,0.20,0.37,0.56,0.30,0.77,0.30,0.37,0.37,0.44,0.37,1.00",
+      "Keyword Difficulty": "26",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23.xlsx",
+      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
       "seed_keyword": "adult toys",
-      "Keyword": "adult toy subscription box",
+      "Keyword": "remote control adult toys",
       "Intent": "Commercial",
-      "Volume": "140",
-      "Trend": "1.00,1.00,0.82,1.00,0.52,0.66,0.82,0.23,0.43,0.43,0.43,0.43",
-      "Keyword Difficulty": "46",
-      "SERP Features": "Sitelinks, Video, Related searches"
+      "Volume": "720",
+      "Trend": "0.55,0.44,0.37,1.00,0.30,0.37,0.44,0.44,0.37,0.44,0.44,0.55",
+      "Keyword Difficulty": "23",
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibrator charger",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "automatic male masturbator",
       "Intent": "Informational",
-      "Volume": "320",
-      "Trend": "0.81,0.81,1.00,1.00,1.00,0.81,0.81,0.81,1.00,1.00,1.00,0.65",
-      "Keyword Difficulty": "25",
-      "SERP Features": "Sitelinks, Video, People also ask, Related searches"
+      "Volume": "1900",
+      "Trend": "0.53,0.53,0.36,0.36,0.53,0.36,0.44,0.27,0.53,0.53,1.00,0.53",
+      "Keyword Difficulty": "40",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibrator chargjng time",
-      "Intent": "",
-      "Volume": "260",
-      "Trend": "1.00",
-      "Keyword Difficulty": "",
-      "SERP Features": ""
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rechargeable vibrator",
-      "Keyword": "rechargeable bullet vibrator",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "automatic male masturbators",
       "Intent": "Commercial",
-      "Volume": "210",
-      "Trend": "0.52,0.65,1.00,0.80,1.00,1.00,0.65,0.52,0.43,0.52,1.00,0.52",
-      "Keyword Difficulty": "24",
+      "Volume": "720",
+      "Trend": "0.11,0.12,0.36,0.36,0.41,0.55,0.41,0.55,0.36,0.20,1.00,0.20",
+      "Keyword Difficulty": "29",
+      "SERP Features": "Sitelinks, AI Overview"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "best automatic male masturbator",
+      "Intent": "Commercial",
+      "Volume": "390",
+      "Trend": "0.56,0.67,0.83,0.67,0.83,0.67,0.83,0.67,0.67,1.00,0.56,0.67",
+      "Keyword Difficulty": "14",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy advent calendar",
+      "Keyword": "app controlled adult toys",
       "Search intent": "Commercial",
-      "Topic cluster": "Unclustered adult wellness/general",
+      "Topic cluster": "Buying decision framework",
       "Primary/secondary": "Secondary",
       "Assigned URL": "/blog/adult-toy-buying-guide/",
       "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Review manually",
-      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
-      "Priority": "P4",
-      "Notes": "Manual review recommended before content changes."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy box subscription",
-      "Search intent": "Informational",
-      "Topic cluster": "Unclustered adult wellness/general",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Review manually",
-      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
-      "Priority": "P4",
-      "Notes": "Manual review recommended before content changes."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy subscription box",
-      "Search intent": "Commercial",
-      "Topic cluster": "Unclustered adult wellness/general",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Review manually",
-      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
-      "Priority": "P4",
-      "Notes": "Manual review recommended before content changes."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibrator charger",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
       "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
+      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibrator chargjng time",
+      "Keyword": "remote control adult toys",
       "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
+      "Topic cluster": "Buying decision framework",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Assigned URL": "/blog/adult-toy-buying-guide/",
+      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
       "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
+      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "rechargeable bullet vibrator",
+      "Keyword": "automatic male masturbator",
       "Search intent": "Commercial",
-      "Topic cluster": "Rechargeable massagers",
+      "Topic cluster": "Male wellness products",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
-      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
       "Action": "Update existing article",
-      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
+      "Reason": "Make cleaning and drying as important as product style. Commercial value: High; difficulty: Medium.",
       "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "automatic male masturbators",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Action": "Update existing article",
+      "Reason": "Male wellness product buying and care intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "best automatic male masturbator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Action": "Update existing article",
+      "Reason": "Male wellness product buying and care intent.",
+      "Priority": "P2",
+      "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-27T09:00:57.736223+08:00",
+  "generated_at": "2026-07-28T08:40:12.253946+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-27T09:00:57.736373+08:00",
+    "generated_at": "2026-07-28T08:40:12.254091+08:00",
     "files": [
-      "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png",
-      "upload/blog/assets/adult-toy-advent-calendar-guide-opus-cover.png"
+      "upload/blog/assets/remote-control-adult-toys-guide-opus-cover.png",
+      "upload/blog/assets/automatic-male-masturbator-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/bullet-vibrator-charger-guide-opus-cover.png",
+        "file": "upload/blog/assets/remote-control-adult-toys-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0d5f14993833da62016a66ad66d97481918fe01ca57dc7795d",
-        "call_id": "ig_0d5f14993833da62016a66ad67869c819188790bec19876ac5",
-        "size": "1536x1024",
+        "response_id": "resp_043068c8bf6e3051016a67fa1d0528819a91c8659a703642e3",
+        "call_id": "ig_043068c8bf6e3051016a67fa1d951c819a806d67307fe4729c",
+        "size": "1693x929",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about bullet vibrator chargers and rechargeable battery care. Neutral tabletop product photography with an abstract compact bullet massager silhouette, magnetic USB charging cable, dry contact checklist card, travel pouch, battery care icons, and no explicit anatomy. No people, no nudity, no branding. Mature tasteful American ecommerce look, soft natural light, ivory, graphite, muted blue and rose palette. Clean compo"
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about remote control adult toys, app privacy, wireless range, consent, and charging. Neutral tabletop product photography scene with an abstract smooth wellness device silhouette, smartphone privacy checklist, signal range card, small remote, charging cable, and storage pouch. No people, no nudity, no anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory, graphite, muted teal and ros"
       },
       {
-        "file": "upload/blog/assets/adult-toy-advent-calendar-guide-opus-cover.png",
+        "file": "upload/blog/assets/automatic-male-masturbator-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0324ed6375dd12d6016a66ad99a2ac819980814f2dc47f2ef5",
-        "call_id": "ig_0324ed6375dd12d6016a66ad9a2c248199995f6a8fbc79e4f6",
+        "response_id": "resp_0cd0158af743ebf7016a67fa4af6f8819b9f984565b718e211",
+        "call_id": "ig_0cd0158af743ebf7016a67fa4b66c0819b9ccb503e926606dd",
         "size": "1536x1024",
         "quality": "medium",
         "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about adult toy advent calendars and subscription-style gift boxes. Elegant neutral tabletop with numbered gift boxes, a consent checklist card, a privacy shipping note, material transparency tags, soft holiday wrapping, no explicit products visible. No people, no nudity, no anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory, graphite, muted burgundy, and sage palette. Horizontal "
+        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about automatic male masturbators, focusing on fit, cleaning, charging, and privacy. Neutral tabletop product photography. Include an abstract closed sleeve-style wellness product case with no explicit details, a fit measuring checklist card, a small cleaning brush, a drying stand, a charging cable, and a privacy storage pouch. No people, no nudity, no anatomy, no explicit product details, no branding, no labels. Matu"
       }
     ]
   },
-  "validation": {
+  "content_quality_validation": {
     "status": "pass",
-    "validated_at": "2026-07-27T12:31:45.502736+08:00",
-    "checks": {
-      "bullet-vibrator-charger-guide": {
-        "title": "Bullet Vibrator Charger Guide",
-        "title_length": 29,
-        "title_under_60": true,
-        "meta": "Learn how to compare bullet vibrator chargers, charging time, cable types, battery care, travel packing, and checkout red flags.",
-        "meta_length": 128,
-        "meta_under_155": true,
+    "validated_at": "2026-07-28T08:40:33.030668+08:00",
+    "results": [
+      {
+        "slug": "remote-control-adult-toys-guide",
+        "title_len": 31,
+        "meta_len": 131,
         "h1_count": 1,
-        "one_h1": true,
-        "gtag_script_count": 1,
-        "gtag_config_count": 1,
-        "gtag_once_each": true,
-        "gtag_immediately_after_head": true,
-        "word_count": 1143,
-        "word_count_1000_plus": true,
+        "gtag_block_once_immediately_after_head": true,
+        "word_count": 1163,
         "quick_answer": true,
         "red_flags": true,
-        "faqpage_schema": true,
-        "faq_count": 5,
-        "related_blog_links": 12,
-        "product_support_links": 18,
-        "authority_links": [
-          "consumer.ftc.gov",
-          "cpsc.gov",
-          "tsa.gov",
-          "ul.com",
-          "ftc.gov"
-        ],
-        "authority_count": 5,
-        "image_present": true,
-        "og_image": true,
-        "twitter_image": true,
-        "jsonld_image": true,
+        "faq_schema": true,
+        "internal_blog_links": 12,
+        "product_support_links": 11,
+        "authority_reference_domains_matched": 3,
+        "image_seo_metadata": true,
         "banned_hits": [],
         "quality_score": 100,
-        "pass": true
+        "status": "pass",
+        "sitemap_url": true,
+        "sitemap_lastmod": true,
+        "sitemap_image_metadata": true
       },
-      "adult-toy-advent-calendar-guide": {
-        "title": "Adult Toy Advent Calendar Guide",
-        "title_length": 31,
-        "title_under_60": true,
-        "meta": "Compare adult toy advent calendars by consent, sizing uncertainty, material transparency, privacy, returns, and checkout red flags.",
-        "meta_length": 131,
-        "meta_under_155": true,
+      {
+        "slug": "automatic-male-masturbator-guide",
+        "title_len": 32,
+        "meta_len": 123,
         "h1_count": 1,
-        "one_h1": true,
-        "gtag_script_count": 1,
-        "gtag_config_count": 1,
-        "gtag_once_each": true,
-        "gtag_immediately_after_head": true,
-        "word_count": 1060,
-        "word_count_1000_plus": true,
+        "gtag_block_once_immediately_after_head": true,
+        "word_count": 1085,
         "quick_answer": true,
         "red_flags": true,
-        "faqpage_schema": true,
-        "faq_count": 5,
-        "related_blog_links": 12,
-        "product_support_links": 18,
-        "authority_links": [
-          "consumer.ftc.gov",
-          "ftc.gov",
-          "saferproducts.gov",
-          "plannedparenthood.org"
-        ],
-        "authority_count": 4,
-        "image_present": true,
-        "og_image": true,
-        "twitter_image": true,
-        "jsonld_image": true,
+        "faq_schema": true,
+        "internal_blog_links": 12,
+        "product_support_links": 11,
+        "authority_reference_domains_matched": 4,
+        "image_seo_metadata": true,
         "banned_hits": [],
         "quality_score": 100,
-        "pass": true
+        "status": "pass",
+        "sitemap_url": true,
+        "sitemap_lastmod": true,
+        "sitemap_image_metadata": true
       }
-    },
-    "sitemap_and_index": {
-      "bullet-vibrator-charger-guide": {
-        "url_present": true,
-        "lastmod_present": true,
-        "image_metadata": true
-      },
-      "adult-toy-advent-calendar-guide": {
-        "url_present": true,
-        "lastmod_present": true,
-        "image_metadata": true
-      },
-      "blog_index_lastmod": true,
-      "blog_index_links": true
-    }
+    ],
+    "blog_index_links": true
   },
   "commit": {
-    "status": "pushed",
-    "hash": "2efb813ed334ab0fc50a36c1bd62d50622f0bfe9",
-    "remote": "origin/master",
-    "pushed_at": "2026-07-27T14:35:36+08:00",
-    "final_state_hash_pending_commit": "c698e9f492af94813fcda8e6ff9b856c9972afe1"
-  },
-  "push": {
-    "status": "pass",
-    "remote": "origin/master",
-    "pushed_at": "2026-07-27T14:35:36+08:00"
+    "status": "pending"
   },
   "deploy": {
-    "status": "pass",
-    "server": "root@153.75.235.56",
-    "path": "/var/www/myopencart/upload",
-    "method": "targeted rsync",
-    "deployed_at": "2026-07-27T14:35:36+08:00",
-    "permissions": "www-data:www-data, dirs 755, files 644"
+    "status": "pending"
   },
   "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-27T14:35:36+08:00",
-    "article_urls": [
-      "https://shoplovanest.com/blog/bullet-vibrator-charger-guide/",
-      "https://shoplovanest.com/blog/adult-toy-advent-calendar-guide/"
-    ],
-    "checks": "HTTP 200, title/meta, exactly one H1, one gtag script/config, Quick Answer, Red Flags, FAQPage schema, authority references, image SEO metadata, blog index links, sitemap lastmod and image metadata verified live."
-  },
-  "completion_rule": {
-    "exactly_2_new_articles": true,
-    "generated_from_keyword_files": true,
-    "blog_index_updated": true,
-    "sitemap_updated": true,
-    "content_quality_validation_passed": true,
-    "git_commit_pushed": true,
-    "production_deployed": true,
-    "live_verification_passed": true,
-    "success_email_sent_accepted_by_msmtp": true
+    "status": "pending"
   },
   "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-27",
-    "sent_at": "2026-07-27T14:38:57+08:00",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/tmp/msmtprc_gmail_465 generated from /Users/grant/.msmtprc with port 465 tls_starttls off because port 587 timed out; passwordeval still used macOS Keychain, password not printed or stored.",
-    "initial_attempt": "/Users/grant/.msmtprc port 587 timed out with exit 75",
-    "accepted_exit_code": 0
-  },
-  "email_status": "sent_accepted"
+    "status": "pending"
+  }
 }
