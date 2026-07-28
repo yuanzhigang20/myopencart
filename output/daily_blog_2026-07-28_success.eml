@@ -1,0 +1,24 @@
+From: yuanzhigang20@gmail.com
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-28
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest Daily Blog Deployment Complete - 2026-07-28
+
+Two articles deployed and verified live:
+1. https://shoplovanest.com/blog/remote-control-adult-toys-guide/
+   Primary keywords: remote control adult toys; app controlled adult toys; wireless adult toys
+
+2. https://shoplovanest.com/blog/automatic-male-masturbator-guide/
+   Primary keywords: automatic male masturbator; automatic male masturbators; best automatic male masturbator
+
+Commit: e567e058f0
+
+Verification summary:
+- Local content validation: passed; both pages score 100 with 1000+ words, one H1, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, internal links, product/support links, image SEO metadata, and sitemap image metadata.
+- Live article verification: both URLs return HTTP 200; title/meta present; one H1; Google tag script/config each once; Quick Answer, Red Flags, FAQPage schema, authority refs, and image SEO metadata present.
+- Blog index: HTTP 200 and links both new articles.
+- Sitemap: HTTP 200 and includes both new URLs, 2026-07-28 lastmod, and image metadata.
+- Deployment: targeted rsync to root@153.75.235.56:/var/www/myopencart/upload completed; owner/perms corrected.
+
+Email status: sending via /opt/homebrew/bin/msmtp using /Users/grant/.msmtprc.

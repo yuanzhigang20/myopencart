@@ -1,7 +1,7 @@
 {
   "date": "2026-07-28",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -191,7 +191,7 @@
   },
   "content_quality_validation": {
     "status": "pass",
-    "validated_at": "2026-07-28T08:40:33.030668+08:00",
+    "validated_at": "2026-07-28T08:47:16.268754+08:00",
     "results": [
       {
         "slug": "remote-control-adult-toys-guide",
@@ -239,15 +239,71 @@
     "blog_index_links": true
   },
   "commit": {
-    "status": "pending"
+    "status": "pushed",
+    "hash": "e567e058f0",
+    "pushed": true
   },
   "deploy": {
-    "status": "pending"
+    "status": "pass",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload; owner www-data:www-data; dirs 755; files 644"
   },
   "live_verification": {
-    "status": "pending"
+    "status": "pass",
+    "verified_at": "2026-07-28T08:47:16.268754+08:00",
+    "results": {
+      "date": "2026-07-28",
+      "articles": [
+        {
+          "slug": "remote-control-adult-toys-guide",
+          "http": 200,
+          "title_present": true,
+          "meta_present": true,
+          "h1_count": 1,
+          "gtag_script_once": true,
+          "gtag_config_once": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": 4,
+          "image_seo_metadata": true,
+          "pass": true
+        },
+        {
+          "slug": "automatic-male-masturbator-guide",
+          "http": 200,
+          "title_present": true,
+          "meta_present": true,
+          "h1_count": 1,
+          "gtag_script_once": true,
+          "gtag_config_once": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": 4,
+          "image_seo_metadata": true,
+          "pass": true
+        }
+      ],
+      "blog_index": {
+        "http": 200,
+        "links_all": true
+      },
+      "sitemap": {
+        "http": 200,
+        "urls_all": true,
+        "lastmod": true,
+        "image_metadata": true
+      },
+      "overall": "pass"
+    }
   },
   "email": {
-    "status": "pending"
-  }
+    "status": "sent_accepted",
+    "to": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp --file=/Users/grant/.msmtprc",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-28",
+    "sent_at": "2026-07-28T08:47:16.268754+08:00",
+    "note": "First port 587 attempt timed out; retry with TLS-on/STARTTLS-off port 465 exited 0."
+  },
+  "completed_at": "2026-07-28T08:47:16.268754+08:00"
 }
