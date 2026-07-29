@@ -1,32 +1,32 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "remote-control-adult-toys-guide",
-      "title": "Remote Control Adult Toys Guide",
-      "url": "https://shoplovanest.com/blog/remote-control-adult-toys-guide/",
+      "slug": "rechargeable-bullet-vibrator-checklist",
+      "title": "Rechargeable Bullet Vibrator Checklist",
+      "url": "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-checklist/",
       "primary_keywords": [
-        "remote control adult toys",
-        "app controlled adult toys",
-        "wireless adult toys"
+        "rechargeable bullet vibrator",
+        "mini bullet vibrator",
+        "bullet vibrator for women"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected remote control adult toys from the buying-decision framework cluster and expanded it into a privacy, consent, and connection-safety guide rather than a generic adult toy article.",
-      "intent_cluster": "Remote control adult toys intent \u2014 shoppers compare wireless controls, app privacy, range, noise, charging, travel, and partner-consent considerations before buying."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rechargeable bullet vibrator, mini bullet vibrator, bullet vibrator for women, plusone vibrating bullet, bullet vibration, and related misspellings from compact vibrator and rechargeable massager clusters, then grouped them into one buyer checklist intent rather than thin keyword pages.",
+      "intent_cluster": "Rechargeable compact bullet vibrator intent \u2014 shoppers compare pocket-size form factor, magnetic or USB charging, controls, noise, water rating, material transparency, cleaning, storage, and travel lock before buying."
     },
     {
-      "slug": "automatic-male-masturbator-guide",
-      "title": "Automatic Male Masturbator Guide",
-      "url": "https://shoplovanest.com/blog/automatic-male-masturbator-guide/",
+      "slug": "sensitive-skin-lube-shopping-guide",
+      "title": "Sensitive Skin Lube Shopping Guide",
+      "url": "https://shoplovanest.com/blog/sensitive-skin-lube-shopping-guide/",
       "primary_keywords": [
-        "automatic male masturbator",
-        "automatic male masturbators",
-        "best automatic male masturbator"
+        "water based lube for sensitive skin",
+        "glycerin free water based lube",
+        "hypoallergenic lube"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected automatic male masturbator, automatic male masturbators, and best automatic male masturbator from the male wellness products cluster and framed the article around fit, cleaning, and privacy rather than explicit use.",
-      "intent_cluster": "Automatic male masturbator intent \u2014 shoppers compare wearable or powered features, fit, noise, charging, cleaning burden, drying time, storage, and privacy before purchase."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected water based lube for sensitive skin, natural water based lube, glycerin free water based lube, hypoallergenic lube, and best silicone lube for sensitive skin from lubricant basics/comparison clusters, then grouped them by sensitive-skin ingredient-check intent rather than brand or medical claims.",
+      "intent_cluster": "Sensitive skin lubricant intent \u2014 shoppers compare ingredient labels, glycerin-free or fragrance-free wording, water-based versus silicone compatibility, condom and toy safety, pH/osmolality basics, patch testing, and red flags before buying."
     }
   ],
   "keyword_source_files_read": [
@@ -36,274 +36,343 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "app controlled adult toys",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "bullet vibration",
       "Intent": "Commercial",
       "Volume": "720",
-      "Trend": "0.77,0.20,0.37,0.56,0.30,0.77,0.30,0.37,0.37,0.44,0.37,1.00",
-      "Keyword Difficulty": "26",
+      "Trend": "1.00,1.00,0.12,0.15,0.06,0.05,0.05,0.12,0.12,0.24,0.05,0.20",
+      "Keyword Difficulty": "36",
+      "SERP Features": "Sitelinks, Image, Image pack, Video carousel, Related searches, Popular products"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "bullet vibrator for women",
+      "Intent": "Commercial",
+      "Volume": "720",
+      "Trend": "0.10,0.10,0.13,0.10,0.76,1.00,0.76,0.10,1.00,1.00,1.00,1.00",
+      "Keyword Difficulty": "17",
+      "SERP Features": "Sitelinks, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "plusone vibrating bullet",
+      "Intent": "Informational, Transactional",
+      "Volume": "720",
+      "Trend": "0.46,0.37,0.46,0.37,0.76,0.54,0.54,0.46,0.76,0.68,0.76,1.00",
+      "Keyword Difficulty": "45",
+      "SERP Features": "Sitelinks, Video, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "mini bullet vibrator",
+      "Intent": "Commercial",
+      "Volume": "590",
+      "Trend": "0.36,0.45,0.45,0.45,0.45,0.45,0.36,0.45,1.00,0.45,0.45,1.00",
+      "Keyword Difficulty": "30",
+      "SERP Features": "Sitelinks, Video"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "bullet vibrator",
+      "Keyword": "bullet vibratir",
+      "Intent": "Commercial",
+      "Volume": "480",
+      "Trend": "0.23,0.23,0.15,0.15,0.15,0.15,0.08,0.62,0.08,0.23,0.54,1.00",
+      "Keyword Difficulty": "28",
+      "SERP Features": "Sitelinks, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "rechargeable vibrator",
+      "Keyword": "rechargeable bullet vibrator",
+      "Intent": "Commercial",
+      "Volume": "210",
+      "Trend": "0.52,0.65,1.00,0.80,1.00,1.00,0.65,0.52,0.43,0.52,1.00,0.52",
+      "Keyword Difficulty": "24",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "remote control adult toys",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.55,0.44,0.37,1.00,0.30,0.37,0.44,0.44,0.37,0.44,0.44,0.55",
-      "Keyword Difficulty": "23",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "automatic male masturbator",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "water based lube for sensitive skin",
       "Intent": "Informational",
-      "Volume": "1900",
-      "Trend": "0.53,0.53,0.36,0.36,0.53,0.36,0.44,0.27,0.53,0.53,1.00,0.53",
-      "Keyword Difficulty": "40",
-      "SERP Features": "Sitelinks, AI Overview, People also ask"
+      "Volume": "480",
+      "Trend": "0.32,0.26,0.48,0.26,0.39,0.59,0.59,1.00,0.72,0.59,0.39,0.59",
+      "Keyword Difficulty": "18",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches, Popular products"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "automatic male masturbators",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.11,0.12,0.36,0.36,0.41,0.55,0.41,0.55,0.36,0.20,1.00,0.20",
-      "Keyword Difficulty": "29",
-      "SERP Features": "Sitelinks, AI Overview"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "best automatic male masturbator",
-      "Intent": "Commercial",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "natural water based lube",
+      "Intent": "Informational",
       "Volume": "390",
-      "Trend": "0.56,0.67,0.83,0.67,0.83,0.67,0.83,0.67,0.67,1.00,0.56,0.67",
-      "Keyword Difficulty": "14",
-      "SERP Features": "Sitelinks"
+      "Trend": "0.66,0.66,0.81,0.81,0.81,0.66,0.81,0.66,0.81,1.00,0.66,1.00",
+      "Keyword Difficulty": "31",
+      "SERP Features": "Sitelinks, AI Overview, Image, Video, People also ask, Discussions and forums, Related searches, Popular products"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "glycerin free water based lube",
+      "Intent": "Informational",
+      "Volume": "320",
+      "Trend": "0.19,0.19,0.23,0.23,0.29,0.23,0.54,0.66,0.81,1.00,0.36,0.44",
+      "Keyword Difficulty": "22",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches, Popular products"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "app controlled adult toys",
+      "Keyword": "bullet vibration",
       "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
+      "Topic cluster": "Compact vibrators",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
       "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
+      "Reason": "Compact vibrator product selection intent.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "remote control adult toys",
+      "Keyword": "bullet vibrator for women",
       "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
+      "Topic cluster": "Compact vibrators",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
       "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
+      "Reason": "Help buyers decide if compact size is a benefit or limitation. Commercial value: High; difficulty: Easy.",
+      "Priority": "P2",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "plusone vibrating bullet",
+      "Search intent": "Commercial",
+      "Topic cluster": "Compact vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Action": "Update existing article",
+      "Reason": "Compact vibrator product selection intent.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "automatic male masturbator",
+      "Keyword": "mini bullet vibrator",
       "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Topic cluster": "Compact vibrators",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
       "Action": "Update existing article",
-      "Reason": "Make cleaning and drying as important as product style. Commercial value: High; difficulty: Medium.",
+      "Reason": "Compact vibrator product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "bullet vibratir",
+      "Search intent": "Commercial",
+      "Topic cluster": "Compact vibrators",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/bullet-vibrator-guide/",
+      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Action": "Update existing article",
+      "Reason": "Compact vibrator product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "rechargeable bullet vibrator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Rechargeable massagers",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
+      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
+      "Action": "Update existing article",
+      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
       "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "automatic male masturbators",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Keyword": "water based lube for sensitive skin",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/water-based-lube-guide/",
+      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
       "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P2",
+      "Reason": "Water-based lubricant informational/commercial intent.",
+      "Priority": "P1",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "best automatic male masturbator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Keyword": "natural water based lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/water-based-lube-guide/",
+      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
       "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P2",
+      "Reason": "Water-based lubricant informational/commercial intent.",
+      "Priority": "P1",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "glycerin free water based lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/water-based-lube-guide/",
+      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
+      "Action": "Update existing article",
+      "Reason": "Water-based lubricant informational/commercial intent.",
+      "Priority": "P1",
       "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-28T08:40:12.253946+08:00",
+  "generated_at": "2026-07-29T08:35:35.019223+08:00",
   "image_generation": {
     "status": "pass",
-    "model": "opus-image-1.5 via configured custom Sub2API Responses API /v1/responses with image_generation tool",
-    "generated_at": "2026-07-28T08:40:12.254091+08:00",
+    "model": "opus-image-1.5 via configured custom endpoint",
+    "generated_at": "2026-07-29T08:35:35.019365+08:00",
     "files": [
-      "upload/blog/assets/remote-control-adult-toys-guide-opus-cover.png",
-      "upload/blog/assets/automatic-male-masturbator-guide-opus-cover.png"
+      "upload/blog/assets/rechargeable-bullet-vibrator-checklist-opus-cover.png",
+      "upload/blog/assets/sensitive-skin-lube-shopping-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/remote-control-adult-toys-guide-opus-cover.png",
+        "file": "upload/blog/assets/rechargeable-bullet-vibrator-checklist-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_043068c8bf6e3051016a67fa1d0528819a91c8659a703642e3",
-        "call_id": "ig_043068c8bf6e3051016a67fa1d951c819a806d67307fe4729c",
-        "size": "1693x929",
-        "quality": "medium",
-        "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about remote control adult toys, app privacy, wireless range, consent, and charging. Neutral tabletop product photography scene with an abstract smooth wellness device silhouette, smartphone privacy checklist, signal range card, small remote, charging cable, and storage pouch. No people, no nudity, no anatomy, no branding. Mature tasteful American ecommerce look, soft natural light, ivory, graphite, muted teal and ros"
+        "endpoint": "responses",
+        "model": "opus-image-1.5",
+        "response_id": "resp_08619510c89a4354016a694a875cf88199a01cf28bb1d71edf",
+        "bytes": 2182145
       },
       {
-        "file": "upload/blog/assets/automatic-male-masturbator-guide-opus-cover.png",
+        "file": "upload/blog/assets/sensitive-skin-lube-shopping-guide-opus-cover.png",
         "status": "pass",
-        "response_id": "resp_0cd0158af743ebf7016a67fa4af6f8819b9f984565b718e211",
-        "call_id": "ig_0cd0158af743ebf7016a67fa4b66c0819b9ccb503e926606dd",
-        "size": "1536x1024",
-        "quality": "medium",
-        "output_format": "png",
-        "revised_prompt": "Discreet ecommerce-friendly editorial hero image for an adult wellness article about automatic male masturbators, focusing on fit, cleaning, charging, and privacy. Neutral tabletop product photography. Include an abstract closed sleeve-style wellness product case with no explicit details, a fit measuring checklist card, a small cleaning brush, a drying stand, a charging cable, and a privacy storage pouch. No people, no nudity, no anatomy, no explicit product details, no branding, no labels. Matu"
+        "endpoint": "responses",
+        "model": "opus-image-1.5",
+        "response_id": "resp_08b5b45f22ca435f016a694aaa16b0819a8aa4c02a517a387c",
+        "bytes": 2156176
       }
     ]
   },
-  "content_quality_validation": {
-    "status": "pass",
-    "validated_at": "2026-07-28T08:47:16.268754+08:00",
-    "results": [
+  "validation": {
+    "date": "2026-07-29",
+    "articles": [
       {
-        "slug": "remote-control-adult-toys-guide",
-        "title_len": 31,
-        "meta_len": 131,
+        "slug": "rechargeable-bullet-vibrator-checklist",
+        "title_len": 38,
+        "meta_len": 136,
         "h1_count": 1,
-        "gtag_block_once_immediately_after_head": true,
-        "word_count": 1163,
-        "quick_answer": true,
-        "red_flags": true,
-        "faq_schema": true,
-        "internal_blog_links": 12,
-        "product_support_links": 11,
-        "authority_reference_domains_matched": 3,
-        "image_seo_metadata": true,
+        "gtag_id_occurrences": 2,
+        "words": 2130,
+        "authority_refs": [
+          "https://www.iec.ch/ip-ratings",
+          "https://www.tsa.gov/travel/security-screening/whatcanibring/items/lithium-batteries",
+          "https://www.saferproducts.gov/",
+          "https://www.ul.com/services/battery-safety-testing-and-certification"
+        ],
+        "related_blog_links": 5,
+        "product_links": 12,
+        "image_seo": true,
         "banned_hits": [],
+        "checks": {
+          "title_len": true,
+          "meta_len": true,
+          "h1_one": true,
+          "gtag_once": true,
+          "word_count": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": true,
+          "internal_links": true,
+          "product_links": true,
+          "image_seo": true,
+          "no_banned": true,
+          "topic_depth": true
+        },
         "quality_score": 100,
-        "status": "pass",
-        "sitemap_url": true,
-        "sitemap_lastmod": true,
-        "sitemap_image_metadata": true
+        "status": "pass"
       },
       {
-        "slug": "automatic-male-masturbator-guide",
-        "title_len": 32,
-        "meta_len": 123,
+        "slug": "sensitive-skin-lube-shopping-guide",
+        "title_len": 34,
+        "meta_len": 145,
         "h1_count": 1,
-        "gtag_block_once_immediately_after_head": true,
-        "word_count": 1085,
-        "quick_answer": true,
-        "red_flags": true,
-        "faq_schema": true,
-        "internal_blog_links": 12,
-        "product_support_links": 11,
-        "authority_reference_domains_matched": 4,
-        "image_seo_metadata": true,
+        "gtag_id_occurrences": 2,
+        "words": 2110,
+        "authority_refs": [
+          "https://www.fda.gov/consumers/consumer-updates/how-use-condoms-and-other-barriers",
+          "https://iris.who.int/handle/10665/76580",
+          "https://www.cdc.gov/condom-use/index.html",
+          "https://consumer.ftc.gov/articles/online-shopping"
+        ],
+        "related_blog_links": 5,
+        "product_links": 12,
+        "image_seo": true,
         "banned_hits": [],
+        "checks": {
+          "title_len": true,
+          "meta_len": true,
+          "h1_one": true,
+          "gtag_once": true,
+          "word_count": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": true,
+          "internal_links": true,
+          "product_links": true,
+          "image_seo": true,
+          "no_banned": true,
+          "topic_depth": true
+        },
         "quality_score": 100,
-        "status": "pass",
-        "sitemap_url": true,
-        "sitemap_lastmod": true,
-        "sitemap_image_metadata": true
+        "status": "pass"
       }
     ],
-    "blog_index_links": true
-  },
-  "commit": {
-    "status": "pushed",
-    "hash": "e567e058f0",
-    "pushed": true
-  },
-  "deploy": {
-    "status": "pass",
-    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload; owner www-data:www-data; dirs 755; files 644"
-  },
-  "live_verification": {
-    "status": "pass",
-    "verified_at": "2026-07-28T08:47:16.268754+08:00",
-    "results": {
-      "date": "2026-07-28",
-      "articles": [
-        {
-          "slug": "remote-control-adult-toys-guide",
-          "http": 200,
-          "title_present": true,
-          "meta_present": true,
-          "h1_count": 1,
-          "gtag_script_once": true,
-          "gtag_config_once": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": 4,
-          "image_seo_metadata": true,
-          "pass": true
-        },
-        {
-          "slug": "automatic-male-masturbator-guide",
-          "http": 200,
-          "title_present": true,
-          "meta_present": true,
-          "h1_count": 1,
-          "gtag_script_once": true,
-          "gtag_config_once": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": 4,
-          "image_seo_metadata": true,
-          "pass": true
-        }
-      ],
-      "blog_index": {
-        "http": 200,
-        "links_all": true
+    "sitemap": {
+      "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-checklist/": {
+        "lastmod": "2026-07-29",
+        "image_count": 1
       },
-      "sitemap": {
-        "http": 200,
-        "urls_all": true,
-        "lastmod": true,
-        "image_metadata": true
+      "https://shoplovanest.com/blog/sensitive-skin-lube-shopping-guide/": {
+        "lastmod": "2026-07-29",
+        "image_count": 1
       },
-      "overall": "pass"
-    }
+      "https://shoplovanest.com/blog/": {
+        "lastmod": "2026-07-29",
+        "image_count": 0
+      }
+    },
+    "all_pass": true
   },
-  "email": {
-    "status": "sent_accepted",
-    "to": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp --file=/Users/grant/.msmtprc",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-28",
-    "sent_at": "2026-07-28T08:47:16.268754+08:00",
-    "note": "First port 587 attempt timed out; retry with TLS-on/STARTTLS-off port 465 exited 0."
-  },
-  "completed_at": "2026-07-28T08:47:16.268754+08:00"
+  "content_quality_status": "pass",
+  "validated_at": "2026-07-29T08:37:29.399080+08:00"
 }

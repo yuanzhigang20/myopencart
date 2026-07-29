@@ -1,0 +1,92 @@
+{
+  "date": "2026-07-29",
+  "articles": [
+    {
+      "slug": "rechargeable-bullet-vibrator-checklist",
+      "title_len": 38,
+      "meta_len": 136,
+      "h1_count": 1,
+      "gtag_id_occurrences": 2,
+      "words": 2130,
+      "authority_refs": [
+        "https://www.iec.ch/ip-ratings",
+        "https://www.tsa.gov/travel/security-screening/whatcanibring/items/lithium-batteries",
+        "https://www.saferproducts.gov/",
+        "https://www.ul.com/services/battery-safety-testing-and-certification"
+      ],
+      "related_blog_links": 5,
+      "product_links": 12,
+      "image_seo": true,
+      "banned_hits": [],
+      "checks": {
+        "title_len": true,
+        "meta_len": true,
+        "h1_one": true,
+        "gtag_once": true,
+        "word_count": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "internal_links": true,
+        "product_links": true,
+        "image_seo": true,
+        "no_banned": true,
+        "topic_depth": true
+      },
+      "quality_score": 100,
+      "status": "pass"
+    },
+    {
+      "slug": "sensitive-skin-lube-shopping-guide",
+      "title_len": 34,
+      "meta_len": 145,
+      "h1_count": 1,
+      "gtag_id_occurrences": 2,
+      "words": 2110,
+      "authority_refs": [
+        "https://www.fda.gov/consumers/consumer-updates/how-use-condoms-and-other-barriers",
+        "https://iris.who.int/handle/10665/76580",
+        "https://www.cdc.gov/condom-use/index.html",
+        "https://consumer.ftc.gov/articles/online-shopping"
+      ],
+      "related_blog_links": 5,
+      "product_links": 12,
+      "image_seo": true,
+      "banned_hits": [],
+      "checks": {
+        "title_len": true,
+        "meta_len": true,
+        "h1_one": true,
+        "gtag_once": true,
+        "word_count": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "internal_links": true,
+        "product_links": true,
+        "image_seo": true,
+        "no_banned": true,
+        "topic_depth": true
+      },
+      "quality_score": 100,
+      "status": "pass"
+    }
+  ],
+  "sitemap": {
+    "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-checklist/": {
+      "lastmod": "2026-07-29",
+      "image_count": 1
+    },
+    "https://shoplovanest.com/blog/sensitive-skin-lube-shopping-guide/": {
+      "lastmod": "2026-07-29",
+      "image_count": 1
+    },
+    "https://shoplovanest.com/blog/": {
+      "lastmod": "2026-07-29",
+      "image_count": 0
+    }
+  },
+  "all_pass": true
+}
