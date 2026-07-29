@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-29",
+  "articles": [
+    {
+      "slug": "rechargeable-bullet-vibrator-checklist",
+      "url": "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-checklist/",
+      "status_code": 200,
+      "checks": {
+        "http_200": true,
+        "title_present": true,
+        "meta_present": true,
+        "h1_one": true,
+        "gtag_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "image_seo": true
+      },
+      "all_pass": true
+    },
+    {
+      "slug": "sensitive-skin-lube-shopping-guide",
+      "url": "https://shoplovanest.com/blog/sensitive-skin-lube-shopping-guide/",
+      "status_code": 200,
+      "checks": {
+        "http_200": true,
+        "title_present": true,
+        "meta_present": true,
+        "h1_one": true,
+        "gtag_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "image_seo": true
+      },
+      "all_pass": true
+    }
+  ],
+  "blog_index": {
+    "http_200": true,
+    "links": {
+      "rechargeable-bullet-vibrator-checklist": true,
+      "sensitive-skin-lube-shopping-guide": true
+    }
+  },
+  "sitemap": {
+    "http_200": true,
+    "rechargeable-bullet-vibrator-checklist": {
+      "url": true,
+      "lastmod": true,
+      "image": true
+    },
+    "sensitive-skin-lube-shopping-guide": {
+      "url": true,
+      "lastmod": true,
+      "image": true
+    }
+  },
+  "all_pass": true
+}
