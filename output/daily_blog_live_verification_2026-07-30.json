@@ -1,0 +1,64 @@
+{
+  "date": "2026-07-30",
+  "articles": [
+    {
+      "slug": "cock-ring-fit-time-limit-guide",
+      "url": "https://shoplovanest.com/blog/cock-ring-fit-time-limit-guide/",
+      "status": 200,
+      "title": "Cock Ring Fit and Time Limit Guide",
+      "meta_len": 138,
+      "h1_count": 1,
+      "checks": {
+        "http_200": true,
+        "title_present": true,
+        "meta_present": true,
+        "h1_one": true,
+        "gtag_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "image_seo": true,
+        "daily_marker": true
+      },
+      "pass": true
+    },
+    {
+      "slug": "best-water-based-lube-checklist",
+      "url": "https://shoplovanest.com/blog/best-water-based-lube-checklist/",
+      "status": 200,
+      "title": "Best Water-Based Lube Checklist",
+      "meta_len": 138,
+      "h1_count": 1,
+      "checks": {
+        "http_200": true,
+        "title_present": true,
+        "meta_present": true,
+        "h1_one": true,
+        "gtag_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "image_seo": true,
+        "daily_marker": true
+      },
+      "pass": true
+    }
+  ],
+  "blog_index": {
+    "http_200": true,
+    "links_cock-ring-fit-time-limit-guide": true,
+    "links_best-water-based-lube-checklist": true
+  },
+  "sitemap": {
+    "http_200": true,
+    "includes_cock-ring-fit-time-limit-guide": true,
+    "lastmod_cock-ring-fit-time-limit-guide": true,
+    "image_cock-ring-fit-time-limit-guide": true,
+    "includes_best-water-based-lube-checklist": true,
+    "lastmod_best-water-based-lube-checklist": true,
+    "image_best-water-based-lube-checklist": true
+  },
+  "all_pass": true
+}
