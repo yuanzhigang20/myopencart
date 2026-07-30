@@ -1,0 +1,107 @@
+{
+  "date": "2026-07-30",
+  "articles": [
+    {
+      "slug": "cock-ring-fit-time-limit-guide",
+      "title": "Cock Ring Fit and Time Limit Guide",
+      "title_len": 34,
+      "meta_len": 138,
+      "h1_count": 1,
+      "h2_count": 14,
+      "gtag_id_occurrences": 2,
+      "words": 2228,
+      "authority_refs": [
+        "https://www.nhs.uk/conditions/priapism/",
+        "https://my.clevelandclinic.org/health/treatments/10062-penis-pump",
+        "https://www.saferproducts.gov/",
+        "https://consumer.ftc.gov/articles/online-shopping"
+      ],
+      "related_blog_links": 5,
+      "product_links": 12,
+      "image_seo": true,
+      "banned_hits": [],
+      "checks": {
+        "title_len": true,
+        "meta_len": true,
+        "h1_one": true,
+        "h2_structure": true,
+        "gtag_once": true,
+        "word_count": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "internal_links": true,
+        "product_links": true,
+        "image_seo": true,
+        "no_banned": true,
+        "topic_depth": true,
+        "keyword_natural": true
+      },
+      "quality_score": 100,
+      "status": "pass"
+    },
+    {
+      "slug": "best-water-based-lube-checklist",
+      "title": "Best Water-Based Lube Checklist",
+      "title_len": 31,
+      "meta_len": 138,
+      "h1_count": 1,
+      "h2_count": 14,
+      "gtag_id_occurrences": 2,
+      "words": 2066,
+      "authority_refs": [
+        "https://www.fda.gov/consumers/consumer-updates/how-use-condoms-and-other-barriers",
+        "https://www.cdc.gov/condom-use/index.html",
+        "https://iris.who.int/handle/10665/76580",
+        "https://consumer.ftc.gov/articles/online-shopping"
+      ],
+      "related_blog_links": 5,
+      "product_links": 12,
+      "image_seo": true,
+      "banned_hits": [],
+      "checks": {
+        "title_len": true,
+        "meta_len": true,
+        "h1_one": true,
+        "h2_structure": true,
+        "gtag_once": true,
+        "word_count": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "internal_links": true,
+        "product_links": true,
+        "image_seo": true,
+        "no_banned": true,
+        "topic_depth": true,
+        "keyword_natural": true
+      },
+      "quality_score": 100,
+      "status": "pass"
+    }
+  ],
+  "sitemap": {
+    "https://shoplovanest.com/blog/cock-ring-fit-time-limit-guide/": {
+      "lastmod": "2026-07-30",
+      "image_count": 1,
+      "image_titles": [
+        "Cock Ring Fit and Time Limit Guide"
+      ]
+    },
+    "https://shoplovanest.com/blog/best-water-based-lube-checklist/": {
+      "lastmod": "2026-07-30",
+      "image_count": 1,
+      "image_titles": [
+        "Best Water-Based Lube Checklist"
+      ]
+    },
+    "https://shoplovanest.com/blog/": {
+      "lastmod": "2026-07-30",
+      "image_count": 0,
+      "image_titles": []
+    }
+  },
+  "all_pass": true
+}

@@ -1,32 +1,32 @@
 {
-  "date": "2026-07-29",
+  "date": "2026-07-30",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "rechargeable-bullet-vibrator-checklist",
-      "title": "Rechargeable Bullet Vibrator Checklist",
-      "url": "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-checklist/",
+      "slug": "cock-ring-fit-time-limit-guide",
+      "title": "Cock Ring Fit and Time Limit Guide",
+      "url": "https://shoplovanest.com/blog/cock-ring-fit-time-limit-guide/",
       "primary_keywords": [
-        "rechargeable bullet vibrator",
-        "mini bullet vibrator",
-        "bullet vibrator for women"
+        "how to wear a cock ring",
+        "cock ring sizing",
+        "how long can you wear a cock ring"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected rechargeable bullet vibrator, mini bullet vibrator, bullet vibrator for women, plusone vibrating bullet, bullet vibration, and related misspellings from compact vibrator and rechargeable massager clusters, then grouped them into one buyer checklist intent rather than thin keyword pages.",
-      "intent_cluster": "Rechargeable compact bullet vibrator intent \u2014 shoppers compare pocket-size form factor, magnetic or USB charging, controls, noise, water rating, material transparency, cleaning, storage, and travel lock before buying."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected how to wear a cock ring, how long can you wear a cock ring, cock ring sizing, cock ring size, how tight should a cock ring be, silicone cock ring, and adjustable cock ring from the couples accessories cluster, then grouped them into one fit-and-time-limit intent rather than separate thin pages.",
+      "intent_cluster": "Cock ring fit and wear-time intent \u2014 adult shoppers want sizing, stretch, material, time-limit, removal, cleaning, and red-flag guidance before buying a ring style."
     },
     {
-      "slug": "sensitive-skin-lube-shopping-guide",
-      "title": "Sensitive Skin Lube Shopping Guide",
-      "url": "https://shoplovanest.com/blog/sensitive-skin-lube-shopping-guide/",
+      "slug": "best-water-based-lube-checklist",
+      "title": "Best Water-Based Lube Checklist",
+      "url": "https://shoplovanest.com/blog/best-water-based-lube-checklist/",
       "primary_keywords": [
-        "water based lube for sensitive skin",
-        "glycerin free water based lube",
-        "hypoallergenic lube"
+        "best water based lube",
+        "water based lubes",
+        "what is water based lube"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected water based lube for sensitive skin, natural water based lube, glycerin free water based lube, hypoallergenic lube, and best silicone lube for sensitive skin from lubricant basics/comparison clusters, then grouped them by sensitive-skin ingredient-check intent rather than brand or medical claims.",
-      "intent_cluster": "Sensitive skin lubricant intent \u2014 shoppers compare ingredient labels, glycerin-free or fragrance-free wording, water-based versus silicone compatibility, condom and toy safety, pH/osmolality basics, patch testing, and red flags before buying."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected water based lubes, best water based lubes, what is water based lube, water based lube condoms, water-based lubricant lube, water based personal lube, and best water based lube from the lubricant basics cluster, then grouped them into one best-choice checklist intent rather than brand-specific or location pages.",
+      "intent_cluster": "Water-based lubricant comparison intent \u2014 shoppers want a plain-English buying checklist for ingredients, texture, condom and toy compatibility, cleanup, package clarity, and red flags."
     }
   ],
   "keyword_source_files_read": [
@@ -36,184 +36,315 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibration",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "1.00,1.00,0.12,0.15,0.06,0.05,0.05,0.12,0.12,0.24,0.05,0.20",
-      "Keyword Difficulty": "36",
-      "SERP Features": "Sitelinks, Image, Image pack, Video carousel, Related searches, Popular products"
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "how to wear a cock ring",
+      "Intent": "Informational",
+      "Volume": "2900",
+      "Trend": "0.36,0.36,0.81,0.36,1.00,0.28,0.28,0.36,0.36,0.36,0.36,0.36",
+      "Keyword Difficulty": "23",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibrator for women",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.10,0.10,0.13,0.10,0.76,1.00,0.76,0.10,1.00,1.00,1.00,1.00",
-      "Keyword Difficulty": "17",
-      "SERP Features": "Sitelinks, Related searches"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "plusone vibrating bullet",
-      "Intent": "Informational, Transactional",
-      "Volume": "720",
-      "Trend": "0.46,0.37,0.46,0.37,0.76,0.54,0.54,0.46,0.76,0.68,0.76,1.00",
-      "Keyword Difficulty": "45",
-      "SERP Features": "Sitelinks, Video, Related searches"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "mini bullet vibrator",
-      "Intent": "Commercial",
-      "Volume": "590",
-      "Trend": "0.36,0.45,0.45,0.45,0.45,0.45,0.36,0.45,1.00,0.45,0.45,1.00",
-      "Keyword Difficulty": "30",
-      "SERP Features": "Sitelinks, Video"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibratir",
-      "Intent": "Commercial",
-      "Volume": "480",
-      "Trend": "0.23,0.23,0.15,0.15,0.15,0.15,0.08,0.62,0.08,0.23,0.54,1.00",
-      "Keyword Difficulty": "28",
-      "SERP Features": "Sitelinks, Related searches"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "rechargeable-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "rechargeable vibrator",
-      "Keyword": "rechargeable bullet vibrator",
-      "Intent": "Commercial",
-      "Volume": "210",
-      "Trend": "0.52,0.65,1.00,0.80,1.00,1.00,0.65,0.52,0.43,0.52,1.00,0.52",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "adjustable cock ring",
+      "Intent": "Informational, Commercial",
+      "Volume": "1000",
+      "Trend": "0.30,0.30,0.36,0.36,0.36,1.00,1.00,0.36,0.36,0.36,0.30,0.30",
       "Keyword Difficulty": "24",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "water based lube",
-      "Keyword": "water based lube for sensitive skin",
-      "Intent": "Informational",
-      "Volume": "480",
-      "Trend": "0.32,0.26,0.48,0.26,0.39,0.59,0.59,1.00,0.72,0.59,0.39,0.59",
-      "Keyword Difficulty": "18",
-      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches, Popular products"
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "silicone cock ring",
+      "Intent": "Commercial",
+      "Volume": "720",
+      "Trend": "0.07,0.07,0.07,0.08,0.07,0.07,0.07,0.07,0.07,0.08,0.16,1.00",
+      "Keyword Difficulty": "23",
+      "SERP Features": "Sitelinks, People also ask"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "water based lube",
-      "Keyword": "natural water based lube",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "how tight should a cock ring be",
       "Intent": "Informational",
       "Volume": "390",
-      "Trend": "0.66,0.66,0.81,0.81,0.81,0.66,0.81,0.66,0.81,1.00,0.66,1.00",
-      "Keyword Difficulty": "31",
-      "SERP Features": "Sitelinks, AI Overview, Image, Video, People also ask, Discussions and forums, Related searches, Popular products"
+      "Trend": "0.81,0.81,0.81,1.00,1.00,0.81,0.81,0.81,1.00,1.00,1.00,0.81",
+      "Keyword Difficulty": "33",
+      "SERP Features": "Featured snippet, Sitelinks, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "cock ring size",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.53,0.66,0.66,0.66,1.00,0.66,0.53,0.53,0.66,0.53,0.53,0.66",
+      "Keyword Difficulty": "17",
+      "SERP Features": "Sitelinks, AI Overview"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "cock ring sizing",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.67,0.67,1.00,0.67,0.67,0.67,0.67,0.83,0.83,1.00,1.00,1.00",
+      "Keyword Difficulty": "23",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "how long can you wear a cock ring",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.67,1.00,0.67,0.67,0.08,0.82,0.82,0.67,0.23,0.82,0.35,0.82",
+      "Keyword Difficulty": "29",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
       "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
       "seed_keyword": "water based lube",
-      "Keyword": "glycerin free water based lube",
+      "Keyword": "water based lube condoms",
       "Intent": "Informational",
-      "Volume": "320",
-      "Trend": "0.19,0.19,0.23,0.23,0.29,0.23,0.54,0.66,0.81,1.00,0.36,0.44",
-      "Keyword Difficulty": "22",
+      "Volume": "9900",
+      "Trend": "0.00,0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.66,0.44,0.00",
+      "Keyword Difficulty": "24",
+      "SERP Features": "Sitelinks, AI Overview, Image, Video, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "water-based lubricant lube",
+      "Intent": "Informational",
+      "Volume": "8100",
+      "Trend": "0.00,0.00,0.00,0.00,0.00,0.00,0.66,0.00,0.81,0.00,0.81,1.00",
+      "Keyword Difficulty": "32",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "best water based lube",
+      "Intent": "Commercial",
+      "Volume": "3600",
+      "Trend": "0.65,0.65,0.65,0.65,0.65,0.65,0.65,0.65,0.82,1.00,0.82,0.65",
+      "Keyword Difficulty": "49",
       "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches, Popular products"
     },
     {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibration",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
-      "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "water based personal lube",
+      "Intent": "Informational",
+      "Volume": "2900",
+      "Trend": "0.04,0.02,0.01,0.03,0.01,0.01,0.00,0.00,0.00,1.00,0.02,0.01",
+      "Keyword Difficulty": "40",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "water based lubes",
+      "Intent": "Informational, Commercial",
+      "Volume": "2400",
+      "Trend": "1.00,0.35,0.29,0.66,0.44,0.29,0.29,0.16,0.35,0.29,0.35,0.35",
+      "Keyword Difficulty": "45",
+      "SERP Features": "Sitelinks, AI Overview, Image pack, Video, Video carousel, Short videos, People also ask, Related searches, Popular products"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "best water based lubes",
+      "Intent": "Commercial",
+      "Volume": "1000",
+      "Trend": "0.55,0.62,0.62,1.00,0.55,0.62,0.62,0.62,0.62,0.62,0.62,1.00",
+      "Keyword Difficulty": "32",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "what is water based lube",
+      "Intent": "Informational, Commercial",
+      "Volume": "320",
+      "Trend": "0.81,0.81,0.43,1.00,0.29,0.66,0.43,0.54,0.43,1.00,0.81,0.66",
+      "Keyword Difficulty": "16",
+      "SERP Features": "Sitelinks, AI Overview, Video, Video carousel, Short videos, People also ask, Discussions and forums, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "water based lube",
+      "Keyword": "is water based lube better",
+      "Intent": "Informational",
+      "Volume": "210",
+      "Trend": "1.00,0.27,0.27,0.27,0.27,0.22,0.22,0.12,0.12,0.17,0.17,0.17",
+      "Keyword Difficulty": "24",
+      "SERP Features": "Featured snippet, Sitelinks, Video, Video carousel, Short videos, People also ask, Related searches"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibrator for women",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
+      "Keyword": "how to wear a cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Help buyers decide if compact size is a benefit or limitation. Commercial value: High; difficulty: Easy.",
-      "Priority": "P2",
-      "Notes": "Mapped from existing keyword cluster file."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "plusone vibrating bullet",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
-      "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "mini bullet vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
-      "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibratir",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
-      "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "rechargeable bullet vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Rechargeable massagers",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/rechargeable-vibrator-guide/",
-      "Assigned article title": "Rechargeable Vibrator Guide: Battery, Charging, and Care",
-      "Action": "Update existing article",
-      "Reason": "Focus on daily convenience and care instead of feature overload. Commercial value: High; difficulty: Easy.",
+      "Reason": "Emphasize fit, time limits, and comfort over exaggerated claims. Commercial value: High; difficulty: Medium.",
       "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "water based lube for sensitive skin",
+      "Keyword": "adjustable cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P1",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "silicone cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "how tight should a cock ring be",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "cock ring size",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "cock ring sizing",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "how long can you wear a cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "water based lube condoms",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/water-based-lube-guide/",
+      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
+      "Action": "Update existing article",
+      "Reason": "Explain why water-based formulas are often the safest first choice. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "water-based lubricant lube",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Lubricant basics",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/beginner-lubricant-guide/",
+      "Assigned article title": "Beginner Lubricant Guide: Ingredients, Feel, and Compatibility",
+      "Action": "Update existing article",
+      "Reason": "Explain compatibility and comfort in plain language. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "best water based lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/water-based-lube-guide/",
+      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
+      "Action": "Update existing article",
+      "Reason": "Explain why water-based formulas are often the safest first choice. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "water based personal lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/water-based-lube-guide/",
+      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
+      "Action": "Update existing article",
+      "Reason": "Explain why water-based formulas are often the safest first choice. Commercial value: High; difficulty: Easy.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "water based lubes",
       "Search intent": "Informational",
       "Topic cluster": "Lubricant basics",
       "Primary/secondary": "Secondary",
@@ -226,7 +357,7 @@
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "natural water based lube",
+      "Keyword": "best water based lubes",
       "Search intent": "Informational",
       "Topic cluster": "Lubricant basics",
       "Primary/secondary": "Secondary",
@@ -239,7 +370,20 @@
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "glycerin free water based lube",
+      "Keyword": "what is water based lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/water-based-lube-guide/",
+      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
+      "Action": "Update existing article",
+      "Reason": "Water-based lubricant informational/commercial intent.",
+      "Priority": "P1",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "is water based lube better",
       "Search intent": "Informational",
       "Topic cluster": "Lubricant basics",
       "Primary/secondary": "Secondary",
@@ -253,84 +397,50 @@
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-29T08:35:35.019223+08:00",
+  "generated_at": "2026-07-30T08:37:31.965578+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
-    "generated_at": "2026-07-29T08:35:35.019365+08:00",
+    "generated_at": "2026-07-30T08:37:31.965909+08:00",
     "files": [
-      "upload/blog/assets/rechargeable-bullet-vibrator-checklist-opus-cover.png",
-      "upload/blog/assets/sensitive-skin-lube-shopping-guide-opus-cover.png"
+      "upload/blog/assets/cock-ring-fit-time-limit-guide-opus-cover.png",
+      "upload/blog/assets/best-water-based-lube-checklist-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/rechargeable-bullet-vibrator-checklist-opus-cover.png",
+        "file": "upload/blog/assets/cock-ring-fit-time-limit-guide-opus-cover.png",
         "status": "pass",
         "endpoint": "responses",
         "model": "opus-image-1.5",
-        "response_id": "resp_08619510c89a4354016a694a875cf88199a01cf28bb1d71edf",
-        "bytes": 2182145
+        "response_id": "resp_07685a6be002cb75016a6a9c646a7c819b8cff0b3fd57ffff9",
+        "bytes": 2629620
       },
       {
-        "file": "upload/blog/assets/sensitive-skin-lube-shopping-guide-opus-cover.png",
+        "file": "upload/blog/assets/best-water-based-lube-checklist-opus-cover.png",
         "status": "pass",
         "endpoint": "responses",
         "model": "opus-image-1.5",
-        "response_id": "resp_08b5b45f22ca435f016a694aaa16b0819a8aa4c02a517a387c",
-        "bytes": 2156176
+        "response_id": "resp_04f94274000d2e21016a6a9c9a5ae0819ab88d3e11625e213c",
+        "bytes": 2314596
       }
     ]
   },
-  "validation": {
-    "date": "2026-07-29",
+  "content_quality_checks": {
+    "date": "2026-07-30",
     "articles": [
       {
-        "slug": "rechargeable-bullet-vibrator-checklist",
-        "title_len": 38,
-        "meta_len": 136,
-        "h1_count": 1,
-        "gtag_id_occurrences": 2,
-        "words": 2130,
-        "authority_refs": [
-          "https://www.iec.ch/ip-ratings",
-          "https://www.tsa.gov/travel/security-screening/whatcanibring/items/lithium-batteries",
-          "https://www.saferproducts.gov/",
-          "https://www.ul.com/services/battery-safety-testing-and-certification"
-        ],
-        "related_blog_links": 5,
-        "product_links": 12,
-        "image_seo": true,
-        "banned_hits": [],
-        "checks": {
-          "title_len": true,
-          "meta_len": true,
-          "h1_one": true,
-          "gtag_once": true,
-          "word_count": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": true,
-          "internal_links": true,
-          "product_links": true,
-          "image_seo": true,
-          "no_banned": true,
-          "topic_depth": true
-        },
-        "quality_score": 100,
-        "status": "pass"
-      },
-      {
-        "slug": "sensitive-skin-lube-shopping-guide",
+        "slug": "cock-ring-fit-time-limit-guide",
+        "title": "Cock Ring Fit and Time Limit Guide",
         "title_len": 34,
-        "meta_len": 145,
+        "meta_len": 138,
         "h1_count": 1,
+        "h2_count": 14,
         "gtag_id_occurrences": 2,
-        "words": 2110,
+        "words": 2228,
         "authority_refs": [
-          "https://www.fda.gov/consumers/consumer-updates/how-use-condoms-and-other-barriers",
-          "https://iris.who.int/handle/10665/76580",
-          "https://www.cdc.gov/condom-use/index.html",
+          "https://www.nhs.uk/conditions/priapism/",
+          "https://my.clevelandclinic.org/health/treatments/10062-penis-pump",
+          "https://www.saferproducts.gov/",
           "https://consumer.ftc.gov/articles/online-shopping"
         ],
         "related_blog_links": 5,
@@ -341,6 +451,7 @@
           "title_len": true,
           "meta_len": true,
           "h1_one": true,
+          "h2_structure": true,
           "gtag_once": true,
           "word_count": true,
           "quick_answer": true,
@@ -351,103 +462,75 @@
           "product_links": true,
           "image_seo": true,
           "no_banned": true,
-          "topic_depth": true
+          "topic_depth": true,
+          "keyword_natural": true
+        },
+        "quality_score": 100,
+        "status": "pass"
+      },
+      {
+        "slug": "best-water-based-lube-checklist",
+        "title": "Best Water-Based Lube Checklist",
+        "title_len": 31,
+        "meta_len": 138,
+        "h1_count": 1,
+        "h2_count": 14,
+        "gtag_id_occurrences": 2,
+        "words": 2066,
+        "authority_refs": [
+          "https://www.fda.gov/consumers/consumer-updates/how-use-condoms-and-other-barriers",
+          "https://www.cdc.gov/condom-use/index.html",
+          "https://iris.who.int/handle/10665/76580",
+          "https://consumer.ftc.gov/articles/online-shopping"
+        ],
+        "related_blog_links": 5,
+        "product_links": 12,
+        "image_seo": true,
+        "banned_hits": [],
+        "checks": {
+          "title_len": true,
+          "meta_len": true,
+          "h1_one": true,
+          "h2_structure": true,
+          "gtag_once": true,
+          "word_count": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": true,
+          "internal_links": true,
+          "product_links": true,
+          "image_seo": true,
+          "no_banned": true,
+          "topic_depth": true,
+          "keyword_natural": true
         },
         "quality_score": 100,
         "status": "pass"
       }
     ],
     "sitemap": {
-      "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-checklist/": {
-        "lastmod": "2026-07-29",
-        "image_count": 1
+      "https://shoplovanest.com/blog/cock-ring-fit-time-limit-guide/": {
+        "lastmod": "2026-07-30",
+        "image_count": 1,
+        "image_titles": [
+          "Cock Ring Fit and Time Limit Guide"
+        ]
       },
-      "https://shoplovanest.com/blog/sensitive-skin-lube-shopping-guide/": {
-        "lastmod": "2026-07-29",
-        "image_count": 1
+      "https://shoplovanest.com/blog/best-water-based-lube-checklist/": {
+        "lastmod": "2026-07-30",
+        "image_count": 1,
+        "image_titles": [
+          "Best Water-Based Lube Checklist"
+        ]
       },
       "https://shoplovanest.com/blog/": {
-        "lastmod": "2026-07-29",
-        "image_count": 0
+        "lastmod": "2026-07-30",
+        "image_count": 0,
+        "image_titles": []
       }
     },
     "all_pass": true
   },
-  "content_quality_status": "pass",
-  "validated_at": "2026-07-29T08:37:29.399080+08:00",
-  "live_verification": {
-    "date": "2026-07-29",
-    "articles": [
-      {
-        "slug": "rechargeable-bullet-vibrator-checklist",
-        "url": "https://shoplovanest.com/blog/rechargeable-bullet-vibrator-checklist/",
-        "status_code": 200,
-        "checks": {
-          "http_200": true,
-          "title_present": true,
-          "meta_present": true,
-          "h1_one": true,
-          "gtag_once": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": true,
-          "image_seo": true
-        },
-        "all_pass": true
-      },
-      {
-        "slug": "sensitive-skin-lube-shopping-guide",
-        "url": "https://shoplovanest.com/blog/sensitive-skin-lube-shopping-guide/",
-        "status_code": 200,
-        "checks": {
-          "http_200": true,
-          "title_present": true,
-          "meta_present": true,
-          "h1_one": true,
-          "gtag_once": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": true,
-          "image_seo": true
-        },
-        "all_pass": true
-      }
-    ],
-    "blog_index": {
-      "http_200": true,
-      "links": {
-        "rechargeable-bullet-vibrator-checklist": true,
-        "sensitive-skin-lube-shopping-guide": true
-      }
-    },
-    "sitemap": {
-      "http_200": true,
-      "rechargeable-bullet-vibrator-checklist": {
-        "url": true,
-        "lastmod": true,
-        "image": true
-      },
-      "sensitive-skin-lube-shopping-guide": {
-        "url": true,
-        "lastmod": true,
-        "image": true
-      }
-    },
-    "all_pass": true
-  },
-  "commit": "2eab410f24",
-  "git_pushed": true,
-  "deployment": {
-    "status": "pass",
-    "method": "targeted rsync of two blog folders, two images, blog index, sitemap; production permissions corrected"
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "message_file": "output/daily_blog_2026-07-29_success.eml"
-  },
-  "completed_at": "2026-07-29T08:43:54.475502+08:00"
+  "updated_at": "2026-07-30T08:38:41.229082+08:00"
 }
