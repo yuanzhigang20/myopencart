@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Report — 2026-07-31
 
-Status: validated_pending_commit_deploy_verify_email
+Status: complete
 Timezone: Asia/Shanghai
 Quota: exactly 2 new articles
 
@@ -51,5 +51,38 @@ Both articles passed:
 
 Authority references used include FTC, CISA, Bluetooth SIG, CPSC, UL, and TSA sources.
 
+## Commit and push
+- Commit: d91927e2e57c31b2c94bdd8539ad03d59d145d4a
+- Branch: master
+- Push: successful via ssh.github.com:443 after normal GitHub SSH port 22 closed the connection.
+
 ## Deployment status
-Pending at report creation. Will update after commit, push, rsync deployment, live verification, and msmtp email acceptance.
+- Deployed by targeted rsync to root@153.75.235.56:/var/www/myopencart/upload.
+- Paths deployed: both article folders, both generated article images, upload/blog/index.html, and upload/sitemap.xml.
+- Permissions fixed: www-data:www-data ownership; directories 755; files 644.
+
+## Live verification
+Live verifier: output/verify_live_daily_blogs_2026_07_31.py
+
+Passed for both article URLs:
+- HTTP 200
+- title and meta description present
+- exactly one H1
+- Google tag script/config block for G-P2LJRXN3D1 present once
+- Quick Answer and Red Flags sections present
+- FAQPage JSON-LD present
+- authority references present
+- image SEO metadata present: img alt/title, og:image/alt, twitter:image/alt, JSON-LD ImageObject
+
+Blog index and sitemap:
+- https://shoplovanest.com/blog/ HTTP 200 and links both new articles.
+- https://shoplovanest.com/sitemap.xml HTTP 200 and includes both URLs, 2026-07-31 lastmod, and image metadata.
+
+## Email status
+- Sent after live verification with /opt/homebrew/bin/msmtp using /Users/grant/.msmtprc.
+- Recipient: yuanzhigang20@gmail.com
+- Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-07-31
+- msmtp exit status: 0 / accepted.
+
+## Final status
+Complete: exactly 2 new keyword-source articles generated, validated, committed, pushed, deployed, live verified, and success email accepted.

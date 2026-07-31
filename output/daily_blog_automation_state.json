@@ -1,7 +1,7 @@
 {
   "date": "2026-07-31",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -14,7 +14,7 @@
         "app controlled adult toys"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toys being used as malware from the adult toys keyword file, then clustered it with smart adult toy, app controlled adult toys, remote control adult toys, and adult toy privacy into one connected-device security intent instead of creating a sensational thin page. Existing connected-toy privacy pages were checked; this article focuses specifically on malware-style risk signals, permissions, update habits, and safer buying checks.",
-      "intent_cluster": "Connected adult toy malware and privacy intent \u2014 shoppers want a plain-English risk checklist for apps, Bluetooth pairing, permissions, firmware updates, accounts, data sharing, and suspicious product listings before buying connected adult wellness devices."
+      "intent_cluster": "Connected adult toy malware and privacy intent — shoppers want a plain-English risk checklist for apps, Bluetooth pairing, permissions, firmware updates, accounts, data sharing, and suspicious product listings before buying connected adult wellness devices."
     },
     {
       "slug": "silver-bullet-vibrator-shopping-guide",
@@ -26,7 +26,7 @@
         "mini bullet vibrator"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected silver bullet vibrator, vibrating bullet, mini bullet vibrator, small bullet vibrator, bullet vibrator charger, and best bullet vibrators from the bullet vibrator file, then clustered them into one compact silver-bullet shopping intent rather than separate thin pages. Existing general bullet guides were checked; this page focuses on the metallic-look compact form factor, charger/control details, and travel/storage red flags.",
-      "intent_cluster": "Silver bullet vibrator shopping intent \u2014 shoppers want a compact bullet-specific checklist for size, finish, body-contact material, charging, controls, sound level, lubricant compatibility, cleaning, storage, and returns before checkout."
+      "intent_cluster": "Silver bullet vibrator shopping intent — shoppers want a compact bullet-specific checklist for size, finish, body-contact material, charging, controls, sound level, lubricant compatibility, cleaning, storage, and returns before checkout."
     }
   ],
   "keyword_source_files_read": [
@@ -328,5 +328,55 @@
   },
   "quality_status": "pass",
   "validated_at": "2026-07-31T08:44:09.549483+08:00",
-  "report_path": "output/daily_blog_report_2026-07-31.md"
+  "report_path": "output/daily_blog_report_2026-07-31.md",
+  "commit": "d91927e2e57c31b2c94bdd8539ad03d59d145d4a",
+  "push": {
+    "status": "pushed",
+    "remote": "ssh://git@ssh.github.com/yuanzhigang20/myopencart.git",
+    "branch": "master",
+    "pushed_at": "2026-07-31T08:53:00+08:00"
+  },
+  "deploy": {
+    "status": "deployed",
+    "method": "targeted rsync",
+    "server": "root@153.75.235.56",
+    "root": "/var/www/myopencart/upload",
+    "deployed_paths": [
+      "upload/blog/adult-toys-malware-privacy-checklist/",
+      "upload/blog/silver-bullet-vibrator-shopping-guide/",
+      "upload/blog/assets/adult-toys-malware-privacy-checklist-opus-cover.png",
+      "upload/blog/assets/silver-bullet-vibrator-shopping-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions": "www-data:www-data, directories 755, files 644",
+    "deployed_at": "2026-07-31T08:55:00+08:00"
+  },
+  "live_verification": {
+    "status": "passed",
+    "verified_at": "2026-07-31T08:58:00+08:00",
+    "script": "output/verify_live_daily_blogs_2026_07_31.py",
+    "checks": [
+      "article HTTP 200",
+      "title/meta present",
+      "one H1",
+      "gtag script/config block once",
+      "Quick Answer",
+      "Red Flags",
+      "FAQPage JSON-LD",
+      "authority references",
+      "image SEO metadata",
+      "blog index links",
+      "sitemap URLs lastmod image metadata"
+    ]
+  },
+  "email": {
+    "status": "sent",
+    "accepted_by_msmtp": true,
+    "recipient": "yuanzhigang20@gmail.com",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-31",
+    "sent_at": "2026-07-31T08:59:00+08:00",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc"
+  }
 }
