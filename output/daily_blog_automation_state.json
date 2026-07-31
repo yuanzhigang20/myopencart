@@ -378,5 +378,6 @@
     "sent_at": "2026-07-31T08:59:00+08:00",
     "tool": "/opt/homebrew/bin/msmtp",
     "config": "/Users/grant/.msmtprc"
-  }
+  },
+  "final_report_commit": "47e62920179c3910af60246f58b9bbf1beefca9c"
 }
