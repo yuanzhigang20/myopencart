@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "what-do-cock-rings-do-safety-guide",
+    "title": "What Do Cock Rings Do? Safety Guide",
+    "meta": "A plain-English guide to what cock rings do, fit choices, time limits, materials, vibration, red flags, and safer checkout checks.",
+    "checks": {
+      "title_len": 35,
+      "meta_len": 130,
+      "h1_count": 1,
+      "gtag_script_count": 1,
+      "gtag_config_count": 1,
+      "gtag_immediately_after_head": true,
+      "word_count": 1243,
+      "quick_answer": true,
+      "red_flags": true,
+      "faq_schema": true,
+      "authority_refs": 4,
+      "related_blog_links": 3,
+      "product_support_links": 11,
+      "og_image": true,
+      "twitter_image": true,
+      "image_object": true,
+      "figcaption": true,
+      "quality_score": 92,
+      "sitemap_url": true,
+      "sitemap_lastmod": true,
+      "sitemap_image_metadata": true
+    },
+    "status": "pass",
+    "failures": []
+  },
+  {
+    "slug": "electric-male-masturbator-buying-checklist",
+    "title": "Electric Male Masturbator Buying Checklist",
+    "meta": "Compare electric male masturbators by motor style, sleeve material, cleaning, drying, noise, charging, privacy, and checkout red flags.",
+    "checks": {
+      "title_len": 42,
+      "meta_len": 135,
+      "h1_count": 1,
+      "gtag_script_count": 1,
+      "gtag_config_count": 1,
+      "gtag_immediately_after_head": true,
+      "word_count": 1158,
+      "quick_answer": true,
+      "red_flags": true,
+      "faq_schema": true,
+      "authority_refs": 4,
+      "related_blog_links": 3,
+      "product_support_links": 11,
+      "og_image": true,
+      "twitter_image": true,
+      "image_object": true,
+      "figcaption": true,
+      "quality_score": 93,
+      "sitemap_url": true,
+      "sitemap_lastmod": true,
+      "sitemap_image_metadata": true
+    },
+    "status": "pass",
+    "failures": []
+  }
+]

@@ -1,32 +1,32 @@
 {
-  "date": "2026-07-31",
+  "date": "2026-08-01",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "adult-toys-malware-privacy-checklist",
-      "title": "Adult Toy Malware Privacy Checklist",
-      "url": "https://shoplovanest.com/blog/adult-toys-malware-privacy-checklist/",
+      "slug": "what-do-cock-rings-do-safety-guide",
+      "title": "What Do Cock Rings Do? Safety Guide",
+      "url": "https://shoplovanest.com/blog/what-do-cock-rings-do-safety-guide/",
       "primary_keywords": [
-        "adult toys being used as malware",
-        "smart adult toy",
-        "app controlled adult toys"
+        "what do cock rings do",
+        "what is a cock ring for",
+        "cock ring benefits"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toys being used as malware from the adult toys keyword file, then clustered it with smart adult toy, app controlled adult toys, remote control adult toys, and adult toy privacy into one connected-device security intent instead of creating a sensational thin page. Existing connected-toy privacy pages were checked; this article focuses specifically on malware-style risk signals, permissions, update habits, and safer buying checks.",
-      "intent_cluster": "Connected adult toy malware and privacy intent — shoppers want a plain-English risk checklist for apps, Bluetooth pairing, permissions, firmware updates, accounts, data sharing, and suspicious product listings before buying connected adult wellness devices."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected what do cock rings do, what is a cock ring for, what is a cock ring used for, purpose of cock ring, and cock ring benefits from the cock-ring keyword cluster. Clustered them into one plain-English function, fit, time-limit, and red-flag intent instead of making separate thin pages or unsupported benefit claims.",
+      "intent_cluster": "Cock ring function and safety intent \u2014 shoppers want to understand what the product is for, how fit/material/time limits affect comfort, what claims to distrust, and which checkout details matter before buying."
     },
     {
-      "slug": "silver-bullet-vibrator-shopping-guide",
-      "title": "Silver Bullet Vibrator Shopping Guide",
-      "url": "https://shoplovanest.com/blog/silver-bullet-vibrator-shopping-guide/",
+      "slug": "electric-male-masturbator-buying-checklist",
+      "title": "Electric Male Masturbator Buying Checklist",
+      "url": "https://shoplovanest.com/blog/electric-male-masturbator-buying-checklist/",
       "primary_keywords": [
-        "silver bullet vibrator",
-        "vibrating bullet",
-        "mini bullet vibrator"
+        "electric male masturbator",
+        "male masturbator machine",
+        "top rated male masturbators"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected silver bullet vibrator, vibrating bullet, mini bullet vibrator, small bullet vibrator, bullet vibrator charger, and best bullet vibrators from the bullet vibrator file, then clustered them into one compact silver-bullet shopping intent rather than separate thin pages. Existing general bullet guides were checked; this page focuses on the metallic-look compact form factor, charger/control details, and travel/storage red flags.",
-      "intent_cluster": "Silver bullet vibrator shopping intent — shoppers want a compact bullet-specific checklist for size, finish, body-contact material, charging, controls, sound level, lubricant compatibility, cleaning, storage, and returns before checkout."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected electric male masturbator, male masturbator machine, automated male masturbator, male masturbator toy, and top rated male masturbators from the male-masturbator cluster. Clustered them into one electric-device buying checklist focused on motor style, removable sleeves, cleaning, drying, charging, noise, privacy, and warranty rather than separate thin articles.",
+      "intent_cluster": "Electric male masturbator commercial comparison intent \u2014 shoppers want a realistic checklist for powered features, sleeve materials, cleaning burden, charging, sound, app/privacy concerns, and post-purchase support."
     }
   ],
   "keyword_source_files_read": [
@@ -36,348 +36,281 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "app controlled adult toys",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.77,0.20,0.37,0.56,0.30,0.77,0.30,0.37,0.37,0.44,0.37,1.00",
-      "Keyword Difficulty": "26",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "remote control adult toys",
-      "Intent": "Commercial",
-      "Volume": "720",
-      "Trend": "0.55,0.44,0.37,1.00,0.30,0.37,0.44,0.44,0.37,0.44,0.44,0.55",
-      "Keyword Difficulty": "23",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "adult toys being used as malware",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "what do cock rings do",
       "Intent": "Informational",
-      "Volume": "1000",
-      "Trend": "1.00,0.00,0.00,0.00,0.01",
-      "Keyword Difficulty": "33",
-      "SERP Features": "Sitelinks, AI Overview, Video, Video carousel, People also ask, Discussions and forums"
+      "Volume": "6600",
+      "Trend": "0.55,0.67,0.67,1.00,0.36,0.44,0.55,0.67,0.67,0.67,1.00,0.44",
+      "Keyword Difficulty": "46",
+      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "vibrating bullet",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "what is a cock ring for",
       "Intent": "Informational",
       "Volume": "1900",
-      "Trend": "0.70,0.70,0.70,0.70,0.70,0.50,0.50,0.70,0.70,0.70,1.00,0.70",
-      "Keyword Difficulty": "21",
-      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
+      "Trend": "1.00,0.07,0.55,0.30,0.55,0.36,0.43,0.55,0.66,0.55,0.43,0.36",
+      "Keyword Difficulty": "38",
+      "SERP Features": "AI Overview, People also ask"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "silver bullet vibrator",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "what is a cock ring used for",
       "Intent": "Informational",
-      "Volume": "1000",
-      "Trend": "0.83,0.83,0.83,0.83,1.00,0.67,0.83,0.83,0.83,1.00,1.00,0.83",
-      "Keyword Difficulty": "17",
+      "Volume": "880",
+      "Trend": "0.02,0.13,0.20,0.16,0.41,0.36,0.36,0.41,0.41,0.54,0.36,1.00",
+      "Keyword Difficulty": "37",
+      "SERP Features": "AI Overview, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "cock ring benefits",
+      "Intent": "Informational",
+      "Volume": "590",
+      "Trend": "0.82,0.82,1.00,0.82,0.82,0.54,0.29,0.44,0.67,0.44,0.44,0.54",
+      "Keyword Difficulty": "45",
+      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "purpose of cock ring",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.00,0.38,0.15,0.08,0.31,0.38,0.62,0.00,0.77,1.00,0.77,0.38",
+      "Keyword Difficulty": "35",
+      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "male masturbator toy",
+      "Intent": "Commercial",
+      "Volume": "1300",
+      "Trend": "0.09,0.09,0.11,0.11,0.11,0.36,0.36,0.16,1.00,0.16,0.55,0.66",
+      "Keyword Difficulty": "35",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "mini bullet vibrator",
-      "Intent": "Commercial",
-      "Volume": "590",
-      "Trend": "0.36,0.45,0.45,0.45,0.45,0.45,0.36,0.45,1.00,0.45,0.45,1.00",
-      "Keyword Difficulty": "30",
-      "SERP Features": "Sitelinks, Video"
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "top rated male masturbators",
+      "Intent": "Informational, Commercial",
+      "Volume": "1000",
+      "Trend": "0.20,0.34,0.44,1.00,0.13,0.20,0.30,0.08,0.13,0.20,0.65,0.30",
+      "Keyword Difficulty": "26",
+      "SERP Features": "Sitelinks, AI Overview"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "best bullet vibrators",
-      "Intent": "Commercial",
-      "Volume": "480",
-      "Trend": "1.00,1.00,0.80,0.80,1.00,0.70,0.80,1.00,1.00,1.00,0.80,0.50",
-      "Keyword Difficulty": "27",
-      "SERP Features": "Sitelinks, Related searches"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "small bullet vibrator",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "male masturbator machine",
       "Intent": "Commercial",
       "Volume": "390",
-      "Trend": "0.81,1.00,1.00,1.00,1.00,0.81,0.81,1.00,1.00,1.00,0.81,1.00",
-      "Keyword Difficulty": "26",
+      "Trend": "0.67,0.07,0.04,0.15,0.67,0.36,0.67,0.54,1.00,0.67,0.67,0.82",
+      "Keyword Difficulty": "40",
       "SERP Features": "Sitelinks"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "bullet-vibrator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "bullet vibrator",
-      "Keyword": "bullet vibrator charger",
-      "Intent": "Informational",
-      "Volume": "320",
-      "Trend": "0.81,0.81,1.00,1.00,1.00,0.81,0.81,0.81,1.00,1.00,1.00,0.65",
-      "Keyword Difficulty": "25",
-      "SERP Features": "Sitelinks, Video, People also ask, Related searches"
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "automated male masturbator",
+      "Intent": "Commercial",
+      "Volume": "260",
+      "Trend": "0.44,0.00,1.00,1.00,0.81,0.54,0.28,0.66,0.44,0.44,0.66,0.54",
+      "Keyword Difficulty": "36",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "electric male masturbator",
+      "Intent": "Commercial",
+      "Volume": "260",
+      "Trend": "0.66,0.66,0.52,1.00,0.82,0.66,0.66,0.82,0.66,0.66,0.82,0.34",
+      "Keyword Difficulty": "33",
+      "SERP Features": "Sitelinks"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "app controlled adult toys",
-      "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "remote control adult toys",
-      "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toys being used as malware",
-      "Search intent": "Commercial",
-      "Topic cluster": "Buying decision framework",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Update existing article",
-      "Reason": "Broad adult-wellness shopping intent; prevent cannibalization by assigning to buying guide.",
-      "Priority": "P1",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "vibrating bullet",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
-      "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
-      "Priority": "P1",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "silver bullet vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
-      "Action": "Update existing article",
-      "Reason": "Help buyers decide if compact size is a benefit or limitation. Commercial value: High; difficulty: Easy.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "mini bullet vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
-      "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "best bullet vibrators",
+      "Keyword": "what do cock rings do",
       "Search intent": "Beginner Guide",
-      "Topic cluster": "Beginner vibrator selection",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/vibrators-for-beginners/",
-      "Assigned article title": "Vibrators for Beginners: How to Choose Without Guesswork",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Explain what features matter first and which advanced features can wait. Commercial value: High; difficulty: Easy.",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
       "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
+      "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "small bullet vibrator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
+      "Keyword": "what is a cock ring for",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P1",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "what is a cock ring used for",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
       "Priority": "P2",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "bullet vibrator charger",
-      "Search intent": "Commercial",
-      "Topic cluster": "Compact vibrators",
+      "Keyword": "cock ring benefits",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/bullet-vibrator-guide/",
-      "Assigned article title": "Bullet Vibrator Guide: Small Size, Simple Controls, Big Questions",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Compact vibrator product selection intent.",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "purpose of cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "male masturbator toy",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Action": "Update existing article",
+      "Reason": "Make cleaning and drying as important as product style. Commercial value: High; difficulty: Medium.",
+      "Priority": "P1",
+      "Notes": "Mapped from existing keyword cluster file."
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "top rated male masturbators",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Action": "Update existing article",
+      "Reason": "Male wellness product buying and care intent.",
+      "Priority": "P1",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "male masturbator machine",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Action": "Update existing article",
+      "Reason": "Male wellness product buying and care intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "automated male masturbator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Action": "Update existing article",
+      "Reason": "Male wellness product buying and care intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "electric male masturbator",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Action": "Update existing article",
+      "Reason": "Male wellness product buying and care intent.",
       "Priority": "P2",
       "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-07-31T08:42:50.420306+08:00",
+  "generated_at": "2026-08-01T08:38:42.393209+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
+    "generated_at": "2026-08-01T08:38:42.393501+08:00",
     "files": [
-      "upload/blog/assets/adult-toys-malware-privacy-checklist-opus-cover.png",
-      "upload/blog/assets/silver-bullet-vibrator-shopping-guide-opus-cover.png"
+      "upload/blog/assets/what-do-cock-rings-do-safety-guide-opus-cover.png",
+      "upload/blog/assets/electric-male-masturbator-buying-checklist-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/adult-toys-malware-privacy-checklist-opus-cover.png",
+        "file": "upload/blog/assets/what-do-cock-rings-do-safety-guide-opus-cover.png",
         "status": "pass",
-        "endpoint": "reuse-existing-opus-image-1.5-generated-asset",
+        "endpoint": "responses",
         "model": "opus-image-1.5",
-        "bytes": 2515409
+        "response_id": "resp_0ec055c3391bd0ce016a6d3fb47c1c819492819a4cef4abea1",
+        "bytes": 2657664
       },
       {
-        "file": "upload/blog/assets/silver-bullet-vibrator-shopping-guide-opus-cover.png",
+        "file": "upload/blog/assets/electric-male-masturbator-buying-checklist-opus-cover.png",
         "status": "pass",
-        "endpoint": "reuse-existing-opus-image-1.5-generated-asset",
+        "endpoint": "responses",
         "model": "opus-image-1.5",
-        "bytes": 2483962
+        "response_id": "resp_0a50d210832c87d8016a6d3fe786448197bce3273105c7f391",
+        "bytes": 2164054
       }
     ]
   },
-  "content_quality_checks": {
-    "articles": {
-      "adult-toys-malware-privacy-checklist": {
-        "title_under_60": true,
-        "meta_under_155": true,
-        "one_h1": true,
-        "gtag_once": true,
-        "word_count": 2103,
-        "quick_answer": true,
-        "red_flags": true,
-        "faq_schema": true,
-        "faq_count": true,
-        "authority_links": true,
-        "related_links": true,
-        "product_links": true,
-        "image_meta": true,
-        "banned_terms": true,
-        "quality_score": 100,
-        "pass": true
-      },
-      "silver-bullet-vibrator-shopping-guide": {
-        "title_under_60": true,
-        "meta_under_155": true,
-        "one_h1": true,
-        "gtag_once": true,
-        "word_count": 1953,
-        "quick_answer": true,
-        "red_flags": true,
-        "faq_schema": true,
-        "faq_count": true,
-        "authority_links": true,
-        "related_links": true,
-        "product_links": true,
-        "image_meta": true,
-        "banned_terms": true,
-        "quality_score": 100,
-        "pass": true
-      }
-    },
-    "index": {
-      "http_local_index_has_new_links": true,
-      "blog_index_last_updated": true
-    },
-    "sitemap": {
-      "adult-toys-malware-privacy-checklist": true,
-      "silver-bullet-vibrator-shopping-guide": true
+  "validation": {
+    "status": "pass",
+    "file": "output/daily_blog_validation_2026-08-01.json",
+    "quality_scores": {
+      "what-do-cock-rings-do-safety-guide": 92,
+      "electric-male-masturbator-buying-checklist": 93
     }
-  },
-  "quality_status": "pass",
-  "validated_at": "2026-07-31T08:44:09.549483+08:00",
-  "report_path": "output/daily_blog_report_2026-07-31.md",
-  "commit": "d91927e2e57c31b2c94bdd8539ad03d59d145d4a",
-  "push": {
-    "status": "pushed",
-    "remote": "ssh://git@ssh.github.com/yuanzhigang20/myopencart.git",
-    "branch": "master",
-    "pushed_at": "2026-07-31T08:53:00+08:00"
-  },
-  "deploy": {
-    "status": "deployed",
-    "method": "targeted rsync",
-    "server": "root@153.75.235.56",
-    "root": "/var/www/myopencart/upload",
-    "deployed_paths": [
-      "upload/blog/adult-toys-malware-privacy-checklist/",
-      "upload/blog/silver-bullet-vibrator-shopping-guide/",
-      "upload/blog/assets/adult-toys-malware-privacy-checklist-opus-cover.png",
-      "upload/blog/assets/silver-bullet-vibrator-shopping-guide-opus-cover.png",
-      "upload/blog/index.html",
-      "upload/sitemap.xml"
-    ],
-    "permissions": "www-data:www-data, directories 755, files 644",
-    "deployed_at": "2026-07-31T08:55:00+08:00"
-  },
-  "live_verification": {
-    "status": "passed",
-    "verified_at": "2026-07-31T08:58:00+08:00",
-    "script": "output/verify_live_daily_blogs_2026_07_31.py",
-    "checks": [
-      "article HTTP 200",
-      "title/meta present",
-      "one H1",
-      "gtag script/config block once",
-      "Quick Answer",
-      "Red Flags",
-      "FAQPage JSON-LD",
-      "authority references",
-      "image SEO metadata",
-      "blog index links",
-      "sitemap URLs lastmod image metadata"
-    ]
-  },
-  "email": {
-    "status": "sent",
-    "accepted_by_msmtp": true,
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-07-31",
-    "sent_at": "2026-07-31T08:59:00+08:00",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc"
-  },
-  "final_report_commit": "47e62920179c3910af60246f58b9bbf1beefca9c"
+  }
 }
