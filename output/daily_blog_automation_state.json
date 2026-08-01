@@ -1,7 +1,7 @@
 {
   "date": "2026-08-01",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "verified_pending_email",
   "article_quota": 2,
   "articles": [
     {
@@ -312,5 +312,86 @@
       "what-do-cock-rings-do-safety-guide": 92,
       "electric-male-masturbator-buying-checklist": 93
     }
+  },
+  "commit": {
+    "hash": "62ecf7bc44df8a2fa61d10dfb13ec617b4ac177a",
+    "pushed": true,
+    "remote": "origin master"
+  },
+  "deploy": {
+    "status": "pass",
+    "method": "targeted rsync",
+    "server": "root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data, dirs 755, files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "file": "output/live_verification_2026-08-01.json",
+    "summary": {
+      "articles": [
+        {
+          "url": "https://shoplovanest.com/blog/what-do-cock-rings-do-safety-guide/",
+          "status_code": 200,
+          "title": true,
+          "meta_description": true,
+          "h1_count": 1,
+          "gtag_script_count": 1,
+          "gtag_config_count": 1,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": 4,
+          "og_image": true,
+          "twitter_image": true,
+          "image_object": true,
+          "hero_image_http": 200,
+          "pass": true
+        },
+        {
+          "url": "https://shoplovanest.com/blog/electric-male-masturbator-buying-checklist/",
+          "status_code": 200,
+          "title": true,
+          "meta_description": true,
+          "h1_count": 1,
+          "gtag_script_count": 1,
+          "gtag_config_count": 1,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": 4,
+          "og_image": true,
+          "twitter_image": true,
+          "image_object": true,
+          "hero_image_http": 200,
+          "pass": true
+        }
+      ],
+      "blog_index": {
+        "url": "https://shoplovanest.com/blog/",
+        "status_code": 200,
+        "links": {
+          "what-do-cock-rings-do-safety-guide": true,
+          "electric-male-masturbator-buying-checklist": true
+        },
+        "pass": true
+      },
+      "sitemap": {
+        "url": "https://shoplovanest.com/sitemap.xml",
+        "status_code": 200,
+        "urls": {
+          "what-do-cock-rings-do-safety-guide": true,
+          "electric-male-masturbator-buying-checklist": true
+        },
+        "lastmod_2026_08_01": true,
+        "image_metadata": true,
+        "pass": true
+      },
+      "overall_pass": true
+    }
+  },
+  "email": {
+    "status": "pending",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "recipient": "yuanzhigang20@gmail.com"
   }
 }

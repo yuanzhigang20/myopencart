@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Automation Report - 2026-08-01
 
-Status: validated pending commit, deployment, live verification, and email.
+Status: verified pending email.
 Timezone: Asia/Shanghai
 
 ## Articles Generated
@@ -39,8 +39,16 @@ Validation file: output/daily_blog_validation_2026-08-01.json
 
 ## Pending Steps
 
-- Commit and push
-- Deploy changed files to production
-- Verify live article pages, blog index, and sitemap
-- Send success email via /opt/homebrew/bin/msmtp
-- Update this report and state file with final commit, deploy, live verification, and email status
+- Commit and push: pass (62ecf7bc44df8a2fa61d10dfb13ec617b4ac177a)
+- Deploy changed files to production: pass (targeted rsync)
+- Verify live article pages, blog index, and sitemap: pass (output/live_verification_2026-08-01.json)
+- Send success email via /opt/homebrew/bin/msmtp: pending
+- Update this report and state file with final email status: pending
+
+
+## Commit / Deploy / Verification
+
+- Commit: 62ecf7bc44df8a2fa61d10dfb13ec617b4ac177a (pushed to origin/master)
+- Deployment: targeted rsync to root@153.75.235.56:/var/www/myopencart/upload; ownership and permissions fixed.
+- Live verification: pass for both article URLs, blog index, and sitemap including image metadata.
+- Email: pending.
