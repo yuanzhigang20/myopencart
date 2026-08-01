@@ -1,7 +1,7 @@
 {
   "date": "2026-08-01",
   "timezone": "Asia/Shanghai",
-  "status": "email_blocked",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -390,12 +390,16 @@
     }
   },
   "email": {
-    "status": "failed",
+    "status": "sent",
     "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
     "recipient": "yuanzhigang20@gmail.com",
-    "attempted_at": "2026-08-01T08:50:00+08:00",
-    "exit_code": 75,
-    "error": "msmtp could not connect to smtp.gmail.com port 587: Operation timed out. Direct connectivity checks to smtp.gmail.com ports 587 and 465 also timed out.",
-    "next_action": "Retry msmtp on the next scheduled check after network connectivity to Gmail SMTP is available."
-  }
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-08-01",
+    "attempted_at": "2026-08-01T10:30:00+08:00",
+    "exit_code": 0,
+    "accepted_by_msmtp": true,
+    "message_file": "output/daily_blog_2026-08-01_success_with_from.eml",
+    "note": "Retried after SMTP connectivity recovered. Added From header for envelope sender and msmtp exited 0."
+  },
+  "completed_at": "2026-08-01T10:30:00+08:00"
 }

@@ -1,6 +1,6 @@
 # ShopLovaNest Daily Blog Automation Report - 2026-08-01
 
-Status: email blocked after live verification.
+Status: complete.
 Timezone: Asia/Shanghai
 
 ## Articles Generated
@@ -42,7 +42,7 @@ Validation file: output/daily_blog_validation_2026-08-01.json
 - Commit and push: pass (62ecf7bc44df8a2fa61d10dfb13ec617b4ac177a)
 - Deploy changed files to production: pass (targeted rsync)
 - Verify live article pages, blog index, and sitemap: pass (output/live_verification_2026-08-01.json)
-- Send success email via /opt/homebrew/bin/msmtp: failed (exit 75)
+- Send success email via /opt/homebrew/bin/msmtp: pass (exit 0, accepted by msmtp)
 - Update this report and state file with final email status: pass
 
 
@@ -51,15 +51,15 @@ Validation file: output/daily_blog_validation_2026-08-01.json
 - Commit: 62ecf7bc44df8a2fa61d10dfb13ec617b4ac177a (pushed to origin/master)
 - Deployment: targeted rsync to root@153.75.235.56:/var/www/myopencart/upload; ownership and permissions fixed.
 - Live verification: pass for both article URLs, blog index, and sitemap including image metadata.
-- Email: failed via /opt/homebrew/bin/msmtp (exit 75): smtp.gmail.com:587 timed out; direct checks to ports 587 and 465 also timed out. State remains incomplete for next scheduled retry.
+- Email: sent via /opt/homebrew/bin/msmtp at 2026-08-01 10:30 Asia/Shanghai (exit 0, accepted by msmtp).
 
 
-## Email Attempt / Blocker
+## Email Attempt / Completion
 
-- Attempted: 2026-08-01 08:50 Asia/Shanghai
+- Initial attempt: 2026-08-01 08:50 Asia/Shanghai failed because `smtp.gmail.com:587` timed out; direct checks to ports 587 and 465 also timed out.
+- Retry: 2026-08-01 10:30 Asia/Shanghai after SMTP connectivity recovered.
 - Tool: /opt/homebrew/bin/msmtp with /Users/grant/.msmtprc
 - Recipient: yuanzhigang20@gmail.com
-- Result: failed, exit code 75
-- Error: `msmtp: cannot connect to smtp.gmail.com, port 587: Operation timed out`
-- Additional connectivity check: `smtp.gmail.com:587` and `smtp.gmail.com:465` both timed out from this Mac.
-- Completion status: incomplete only because email was not accepted. Articles, commit, deployment, live verification, blog index, and sitemap are already complete; next scheduled retry should resume at the email step and avoid creating extra articles.
+- Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-08-01
+- Result: sent/accepted by msmtp, exit code 0.
+- Completion status: complete. Articles, commit, deployment, live verification, blog index, sitemap, and success email are complete.
