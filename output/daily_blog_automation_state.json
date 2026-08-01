@@ -1,7 +1,7 @@
 {
   "date": "2026-08-01",
   "timezone": "Asia/Shanghai",
-  "status": "verified_pending_email",
+  "status": "email_blocked",
   "article_quota": 2,
   "articles": [
     {
@@ -14,7 +14,7 @@
         "cock ring benefits"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected what do cock rings do, what is a cock ring for, what is a cock ring used for, purpose of cock ring, and cock ring benefits from the cock-ring keyword cluster. Clustered them into one plain-English function, fit, time-limit, and red-flag intent instead of making separate thin pages or unsupported benefit claims.",
-      "intent_cluster": "Cock ring function and safety intent \u2014 shoppers want to understand what the product is for, how fit/material/time limits affect comfort, what claims to distrust, and which checkout details matter before buying."
+      "intent_cluster": "Cock ring function and safety intent — shoppers want to understand what the product is for, how fit/material/time limits affect comfort, what claims to distrust, and which checkout details matter before buying."
     },
     {
       "slug": "electric-male-masturbator-buying-checklist",
@@ -26,7 +26,7 @@
         "top rated male masturbators"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected electric male masturbator, male masturbator machine, automated male masturbator, male masturbator toy, and top rated male masturbators from the male-masturbator cluster. Clustered them into one electric-device buying checklist focused on motor style, removable sleeves, cleaning, drying, charging, noise, privacy, and warranty rather than separate thin articles.",
-      "intent_cluster": "Electric male masturbator commercial comparison intent \u2014 shoppers want a realistic checklist for powered features, sleeve materials, cleaning burden, charging, sound, app/privacy concerns, and post-purchase support."
+      "intent_cluster": "Electric male masturbator commercial comparison intent — shoppers want a realistic checklist for powered features, sleeve materials, cleaning burden, charging, sound, app/privacy concerns, and post-purchase support."
     }
   ],
   "keyword_source_files_read": [
@@ -390,8 +390,12 @@
     }
   },
   "email": {
-    "status": "pending",
+    "status": "failed",
     "tool": "/opt/homebrew/bin/msmtp",
-    "recipient": "yuanzhigang20@gmail.com"
+    "recipient": "yuanzhigang20@gmail.com",
+    "attempted_at": "2026-08-01T08:50:00+08:00",
+    "exit_code": 75,
+    "error": "msmtp could not connect to smtp.gmail.com port 587: Operation timed out. Direct connectivity checks to smtp.gmail.com ports 587 and 465 also timed out.",
+    "next_action": "Retry msmtp on the next scheduled check after network connectivity to Gmail SMTP is available."
   }
 }
