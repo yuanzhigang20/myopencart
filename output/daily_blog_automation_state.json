@@ -1,7 +1,7 @@
 {
   "date": "2026-08-02",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -380,5 +380,103 @@
       "blog_index_gtag_script_count": 1,
       "blog_index_gtag_config_count": 1
     }
+  },
+  "completed_at": "2026-08-02T12:38:33.566739+08:00",
+  "validation": {
+    "status": "pass",
+    "file": "output/daily_blog_validation_2026-08-02.json",
+    "overall_pass": true
+  },
+  "commit": {
+    "status": "pushed",
+    "hash": "16a61f98cb57",
+    "full_hash": "16a61f98cb57b071fa065f4ab843597a2cc1e43f",
+    "branch": "master",
+    "remote": "origin"
+  },
+  "deploy": {
+    "status": "deployed",
+    "method": "targeted rsync",
+    "target": "root@153.75.235.56:/var/www/myopencart/upload",
+    "deployed_paths": [
+      "upload/blog/silicone-anal-lube-safety-guide/",
+      "upload/blog/vibrating-kegel-balls-safety-guide/",
+      "upload/blog/assets/silicone-anal-lube-safety-guide-opus-cover.png",
+      "upload/blog/assets/vibrating-kegel-balls-safety-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ],
+    "permissions": "www-data:www-data, dirs 755, files 644"
+  },
+  "live_verification": {
+    "status": "pass",
+    "file": "output/live_verification_2026-08-02.json",
+    "results": {
+      "articles": [
+        {
+          "url": "https://shoplovanest.com/blog/silicone-anal-lube-safety-guide/",
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "h1_count": 1,
+          "gtag_script_count": 1,
+          "gtag_config_count": 1,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": 4,
+          "image_seo_metadata": true,
+          "pass": true
+        },
+        {
+          "url": "https://shoplovanest.com/blog/vibrating-kegel-balls-safety-guide/",
+          "http_status": 200,
+          "title_present": true,
+          "meta_present": true,
+          "h1_count": 1,
+          "gtag_script_count": 1,
+          "gtag_config_count": 1,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": 2,
+          "image_seo_metadata": true,
+          "pass": true
+        }
+      ],
+      "blog_index": {
+        "http_status": 200,
+        "links": {
+          "silicone-anal-lube-safety-guide": true,
+          "vibrating-kegel-balls-safety-guide": true
+        }
+      },
+      "sitemap": {
+        "http_status": 200,
+        "urls": {
+          "silicone-anal-lube-safety-guide": true,
+          "vibrating-kegel-balls-safety-guide": true
+        },
+        "image_metadata": {
+          "silicone-anal-lube-safety-guide": true,
+          "vibrating-kegel-balls-safety-guide": true
+        },
+        "lastmod": {
+          "silicone-anal-lube-safety-guide": true,
+          "vibrating-kegel-balls-safety-guide": true
+        }
+      },
+      "overall_pass": true
+    }
+  },
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-08-02",
+    "sent_at": "2026-08-02T12:38:33.566739+08:00",
+    "exit_code": 0,
+    "message_file": "output/daily_blog_2026-08-02_success.eml"
   }
 }

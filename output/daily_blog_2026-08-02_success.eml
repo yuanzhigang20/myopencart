@@ -1,0 +1,30 @@
+From: yuanzhigang20@gmail.com
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-08-02
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest Daily Blog Deployment Complete - 2026-08-02
+
+Two article URLs:
+1. https://shoplovanest.com/blog/silicone-anal-lube-safety-guide/
+   Primary keywords: silicone anal lube; silicone based anal lube; is silicone lube safe
+
+2. https://shoplovanest.com/blog/vibrating-kegel-balls-safety-guide/
+   Primary keywords: vibrating kegel balls; silicone kegel balls; kegel balls for beginners
+
+Commit hash: 16a61f98cb57
+
+Verification summary:
+- Both article URLs returned HTTP 200.
+- Each article has title/meta, exactly one H1, Google tag G-P2LJRXN3D1 script/config exactly once, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, and image SEO metadata.
+- Local quality scores: 100/100 for both articles.
+- Generated topic-relevant images using opus-image-1.5 via the configured endpoint.
+
+Blog index status:
+- https://shoplovanest.com/blog/ returned HTTP 200 and links both new articles.
+
+Sitemap status:
+- https://shoplovanest.com/sitemap.xml returned HTTP 200 and includes both new URLs, 2026-08-02 lastmod, and image metadata.
+
+Email status:
+- Sending through /opt/homebrew/bin/msmtp with /Users/grant/.msmtprc.
