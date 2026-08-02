@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-02",
+  "articles": [
+    {
+      "slug": "silicone-anal-lube-safety-guide",
+      "title": "Silicone Anal Lube Safety Guide",
+      "title_len": 31,
+      "meta_len": 139,
+      "h1_count": 1,
+      "gtag_script_count": 1,
+      "gtag_config_count": 1,
+      "gtag_immediately_after_head": true,
+      "word_count": 1271,
+      "quick_answer": true,
+      "red_flags": true,
+      "faq_schema": true,
+      "authority_refs": 4,
+      "related_blog_links": 4,
+      "product_support_links": 3,
+      "image_seo_metadata": true,
+      "banned_scan_pass": true,
+      "quality_score": 100,
+      "pass": true
+    },
+    {
+      "slug": "vibrating-kegel-balls-safety-guide",
+      "title": "Vibrating Kegel Balls Safety Guide",
+      "title_len": 34,
+      "meta_len": 139,
+      "h1_count": 1,
+      "gtag_script_count": 1,
+      "gtag_config_count": 1,
+      "gtag_immediately_after_head": true,
+      "word_count": 1289,
+      "quick_answer": true,
+      "red_flags": true,
+      "faq_schema": true,
+      "authority_refs": 4,
+      "related_blog_links": 4,
+      "product_support_links": 3,
+      "image_seo_metadata": true,
+      "banned_scan_pass": true,
+      "quality_score": 100,
+      "pass": true
+    }
+  ],
+  "sitemap": [
+    {
+      "url": "https://shoplovanest.com/blog/silicone-anal-lube-safety-guide/",
+      "found": true,
+      "lastmod_image_metadata_pass": true
+    },
+    {
+      "url": "https://shoplovanest.com/blog/vibrating-kegel-balls-safety-guide/",
+      "found": true,
+      "lastmod_image_metadata_pass": true
+    }
+  ],
+  "index": {
+    "blog_index_links": [
+      true,
+      true
+    ],
+    "blog_index_gtag_script_count": 1,
+    "blog_index_gtag_config_count": 1
+  },
+  "overall_pass": true
+}

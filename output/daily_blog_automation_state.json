@@ -1,32 +1,32 @@
 {
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "what-do-cock-rings-do-safety-guide",
-      "title": "What Do Cock Rings Do? Safety Guide",
-      "url": "https://shoplovanest.com/blog/what-do-cock-rings-do-safety-guide/",
+      "slug": "silicone-anal-lube-safety-guide",
+      "title": "Silicone Anal Lube Safety Guide",
+      "url": "https://shoplovanest.com/blog/silicone-anal-lube-safety-guide/",
       "primary_keywords": [
-        "what do cock rings do",
-        "what is a cock ring for",
-        "cock ring benefits"
+        "silicone anal lube",
+        "silicone based anal lube",
+        "is silicone lube safe"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected what do cock rings do, what is a cock ring for, what is a cock ring used for, purpose of cock ring, and cock ring benefits from the cock-ring keyword cluster. Clustered them into one plain-English function, fit, time-limit, and red-flag intent instead of making separate thin pages or unsupported benefit claims.",
-      "intent_cluster": "Cock ring function and safety intent — shoppers want to understand what the product is for, how fit/material/time limits affect comfort, what claims to distrust, and which checkout details matter before buying."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected silicone anal lube, silicone based anal lube, silicone personal lube, best silicone based lube, and is silicone lube safe from the silicone-lube cluster. Clustered them into one anal-use buyer-safety intent focused on condom compatibility, silicone-toy conflicts, cleanup, ingredient transparency, and checkout red flags rather than thin keyword pages.",
+      "intent_cluster": "Silicone anal lube buyer-safety intent — shoppers want to know when silicone lubricant makes sense, what it can be used with, what materials it may damage, how cleanup differs, and which listing claims deserve caution."
     },
     {
-      "slug": "electric-male-masturbator-buying-checklist",
-      "title": "Electric Male Masturbator Buying Checklist",
-      "url": "https://shoplovanest.com/blog/electric-male-masturbator-buying-checklist/",
+      "slug": "vibrating-kegel-balls-safety-guide",
+      "title": "Vibrating Kegel Balls Safety Guide",
+      "url": "https://shoplovanest.com/blog/vibrating-kegel-balls-safety-guide/",
       "primary_keywords": [
-        "electric male masturbator",
-        "male masturbator machine",
-        "top rated male masturbators"
+        "vibrating kegel balls",
+        "silicone kegel balls",
+        "kegel balls for beginners"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected electric male masturbator, male masturbator machine, automated male masturbator, male masturbator toy, and top rated male masturbators from the male-masturbator cluster. Clustered them into one electric-device buying checklist focused on motor style, removable sleeves, cleaning, drying, charging, noise, privacy, and warranty rather than separate thin articles.",
-      "intent_cluster": "Electric male masturbator commercial comparison intent — shoppers want a realistic checklist for powered features, sleeve materials, cleaning burden, charging, sound, app/privacy concerns, and post-purchase support."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected vibrating kegel balls, silicone kegel balls, silicone kegel ball, kegel balls for beginners, and kegel balls for men from the kegel-balls cluster. Clustered them into one buyer-safety intent focused on size, weight, retrieval design, controls, cleaning, charging, and cautious claims rather than medical promises.",
+      "intent_cluster": "Vibrating kegel balls buyer-safety intent — shoppers want a beginner-friendly checklist for size, weight, retrieval features, vibration controls, charging limits, cleaning, body-contact materials, and claim red flags."
     }
   ],
   "keyword_source_files_read": [
@@ -36,370 +36,349 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "what do cock rings do",
+      "source_file": "kegel-balls_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "kegel balls",
+      "Keyword": "kegel balls for men",
       "Intent": "Informational",
-      "Volume": "6600",
-      "Trend": "0.55,0.67,0.67,1.00,0.36,0.44,0.55,0.67,0.67,0.67,1.00,0.44",
-      "Keyword Difficulty": "46",
-      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
+      "Volume": "480",
+      "Trend": "0.55,0.65,0.65,0.82,0.82,0.55,0.65,0.65,1.00,0.82,0.82,0.65",
+      "Keyword Difficulty": "42",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Discussions and forums, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "what is a cock ring for",
+      "source_file": "kegel-balls_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "kegel balls",
+      "Keyword": "silicone kegel ball",
       "Intent": "Informational",
-      "Volume": "1900",
-      "Trend": "1.00,0.07,0.55,0.30,0.55,0.36,0.43,0.55,0.66,0.55,0.43,0.36",
-      "Keyword Difficulty": "38",
-      "SERP Features": "AI Overview, People also ask"
+      "Volume": "480",
+      "Trend": "0.00,0.00,0.00,0.00,0.00,0.36,0.04,0.04,1.00,0.36,0.44,0.27",
+      "Keyword Difficulty": "24",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Discussions and forums"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "what is a cock ring used for",
+      "source_file": "kegel-balls_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "kegel balls",
+      "Keyword": "silicone kegel balls",
       "Intent": "Informational",
-      "Volume": "880",
-      "Trend": "0.02,0.13,0.20,0.16,0.41,0.36,0.36,0.41,0.41,0.54,0.36,1.00",
-      "Keyword Difficulty": "37",
-      "SERP Features": "AI Overview, People also ask"
+      "Volume": "390",
+      "Trend": "0.13,0.31,0.46,1.00,0.08,0.08,0.03,0.02,0.37,0.02,0.11,0.07",
+      "Keyword Difficulty": "25",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "cock ring benefits",
-      "Intent": "Informational",
-      "Volume": "590",
-      "Trend": "0.82,0.82,1.00,0.82,0.82,0.54,0.29,0.44,0.67,0.44,0.44,0.54",
-      "Keyword Difficulty": "45",
-      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "purpose of cock ring",
+      "source_file": "kegel-balls_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "kegel balls",
+      "Keyword": "kegel balls for beginners",
       "Intent": "Informational",
       "Volume": "260",
-      "Trend": "0.00,0.38,0.15,0.08,0.31,0.38,0.62,0.00,0.77,1.00,0.77,0.38",
-      "Keyword Difficulty": "35",
-      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
+      "Trend": "0.23,0.66,0.66,0.28,0.28,0.18,0.66,0.54,1.00,1.00,0.81,0.44",
+      "Keyword Difficulty": "25",
+      "SERP Features": "Sitelinks, AI Overview, Image pack, Video, Video carousel, Short videos, People also ask, Discussions and forums, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "male masturbator toy",
+      "source_file": "kegel-balls_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "kegel balls",
+      "Keyword": "vibrating kegel balls",
+      "Intent": "Informational",
+      "Volume": "210",
+      "Trend": "0.52,0.52,0.65,1.00,0.65,0.65,0.52,0.65,0.52,0.33,0.43,0.65",
+      "Keyword Difficulty": "23",
+      "SERP Features": "Sitelinks, Video, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "silicone lube",
+      "Keyword": "best silicone based lube",
       "Intent": "Commercial",
-      "Volume": "1300",
-      "Trend": "0.09,0.09,0.11,0.11,0.11,0.36,0.36,0.16,1.00,0.16,0.55,0.66",
-      "Keyword Difficulty": "35",
-      "SERP Features": "Sitelinks"
+      "Volume": "480",
+      "Trend": "0.30,0.30,0.36,0.36,0.24,0.30,1.00,0.24,0.30,0.45,0.55,0.36",
+      "Keyword Difficulty": "20",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches, Popular products"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "top rated male masturbators",
-      "Intent": "Informational, Commercial",
-      "Volume": "1000",
-      "Trend": "0.20,0.34,0.44,1.00,0.13,0.20,0.30,0.08,0.13,0.20,0.65,0.30",
-      "Keyword Difficulty": "26",
-      "SERP Features": "Sitelinks, AI Overview"
+      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "silicone lube",
+      "Keyword": "silicone personal lube",
+      "Intent": "Commercial",
+      "Volume": "480",
+      "Trend": "0.54,0.81,1.00,0.81,0.66,0.81,0.54,0.66,1.00,0.81,0.66,0.66",
+      "Keyword Difficulty": "24",
+      "SERP Features": "Sitelinks, Video, Video carousel, People also ask, Popular products"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "male masturbator machine",
+      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "silicone lube",
+      "Keyword": "silicone anal lube",
       "Intent": "Commercial",
       "Volume": "390",
-      "Trend": "0.67,0.07,0.04,0.15,0.67,0.36,0.67,0.54,1.00,0.67,0.67,0.82",
-      "Keyword Difficulty": "40",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "automated male masturbator",
-      "Intent": "Commercial",
-      "Volume": "260",
-      "Trend": "0.44,0.00,1.00,1.00,0.81,0.54,0.28,0.66,0.44,0.44,0.66,0.54",
-      "Keyword Difficulty": "36",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "electric male masturbator",
-      "Intent": "Commercial",
-      "Volume": "260",
-      "Trend": "0.66,0.66,0.52,1.00,0.82,0.66,0.66,0.82,0.66,0.66,0.82,0.34",
+      "Trend": "0.66,0.66,0.81,0.81,1.00,0.81,0.66,0.66,1.00,1.00,0.66,0.81",
       "Keyword Difficulty": "33",
-      "SERP Features": "Sitelinks"
+      "SERP Features": "Sitelinks, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "silicone lube",
+      "Keyword": "silicone based anal lube",
+      "Intent": "Informational",
+      "Volume": "320",
+      "Trend": "0.05,0.04,0.11,0.08,0.08,0.20,0.08,0.07,1.00,0.37,0.20,0.20",
+      "Keyword Difficulty": "26",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "silicone-lube_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "silicone lube",
+      "Keyword": "is silicone lube safe",
+      "Intent": "Informational",
+      "Volume": "210",
+      "Trend": "1.00,0.64,0.64,0.64,0.64,0.52,0.52,0.52,0.80,0.52,0.52,0.64",
+      "Keyword Difficulty": "19",
+      "SERP Features": "Sitelinks, AI Overview, Video, Video carousel, Discussions and forums, Related searches"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "what do cock rings do",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
+      "Keyword": "kegel balls for men",
+      "Search intent": "Informational",
+      "Topic cluster": "Pelvic wellness accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Assigned URL": "/blog/kegel-balls-guide/",
+      "Assigned article title": "Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes",
       "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P1",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "what is a cock ring for",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P1",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "what is a cock ring used for",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Reason": "Keep the guidance educational and avoid medical promises. Commercial value: Medium; difficulty: Medium.",
       "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "cock ring benefits",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "purpose of cock ring",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "male masturbator toy",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
-      "Action": "Update existing article",
-      "Reason": "Make cleaning and drying as important as product style. Commercial value: High; difficulty: Medium.",
-      "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "top rated male masturbators",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Keyword": "silicone kegel ball",
+      "Search intent": "Informational",
+      "Topic cluster": "Pelvic wellness accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/kegel-balls-guide/",
+      "Assigned article title": "Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes",
       "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
+      "Reason": "Kegel accessory informational intent; safety how-to subintent links to safe-use article.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "silicone kegel balls",
+      "Search intent": "Informational",
+      "Topic cluster": "Pelvic wellness accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/kegel-balls-guide/",
+      "Assigned article title": "Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes",
+      "Action": "Update existing article",
+      "Reason": "Kegel accessory informational intent; safety how-to subintent links to safe-use article.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "kegel balls for beginners",
+      "Search intent": "Informational",
+      "Topic cluster": "Pelvic wellness accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/kegel-balls-guide/",
+      "Assigned article title": "Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes",
+      "Action": "Update existing article",
+      "Reason": "Kegel accessory informational intent; safety how-to subintent links to safe-use article.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "vibrating kegel balls",
+      "Search intent": "Informational",
+      "Topic cluster": "Pelvic wellness accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/kegel-balls-guide/",
+      "Assigned article title": "Kegel Balls Guide: Pelvic Wellness Basics and Safety Notes",
+      "Action": "Update existing article",
+      "Reason": "Kegel accessory informational intent; safety how-to subintent links to safe-use article.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "best silicone based lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/beginner-lubricant-guide/",
+      "Assigned article title": "Beginner Lubricant Guide: Ingredients, Feel, and Compatibility",
+      "Action": "Update existing article",
+      "Reason": "General beginner lubricant education.",
       "Priority": "P1",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "male masturbator machine",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Keyword": "silicone personal lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/beginner-lubricant-guide/",
+      "Assigned article title": "Beginner Lubricant Guide: Ingredients, Feel, and Compatibility",
       "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P2",
+      "Reason": "General beginner lubricant education.",
+      "Priority": "P1",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "automated male masturbator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Keyword": "silicone anal lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/beginner-lubricant-guide/",
+      "Assigned article title": "Beginner Lubricant Guide: Ingredients, Feel, and Compatibility",
       "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P2",
+      "Reason": "General beginner lubricant education.",
+      "Priority": "P1",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "electric male masturbator",
-      "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Keyword": "silicone based anal lube",
+      "Search intent": "Informational",
+      "Topic cluster": "Lubricant basics",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/beginner-lubricant-guide/",
+      "Assigned article title": "Beginner Lubricant Guide: Ingredients, Feel, and Compatibility",
       "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P2",
+      "Reason": "General beginner lubricant education.",
+      "Priority": "P1",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "is silicone lube safe",
+      "Search intent": "Comparison",
+      "Topic cluster": "Silicone lubricant",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/silicone-lube-guide/",
+      "Assigned article title": "Silicone Lube: Best Uses, Limits, and Toy Compatibility",
+      "Action": "Update existing article",
+      "Reason": "Silicone lubricant usage/compatibility intent.",
+      "Priority": "P1",
       "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-08-01T08:38:42.393209+08:00",
+  "generated_at": "2026-08-02T10:44:32.271320+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
-    "generated_at": "2026-08-01T08:38:42.393501+08:00",
+    "generated_at": "2026-08-02T10:44:32.271979+08:00",
     "files": [
-      "upload/blog/assets/what-do-cock-rings-do-safety-guide-opus-cover.png",
-      "upload/blog/assets/electric-male-masturbator-buying-checklist-opus-cover.png"
+      "upload/blog/assets/silicone-anal-lube-safety-guide-opus-cover.png",
+      "upload/blog/assets/vibrating-kegel-balls-safety-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/what-do-cock-rings-do-safety-guide-opus-cover.png",
+        "file": "upload/blog/assets/silicone-anal-lube-safety-guide-opus-cover.png",
         "status": "pass",
         "endpoint": "responses",
         "model": "opus-image-1.5",
-        "response_id": "resp_0ec055c3391bd0ce016a6d3fb47c1c819492819a4cef4abea1",
-        "bytes": 2657664
+        "response_id": "resp_0db67b28c805f642016a6eaea285dc819091ad66255ab38e49",
+        "bytes": 2351576
       },
       {
-        "file": "upload/blog/assets/electric-male-masturbator-buying-checklist-opus-cover.png",
+        "file": "upload/blog/assets/vibrating-kegel-balls-safety-guide-opus-cover.png",
         "status": "pass",
         "endpoint": "responses",
         "model": "opus-image-1.5",
-        "response_id": "resp_0a50d210832c87d8016a6d3fe786448197bce3273105c7f391",
-        "bytes": 2164054
+        "response_id": "resp_03ab75553e66b54c016a6eaed7eb7c819497687d3cb48c4a40",
+        "bytes": 2317258
       }
     ]
   },
-  "validation": {
+  "validated_at": "2026-08-02T12:31:51.667552+08:00",
+  "content_quality_checks": {
     "status": "pass",
-    "file": "output/daily_blog_validation_2026-08-01.json",
-    "quality_scores": {
-      "what-do-cock-rings-do-safety-guide": 92,
-      "electric-male-masturbator-buying-checklist": 93
-    }
+    "validation_file": "output/daily_blog_validation_2026-08-02.json",
+    "articles": [
+      {
+        "slug": "silicone-anal-lube-safety-guide",
+        "title": "Silicone Anal Lube Safety Guide",
+        "title_len": 31,
+        "meta_len": 139,
+        "h1_count": 1,
+        "gtag_script_count": 1,
+        "gtag_config_count": 1,
+        "gtag_immediately_after_head": true,
+        "word_count": 1271,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": 4,
+        "related_blog_links": 4,
+        "product_support_links": 3,
+        "image_seo_metadata": true,
+        "banned_scan_pass": true,
+        "quality_score": 100,
+        "pass": true
+      },
+      {
+        "slug": "vibrating-kegel-balls-safety-guide",
+        "title": "Vibrating Kegel Balls Safety Guide",
+        "title_len": 34,
+        "meta_len": 139,
+        "h1_count": 1,
+        "gtag_script_count": 1,
+        "gtag_config_count": 1,
+        "gtag_immediately_after_head": true,
+        "word_count": 1289,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": 4,
+        "related_blog_links": 4,
+        "product_support_links": 3,
+        "image_seo_metadata": true,
+        "banned_scan_pass": true,
+        "quality_score": 100,
+        "pass": true
+      }
+    ],
+    "overall_pass": true
   },
-  "commit": {
-    "hash": "62ecf7bc44df8a2fa61d10dfb13ec617b4ac177a",
-    "pushed": true,
-    "remote": "origin master"
-  },
-  "deploy": {
+  "sitemap": {
     "status": "pass",
-    "method": "targeted rsync",
-    "server": "root@153.75.235.56:/var/www/myopencart/upload",
-    "permissions": "www-data:www-data, dirs 755, files 644"
+    "checks": [
+      {
+        "url": "https://shoplovanest.com/blog/silicone-anal-lube-safety-guide/",
+        "found": true,
+        "lastmod_image_metadata_pass": true
+      },
+      {
+        "url": "https://shoplovanest.com/blog/vibrating-kegel-balls-safety-guide/",
+        "found": true,
+        "lastmod_image_metadata_pass": true
+      }
+    ]
   },
-  "live_verification": {
+  "blog_index": {
     "status": "pass",
-    "file": "output/live_verification_2026-08-01.json",
-    "summary": {
-      "articles": [
-        {
-          "url": "https://shoplovanest.com/blog/what-do-cock-rings-do-safety-guide/",
-          "status_code": 200,
-          "title": true,
-          "meta_description": true,
-          "h1_count": 1,
-          "gtag_script_count": 1,
-          "gtag_config_count": 1,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": 4,
-          "og_image": true,
-          "twitter_image": true,
-          "image_object": true,
-          "hero_image_http": 200,
-          "pass": true
-        },
-        {
-          "url": "https://shoplovanest.com/blog/electric-male-masturbator-buying-checklist/",
-          "status_code": 200,
-          "title": true,
-          "meta_description": true,
-          "h1_count": 1,
-          "gtag_script_count": 1,
-          "gtag_config_count": 1,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": 4,
-          "og_image": true,
-          "twitter_image": true,
-          "image_object": true,
-          "hero_image_http": 200,
-          "pass": true
-        }
+    "checks": {
+      "blog_index_links": [
+        true,
+        true
       ],
-      "blog_index": {
-        "url": "https://shoplovanest.com/blog/",
-        "status_code": 200,
-        "links": {
-          "what-do-cock-rings-do-safety-guide": true,
-          "electric-male-masturbator-buying-checklist": true
-        },
-        "pass": true
-      },
-      "sitemap": {
-        "url": "https://shoplovanest.com/sitemap.xml",
-        "status_code": 200,
-        "urls": {
-          "what-do-cock-rings-do-safety-guide": true,
-          "electric-male-masturbator-buying-checklist": true
-        },
-        "lastmod_2026_08_01": true,
-        "image_metadata": true,
-        "pass": true
-      },
-      "overall_pass": true
+      "blog_index_gtag_script_count": 1,
+      "blog_index_gtag_config_count": 1
     }
-  },
-  "email": {
-    "status": "sent",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "recipient": "yuanzhigang20@gmail.com",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-08-01",
-    "attempted_at": "2026-08-01T10:30:00+08:00",
-    "exit_code": 0,
-    "accepted_by_msmtp": true,
-    "message_file": "output/daily_blog_2026-08-01_success_with_from.eml",
-    "note": "Retried after SMTP connectivity recovered. Added From header for envelope sender and msmtp exited 0."
-  },
-  "completed_at": "2026-08-01T10:30:00+08:00"
+  }
 }
