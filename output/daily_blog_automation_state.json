@@ -1,7 +1,7 @@
 {
   "date": "2026-08-03",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -14,7 +14,7 @@
         "glycerin free water based lube"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected natural water based lube, water based lube for sensitive skin, glycerin free water based lube, and best water based lube from the water-based-lube cluster. Clustered them into one natural-claim buyer-safety intent focused on ingredient transparency, preservative reality, condom/toy compatibility, sensitive-skin caution, and greenwashing red flags rather than a thin keyword page.",
-      "intent_cluster": "Natural water-based lube buyer-safety intent \u2014 shoppers want to know what natural wording can and cannot tell them, which ingredient and compatibility details matter, and when sensitive-skin or eco-style claims need extra caution."
+      "intent_cluster": "Natural water-based lube buyer-safety intent — shoppers want to know what natural wording can and cannot tell them, which ingredient and compatibility details matter, and when sensitive-skin or eco-style claims need extra caution."
     },
     {
       "slug": "cock-and-ball-ring-safety-guide",
@@ -26,7 +26,7 @@
         "adjustable cock ring"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected cock and ball ring, cock ring with vibrator, adjustable cock ring, how to wear a cock ring, and what do cock rings do from the cock-ring cluster. Clustered them into one combination-ring buyer-safety intent focused on fit, flexible materials, removal, vibration add-ons, time limits, and red flags rather than duplicating the general cock ring guide.",
-      "intent_cluster": "Cock and ball ring buyer-safety intent \u2014 shoppers want a practical fit and checkout guide for rings that involve more than a simple shaft-only design, including stretch, removal, time limits, materials, and powered add-ons."
+      "intent_cluster": "Cock and ball ring buyer-safety intent — shoppers want a practical fit and checkout guide for rings that involve more than a simple shaft-only design, including stretch, removal, time limits, materials, and powered add-ons."
     }
   ],
   "keyword_source_files_read": [
@@ -361,5 +361,91 @@
     "status": "pass",
     "file": "output/daily_blog_validation_2026-08-03.json",
     "overall_pass": true
+  },
+  "completed_at": "2026-08-03T08:57:12.094522+08:00",
+  "commit": "e355fa36d452",
+  "deploy": {
+    "status": "pass",
+    "target": "root@153.75.235.56:/var/www/myopencart/upload",
+    "method": "targeted rsync; chmod/chown applied to changed paths"
+  },
+  "live_verification": {
+    "status": "pass",
+    "file": "output/live_verification_2026-08-03.json",
+    "overall_pass": true,
+    "summary": {
+      "articles": [
+        {
+          "url": "https://shoplovanest.com/blog/natural-water-based-lube-guide/",
+          "http_status": 200,
+          "title": "Natural Water-Based Lube Guide",
+          "title_present": true,
+          "meta_description_present": true,
+          "meta_description_len": 140,
+          "h1_count": 1,
+          "gtag_script_count": 1,
+          "gtag_config_count": 1,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": 3,
+          "image_seo_metadata": true,
+          "og_image_alt": true,
+          "twitter_image_alt": true,
+          "pass": true
+        },
+        {
+          "url": "https://shoplovanest.com/blog/cock-and-ball-ring-safety-guide/",
+          "http_status": 200,
+          "title": "Cock and Ball Ring Safety Guide",
+          "title_present": true,
+          "meta_description_present": true,
+          "meta_description_len": 138,
+          "h1_count": 1,
+          "gtag_script_count": 1,
+          "gtag_config_count": 1,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": 3,
+          "image_seo_metadata": true,
+          "og_image_alt": true,
+          "twitter_image_alt": true,
+          "pass": true
+        }
+      ],
+      "blog_index": {
+        "url": "https://shoplovanest.com/blog/",
+        "http_status": 200,
+        "links": [
+          true,
+          true
+        ],
+        "gtag_script_count": 1,
+        "gtag_config_count": 1,
+        "pass": true
+      },
+      "sitemap": {
+        "url": "https://shoplovanest.com/sitemap.xml",
+        "http_status": 200,
+        "urls": [
+          true,
+          true
+        ],
+        "lastmod_2026_08_03": true,
+        "image_metadata": true,
+        "pass": true
+      },
+      "overall_pass": true
+    }
+  },
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "sent_at": "2026-08-03T08:57:12.094522+08:00",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-08-03",
+    "source_file": "output/daily_blog_2026-08-03_success.eml"
   }
 }

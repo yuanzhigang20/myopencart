@@ -1,0 +1,30 @@
+From: yuanzhigang20@gmail.com
+To: yuanzhigang20@gmail.com
+Subject: ShopLovaNest Daily Blog Deployment Complete - 2026-08-03
+Content-Type: text/plain; charset=UTF-8
+
+ShopLovaNest Daily Blog Deployment Complete - 2026-08-03
+
+Two new SEO blog articles were generated from the mandatory keyword files, validated, committed, pushed, deployed, and verified live.
+
+Article 1:
+- URL: https://shoplovanest.com/blog/natural-water-based-lube-guide/
+- Primary keywords: natural water based lube; water based lube for sensitive skin; glycerin free water based lube
+- Intent: Natural water-based lube buyer-safety and ingredient-transparency guide.
+
+Article 2:
+- URL: https://shoplovanest.com/blog/cock-and-ball-ring-safety-guide/
+- Primary keywords: cock and ball ring; cock ring with vibrator; adjustable cock ring
+- Intent: Cock and ball ring fit, removal, material, timing, and powered-feature safety guide.
+
+Commit:
+- e355fa36d452
+
+Verification summary:
+- Local validation passed: title/meta length, exactly one H1, Google tag once, 1000+ useful words, Quick Answer, Red Flags, FAQPage JSON-LD, authority references, internal/product links, image SEO metadata, sitemap image metadata, banned scan, quality score >=85.
+- Live article verification passed: HTTP 200 for both articles, title/meta present, one H1, Google tag script/config exactly once, Quick Answer, Red Flags, FAQPage schema, authority references, and image SEO metadata present.
+- Blog index status: HTTP 200 and links both new articles.
+- Sitemap status: HTTP 200, includes both article URLs, 2026-08-03 lastmod, and image metadata.
+
+Email status:
+- Sending via /opt/homebrew/bin/msmtp using /Users/grant/.msmtprc.
