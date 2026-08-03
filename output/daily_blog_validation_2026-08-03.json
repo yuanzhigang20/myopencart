@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-03",
+  "articles": [
+    {
+      "slug": "natural-water-based-lube-guide",
+      "title": "Natural Water-Based Lube Guide",
+      "title_len": 30,
+      "meta_len": 140,
+      "h1_count": 1,
+      "gtag_script_count": 1,
+      "gtag_config_count": 1,
+      "gtag_immediately_after_head": true,
+      "word_count": 1223,
+      "quick_answer": true,
+      "red_flags": true,
+      "faq_schema": true,
+      "authority_refs": 4,
+      "related_blog_links": 4,
+      "product_support_links": 3,
+      "image_seo_metadata": true,
+      "banned_scan_pass": true,
+      "quality_score": 100,
+      "pass": true
+    },
+    {
+      "slug": "cock-and-ball-ring-safety-guide",
+      "title": "Cock and Ball Ring Safety Guide",
+      "title_len": 31,
+      "meta_len": 138,
+      "h1_count": 1,
+      "gtag_script_count": 1,
+      "gtag_config_count": 1,
+      "gtag_immediately_after_head": true,
+      "word_count": 1167,
+      "quick_answer": true,
+      "red_flags": true,
+      "faq_schema": true,
+      "authority_refs": 4,
+      "related_blog_links": 4,
+      "product_support_links": 3,
+      "image_seo_metadata": true,
+      "banned_scan_pass": true,
+      "quality_score": 100,
+      "pass": true
+    }
+  ],
+  "sitemap": [
+    {
+      "url": "https://shoplovanest.com/blog/natural-water-based-lube-guide/",
+      "found": true,
+      "lastmod_image_metadata_pass": true
+    },
+    {
+      "url": "https://shoplovanest.com/blog/cock-and-ball-ring-safety-guide/",
+      "found": true,
+      "lastmod_image_metadata_pass": true
+    }
+  ],
+  "index": {
+    "blog_index_links": [
+      true,
+      true
+    ],
+    "blog_index_gtag_script_count": 1,
+    "blog_index_gtag_config_count": 1
+  },
+  "overall_pass": true
+}
