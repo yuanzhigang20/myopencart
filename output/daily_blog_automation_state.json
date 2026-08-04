@@ -1,7 +1,7 @@
 {
   "date": "2026-08-04",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit_deploy_email",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -14,7 +14,7 @@
         "toy cleaner"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy cleaner plus related cleaner intent from the adult-toys care cluster. Existing cleaning articles cover mistakes and storage, so this new article focuses on choosing cleaner products, material compatibility, label claims, rinsing, drying, and sanitation red flags rather than repeating a general cleaning checklist.",
-      "intent_cluster": "Adult toy cleaner purchase intent \u2014 shoppers want to know whether a cleaner spray or foam is appropriate for their toy materials, how to read ingredient and rinsing directions, and which sanitation claims should slow checkout."
+      "intent_cluster": "Adult toy cleaner purchase intent — shoppers want to know whether a cleaner spray or foam is appropriate for their toy materials, how to read ingredient and rinsing directions, and which sanitation claims should slow checkout."
     },
     {
       "slug": "top-rated-male-masturbators-checklist",
@@ -26,7 +26,7 @@
         "male masturbator sleeve"
       ],
       "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected top rated male masturbators from the male-masturbator keyword cluster and grouped it with best male masturbator and sleeve comparison intent. Existing male masturbator pages cover beginner types, materials, cleaning, and realistic styling; this new article focuses on how to interpret ratings, reviews, value, privacy, and red flags before checkout.",
-      "intent_cluster": "Top-rated male masturbator comparison intent \u2014 shoppers want a discreet framework for interpreting reviews, materials, sleeve feel, cleaning burden, noise, storage, and return policies without falling for hype or unsupported claims."
+      "intent_cluster": "Top-rated male masturbator comparison intent — shoppers want a discreet framework for interpreting reviews, materials, sleeve feel, cleaning burden, noise, storage, and return policies without falling for hype or unsupported claims."
     }
   ],
   "keyword_source_files_read": [
@@ -229,5 +229,70 @@
     ],
     "all_passed": true
   },
-  "validated_at": "2026-08-04T08:40:52.440320+08:00"
+  "validated_at": "2026-08-04T08:40:52.440320+08:00",
+  "completed_at": "2026-08-04T08:49:19.967137+08:00",
+  "commit": "0e00ce2652ef77800f292f472bec700e007e65f9",
+  "pushed": true,
+  "deploy": {
+    "status": "pass",
+    "target": "root@153.75.235.56:/var/www/myopencart/upload",
+    "method": "targeted rsync for two blog folders/assets/blog index/sitemap; permissions fixed www-data:www-data dirs 755 files 644"
+  },
+  "live_verification": {
+    "date": "2026-08-04",
+    "articles": [
+      {
+        "slug": "adult-toy-cleaner-safety-guide",
+        "url": "https://shoplovanest.com/blog/adult-toy-cleaner-safety-guide/",
+        "checks": {
+          "http_200": true,
+          "title_meta": true,
+          "one_h1": true,
+          "gtag_script_config_once": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": true,
+          "image_seo": true
+        },
+        "passed": true
+      },
+      {
+        "slug": "top-rated-male-masturbators-checklist",
+        "url": "https://shoplovanest.com/blog/top-rated-male-masturbators-checklist/",
+        "checks": {
+          "http_200": true,
+          "title_meta": true,
+          "one_h1": true,
+          "gtag_script_config_once": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": true,
+          "image_seo": true
+        },
+        "passed": true
+      }
+    ],
+    "blog_index": {
+      "http_200": true,
+      "adult-toy-cleaner-safety-guide": true,
+      "top-rated-male-masturbators-checklist": true
+    },
+    "sitemap": {
+      "http_200": true,
+      "adult-toy-cleaner-safety-guide": true,
+      "top-rated-male-masturbators-checklist": true
+    },
+    "all_passed": true
+  },
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-08-04",
+    "accepted_at": "2026-08-04T08:49:19.967137+08:00",
+    "note": "msmtp exited 0 after live verification; password was read from macOS Keychain and was not printed or stored."
+  }
 }

@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-04",
+  "articles": [
+    {
+      "slug": "adult-toy-cleaner-safety-guide",
+      "url": "https://shoplovanest.com/blog/adult-toy-cleaner-safety-guide/",
+      "checks": {
+        "http_200": true,
+        "title_meta": true,
+        "one_h1": true,
+        "gtag_script_config_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "image_seo": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "top-rated-male-masturbators-checklist",
+      "url": "https://shoplovanest.com/blog/top-rated-male-masturbators-checklist/",
+      "checks": {
+        "http_200": true,
+        "title_meta": true,
+        "one_h1": true,
+        "gtag_script_config_once": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_schema": true,
+        "authority_refs": true,
+        "image_seo": true
+      },
+      "passed": true
+    }
+  ],
+  "blog_index": {
+    "http_200": true,
+    "adult-toy-cleaner-safety-guide": true,
+    "top-rated-male-masturbators-checklist": true
+  },
+  "sitemap": {
+    "http_200": true,
+    "adult-toy-cleaner-safety-guide": true,
+    "top-rated-male-masturbators-checklist": true
+  },
+  "all_passed": true
+}
