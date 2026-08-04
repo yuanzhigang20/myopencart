@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-04",
+  "results": [
+    {
+      "slug": "adult-toy-cleaner-safety-guide",
+      "title": "Intimate Product Cleaner Guide",
+      "title_len": 30,
+      "meta_len": 143,
+      "word_count": 1824,
+      "quality_score": 100,
+      "checks": {
+        "title_under_60": true,
+        "meta_under_155": true,
+        "exactly_one_h1": true,
+        "gtag_once": true,
+        "word_count_1000_plus": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_count_4_6": true,
+        "faq_schema": true,
+        "related_blog_links_2_4": true,
+        "product_links_1_3": true,
+        "authority_refs": true,
+        "image_metadata": true,
+        "adult_safe_language": true,
+        "natural_english_depth": true
+      },
+      "index_link_present": true,
+      "sitemap_url_present": true,
+      "sitemap_lastmod_today": true,
+      "sitemap_image_metadata": true,
+      "passed": true
+    },
+    {
+      "slug": "top-rated-male-masturbators-checklist",
+      "title": "Top Rated Male Masturbators Checklist",
+      "title_len": 37,
+      "meta_len": 138,
+      "word_count": 1772,
+      "quality_score": 100,
+      "checks": {
+        "title_under_60": true,
+        "meta_under_155": true,
+        "exactly_one_h1": true,
+        "gtag_once": true,
+        "word_count_1000_plus": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_count_4_6": true,
+        "faq_schema": true,
+        "related_blog_links_2_4": true,
+        "product_links_1_3": true,
+        "authority_refs": true,
+        "image_metadata": true,
+        "adult_safe_language": true,
+        "natural_english_depth": true
+      },
+      "index_link_present": true,
+      "sitemap_url_present": true,
+      "sitemap_lastmod_today": true,
+      "sitemap_image_metadata": true,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

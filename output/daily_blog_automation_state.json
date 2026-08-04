@@ -1,32 +1,32 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit_deploy_email",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "natural-water-based-lube-guide",
-      "title": "Natural Water-Based Lube Guide",
-      "url": "https://shoplovanest.com/blog/natural-water-based-lube-guide/",
+      "slug": "adult-toy-cleaner-safety-guide",
+      "title": "Intimate Product Cleaner Guide",
+      "url": "https://shoplovanest.com/blog/adult-toy-cleaner-safety-guide/",
       "primary_keywords": [
-        "natural water based lube",
-        "water based lube for sensitive skin",
-        "glycerin free water based lube"
+        "adult toy cleaner",
+        "sex toy cleaner",
+        "toy cleaner"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected natural water based lube, water based lube for sensitive skin, glycerin free water based lube, and best water based lube from the water-based-lube cluster. Clustered them into one natural-claim buyer-safety intent focused on ingredient transparency, preservative reality, condom/toy compatibility, sensitive-skin caution, and greenwashing red flags rather than a thin keyword page.",
-      "intent_cluster": "Natural water-based lube buyer-safety intent — shoppers want to know what natural wording can and cannot tell them, which ingredient and compatibility details matter, and when sensitive-skin or eco-style claims need extra caution."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy cleaner plus related cleaner intent from the adult-toys care cluster. Existing cleaning articles cover mistakes and storage, so this new article focuses on choosing cleaner products, material compatibility, label claims, rinsing, drying, and sanitation red flags rather than repeating a general cleaning checklist.",
+      "intent_cluster": "Adult toy cleaner purchase intent \u2014 shoppers want to know whether a cleaner spray or foam is appropriate for their toy materials, how to read ingredient and rinsing directions, and which sanitation claims should slow checkout."
     },
     {
-      "slug": "cock-and-ball-ring-safety-guide",
-      "title": "Cock and Ball Ring Safety Guide",
-      "url": "https://shoplovanest.com/blog/cock-and-ball-ring-safety-guide/",
+      "slug": "top-rated-male-masturbators-checklist",
+      "title": "Top Rated Male Masturbators Checklist",
+      "url": "https://shoplovanest.com/blog/top-rated-male-masturbators-checklist/",
       "primary_keywords": [
-        "cock and ball ring",
-        "cock ring with vibrator",
-        "adjustable cock ring"
+        "top rated male masturbators",
+        "best male masturbator",
+        "male masturbator sleeve"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected cock and ball ring, cock ring with vibrator, adjustable cock ring, how to wear a cock ring, and what do cock rings do from the cock-ring cluster. Clustered them into one combination-ring buyer-safety intent focused on fit, flexible materials, removal, vibration add-ons, time limits, and red flags rather than duplicating the general cock ring guide.",
-      "intent_cluster": "Cock and ball ring buyer-safety intent — shoppers want a practical fit and checkout guide for rings that involve more than a simple shaft-only design, including stretch, removal, time limits, materials, and powered add-ons."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected top rated male masturbators from the male-masturbator keyword cluster and grouped it with best male masturbator and sleeve comparison intent. Existing male masturbator pages cover beginner types, materials, cleaning, and realistic styling; this new article focuses on how to interpret ratings, reviews, value, privacy, and red flags before checkout.",
+      "intent_cluster": "Top-rated male masturbator comparison intent \u2014 shoppers want a discreet framework for interpreting reviews, materials, sleeve feel, cleaning burden, noise, storage, and return policies without falling for hype or unsupported claims."
     }
   ],
   "keyword_source_files_read": [
@@ -36,416 +36,198 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "what do cock rings do",
+      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
+      "seed_keyword": "adult toys",
+      "Keyword": "adult toy cleaner",
       "Intent": "Informational",
-      "Volume": "6600",
-      "Trend": "0.55,0.67,0.67,1.00,0.36,0.44,0.55,0.67,0.67,0.67,1.00,0.44",
-      "Keyword Difficulty": "46",
-      "SERP Features": "Sitelinks, AI Overview, People also ask, Discussions and forums"
+      "Volume": "1900",
+      "Trend": "1.00,0.52,0.44,1.00,0.36,0.36,0.52,0.52,0.66,1.00,0.36,0.44",
+      "Keyword Difficulty": "26",
+      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "how to wear a cock ring",
+      "source_file": "adult-toys_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "adult toys",
+      "Keyword": "how to clean adult toys",
       "Intent": "Informational",
-      "Volume": "2900",
-      "Trend": "0.36,0.36,0.81,0.36,1.00,0.28,0.28,0.36,0.36,0.36,0.36,0.36",
-      "Keyword Difficulty": "23",
+      "Volume": "170",
+      "Trend": "0.53,0.53,0.43,0.53,0.65,0.43,0.43,0.53,0.53,1.00,0.43,0.43",
+      "Keyword Difficulty": "37",
       "SERP Features": "Sitelinks, AI Overview, People also ask"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "cock and ball ring",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "best male masturbator",
       "Intent": "Commercial",
-      "Volume": "1300",
-      "Trend": "0.71,0.71,0.71,1.00,1.00,0.71,0.71,0.71,0.71,0.71,0.57,0.57",
-      "Keyword Difficulty": "19",
-      "SERP Features": "Sitelinks, People also ask"
+      "Volume": "4400",
+      "Trend": "0.82,0.82,0.82,1.00,0.82,0.82,0.82,0.82,0.82,0.82,0.67,0.67",
+      "Keyword Difficulty": "32",
+      "SERP Features": "Sitelinks, AI Overview"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "adjustable cock ring",
+      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "male masturbator",
+      "Keyword": "top rated male masturbators",
       "Intent": "Informational, Commercial",
       "Volume": "1000",
-      "Trend": "0.30,0.30,0.36,0.36,0.36,1.00,1.00,0.36,0.36,0.36,0.30,0.30",
-      "Keyword Difficulty": "24",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "cock ring",
-      "Keyword": "cock ring with vibrator",
-      "Intent": "Commercial",
-      "Volume": "590",
-      "Trend": "0.80,0.80,1.00,1.00,1.00,0.80,0.80,1.00,1.00,1.00,0.80,0.80",
-      "Keyword Difficulty": "36",
-      "SERP Features": "Sitelinks"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "water based lube",
-      "Keyword": "best water based lube",
-      "Intent": "Commercial",
-      "Volume": "3600",
-      "Trend": "0.65,0.65,0.65,0.65,0.65,0.65,0.65,0.65,0.82,1.00,0.82,0.65",
-      "Keyword Difficulty": "49",
-      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches, Popular products"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "water based lube",
-      "Keyword": "water based lube for sensitive skin",
-      "Intent": "Informational",
-      "Volume": "480",
-      "Trend": "0.32,0.26,0.48,0.26,0.39,0.59,0.59,1.00,0.72,0.59,0.39,0.59",
-      "Keyword Difficulty": "18",
-      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches, Popular products"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "water based lube",
-      "Keyword": "natural water based lube",
-      "Intent": "Informational",
-      "Volume": "390",
-      "Trend": "0.66,0.66,0.81,0.81,0.81,0.66,0.81,0.66,0.81,1.00,0.66,1.00",
-      "Keyword Difficulty": "31",
-      "SERP Features": "Sitelinks, AI Overview, Image, Video, People also ask, Discussions and forums, Related searches, Popular products"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "water-based-lube_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "water based lube",
-      "Keyword": "glycerin free water based lube",
-      "Intent": "Informational",
-      "Volume": "320",
-      "Trend": "0.19,0.19,0.23,0.23,0.29,0.23,0.54,0.66,0.81,1.00,0.36,0.44",
-      "Keyword Difficulty": "22",
-      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches, Popular products"
+      "Trend": "0.20,0.34,0.44,1.00,0.13,0.20,0.30,0.08,0.13,0.20,0.65,0.30",
+      "Keyword Difficulty": "26",
+      "SERP Features": "Sitelinks, AI Overview"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "what do cock rings do",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P1",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "how to wear a cock ring",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
-      "Action": "Update existing article",
-      "Reason": "Emphasize fit, time limits, and comfort over exaggerated claims. Commercial value: High; difficulty: Medium.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "cock and ball ring",
+      "Keyword": "adult toy cleaner",
       "Search intent": "Commercial",
-      "Topic cluster": "Unclustered adult wellness/general",
+      "Topic cluster": "Gift and couples decisions",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-buying-guide/",
-      "Assigned article title": "Adult Toy Buying Guide: Safety, Privacy, and Value Checks",
-      "Action": "Review manually",
-      "Reason": "No precise cluster match; assign to broad buying guide until a distinct compliant intent is proven.",
-      "Priority": "P4",
-      "Notes": "Manual review recommended before content changes."
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adjustable cock ring",
-      "Search intent": "Beginner Guide",
-      "Topic cluster": "Couples accessories",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/cock-ring-guide/",
-      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Assigned URL": "/blog/adult-toy-gift-guide/",
+      "Assigned article title": "Adult Toy Gift Guide: Consent, Privacy, and Safer Choices",
       "Action": "Update existing article",
-      "Reason": "Fit/comfort/time-limit beginner guidance.",
-      "Priority": "P1",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "cock ring with vibrator",
-      "Search intent": "How-to",
-      "Topic cluster": "Vibrator selection",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/how-to-choose-a-vibrator/",
-      "Assigned article title": "How to Choose a Vibrator: A Practical Decision Checklist",
-      "Action": "Update existing article",
-      "Reason": "General vibrator selection; route subtype terms to subtype articles.",
-      "Priority": "P2",
-      "Notes": ""
-    },
-    {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "best water based lube",
-      "Search intent": "Informational",
-      "Topic cluster": "Lubricant basics",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/water-based-lube-guide/",
-      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
-      "Action": "Update existing article",
-      "Reason": "Explain why water-based formulas are often the safest first choice. Commercial value: High; difficulty: Easy.",
+      "Reason": "Make consent and recipient comfort the non-negotiable foundation. Commercial value: Medium; difficulty: Easy.",
       "Priority": "P1",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "water based lube for sensitive skin",
-      "Search intent": "Informational",
-      "Topic cluster": "Lubricant basics",
+      "Keyword": "how to clean adult toys",
+      "Search intent": "How-to",
+      "Topic cluster": "Cleaning and storage",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/water-based-lube-guide/",
-      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
+      "Assigned URL": "/blog/adult-toy-cleaner-guide/",
+      "Assigned article title": "Adult Toy Cleaner: When You Need It and How to Use It",
       "Action": "Update existing article",
-      "Reason": "Water-based lubricant informational/commercial intent.",
+      "Reason": "Cleaning/hygiene how-to intent.",
       "Priority": "P1",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "natural water based lube",
-      "Search intent": "Informational",
-      "Topic cluster": "Lubricant basics",
+      "Keyword": "best male masturbator",
+      "Search intent": "Comparison",
+      "Topic cluster": "Beginner product types",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/water-based-lube-guide/",
-      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
+      "Assigned URL": "/blog/best-adult-toys-for-beginners/",
+      "Assigned article title": "Best Adult Toys for Beginners: Types to Consider First",
       "Action": "Update existing article",
-      "Reason": "Water-based lubricant informational/commercial intent.",
+      "Reason": "Compare product categories without claiming one universal best choice. Commercial value: High; difficulty: Easy.",
       "Priority": "P1",
-      "Notes": ""
+      "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "glycerin free water based lube",
-      "Search intent": "Informational",
-      "Topic cluster": "Lubricant basics",
+      "Keyword": "top rated male masturbators",
+      "Search intent": "Commercial",
+      "Topic cluster": "Male wellness products",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/water-based-lube-guide/",
-      "Assigned article title": "Water-Based Lube: A Beginner-Friendly Compatibility Guide",
+      "Assigned URL": "/blog/male-masturbator-guide/",
+      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
       "Action": "Update existing article",
-      "Reason": "Water-based lubricant informational/commercial intent.",
+      "Reason": "Male wellness product buying and care intent.",
       "Priority": "P1",
       "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-08-03T08:47:28.054920+08:00",
+  "generated_at": "2026-08-04T08:38:51.495850+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
-    "generated_at": "2026-08-03T08:47:28.055088+08:00",
+    "generated_at": "2026-08-04T08:38:51.496022+08:00",
     "files": [
-      "upload/blog/assets/natural-water-based-lube-guide-opus-cover.png",
-      "upload/blog/assets/cock-and-ball-ring-safety-guide-opus-cover.png"
+      "upload/blog/assets/adult-toy-cleaner-safety-guide-opus-cover.png",
+      "upload/blog/assets/top-rated-male-masturbators-checklist-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/natural-water-based-lube-guide-opus-cover.png",
+        "file": "upload/blog/assets/adult-toy-cleaner-safety-guide-opus-cover.png",
         "status": "pass",
         "endpoint": "responses",
         "model": "opus-image-1.5",
-        "response_id": "resp_07d6dc71bcdf6f46016a6fe4b655988197af4a31fcd4222076",
-        "bytes": 2203482
+        "response_id": "resp_0c54798812824eba016a71343e76b4819081ba3c9faa57917b",
+        "bytes": 2333331,
+        "attempt": 1
       },
       {
-        "file": "upload/blog/assets/cock-and-ball-ring-safety-guide-opus-cover.png",
+        "file": "upload/blog/assets/top-rated-male-masturbators-checklist-opus-cover.png",
         "status": "pass",
         "endpoint": "responses",
         "model": "opus-image-1.5",
-        "response_id": "resp_05c50e0a88d87107016a6fe4ec8cbc81958020c4a268b308c9",
-        "bytes": 2530973
+        "response_id": "resp_0c341f7864a0c242016a71346bb69c8193b290cf62ff101ab6",
+        "bytes": 2378309,
+        "attempt": 1
       }
     ]
   },
-  "validated_at": "2026-08-03T08:48:23.423817+08:00",
-  "content_quality_checks": {
-    "status": "pass",
-    "validation_file": "output/daily_blog_validation_2026-08-03.json",
-    "articles": [
+  "content_quality_validation": {
+    "date": "2026-08-04",
+    "results": [
       {
-        "slug": "natural-water-based-lube-guide",
-        "title": "Natural Water-Based Lube Guide",
+        "slug": "adult-toy-cleaner-safety-guide",
+        "title": "Intimate Product Cleaner Guide",
         "title_len": 30,
-        "meta_len": 140,
-        "h1_count": 1,
-        "gtag_script_count": 1,
-        "gtag_config_count": 1,
-        "gtag_immediately_after_head": true,
-        "word_count": 1223,
-        "quick_answer": true,
-        "red_flags": true,
-        "faq_schema": true,
-        "authority_refs": 4,
-        "related_blog_links": 4,
-        "product_support_links": 3,
-        "image_seo_metadata": true,
-        "banned_scan_pass": true,
+        "meta_len": 143,
+        "word_count": 1824,
         "quality_score": 100,
-        "pass": true
+        "checks": {
+          "title_under_60": true,
+          "meta_under_155": true,
+          "exactly_one_h1": true,
+          "gtag_once": true,
+          "word_count_1000_plus": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_count_4_6": true,
+          "faq_schema": true,
+          "related_blog_links_2_4": true,
+          "product_links_1_3": true,
+          "authority_refs": true,
+          "image_metadata": true,
+          "adult_safe_language": true,
+          "natural_english_depth": true
+        },
+        "index_link_present": true,
+        "sitemap_url_present": true,
+        "sitemap_lastmod_today": true,
+        "sitemap_image_metadata": true,
+        "passed": true
       },
       {
-        "slug": "cock-and-ball-ring-safety-guide",
-        "title": "Cock and Ball Ring Safety Guide",
-        "title_len": 31,
+        "slug": "top-rated-male-masturbators-checklist",
+        "title": "Top Rated Male Masturbators Checklist",
+        "title_len": 37,
         "meta_len": 138,
-        "h1_count": 1,
-        "gtag_script_count": 1,
-        "gtag_config_count": 1,
-        "gtag_immediately_after_head": true,
-        "word_count": 1167,
-        "quick_answer": true,
-        "red_flags": true,
-        "faq_schema": true,
-        "authority_refs": 4,
-        "related_blog_links": 4,
-        "product_support_links": 3,
-        "image_seo_metadata": true,
-        "banned_scan_pass": true,
+        "word_count": 1772,
         "quality_score": 100,
-        "pass": true
+        "checks": {
+          "title_under_60": true,
+          "meta_under_155": true,
+          "exactly_one_h1": true,
+          "gtag_once": true,
+          "word_count_1000_plus": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_count_4_6": true,
+          "faq_schema": true,
+          "related_blog_links_2_4": true,
+          "product_links_1_3": true,
+          "authority_refs": true,
+          "image_metadata": true,
+          "adult_safe_language": true,
+          "natural_english_depth": true
+        },
+        "index_link_present": true,
+        "sitemap_url_present": true,
+        "sitemap_lastmod_today": true,
+        "sitemap_image_metadata": true,
+        "passed": true
       }
     ],
-    "overall_pass": true
+    "all_passed": true
   },
-  "sitemap": {
-    "status": "pass",
-    "checks": [
-      {
-        "url": "https://shoplovanest.com/blog/natural-water-based-lube-guide/",
-        "found": true,
-        "lastmod_image_metadata_pass": true
-      },
-      {
-        "url": "https://shoplovanest.com/blog/cock-and-ball-ring-safety-guide/",
-        "found": true,
-        "lastmod_image_metadata_pass": true
-      }
-    ]
-  },
-  "blog_index": {
-    "status": "pass",
-    "checks": {
-      "blog_index_links": [
-        true,
-        true
-      ],
-      "blog_index_gtag_script_count": 1,
-      "blog_index_gtag_config_count": 1
-    }
-  },
-  "validation": {
-    "status": "pass",
-    "file": "output/daily_blog_validation_2026-08-03.json",
-    "overall_pass": true
-  },
-  "completed_at": "2026-08-03T08:57:12.094522+08:00",
-  "commit": "e355fa36d452",
-  "deploy": {
-    "status": "pass",
-    "target": "root@153.75.235.56:/var/www/myopencart/upload",
-    "method": "targeted rsync; chmod/chown applied to changed paths"
-  },
-  "live_verification": {
-    "status": "pass",
-    "file": "output/live_verification_2026-08-03.json",
-    "overall_pass": true,
-    "summary": {
-      "articles": [
-        {
-          "url": "https://shoplovanest.com/blog/natural-water-based-lube-guide/",
-          "http_status": 200,
-          "title": "Natural Water-Based Lube Guide",
-          "title_present": true,
-          "meta_description_present": true,
-          "meta_description_len": 140,
-          "h1_count": 1,
-          "gtag_script_count": 1,
-          "gtag_config_count": 1,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": 3,
-          "image_seo_metadata": true,
-          "og_image_alt": true,
-          "twitter_image_alt": true,
-          "pass": true
-        },
-        {
-          "url": "https://shoplovanest.com/blog/cock-and-ball-ring-safety-guide/",
-          "http_status": 200,
-          "title": "Cock and Ball Ring Safety Guide",
-          "title_present": true,
-          "meta_description_present": true,
-          "meta_description_len": 138,
-          "h1_count": 1,
-          "gtag_script_count": 1,
-          "gtag_config_count": 1,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": 3,
-          "image_seo_metadata": true,
-          "og_image_alt": true,
-          "twitter_image_alt": true,
-          "pass": true
-        }
-      ],
-      "blog_index": {
-        "url": "https://shoplovanest.com/blog/",
-        "http_status": 200,
-        "links": [
-          true,
-          true
-        ],
-        "gtag_script_count": 1,
-        "gtag_config_count": 1,
-        "pass": true
-      },
-      "sitemap": {
-        "url": "https://shoplovanest.com/sitemap.xml",
-        "http_status": 200,
-        "urls": [
-          true,
-          true
-        ],
-        "lastmod_2026_08_03": true,
-        "image_metadata": true,
-        "pass": true
-      },
-      "overall_pass": true
-    }
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "sent_at": "2026-08-03T08:57:12.094522+08:00",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-08-03",
-    "source_file": "output/daily_blog_2026-08-03_success.eml"
-  }
+  "validated_at": "2026-08-04T08:40:52.440320+08:00"
 }
