@@ -1,7 +1,7 @@
 {
   "date": "2026-08-05",
   "timezone": "Asia/Shanghai",
-  "status": "validated_pending_commit",
+  "status": "complete",
   "article_quota": 2,
   "articles": [
     {
@@ -348,5 +348,104 @@
       }
     ],
     "all_passed": true
-  }
+  },
+  "commit": {
+    "hash": "64f05aeba8",
+    "pushed": true,
+    "message": "Add ShopLovaNest daily SEO blogs for 2026-08-05"
+  },
+  "deploy": {
+    "status": "success",
+    "method": "targeted rsync to root@153.75.235.56:/var/www/myopencart/upload",
+    "permissions": "www-data:www-data; dirs 755; files 644",
+    "deployed_paths": [
+      "upload/blog/adjustable-cock-ring-sizing-guide/",
+      "upload/blog/wand-massager-attachments-guide/",
+      "upload/blog/assets/adjustable-cock-ring-sizing-guide-opus-cover.png",
+      "upload/blog/assets/wand-massager-attachments-guide-opus-cover.png",
+      "upload/blog/index.html",
+      "upload/sitemap.xml"
+    ]
+  },
+  "live_verification": {
+    "verified_at": "2026-08-05T12:45:00+08:00",
+    "articles": [
+      {
+        "slug": "adjustable-cock-ring-sizing-guide",
+        "url": "https://shoplovanest.com/blog/adjustable-cock-ring-sizing-guide/",
+        "status": 200,
+        "title": "Adjustable Cock Ring Sizing Guide",
+        "meta_len": 123,
+        "h1_count": 1,
+        "gtag_script_count": 1,
+        "gtag_config_count": 1,
+        "checks": {
+          "http_200": true,
+          "title_present": true,
+          "meta_present": true,
+          "one_h1": true,
+          "gtag_script_once": true,
+          "gtag_config_once": true,
+          "gtag_immediately_after_head": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": true,
+          "image_seo_metadata": true
+        },
+        "passed": true
+      },
+      {
+        "slug": "wand-massager-attachments-guide",
+        "url": "https://shoplovanest.com/blog/wand-massager-attachments-guide/",
+        "status": 200,
+        "title": "Wand Massager Attachments Guide",
+        "meta_len": 118,
+        "h1_count": 1,
+        "gtag_script_count": 1,
+        "gtag_config_count": 1,
+        "checks": {
+          "http_200": true,
+          "title_present": true,
+          "meta_present": true,
+          "one_h1": true,
+          "gtag_script_once": true,
+          "gtag_config_once": true,
+          "gtag_immediately_after_head": true,
+          "quick_answer": true,
+          "red_flags": true,
+          "faq_schema": true,
+          "authority_refs": true,
+          "image_seo_metadata": true
+        },
+        "passed": true
+      }
+    ],
+    "blog_index": {
+      "http_200": true,
+      "links_adjustable-cock-ring-sizing-guide": true,
+      "links_wand-massager-attachments-guide": true
+    },
+    "sitemap": {
+      "http_200": true,
+      "includes_adjustable-cock-ring-sizing-guide": true,
+      "lastmod_adjustable-cock-ring-sizing-guide": true,
+      "image_metadata_adjustable-cock-ring-sizing-guide": true,
+      "includes_wand-massager-attachments-guide": true,
+      "lastmod_wand-massager-attachments-guide": true,
+      "image_metadata_wand-massager-attachments-guide": true
+    },
+    "all_passed": true
+  },
+  "email": {
+    "status": "sent_accepted",
+    "recipient": "yuanzhigang20@gmail.com",
+    "tool": "/opt/homebrew/bin/msmtp",
+    "config": "/Users/grant/.msmtprc",
+    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-08-05",
+    "sent_at": "2026-08-05T12:49:00+08:00",
+    "exit_code": 0
+  },
+  "updated_at": "2026-08-05T12:49:00+08:00",
+  "completion_rule_met": true
 }
