@@ -1,32 +1,32 @@
 {
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "timezone": "Asia/Shanghai",
-  "status": "complete",
+  "status": "validated_pending_commit",
   "article_quota": 2,
   "articles": [
     {
-      "slug": "adult-toy-cleaner-safety-guide",
-      "title": "Intimate Product Cleaner Guide",
-      "url": "https://shoplovanest.com/blog/adult-toy-cleaner-safety-guide/",
+      "slug": "adjustable-cock-ring-sizing-guide",
+      "title": "Adjustable Cock Ring Sizing Guide",
+      "url": "https://shoplovanest.com/blog/adjustable-cock-ring-sizing-guide/",
       "primary_keywords": [
-        "adult toy cleaner",
-        "sex toy cleaner",
-        "toy cleaner"
+        "adjustable cock ring",
+        "cock ring sizes",
+        "cock ring sizing"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adult toy cleaner plus related cleaner intent from the adult-toys care cluster. Existing cleaning articles cover mistakes and storage, so this new article focuses on choosing cleaner products, material compatibility, label claims, rinsing, drying, and sanitation red flags rather than repeating a general cleaning checklist.",
-      "intent_cluster": "Adult toy cleaner purchase intent — shoppers want to know whether a cleaner spray or foam is appropriate for their toy materials, how to read ingredient and rinsing directions, and which sanitation claims should slow checkout."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected adjustable cock ring, cock ring sizes, cock ring sizing, how to size a cock ring, and best cock rings from the cock-ring cluster. Existing pages cover general fit and time limits; this new article focuses narrowly on adjustable sizing systems, release mechanisms, fit range language, material stretch, and checkout mistakes.",
+      "intent_cluster": "Adjustable cock ring sizing intent \u2014 shoppers want a practical way to evaluate adjustable designs, fit range, release options, material stretch, and red flags before buying."
     },
     {
-      "slug": "top-rated-male-masturbators-checklist",
-      "title": "Top Rated Male Masturbators Checklist",
-      "url": "https://shoplovanest.com/blog/top-rated-male-masturbators-checklist/",
+      "slug": "wand-massager-attachments-guide",
+      "title": "Wand Massager Attachments Guide",
+      "url": "https://shoplovanest.com/blog/wand-massager-attachments-guide/",
       "primary_keywords": [
-        "top rated male masturbators",
-        "best male masturbator",
-        "male masturbator sleeve"
+        "hitachi wand massager attachments",
+        "wand massager attachments",
+        "personal massager wand"
       ],
-      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected top rated male masturbators from the male-masturbator keyword cluster and grouped it with best male masturbator and sleeve comparison intent. Existing male masturbator pages cover beginner types, materials, cleaning, and realistic styling; this new article focuses on how to interpret ratings, reviews, value, privacy, and red flags before checkout.",
-      "intent_cluster": "Top-rated male masturbator comparison intent — shoppers want a discreet framework for interpreting reviews, materials, sleeve feel, cleaning burden, noise, storage, and return policies without falling for hype or unsupported claims."
+      "keyword_source": "Read output/merged_keyword_research_2026-06-25.csv and output/keyword_to_url_mapping_2026-06-25.csv. Selected hitachi wand massager attachments, wand massager attachments, personal massager wand, best wand massager, and massage wand cordless from the wand-massager cluster. Existing wand guides cover power, noise, charging, and general buying; this new article focuses specifically on attachment compatibility, diameter fit, vibration transfer, material care, and storage.",
+      "intent_cluster": "Wand massager attachment compatibility intent \u2014 shoppers want to know whether an attachment fits their wand, how material and shape affect use, and what cleaning or safety red flags matter before checkout."
     }
   ],
   "keyword_source_files_read": [
@@ -36,142 +36,262 @@
   "keyword_source_matches": [
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23 (1).xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "adult toy cleaner",
-      "Intent": "Informational",
-      "Volume": "1900",
-      "Trend": "1.00,0.52,0.44,1.00,0.36,0.36,0.52,0.52,0.66,1.00,0.36,0.44",
-      "Keyword Difficulty": "26",
-      "SERP Features": "Sitelinks, AI Overview, Video, People also ask, Related searches"
-    },
-    {
-      "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "adult-toys_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "adult toys",
-      "Keyword": "how to clean adult toys",
-      "Intent": "Informational",
-      "Volume": "170",
-      "Trend": "0.53,0.53,0.43,0.53,0.65,0.43,0.43,0.53,0.53,1.00,0.43,0.43",
-      "Keyword Difficulty": "37",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "best cock rings",
+      "Intent": "Commercial",
+      "Volume": "2400",
+      "Trend": "1.00,1.00,1.00,1.00,1.00,0.68,0.79,1.00,1.00,1.00,0.79,0.79",
+      "Keyword Difficulty": "30",
       "SERP Features": "Sitelinks, AI Overview, People also ask"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "best male masturbator",
-      "Intent": "Commercial",
-      "Volume": "4400",
-      "Trend": "0.82,0.82,0.82,1.00,0.82,0.82,0.82,0.82,0.82,0.82,0.67,0.67",
-      "Keyword Difficulty": "32",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "adjustable cock ring",
+      "Intent": "Informational, Commercial",
+      "Volume": "1000",
+      "Trend": "0.30,0.30,0.36,0.36,0.36,1.00,1.00,0.36,0.36,0.36,0.30,0.30",
+      "Keyword Difficulty": "24",
+      "SERP Features": "Sitelinks"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "cock ring sizes",
+      "Intent": "Informational",
+      "Volume": "390",
+      "Trend": "0.71,1.00,1.00,1.00,1.00,0.71,0.71,1.00,1.00,1.00,1.00,1.00",
+      "Keyword Difficulty": "17",
       "SERP Features": "Sitelinks, AI Overview"
     },
     {
       "source": "output/merged_keyword_research_2026-06-25.csv",
-      "source_file": "male-masturbator_broad-match_us_2026-06-23.xlsx",
-      "seed_keyword": "male masturbator",
-      "Keyword": "top rated male masturbators",
-      "Intent": "Informational, Commercial",
-      "Volume": "1000",
-      "Trend": "0.20,0.34,0.44,1.00,0.13,0.20,0.30,0.08,0.13,0.20,0.65,0.30",
-      "Keyword Difficulty": "26",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "cock ring sizing",
+      "Intent": "Informational",
+      "Volume": "260",
+      "Trend": "0.67,0.67,1.00,0.67,0.67,0.67,0.67,0.83,0.83,1.00,1.00,1.00",
+      "Keyword Difficulty": "23",
+      "SERP Features": "Sitelinks, AI Overview, People also ask"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "cock-ring_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "cock ring",
+      "Keyword": "how to size a cock ring",
+      "Intent": "Informational",
+      "Volume": "210",
+      "Trend": "0.66,0.66,0.66,0.81,0.66,0.66,0.66,0.81,0.81,0.81,0.81,1.00",
+      "Keyword Difficulty": "20",
       "SERP Features": "Sitelinks, AI Overview"
     },
     {
-      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "adult toy cleaner",
-      "Search intent": "Commercial",
-      "Topic cluster": "Gift and couples decisions",
-      "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-gift-guide/",
-      "Assigned article title": "Adult Toy Gift Guide: Consent, Privacy, and Safer Choices",
-      "Action": "Update existing article",
-      "Reason": "Make consent and recipient comfort the non-negotiable foundation. Commercial value: Medium; difficulty: Easy.",
-      "Priority": "P1",
-      "Notes": "Mapped from existing keyword cluster file."
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "wand-massager_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "wand massager",
+      "Keyword": "hitachi wand massager attachments",
+      "Intent": "Informational, Commercial",
+      "Volume": "720",
+      "Trend": "0.45,0.76,0.76,0.13,0.55,1.00,0.13,0.02,0.05,0.05,0.13,0.10",
+      "Keyword Difficulty": "13",
+      "SERP Features": "Sitelinks, Discussions and forums"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "wand-massager_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "wand massager",
+      "Keyword": "massage wand cordless",
+      "Intent": "Commercial",
+      "Volume": "390",
+      "Trend": "0.15,0.19,1.00,0.44,0.66,0.44,1.00,1.00,0.81,0.36,0.36,0.23",
+      "Keyword Difficulty": "18",
+      "SERP Features": "Sitelinks, Image, Image pack, Video, Video carousel, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "wand-massager_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "wand massager",
+      "Keyword": "personal massager wand",
+      "Intent": "Commercial",
+      "Volume": "320",
+      "Trend": "0.35,0.35,0.43,0.35,0.54,0.68,0.30,0.19,1.00,0.43,0.35,0.35",
+      "Keyword Difficulty": "22",
+      "SERP Features": "Sitelinks, Image pack, Video carousel, People also ask, Related searches"
+    },
+    {
+      "source": "output/merged_keyword_research_2026-06-25.csv",
+      "source_file": "wand-massager_broad-match_us_2026-06-23.xlsx",
+      "seed_keyword": "wand massager",
+      "Keyword": "best wand massager",
+      "Intent": "Commercial",
+      "Volume": "260",
+      "Trend": "0.54,0.54,0.67,0.54,0.54,0.54,0.54,0.67,1.00,0.81,0.67,0.81",
+      "Keyword Difficulty": "26",
+      "SERP Features": "Sitelinks, AI Overview, Image, Image pack, Video, Video carousel, People also ask, Discussions and forums"
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "how to clean adult toys",
-      "Search intent": "How-to",
-      "Topic cluster": "Cleaning and storage",
+      "Keyword": "best cock rings",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/adult-toy-cleaner-guide/",
-      "Assigned article title": "Adult Toy Cleaner: When You Need It and How to Use It",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Cleaning/hygiene how-to intent.",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
       "Priority": "P1",
       "Notes": ""
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "best male masturbator",
-      "Search intent": "Comparison",
-      "Topic cluster": "Beginner product types",
+      "Keyword": "adjustable cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/best-adult-toys-for-beginners/",
-      "Assigned article title": "Best Adult Toys for Beginners: Types to Consider First",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
       "Action": "Update existing article",
-      "Reason": "Compare product categories without claiming one universal best choice. Commercial value: High; difficulty: Easy.",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
       "Priority": "P1",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "cock ring sizes",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "cock ring sizing",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "how to size a cock ring",
+      "Search intent": "Beginner Guide",
+      "Topic cluster": "Couples accessories",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/cock-ring-guide/",
+      "Assigned article title": "Cock Ring Guide: Fit, Materials, and Beginner Safety",
+      "Action": "Update existing article",
+      "Reason": "Fit/comfort/time-limit beginner guidance.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "hitachi wand massager attachments",
+      "Search intent": "Commercial",
+      "Topic cluster": "Wand massagers",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/wand-massager-guide/",
+      "Assigned article title": "Wand Massager Guide: Power, Noise, Weight, and Care",
+      "Action": "Update existing article",
+      "Reason": "Balance power with comfort, privacy, and practical storage. Commercial value: High; difficulty: Easy.",
+      "Priority": "P2",
       "Notes": "Mapped from existing keyword cluster file."
     },
     {
       "source": "output/keyword_to_url_mapping_2026-06-25.csv",
-      "Keyword": "top rated male masturbators",
+      "Keyword": "massage wand cordless",
       "Search intent": "Commercial",
-      "Topic cluster": "Male wellness products",
+      "Topic cluster": "Wand massagers",
       "Primary/secondary": "Secondary",
-      "Assigned URL": "/blog/male-masturbator-guide/",
-      "Assigned article title": "Male Masturbator Guide: Materials, Cleaning, and Privacy",
+      "Assigned URL": "/blog/wand-massager-guide/",
+      "Assigned article title": "Wand Massager Guide: Power, Noise, Weight, and Care",
       "Action": "Update existing article",
-      "Reason": "Male wellness product buying and care intent.",
-      "Priority": "P1",
+      "Reason": "Wand massager product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "personal massager wand",
+      "Search intent": "Commercial",
+      "Topic cluster": "Wand massagers",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/wand-massager-guide/",
+      "Assigned article title": "Wand Massager Guide: Power, Noise, Weight, and Care",
+      "Action": "Update existing article",
+      "Reason": "Wand massager product selection intent.",
+      "Priority": "P2",
+      "Notes": ""
+    },
+    {
+      "source": "output/keyword_to_url_mapping_2026-06-25.csv",
+      "Keyword": "best wand massager",
+      "Search intent": "Commercial",
+      "Topic cluster": "Wand massagers",
+      "Primary/secondary": "Secondary",
+      "Assigned URL": "/blog/wand-massager-guide/",
+      "Assigned article title": "Wand Massager Guide: Power, Noise, Weight, and Care",
+      "Action": "Update existing article",
+      "Reason": "Wand massager product selection intent.",
+      "Priority": "P2",
       "Notes": ""
     }
   ],
   "index_updated": true,
   "sitemap_updated": true,
-  "generated_at": "2026-08-04T08:38:51.495850+08:00",
+  "generated_at": "2026-08-05T10:34:51.768306+08:00",
   "image_generation": {
     "status": "pass",
     "model": "opus-image-1.5 via configured custom endpoint",
-    "generated_at": "2026-08-04T08:38:51.496022+08:00",
+    "generated_at": "2026-08-05T10:34:51.768524+08:00",
     "files": [
-      "upload/blog/assets/adult-toy-cleaner-safety-guide-opus-cover.png",
-      "upload/blog/assets/top-rated-male-masturbators-checklist-opus-cover.png"
+      "upload/blog/assets/adjustable-cock-ring-sizing-guide-opus-cover.png",
+      "upload/blog/assets/wand-massager-attachments-guide-opus-cover.png"
     ],
     "results": [
       {
-        "file": "upload/blog/assets/adult-toy-cleaner-safety-guide-opus-cover.png",
+        "file": "upload/blog/assets/adjustable-cock-ring-sizing-guide-opus-cover.png",
         "status": "pass",
         "endpoint": "responses",
         "model": "opus-image-1.5",
-        "response_id": "resp_0c54798812824eba016a71343e76b4819081ba3c9faa57917b",
-        "bytes": 2333331,
+        "response_id": "resp_0167ffb28f0d5937016a72a100c330819b9e8dcc7ce18801ba",
+        "bytes": 2363323,
         "attempt": 1
       },
       {
-        "file": "upload/blog/assets/top-rated-male-masturbators-checklist-opus-cover.png",
+        "file": "upload/blog/assets/wand-massager-attachments-guide-opus-cover.png",
         "status": "pass",
         "endpoint": "responses",
         "model": "opus-image-1.5",
-        "response_id": "resp_0c341f7864a0c242016a71346bb69c8193b290cf62ff101ab6",
-        "bytes": 2378309,
+        "response_id": "resp_0c715beba225eca9016a72a121e90c819a93020689b6d1fbd2",
+        "bytes": 2517209,
         "attempt": 1
       }
     ]
   },
   "content_quality_validation": {
-    "date": "2026-08-04",
+    "date": "2026-08-05",
     "results": [
       {
-        "slug": "adult-toy-cleaner-safety-guide",
-        "title": "Intimate Product Cleaner Guide",
-        "title_len": 30,
-        "meta_len": 143,
-        "word_count": 1824,
+        "slug": "adjustable-cock-ring-sizing-guide",
+        "title": "Adjustable Cock Ring Sizing Guide",
+        "title_len": 33,
+        "meta_len": 123,
+        "word_count": 1690,
         "quality_score": 100,
         "checks": {
           "title_under_60": true,
@@ -197,11 +317,11 @@
         "passed": true
       },
       {
-        "slug": "top-rated-male-masturbators-checklist",
-        "title": "Top Rated Male Masturbators Checklist",
-        "title_len": 37,
-        "meta_len": 138,
-        "word_count": 1772,
+        "slug": "wand-massager-attachments-guide",
+        "title": "Wand Massager Attachments Guide",
+        "title_len": 31,
+        "meta_len": 118,
+        "word_count": 1579,
         "quality_score": 100,
         "checks": {
           "title_under_60": true,
@@ -228,71 +348,5 @@
       }
     ],
     "all_passed": true
-  },
-  "validated_at": "2026-08-04T08:40:52.440320+08:00",
-  "completed_at": "2026-08-04T08:49:19.967137+08:00",
-  "commit": "0e00ce2652ef77800f292f472bec700e007e65f9",
-  "pushed": true,
-  "deploy": {
-    "status": "pass",
-    "target": "root@153.75.235.56:/var/www/myopencart/upload",
-    "method": "targeted rsync for two blog folders/assets/blog index/sitemap; permissions fixed www-data:www-data dirs 755 files 644"
-  },
-  "live_verification": {
-    "date": "2026-08-04",
-    "articles": [
-      {
-        "slug": "adult-toy-cleaner-safety-guide",
-        "url": "https://shoplovanest.com/blog/adult-toy-cleaner-safety-guide/",
-        "checks": {
-          "http_200": true,
-          "title_meta": true,
-          "one_h1": true,
-          "gtag_script_config_once": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": true,
-          "image_seo": true
-        },
-        "passed": true
-      },
-      {
-        "slug": "top-rated-male-masturbators-checklist",
-        "url": "https://shoplovanest.com/blog/top-rated-male-masturbators-checklist/",
-        "checks": {
-          "http_200": true,
-          "title_meta": true,
-          "one_h1": true,
-          "gtag_script_config_once": true,
-          "quick_answer": true,
-          "red_flags": true,
-          "faq_schema": true,
-          "authority_refs": true,
-          "image_seo": true
-        },
-        "passed": true
-      }
-    ],
-    "blog_index": {
-      "http_200": true,
-      "adult-toy-cleaner-safety-guide": true,
-      "top-rated-male-masturbators-checklist": true
-    },
-    "sitemap": {
-      "http_200": true,
-      "adult-toy-cleaner-safety-guide": true,
-      "top-rated-male-masturbators-checklist": true
-    },
-    "all_passed": true
-  },
-  "email": {
-    "status": "sent_accepted",
-    "recipient": "yuanzhigang20@gmail.com",
-    "tool": "/opt/homebrew/bin/msmtp",
-    "config": "/Users/grant/.msmtprc",
-    "subject": "ShopLovaNest Daily Blog Deployment Complete - 2026-08-04",
-    "accepted_at": "2026-08-04T08:49:19.967137+08:00",
-    "note": "msmtp exited 0 after live verification; password was read from macOS Keychain and was not printed or stored."
   }
 }

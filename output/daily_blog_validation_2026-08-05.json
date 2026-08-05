@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-05",
+  "results": [
+    {
+      "slug": "adjustable-cock-ring-sizing-guide",
+      "title": "Adjustable Cock Ring Sizing Guide",
+      "title_len": 33,
+      "meta_len": 123,
+      "word_count": 1690,
+      "quality_score": 100,
+      "checks": {
+        "title_under_60": true,
+        "meta_under_155": true,
+        "exactly_one_h1": true,
+        "gtag_once": true,
+        "word_count_1000_plus": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_count_4_6": true,
+        "faq_schema": true,
+        "related_blog_links_2_4": true,
+        "product_links_1_3": true,
+        "authority_refs": true,
+        "image_metadata": true,
+        "adult_safe_language": true,
+        "natural_english_depth": true
+      },
+      "index_link_present": true,
+      "sitemap_url_present": true,
+      "sitemap_lastmod_today": true,
+      "sitemap_image_metadata": true,
+      "passed": true
+    },
+    {
+      "slug": "wand-massager-attachments-guide",
+      "title": "Wand Massager Attachments Guide",
+      "title_len": 31,
+      "meta_len": 118,
+      "word_count": 1579,
+      "quality_score": 100,
+      "checks": {
+        "title_under_60": true,
+        "meta_under_155": true,
+        "exactly_one_h1": true,
+        "gtag_once": true,
+        "word_count_1000_plus": true,
+        "quick_answer": true,
+        "red_flags": true,
+        "faq_count_4_6": true,
+        "faq_schema": true,
+        "related_blog_links_2_4": true,
+        "product_links_1_3": true,
+        "authority_refs": true,
+        "image_metadata": true,
+        "adult_safe_language": true,
+        "natural_english_depth": true
+      },
+      "index_link_present": true,
+      "sitemap_url_present": true,
+      "sitemap_lastmod_today": true,
+      "sitemap_image_metadata": true,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}
